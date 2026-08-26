@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>13.2 Health Care, Population Ageing, and Financial Protection | VNM Country Report</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+  <script src="../assets/chart.umd.min.js"></script>
+  <style>
+    body{margin:0;background:#f4f6f4;color:#17201b;font-family:Arial,Helvetica,sans-serif;line-height:1.65}
+    .layout{display:grid;grid-template-columns:320px minmax(0,1fr);min-height:100vh}
+    aside{position:sticky;top:0;height:100vh;overflow:auto;background:#fff;border-right:1px solid #d9ded8;padding:18px}
+    aside a{display:block;color:#25312a;text-decoration:none;border-radius:6px;padding:6px 8px;font-size:13px}
+    aside a:hover,aside a.active{background:#e8f0ea;color:#0d5a6a} summary{cursor:pointer;font-weight:700;margin:10px 0 4px}
+    .home{font-weight:800;margin-bottom:8px}
+    main{max-width:1050px;padding:36px min(6vw,72px) 90px}
+    .crumb{font-size:13px;color:#607067;margin:0 0 8px} h1{font-size:36px;line-height:1.15;margin:0 0 8px}
+    .chapter-title{color:#56645c;margin:0 0 26px}
+    .section-body,.chart-card{background:#fff;border:1px solid #d9ded8;border-radius:8px;padding:18px;margin:0 0 22px}
+    .section-body h2{font-size:26px;margin:0 0 14px} .section-body p{font-family:Georgia,'Times New Roman',serif;font-size:18px;margin:0 0 14px}
+    table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px} th,td{border:1px solid #d9ded8;padding:8px;vertical-align:top} th{background:#edf2ea;text-align:left}
+    code{background:#eef2ee;border:1px solid #d8ded8;border-radius:4px;padding:1px 4px} .source-note,figcaption{font-size:12px;color:#607067}
+    .chart-frame{height:340px} .chart-frame canvas{width:100%;height:100%}
+    .figure-card,.map-card,.symbol-figure{background:#fff;border:1px solid #d9ded8;border-radius:8px;padding:14px;margin:18px 0 24px}
+    .source{color:#607067;font-size:12px;margin:10px 0 0} .map-grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(280px,.7fr);gap:16px;align-items:start}
+    .adm-map{width:100%;height:auto;border:1px solid #d9ded8;background:#f7fbfc} .adm-path{stroke:#fff;stroke-width:.7} .map-label{font-size:6px;fill:#32424f;text-anchor:middle;pointer-events:none} .neighbor-label{font-size:12px;fill:#6c7b88}
+    .capital-marker circle{fill:#c23b22;stroke:#fff;stroke-width:1.4} .capital-marker text{font-size:12px;fill:#17212b;font-weight:700} .map-table-wrap{max-height:420px;overflow:auto}
+    .symbol-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px} .symbol-card{min-height:260px;border:1px solid #d9ded8;border-radius:8px;background:#fbfdfe;padding:14px;display:flex;flex-direction:column;gap:10px}
+    .symbol-card h3{font-size:18px;margin:2px 0 0} .symbol-card p{font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:1.48;color:#34424e;margin:0} .symbol-kicker{color:#607067;font-size:11px;text-transform:uppercase;letter-spacing:.06em}
+    .flag-indonesia{height:92px;border:1px solid #b9c6cd;border-radius:4px;overflow:hidden} .flag-indonesia span{display:block;height:50%} .flag-indonesia span:first-child{background:#c9182b} .flag-indonesia span:last-child{background:#fff}
+    .garuda-mark{height:92px;display:grid;grid-template-columns:1fr 56px 1fr;align-items:center;gap:4px} .garuda-mark .wing{height:60px;background:#c59a35;border:1px solid #9d761e} .garuda-mark .left{border-radius:60px 10px 18px 60px} .garuda-mark .right{border-radius:10px 60px 60px 18px}
+    .garuda-mark .body{height:82px;background:#d6ad46;border:1px solid #9d761e;border-radius:36px 36px 18px 18px} .garuda-mark .shield{grid-column:2;justify-self:center;margin-top:-58px;width:36px;height:42px;border-radius:8px 8px 14px 14px;background:#1f3f68;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;border:2px solid #f1d47b}
+    .motto-line{height:92px;display:flex;align-items:center;justify-content:center;text-align:center;border:1px solid #cfd9de;border-radius:6px;background:linear-gradient(180deg,#fff,#eef5f7);font-weight:800;color:#15384a;padding:12px} .anthem-bars{height:92px;display:flex;align-items:end;gap:8px;justify-content:center;border:1px solid #cfd9de;border-radius:6px;background:#f8fbfc;padding:16px}
+    .anthem-bars span{width:22px;background:#0f6f87;border-radius:4px 4px 0 0} .anthem-bars span:nth-child(1){height:38px} .anthem-bars span:nth-child(2){height:62px} .anthem-bars span:nth-child(3){height:48px} .anthem-bars span:nth-child(4){height:72px}
+    @media(max-width:860px){.layout{grid-template-columns:1fr}aside{position:relative;height:auto}main{padding:24px 18px}}
+  
+    .md-toolbar{display:flex;justify-content:flex-end;gap:8px;margin:0 0 14px}
+    .md-toolbar button{border:1px solid #0d5a6a;background:#0d5a6a;color:#fff;border-radius:5px;padding:7px 11px;font:700 12px Arial,Helvetica,sans-serif;cursor:pointer}
+    .md-toolbar button[data-md-action='cancel']{background:#fff;color:#25312a;border-color:#cfd8d3}
+    .md-editor{width:100%;min-height:520px;border:1px solid #cfd8d3;border-radius:6px;padding:14px;font:14px Consolas,monospace;line-height:1.45}
+
+  </style>
+  <script src="../assets/marked.min.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <aside><a class='home' href='../index.html'>VNM cover</a>
+<details ><summary>1. Country Overview</summary><a class='section-link ' href='01-01-national-profile.html'>1.1 National Profile</a><a class='section-link ' href='01-02-state-symbols.html'>1.2 State Symbols</a><a class='section-link ' href='01-03-geography-and-administrative-divisions.html'>1.3 Geography and Administrative Divisions</a><a class='section-link ' href='01-04-core-institutional-diagnosis.html'>1.4 Core Institutional Diagnosis</a><a class='section-link ' href='01-05-evidence-base.html'>1.5 Evidence Base and Reading Direction</a></details>
+<details ><summary>2. Historical Background</summary><a class='section-link ' href='02-01-civilizational-layers-and-frontier-statecraft.html'>2.1 Civilizational Layers and Frontier Statecraft</a><a class='section-link ' href='02-02-colonial-rule-revolution-and-war.html'>2.2 Colonial Rule, Revolution, and War</a><a class='section-link ' href='02-03-reunification-and-doi-moi.html'>2.3 Reunification and Doi Moi</a><a class='section-link ' href='02-04-historical-legacies-in-present-institutions.html'>2.4 Historical Legacies in Present Institutions</a></details>
+<details ><summary>3. Constitution and Basic State Order</summary><a class='section-link ' href='03-01-constitutional-order-and-amendments.html'>3.1 Constitutional Order, Ownership, and the Architecture of State Power</a><a class='section-link ' href='03-02-sovereignty-party-leadership-and-territorial-integrity.html'>3.2 Sovereignty, Party Leadership, and Territorial Integrity</a><a class='section-link ' href='03-03-rights-duties-and-socialist-rule-of-law.html'>3.3 Rights, Duties, and Socialist Rule of Law</a><a class='section-link ' href='03-04-state-power-review-audit-and-emergency-authority.html'>3.4 State Power, Review, Audit, and Emergency Authority</a></details>
+<details ><summary>4. Political System and Power Structure</summary><a class='section-link ' href='04-01-party-leadership-and-state-institutions.html'>4.1 Party Leadership and State Institutions</a><a class='section-link ' href='04-02-national-assembly-elections-and-representation.html'>4.2 National Assembly, Elections, and Representation</a><a class='section-link ' href='04-03-executive-coordination-and-government-formation.html'>4.3 Executive Coordination and Government Formation</a><a class='section-link ' href='04-04-judiciary-rule-of-law-corruption-and-accountability.html'>4.4 Courts, Procuracy, Inspection, and Anti-Corruption</a><a class='section-link ' href='04-05-local-politics-and-real-power-relations.html'>4.5 Local Politics and Real Power Relations</a><a class='section-link ' href='04-06-political-system-diagnostics-and-democratic-trajectory.html'>4.6 Political System Diagnostics and Democratic Trajectory</a></details>
+<details ><summary>5. Administrative System and Government Organization</summary><a class='section-link ' href='05-01-central-government-and-ministerial-system.html'>5.1 Central Government and Ministerial System</a><a class='section-link ' href='05-02-organizational-management-and-bureaucratic-reform.html'>5.2 Organizational Management and Bureaucratic Reform</a><a class='section-link ' href='05-03-human-resource-management-and-civil-service.html'>5.3 Human Resource Management and Civil Service</a><a class='section-link ' href='05-04-financial-administration-procurement-audit-and-inspection.html'>5.4 Financial Administration, Procurement, Audit, and Inspection</a><a class='section-link ' href='05-05-local-administration-and-service-delivery.html'>5.5 Local Administration and Service Delivery</a><a class='section-link ' href='05-06-digital-government-and-administrative-accountability.html'>5.6 Digital Government and Administrative Accountability</a><a class='section-link ' href='05-07-implementation-capacity-and-administrative-performance.html'>5.7 Implementation Capacity and Administrative Performance</a></details>
+<details ><summary>6. Governance and Institutional Capacity</summary><a class='section-link ' href='06-01-government-effectiveness-and-regulatory-quality.html'>6.1 Government Effectiveness and Regulatory Quality</a><a class='section-link ' href='06-02-rule-of-law-and-corruption-control.html'>6.2 Rule of Law and Corruption Control</a><a class='section-link ' href='06-03-voice-accountability-and-stability.html'>6.3 Voice, Accountability, and Stability</a><a class='section-link ' href='06-04-what-governance-indicators-reveal.html'>6.4 What Governance Indicators Reveal</a></details>
+<details ><summary>7. Fiscal System and Public Sector</summary><a class='section-link ' href='07-01-revenue-taxation-and-expenditure.html'>7.1 Revenue, Taxation, and Expenditure</a><a class='section-link ' href='07-02-deficit-debt-and-fiscal-space.html'>7.2 Fiscal Balance, Debt, and Fiscal Space</a><a class='section-link ' href='07-03-public-investment-soes-and-quasi-fiscal-risk.html'>7.3 Public Investment, Procurement, SOEs, and Quasi-Fiscal Risk</a><a class='section-link ' href='07-04-budget-decentralization-and-audit.html'>7.4 Budget Decentralization, Procurement Oversight, and Audit</a><a class='section-link ' href='07-05-fiscal-capacity-and-public-sector-risks.html'>7.5 Fiscal Capacity and Public Sector Risks</a></details>
+<details ><summary>8. Population and Social Structure</summary><a class='section-link ' href='08-01-population-scale-and-age-structure.html'>8.1 Population Scale and Age Structure</a><a class='section-link ' href='08-02-urbanization-and-regional-distribution.html'>8.2 Urbanization and Regional Distribution</a><a class='section-link ' href='08-03-ethnicity-language-religion-and-social-cohesion.html'>8.3 Ethnicity, Language, Religion, and Social Cohesion</a><a class='section-link ' href='08-04-migration-remittances-and-inclusion.html'>8.4 Migration, Remittances, and Inclusion</a></details>
+<details ><summary>9. Macroeconomic Structure</summary><a class='section-link ' href='09-01-gdp-scale-growth-and-income.html'>9.1 GDP Scale, Growth, and Income Level</a><a class='section-link ' href='09-02-inflation-exchange-rate-and-macro-stability.html'>9.2 Inflation, Exchange-Rate Management, and Macro Stability</a><a class='section-link ' href='09-03-industrial-structure-and-productivity.html'>9.3 Industrial Structure, Sectoral Transformation, and Productivity</a><a class='section-link ' href='09-04-growth-model-and-structural-vulnerabilities.html'>9.4 External Position, Trade Balance, and Structural Constraints</a><a class='section-link ' href='09-05-growth-driver-model-and-interpretation.html'>9.5 Growth Driver Model and Interpretation</a></details>
+<details ><summary>10. Trade, Investment, and External Economy</summary><a class='section-link ' href='10-01-exports-imports-and-current-account.html'>10.1 Export-Import Trends, Trade Dependence, and Export Transformation</a><a class='section-link ' href='10-02-fdi-and-export-manufacturing.html'>10.2 FDI and Export Manufacturing</a><a class='section-link ' href='10-03-trading-partners-supply-chains-and-technology-upgrading.html'>10.3 Trading Partners, Supply Chains, and Technology Upgrading</a><a class='section-link ' href='10-04-investment-rules-zones-and-industrial-policy.html'>10.4 Investment Rules, Zones, and Industrial Policy</a></details>
+<details ><summary>11. Infrastructure, Energy, and Digital Connectivity</summary><a class='section-link ' href='11-01-energy-access-and-power-system-reform.html'>11.1 Energy Access and Power System Reform</a><a class='section-link ' href='11-02-transport-logistics-and-corridors.html'>11.2 Transport, Logistics, and Corridors</a><a class='section-link ' href='11-03-digital-connectivity.html'>11.3 Digital Connectivity, AI Infrastructure, and the Digital Economy</a><a class='section-link ' href='11-04-infrastructure-governance-and-climate-resilience.html'>11.4 Infrastructure Governance and Climate Resilience</a></details>
+<details ><summary>12. Labor Market and Human Capital</summary><a class='section-link ' href='12-01-labor-force-and-participation.html'>12.1 Labor Force and Participation</a><a class='section-link ' href='12-02-women-youth-and-informality.html'>12.2 Women, Youth, and Informality</a><a class='section-link ' href='12-03-agricultural-employment-and-productivity.html'>12.3 Agricultural Employment and Productivity</a><a class='section-link ' href='12-04-skills-education-and-human-capital.html'>12.4 Skills, Education, and Human Capital</a></details>
+<details open><summary>13. Education, Health, and Welfare</summary><a class='section-link ' href='13-01-education-system-and-public-spending.html'>13.1 Education System, Skills Policy, and Public Spending</a><a class='section-link active' href='13-02-health-outcomes-and-service-capacity.html'>13.2 Health Care, Population Ageing, and Financial Protection</a><a class='section-link ' href='13-03-water-sanitation-nutrition-and-welfare.html'>13.3 Water, Sanitation, Nutrition, and Welfare</a><a class='section-link ' href='13-04-human-development-and-territorial-equity.html'>13.4 Human Development and Territorial Equity</a></details>
+<details ><summary>14. Financial Sector and Economic Institutions</summary><a class='section-link ' href='14-01-banks-credit-and-capital-markets.html'>14.1 Banks, Credit, and Capital Markets</a><a class='section-link ' href='14-02-state-bank-of-vietnam-and-financial-supervision.html'>14.2 State Bank of Vietnam and Financial Supervision</a><a class='section-link ' href='14-03-fintech-payments-and-inclusion.html'>14.3 Fintech, Payments, and Inclusion</a><a class='section-link ' href='14-04-financial-stability-and-reform-priorities.html'>14.4 Financial Stability and Reform Priorities</a></details>
+<details ><summary>15. Foreign Relations, Security, and Geopolitics</summary><a class='section-link ' href='15-01-bamboo-diplomacy-and-asean.html'>15.1 Bamboo Diplomacy, ASEAN, and the Evolution of Vietnam’s Foreign Policy Principles</a><a class='section-link ' href='15-02-china-the-united-states-and-the-east-sea.html'>15.2 China, the United States, and the East Sea</a><a class='section-link ' href='15-03-defense-police-border-and-transnational-risks.html'>15.3 Defense, Police, Border, and Transnational Risks</a><a class='section-link ' href='15-04-mekong-energy-security-and-strategic-corridors.html'>15.4 Mekong, Energy Security, and Strategic Corridors</a></details>
+<details ><summary>16. Major Policies and National Development Strategy</summary><a class='section-link ' href='16-01-evolution-of-national-development-strategy.html'>16.1 Evolution of National Development Strategy</a><a class='section-link ' href='16-02-socio-economic-development-strategy-2021-2030.html'>16.2 Socio-Economic Development Strategy 2021-2030</a><a class='section-link ' href='16-03-administrative-restructuring-and-public-administration-reform.html'>16.3 Administrative Restructuring and Public Administration Reform</a><a class='section-link ' href='16-04-digital-green-and-industrial-transformation.html'>16.4 Digital, Green, and Industrial Transformation</a><a class='section-link ' href='16-05-implementation-matrix-and-risks.html'>16.5 Implementation Matrix and Risks</a><a class='section-link ' href='16-06-green-growth-climate-governance-and-sdg-implementation.html'>16.6 Green Growth, Climate Governance, and SDG Implementation</a></details>
+<details ><summary>17. Integrated Assessment</summary><a class='section-link ' href='17-01-national-operating-model.html'>17.1 National Operating Model</a><a class='section-link ' href='17-02-institutional-strengths-risks-and-bottlenecks.html'>17.2 Institutional Strengths, Risks, and Bottlenecks</a><a class='section-link ' href='17-03-implications-for-korea-and-international-cooperation.html'>17.3 Implications for Korea and International Cooperation</a><a class='section-link ' href='17-04-vietnam-and-comparative-administration-theory.html'>17.4 Vietnam and Comparative Administration Theory</a><a class='section-link ' href='17-05-strategic-outlook.html'>17.5 Strategic Outlook</a></details>
+<details ><summary>18. Appendix, Sources, and Method</summary><a class='section-link ' href='18-01-timeline.html'>18.1 Timeline</a><a class='section-link ' href='18-02-government-organization-chart.html'>18.2 Government Organization Chart</a><a class='section-link ' href='18-03-major-laws-and-policy-documents.html'>18.3 Major Laws and Policy Documents</a><a class='section-link ' href='18-04-indicator-codebook.html'>18.4 Indicator Codebook</a><a class='section-link ' href='18-05-update-workflow-and-evidence-archive.html'>18.5 Update Workflow and Evidence Archive</a></details>
+<details ><summary>19. References</summary><a class='section-link ' href='19-01-references.html'>19.1 References</a><a class='section-link ' href='19-02-citation-and-source-integrity-notes.html'>19.2 Citation and Source Integrity Notes</a></details></aside>
+    <main>
+      <p class="crumb"><a href="../13-education-health.html">Chapter 13</a> / Section 2</p>
+      <h1>13.2 Health Care, Population Ageing, and Financial Protection</h1>
+      <p class="chapter-title">13. Education, Health, and Welfare</p>
+      <article class="section-body editable-section" data-md-panel="13-02-health-outcomes-and-service-capacity" data-md-source="sections/13-02-health-outcomes-and-service-capacity.md">
+  <div class="md-toolbar">
+    <button type="button" data-md-action="edit">Edit Markdown</button>
+    <button type="button" data-md-action="save" hidden>Save</button>
+    <button type="button" data-md-action="cancel" hidden>Cancel</button>
+  </div>
+  <div class="md-preview"><h2 id='13-2-health-care-population-ageing-and-financial-protection'>13.2 Health Care, Population Ageing, and Financial Protection</h2>
+<p><strong>ASEAN comparative lens (2026).</strong> Vietnam should be read in ASEAN comparison as ASEAN&#x27;s most prominent party-led, export-manufacturing upgrading case. Unlike the Philippines&#x27; service-remittance profile, Thailand&#x27;s older industrial-tourism base, Malaysia&#x27;s resource-industrial federal structure, or Indonesia&#x27;s archipelagic domestic-market scale, Vietnam&#x27;s comparative issue is how a socialist party-state manages very open global production networks. For this section, the regional comparison should compare education, health, welfare, water, sanitation, and human development as service-delivery tests across ASEAN&#x27;s unequal income and capacity spectrum. Local comparable indicators show: population 100.99 million (2024), rank 3 among the nine ASEAN reports in this workspace; GDP US$476.39 billion (2024), rank 4 among the nine ASEAN reports in this workspace; GDP per capita US$4,717 (2024), rank 5 among the nine ASEAN reports in this workspace; real GDP growth 7.09% (2024), rank 1 among the nine ASEAN reports in this workspace; government effectiveness 0.09 (2023), rank 6 among the nine ASEAN reports in this workspace; internet use 84.15% (2024), rank 4 among the nine ASEAN reports in this workspace. Use `sources/documents/regional/asean_comparative_lens_2026.md` together with ASEANstats, ASEAN Secretariat materials, and the country processed-indicator files before making cross-ASEAN claims.</p>
+<p>Education, health, and welfare are the social foundations of administrative performance. They determine whether citizens can participate productively in the economy, whether households can withstand shocks, and whether national development is translated into human capability. Viet Nam has achieved internationally recognized gains in basic health outcomes, maternal and child health, immunization, infectious-disease control, and health insurance expansion. But those achievements have changed the policy problem. The next stage is no longer only basic access. It is quality, prevention, financial protection, chronic-disease management, territorial equity, and system sustainability.</p>
+<p>The health sector should therefore be read as a state-capacity issue. A capable health system is more than a set of hospitals. It is a coordinated system of insurance finance, primary care, public health surveillance, referral rules, workforce planning, pharmaceutical regulation, provincial delivery, digital records, emergency preparedness, and household financial protection. When these elements work, health policy supports productivity, social trust, and inclusive development. When they fail, illness becomes a source of poverty, hospitals become congested, and ageing becomes a fiscal and administrative burden.</p>
+<h3>13.2.1 Health Outcomes as a Development Success</h3>
+<p>Viet Nam&#x27;s long-run health indicators show a major development achievement. World Bank WDI data show life expectancy at birth rising from 69.3 years in 1991 to 74.7 years in 2024. Infant mortality fell from 35.7 deaths per 1,000 live births in 1991 to 12.0 in 2024. These indicators are useful because they summarize the cumulative effects of nutrition, sanitation, maternal care, child health, immunization, infectious-disease control, living standards, and primary public-health administration.</p>
+<p>The decline in infant mortality is especially important. It indicates that the health system reached children and mothers beyond the wealthiest urban populations. Lower infant mortality usually reflects better prenatal care, safer delivery, neonatal services, vaccination, nutrition, clean water, and household education. For a country that moved from postwar scarcity into middle-income development, this is a clear sign that state-led public health and broad social improvement produced measurable human capability gains.</p>
+<p>Life expectancy, however, also signals the next policy challenge. Longer lives mean more years of potential productivity, but also more chronic disease, rehabilitation needs, long-term care, old-age income protection, and demand for continuous medical management. WHO&#x27;s healthy-life-expectancy series shows that people do not live all added years in full health. The gap between life expectancy and healthy life expectancy is the space where chronic disease, disability, injuries, mental health, and long-term care become policy problems.</p>
+<figure class="map-card">
+<img alt="Vietnam health outcomes, ageing, life expectancy, and infant mortality trends" class="admin-map" src="../assets/vnm_health_outcomes_ageing_transition.svg"/>
+<figcaption>Sources: World Bank WDI table IDs SP.DYN.LE00.IN, SP.DYN.IMRT.IN, SP.POP.0014.TO.ZS, and SP.POP.65UP.TO.ZS; WHO Global Health Observatory table ID WHOSIS_000002; UNFPA Viet Nam ageing brief. The figure shows that improved survival and child health now coincide with rapid population ageing.</figcaption>
+</figure>
+<h3>13.2.2 Population Ageing and the New Burden of Care</h3>
+<p>Viet Nam is ageing rapidly while still consolidating its middle-income development model. WDI age-structure data show the population aged 65 and above rising from 5.5 percent in 1990 to 9.0 percent in 2024, while the population aged 0-14 fell from 38.5 percent to 23.2 percent over the same period. UNFPA warns that within about a decade more than one in five Vietnamese citizens will be over age 60, marking the transition into an aged society. This creates a difficult sequencing problem: Viet Nam is becoming old before it has fully completed industrial upgrading, pension deepening, and health-system quality reform.</p>
+<p>Ageing changes the logic of health administration. A younger public-health agenda can focus heavily on infectious disease, maternal and child health, vaccination, and basic curative care. An older society requires continuous management of cardiovascular disease, cancer, diabetes, chronic respiratory illness, stroke, dementia, musculoskeletal disease, depression, injuries, and disability. It also requires rehabilitation, home-based care, nursing, geriatric medicine, assistive devices, social care, and family support.</p>
+<p>The political economy of ageing is also demanding. Older people use more health services, rely more on fixed income sources, and may require family caregivers who withdraw time from the labor market. If the health system remains hospital-centered, ageing will increase congestion and spending pressure. If primary care becomes credible and preventive, ageing can be managed with earlier screening, medication adherence, lifestyle support, rehabilitation, and community care. The administrative choice is therefore not whether Viet Nam will age, but whether it will age through a hospital queue or through a more integrated care model.</p>
+<h3>13.2.3 Epidemiological Transition and Noncommunicable Disease</h3>
+<p>Viet Nam&#x27;s disease burden is shifting toward noncommunicable diseases. Cardiovascular disease, cancer, diabetes, chronic respiratory disease, mental health conditions, kidney disease, road injuries, and pollution-related illness require continuous care rather than one-time treatment. This changes health administration in three ways.</p>
+<p>First, prevention becomes more valuable. Tobacco control, alcohol regulation, diet, physical activity, air quality, road safety, occupational health, and early screening become core health policies, even though many of these instruments sit outside the Ministry of Health. Second, primary care becomes more important. Chronic disease is managed through regular follow-up, medication adherence, laboratory monitoring, referral discipline, and patient education. Third, information systems become essential. A chronic-disease system needs records that follow patients across commune, district, provincial, private, and central facilities.</p>
+<p>This is why WHO&#x27;s recent reform language for Viet Nam emphasizes primary health care, disease prevention, essential care, health security, healthier environments, digital transformation, and investment in grassroots health services. The policy direction is sensible because a hospital-centered system can treat severe episodes, but it is less effective at preventing the conditions that create expensive admissions in the first place.</p>
+<h3>13.2.4 Financial Protection: Coverage Is Not Enough</h3>
+<p>Viet Nam has expanded social health insurance impressively, but high coverage has not eliminated household payment risk. The World Bank&#x27;s 2025 report on household out-of-pocket spending states that health insurance coverage reached about 91 percent in 2022, while out-of-pocket spending still remained about 40 percent of current health expenditure. WHO/GHED data show the same structural problem: household out-of-pocket expenditure was 34.6 percent of current health expenditure in 2000, rose above 40 percent after 2012, peaked at 45.1 percent in 2019, and was still 39.2 percent in 2023.</p>
+<p>This distinction is crucial. Insurance enrollment measures whether people are formally covered. Financial protection measures whether illness still forces households to pay unaffordable amounts, delay care, borrow money, sell assets, or accept lower-quality treatment. A country can have high insurance coverage and still have weak financial protection if medicines, diagnostics, copayments, uncovered services, informal payments, private outpatient care, transport, and higher-level hospital costs remain heavily borne by households.</p>
+<figure class="map-card">
+<img alt="Vietnam health financing, out-of-pocket spending, and service-capacity trends" class="admin-map" src="../assets/vnm_health_financial_protection_capacity.svg"/>
+<figcaption>Sources: WHO Global Health Observatory table IDs GHED_OOPSCHE_SHA2011 and HWF_0001; World Bank WDI table IDs SH.XPD.CHEX.GD.ZS, SH.XPD.CHEX.PC.CD, and SH.MED.BEDS.ZS; World Bank 2025 reports on out-of-pocket spending and hospital-sector spending. The figure distinguishes insurance coverage from actual household financial exposure and adds internationally comparable service-capacity indicators.</figcaption>
+</figure>
+<p>The household burden also has distributional consequences. Poorer households may avoid care, use lower-quality providers, or suffer catastrophic spending. Better-off households may spend more in absolute terms because they can access specialized or private services, but vulnerable groups face higher welfare risk from smaller payments. The World Bank report also highlights pharmaceutical spending as a major component of household out-of-pocket payments. That matters administratively because drug coverage, formulary rules, prescription enforcement, pharmacy regulation, and medicine quality are not side issues. They are central to financial protection.</p>
+<p>Viet Nam&#x27;s health expenditure has increased in absolute terms but remains moderate relative to the scale of need. WDI data show current health expenditure at 4.1 percent of GDP in 2000, 5.1 percent in 2010, and 4.6 percent in 2023. Current health expenditure per person rose from about USD 21 in 2000 to about USD 197 in 2023. The rise in per-capita spending reflects income growth and health-system expansion, but it also means the insurance fund, state budget, and households must manage higher expectations and more expensive technology. The fiscal question is therefore not only how much Viet Nam spends, but whether spending buys prevention, continuity, quality, and value for money.</p>
+<h3>13.2.5 Hospital-Centered Care and Overcrowding</h3>
+<p>Hospital congestion is one of the most visible symptoms of Viet Nam&#x27;s second-generation health challenge. Patients often bypass commune or district facilities and go directly to provincial or central hospitals because they distrust local quality, seek specialists, believe higher-level hospitals provide better diagnostics, or expect insurance coverage to work more reliably at larger facilities. The result is a self-reinforcing cycle: local facilities remain underused and undertrusted, while major hospitals become crowded and expensive.</p>
+<p>The World Bank&#x27;s 2025 hospital-sector diagnostic describes this as hospital-centrism. It reports that official average bed occupancy in 2020 was 129 percent, and that Viet Nam spends about 45 percent of current health expenditure on inpatient care. These figures are more than operational details. They reveal a system in which care is pulled upward into hospitals, even when prevention, outpatient management, and primary care could deliver better value.</p>
+<p>Hospital-centered care creates several problems. It raises costs, increases waiting time, reduces continuity of care, burdens rural patients who must travel, and diverts resources away from prevention. It can also weaken quality because crowded facilities face pressure on staff time, infection control, patient communication, and follow-up. Expanding hospital capacity may be necessary in some places, but building more beds cannot be the only answer. WDI hospital-bed data, converted from beds per 1,000 people to beds per 10,000 people, show an increase from 14.3 beds per 10,000 people in 2000 to 25.2 in 2017, the latest available internationally comparable WDI point in the local dataset. This indicates physical capacity expansion, but the occupancy evidence shows that capacity growth has not removed the hospital-pressure problem. If referral incentives, payment rules, patient trust, and primary-care quality remain weak, new capacity may simply fill up.</p>
+<h3>13.2.6 Primary Health Care and Grassroots Reform</h3>
+<p>The central reform task is to make primary health care credible. Commune health stations, district facilities, family doctors, nurses, pharmacists, and community health workers should be the first line for prevention, screening, chronic-disease follow-up, health education, vaccination, maternal care, nutrition advice, and early detection. But this only works if citizens trust the quality of local services and if insurance payment rules reward appropriate care at the right level.</p>
+<p>Primary health care reform requires more than slogans. It needs staffing, medicines, diagnostics, electronic records, referral protocols, clinical guidelines, quality supervision, public communication, and financing. It also requires a change in provider incentives. Fee-for-service payment can encourage more tests, medicines, and hospital episodes. Strategic purchasing, capitation, case-based payment, and performance-linked financing can help shift resources toward prevention and appropriate care, but they must be designed carefully to avoid under-provision or risk selection.</p>
+<p>The policy direction in 2025 suggests that Viet Nam recognizes the problem. WHO reported that Viet Nam&#x27;s reform agenda gives priority to primary health care, essential care, disease prevention, public health security, healthier environments, digital transformation, and grassroots services. WHO also welcomed National Assembly measures connected to a National Target Programme on Health Care, Population and Development for 2026-2035, intended to strengthen disease prevention, equity, sustainability, and support for vulnerable populations. These measures point toward a shift from hospital expansion alone to people-centered and prevention-oriented care.</p>
+<h3>13.2.7 Regional Inequality and Territorial Administration</h3>
+<p>National averages conceal territorial variation. Viet Nam&#x27;s health system serves dense urban centers, export-industrial provinces, deltas, coastal regions, mountainous areas, border provinces, and ethnic minority communities. Urban residents often have better access to specialized hospitals, private providers, advanced diagnostics, and digital services. Rural and remote residents depend more heavily on commune and district facilities, and may face distance, language, transport, income, staffing, and information barriers.</p>
+<p>This creates a governance problem. Health policy is nationally financed and regulated, but service quality is locally experienced. Provincial governments manage facilities, workforce allocation, investment priorities, public-private relationships, preventive campaigns, and emergency response. If decentralization gives responsibility without adequate resources or technical capacity, poorer localities may fall behind. If central rules are too rigid, local needs may be poorly served. The administrative challenge is to preserve national equity while allowing local delivery to adapt to geography, disease burden, and population structure.</p>
+<p>The 2025 administrative reorganization may matter for health delivery. Larger provincial-level units could improve planning for referral networks, emergency services, medical logistics, workforce deployment, digital health systems, and specialized facilities. But reorganization can also disrupt service management if facility ownership, budgets, staffing, and data systems are not integrated smoothly. Health reform therefore has to be coordinated with broader local-government reform.</p>
+<h3>13.2.8 Workforce, Quality, and the Mixed Health System</h3>
+<p>Health workforce capacity is a binding constraint. WHO/GHO data show medical doctors rising from 5.4 per 10,000 population in 2001 to 11.1 in 2021. Together with the increase in hospital beds, this suggests that Viet Nam&#x27;s service capacity has improved materially: more facilities, more clinical personnel, and higher per-capita health spending make it possible to treat more patients and offer more complex care than in the early 2000s.</p>
+<p>The quality interpretation must still be cautious. Beds and doctors are input indicators, not direct measures of quality. More beds can coexist with overcrowding if patients bypass lower-level facilities. More doctors can coexist with uneven quality if skilled personnel are concentrated in Hanoi, Ho Chi Minh City, provincial capitals, and specialized hospitals. Ageing and chronic disease also require a broader skill mix: family doctors, nurses, geriatric specialists, rehabilitation workers, mental health professionals, public-health officers, pharmacists, data managers, and community health workers. The issue is therefore not only the number of doctors. It is their distribution, incentives, training, continuing education, and ability to work in teams.</p>
+<p>Quality of care is the next frontier of legitimacy. The capacity indicators point in a positive direction, but they do not prove that clinical outcomes, patient safety, referral discipline, or territorial equity have improved at the same rate. As income rises, citizens expect accurate diagnosis, safe medicines, respectful treatment, shorter waiting times, infection control, continuity of care, and transparent information. Quality reform requires accreditation, clinical guidelines, facility performance indicators, patient-safety systems, health technology assessment, electronic medical records, and stronger regulation of both public and private providers. Trust in primary care is especially important because people will not follow referral rules if they believe local services are poor.</p>
+<p>Private-sector growth adds another layer. Rising income and dissatisfaction with crowded public hospitals have encouraged private clinics, pharmacies, hospitals, diagnostics, and digital health services. Private providers can increase choice and reduce pressure on public facilities, but they can also deepen inequality if higher-quality services are available mainly to affluent urban residents. Regulation must therefore cover licensing, pricing transparency, clinical quality, insurance contracting, data reporting, patient safety, and consumer protection.</p>
+<h3>13.2.9 Digital Health and Public Health Security</h3>
+<p>Digital health can help Viet Nam solve distance, coordination, and efficiency problems. Electronic medical records, digital insurance claims, telemedicine, remote consultation, medicine supply-chain tracking, AI-assisted diagnosis, and disease surveillance can reduce fragmentation. Digital systems can also help the insurance fund monitor claims, detect inappropriate payments, track out-of-pocket costs, and improve strategic purchasing.</p>
+<p>But digitalization is not a magic solution. It requires interoperability, privacy protection, cybersecurity, data governance, digital literacy, and clear rules for private platforms. If digital tools are built as separate applications that do not share data, they may add fragmentation rather than reduce it. If they are designed only for urban hospitals, they may widen territorial inequality. The administrative goal should be integrated public health infrastructure, not platform proliferation.</p>
+<p>Public health security also extends beyond hospitals. Viet Nam has experience in infectious-disease response, but future risks include pandemics, antimicrobial resistance, climate-related disease, air pollution, heat stress, flooding, food safety, tobacco, e-cigarettes, road injuries, and environmental health. These risks require coordination across health, transport, education, environment, agriculture, labor, urban planning, finance, and local government. Health policy is therefore intersectoral by nature.</p>
+<h3>13.2.10 Interpretation and Policy Implications</h3>
+<p>Viet Nam&#x27;s health-care challenge should be understood as a transition from coverage expansion to system quality. The country has already built important foundations: broad health insurance coverage, a public health network, improving survival indicators, growing medical capacity, and strong state commitment. The next stage is more difficult because it requires institutional redesign. Viet Nam must make primary care credible, reduce unnecessary hospital use, protect households from high out-of-pocket costs, manage chronic disease, regulate private providers, improve workforce distribution, and use digital tools responsibly.</p>
+<p>Viet Nam&#x27;s health progress is no longer in doubt. The harder transition is from basic coverage and hospital-based treatment toward equitable, preventive, financially protective, and quality-oriented care. If this transition succeeds, health policy will support productivity, social trust, and inclusive development. If it fails, ageing, chronic disease, hospital congestion, and high household payments may become major constraints on the next stage of development.</p>
+<table><thead><tr><th>Policy issue</th><th>Main problem</th><th>Policy implication</th></tr></thead><tbody><tr><td>Health insurance coverage</td><td>Formal coverage is high, but financial protection remains incomplete.</td><td>Reform benefit packages, copayments, drug coverage, reimbursement, and monitoring of household payments.</td></tr><tr><td>Out-of-pocket spending</td><td>Household payments remain close to 40 percent of current health expenditure.</td><td>Reduce catastrophic spending, improve affordability, and strengthen pharmaceutical coverage and regulation.</td></tr><tr><td>Population ageing</td><td>Older population increases chronic disease, rehabilitation, and care needs.</td><td>Build geriatric, rehabilitation, home-care, long-term care, and community support systems.</td></tr><tr><td>Noncommunicable disease</td><td>Chronic conditions require continuous management rather than episodic treatment.</td><td>Strengthen prevention, screening, primary care, medication adherence, and patient records.</td></tr><tr><td>Hospital congestion</td><td>Patients bypass lower-level facilities and crowd tertiary hospitals.</td><td>Improve referral systems, district care, family medicine, patient trust, and payment incentives.</td></tr><tr><td>Beds and physical capacity</td><td>Hospital beds per 10,000 people increased, but bed expansion alone has not resolved overcrowding.</td><td>Use capacity planning with referral reform, primary-care strengthening, infection control, and hospital-quality indicators.</td></tr><tr><td>Primary health care</td><td>Grassroots facilities often lack staff, medicines, diagnostics, and trust.</td><td>Invest in commune and district care, public health, chronic-disease management, and quality supervision.</td></tr><tr><td>Regional inequality</td><td>Remote and minority areas face weaker effective access.</td><td>Use targeted financing, workforce incentives, mobile services, language-sensitive care, and telemedicine.</td></tr><tr><td>Health workforce</td><td>Medical doctors per 10,000 people increased, but skilled personnel remain unevenly distributed.</td><td>Reform training, deployment, career incentives, nursing, family medicine, geriatrics, and continuing education.</td></tr><tr><td>Private sector</td><td>Private services expand but may deepen inequality and quality variation.</td><td>Strengthen licensing, clinical standards, pricing transparency, insurance contracting, and data reporting.</td></tr><tr><td>Digital health</td><td>Digital tools can improve access but create data and equity risks.</td><td>Build interoperable records, privacy rules, cybersecurity, claims systems, and rural digital access.</td></tr><tr><td>Public health security</td><td>Climate, air pollution, pandemics, tobacco, and road injuries create new risks.</td><td>Strengthen intersectoral prevention, surveillance, emergency preparedness, and healthier environments.</td></tr><tr><td>Fiscal sustainability</td><td>Ageing and chronic disease raise long-term spending pressure.</td><td>Use strategic purchasing, payment reform, prevention-oriented spending, and value-for-money assessment.</td></tr></tbody></table>
+<p>Health care is therefore not only a welfare sector. It is part of Viet Nam&#x27;s growth strategy and administrative modernization. A healthier population supports longer working lives, better learning, higher productivity, and stronger household resilience. Conversely, high out-of-pocket health spending can reduce consumption, increase debt, and push vulnerable households into poverty. Hospital congestion imposes hidden time costs on families. Chronic disease reduces productivity if it is not managed early. For these reasons, health reform belongs at the center of Viet Nam&#x27;s next development agenda.</p></div>
+  <textarea class="md-editor" hidden>## 13.2 Health Care, Population Ageing, and Financial Protection
+
+&lt;!-- asean-comparative-lens-2026:start --&gt;
+**ASEAN comparative lens (2026).** Vietnam should be read in ASEAN comparison as ASEAN&#x27;s most prominent party-led, export-manufacturing upgrading case. Unlike the Philippines&#x27; service-remittance profile, Thailand&#x27;s older industrial-tourism base, Malaysia&#x27;s resource-industrial federal structure, or Indonesia&#x27;s archipelagic domestic-market scale, Vietnam&#x27;s comparative issue is how a socialist party-state manages very open global production networks. For this section, the regional comparison should compare education, health, welfare, water, sanitation, and human development as service-delivery tests across ASEAN&#x27;s unequal income and capacity spectrum. Local comparable indicators show: population 100.99 million (2024), rank 3 among the nine ASEAN reports in this workspace; GDP US$476.39 billion (2024), rank 4 among the nine ASEAN reports in this workspace; GDP per capita US$4,717 (2024), rank 5 among the nine ASEAN reports in this workspace; real GDP growth 7.09% (2024), rank 1 among the nine ASEAN reports in this workspace; government effectiveness 0.09 (2023), rank 6 among the nine ASEAN reports in this workspace; internet use 84.15% (2024), rank 4 among the nine ASEAN reports in this workspace. Use `sources/documents/regional/asean_comparative_lens_2026.md` together with ASEANstats, ASEAN Secretariat materials, and the country processed-indicator files before making cross-ASEAN claims.
+&lt;!-- asean-comparative-lens-2026:end --&gt;
+
+Education, health, and welfare are the social foundations of administrative performance. They determine whether citizens can participate productively in the economy, whether households can withstand shocks, and whether national development is translated into human capability. Viet Nam has achieved internationally recognized gains in basic health outcomes, maternal and child health, immunization, infectious-disease control, and health insurance expansion. But those achievements have changed the policy problem. The next stage is no longer only basic access. It is quality, prevention, financial protection, chronic-disease management, territorial equity, and system sustainability.
+
+The health sector should therefore be read as a state-capacity issue. A capable health system is more than a set of hospitals. It is a coordinated system of insurance finance, primary care, public health surveillance, referral rules, workforce planning, pharmaceutical regulation, provincial delivery, digital records, emergency preparedness, and household financial protection. When these elements work, health policy supports productivity, social trust, and inclusive development. When they fail, illness becomes a source of poverty, hospitals become congested, and ageing becomes a fiscal and administrative burden.
+
+### 13.2.1 Health Outcomes as a Development Success
+
+Viet Nam&#x27;s long-run health indicators show a major development achievement. World Bank WDI data show life expectancy at birth rising from 69.3 years in 1991 to 74.7 years in 2024. Infant mortality fell from 35.7 deaths per 1,000 live births in 1991 to 12.0 in 2024. These indicators are useful because they summarize the cumulative effects of nutrition, sanitation, maternal care, child health, immunization, infectious-disease control, living standards, and primary public-health administration.
+
+The decline in infant mortality is especially important. It indicates that the health system reached children and mothers beyond the wealthiest urban populations. Lower infant mortality usually reflects better prenatal care, safer delivery, neonatal services, vaccination, nutrition, clean water, and household education. For a country that moved from postwar scarcity into middle-income development, this is a clear sign that state-led public health and broad social improvement produced measurable human capability gains.
+
+Life expectancy, however, also signals the next policy challenge. Longer lives mean more years of potential productivity, but also more chronic disease, rehabilitation needs, long-term care, old-age income protection, and demand for continuous medical management. WHO&#x27;s healthy-life-expectancy series shows that people do not live all added years in full health. The gap between life expectancy and healthy life expectancy is the space where chronic disease, disability, injuries, mental health, and long-term care become policy problems.
+
+&lt;figure class=&quot;map-card&quot;&gt;
+&lt;img alt=&quot;Vietnam health outcomes, ageing, life expectancy, and infant mortality trends&quot; class=&quot;admin-map&quot; src=&quot;../assets/vnm_health_outcomes_ageing_transition.svg&quot;/&gt;
+&lt;figcaption&gt;Sources: World Bank WDI table IDs SP.DYN.LE00.IN, SP.DYN.IMRT.IN, SP.POP.0014.TO.ZS, and SP.POP.65UP.TO.ZS; WHO Global Health Observatory table ID WHOSIS_000002; UNFPA Viet Nam ageing brief. The figure shows that improved survival and child health now coincide with rapid population ageing.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+### 13.2.2 Population Ageing and the New Burden of Care
+
+Viet Nam is ageing rapidly while still consolidating its middle-income development model. WDI age-structure data show the population aged 65 and above rising from 5.5 percent in 1990 to 9.0 percent in 2024, while the population aged 0-14 fell from 38.5 percent to 23.2 percent over the same period. UNFPA warns that within about a decade more than one in five Vietnamese citizens will be over age 60, marking the transition into an aged society. This creates a difficult sequencing problem: Viet Nam is becoming old before it has fully completed industrial upgrading, pension deepening, and health-system quality reform.
+
+Ageing changes the logic of health administration. A younger public-health agenda can focus heavily on infectious disease, maternal and child health, vaccination, and basic curative care. An older society requires continuous management of cardiovascular disease, cancer, diabetes, chronic respiratory illness, stroke, dementia, musculoskeletal disease, depression, injuries, and disability. It also requires rehabilitation, home-based care, nursing, geriatric medicine, assistive devices, social care, and family support.
+
+The political economy of ageing is also demanding. Older people use more health services, rely more on fixed income sources, and may require family caregivers who withdraw time from the labor market. If the health system remains hospital-centered, ageing will increase congestion and spending pressure. If primary care becomes credible and preventive, ageing can be managed with earlier screening, medication adherence, lifestyle support, rehabilitation, and community care. The administrative choice is therefore not whether Viet Nam will age, but whether it will age through a hospital queue or through a more integrated care model.
+
+### 13.2.3 Epidemiological Transition and Noncommunicable Disease
+
+Viet Nam&#x27;s disease burden is shifting toward noncommunicable diseases. Cardiovascular disease, cancer, diabetes, chronic respiratory disease, mental health conditions, kidney disease, road injuries, and pollution-related illness require continuous care rather than one-time treatment. This changes health administration in three ways.
+
+First, prevention becomes more valuable. Tobacco control, alcohol regulation, diet, physical activity, air quality, road safety, occupational health, and early screening become core health policies, even though many of these instruments sit outside the Ministry of Health. Second, primary care becomes more important. Chronic disease is managed through regular follow-up, medication adherence, laboratory monitoring, referral discipline, and patient education. Third, information systems become essential. A chronic-disease system needs records that follow patients across commune, district, provincial, private, and central facilities.
+
+This is why WHO&#x27;s recent reform language for Viet Nam emphasizes primary health care, disease prevention, essential care, health security, healthier environments, digital transformation, and investment in grassroots health services. The policy direction is sensible because a hospital-centered system can treat severe episodes, but it is less effective at preventing the conditions that create expensive admissions in the first place.
+
+### 13.2.4 Financial Protection: Coverage Is Not Enough
+
+Viet Nam has expanded social health insurance impressively, but high coverage has not eliminated household payment risk. The World Bank&#x27;s 2025 report on household out-of-pocket spending states that health insurance coverage reached about 91 percent in 2022, while out-of-pocket spending still remained about 40 percent of current health expenditure. WHO/GHED data show the same structural problem: household out-of-pocket expenditure was 34.6 percent of current health expenditure in 2000, rose above 40 percent after 2012, peaked at 45.1 percent in 2019, and was still 39.2 percent in 2023.
+
+This distinction is crucial. Insurance enrollment measures whether people are formally covered. Financial protection measures whether illness still forces households to pay unaffordable amounts, delay care, borrow money, sell assets, or accept lower-quality treatment. A country can have high insurance coverage and still have weak financial protection if medicines, diagnostics, copayments, uncovered services, informal payments, private outpatient care, transport, and higher-level hospital costs remain heavily borne by households.
+
+&lt;figure class=&quot;map-card&quot;&gt;
+&lt;img alt=&quot;Vietnam health financing, out-of-pocket spending, and service-capacity trends&quot; class=&quot;admin-map&quot; src=&quot;../assets/vnm_health_financial_protection_capacity.svg&quot;/&gt;
+&lt;figcaption&gt;Sources: WHO Global Health Observatory table IDs GHED_OOPSCHE_SHA2011 and HWF_0001; World Bank WDI table IDs SH.XPD.CHEX.GD.ZS, SH.XPD.CHEX.PC.CD, and SH.MED.BEDS.ZS; World Bank 2025 reports on out-of-pocket spending and hospital-sector spending. The figure distinguishes insurance coverage from actual household financial exposure and adds internationally comparable service-capacity indicators.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+The household burden also has distributional consequences. Poorer households may avoid care, use lower-quality providers, or suffer catastrophic spending. Better-off households may spend more in absolute terms because they can access specialized or private services, but vulnerable groups face higher welfare risk from smaller payments. The World Bank report also highlights pharmaceutical spending as a major component of household out-of-pocket payments. That matters administratively because drug coverage, formulary rules, prescription enforcement, pharmacy regulation, and medicine quality are not side issues. They are central to financial protection.
+
+Viet Nam&#x27;s health expenditure has increased in absolute terms but remains moderate relative to the scale of need. WDI data show current health expenditure at 4.1 percent of GDP in 2000, 5.1 percent in 2010, and 4.6 percent in 2023. Current health expenditure per person rose from about USD 21 in 2000 to about USD 197 in 2023. The rise in per-capita spending reflects income growth and health-system expansion, but it also means the insurance fund, state budget, and households must manage higher expectations and more expensive technology. The fiscal question is therefore not only how much Viet Nam spends, but whether spending buys prevention, continuity, quality, and value for money.
+
+### 13.2.5 Hospital-Centered Care and Overcrowding
+
+Hospital congestion is one of the most visible symptoms of Viet Nam&#x27;s second-generation health challenge. Patients often bypass commune or district facilities and go directly to provincial or central hospitals because they distrust local quality, seek specialists, believe higher-level hospitals provide better diagnostics, or expect insurance coverage to work more reliably at larger facilities. The result is a self-reinforcing cycle: local facilities remain underused and undertrusted, while major hospitals become crowded and expensive.
+
+The World Bank&#x27;s 2025 hospital-sector diagnostic describes this as hospital-centrism. It reports that official average bed occupancy in 2020 was 129 percent, and that Viet Nam spends about 45 percent of current health expenditure on inpatient care. These figures are more than operational details. They reveal a system in which care is pulled upward into hospitals, even when prevention, outpatient management, and primary care could deliver better value.
+
+Hospital-centered care creates several problems. It raises costs, increases waiting time, reduces continuity of care, burdens rural patients who must travel, and diverts resources away from prevention. It can also weaken quality because crowded facilities face pressure on staff time, infection control, patient communication, and follow-up. Expanding hospital capacity may be necessary in some places, but building more beds cannot be the only answer. WDI hospital-bed data, converted from beds per 1,000 people to beds per 10,000 people, show an increase from 14.3 beds per 10,000 people in 2000 to 25.2 in 2017, the latest available internationally comparable WDI point in the local dataset. This indicates physical capacity expansion, but the occupancy evidence shows that capacity growth has not removed the hospital-pressure problem. If referral incentives, payment rules, patient trust, and primary-care quality remain weak, new capacity may simply fill up.
+
+### 13.2.6 Primary Health Care and Grassroots Reform
+
+The central reform task is to make primary health care credible. Commune health stations, district facilities, family doctors, nurses, pharmacists, and community health workers should be the first line for prevention, screening, chronic-disease follow-up, health education, vaccination, maternal care, nutrition advice, and early detection. But this only works if citizens trust the quality of local services and if insurance payment rules reward appropriate care at the right level.
+
+Primary health care reform requires more than slogans. It needs staffing, medicines, diagnostics, electronic records, referral protocols, clinical guidelines, quality supervision, public communication, and financing. It also requires a change in provider incentives. Fee-for-service payment can encourage more tests, medicines, and hospital episodes. Strategic purchasing, capitation, case-based payment, and performance-linked financing can help shift resources toward prevention and appropriate care, but they must be designed carefully to avoid under-provision or risk selection.
+
+The policy direction in 2025 suggests that Viet Nam recognizes the problem. WHO reported that Viet Nam&#x27;s reform agenda gives priority to primary health care, essential care, disease prevention, public health security, healthier environments, digital transformation, and grassroots services. WHO also welcomed National Assembly measures connected to a National Target Programme on Health Care, Population and Development for 2026-2035, intended to strengthen disease prevention, equity, sustainability, and support for vulnerable populations. These measures point toward a shift from hospital expansion alone to people-centered and prevention-oriented care.
+
+### 13.2.7 Regional Inequality and Territorial Administration
+
+National averages conceal territorial variation. Viet Nam&#x27;s health system serves dense urban centers, export-industrial provinces, deltas, coastal regions, mountainous areas, border provinces, and ethnic minority communities. Urban residents often have better access to specialized hospitals, private providers, advanced diagnostics, and digital services. Rural and remote residents depend more heavily on commune and district facilities, and may face distance, language, transport, income, staffing, and information barriers.
+
+This creates a governance problem. Health policy is nationally financed and regulated, but service quality is locally experienced. Provincial governments manage facilities, workforce allocation, investment priorities, public-private relationships, preventive campaigns, and emergency response. If decentralization gives responsibility without adequate resources or technical capacity, poorer localities may fall behind. If central rules are too rigid, local needs may be poorly served. The administrative challenge is to preserve national equity while allowing local delivery to adapt to geography, disease burden, and population structure.
+
+The 2025 administrative reorganization may matter for health delivery. Larger provincial-level units could improve planning for referral networks, emergency services, medical logistics, workforce deployment, digital health systems, and specialized facilities. But reorganization can also disrupt service management if facility ownership, budgets, staffing, and data systems are not integrated smoothly. Health reform therefore has to be coordinated with broader local-government reform.
+
+### 13.2.8 Workforce, Quality, and the Mixed Health System
+
+Health workforce capacity is a binding constraint. WHO/GHO data show medical doctors rising from 5.4 per 10,000 population in 2001 to 11.1 in 2021. Together with the increase in hospital beds, this suggests that Viet Nam&#x27;s service capacity has improved materially: more facilities, more clinical personnel, and higher per-capita health spending make it possible to treat more patients and offer more complex care than in the early 2000s.
+
+The quality interpretation must still be cautious. Beds and doctors are input indicators, not direct measures of quality. More beds can coexist with overcrowding if patients bypass lower-level facilities. More doctors can coexist with uneven quality if skilled personnel are concentrated in Hanoi, Ho Chi Minh City, provincial capitals, and specialized hospitals. Ageing and chronic disease also require a broader skill mix: family doctors, nurses, geriatric specialists, rehabilitation workers, mental health professionals, public-health officers, pharmacists, data managers, and community health workers. The issue is therefore not only the number of doctors. It is their distribution, incentives, training, continuing education, and ability to work in teams.
+
+Quality of care is the next frontier of legitimacy. The capacity indicators point in a positive direction, but they do not prove that clinical outcomes, patient safety, referral discipline, or territorial equity have improved at the same rate. As income rises, citizens expect accurate diagnosis, safe medicines, respectful treatment, shorter waiting times, infection control, continuity of care, and transparent information. Quality reform requires accreditation, clinical guidelines, facility performance indicators, patient-safety systems, health technology assessment, electronic medical records, and stronger regulation of both public and private providers. Trust in primary care is especially important because people will not follow referral rules if they believe local services are poor.
+
+Private-sector growth adds another layer. Rising income and dissatisfaction with crowded public hospitals have encouraged private clinics, pharmacies, hospitals, diagnostics, and digital health services. Private providers can increase choice and reduce pressure on public facilities, but they can also deepen inequality if higher-quality services are available mainly to affluent urban residents. Regulation must therefore cover licensing, pricing transparency, clinical quality, insurance contracting, data reporting, patient safety, and consumer protection.
+
+### 13.2.9 Digital Health and Public Health Security
+
+Digital health can help Viet Nam solve distance, coordination, and efficiency problems. Electronic medical records, digital insurance claims, telemedicine, remote consultation, medicine supply-chain tracking, AI-assisted diagnosis, and disease surveillance can reduce fragmentation. Digital systems can also help the insurance fund monitor claims, detect inappropriate payments, track out-of-pocket costs, and improve strategic purchasing.
+
+But digitalization is not a magic solution. It requires interoperability, privacy protection, cybersecurity, data governance, digital literacy, and clear rules for private platforms. If digital tools are built as separate applications that do not share data, they may add fragmentation rather than reduce it. If they are designed only for urban hospitals, they may widen territorial inequality. The administrative goal should be integrated public health infrastructure, not platform proliferation.
+
+Public health security also extends beyond hospitals. Viet Nam has experience in infectious-disease response, but future risks include pandemics, antimicrobial resistance, climate-related disease, air pollution, heat stress, flooding, food safety, tobacco, e-cigarettes, road injuries, and environmental health. These risks require coordination across health, transport, education, environment, agriculture, labor, urban planning, finance, and local government. Health policy is therefore intersectoral by nature.
+
+### 13.2.10 Interpretation and Policy Implications
+
+Viet Nam&#x27;s health-care challenge should be understood as a transition from coverage expansion to system quality. The country has already built important foundations: broad health insurance coverage, a public health network, improving survival indicators, growing medical capacity, and strong state commitment. The next stage is more difficult because it requires institutional redesign. Viet Nam must make primary care credible, reduce unnecessary hospital use, protect households from high out-of-pocket costs, manage chronic disease, regulate private providers, improve workforce distribution, and use digital tools responsibly.
+
+Viet Nam&#x27;s health progress is no longer in doubt. The harder transition is from basic coverage and hospital-based treatment toward equitable, preventive, financially protective, and quality-oriented care. If this transition succeeds, health policy will support productivity, social trust, and inclusive development. If it fails, ageing, chronic disease, hospital congestion, and high household payments may become major constraints on the next stage of development.
+
+| Policy issue | Main problem | Policy implication |
+| --- | --- | --- |
+| Health insurance coverage | Formal coverage is high, but financial protection remains incomplete. | Reform benefit packages, copayments, drug coverage, reimbursement, and monitoring of household payments. |
+| Out-of-pocket spending | Household payments remain close to 40 percent of current health expenditure. | Reduce catastrophic spending, improve affordability, and strengthen pharmaceutical coverage and regulation. |
+| Population ageing | Older population increases chronic disease, rehabilitation, and care needs. | Build geriatric, rehabilitation, home-care, long-term care, and community support systems. |
+| Noncommunicable disease | Chronic conditions require continuous management rather than episodic treatment. | Strengthen prevention, screening, primary care, medication adherence, and patient records. |
+| Hospital congestion | Patients bypass lower-level facilities and crowd tertiary hospitals. | Improve referral systems, district care, family medicine, patient trust, and payment incentives. |
+| Beds and physical capacity | Hospital beds per 10,000 people increased, but bed expansion alone has not resolved overcrowding. | Use capacity planning with referral reform, primary-care strengthening, infection control, and hospital-quality indicators. |
+| Primary health care | Grassroots facilities often lack staff, medicines, diagnostics, and trust. | Invest in commune and district care, public health, chronic-disease management, and quality supervision. |
+| Regional inequality | Remote and minority areas face weaker effective access. | Use targeted financing, workforce incentives, mobile services, language-sensitive care, and telemedicine. |
+| Health workforce | Medical doctors per 10,000 people increased, but skilled personnel remain unevenly distributed. | Reform training, deployment, career incentives, nursing, family medicine, geriatrics, and continuing education. |
+| Private sector | Private services expand but may deepen inequality and quality variation. | Strengthen licensing, clinical standards, pricing transparency, insurance contracting, and data reporting. |
+| Digital health | Digital tools can improve access but create data and equity risks. | Build interoperable records, privacy rules, cybersecurity, claims systems, and rural digital access. |
+| Public health security | Climate, air pollution, pandemics, tobacco, and road injuries create new risks. | Strengthen intersectoral prevention, surveillance, emergency preparedness, and healthier environments. |
+| Fiscal sustainability | Ageing and chronic disease raise long-term spending pressure. | Use strategic purchasing, payment reform, prevention-oriented spending, and value-for-money assessment. |
+
+Health care is therefore not only a welfare sector. It is part of Viet Nam&#x27;s growth strategy and administrative modernization. A healthier population supports longer working lives, better learning, higher productivity, and stronger household resilience. Conversely, high out-of-pocket health spending can reduce consumption, increase debt, and push vulnerable households into poverty. Hospital congestion imposes hidden time costs on families. Chronic disease reduces productivity if it is not managed early. For these reasons, health reform belongs at the center of Viet Nam&#x27;s next development agenda.</textarea>
+</article>
+      
+<figure class="chart-card">
+  <h2>education</h2>
+  <div class="chart-frame"><canvas id="chart-education"></canvas></div>
+  <figcaption>Source:  Unit: </figcaption>
+  <p>The figure is included as chapter-level evidence. Interpret it by identifying direction, turning points, divergence among series, and the policy or institutional mechanism that could plausibly explain the pattern.</p>
+</figure>
+
+
+<figure class="chart-card">
+  <h2>life-expectancy</h2>
+  <div class="chart-frame"><canvas id="chart-life-expectancy"></canvas></div>
+  <figcaption>Source:  Unit: </figcaption>
+  <p>The figure is included as chapter-level evidence. Interpret it by identifying direction, turning points, divergence among series, and the policy or institutional mechanism that could plausibly explain the pattern.</p>
+</figure>
+
+
+<figure class="chart-card">
+  <h2>infant-mortality</h2>
+  <div class="chart-frame"><canvas id="chart-infant-mortality"></canvas></div>
+  <figcaption>Source:  Unit: </figcaption>
+  <p>The figure is included as chapter-level evidence. Interpret it by identifying direction, turning points, divergence among series, and the policy or institutional mechanism that could plausibly explain the pattern.</p>
+</figure>
+
+
+<figure class="chart-card">
+  <h2>health-expenditure</h2>
+  <div class="chart-frame"><canvas id="chart-health-expenditure"></canvas></div>
+  <figcaption>Source:  Unit: </figcaption>
+  <p>The figure is included as chapter-level evidence. Interpret it by identifying direction, turning points, divergence among series, and the policy or institutional mechanism that could plausibly explain the pattern.</p>
+</figure>
+
+    </main>
+  </div>
+  <script>
+    window.REPORT_CHARTS = [];
+    document.addEventListener('DOMContentLoaded', () => {
+      if (!window.Chart || !window.REPORT_CHARTS) return;
+      window.REPORT_CHARTS.forEach((entry) => {
+        const cfg = entry.data || {};
+        const el = document.getElementById('chart-' + entry.id);
+        if (!el || !cfg.datasets) return;
+        const colors = ['#197278', '#246b46', '#b7860b', '#7b2d26', '#3f4e9a', '#6a4c93'];
+        const dashes = [[], [8, 4], [2, 3], [10, 4, 2, 4], [1, 4], [12, 3, 3, 3]];
+        const pointStyles = ['circle', 'rect', 'triangle', 'rectRot', 'crossRot', 'star'];
+        const datasets = (cfg.datasets || []).map((dataset, i) => ({
+          ...dataset,
+          borderColor: dataset.borderColor || colors[i % colors.length],
+          backgroundColor: dataset.backgroundColor || 'transparent',
+          borderDash: dataset.borderDash || dashes[i % dashes.length],
+          borderWidth: dataset.borderWidth || 2.4,
+          pointStyle: dataset.pointStyle || pointStyles[i % pointStyles.length],
+          pointRadius: dataset.pointRadius ?? 1.8,
+          tension: dataset.tension ?? 0.25,
+          spanGaps: dataset.spanGaps ?? true
+        }));
+        new Chart(el, {
+          type: 'line',
+          data: { labels: cfg.labels || [], datasets },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            interaction: { mode: 'index', intersect: false },
+            plugins: { legend: { position: 'bottom', labels: { boxWidth: 28 } } },
+            scales: { x: { title: { display: true, text: 'Year' } }, y: { title: { display: true, text: cfg.unit || 'Value' } } }
+          }
+        });
+      });
+    });
+  </script>
+  <script src="../assets/report.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  function fallbackMarkdown(text) {
+    const escaped = text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    return escaped.split(/\n{2,}/).map((block) => `<p>${block.replace(/\n/g, "<br>")}</p>`).join("");
+  }
+  function renderMarkdown(text) {
+    return window.marked ? marked.parse(text) : fallbackMarkdown(text);
+  }
+  document.querySelectorAll('[data-md-panel]').forEach((panel) => {
+    const id = panel.getAttribute('data-md-panel');
+    const source = panel.getAttribute('data-md-source');
+    const preview = panel.querySelector('.md-preview');
+    const editor = panel.querySelector('.md-editor');
+    const edit = panel.querySelector('[data-md-action="edit"]');
+    const save = panel.querySelector('[data-md-action="save"]');
+    const cancel = panel.querySelector('[data-md-action="cancel"]');
+    if (!preview || !editor || !edit || !save || !cancel) return;
+    const storageKey = `country-report-markdown:v1:${source || id}`;
+    const original = editor.value;
+    const stored = localStorage.getItem(storageKey);
+    const hasStoredDraft = stored !== null && (!source || window.location.protocol === 'file:');
+    if (hasStoredDraft) editor.value = stored;
+    const showPreview = () => { preview.innerHTML = renderMarkdown(editor.value); };
+    const setEditing = (editing) => {
+      editor.hidden = !editing;
+      preview.hidden = editing;
+      edit.hidden = editing;
+      save.hidden = !editing;
+      cancel.hidden = !editing;
+    };
+    async function saveMarkdown() {
+      if (source && window.location.protocol.startsWith('http')) {
+        const response = await fetch('/api/save-section', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ source, markdown: editor.value })
+        });
+        if (!response.ok) throw new Error(await response.text());
+        localStorage.removeItem(storageKey);
+        return true;
+      } else {
+        localStorage.setItem(storageKey, editor.value);
+        if (source) window.alert('This edit was saved only as a browser draft. Open the report through code/serve_report.py to save it permanently to the Markdown source file.');
+        return false;
+      }
+    }
+    if (hasStoredDraft) showPreview();
+    setEditing(false);
+    edit.addEventListener('click', () => setEditing(true));
+    save.addEventListener('click', async () => {
+      save.disabled = true;
+      try {
+        const savedToServer = await saveMarkdown();
+        if (savedToServer) {
+          window.location.reload();
+          return;
+        }
+        showPreview();
+        setEditing(false);
+      } catch (error) {
+        window.alert(error.message || 'Could not save the Markdown source.');
+      } finally {
+        save.disabled = false;
+      }
+    });
+    cancel.addEventListener('click', () => {
+      editor.value = localStorage.getItem(storageKey) ?? original;
+      if (hasStoredDraft || window.location.protocol === 'file:') showPreview();
+      setEditing(false);
+    });
+  });
+});
+</script>
+
+</body>
+</html>

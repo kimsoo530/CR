@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 710" role="img" aria-label="Vietnam sectoral value-added structure and 2025 sector growth contribution">
+  
+  <style>
+    .title{font:700 28px Arial,sans-serif;fill:#172026}
+    .subtitle{font:15px Arial,sans-serif;fill:#526069}
+    .panel-title{font:700 16px Arial,sans-serif;fill:#172026}
+    .panel-y{font:11px Arial,sans-serif;fill:#526069;text-anchor:end}
+    .panel-x{font:11px Arial,sans-serif;fill:#526069;text-anchor:middle}
+    .panel-last{font:700 11px Arial,sans-serif;fill:#172026}
+    .legend{font:11px Arial,sans-serif;fill:#526069}
+    .bar-label{font:700 13px Arial,sans-serif;fill:#172026}
+    .bar-value{font:12px Arial,sans-serif;fill:#526069}
+    .source{font:12px Arial,sans-serif;fill:#65717a}
+  </style>
+  <rect width="1100" height="710" fill="#f6f4ee"/>
+  <text x="54" y="44" class="title">Viet Nam Sectoral Structure and 2025 Growth Contribution</text>
+  <text x="54" y="68" class="subtitle">Long-run WDI shares show structural transformation; NSO 2025 data show services and industry carrying current growth.</text>
+  <rect x="54" y="104" width="992" height="300" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="76" y="136" class="panel-title">Value added by sector (% of GDP)</text>
+  <line x1="108" y1="358.00" x2="1016" y2="358.00" stroke="#edf2ef"/>
+  <text x="98" y="362.00" class="panel-y">0%</text>
+  <line x1="108" y1="318.80" x2="1016" y2="318.80" stroke="#edf2ef"/>
+  <text x="98" y="322.80" class="panel-y">10%</text>
+  <line x1="108" y1="279.60" x2="1016" y2="279.60" stroke="#edf2ef"/>
+  <text x="98" y="283.60" class="panel-y">20%</text>
+  <line x1="108" y1="240.40" x2="1016" y2="240.40" stroke="#edf2ef"/>
+  <text x="98" y="244.40" class="panel-y">30%</text>
+  <line x1="108" y1="201.20" x2="1016" y2="201.20" stroke="#edf2ef"/>
+  <text x="98" y="205.20" class="panel-y">40%</text>
+  <line x1="108" y1="162.00" x2="1016" y2="162.00" stroke="#edf2ef"/>
+  <text x="98" y="166.00" class="panel-y">50%</text>
+  <line x1="108.00" y1="162" x2="108.00" y2="358" stroke="#f1f4f5"/>
+  <text x="108.00" y="382" class="panel-x">1990</text>
+  <line x1="375.06" y1="162" x2="375.06" y2="358" stroke="#f1f4f5"/>
+  <text x="375.06" y="382" class="panel-x">2000</text>
+  <line x1="642.12" y1="162" x2="642.12" y2="358" stroke="#f1f4f5"/>
+  <text x="642.12" y="382" class="panel-x">2010</text>
+  <line x1="909.18" y1="162" x2="909.18" y2="358" stroke="#f1f4f5"/>
+  <text x="909.18" y="382" class="panel-x">2020</text>
+  <line x1="1016.00" y1="162" x2="1016.00" y2="358" stroke="#f1f4f5"/>
+  <text x="1016.00" y="382" class="panel-x">2024</text>
+  <path d="M108.00,206.15 L134.71,199.28 L161.41,224.96 L188.12,240.91 L214.82,250.48 L241.53,251.44 L268.24,249.19 L294.94,256.97 L321.65,256.94 L348.35,258.30 L375.06,261.82 L401.76,266.90 L428.47,267.72 L455.18,269.63 L481.88,272.51 L508.59,282.34 L535.29,284.59 L562.00,284.87 L588.71,277.98 L615.41,282.86 L642.12,297.73 L668.82,294.26 L695.53,294.50 L722.24,298.35 L748.94,299.67 L775.65,301.26 L802.35,303.83 L829.06,307.31 L855.76,309.76 L882.47,311.80 L909.18,308.39 L935.88,308.60 L962.59,311.43 L989.29,311.50 L1016.00,311.50" fill="none" stroke="#b8873a" stroke-width="3"/>
+  <circle cx="1016.00" cy="311.50" r="4" fill="#b8873a" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="964.00" y="303.50" class="panel-last">11.9%</text>
+  <rect x="76" y="374" width="10" height="10" fill="#b8873a" rx="2"/>
+  <text x="92" y="383" class="legend">Agriculture</text>
+  <path d="M108.00,269.12 L134.71,264.73 L161.41,251.13 L188.12,244.71 L214.82,244.84 L241.53,245.28 L268.24,241.46 L294.94,232.27 L321.65,230.63 L348.35,222.78 L375.06,214.02 L401.76,208.53 L428.47,207.13 L455.18,203.28 L481.88,200.38 L508.59,208.53 L535.29,206.75 L562.00,207.03 L588.71,212.66 L615.41,211.44 L642.12,228.55 L668.82,222.44 L695.53,217.43 L722.24,218.55 L748.94,219.63 L775.65,223.68 L802.35,224.27 L829.06,219.27 L855.76,214.75 L882.47,213.73 L909.18,213.96 L935.88,211.43 L962.59,207.15 L989.29,210.68 L1016.00,210.45" fill="none" stroke="#176b63" stroke-width="3"/>
+  <circle cx="1016.00" cy="210.45" r="4" fill="#176b63" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="964.00" y="202.45" class="panel-last">37.6%</text>
+  <rect x="226" y="374" width="10" height="10" fill="#176b63" rx="2"/>
+  <text x="242" y="383" class="legend">Industry</text>
+  <path d="M108.00,206.73 L134.71,217.99 L161.41,205.91 L188.12,196.38 L214.82,186.68 L241.53,185.28 L268.24,191.36 L294.94,192.76 L321.65,194.43 L348.35,200.92 L375.06,206.16 L401.76,206.57 L428.47,207.14 L455.18,209.09 L481.88,209.10 L508.59,191.13 L535.29,190.66 L562.00,190.09 L588.71,191.36 L615.41,187.70 L642.12,198.74 L668.82,205.48 L695.53,204.65 L722.24,199.08 L748.94,197.58 L775.65,192.60 L802.35,190.01 L829.06,191.08 L855.76,192.69 L882.47,191.52 L909.18,194.02 L935.88,196.27 L962.59,196.75 L989.29,192.21 L1016.00,191.95" fill="none" stroke="#7c2f2a" stroke-width="3"/>
+  <circle cx="1016.00" cy="191.95" r="4" fill="#7c2f2a" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="964.00" y="183.95" class="panel-last">42.4%</text>
+  <rect x="370" y="374" width="10" height="10" fill="#7c2f2a" rx="2"/>
+  <text x="386" y="383" class="legend">Services</text>
+  <rect x="54" y="450" width="992" height="200" rx="10" fill="#ffffff" stroke="#d7dee2"/><text x="76" y="482" class="panel-title">2025 NSO sector growth and contribution to total value-added growth</text><text x="76" y="506" class="bar-value">Growth rate shows sector speed; contribution shows which sectors carried national value-added growth.</text><text x="76" y="551" class="bar-label">Agriculture, forestry, and fisheries</text><rect x="342" y="536" width="68.04" height="16" rx="4" fill="#b8873a" opacity="0.70"/><text x="418.04" y="549" class="bar-value">growth 3.78%</text><rect x="608" y="536" width="40.47" height="16" rx="4" fill="#b8873a"/><text x="656.47" y="549" class="bar-value">contribution 5.30%</text><text x="76" y="593" class="bar-label">Industry and construction</text><rect x="342" y="578" width="161.10" height="16" rx="4" fill="#176b63" opacity="0.70"/><text x="511.10" y="591" class="bar-value">growth 8.95%</text><rect x="608" y="578" width="333.10" height="16" rx="4" fill="#176b63"/><text x="949.10" y="591" class="bar-value">contribution 43.62%</text><text x="76" y="635" class="bar-label">Services</text><rect x="342" y="620" width="155.16" height="16" rx="4" fill="#7c2f2a" opacity="0.70"/><text x="505.16" y="633" class="bar-value">growth 8.62%</text><rect x="608" y="620" width="390.07" height="16" rx="4" fill="#7c2f2a"/><text x="1006.07" y="633" class="bar-value">contribution 51.08%</text>
+  <text x="54" y="684" class="source">Sources: World Bank WDI table IDs NV.AGR.TOTL.ZS, NV.IND.TOTL.ZS, and NV.SRV.TOTL.ZS; National Statistics Office of Viet Nam, Socio-economic situation in Q4 and 2025, for 2025 sector growth and contribution.</text>
+</svg>

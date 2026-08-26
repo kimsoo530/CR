@@ -1,0 +1,324 @@
+source,indicator_code,indicator_name,unit,country,year,value
+World Bank WDI API,GC.REV.XGRT.GD.ZS,Government revenue excluding grants,percent of GDP,MMR,1973,12.3647208149576
+World Bank WDI API,GC.REV.XGRT.GD.ZS,Government revenue excluding grants,percent of GDP,MMR,1974,9.87647930253264
+World Bank WDI API,GC.REV.XGRT.GD.ZS,Government revenue excluding grants,percent of GDP,MMR,1975,9.23456992601636
+World Bank WDI API,GC.REV.XGRT.GD.ZS,Government revenue excluding grants,percent of GDP,MMR,1976,11.9371421015371
+World Bank WDI API,GC.REV.XGRT.GD.ZS,Government revenue excluding grants,percent of GDP,MMR,1977,14.3966507340018
+World Bank WDI API,GC.REV.XGRT.GD.ZS,Government revenue excluding grants,percent of GDP,MMR,1978,14.9465406454946
+World Bank WDI API,GC.REV.XGRT.GD.ZS,Government revenue excluding grants,percent of GDP,MMR,1979,16.0954343159505
+World Bank WDI API,GC.REV.XGRT.GD.ZS,Government revenue excluding grants,percent of GDP,MMR,1980,15.9833206136733
+World Bank WDI API,GC.REV.XGRT.GD.ZS,Government revenue excluding grants,percent of GDP,MMR,1981,17.0242537313433
+World Bank WDI API,GC.REV.XGRT.GD.ZS,Government revenue excluding grants,percent of GDP,MMR,1982,15.9001086770185
+World Bank WDI API,GC.REV.XGRT.GD.ZS,Government revenue excluding grants,percent of GDP,MMR,1983,15.3302696143429
+World Bank WDI API,GC.REV.XGRT.GD.ZS,Government revenue excluding grants,percent of GDP,MMR,1984,14.4392410831161
+World Bank WDI API,GC.REV.XGRT.GD.ZS,Government revenue excluding grants,percent of GDP,MMR,1985,13.6044584802099
+World Bank WDI API,GC.REV.XGRT.GD.ZS,Government revenue excluding grants,percent of GDP,MMR,1986,12.3907296552046
+World Bank WDI API,GC.REV.XGRT.GD.ZS,Government revenue excluding grants,percent of GDP,MMR,1987,10.4748316593676
+World Bank WDI API,GC.REV.XGRT.GD.ZS,Government revenue excluding grants,percent of GDP,MMR,1988,8.45192240214495
+World Bank WDI API,GC.REV.XGRT.GD.ZS,Government revenue excluding grants,percent of GDP,MMR,1989,7.8160843585557
+World Bank WDI API,GC.REV.XGRT.GD.ZS,Government revenue excluding grants,percent of GDP,MMR,1990,10.4632443823737
+World Bank WDI API,GC.REV.XGRT.GD.ZS,Government revenue excluding grants,percent of GDP,MMR,1991,9.28414195963221
+World Bank WDI API,GC.REV.XGRT.GD.ZS,Government revenue excluding grants,percent of GDP,MMR,1992,7.78725450059684
+World Bank WDI API,GC.REV.XGRT.GD.ZS,Government revenue excluding grants,percent of GDP,MMR,1993,7.25215065357055
+World Bank WDI API,GC.REV.XGRT.GD.ZS,Government revenue excluding grants,percent of GDP,MMR,1994,6.64799531107986
+World Bank WDI API,GC.REV.XGRT.GD.ZS,Government revenue excluding grants,percent of GDP,MMR,1995,6.37938646898032
+World Bank WDI API,GC.REV.XGRT.GD.ZS,Government revenue excluding grants,percent of GDP,MMR,1996,6.84802646531478
+World Bank WDI API,GC.REV.XGRT.GD.ZS,Government revenue excluding grants,percent of GDP,MMR,1997,7.67184542509261
+World Bank WDI API,GC.REV.XGRT.GD.ZS,Government revenue excluding grants,percent of GDP,MMR,1998,7.20516394827603
+World Bank WDI API,GC.REV.XGRT.GD.ZS,Government revenue excluding grants,percent of GDP,MMR,1999,5.60119069359728
+World Bank WDI API,GC.REV.XGRT.GD.ZS,Government revenue excluding grants,percent of GDP,MMR,2000,5.25127485939087
+World Bank WDI API,GC.REV.XGRT.GD.ZS,Government revenue excluding grants,percent of GDP,MMR,2001,4.57227761288365
+World Bank WDI API,GC.REV.XGRT.GD.ZS,Government revenue excluding grants,percent of GDP,MMR,2002,4.96011318385281
+World Bank WDI API,GC.REV.XGRT.GD.ZS,Government revenue excluding grants,percent of GDP,MMR,2003,4.9777128995997
+World Bank WDI API,GC.REV.XGRT.GD.ZS,Government revenue excluding grants,percent of GDP,MMR,2004,6.46875895101498
+World Bank WDI API,GC.REV.XGRT.GD.ZS,Government revenue excluding grants,percent of GDP,MMR,2005,6.66748304643303
+World Bank WDI API,GC.REV.XGRT.GD.ZS,Government revenue excluding grants,percent of GDP,MMR,2012,19.7007501337319
+World Bank WDI API,GC.REV.XGRT.GD.ZS,Government revenue excluding grants,percent of GDP,MMR,2013,20.0136948721279
+World Bank WDI API,GC.REV.XGRT.GD.ZS,Government revenue excluding grants,percent of GDP,MMR,2014,22.0275608393637
+World Bank WDI API,GC.REV.XGRT.GD.ZS,Government revenue excluding grants,percent of GDP,MMR,2015,18.5063974234776
+World Bank WDI API,GC.REV.XGRT.GD.ZS,Government revenue excluding grants,percent of GDP,MMR,2016,16.789835742121
+World Bank WDI API,GC.REV.XGRT.GD.ZS,Government revenue excluding grants,percent of GDP,MMR,2017,15.9852528823652
+World Bank WDI API,GC.REV.XGRT.GD.ZS,Government revenue excluding grants,percent of GDP,MMR,2018,7.01300899608592
+World Bank WDI API,GC.REV.XGRT.GD.ZS,Government revenue excluding grants,percent of GDP,MMR,2019,14.3891961645863
+World Bank WDI API,GC.TAX.TOTL.GD.ZS,Tax revenue,percent of GDP,MMR,1973,9.42479753366172
+World Bank WDI API,GC.TAX.TOTL.GD.ZS,Tax revenue,percent of GDP,MMR,1974,7.612796448263
+World Bank WDI API,GC.TAX.TOTL.GD.ZS,Tax revenue,percent of GDP,MMR,1975,7.92264763025389
+World Bank WDI API,GC.TAX.TOTL.GD.ZS,Tax revenue,percent of GDP,MMR,1976,8.80519186781064
+World Bank WDI API,GC.TAX.TOTL.GD.ZS,Tax revenue,percent of GDP,MMR,1977,10.4564792033779
+World Bank WDI API,GC.TAX.TOTL.GD.ZS,Tax revenue,percent of GDP,MMR,1978,10.0094338048831
+World Bank WDI API,GC.TAX.TOTL.GD.ZS,Tax revenue,percent of GDP,MMR,1979,10.2114167420344
+World Bank WDI API,GC.TAX.TOTL.GD.ZS,Tax revenue,percent of GDP,MMR,1980,9.61174895435775
+World Bank WDI API,GC.TAX.TOTL.GD.ZS,Tax revenue,percent of GDP,MMR,1981,9.9277052238806
+World Bank WDI API,GC.TAX.TOTL.GD.ZS,Tax revenue,percent of GDP,MMR,1982,9.83102245487561
+World Bank WDI API,GC.TAX.TOTL.GD.ZS,Tax revenue,percent of GDP,MMR,1983,9.23669818868891
+World Bank WDI API,GC.TAX.TOTL.GD.ZS,Tax revenue,percent of GDP,MMR,1984,8.58443574407767
+World Bank WDI API,GC.TAX.TOTL.GD.ZS,Tax revenue,percent of GDP,MMR,1985,8.25519326447815
+World Bank WDI API,GC.TAX.TOTL.GD.ZS,Tax revenue,percent of GDP,MMR,1986,7.41173670242276
+World Bank WDI API,GC.TAX.TOTL.GD.ZS,Tax revenue,percent of GDP,MMR,1987,6.3655418074506
+World Bank WDI API,GC.TAX.TOTL.GD.ZS,Tax revenue,percent of GDP,MMR,1988,4.49352671473442
+World Bank WDI API,GC.TAX.TOTL.GD.ZS,Tax revenue,percent of GDP,MMR,1989,4.26178737654007
+World Bank WDI API,GC.TAX.TOTL.GD.ZS,Tax revenue,percent of GDP,MMR,1990,6.19778414572987
+World Bank WDI API,GC.TAX.TOTL.GD.ZS,Tax revenue,percent of GDP,MMR,1991,5.61020629285277
+World Bank WDI API,GC.TAX.TOTL.GD.ZS,Tax revenue,percent of GDP,MMR,1992,5.03739654451358
+World Bank WDI API,GC.TAX.TOTL.GD.ZS,Tax revenue,percent of GDP,MMR,1993,4.72801035299943
+World Bank WDI API,GC.TAX.TOTL.GD.ZS,Tax revenue,percent of GDP,MMR,1994,4.25171345046186
+World Bank WDI API,GC.TAX.TOTL.GD.ZS,Tax revenue,percent of GDP,MMR,1995,3.74448720005159
+World Bank WDI API,GC.TAX.TOTL.GD.ZS,Tax revenue,percent of GDP,MMR,1996,3.9593171544736
+World Bank WDI API,GC.TAX.TOTL.GD.ZS,Tax revenue,percent of GDP,MMR,1997,4.41523918074799
+World Bank WDI API,GC.TAX.TOTL.GD.ZS,Tax revenue,percent of GDP,MMR,1998,3.51930951883989
+World Bank WDI API,GC.TAX.TOTL.GD.ZS,Tax revenue,percent of GDP,MMR,1999,2.75274845684649
+World Bank WDI API,GC.TAX.TOTL.GD.ZS,Tax revenue,percent of GDP,MMR,2000,2.96650745818451
+World Bank WDI API,GC.TAX.TOTL.GD.ZS,Tax revenue,percent of GDP,MMR,2001,2.25714041101971
+World Bank WDI API,GC.TAX.TOTL.GD.ZS,Tax revenue,percent of GDP,MMR,2002,2.0010471703619
+World Bank WDI API,GC.TAX.TOTL.GD.ZS,Tax revenue,percent of GDP,MMR,2003,2.21041186420545
+World Bank WDI API,GC.TAX.TOTL.GD.ZS,Tax revenue,percent of GDP,MMR,2004,3.27245665609108
+World Bank WDI API,GC.TAX.TOTL.GD.ZS,Tax revenue,percent of GDP,MMR,2005,3.88177835640941
+World Bank WDI API,GC.TAX.TOTL.GD.ZS,Tax revenue,percent of GDP,MMR,2012,4.52409369741194
+World Bank WDI API,GC.TAX.TOTL.GD.ZS,Tax revenue,percent of GDP,MMR,2013,5.52956758874506
+World Bank WDI API,GC.TAX.TOTL.GD.ZS,Tax revenue,percent of GDP,MMR,2014,5.84092892509683
+World Bank WDI API,GC.TAX.TOTL.GD.ZS,Tax revenue,percent of GDP,MMR,2015,6.01128503979227
+World Bank WDI API,GC.TAX.TOTL.GD.ZS,Tax revenue,percent of GDP,MMR,2016,7.17585983640205
+World Bank WDI API,GC.TAX.TOTL.GD.ZS,Tax revenue,percent of GDP,MMR,2017,6.07774232896579
+World Bank WDI API,GC.TAX.TOTL.GD.ZS,Tax revenue,percent of GDP,MMR,2018,2.75697125272766
+World Bank WDI API,GC.TAX.TOTL.GD.ZS,Tax revenue,percent of GDP,MMR,2019,6.01765247726484
+World Bank WDI API,GC.XPN.INTP.ZS,Government interest payments,percent of expense,MMR,2012,12.6227645525108
+World Bank WDI API,GC.XPN.INTP.ZS,Government interest payments,percent of expense,MMR,2013,9.44711968595883
+World Bank WDI API,GC.XPN.INTP.ZS,Government interest payments,percent of expense,MMR,2014,8.17428112358236
+World Bank WDI API,GC.XPN.INTP.ZS,Government interest payments,percent of expense,MMR,2015,7.00082983541651
+World Bank WDI API,GC.XPN.INTP.ZS,Government interest payments,percent of expense,MMR,2016,8.52958213673693
+World Bank WDI API,GC.XPN.INTP.ZS,Government interest payments,percent of expense,MMR,2017,8.74538472079758
+World Bank WDI API,GC.XPN.INTP.ZS,Government interest payments,percent of expense,MMR,2018,11.5813170575616
+World Bank WDI API,GC.XPN.INTP.ZS,Government interest payments,percent of expense,MMR,2019,10.2335200734128
+World Bank WDI API,GC.XPN.TOTL.GD.ZS,Government expenses,percent of GDP,MMR,2003,3.05760962946427
+World Bank WDI API,GC.XPN.TOTL.GD.ZS,Government expenses,percent of GDP,MMR,2004,3.64395423975417
+World Bank WDI API,GC.XPN.TOTL.GD.ZS,Government expenses,percent of GDP,MMR,2005,2.80606806409765
+World Bank WDI API,GC.XPN.TOTL.GD.ZS,Government expenses,percent of GDP,MMR,2012,10.5504277139389
+World Bank WDI API,GC.XPN.TOTL.GD.ZS,Government expenses,percent of GDP,MMR,2013,14.0348673040125
+World Bank WDI API,GC.XPN.TOTL.GD.ZS,Government expenses,percent of GDP,MMR,2014,16.4944873473396
+World Bank WDI API,GC.XPN.TOTL.GD.ZS,Government expenses,percent of GDP,MMR,2015,17.0397019631168
+World Bank WDI API,GC.XPN.TOTL.GD.ZS,Government expenses,percent of GDP,MMR,2016,15.3475412654351
+World Bank WDI API,GC.XPN.TOTL.GD.ZS,Government expenses,percent of GDP,MMR,2017,16.9198889367861
+World Bank WDI API,GC.XPN.TOTL.GD.ZS,Government expenses,percent of GDP,MMR,2018,6.38116100422309
+World Bank WDI API,GC.XPN.TOTL.GD.ZS,Government expenses,percent of GDP,MMR,2019,13.7755198098588
+IMF DataMapper API,GGXCNL_NGDP,Fiscal balance,percent of GDP,MMR,1998,-4.9
+IMF DataMapper API,GGXCNL_NGDP,Fiscal balance,percent of GDP,MMR,1999,-4.5
+IMF DataMapper API,GGXCNL_NGDP,Fiscal balance,percent of GDP,MMR,2000,-6.0
+IMF DataMapper API,GGXCNL_NGDP,Fiscal balance,percent of GDP,MMR,2001,-6.3
+IMF DataMapper API,GGXCNL_NGDP,Fiscal balance,percent of GDP,MMR,2002,-4.0
+IMF DataMapper API,GGXCNL_NGDP,Fiscal balance,percent of GDP,MMR,2003,-4.2
+IMF DataMapper API,GGXCNL_NGDP,Fiscal balance,percent of GDP,MMR,2004,-4.6
+IMF DataMapper API,GGXCNL_NGDP,Fiscal balance,percent of GDP,MMR,2005,-3.5
+IMF DataMapper API,GGXCNL_NGDP,Fiscal balance,percent of GDP,MMR,2006,-3.4
+IMF DataMapper API,GGXCNL_NGDP,Fiscal balance,percent of GDP,MMR,2007,-3.5
+IMF DataMapper API,GGXCNL_NGDP,Fiscal balance,percent of GDP,MMR,2008,-2.7
+IMF DataMapper API,GGXCNL_NGDP,Fiscal balance,percent of GDP,MMR,2009,-3.6
+IMF DataMapper API,GGXCNL_NGDP,Fiscal balance,percent of GDP,MMR,2010,-5.4
+IMF DataMapper API,GGXCNL_NGDP,Fiscal balance,percent of GDP,MMR,2011,-4.8
+IMF DataMapper API,GGXCNL_NGDP,Fiscal balance,percent of GDP,MMR,2012,-2.7
+IMF DataMapper API,GGXCNL_NGDP,Fiscal balance,percent of GDP,MMR,2013,-1.5
+IMF DataMapper API,GGXCNL_NGDP,Fiscal balance,percent of GDP,MMR,2014,-1.1
+IMF DataMapper API,GGXCNL_NGDP,Fiscal balance,percent of GDP,MMR,2015,-4.3
+IMF DataMapper API,GGXCNL_NGDP,Fiscal balance,percent of GDP,MMR,2016,-2.5
+IMF DataMapper API,GGXCNL_NGDP,Fiscal balance,percent of GDP,MMR,2017,-3.4
+IMF DataMapper API,GGXCNL_NGDP,Fiscal balance,percent of GDP,MMR,2018,-2.8
+IMF DataMapper API,GGXCNL_NGDP,Fiscal balance,percent of GDP,MMR,2019,-4.7
+IMF DataMapper API,GGXCNL_NGDP,Fiscal balance,percent of GDP,MMR,2020,-6.5
+IMF DataMapper API,GGXCNL_NGDP,Fiscal balance,percent of GDP,MMR,2021,-2.2
+IMF DataMapper API,GGXCNL_NGDP,Fiscal balance,percent of GDP,MMR,2022,-2.8
+IMF DataMapper API,GGXCNL_NGDP,Fiscal balance,percent of GDP,MMR,2023,-2.8
+IMF DataMapper API,GGXCNL_NGDP,Fiscal balance,percent of GDP,MMR,2024,-4.1
+IMF DataMapper API,GGXCNL_NGDP,Fiscal balance,percent of GDP,MMR,2025,-4.9
+IMF DataMapper API,GGXCNL_NGDP,Fiscal balance,percent of GDP,MMR,2026,-5.0
+IMF DataMapper API,GGXWDG_NGDP,General government gross debt,percent of GDP,MMR,1998,208.6
+IMF DataMapper API,GGXWDG_NGDP,General government gross debt,percent of GDP,MMR,1999,150.7
+IMF DataMapper API,GGXWDG_NGDP,General government gross debt,percent of GDP,MMR,2000,164.5
+IMF DataMapper API,GGXWDG_NGDP,General government gross debt,percent of GDP,MMR,2001,262.0
+IMF DataMapper API,GGXWDG_NGDP,General government gross debt,percent of GDP,MMR,2002,190.6
+IMF DataMapper API,GGXWDG_NGDP,General government gross debt,percent of GDP,MMR,2003,146.0
+IMF DataMapper API,GGXWDG_NGDP,General government gross debt,percent of GDP,MMR,2004,126.6
+IMF DataMapper API,GGXWDG_NGDP,General government gross debt,percent of GDP,MMR,2005,119.0
+IMF DataMapper API,GGXWDG_NGDP,General government gross debt,percent of GDP,MMR,2006,103.1
+IMF DataMapper API,GGXWDG_NGDP,General government gross debt,percent of GDP,MMR,2007,77.4
+IMF DataMapper API,GGXWDG_NGDP,General government gross debt,percent of GDP,MMR,2008,59.8
+IMF DataMapper API,GGXWDG_NGDP,General government gross debt,percent of GDP,MMR,2009,56.4
+IMF DataMapper API,GGXWDG_NGDP,General government gross debt,percent of GDP,MMR,2010,54.4
+IMF DataMapper API,GGXWDG_NGDP,General government gross debt,percent of GDP,MMR,2011,49.9
+IMF DataMapper API,GGXWDG_NGDP,General government gross debt,percent of GDP,MMR,2012,48.0
+IMF DataMapper API,GGXWDG_NGDP,General government gross debt,percent of GDP,MMR,2013,44.8
+IMF DataMapper API,GGXWDG_NGDP,General government gross debt,percent of GDP,MMR,2014,34.5
+IMF DataMapper API,GGXWDG_NGDP,General government gross debt,percent of GDP,MMR,2015,36.6
+IMF DataMapper API,GGXWDG_NGDP,General government gross debt,percent of GDP,MMR,2016,35.7
+IMF DataMapper API,GGXWDG_NGDP,General government gross debt,percent of GDP,MMR,2017,41.9
+IMF DataMapper API,GGXWDG_NGDP,General government gross debt,percent of GDP,MMR,2018,39.9
+IMF DataMapper API,GGXWDG_NGDP,General government gross debt,percent of GDP,MMR,2019,37.6
+IMF DataMapper API,GGXWDG_NGDP,General government gross debt,percent of GDP,MMR,2020,49.1
+IMF DataMapper API,GGXWDG_NGDP,General government gross debt,percent of GDP,MMR,2021,63.4
+IMF DataMapper API,GGXWDG_NGDP,General government gross debt,percent of GDP,MMR,2022,56.0
+IMF DataMapper API,GGXWDG_NGDP,General government gross debt,percent of GDP,MMR,2023,53.2
+IMF DataMapper API,GGXWDG_NGDP,General government gross debt,percent of GDP,MMR,2024,50.6
+IMF DataMapper API,GGXWDG_NGDP,General government gross debt,percent of GDP,MMR,2025,51.9
+IMF DataMapper API,GGXWDG_NGDP,General government gross debt,percent of GDP,MMR,2026,51.9
+World Bank WDI API,MS.MIL.TOTL.TF.ZS,Armed forces personnel,percent of total labor force,MMR,1990,1.32669975763503
+World Bank WDI API,MS.MIL.TOTL.TF.ZS,Armed forces personnel,percent of total labor force,MMR,1991,1.61584075358293
+World Bank WDI API,MS.MIL.TOTL.TF.ZS,Armed forces personnel,percent of total labor force,MMR,1992,1.58747735693901
+World Bank WDI API,MS.MIL.TOTL.TF.ZS,Armed forces personnel,percent of total labor force,MMR,1993,1.75492045359789
+World Bank WDI API,MS.MIL.TOTL.TF.ZS,Armed forces personnel,percent of total labor force,MMR,1994,1.72347912200407
+World Bank WDI API,MS.MIL.TOTL.TF.ZS,Armed forces personnel,percent of total labor force,MMR,1995,1.95161887916105
+World Bank WDI API,MS.MIL.TOTL.TF.ZS,Armed forces personnel,percent of total labor force,MMR,1996,2.09701537370848
+World Bank WDI API,MS.MIL.TOTL.TF.ZS,Armed forces personnel,percent of total labor force,MMR,1997,2.1732340833207
+World Bank WDI API,MS.MIL.TOTL.TF.ZS,Armed forces personnel,percent of total labor force,MMR,1998,2.16100219216118
+World Bank WDI API,MS.MIL.TOTL.TF.ZS,Armed forces personnel,percent of total labor force,MMR,1999,2.09510983151225
+World Bank WDI API,MS.MIL.TOTL.TF.ZS,Armed forces personnel,percent of total labor force,MMR,2000,2.06289022025139
+World Bank WDI API,MS.MIL.TOTL.TF.ZS,Armed forces personnel,percent of total labor force,MMR,2001,2.10544602544817
+World Bank WDI API,MS.MIL.TOTL.TF.ZS,Armed forces personnel,percent of total labor force,MMR,2002,2.54732607046663
+World Bank WDI API,MS.MIL.TOTL.TF.ZS,Armed forces personnel,percent of total labor force,MMR,2003,2.75538187439413
+World Bank WDI API,MS.MIL.TOTL.TF.ZS,Armed forces personnel,percent of total labor force,MMR,2004,2.21157831527857
+World Bank WDI API,MS.MIL.TOTL.TF.ZS,Armed forces personnel,percent of total labor force,MMR,2005,2.19464163024342
+World Bank WDI API,MS.MIL.TOTL.TF.ZS,Armed forces personnel,percent of total labor force,MMR,2006,2.31031398923493
+World Bank WDI API,MS.MIL.TOTL.TF.ZS,Armed forces personnel,percent of total labor force,MMR,2007,2.28978072202812
+World Bank WDI API,MS.MIL.TOTL.TF.ZS,Armed forces personnel,percent of total labor force,MMR,2008,2.27133480723629
+World Bank WDI API,MS.MIL.TOTL.TF.ZS,Armed forces personnel,percent of total labor force,MMR,2009,2.25419313961956
+World Bank WDI API,MS.MIL.TOTL.TF.ZS,Armed forces personnel,percent of total labor force,MMR,2010,2.23195250596409
+World Bank WDI API,MS.MIL.TOTL.TF.ZS,Armed forces personnel,percent of total labor force,MMR,2011,2.20592201415615
+World Bank WDI API,MS.MIL.TOTL.TF.ZS,Armed forces personnel,percent of total labor force,MMR,2012,2.1805781248991
+World Bank WDI API,MS.MIL.TOTL.TF.ZS,Armed forces personnel,percent of total labor force,MMR,2013,2.15661898616343
+World Bank WDI API,MS.MIL.TOTL.TF.ZS,Armed forces personnel,percent of total labor force,MMR,2014,2.13401053987078
+World Bank WDI API,MS.MIL.TOTL.TF.ZS,Armed forces personnel,percent of total labor force,MMR,2015,2.11227925858648
+World Bank WDI API,MS.MIL.TOTL.TF.ZS,Armed forces personnel,percent of total labor force,MMR,2016,2.1310662414693
+World Bank WDI API,MS.MIL.TOTL.TF.ZS,Armed forces personnel,percent of total labor force,MMR,2017,2.15115382146186
+World Bank WDI API,MS.MIL.TOTL.TF.ZS,Armed forces personnel,percent of total labor force,MMR,2018,2.11598074036805
+World Bank WDI API,MS.MIL.TOTL.TF.ZS,Armed forces personnel,percent of total labor force,MMR,2019,2.15842139874963
+World Bank WDI API,MS.MIL.TOTL.TF.ZS,Armed forces personnel,percent of total labor force,MMR,2020,1.93959221728359
+World Bank WDI API,MS.MIL.XPND.GD.ZS,Military expenditure,percent of GDP,MMR,1961,6.12346049864824
+World Bank WDI API,MS.MIL.XPND.GD.ZS,Military expenditure,percent of GDP,MMR,1962,5.69071146245059
+World Bank WDI API,MS.MIL.XPND.GD.ZS,Military expenditure,percent of GDP,MMR,1963,6.84714060484449
+World Bank WDI API,MS.MIL.XPND.GD.ZS,Military expenditure,percent of GDP,MMR,1964,6.02234564711961
+World Bank WDI API,MS.MIL.XPND.GD.ZS,Military expenditure,percent of GDP,MMR,1965,6.69562082076832
+World Bank WDI API,MS.MIL.XPND.GD.ZS,Military expenditure,percent of GDP,MMR,1966,6.1255794096121
+World Bank WDI API,MS.MIL.XPND.GD.ZS,Military expenditure,percent of GDP,MMR,1967,5.20179852264212
+World Bank WDI API,MS.MIL.XPND.GD.ZS,Military expenditure,percent of GDP,MMR,1968,5.02319717599597
+World Bank WDI API,MS.MIL.XPND.GD.ZS,Military expenditure,percent of GDP,MMR,1969,5.31042884990253
+World Bank WDI API,MS.MIL.XPND.GD.ZS,Military expenditure,percent of GDP,MMR,1970,5.60194500335345
+World Bank WDI API,MS.MIL.XPND.GD.ZS,Military expenditure,percent of GDP,MMR,1971,5.65122539918307
+World Bank WDI API,MS.MIL.XPND.GD.ZS,Military expenditure,percent of GDP,MMR,1972,5.45164039198977
+World Bank WDI API,MS.MIL.XPND.GD.ZS,Military expenditure,percent of GDP,MMR,1973,5.11394557823129
+World Bank WDI API,MS.MIL.XPND.GD.ZS,Military expenditure,percent of GDP,MMR,1974,4.02108745089932
+World Bank WDI API,MS.MIL.XPND.GD.ZS,Military expenditure,percent of GDP,MMR,1975,3.77497124845594
+World Bank WDI API,MS.MIL.XPND.GD.ZS,Military expenditure,percent of GDP,MMR,1976,3.79370693112626
+World Bank WDI API,MS.MIL.XPND.GD.ZS,Military expenditure,percent of GDP,MMR,1977,4.03977311094605
+World Bank WDI API,MS.MIL.XPND.GD.ZS,Military expenditure,percent of GDP,MMR,1978,3.92138364779874
+World Bank WDI API,MS.MIL.XPND.GD.ZS,Military expenditure,percent of GDP,MMR,1979,3.5575807318937
+World Bank WDI API,MS.MIL.XPND.GD.ZS,Military expenditure,percent of GDP,MMR,1980,3.42212955528504
+World Bank WDI API,MS.MIL.XPND.GD.ZS,Military expenditure,percent of GDP,MMR,1981,3.45682035495231
+World Bank WDI API,MS.MIL.XPND.GD.ZS,Military expenditure,percent of GDP,MMR,1982,3.21826066522826
+World Bank WDI API,MS.MIL.XPND.GD.ZS,Military expenditure,percent of GDP,MMR,1983,3.0703691066375
+World Bank WDI API,MS.MIL.XPND.GD.ZS,Military expenditure,percent of GDP,MMR,1984,2.92367110099446
+World Bank WDI API,MS.MIL.XPND.GD.ZS,Military expenditure,percent of GDP,MMR,1985,2.9782635874904
+World Bank WDI API,MS.MIL.XPND.GD.ZS,Military expenditure,percent of GDP,MMR,1986,2.87914210205326
+World Bank WDI API,MS.MIL.XPND.GD.ZS,Military expenditure,percent of GDP,MMR,1987,1.9724009432589
+World Bank WDI API,MS.MIL.XPND.GD.ZS,Military expenditure,percent of GDP,MMR,1988,2.14085227496295
+World Bank WDI API,MS.MIL.XPND.GD.ZS,Military expenditure,percent of GDP,MMR,1989,2.95910673319109
+World Bank WDI API,MS.MIL.XPND.GD.ZS,Military expenditure,percent of GDP,MMR,1990,3.39589051013222
+World Bank WDI API,MS.MIL.XPND.GD.ZS,Military expenditure,percent of GDP,MMR,1991,3.17100459309858
+World Bank WDI API,MS.MIL.XPND.GD.ZS,Military expenditure,percent of GDP,MMR,1992,3.35451793339882
+World Bank WDI API,MS.MIL.XPND.GD.ZS,Military expenditure,percent of GDP,MMR,1993,3.52310856153263
+World Bank WDI API,MS.MIL.XPND.GD.ZS,Military expenditure,percent of GDP,MMR,1994,3.54112112764238
+World Bank WDI API,MS.MIL.XPND.GD.ZS,Military expenditure,percent of GDP,MMR,1995,3.68483237946254
+World Bank WDI API,MS.MIL.XPND.GD.ZS,Military expenditure,percent of GDP,MMR,1996,3.49342786434001
+World Bank WDI API,MS.MIL.XPND.GD.ZS,Military expenditure,percent of GDP,MMR,1997,2.31372237705347
+World Bank WDI API,MS.MIL.XPND.GD.ZS,Military expenditure,percent of GDP,MMR,1998,2.53962410781848
+World Bank WDI API,MS.MIL.XPND.GD.ZS,Military expenditure,percent of GDP,MMR,1999,2.1389500494262
+World Bank WDI API,MS.MIL.XPND.GD.ZS,Military expenditure,percent of GDP,MMR,2000,2.30851230754143
+World Bank WDI API,MS.MIL.XPND.GD.ZS,Military expenditure,percent of GDP,MMR,2001,1.94785828446242
+World Bank WDI API,MS.MIL.XPND.GD.ZS,Military expenditure,percent of GDP,MMR,2002,1.48187129901045
+World Bank WDI API,MS.MIL.XPND.GD.ZS,Military expenditure,percent of GDP,MMR,2003,2.07081478779187
+World Bank WDI API,MS.MIL.XPND.GD.ZS,Military expenditure,percent of GDP,MMR,2004,1.92006952835836
+World Bank WDI API,MS.MIL.XPND.GD.ZS,Military expenditure,percent of GDP,MMR,2005,1.66965386990714
+World Bank WDI API,MS.MIL.XPND.GD.ZS,Military expenditure,percent of GDP,MMR,2012,4.12480380212694
+World Bank WDI API,MS.MIL.XPND.GD.ZS,Military expenditure,percent of GDP,MMR,2013,4.11633459177026
+World Bank WDI API,MS.MIL.XPND.GD.ZS,Military expenditure,percent of GDP,MMR,2014,3.78953444074754
+World Bank WDI API,MS.MIL.XPND.GD.ZS,Military expenditure,percent of GDP,MMR,2015,4.30136045141842
+World Bank WDI API,MS.MIL.XPND.GD.ZS,Military expenditure,percent of GDP,MMR,2016,4.08929730356682
+World Bank WDI API,MS.MIL.XPND.GD.ZS,Military expenditure,percent of GDP,MMR,2017,3.64194876170774
+World Bank WDI API,MS.MIL.XPND.GD.ZS,Military expenditure,percent of GDP,MMR,2018,2.3597905591242
+World Bank WDI API,MS.MIL.XPND.GD.ZS,Military expenditure,percent of GDP,MMR,2019,2.18974000019248
+World Bank WDI API,MS.MIL.XPND.GD.ZS,Military expenditure,percent of GDP,MMR,2020,3.12332883859715
+World Bank WDI API,MS.MIL.XPND.GD.ZS,Military expenditure,percent of GDP,MMR,2021,4.07092298980473
+World Bank WDI API,MS.MIL.XPND.GD.ZS,Military expenditure,percent of GDP,MMR,2022,4.17058942838215
+World Bank WDI API,MS.MIL.XPND.GD.ZS,Military expenditure,percent of GDP,MMR,2023,3.75371612518577
+World Bank WDI API,MS.MIL.XPND.GD.ZS,Military expenditure,percent of GDP,MMR,2024,6.79452485229039
+World Bank WDI API,MS.MIL.XPND.ZS,Military expenditure,percent of general government expenditure,MMR,1998,10.4838664287765
+World Bank WDI API,MS.MIL.XPND.ZS,Military expenditure,percent of general government expenditure,MMR,1999,9.76537003424505
+World Bank WDI API,MS.MIL.XPND.ZS,Military expenditure,percent of general government expenditure,MMR,2000,11.204631521228
+World Bank WDI API,MS.MIL.XPND.ZS,Military expenditure,percent of general government expenditure,MMR,2001,10.6239355190675
+World Bank WDI API,MS.MIL.XPND.ZS,Military expenditure,percent of general government expenditure,MMR,2002,10.0670791860939
+World Bank WDI API,MS.MIL.XPND.ZS,Military expenditure,percent of general government expenditure,MMR,2003,15.0232387091944
+World Bank WDI API,MS.MIL.XPND.ZS,Military expenditure,percent of general government expenditure,MMR,2004,13.7273727345015
+World Bank WDI API,MS.MIL.XPND.ZS,Military expenditure,percent of general government expenditure,MMR,2005,11.8630230388287
+World Bank WDI API,MS.MIL.XPND.ZS,Military expenditure,percent of general government expenditure,MMR,2012,21.5121652722351
+World Bank WDI API,MS.MIL.XPND.ZS,Military expenditure,percent of general government expenditure,MMR,2013,17.9269712103267
+World Bank WDI API,MS.MIL.XPND.ZS,Military expenditure,percent of general government expenditure,MMR,2014,15.9377286687925
+World Bank WDI API,MS.MIL.XPND.ZS,Military expenditure,percent of general government expenditure,MMR,2015,17.7681991075378
+World Bank WDI API,MS.MIL.XPND.ZS,Military expenditure,percent of general government expenditure,MMR,2016,17.4510860818144
+World Bank WDI API,MS.MIL.XPND.ZS,Military expenditure,percent of general government expenditure,MMR,2017,17.5374446833123
+World Bank WDI API,MS.MIL.XPND.ZS,Military expenditure,percent of general government expenditure,MMR,2018,11.2202698398993
+World Bank WDI API,MS.MIL.XPND.ZS,Military expenditure,percent of general government expenditure,MMR,2019,10.8103409686989
+World Bank WDI API,MS.MIL.XPND.ZS,Military expenditure,percent of general government expenditure,MMR,2020,13.8142673894542
+World Bank WDI API,MS.MIL.XPND.ZS,Military expenditure,percent of general government expenditure,MMR,2021,17.4421256792208
+World Bank WDI API,MS.MIL.XPND.ZS,Military expenditure,percent of general government expenditure,MMR,2022,18.4529956693192
+World Bank WDI API,MS.MIL.XPND.ZS,Military expenditure,percent of general government expenditure,MMR,2023,16.0598000074792
+World Bank WDI API,MS.MIL.XPND.ZS,Military expenditure,percent of general government expenditure,MMR,2024,29.0951753709299
+IMF DataMapper API,exp,General government expenditure,percent of GDP,MMR,1998,25.204538312381
+IMF DataMapper API,exp,General government expenditure,percent of GDP,MMR,1999,22.789932594378
+IMF DataMapper API,exp,General government expenditure,percent of GDP,MMR,2000,21.437065604856
+IMF DataMapper API,exp,General government expenditure,percent of GDP,MMR,2001,19.076684411055
+IMF DataMapper API,exp,General government expenditure,percent of GDP,MMR,2002,15.315739086399
+IMF DataMapper API,exp,General government expenditure,percent of GDP,MMR,2003,14.341957539556
+IMF DataMapper API,exp,General government expenditure,percent of GDP,MMR,2004,14.553258765478
+IMF DataMapper API,exp,General government expenditure,percent of GDP,MMR,2005,14.644074493327
+IMF DataMapper API,exp,General government expenditure,percent of GDP,MMR,2006,15.601919275051
+IMF DataMapper API,exp,General government expenditure,percent of GDP,MMR,2007,15.719741294581
+IMF DataMapper API,exp,General government expenditure,percent of GDP,MMR,2008,14.396788227209
+IMF DataMapper API,exp,General government expenditure,percent of GDP,MMR,2009,14.445521476114
+IMF DataMapper API,exp,General government expenditure,percent of GDP,MMR,2010,15.777982182582
+IMF DataMapper API,exp,General government expenditure,percent of GDP,MMR,2011,15.606507086478
+IMF DataMapper API,exp,General government expenditure,percent of GDP,MMR,2012,19.950322269135
+IMF DataMapper API,exp,General government expenditure,percent of GDP,MMR,2013,23.891008270327
+IMF DataMapper API,exp,General government expenditure,percent of GDP,MMR,2014,24.739457194083
+IMF DataMapper API,exp,General government expenditure,percent of GDP,MMR,2015,23.731380980206
+IMF DataMapper API,exp,General government expenditure,percent of GDP,MMR,2016,21.260022107065
+IMF DataMapper API,exp,General government expenditure,percent of GDP,MMR,2017,19.696504475939
+IMF DataMapper API,exp,General government expenditure,percent of GDP,MMR,2018,18.715710433219
+IMF DataMapper API,exp,General government expenditure,percent of GDP,MMR,2019,20.539838374723
+IMF DataMapper API,exp,General government expenditure,percent of GDP,MMR,2020,21.306725537544
+IMF DataMapper API,exp,General government expenditure,percent of GDP,MMR,2021,20.898410694595
+IMF DataMapper API,exp,General government expenditure,percent of GDP,MMR,2022,21.329164644612
+IMF DataMapper API,exp,General government expenditure,percent of GDP,MMR,2023,21.408103122529
+IMF DataMapper API,exp,General government expenditure,percent of GDP,MMR,2024,20.666793433038
+IMF DataMapper API,rev,General government revenue,percent of GDP,MMR,1998,20.31052633566
+IMF DataMapper API,rev,General government revenue,percent of GDP,MMR,1999,18.328016582236
+IMF DataMapper API,rev,General government revenue,percent of GDP,MMR,2000,15.41064057964
+IMF DataMapper API,rev,General government revenue,percent of GDP,MMR,2001,12.739174988417
+IMF DataMapper API,rev,General government revenue,percent of GDP,MMR,2002,11.307917906345
+IMF DataMapper API,rev,General government revenue,percent of GDP,MMR,2003,10.102843309489
+IMF DataMapper API,rev,General government revenue,percent of GDP,MMR,2004,9.9366771744307
+IMF DataMapper API,rev,General government revenue,percent of GDP,MMR,2005,11.15845184428
+IMF DataMapper API,rev,General government revenue,percent of GDP,MMR,2006,12.179828872016
+IMF DataMapper API,rev,General government revenue,percent of GDP,MMR,2007,12.201441503136
+IMF DataMapper API,rev,General government revenue,percent of GDP,MMR,2008,11.670667408619
+IMF DataMapper API,rev,General government revenue,percent of GDP,MMR,2009,10.894696974612
+IMF DataMapper API,rev,General government revenue,percent of GDP,MMR,2010,10.380308880245
+IMF DataMapper API,rev,General government revenue,percent of GDP,MMR,2011,10.785212903994
+IMF DataMapper API,rev,General government revenue,percent of GDP,MMR,2012,17.253590489141
+IMF DataMapper API,rev,General government revenue,percent of GDP,MMR,2013,22.35941292633
+IMF DataMapper API,rev,General government revenue,percent of GDP,MMR,2014,23.674886175309
+IMF DataMapper API,rev,General government revenue,percent of GDP,MMR,2015,19.405695721584
+IMF DataMapper API,rev,General government revenue,percent of GDP,MMR,2016,18.734868315257
+IMF DataMapper API,rev,General government revenue,percent of GDP,MMR,2017,16.272653576874
+IMF DataMapper API,rev,General government revenue,percent of GDP,MMR,2018,15.948862125623
+IMF DataMapper API,rev,General government revenue,percent of GDP,MMR,2019,15.84474711559
+IMF DataMapper API,rev,General government revenue,percent of GDP,MMR,2020,14.805155646835
+IMF DataMapper API,rev,General government revenue,percent of GDP,MMR,2021,18.428780728529
+IMF DataMapper API,rev,General government revenue,percent of GDP,MMR,2022,18.512206810358
+IMF DataMapper API,rev,General government revenue,percent of GDP,MMR,2023,16.230182642096
+IMF DataMapper API,rev,General government revenue,percent of GDP,MMR,2024,15.605900809065

@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>7.2 Fiscal Balance, Debt, Stabilization Funds, and Interest Burden | Mongolia Country Report</title>
+  <script src="../assets/marked.min.js"></script>
+  <script src="../assets/chart.umd.min.js"></script>
+  <style>
+    :root { --ink: #162029; --muted: #62707c; --line: #d8e0e6; --panel: #f5f7f8; --accent: #0f6f78; --accent2: #7a5b1e; --paper: #ffffff; --soft: #edf5f2; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: var(--ink); background: var(--paper); line-height: 1.62; }
+    .layout { display: grid; grid-template-columns: 310px minmax(0, 1fr); min-height: 100vh; }
+    .toc { position: sticky; top: 0; height: 100vh; overflow: auto; border-right: 1px solid var(--line); background: var(--panel); padding: 22px 18px; }
+    .toc h1 { font-size: 20px; margin: 0 0 6px; }
+    .toc h1 a { color: var(--ink); text-decoration: none; }
+    .toc p { color: var(--muted); font-size: 13px; margin: 0 0 18px; }
+    nav a { display: block; color: var(--ink); text-decoration: none; padding: 8px 10px; border-radius: 6px; font-size: 14px; }
+    nav a:hover, nav a.active { background: #e3f0ef; color: var(--accent); }
+    .chapter-link { font-weight: 700; }
+    .toc-group { margin: 1px 0; border-radius: 6px; }
+    .toc-group summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 4px; }
+    .toc-group summary::-webkit-details-marker { display: none; }
+    .toc-group summary::before { content: ">"; color: var(--muted); font-size: 12px; transition: transform .12s ease; }
+    .toc-group[open] summary::before { transform: rotate(90deg); }
+    .toc-group summary a { flex: 1; }
+    .section-nav { margin: 2px 0 8px 8px; padding-left: 10px; border-left: 2px solid #cdd9df; }
+    .section-link { padding: 5px 8px; font-size: 12px; color: var(--muted); line-height: 1.35; }
+    main { padding: 34px min(6vw, 82px); max-width: 1120px; }
+    .hero { border-bottom: 1px solid var(--line); padding-bottom: 20px; margin-bottom: 24px; }
+    .hero h2 { font-size: 34px; margin: 0 0 8px; letter-spacing: 0; }
+    .hero p, .chapter-landing-note { color: var(--muted); max-width: 860px; }
+    .chapter-thesis { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 16px; border: 1px solid var(--line); border-radius: 8px; padding: 14px; background: var(--soft); margin: 18px 0; }
+    .chapter-thesis b { color: var(--accent); }
+    .chapter-section-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 12px; margin: 18px 0 28px; }
+    .chapter-section-card { border: 1px solid var(--line); border-radius: 8px; background: #fff; padding: 14px; }
+    .chapter-section-card a { display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: 10px; align-items: start; text-decoration: none; color: var(--ink); }
+    .chapter-section-card span { font-weight: 800; color: var(--accent); font-size: 15px; }
+    .chapter-section-card strong { font-size: 16px; line-height: 1.35; }
+    .chapter-section-card p { color: var(--muted); font-size: 13px; margin: 10px 0 0; }
+    .section-reading { max-width: 940px; }
+    .editable-prose { border: 1px solid var(--line); border-radius: 8px; background: #fff; overflow: hidden; }
+    .prose-toolbar { display: flex; justify-content: space-between; gap: 10px; align-items: center; border-bottom: 1px solid var(--line); background: #f8fafb; padding: 10px 12px; color: var(--muted); font-size: 13px; }
+    .prose-toolbar button, .primary-link, .secondary-link { border: 1px solid var(--accent); border-radius: 6px; background: var(--accent); color: #fff; padding: 7px 10px; text-decoration: none; cursor: pointer; font-weight: 700; font-size: 13px; }
+    .prose-toolbar button[data-md-action='cancel'], .secondary-link { background: #fff; color: var(--accent); }
+    .prose-body { padding: 18px 22px; }
+    .prose-body h2 { font-size: 25px; margin: 0 0 14px; }
+    .prose-body h3 { font-size: 18px; margin: 24px 0 8px; }
+    .prose-body img { display: block; max-width: 100%; height: auto; margin: 14px auto; border: 1px solid var(--line); border-radius: 8px; background: #f8fafb; padding: 8px; }
+    .prose-body figure { margin: 18px 0; }
+    .prose-body figcaption { color: var(--muted); font-size: 13px; line-height: 1.45; }
+    .prose-body table, .index-table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+    .prose-body th, .prose-body td, .index-table th, .index-table td { border: 1px solid var(--line); padding: 8px 10px; vertical-align: top; }
+    .prose-body th, .index-table th { background: #f4f8f7; }
+    .visual-analysis { margin-top: 20px; }
+    .visual-analysis > p { color: #34444f; margin: 0 0 12px; max-width: 880px; }
+    .map-figure, .image-figure { margin: 20px 0 18px; }
+    .map-figure img, .image-figure img { display: block; width: min(100%, 900px); height: auto; border: 1px solid var(--line); border-radius: 8px; background: #fff; padding: 8px; }
+    .image-figure img { width: min(100%, 760px); }
+    .map-figure figcaption, .image-figure figcaption { color: var(--muted); font-size: 13px; line-height: 1.45; margin-top: 8px; }
+    .paired-images { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; align-items: start; }
+    .paired-images img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+    .paired-images span { display: block; margin-top: 6px; color: var(--muted); font-size: 12px; font-weight: 700; }
+    .figure-card, .chart-empty { border: 1px solid var(--line); border-radius: 8px; background: #fff; margin: 16px 0; padding: 16px; }
+    .figure-card figcaption { font-weight: 800; font-size: 16px; margin-bottom: 12px; color: var(--ink); }
+    .chart-frame { height: 360px; position: relative; }
+    .chart-panel-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+    .chart-panel { min-width: 0; padding: 12px; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+    .chart-panel h3 { margin: 0 0 8px; font-size: 0.92rem; line-height: 1.25; color: var(--ink); }
+    .chart-panel-frame { height: 220px; position: relative; }
+    .figure-interpretation { margin: -4px 0 18px; color: #34444f; }
+    .figure-interpretation p { margin: 0 0 8px; }
+    .figure-interpretation ul { margin: 8px 0 0 18px; padding: 0; }
+    .chart-empty { display: grid; gap: 6px; color: var(--muted); }
+    [hidden] { display: none !important; }
+    .markdown-editor { display: block; width: 100%; min-height: 560px; border: 0; padding: 16px; font-family: Consolas, monospace; font-size: 14px; line-height: 1.55; resize: vertical; }
+    .source { color: var(--muted); font-size: 13px; }
+    .cover-body { background: #e9eef0; }
+    .cover-page { min-height: 100vh; display: grid; place-items: center; padding: 36px; }
+    .book-cover { width: min(980px, 100%); min-height: 760px; background: #fff; border: 1px solid #cfd8de; border-radius: 8px; padding: 58px; box-shadow: 0 24px 70px rgba(22, 32, 41, .14); }
+    .cover-kicker { color: var(--accent); font-weight: 800; text-transform: uppercase; font-size: 13px; letter-spacing: .08em; }
+    .cover-rule { height: 7px; width: 150px; background: linear-gradient(90deg, var(--accent), var(--accent2)); margin: 22px 0 42px; border-radius: 999px; }
+    .book-cover h1 { font-size: clamp(52px, 8vw, 92px); line-height: .96; margin: 0 0 24px; letter-spacing: 0; }
+    .cover-subtitle { font-size: 22px; max-width: 760px; color: #33414c; }
+    .cover-purpose { max-width: 820px; color: var(--muted); font-size: 16px; }
+    .cover-editor { margin: 36px 0; display: grid; gap: 3px; }
+    .cover-editor span { color: var(--muted); font-size: 12px; text-transform: uppercase; }
+    .cover-editor strong { font-size: 20px; }
+    .cover-editor em { color: var(--muted); font-style: normal; }
+    .cover-actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 22px 0; }
+    .cover-method { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 30px; }
+    .cover-method div { border-top: 1px solid var(--line); padding-top: 12px; }
+    .cover-method b { display: block; color: var(--accent); }
+    .cover-method span { color: var(--muted); font-size: 13px; }
+    @media (max-width: 1040px) { .layout { grid-template-columns: 1fr; } .toc { position: static; height: auto; } .cover-method { grid-template-columns: 1fr; } main { padding: 24px 18px; } .book-cover { padding: 32px; min-height: auto; } .chart-frame { height: 300px; } .chart-panel-grid { grid-template-columns: 1fr; } .paired-images { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+  <div class="layout">
+    <aside class="toc">
+      <h1><a href="../index.html">Mongolia</a></h1>
+      <p>Official-source country report with section-level Markdown editing and separated analysis visuals.</p>
+      <nav><details class="toc-group"><summary><a class="chapter-link" href="../01-overview.html">1. Country Overview</a></summary><div class="section-nav"><a class="section-link" href="../sections/01-01-official-name-capital-location-area-population-language-religion-and-currency.html">1.1 Official Name, Capital, Location, Area, Population, Language, Religion, and Currency</a><a class="section-link" href="../sections/01-02-state-symbols.html">1.2 State Symbols</a><a class="section-link" href="../sections/01-03-country-profile-and-strategic-setting.html">1.3 Country Profile and Strategic Setting</a><a class="section-link" href="../sections/01-04-territory-climate-settlement-and-administrative-divisions.html">1.4 Territory, Climate, Settlement, and Administrative Divisions</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../02-history.html">2. Historical Background</a></summary><div class="section-nav"><a class="section-link" href="../sections/02-01-steppe-polities-empire-and-civilizational-zones.html">2.1 Steppe Polities, Empire, and Civilizational Zones</a><a class="section-link" href="../sections/02-02-qing-rule-autonomy-socialism-and-state-formation.html">2.2 Qing Rule, Autonomy, Socialism, and State Formation</a><a class="section-link" href="../sections/02-03-democratic-transition-and-constitutional-turning-points.html">2.3 Democratic Transition and Constitutional Turning Points</a><a class="section-link" href="../sections/02-04-historical-legacies-in-present-institutions.html">2.4 Historical Legacies in Present Institutions</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../03-constitution.html">3. Constitution and Basic State Order</a></summary><div class="section-nav"><a class="section-link" href="../sections/03-01-constitutional-order-and-amendments.html">3.1 Constitutional Order and Amendments</a><a class="section-link" href="../sections/03-02-fundamental-rights-system.html">3.2 Fundamental Rights System</a><a class="section-link" href="../sections/03-03-separation-of-powers-constitutional-review-judicial-review-and-emergency-powers.html">3.3 Separation of Powers, Constitutional Review, Judicial Review, and Emergency Powers</a><a class="section-link" href="../sections/03-04-constitutional-implications-for-state-authority.html">3.4 Constitutional Implications for State Authority</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../04-politics.html">4. Political System and Power Structure</a></summary><div class="section-nav"><a class="section-link" href="../sections/04-01-form-of-government.html">4.1 Form of Government</a><a class="section-link" href="../sections/04-02-president-prime-minister-cabinet-and-parliament.html">4.2 President, Prime Minister, Cabinet, and Parliament</a><a class="section-link" href="../sections/04-03-party-system-elections-representation-and-coalition-politics.html">4.3 Party System, Elections, Representation, and Coalition Politics</a><a class="section-link" href="../sections/04-04-local-politics-governors-and-real-power-relations.html">4.4 Local Politics, Governors, and Real Power Relations</a><a class="section-link" href="../sections/04-05-political-dynamics-and-institutional-accountability.html">4.5 Political Dynamics and Institutional Accountability</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../05-administration.html">5. Administrative System and Government Organization</a></summary><div class="section-nav"><a class="section-link" href="../sections/05-01-central-executive-administration-and-policy-coordination.html">5.1 Central Executive Administration and Policy Coordination</a><a class="section-link" href="../sections/05-02-organizational-management-and-administrative-reform.html">5.2 Organizational Management and Administrative Reform</a><a class="section-link" href="../sections/05-03-human-resource-management-and-civil-service.html">5.3 Human Resource Management and Civil Service</a><a class="section-link" href="../sections/05-04-budget-execution-procurement-audit-and-anti-corruption-administration.html">5.4 Budget Execution, Procurement, Audit, and Anti-Corruption Administration</a><a class="section-link" href="../sections/05-05-aimags-soums-districts-khoroos-and-service-delivery.html">5.5 Aimags, Soums, Districts, Khoroos, and Service Delivery</a><a class="section-link" href="../sections/05-06-digital-government-e-mongolia-and-administrative-accountability.html">5.6 Digital Government, E-Mongolia, and Administrative Accountability</a><a class="section-link" href="../sections/05-07-implementation-capacity-in-a-low-density-territory.html">5.7 Implementation Capacity in a Low-Density Territory</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../06-governance.html">6. Governance and Institutional Capacity</a></summary><div class="section-nav"><a class="section-link" href="../sections/06-01-government-effectiveness-and-regulatory-quality.html">6.1 Government Effectiveness and Regulatory Quality</a><a class="section-link" href="../sections/06-02-rule-of-law-and-control-of-corruption.html">6.2 Rule of Law and Control of Corruption</a><a class="section-link" href="../sections/06-03-voice-accountability-political-stability-and-citizen-participation.html">6.3 Voice, Accountability, Political Stability, and Citizen Participation</a><a class="section-link" href="../sections/06-04-institutional-performance-and-reform-credibility.html">6.4 Institutional Performance and Reform Credibility</a></div></details>
+<details class="toc-group active" open><summary><a class="chapter-link active" href="../07-fiscal.html">7. Fiscal System and Public Sector</a></summary><div class="section-nav"><a class="section-link" href="../sections/07-01-government-revenue-mineral-revenue-and-expenditure-structure.html">7.1 Government Revenue, Mineral Revenue, and Expenditure Structure</a><a class="section-link" href="../sections/07-02-fiscal-balance-debt-stabilization-funds-and-interest-burden.html">7.2 Fiscal Balance, Debt, Stabilization Funds, and Interest Burden</a><a class="section-link" href="../sections/07-03-state-owned-enterprises-mining-soes-and-quasi-public-sector.html">7.3 State-Owned Enterprises, Mining SOEs, and Quasi-Public Sector</a><a class="section-link" href="../sections/07-04-public-investment-roads-urban-infrastructure-and-investment-decision-making.html">7.4 Public Investment, Roads, Urban Infrastructure, and Investment Decision-Making</a><a class="section-link" href="../sections/07-05-fiscal-capacity-commodity-cycles-and-public-sector-risks.html">7.5 Fiscal Capacity, Commodity Cycles, and Public Sector Risks</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../08-society.html">8. Population and Social Structure</a></summary><div class="section-nav"><a class="section-link" href="../sections/08-01-population-size-growth-age-structure-and-dependency.html">8.1 Population Size, Growth, Age Structure, and Dependency</a><a class="section-link" href="../sections/08-02-urbanization-ulaanbaatar-concentration-and-regional-distribution.html">8.2 Urbanization, Ulaanbaatar Concentration, and Regional Distribution</a><a class="section-link" href="../sections/08-03-ethnicity-language-religion-migration-remittances-and-diaspora.html">8.3 Ethnicity, Language, Religion, Migration, Remittances, and Diaspora</a><a class="section-link" href="../sections/08-04-nomadic-livelihoods-social-integration-and-conflict-factors.html">8.4 Nomadic Livelihoods, Social Integration, and Conflict Factors</a><a class="section-link" href="../sections/08-05-demographic-pressures-and-social-cohesion.html">8.5 Demographic Pressures and Social Cohesion</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../09-macro.html">9. Macroeconomic Structure</a></summary><div class="section-nav"><a class="section-link" href="../sections/09-01-gdp-scale-growth-and-gdp-per-capita.html">9.1 GDP Scale, Growth, and GDP Per Capita</a><a class="section-link" href="../sections/09-02-prices-exchange-rate-and-macroeconomic-stability.html">9.2 Prices, Exchange Rate, and Macroeconomic Stability</a><a class="section-link" href="../sections/09-03-sectoral-structure-mineral-dependence-growth-model-and-vulnerabilities.html">9.3 Sectoral Structure, Mineral Dependence, Growth Model, and Vulnerabilities</a><a class="section-link" href="../sections/09-04-growth-sustainability-and-structural-constraints.html">9.4 Growth Sustainability and Structural Constraints</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../10-trade.html">10. Trade, Investment, and External Economy</a></summary><div class="section-nav"><a class="section-link" href="../sections/10-01-exports-imports-trading-partners-and-current-account.html">10.1 Exports, Imports, Trading Partners, and Current Account</a><a class="section-link" href="../sections/10-02-copper-coal-gold-cashmere-tourism-and-services.html">10.2 Copper, Coal, Gold, Cashmere, Tourism, and Services</a><a class="section-link" href="../sections/10-03-fdi-absolute-amount-and-share-of-gdp.html">10.3 FDI Absolute Amount and Share of GDP</a><a class="section-link" href="../sections/10-04-investment-regime-economic-zones-and-industrial-policy.html">10.4 Investment Regime, Economic Zones, and Industrial Policy</a><a class="section-link" href="../sections/10-05-external-integration-and-competitiveness.html">10.5 External Integration and Competitiveness</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../11-infrastructure.html">11. Infrastructure, Energy, and Digital Connectivity</a></summary><div class="section-nav"><a class="section-link" href="../sections/11-01-electricity-access-heating-energy-dependence-and-transition.html">11.1 Electricity Access, Heating, Energy Dependence, and Transition</a><a class="section-link" href="../sections/11-02-transport-logistics-rail-road-air-and-border-corridors.html">11.2 Transport, Logistics, Rail, Road, Air, and Border Corridors</a><a class="section-link" href="../sections/11-03-internet-mobile-connectivity-secure-servers-and-logistics-performance.html">11.3 Internet, Mobile Connectivity, Secure Servers, and Logistics Performance</a><a class="section-link" href="../sections/11-04-connectivity-service-delivery-and-bottlenecks.html">11.4 Connectivity, Service Delivery, and Bottlenecks</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../12-labor.html">12. Labor Market and Human Capital</a></summary><div class="section-nav"><a class="section-link" href="../sections/12-01-labor-force-size-and-participation.html">12.1 Labor Force Size and Participation</a><a class="section-link" href="../sections/12-02-female-participation-unemployment-youth-unemployment-and-vulnerable-employment.html">12.2 Female Participation, Unemployment, Youth Unemployment, and Vulnerable Employment</a><a class="section-link" href="../sections/12-03-herding-mining-education-productivity-hdi-and-r-d.html">12.3 Herding, Mining, Education, Productivity, HDI, and R&amp;D</a><a class="section-link" href="../sections/12-04-employment-absorption-and-human-capital-use.html">12.4 Employment Absorption and Human Capital Use</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../13-education-health.html">13. Education, Health, and Welfare</a></summary><div class="section-nav"><a class="section-link" href="../sections/13-01-education-system-and-public-expenditure.html">13.1 Education System and Public Expenditure</a><a class="section-link" href="../sections/13-02-life-expectancy-infant-mortality-hospital-beds-doctors-and-health-expenditure.html">13.2 Life Expectancy, Infant Mortality, Hospital Beds, Doctors, and Health Expenditure</a><a class="section-link" href="../sections/13-03-air-pollution-sanitation-public-health-risks-and-welfare.html">13.3 Air Pollution, Sanitation, Public Health Risks, and Welfare</a><a class="section-link" href="../sections/13-04-human-development-outcomes-and-welfare-capacity.html">13.4 Human Development Outcomes and Welfare Capacity</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../14-environment.html">14. Environment, Climate Risk, and Sustainable Development</a></summary><div class="section-nav"><a class="section-link" href="../sections/14-01-climate-change-dzud-desertification-and-rural-livelihood-risk.html">14.1 Climate Change, Dzud, Desertification, and Rural Livelihood Risk</a><a class="section-link" href="../sections/14-02-ger-district-and-urban-public-health.html">14.2 Ger District and Urban Public Health</a><a class="section-link" href="../sections/14-03-mining-water-land-restoration-and-environmental-governance.html">14.3 Mining, Water, Land Restoration, and Environmental Governance</a><a class="section-link" href="../sections/14-04-sdg-performance-green-development-and-policy-implementation.html">14.4 SDG Performance, Green Development, and Policy Implementation</a><a class="section-link" href="../sections/14-05-environmental-sustainability-sdg-implementation-and-future-policy-direction.html">14.5 Environmental Sustainability, SDG Implementation, and Future Policy Direction</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../15-finance.html">15. Financial Sector and Economic Institutions</a></summary><div class="section-nav"><a class="section-link" href="../sections/15-01-domestic-credit-private-credit-capital-markets-and-fintech.html">15.1 Domestic Credit, Private Credit, Capital Markets, and Fintech</a><a class="section-link" href="../sections/15-02-central-bank-monetary-policy-supervision-and-exchange-rate.html">15.2 Central Bank, Monetary Policy, Supervision, and Exchange Rate</a><a class="section-link" href="../sections/15-03-foreign-investment-protection-and-capital-market-openness.html">15.3 Foreign Investment Protection and Capital Market Openness</a><a class="section-link" href="../sections/15-04-financial-deepening-and-market-institutions.html">15.4 Financial Deepening and Market Institutions</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../16-security.html">16. Foreign Relations, Security, and Geopolitics</a></summary><div class="section-nav"><a class="section-link" href="../sections/16-01-foreign-policy-orientation-and-international-organizations.html">16.1 Foreign Policy Orientation and International Organizations</a><a class="section-link" href="../sections/16-02-china-russia-third-neighbor-policy-and-strategic-balancing.html">16.2 China, Russia, Third Neighbor Policy, and Strategic Balancing</a><a class="section-link" href="../sections/16-03-borders-security-organizations-military-capacity-and-transnational-issues.html">16.3 Borders, Security Organizations, Military Capacity, and Transnational Issues</a><a class="section-link" href="../sections/16-04-strategic-resources-corridors-and-climate-security-risks.html">16.4 Strategic Resources, Corridors, and Climate-Security Risks</a><a class="section-link" href="../sections/16-05-strategic-environment-and-transnational-risks.html">16.5 Strategic Environment and Transnational Risks</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../17-policy.html">17. Major Policies and National Development Strategy</a></summary><div class="section-nav"><a class="section-link" href="../sections/17-01-evolution-of-national-development-strategy.html">17.1 Evolution of National Development Strategy</a><a class="section-link" href="../sections/17-02-vision-2050-new-recovery-policy-and-industrial-policy.html">17.2 Vision 2050, New Recovery Policy, and Industrial Policy</a><a class="section-link" href="../sections/17-03-digital-transformation-energy-transition-climate-policy-and-administrative-reform.html">17.3 Digital Transformation, Energy Transition, Climate Policy, and Administrative Reform</a><a class="section-link" href="../sections/17-04-welfare-education-health-and-recent-five-year-policy-changes.html">17.4 Welfare, Education, Health, and Recent Five-Year Policy Changes</a><a class="section-link" href="../sections/17-05-policy-implementation-and-reform-sequencing.html">17.5 Policy Implementation and Reform Sequencing</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../18-assessment.html">18. Integrated Assessment</a></summary><div class="section-nav"><a class="section-link" href="../sections/18-01-national-operating-model.html">18.1 National Operating Model</a><a class="section-link" href="../sections/18-02-political-stability-institutional-risk-growth-drivers-and-bottlenecks.html">18.2 Political Stability, Institutional Risk, Growth Drivers, and Bottlenecks</a><a class="section-link" href="../sections/18-03-administrative-capacity-and-international-cooperation-implications.html">18.3 Administrative Capacity and International Cooperation Implications</a><a class="section-link" href="../sections/18-04-mongolia-and-comparative-administration-theory.html">18.4 Mongolia and Comparative Administration Theory</a><a class="section-link" href="../sections/18-05-evidence-limits-and-source-triangulation.html">18.5 Evidence Limits and Source Triangulation</a><a class="section-link" href="../sections/18-06-strategic-diagnosis-and-outlook.html">18.6 Strategic Diagnosis and Outlook</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../19-appendix.html">19. Appendix and Update Workflow</a></summary><div class="section-nav"><a class="section-link" href="../sections/19-01-annual-revision-method.html">19.1 Annual Revision Method</a><a class="section-link" href="../sections/19-02-editorial-revision-method.html">19.2 Editorial Revision Method</a><a class="section-link" href="../sections/19-03-data-integrity.html">19.3 Data Integrity</a><a class="section-link" href="../sections/19-04-evidence-archive-and-review-trail.html">19.4 Evidence Archive and Review Trail</a><a class="section-link" href="../sections/19-05-data-limits-and-source-triangulation.html">19.5 Data Limits and Source Triangulation</a><a class="section-link" href="../sections/19-06-external-review-checklist.html">19.6 External Review Checklist</a><a class="section-link" href="../sections/19-07-comparative-administration-benchmark.html">19.7 Comparative Administration Benchmark</a><a class="section-link" href="../sections/19-08-timeline.html">19.8 Timeline</a><a class="section-link" href="../sections/19-09-government-organization-chart.html">19.9 Government Organization Chart</a><a class="section-link" href="../sections/19-10-constitution-and-major-laws.html">19.10 Constitution and Major Laws</a><a class="section-link" href="../sections/19-11-key-indicator-table-source-list-and-data-codebook.html">19.11 Key Indicator Table, Source List, and Data Codebook</a><a class="section-link" href="../sections/19-12-methodological-notes-and-update-standards.html">19.12 Methodological Notes and Update Standards</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../20-references.html">20. References</a></summary><div class="section-nav"><a class="section-link" href="../sections/20-01-references.html">20.1 References</a><a class="section-link" href="../sections/20-02-source-integrity-and-citation-notes.html">20.2 Source Integrity and Citation Notes</a></div></details></nav>
+    </aside>
+    <main>
+      <header class="hero"><h2>7.2 Fiscal Balance, Debt, Stabilization Funds, and Interest Burden</h2></header>
+      
+    <section class="section-reading">
+      
+    <article class="editable-prose" data-md-panel="fiscal-fiscal-balance-debt-stabilization-funds-and-interest-burden-text" data-md-source="sections/07-02-fiscal-balance-debt-stabilization-funds-and-interest-burden.md">
+      <div class="prose-toolbar">
+        <span>Editable section manuscript</span>
+        <div>
+          <button type="button" data-md-action="edit">Edit Markdown</button>
+          <button type="button" data-md-action="save" hidden>Save</button>
+          <button type="button" data-md-action="cancel" hidden>Cancel</button>
+        </div>
+      </div>
+      <div class="markdown-preview prose-body"></div>
+      <textarea class="markdown-editor" hidden>Mongolia’s fiscal balance, public debt, stabilization funds, and interest burden must be analyzed as a single fiscal-risk system. In a mineral-dependent economy, a temporary improvement in the budget balance can easily be mistaken for a structural improvement in state capacity. When coal exports, copper production, and mineral prices are strong, revenue rises rapidly, the budget balance improves, debt indicators decline, and foreign reserves accumulate. However, when commodity prices fall or export volumes weaken, the same fiscal system can quickly shift toward deficit, debt pressure, and expenditure adjustment. For Mongolia, fiscal balance is therefore not simply an accounting result. It is a measure of whether the state can discipline expenditure during booms, protect priority spending during downturns, and prevent mineral revenue from producing a repeated boom-bust cycle.
+
+The recent pattern illustrates this problem clearly. The mining boom in 2023–2024 strengthened exports and fiscal revenue, producing fiscal surpluses and reducing vulnerabilities. However, coal exports declined markedly in the first half of 2025, reducing budget revenue, widening the current account deficit, and creating depreciation pressure. The IMF notes that the new government formed in June 2025 submitted an amended budget to reduce expenditure and comply with the structural fiscal deficit limit. This shows that Mongolia’s fiscal position improved during the boom, but the improvement was fragile because it depended heavily on coal-related revenue. ([IMF][1])
+
+The fiscal balance should therefore be interpreted through both headline and structural indicators. The headline balance improved during the boom years: according to the IMF’s 2025 Article IV data, the overall balance under the IMF definition was 0.7 percent of GDP in 2022, 2.7 percent in 2023, and 1.3 percent in 2024. However, it was projected to shift to a deficit of 0.3 percent of GDP in 2025, 0.7 percent in 2026, and about 2 percent over the medium term. This pattern suggests that Mongolia’s fiscal surplus was not a permanent consolidation, but a cyclical result of high mineral revenue. The non-mineral primary balance tells the deeper story: it remained strongly negative, at -6.3 percent of GDP in 2022, -5.7 percent in 2023, -8.9 percent in 2024, and a projected -7.2 percent in 2025. In other words, without mineral revenue, the underlying fiscal position remains weak. ([IMF][1])
+
+{{figure:fiscal-balance}}
+
+The World Bank fiscal-balance series adds a longer historical perspective to the IMF narrative. Mongolia has repeatedly moved between surplus and deficit rather than gradually converging toward a stable fiscal position. This pattern is exactly what one would expect in a budget exposed to mineral prices, export volumes, border logistics, and election-period expenditure pressure. The key policy interpretation is therefore not simply whether a given year is in surplus. It is whether surplus years are used to rebuild buffers, retire expensive debt, and restrain permanent expenditure commitments before the next downturn arrives.
+
+This distinction is crucial for policy. A resource-dependent state can appear fiscally strong during a boom while its non-resource fiscal base remains insufficient to finance ordinary expenditure. Mongolia’s challenge is that the budget tends to expand when mineral revenue increases, but some of that expansion takes the form of recurrent commitments, wage increases, social transfers, subsidized credit, or politically difficult-to-reverse capital programs. When revenue falls, the state must either cut expenditure, borrow, draw down buffers, or rely on quasi-fiscal mechanisms. This is why fiscal balance must be evaluated not only by the annual deficit, but also by the quality of expenditure, the non-mineral balance, and the credibility of fiscal rules.
+
+Public debt has improved compared with the high-risk years of the mid-2010s and the pandemic period, but the risk has not disappeared. The IMF reports that general government debt declined from 64.5 percent of GDP in 2022 to 45.9 percent in 2023 and 44.5 percent in 2024. This was a significant achievement, supported by strong growth, mineral revenue, and fiscal surpluses. Yet the same IMF table projects debt to rise again to 46.0 percent of GDP in 2025, 48.4 percent in 2026, 51.3 percent in 2027, and 55.2 percent by 2030. The debt trajectory therefore suggests that Mongolia’s debt position is manageable but vulnerable to renewed fiscal loosening, weaker coal prices, large infrastructure commitments, exchange-rate depreciation, and contingent liabilities from state-owned enterprises. ([IMF][1])
+
+{{figure:government-debt}}
+
+The debt chart makes the institutional point visible. Mongolia&#x27;s debt ratio is not only a macroeconomic indicator; it is a constraint on the administrative state. When debt rises, ministries and local governments may still receive nominal budget allocations, but more of the state budget is pre-committed to refinancing risk, debt service, and exchange-rate exposure. This weakens the ability to protect maintenance spending, finance multi-year infrastructure pipelines, and respond to shocks such as dzud, inflation, or border disruption. The policy priority is therefore to judge new borrowing by the durability of the public assets it creates, not by the political attractiveness of the project announcement.
+
+The composition of debt also matters. Mongolia’s government debt remains heavily external. IMF data show external general government debt at 41.3 percent of GDP in 2024, compared with domestic debt of only 3.2 percent of GDP. This structure creates several risks. External debt exposes the budget to exchange-rate depreciation because debt service becomes more expensive in local currency when the tögrög weakens. It also exposes the government to refinancing conditions in international markets. Mongolia has made progress in reducing near-term debt stress, and Fitch noted in 2024 that debt had stabilized and that maturities were contained. However, reliance on external borrowing remains a structural vulnerability for a small, open, commodity-dependent economy. ([IMF][1])
+
+The interest burden is becoming more important. IMF projections show interest payments rising from 1.5 percent of GDP in 2024 to 1.7 percent in 2025, 1.9 percent in 2026, 2.1 percent in 2027, and 2.5 percent by 2030. This is not yet an acute debt-service crisis, but it is a warning signal. Interest payments are a rigid expenditure item: they must be paid before discretionary spending on education, health, infrastructure maintenance, local development, or social protection. If interest costs continue to rise while mineral revenue weakens, Mongolia will face a tighter budget constraint. The fiscal problem would then shift from “how to spend boom revenue” to “how to protect essential spending while servicing debt.” ([IMF][1])
+
+{{figure:interest-burden}}
+
+The interest-burden figure should be read as an early-warning indicator rather than a crisis chart. A temporary fall in the debt ratio can coexist with a rising future interest bill if borrowing costs increase, refinancing becomes more expensive, or new projects are financed before their economic returns materialize. The most useful administrative lesson is that interest payments reduce discretion: they crowd out the very spending categories that make fiscal policy visible to citizens, including local public services, road maintenance, school quality, hospital capacity, and targeted social protection. For Mongolia, debt sustainability is therefore not only about meeting a numerical ceiling. It is about keeping enough fiscal room to govern effectively.
+
+Mongolia has attempted to manage these risks through fiscal rules. The Fiscal Stability Law is intended to limit deficits, constrain debt, and prevent excessive procyclical spending. In principle, this is the correct direction for a mineral-dependent country. The problem is that fiscal rules are only effective when they are credible, stable, and politically respected. The IMF has warned that frequent changes to fiscal rules weaken credibility and that large investment projects should be implemented within the deficit and debt rules rather than exempted from them. The IMF also cautioned that proposals to reduce non-mining tax revenue would increase reliance on volatile mineral revenue and undermine fiscal sustainability. ([IMF][2])
+
+Stabilization funds are the second major instrument for managing the mineral cycle. Mongolia has developed several fiscal-buffer and wealth-fund mechanisms, including the Fiscal Stabilization Fund, the Future Heritage Fund, and the newer National Sovereign Wealth Fund framework. The policy logic is clear: part of mineral revenue should be saved during booms, used to stabilize the budget during downturns, and invested for future generations. However, the institutional design and actual use of these funds remain contested. A 2025 Open Society Forum policy brief explains that the April 2024 Law on the National Sovereign Wealth Fund consolidated three funds: the Future Heritage Fund, the Accumulation Fund, and the Development Fund. It reports that accumulated resources reached MNT 4,710 billion at the end of 2024 and were projected to reach MNT 7,368 billion in 2025. 
+
+The Future Heritage Fund is especially important because it was designed to distribute mineral-resource benefits between present and future generations. Its main revenue source is 65 percent of the remaining portion of mineral royalties after allocations to the Fiscal Stability Fund and the Local Development Fund. However, the same policy brief notes serious implementation gaps: the Future Heritage Fund Corporation had not been established, its board had not been elected, its assets had not been invested internationally as required, and detailed operational or investment documents were not publicly available. This suggests that Mongolia has created the legal architecture for a sovereign wealth fund, but the governance and investment machinery remains incomplete. 
+
+The National Sovereign Wealth Fund framework adds further complexity. The Accumulation Fund is financed by 34 percent of dividends from state-owned legal entities in mining and mineral processing, while the Development Fund is financed by 50 percent of additional budget revenue generated when mineral prices exceed benchmark prices in the annual budget. In policy terms, these funds have different purposes: the Future Heritage Fund is closer to an intergenerational savings fund, the Accumulation Fund is linked to distributing or accumulating returns from state-owned mining assets, and the Development Fund is designed to support investment and infrastructure. This structure can be useful, but it also creates governance risks if the funds are not clearly separated by purpose, transparency rules, withdrawal conditions, and parliamentary oversight. 
+
+Recent reporting on the Chinggis Khaan Sovereign Wealth Fund indicates that Mongolia is trying to build a more transparent and rules-based wealth-fund system. Reuters reported that the fund was established by law in April 2024, had about $1.4 billion in assets, and was preparing to appoint independent board members, hire external advisers, adopt an investment strategy, and create a citizen-accessible app to show allocations, revenue sources, and citizen benefits. The same report describes a tripartite structure: a Future Heritage Fund investing mineral royalties overseas, a savings fund financed by dividends from state-owned mining companies, and a development fund financed by windfall commodity revenues for infrastructure investment. ([Reuters][3])
+
+This is a positive institutional direction, but it also raises a central policy question: should mineral revenue be saved abroad, used for domestic infrastructure, distributed to citizens, or used to reduce debt? Mongolia needs all four objectives, but pursuing them simultaneously can weaken fiscal discipline. If too much mineral revenue is distributed immediately, long-term savings decline. If too much is directed to infrastructure without rigorous appraisal, public investment efficiency declines. If too much is saved abroad while domestic infrastructure gaps remain severe, political support for the fund may weaken. If too much is used to reduce debt, citizens may question why visible development benefits are delayed. The core task is therefore not simply to create funds, but to create rules that define when revenue is saved, when it can be spent, and who has authority to decide.
+
+The off-budget role of state-owned enterprises complicates this system further. Erdenes Mongol and related mining enterprises are central to the ownership and distribution of mineral wealth. They generate dividends, finance projects, and sometimes carry quasi-fiscal responsibilities. However, when SOEs are used to implement social programs, subsidized credit, infrastructure commitments, or politically directed investments outside the ordinary budget, the true fiscal position becomes difficult to assess. The IMF has recommended ending quasi-fiscal operations by the Bank of Mongolia and maintaining fiscal discipline within the formal budgetary framework. This recommendation is important because fiscal risk can migrate from the central budget to SOEs, the central bank, or special funds if rules are not comprehensive. ([IMF][1])
+
+The interest-rate and macroeconomic environment makes these issues more urgent. Mongolia’s fiscal expansion can raise imports, worsen the current account, increase inflationary pressure, and force tighter monetary policy. The IMF notes that inflation is expected to remain above the Bank of Mongolia’s target band until 2026 and that credit growth remains high. A loose fiscal stance therefore does not only affect the budget; it also affects monetary policy, exchange-rate stability, household purchasing power, and private-sector financing conditions. In this sense, fiscal balance and interest burden are connected. When the government spends procyclically, monetary tightening may become necessary; when borrowing increases, debt service rises; and when debt service rises, fiscal space for development shrinks. ([IMF][1])
+
+For Mongolia’s real policy environment, the most important issue is the treatment of large development projects. Mongolia has legitimate needs for railways, roads, border logistics, energy infrastructure, urban services, schools, hospitals, and climate-resilient rural systems. However, large projects can create major fiscal risks if they are exempted from fiscal rules, financed through SOEs, or justified by optimistic revenue forecasts. The IMF specifically emphasizes that mega capital projects should remain within fiscal rules and be carefully prioritized. This point is directly relevant to state capacity: a capable state is not one that launches the most projects during a boom, but one that selects projects with the highest social return and maintains them over time. ([IMF][1])
+
+### Policy Implications
+
+The policy implications are substantial. First, Mongolia should treat the overall fiscal balance as insufficient and give greater weight to the non-mineral primary balance. The non-mineral balance shows whether the ordinary state can finance ordinary obligations without relying on temporary mineral revenue. A large non-mineral deficit means that the state remains structurally dependent on mineral cycles.
+
+Second, Mongolia should preserve the credibility of the Fiscal Stability Law. Fiscal rules should not be frequently amended to accommodate short-term political demands or exempt large projects. If the rules are repeatedly changed, they cease to function as anchors. The structural deficit rule, debt ceiling, and expenditure rules should be applied consistently and transparently.
+
+Third, stabilization and sovereign wealth funds should be governed by clear rules. The Fiscal Stabilization Fund should serve countercyclical stabilization. The Future Heritage Fund should serve intergenerational savings. The Accumulation and Development Funds should not become opaque channels for politically attractive spending. Each fund needs clear deposit rules, withdrawal rules, investment mandates, audit requirements, and public reporting.
+
+Fourth, Mongolia should reduce debt vulnerability before the next downturn. The decline in debt after 2022 was an important achievement, but IMF projections show that debt could rise again over the medium term. Reducing external debt exposure, lengthening maturities, developing the domestic bond market, and avoiding foreign-currency borrowing for low-return projects would improve fiscal resilience.
+
+Fifth, the interest burden should be treated as a constraint on development policy. Rising interest payments reduce fiscal space for social services, infrastructure maintenance, and local development. Debt-financed spending is justified only when the expected social and economic return exceeds the long-term cost of borrowing.
+
+Sixth, Mongolia should integrate SOEs and quasi-fiscal operations into fiscal-risk management. Mining SOEs, subsidized credit schemes, public-private partnerships, and central-bank quasi-fiscal operations can all create hidden liabilities. A credible fiscal framework must include consolidated reporting, SOE balance-sheet monitoring, and parliamentary oversight of contingent liabilities.
+
+Finally, Mongolia’s fiscal policy should connect stabilization with democratic legitimacy. Citizens need to see that mineral wealth is not being captured by elites, lost through corruption, or consumed entirely in short-term spending. Transparent wealth-fund governance, citizen-facing reporting, competitive procurement, independent audit, and local consultation are therefore not secondary governance reforms. They are central to making mineral wealth politically legitimate and fiscally sustainable.
+
+### Sources
+
+* International Monetary Fund. 2025. *Mongolia: 2025 Article IV Consultation—Press Release; Staff Report; and Statement by the Alternate Executive Director for Mongolia*, IMF Country Report No. 25/265.
+* International Monetary Fund. 2025. “Mongolia: Staff Concluding Statement of the 2025 Article IV Mission.”
+* World Bank. World Development Indicators: net lending/net borrowing, central government debt, and government interest payments for Mongolia.
+* World Bank. 2025. *Mongolia Public Finance Review: Making This Time Different: Fiscal Reforms for Stable, Sustainable, and Inclusive Development*.
+* World Bank. 2025. “World Bank Report Proposes Fiscal Reforms to Sustain Mongolia’s Growth.”
+* Open Society Forum. 2025. *Policy Brief on Mongolia’s National Sovereign Wealth Fund*.
+* Reuters. 2025. “Mongolia Targets Development, Transparency with Sovereign Wealth Chinggis Fund.”
+* Bank of Mongolia. 2024. “Fitch Ratings Have Upgraded Mongolia’s Credit Rating to B+.”
+
+[1]: https://www.imf.org/en/news/articles/2025/09/15/pr-25298-mongolia-imf-executive-board-concludes-2025-article-iv-consultation &quot;IMF Executive Board Concludes 2025 Article IV Consultation with Mongolia&quot;
+[2]: https://www.imf.org/en/news/articles/2025/06/27/mongolia-staff-concluding-statement-of-the-2025-article-iv-mission &quot;Mongolia: Staff Concluding Statement of the 2025 Article IV Mission&quot;
+[3]: https://www.reuters.com/markets/asia/mongolia-targets-development-transparency-with-sovereign-wealth-chinggis-fund-2025-10-02/ &quot;Mongolia targets development, transparency with sovereign wealth Chinggis Fund | Reuters&quot;</textarea>
+      <template data-figure-template="fiscal-balance">
+    <figure class="figure-card" id="fiscal-balance">
+      <figcaption>Mongolia: Fiscal Balance</figcaption>
+      <div class="chart-frame">
+        <canvas id="chart-fiscal-balance" aria-label="Mongolia: Fiscal Balance" role="img"></canvas>
+      </div>
+      <p class="source">Source: World Bank WDI, net lending (+) / net borrowing (-), Mongolia country code MNG. Indicator IDs: GC.NLD.TOTL.GD.ZS. Unit: Percent of GDP (%).</p>
+      <script type="application/json" id="chart-fiscal-balance-config">{"type": "line", "data": {"labels": [1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], "datasets": [{"label": "Net lending (+) / net borrowing (-) (% of GDP)", "data": [-0.518436885922866, 2.7082178056561, 0.377123218473874, 2.44252969921243, 0.744041372446667, -0.0304418502430137, -0.970425879451468, -2.71560675742568, 0.18348742826911, 0.994268059723223, -1.2508856281796, -0.380613903960379, 2.75608019624397, 7.13598763241543, -3.28337778707655, -4.09219219473319, 2.6302321122822, -2.64687752091456, -7.08958771349158, -1.09932468780438, -3.37589488771131, -4.76399889013465, -12.7636900829428, -2.73539560474737, 3.48613717335996, 2.21701411423202, -9.57650915745536, -5.90095440736784, 0.980882982473455, 2.26772747395681, 1.81410055457023], "borderColor": "#0f6f78", "backgroundColor": "#0f6f78", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}]}, "options": {"responsive": true, "maintainAspectRatio": false, "interaction": {"mode": "index", "intersect": false}, "plugins": {"legend": {"position": "bottom", "labels": {"boxWidth": 14, "boxHeight": 3}}, "tooltip": {"enabled": true}}, "scales": {"x": {"grid": {"display": false}, "ticks": {"maxTicksLimit": 8}}, "y": {"title": {"display": true, "text": "Percent of GDP (%)"}, "grid": {"color": "#e8eef3"}, "ticks": {"precision": 1}}}}}</script>
+    </figure>
+    
+
+    <div class="figure-interpretation">
+      <p>The fiscal-balance series shows how quickly Mongolia&#x27;s public finances move with mineral cycles. Surplus years should not be read as permanent fiscal strength unless the non-mineral balance, expenditure rules, and stabilization savings also improve.</p>
+      <ul><li>Net lending (+) / net borrowing (-) (% of GDP) rose from -0.52 in 1992 to 1.81 in 2024.</li></ul>
+    </div>
+    </template>
+<template data-figure-template="government-debt">
+    <figure class="figure-card" id="government-debt">
+      <figcaption>Mongolia: Central Government Debt</figcaption>
+      <div class="chart-frame">
+        <canvas id="chart-government-debt" aria-label="Mongolia: Central Government Debt" role="img"></canvas>
+      </div>
+      <p class="source">Source: World Bank WDI, central government debt, total, Mongolia country code MNG. Indicator IDs: GC.DOD.TOTL.GD.ZS. Unit: Percent of GDP (%).</p>
+      <script type="application/json" id="chart-government-debt-config">{"type": "line", "data": {"labels": [1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2018, 2019, 2020, 2021, 2024], "datasets": [{"label": "Central government debt, total (% of GDP)", "data": [20.621673383358, 41.4415301033198, 51.434529837839, 37.0712826765271, 49.4796320305737, 54.6275786922475, 71.5753340452053, 83.9144976966664, 78.41832770873, 69.0997980938579, 65.9653147370968, 60.8440397174621, 73.9367835152858, 67.5710143237735, 43.3447191804482], "borderColor": "#0f6f78", "backgroundColor": "#0f6f78", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}]}, "options": {"responsive": true, "maintainAspectRatio": false, "interaction": {"mode": "index", "intersect": false}, "plugins": {"legend": {"position": "bottom", "labels": {"boxWidth": 14, "boxHeight": 3}}, "tooltip": {"enabled": true}}, "scales": {"x": {"grid": {"display": false}, "ticks": {"maxTicksLimit": 8}}, "y": {"title": {"display": true, "text": "Percent of GDP (%)"}, "grid": {"color": "#e8eef3"}, "ticks": {"precision": 1}}}}}</script>
+    </figure>
+    
+
+    <div class="figure-interpretation">
+      <p>The debt series translates fiscal decisions into medium-term risk. Mongolia&#x27;s debt ratio can fall sharply in boom years, but external borrowing, exchange-rate pressure, and large public investment commitments can quickly reverse the improvement.</p>
+      <ul><li>Central government debt, total (% of GDP) rose from 20.62 in 1992 to 43.34 in 2024.</li></ul>
+    </div>
+    </template>
+<template data-figure-template="interest-burden">
+    <figure class="figure-card" id="interest-burden">
+      <figcaption>Mongolia: Government Interest Burden</figcaption>
+      <div class="chart-frame">
+        <canvas id="chart-interest-burden" aria-label="Mongolia: Government Interest Burden" role="img"></canvas>
+      </div>
+      <p class="source">Source: World Bank WDI, interest payments as a share of revenue and expense, Mongolia country code MNG. Indicator IDs: GC.XPN.INTP.RV.ZS, GC.XPN.INTP.ZS. Unit: Percent (%).</p>
+      <script type="application/json" id="chart-interest-burden-config">{"type": "line", "data": {"labels": [1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], "datasets": [{"label": "Interest payments (% of revenue)", "data": [0.626515763945028, 4.18800594746407, 2.63956404619624, 1.63704566975016, 3.16567261487939, 10.9377733538443, 6.17922768008823, 8.50225114523327, 5.99943274012902, 4.53119275405835, 4.97093375513633, 3.06044429476059, 1.18607538962496, 0.968861866937316, 0.974472221826884, 1.55790678003834, 1.39725990977023, 0.939156620106209, 2.72861165508255, 4.98412575033561, 8.66721263298774, 13.4702626616314, 18.266798069236, 16.0347927933999, 10.9362606304665, 6.89069796908843, 8.68690332759061, 6.16819515777145, 4.15632053588093, 4.45598248092915, 4.25984217763866], "borderColor": "#0f6f78", "backgroundColor": "#0f6f78", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}, {"label": "Interest payments (% of expense)", "data": [0.662605535962381, 6.09027298117061, 3.13494033500653, 2.36451388066964, 3.99934920328246, 11.9026830437152, 6.39198898370026, 8.46468155905165, 6.63767026567466, 5.35925480651751, 5.95767804132227, 3.92244034270746, 1.92286766097277, 1.61487541400335, 1.1886698793376, 1.69869728976682, 1.87575069642066, 1.15959761289853, 2.78670467537289, 5.94209019520066, 9.4849776066103, 13.1325004958833, 15.039245078118, 17.4193666802714, 14.3761489730189, 9.08117366159826, 7.87343329575996, 6.00938844942534, null, null, null], "borderColor": "#a6502a", "backgroundColor": "#a6502a", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}]}, "options": {"responsive": true, "maintainAspectRatio": false, "interaction": {"mode": "index", "intersect": false}, "plugins": {"legend": {"position": "bottom", "labels": {"boxWidth": 14, "boxHeight": 3}}, "tooltip": {"enabled": true}}, "scales": {"x": {"grid": {"display": false}, "ticks": {"maxTicksLimit": 8}}, "y": {"title": {"display": true, "text": "Percent (%)"}, "grid": {"color": "#e8eef3"}, "ticks": {"precision": 1}}}}}</script>
+    </figure>
+    
+
+    <div class="figure-interpretation">
+      <p>Interest payments are a rigid claim on future budgets. When the interest burden rises, it narrows the space for schools, hospitals, infrastructure maintenance, local transfers, and shock response even if headline spending still appears large.</p>
+      <ul><li>Interest payments (% of revenue) rose from 0.63 in 1992 to 4.26 in 2024.</li>
+<li>Interest payments (% of expense) rose from 0.66 in 1992 to 6.01 in 2021.</li></ul>
+    </div>
+    </template>
+    </article>
+    
+    </section>
+    
+    </main>
+  </div>
+  <script>
+    function fallbackMarkdown(text) {
+      const escaped = text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+      return escaped.split(/\n{2,}/).map((block) => `<p>${block.replace(/\n/g, "<br>")}</p>`).join("");
+    }
+    function renderMarkdown(text) {
+      return window.marked ? marked.parse(text) : fallbackMarkdown(text);
+    }
+    function replaceFigurePlaceholders(preview, panel) {
+      const pattern = /^\{\{(figure|map|image):([a-z0-9-]+)\}\}$/;
+      preview.querySelectorAll("p").forEach((paragraph) => {
+        const match = (paragraph.textContent || "").trim().match(pattern);
+        if (!match) return;
+        const key = match[1] === "figure" ? match[2] : `${match[1]}:${match[2]}`;
+        const template = panel.querySelector(`template[data-figure-template="${key}"]`);
+        if (!template) {
+          const note = document.createElement("p");
+          note.className = "source";
+          note.textContent = `Figure not available: ${key}`;
+          paragraph.replaceWith(note);
+          return;
+        }
+        paragraph.replaceWith(template.content.cloneNode(true));
+      });
+    }
+    function setupMarkdownPanels() {
+      document.querySelectorAll("[data-md-panel]").forEach((panel) => {
+        const id = panel.getAttribute("data-md-panel");
+        const preview = panel.querySelector(".markdown-preview");
+        const editor = panel.querySelector(".markdown-editor");
+        const edit = panel.querySelector("[data-md-action='edit']");
+        const save = panel.querySelector("[data-md-action='save']");
+        const cancel = panel.querySelector("[data-md-action='cancel']");
+        const source = panel.getAttribute("data-md-source");
+        const original = editor.value;
+        let hash = 0;
+        for (let i = 0; i < original.length; i += 1) {
+          hash = ((hash << 5) - hash + original.charCodeAt(i)) | 0;
+        }
+        const storageKey = `mng-report-markdown:v2:${id}:${hash}`;
+        const stored = localStorage.getItem(storageKey);
+        const isPermanentMode = source && window.location.protocol.startsWith("http");
+        if (stored !== null && (!source || window.location.protocol === "file:")) {
+          editor.value = stored;
+        } else if (stored !== null && isPermanentMode && stored !== editor.value) {
+          const useDraft = window.confirm("A browser draft exists for this section. Load it into the editor so you can save it permanently?");
+          if (useDraft) editor.value = stored;
+        }
+        const showPreview = () => {
+          preview.innerHTML = renderMarkdown(editor.value);
+          replaceFigurePlaceholders(preview, panel);
+          setupCharts();
+        };
+        const setEditing = (editing) => {
+          editor.hidden = !editing;
+          preview.hidden = editing;
+          edit.hidden = editing;
+          save.hidden = !editing;
+          cancel.hidden = !editing;
+        };
+        const saveMarkdown = async () => {
+          if (isPermanentMode) {
+            const response = await fetch("/api/save-section", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ source, markdown: editor.value })
+            });
+            if (!response.ok) {
+              const message = await response.text();
+              throw new Error(message || `Save failed with ${response.status}`);
+            }
+            localStorage.removeItem(storageKey);
+            window.alert("Saved permanently to the Markdown source file.");
+          } else {
+            localStorage.setItem(storageKey, editor.value);
+            if (source) {
+              window.alert("This edit was saved only as a browser draft. Open the report through MNG/code/serve_report.py to save it permanently to the Markdown source file.");
+            }
+          }
+        };
+        showPreview();
+        setEditing(false);
+        edit.addEventListener("click", () => setEditing(true));
+        save.addEventListener("click", async () => {
+          save.disabled = true;
+          try {
+            await saveMarkdown();
+            showPreview();
+            setEditing(false);
+          } catch (error) {
+            window.alert(error.message || "Could not save the Markdown source.");
+          } finally {
+            save.disabled = false;
+          }
+        });
+        cancel.addEventListener("click", () => {
+          editor.value = localStorage.getItem(storageKey) ?? original;
+          showPreview();
+          setEditing(false);
+        });
+      });
+    }
+    function setupCharts() {
+      if (!window.Chart) {
+        document.querySelectorAll(".figure-card").forEach((card) => {
+          const note = document.createElement("p");
+          note.className = "source";
+          note.textContent = "Chart.js could not be loaded from local assets/chart.umd.min.js.";
+          card.appendChild(note);
+        });
+        return;
+      }
+      document.querySelectorAll("script[type='application/json'][id$='-config']").forEach((script) => {
+        const canvasId = script.id.replace("-config", "");
+        const canvas = document.getElementById(canvasId);
+        if (!canvas) return;
+        if (canvas.dataset.chartReady === "1") return;
+        canvas.dataset.chartReady = "1";
+        new Chart(canvas, JSON.parse(script.textContent));
+      });
+    }
+    window.addEventListener("DOMContentLoaded", () => {
+      setupMarkdownPanels();
+      setupCharts();
+    });
+    </script>
+</body>
+</html>

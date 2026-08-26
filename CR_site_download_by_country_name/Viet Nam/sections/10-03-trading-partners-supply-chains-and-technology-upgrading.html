@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>10.3 Trading Partners, Supply Chains, and Technology Upgrading | VNM Country Report</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+  <script src="../assets/chart.umd.min.js"></script>
+  <style>
+    body{margin:0;background:#f4f6f4;color:#17201b;font-family:Arial,Helvetica,sans-serif;line-height:1.65}
+    .layout{display:grid;grid-template-columns:320px minmax(0,1fr);min-height:100vh}
+    aside{position:sticky;top:0;height:100vh;overflow:auto;background:#fff;border-right:1px solid #d9ded8;padding:18px}
+    aside a{display:block;color:#25312a;text-decoration:none;border-radius:6px;padding:6px 8px;font-size:13px}
+    aside a:hover,aside a.active{background:#e8f0ea;color:#0d5a6a} summary{cursor:pointer;font-weight:700;margin:10px 0 4px}
+    .home{font-weight:800;margin-bottom:8px}
+    main{max-width:1050px;padding:36px min(6vw,72px) 90px}
+    .crumb{font-size:13px;color:#607067;margin:0 0 8px} h1{font-size:36px;line-height:1.15;margin:0 0 8px}
+    .chapter-title{color:#56645c;margin:0 0 26px}
+    .section-body,.chart-card{background:#fff;border:1px solid #d9ded8;border-radius:8px;padding:18px;margin:0 0 22px}
+    .section-body h2{font-size:26px;margin:0 0 14px} .section-body p{font-family:Georgia,'Times New Roman',serif;font-size:18px;margin:0 0 14px}
+    table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px} th,td{border:1px solid #d9ded8;padding:8px;vertical-align:top} th{background:#edf2ea;text-align:left}
+    code{background:#eef2ee;border:1px solid #d8ded8;border-radius:4px;padding:1px 4px} .source-note,figcaption{font-size:12px;color:#607067}
+    .chart-frame{height:340px} .chart-frame canvas{width:100%;height:100%}
+    .figure-card,.map-card,.symbol-figure{background:#fff;border:1px solid #d9ded8;border-radius:8px;padding:14px;margin:18px 0 24px}
+    .source{color:#607067;font-size:12px;margin:10px 0 0} .map-grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(280px,.7fr);gap:16px;align-items:start}
+    .adm-map{width:100%;height:auto;border:1px solid #d9ded8;background:#f7fbfc} .adm-path{stroke:#fff;stroke-width:.7} .map-label{font-size:6px;fill:#32424f;text-anchor:middle;pointer-events:none} .neighbor-label{font-size:12px;fill:#6c7b88}
+    .capital-marker circle{fill:#c23b22;stroke:#fff;stroke-width:1.4} .capital-marker text{font-size:12px;fill:#17212b;font-weight:700} .map-table-wrap{max-height:420px;overflow:auto}
+    .symbol-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px} .symbol-card{min-height:260px;border:1px solid #d9ded8;border-radius:8px;background:#fbfdfe;padding:14px;display:flex;flex-direction:column;gap:10px}
+    .symbol-card h3{font-size:18px;margin:2px 0 0} .symbol-card p{font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:1.48;color:#34424e;margin:0} .symbol-kicker{color:#607067;font-size:11px;text-transform:uppercase;letter-spacing:.06em}
+    .flag-indonesia{height:92px;border:1px solid #b9c6cd;border-radius:4px;overflow:hidden} .flag-indonesia span{display:block;height:50%} .flag-indonesia span:first-child{background:#c9182b} .flag-indonesia span:last-child{background:#fff}
+    .garuda-mark{height:92px;display:grid;grid-template-columns:1fr 56px 1fr;align-items:center;gap:4px} .garuda-mark .wing{height:60px;background:#c59a35;border:1px solid #9d761e} .garuda-mark .left{border-radius:60px 10px 18px 60px} .garuda-mark .right{border-radius:10px 60px 60px 18px}
+    .garuda-mark .body{height:82px;background:#d6ad46;border:1px solid #9d761e;border-radius:36px 36px 18px 18px} .garuda-mark .shield{grid-column:2;justify-self:center;margin-top:-58px;width:36px;height:42px;border-radius:8px 8px 14px 14px;background:#1f3f68;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;border:2px solid #f1d47b}
+    .motto-line{height:92px;display:flex;align-items:center;justify-content:center;text-align:center;border:1px solid #cfd9de;border-radius:6px;background:linear-gradient(180deg,#fff,#eef5f7);font-weight:800;color:#15384a;padding:12px} .anthem-bars{height:92px;display:flex;align-items:end;gap:8px;justify-content:center;border:1px solid #cfd9de;border-radius:6px;background:#f8fbfc;padding:16px}
+    .anthem-bars span{width:22px;background:#0f6f87;border-radius:4px 4px 0 0} .anthem-bars span:nth-child(1){height:38px} .anthem-bars span:nth-child(2){height:62px} .anthem-bars span:nth-child(3){height:48px} .anthem-bars span:nth-child(4){height:72px}
+    @media(max-width:860px){.layout{grid-template-columns:1fr}aside{position:relative;height:auto}main{padding:24px 18px}}
+  
+    .md-toolbar{display:flex;justify-content:flex-end;gap:8px;margin:0 0 14px}
+    .md-toolbar button{border:1px solid #0d5a6a;background:#0d5a6a;color:#fff;border-radius:5px;padding:7px 11px;font:700 12px Arial,Helvetica,sans-serif;cursor:pointer}
+    .md-toolbar button[data-md-action='cancel']{background:#fff;color:#25312a;border-color:#cfd8d3}
+    .md-editor{width:100%;min-height:520px;border:1px solid #cfd8d3;border-radius:6px;padding:14px;font:14px Consolas,monospace;line-height:1.45}
+
+  </style>
+  <script src="../assets/marked.min.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <aside><a class='home' href='../index.html'>VNM cover</a>
+<details ><summary>1. Country Overview</summary><a class='section-link ' href='01-01-national-profile.html'>1.1 National Profile</a><a class='section-link ' href='01-02-state-symbols.html'>1.2 State Symbols</a><a class='section-link ' href='01-03-geography-and-administrative-divisions.html'>1.3 Geography and Administrative Divisions</a><a class='section-link ' href='01-04-core-institutional-diagnosis.html'>1.4 Core Institutional Diagnosis</a><a class='section-link ' href='01-05-evidence-base.html'>1.5 Evidence Base and Reading Direction</a></details>
+<details ><summary>2. Historical Background</summary><a class='section-link ' href='02-01-civilizational-layers-and-frontier-statecraft.html'>2.1 Civilizational Layers and Frontier Statecraft</a><a class='section-link ' href='02-02-colonial-rule-revolution-and-war.html'>2.2 Colonial Rule, Revolution, and War</a><a class='section-link ' href='02-03-reunification-and-doi-moi.html'>2.3 Reunification and Doi Moi</a><a class='section-link ' href='02-04-historical-legacies-in-present-institutions.html'>2.4 Historical Legacies in Present Institutions</a></details>
+<details ><summary>3. Constitution and Basic State Order</summary><a class='section-link ' href='03-01-constitutional-order-and-amendments.html'>3.1 Constitutional Order, Ownership, and the Architecture of State Power</a><a class='section-link ' href='03-02-sovereignty-party-leadership-and-territorial-integrity.html'>3.2 Sovereignty, Party Leadership, and Territorial Integrity</a><a class='section-link ' href='03-03-rights-duties-and-socialist-rule-of-law.html'>3.3 Rights, Duties, and Socialist Rule of Law</a><a class='section-link ' href='03-04-state-power-review-audit-and-emergency-authority.html'>3.4 State Power, Review, Audit, and Emergency Authority</a></details>
+<details ><summary>4. Political System and Power Structure</summary><a class='section-link ' href='04-01-party-leadership-and-state-institutions.html'>4.1 Party Leadership and State Institutions</a><a class='section-link ' href='04-02-national-assembly-elections-and-representation.html'>4.2 National Assembly, Elections, and Representation</a><a class='section-link ' href='04-03-executive-coordination-and-government-formation.html'>4.3 Executive Coordination and Government Formation</a><a class='section-link ' href='04-04-judiciary-rule-of-law-corruption-and-accountability.html'>4.4 Courts, Procuracy, Inspection, and Anti-Corruption</a><a class='section-link ' href='04-05-local-politics-and-real-power-relations.html'>4.5 Local Politics and Real Power Relations</a><a class='section-link ' href='04-06-political-system-diagnostics-and-democratic-trajectory.html'>4.6 Political System Diagnostics and Democratic Trajectory</a></details>
+<details ><summary>5. Administrative System and Government Organization</summary><a class='section-link ' href='05-01-central-government-and-ministerial-system.html'>5.1 Central Government and Ministerial System</a><a class='section-link ' href='05-02-organizational-management-and-bureaucratic-reform.html'>5.2 Organizational Management and Bureaucratic Reform</a><a class='section-link ' href='05-03-human-resource-management-and-civil-service.html'>5.3 Human Resource Management and Civil Service</a><a class='section-link ' href='05-04-financial-administration-procurement-audit-and-inspection.html'>5.4 Financial Administration, Procurement, Audit, and Inspection</a><a class='section-link ' href='05-05-local-administration-and-service-delivery.html'>5.5 Local Administration and Service Delivery</a><a class='section-link ' href='05-06-digital-government-and-administrative-accountability.html'>5.6 Digital Government and Administrative Accountability</a><a class='section-link ' href='05-07-implementation-capacity-and-administrative-performance.html'>5.7 Implementation Capacity and Administrative Performance</a></details>
+<details ><summary>6. Governance and Institutional Capacity</summary><a class='section-link ' href='06-01-government-effectiveness-and-regulatory-quality.html'>6.1 Government Effectiveness and Regulatory Quality</a><a class='section-link ' href='06-02-rule-of-law-and-corruption-control.html'>6.2 Rule of Law and Corruption Control</a><a class='section-link ' href='06-03-voice-accountability-and-stability.html'>6.3 Voice, Accountability, and Stability</a><a class='section-link ' href='06-04-what-governance-indicators-reveal.html'>6.4 What Governance Indicators Reveal</a></details>
+<details ><summary>7. Fiscal System and Public Sector</summary><a class='section-link ' href='07-01-revenue-taxation-and-expenditure.html'>7.1 Revenue, Taxation, and Expenditure</a><a class='section-link ' href='07-02-deficit-debt-and-fiscal-space.html'>7.2 Fiscal Balance, Debt, and Fiscal Space</a><a class='section-link ' href='07-03-public-investment-soes-and-quasi-fiscal-risk.html'>7.3 Public Investment, Procurement, SOEs, and Quasi-Fiscal Risk</a><a class='section-link ' href='07-04-budget-decentralization-and-audit.html'>7.4 Budget Decentralization, Procurement Oversight, and Audit</a><a class='section-link ' href='07-05-fiscal-capacity-and-public-sector-risks.html'>7.5 Fiscal Capacity and Public Sector Risks</a></details>
+<details ><summary>8. Population and Social Structure</summary><a class='section-link ' href='08-01-population-scale-and-age-structure.html'>8.1 Population Scale and Age Structure</a><a class='section-link ' href='08-02-urbanization-and-regional-distribution.html'>8.2 Urbanization and Regional Distribution</a><a class='section-link ' href='08-03-ethnicity-language-religion-and-social-cohesion.html'>8.3 Ethnicity, Language, Religion, and Social Cohesion</a><a class='section-link ' href='08-04-migration-remittances-and-inclusion.html'>8.4 Migration, Remittances, and Inclusion</a></details>
+<details ><summary>9. Macroeconomic Structure</summary><a class='section-link ' href='09-01-gdp-scale-growth-and-income.html'>9.1 GDP Scale, Growth, and Income Level</a><a class='section-link ' href='09-02-inflation-exchange-rate-and-macro-stability.html'>9.2 Inflation, Exchange-Rate Management, and Macro Stability</a><a class='section-link ' href='09-03-industrial-structure-and-productivity.html'>9.3 Industrial Structure, Sectoral Transformation, and Productivity</a><a class='section-link ' href='09-04-growth-model-and-structural-vulnerabilities.html'>9.4 External Position, Trade Balance, and Structural Constraints</a><a class='section-link ' href='09-05-growth-driver-model-and-interpretation.html'>9.5 Growth Driver Model and Interpretation</a></details>
+<details open><summary>10. Trade, Investment, and External Economy</summary><a class='section-link ' href='10-01-exports-imports-and-current-account.html'>10.1 Export-Import Trends, Trade Dependence, and Export Transformation</a><a class='section-link ' href='10-02-fdi-and-export-manufacturing.html'>10.2 FDI and Export Manufacturing</a><a class='section-link active' href='10-03-trading-partners-supply-chains-and-technology-upgrading.html'>10.3 Trading Partners, Supply Chains, and Technology Upgrading</a><a class='section-link ' href='10-04-investment-rules-zones-and-industrial-policy.html'>10.4 Investment Rules, Zones, and Industrial Policy</a></details>
+<details ><summary>11. Infrastructure, Energy, and Digital Connectivity</summary><a class='section-link ' href='11-01-energy-access-and-power-system-reform.html'>11.1 Energy Access and Power System Reform</a><a class='section-link ' href='11-02-transport-logistics-and-corridors.html'>11.2 Transport, Logistics, and Corridors</a><a class='section-link ' href='11-03-digital-connectivity.html'>11.3 Digital Connectivity, AI Infrastructure, and the Digital Economy</a><a class='section-link ' href='11-04-infrastructure-governance-and-climate-resilience.html'>11.4 Infrastructure Governance and Climate Resilience</a></details>
+<details ><summary>12. Labor Market and Human Capital</summary><a class='section-link ' href='12-01-labor-force-and-participation.html'>12.1 Labor Force and Participation</a><a class='section-link ' href='12-02-women-youth-and-informality.html'>12.2 Women, Youth, and Informality</a><a class='section-link ' href='12-03-agricultural-employment-and-productivity.html'>12.3 Agricultural Employment and Productivity</a><a class='section-link ' href='12-04-skills-education-and-human-capital.html'>12.4 Skills, Education, and Human Capital</a></details>
+<details ><summary>13. Education, Health, and Welfare</summary><a class='section-link ' href='13-01-education-system-and-public-spending.html'>13.1 Education System, Skills Policy, and Public Spending</a><a class='section-link ' href='13-02-health-outcomes-and-service-capacity.html'>13.2 Health Care, Population Ageing, and Financial Protection</a><a class='section-link ' href='13-03-water-sanitation-nutrition-and-welfare.html'>13.3 Water, Sanitation, Nutrition, and Welfare</a><a class='section-link ' href='13-04-human-development-and-territorial-equity.html'>13.4 Human Development and Territorial Equity</a></details>
+<details ><summary>14. Financial Sector and Economic Institutions</summary><a class='section-link ' href='14-01-banks-credit-and-capital-markets.html'>14.1 Banks, Credit, and Capital Markets</a><a class='section-link ' href='14-02-state-bank-of-vietnam-and-financial-supervision.html'>14.2 State Bank of Vietnam and Financial Supervision</a><a class='section-link ' href='14-03-fintech-payments-and-inclusion.html'>14.3 Fintech, Payments, and Inclusion</a><a class='section-link ' href='14-04-financial-stability-and-reform-priorities.html'>14.4 Financial Stability and Reform Priorities</a></details>
+<details ><summary>15. Foreign Relations, Security, and Geopolitics</summary><a class='section-link ' href='15-01-bamboo-diplomacy-and-asean.html'>15.1 Bamboo Diplomacy, ASEAN, and the Evolution of Vietnam’s Foreign Policy Principles</a><a class='section-link ' href='15-02-china-the-united-states-and-the-east-sea.html'>15.2 China, the United States, and the East Sea</a><a class='section-link ' href='15-03-defense-police-border-and-transnational-risks.html'>15.3 Defense, Police, Border, and Transnational Risks</a><a class='section-link ' href='15-04-mekong-energy-security-and-strategic-corridors.html'>15.4 Mekong, Energy Security, and Strategic Corridors</a></details>
+<details ><summary>16. Major Policies and National Development Strategy</summary><a class='section-link ' href='16-01-evolution-of-national-development-strategy.html'>16.1 Evolution of National Development Strategy</a><a class='section-link ' href='16-02-socio-economic-development-strategy-2021-2030.html'>16.2 Socio-Economic Development Strategy 2021-2030</a><a class='section-link ' href='16-03-administrative-restructuring-and-public-administration-reform.html'>16.3 Administrative Restructuring and Public Administration Reform</a><a class='section-link ' href='16-04-digital-green-and-industrial-transformation.html'>16.4 Digital, Green, and Industrial Transformation</a><a class='section-link ' href='16-05-implementation-matrix-and-risks.html'>16.5 Implementation Matrix and Risks</a><a class='section-link ' href='16-06-green-growth-climate-governance-and-sdg-implementation.html'>16.6 Green Growth, Climate Governance, and SDG Implementation</a></details>
+<details ><summary>17. Integrated Assessment</summary><a class='section-link ' href='17-01-national-operating-model.html'>17.1 National Operating Model</a><a class='section-link ' href='17-02-institutional-strengths-risks-and-bottlenecks.html'>17.2 Institutional Strengths, Risks, and Bottlenecks</a><a class='section-link ' href='17-03-implications-for-korea-and-international-cooperation.html'>17.3 Implications for Korea and International Cooperation</a><a class='section-link ' href='17-04-vietnam-and-comparative-administration-theory.html'>17.4 Vietnam and Comparative Administration Theory</a><a class='section-link ' href='17-05-strategic-outlook.html'>17.5 Strategic Outlook</a></details>
+<details ><summary>18. Appendix, Sources, and Method</summary><a class='section-link ' href='18-01-timeline.html'>18.1 Timeline</a><a class='section-link ' href='18-02-government-organization-chart.html'>18.2 Government Organization Chart</a><a class='section-link ' href='18-03-major-laws-and-policy-documents.html'>18.3 Major Laws and Policy Documents</a><a class='section-link ' href='18-04-indicator-codebook.html'>18.4 Indicator Codebook</a><a class='section-link ' href='18-05-update-workflow-and-evidence-archive.html'>18.5 Update Workflow and Evidence Archive</a></details>
+<details ><summary>19. References</summary><a class='section-link ' href='19-01-references.html'>19.1 References</a><a class='section-link ' href='19-02-citation-and-source-integrity-notes.html'>19.2 Citation and Source Integrity Notes</a></details></aside>
+    <main>
+      <p class="crumb"><a href="../10-trade.html">Chapter 10</a> / Section 3</p>
+      <h1>10.3 Trading Partners, Supply Chains, and Technology Upgrading</h1>
+      <p class="chapter-title">10. Trade, Investment, and External Economy</p>
+      <article class="section-body editable-section" data-md-panel="10-03-trading-partners-supply-chains-and-technology-upgrading" data-md-source="sections/10-03-trading-partners-supply-chains-and-technology-upgrading.md">
+  <div class="md-toolbar">
+    <button type="button" data-md-action="edit">Edit Markdown</button>
+    <button type="button" data-md-action="save" hidden>Save</button>
+    <button type="button" data-md-action="cancel" hidden>Cancel</button>
+  </div>
+  <div class="md-preview"><h2 id='10-3-trading-partners-supply-chains-and-technology-upgrading'>10.3 Trading Partners, Supply Chains, and Technology Upgrading</h2>
+<p><strong>ASEAN comparative lens (2026).</strong> Vietnam should be read in ASEAN comparison as ASEAN&#x27;s most prominent party-led, export-manufacturing upgrading case. Unlike the Philippines&#x27; service-remittance profile, Thailand&#x27;s older industrial-tourism base, Malaysia&#x27;s resource-industrial federal structure, or Indonesia&#x27;s archipelagic domestic-market scale, Vietnam&#x27;s comparative issue is how a socialist party-state manages very open global production networks. For this section, the regional comparison should compare trade, FDI, current-account structure, supply-chain depth, remittances, tourism receipts, and regional integration with ASEAN peers. Local comparable indicators show: population 100.99 million (2024), rank 3 among the nine ASEAN reports in this workspace; GDP US$476.39 billion (2024), rank 4 among the nine ASEAN reports in this workspace; GDP per capita US$4,717 (2024), rank 5 among the nine ASEAN reports in this workspace; real GDP growth 7.09% (2024), rank 1 among the nine ASEAN reports in this workspace; government effectiveness 0.09 (2023), rank 6 among the nine ASEAN reports in this workspace; internet use 84.15% (2024), rank 4 among the nine ASEAN reports in this workspace. Use `sources/documents/regional/asean_comparative_lens_2026.md` together with ASEANstats, ASEAN Secretariat materials, and the country processed-indicator files before making cross-ASEAN claims.</p>
+<p>Viet Nam&#x27;s trade structure should not be read simply as &quot;exports are increasing.&quot; It is a triangular production system. The country sells heavily to high-income final markets, especially the United States and the European Union, while importing many components, machinery, materials, and industrial inputs from Asian production networks centered on China, South Korea, Japan, Taiwan, and ASEAN. FDI-led factories then convert those inputs into exported goods. This model has generated extraordinary trade growth, but it also creates exposure to U.S. market risk, Chinese input dependence, weak domestic supplier linkages, and limits to domestic technological ownership.</p>
+<p>The trading-partner pattern reveals the dual structure of the development model. On the export side, the United States is the most important market. Viet Nam Government Portal / General Department of Customs data report that Viet Nam exported USD 119.6 billion to the United States in 2024 and imported USD 15.0 billion from the United States, producing a bilateral surplus of about USD 104.6 billion. Reuters, using public trade data, reported a higher 2024 U.S.-market exposure estimate: U.S.-bound exports of about USD 142.4 billion, roughly 29 percent of Viet Nam&#x27;s exports and about 30 percent of GDP. The exact dollar value differs across reporting systems, but the policy meaning is the same: Viet Nam&#x27;s export model is highly exposed to the U.S. market.</p>
+<p>USTR data show how large this relationship became from the U.S. trade-policy perspective. In 2025, U.S. goods trade with Viet Nam reached an estimated USD 209.5 billion. U.S. goods imports from Viet Nam were USD 193.8 billion, while U.S. goods exports to Viet Nam were USD 15.7 billion, leaving a U.S. goods trade deficit of USD 178.2 billion. This scale is an opportunity because it gives Viet Nam access to a large, high-income consumer market. It is also a vulnerability because it exposes Viet Nam to tariff disputes, rules-of-origin scrutiny, anti-circumvention investigations, labor and environmental standards, customs transparency demands, and geopolitical pressure.</p>
+<figure class="map-card">
+<img alt="Vietnam major trading partners and triangular supply chain model in 2024" class="admin-map" src="../assets/vnm_trading_partners_supply_chain_2024.svg"/>
+<figcaption>Source: Viet Nam Government Portal / General Department of Customs, 2024 partner trade flows. The figure shows exports from Viet Nam, imports into Viet Nam, and the triangular production model linking Asian input hubs, Viet Nam's manufacturing platform, and high-income final-demand markets.</figcaption>
+</figure>
+<p>The import side shows a different dependence. China is Viet Nam&#x27;s largest import source in the 2024 official data, with imports of USD 144.3 billion and exports to China of USD 60.6 billion. South Korea also matters strongly, with imports of USD 56.2 billion and exports of USD 25.5 billion. ASEAN supplied USD 46.9 billion in imports, while Japan supplied USD 21.4 billion. These numbers show why Viet Nam&#x27;s export competitiveness is partly built on imported intermediate goods. The country exports large volumes to the United States and Europe, but many of the components, machinery, textiles, electronics inputs, and production materials originate in China and other Asian partners.</p>
+<p>This is the core supply-chain structure: <strong>Western final demand plus Asian intermediate-input dependence</strong>. It is not a simple weakness. Access to efficient Asian suppliers allows Viet Nam to produce at scale, meet delivery deadlines, and enter global value chains quickly. But it limits domestic value capture when local suppliers cannot provide components, materials, design, engineering, testing, certification, logistics, or industrial services at the standards multinational firms require.</p>
+<table><thead><tr><th>Partner or bloc, 2024</th><th>Viet Nam exports to partner</th><th>Viet Nam imports from partner</th><th>Balance</th><th>Supply-chain meaning</th></tr></thead><tbody><tr><td>United States</td><td>USD 119.6 bn</td><td>USD 15.0 bn</td><td>+USD 104.6 bn</td><td>Largest final-demand market; high tariff and compliance exposure.</td></tr><tr><td>China</td><td>USD 60.6 bn</td><td>USD 144.3 bn</td><td>-USD 83.7 bn</td><td>Largest input supplier; machinery, components, materials, and industrial inputs.</td></tr><tr><td>European Union</td><td>USD 52.1 bn</td><td>USD 16.7 bn</td><td>+USD 35.4 bn</td><td>High-income export market with standards and rules-of-origin requirements.</td></tr><tr><td>ASEAN</td><td>USD 37.0 bn</td><td>USD 46.9 bn</td><td>-USD 9.9 bn</td><td>Regional market and production network.</td></tr><tr><td>South Korea</td><td>USD 25.5 bn</td><td>USD 56.2 bn</td><td>-USD 30.7 bn</td><td>FDI-linked electronics, machinery, components, and technology networks.</td></tr><tr><td>Japan</td><td>USD 24.6 bn</td><td>USD 21.4 bn</td><td>+USD 3.2 bn</td><td>Technology, capital goods, quality standards, and supply-chain upgrading.</td></tr></tbody></table>
+<h3>10.3.1 FDI-Led Supply Chains and Domestic Value Capture</h3>
+<p>FDI is the mechanism that makes the triangular trade structure work. Foreign-invested firms locate production in Viet Nam, import machinery and components from Asian suppliers, use Viet Nam&#x27;s labor, land, infrastructure, and industrial-zone system, and export to the United States, Europe, Japan, and other markets. This has generated jobs, foreign exchange, logistics investment, industrial learning, and rapid export growth.</p>
+<p>The same mechanism also explains the domestic value-added constraint. Viet Nam Government Portal / General Department of Customs data report total merchandise exports of USD 405.53 billion in 2024. Of this, the domestic sector exported USD 114.59 billion, while the foreign-invested sector, including crude oil, exported USD 290.94 billion. That means foreign-invested firms accounted for about 71.7 percent of merchandise exports. The figure is not a criticism of FDI; it is evidence of how central FDI is to the export model. But it also shows why Viet Nam&#x27;s next development challenge is less about attracting more investment than increasing the domestic share of components, services, engineering, supplier activity, and technology inside the export system.</p>
+<p>Domestic firms often struggle to enter multinational supplier networks. They may lack quality certification, scale, precision manufacturing capacity, stable finance, management systems, intellectual property compliance, environmental compliance, design capability, or delivery reliability. As a result, high export volume can coexist with limited domestic spillover. The economy can look technologically sophisticated at the export-goods level while domestic firms remain concentrated in lower-value stages of the chain.</p>
+<figure class="map-card">
+<img alt="Vietnam supply-chain upgrading indicators including U.S. exposure, FDI export share, high-tech exports, and AI signals" class="admin-map" src="../assets/vnm_supply_chain_upgrading_indicators.svg"/>
+<figcaption>Sources: Viet Nam Government Portal / General Department of Customs 2024 trade data; USTR 2025 Viet Nam country page; World Bank WDI export-technology indicators; Reuters reporting on FPT and NVIDIA; White House fact sheet on the U.S.-Viet Nam Comprehensive Strategic Partnership. The figure distinguishes high-tech exports produced in Viet Nam from high-tech capability owned by Vietnamese domestic firms.</figcaption>
+</figure>
+<h3>10.3.2 U.S.-China Rivalry and China-Plus-One Relocation</h3>
+<p>Viet Nam&#x27;s supply-chain position has been reshaped by U.S.-China strategic competition. Since the first U.S.-China trade war, multinational firms have used Viet Nam as part of a China-plus-one strategy. Production rarely left China in a clean transfer and simply became Vietnamese. More often, firms diversified assembly, final processing, or additional capacity into Viet Nam while maintaining input, component, machinery, and managerial links with China and other Asian production hubs.</p>
+<p>This gives Viet Nam a geopolitical opportunity. It can attract firms seeking supply-chain diversification, reduce overconcentration risk for multinational companies, and deepen its role in Asian manufacturing networks. But it also creates scrutiny. If Viet Nam&#x27;s exports to the United States rise while imports of Chinese components also rise, U.S. authorities may pay closer attention to transshipment, rules of origin, anti-circumvention, and domestic value-added verification. Viet Nam therefore needs stronger customs administration, origin certification, product traceability, and compliance systems. Supply-chain upgrading is not only about factories; it is also about administrative credibility.</p>
+<h3>10.3.3 Technology Upgrading: Production Location versus Domestic Capability</h3>
+<p>Technology upgrading is the decisive next-stage challenge. WDI data show that manufactures accounted for 85.0 percent of merchandise exports in 2023, and high-technology exports accounted for 44.3 percent of manufactured exports. These are impressive figures for a lower-middle-income economy. They show that goods exported from Viet Nam increasingly come from electronics, machinery, phones, computers, components, and technology-intensive manufacturing chains.</p>
+<p>The interpretation must be careful. <strong>High-tech exports produced in Viet Nam are not the same as high-tech capability owned by Vietnamese firms.</strong> A phone, computer component, chip-related product, or electronic device may be assembled in Viet Nam using imported inputs, foreign intellectual property, foreign design, multinational management, and supplier networks controlled outside the country. The domestic gains are still meaningful: jobs, wages, infrastructure use, logistics, taxes, local services, learning by workers, and some supplier opportunities. But national technological capability requires more: component production, engineering, design, testing, standards, data infrastructure, intellectual property, domestic R&amp;D, and Vietnamese-owned firms that can compete in higher-value functions.</p>
+<p>Recent technology partnerships show that Viet Nam is trying to move up the ladder. The 2023 U.S.-Viet Nam Comprehensive Strategic Partnership placed science, technology, innovation, and semiconductor ecosystem development at the center of bilateral cooperation. The White House fact sheet announced initial U.S. seed funding for semiconductor workforce development. In the private sector, FPT announced a USD 200 million AI factory using NVIDIA chips and software, and Reuters reported that NVIDIA had already invested more than USD 250 million in Viet Nam. These developments matter because the upgrading agenda is no longer limited to garments, footwear, furniture, and basic electronics assembly. It increasingly includes semiconductors, AI, cloud services, data infrastructure, software, digital engineering, and automation.</p>
+<p>Still, Viet Nam is not yet a high-technology innovation economy in the same sense as Korea, Taiwan, Japan, or Singapore. Much of the high-tech export value remains embedded in foreign-invested production networks. The policy test is whether Viet Nam can convert the presence of global firms into domestic capability. That requires supplier-development programs, vocational and engineering education, university-industry collaboration, applied research funding, standards laboratories, certification bodies, intellectual-property enforcement, data infrastructure, and stronger domestic private firms.</p>
+<h3>10.3.4 Partner Diversification and Strategic Autonomy</h3>
+<p>Trade partner diversification remains necessary. Viet Nam benefits from access to the United States, China, ASEAN, Japan, South Korea, the EU, India, Australia, and other partners. But each relationship carries a different risk. The United States offers demand but also tariff and compliance pressure. China offers input supply and geographic connectivity but creates dependence and strategic anxiety. South Korea and Japan provide investment, technology, quality standards, and production networks, but their role can also reinforce foreign-firm dominance if domestic suppliers do not upgrade. ASEAN offers regional diversification, but its market and technology role remains different from that of the United States, China, Korea, and Japan.</p>
+<p>Strategic autonomy therefore does not mean self-sufficiency. A small open economy cannot and should not produce every input domestically. The goal is resilience and value capture: diversify markets where possible, verify origin rules, build alternative input sources for critical products, strengthen local suppliers, and increase domestic services and engineering content in exports.</p>
+<h3>10.3.5 Administrative Implications</h3>
+<p>Supply-chain upgrading is an administrative-capacity problem. Customs agencies must manage rules-of-origin compliance and prevent transshipment risks. Industrial ministries must support supplier upgrading and technology extension. Education institutions must produce technical workers, engineers, semiconductor specialists, data scientists, logistics managers, and compliance professionals. Provincial governments must improve industrial-zone governance, land procedures, infrastructure coordination, labor services, and investment aftercare. Science and technology agencies must support standards, testing, certification, intellectual property, and applied research. Digital agencies must support data infrastructure, cybersecurity, cloud capacity, and public digital services.</p>
+<p>This is why the trade chapter belongs in a book on political administration and policy. Viet Nam&#x27;s external success depends on the ability of the party-state to coordinate across trade, investment, customs, education, science, technology, infrastructure, finance, and local government. Export upgrading is not produced by market access alone. It is produced when firms and public agencies together solve standards, logistics, skills, land, data, technology, and compliance problems.</p>
+<h3>10.3.6 Policy Implications</h3>
+<p>Viet Nam should shift from a trade-expansion strategy to a value-capture strategy. First, trade policy should focus on domestic value added, rules-of-origin compliance, supplier development, and product traceability, not only export volume. Second, FDI policy should prioritize technology transfer, local procurement, workforce development, domestic supplier integration, and higher-value functions such as design, testing, engineering, logistics management, and R&amp;D. Third, Viet Nam should reduce excessive dependence on any single final market by diversifying exports beyond the United States while maintaining U.S. access. Fourth, it should manage input dependence on China by developing alternative suppliers where feasible, without undermining efficient regional production networks. Fifth, technology upgrading should be treated as an economy-wide agenda involving education, innovation, standards, digital infrastructure, intellectual property, finance, and domestic firm growth.</p>
+<table><thead><tr><th>Dimension</th><th>Current pattern</th><th>Policy issue</th></tr></thead><tbody><tr><td>Export markets</td><td>United States, EU, Japan, South Korea, China, and ASEAN</td><td>High U.S. exposure creates tariff, rules-of-origin, and compliance risk.</td></tr><tr><td>Import sources</td><td>China, South Korea, Japan, ASEAN, and Taiwan-linked production networks</td><td>Imported intermediate goods support exports but can limit domestic value capture.</td></tr><tr><td>Supply-chain model</td><td>FDI-led assembly and manufacturing</td><td>Need stronger Vietnamese supplier participation.</td></tr><tr><td>U.S.-China rivalry</td><td>Viet Nam benefits from China-plus-one relocation</td><td>Need to manage transshipment scrutiny and geopolitical pressure.</td></tr><tr><td>Domestic firms</td><td>Many remain outside high-value supplier networks</td><td>Need finance, certification, management, standards, and technology upgrading.</td></tr><tr><td>Technology upgrading</td><td>Semiconductors, AI, cloud, electronics, automation, and digital engineering are emerging</td><td>Need skills, R&amp;D, data infrastructure, and domestic ownership.</td></tr><tr><td>FDI quality</td><td>Large export role by foreign-invested firms</td><td>Need stronger spillovers, local procurement, and training.</td></tr><tr><td>Strategic autonomy</td><td>Diversified partnerships but concentrated dependencies</td><td>Need market diversification and supply-chain resilience.</td></tr></tbody></table>
+<p>What matters now is whether Viet Nam can use its current position in global supply chains as a platform for upgrading. If it succeeds, trade and FDI will support movement toward higher income and stronger technological autonomy. If it fails, Viet Nam may remain a highly successful export platform while capturing only a limited share of the knowledge, profits, and strategic capabilities embedded in global production.</p></div>
+  <textarea class="md-editor" hidden>## 10.3 Trading Partners, Supply Chains, and Technology Upgrading
+
+&lt;!-- asean-comparative-lens-2026:start --&gt;
+**ASEAN comparative lens (2026).** Vietnam should be read in ASEAN comparison as ASEAN&#x27;s most prominent party-led, export-manufacturing upgrading case. Unlike the Philippines&#x27; service-remittance profile, Thailand&#x27;s older industrial-tourism base, Malaysia&#x27;s resource-industrial federal structure, or Indonesia&#x27;s archipelagic domestic-market scale, Vietnam&#x27;s comparative issue is how a socialist party-state manages very open global production networks. For this section, the regional comparison should compare trade, FDI, current-account structure, supply-chain depth, remittances, tourism receipts, and regional integration with ASEAN peers. Local comparable indicators show: population 100.99 million (2024), rank 3 among the nine ASEAN reports in this workspace; GDP US$476.39 billion (2024), rank 4 among the nine ASEAN reports in this workspace; GDP per capita US$4,717 (2024), rank 5 among the nine ASEAN reports in this workspace; real GDP growth 7.09% (2024), rank 1 among the nine ASEAN reports in this workspace; government effectiveness 0.09 (2023), rank 6 among the nine ASEAN reports in this workspace; internet use 84.15% (2024), rank 4 among the nine ASEAN reports in this workspace. Use `sources/documents/regional/asean_comparative_lens_2026.md` together with ASEANstats, ASEAN Secretariat materials, and the country processed-indicator files before making cross-ASEAN claims.
+&lt;!-- asean-comparative-lens-2026:end --&gt;
+
+Viet Nam&#x27;s trade structure should not be read simply as &quot;exports are increasing.&quot; It is a triangular production system. The country sells heavily to high-income final markets, especially the United States and the European Union, while importing many components, machinery, materials, and industrial inputs from Asian production networks centered on China, South Korea, Japan, Taiwan, and ASEAN. FDI-led factories then convert those inputs into exported goods. This model has generated extraordinary trade growth, but it also creates exposure to U.S. market risk, Chinese input dependence, weak domestic supplier linkages, and limits to domestic technological ownership.
+
+The trading-partner pattern reveals the dual structure of the development model. On the export side, the United States is the most important market. Viet Nam Government Portal / General Department of Customs data report that Viet Nam exported USD 119.6 billion to the United States in 2024 and imported USD 15.0 billion from the United States, producing a bilateral surplus of about USD 104.6 billion. Reuters, using public trade data, reported a higher 2024 U.S.-market exposure estimate: U.S.-bound exports of about USD 142.4 billion, roughly 29 percent of Viet Nam&#x27;s exports and about 30 percent of GDP. The exact dollar value differs across reporting systems, but the policy meaning is the same: Viet Nam&#x27;s export model is highly exposed to the U.S. market.
+
+USTR data show how large this relationship became from the U.S. trade-policy perspective. In 2025, U.S. goods trade with Viet Nam reached an estimated USD 209.5 billion. U.S. goods imports from Viet Nam were USD 193.8 billion, while U.S. goods exports to Viet Nam were USD 15.7 billion, leaving a U.S. goods trade deficit of USD 178.2 billion. This scale is an opportunity because it gives Viet Nam access to a large, high-income consumer market. It is also a vulnerability because it exposes Viet Nam to tariff disputes, rules-of-origin scrutiny, anti-circumvention investigations, labor and environmental standards, customs transparency demands, and geopolitical pressure.
+
+&lt;figure class=&quot;map-card&quot;&gt;
+&lt;img alt=&quot;Vietnam major trading partners and triangular supply chain model in 2024&quot; class=&quot;admin-map&quot; src=&quot;../assets/vnm_trading_partners_supply_chain_2024.svg&quot;/&gt;
+&lt;figcaption&gt;Source: Viet Nam Government Portal / General Department of Customs, 2024 partner trade flows. The figure shows exports from Viet Nam, imports into Viet Nam, and the triangular production model linking Asian input hubs, Viet Nam&#x27;s manufacturing platform, and high-income final-demand markets.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+The import side shows a different dependence. China is Viet Nam&#x27;s largest import source in the 2024 official data, with imports of USD 144.3 billion and exports to China of USD 60.6 billion. South Korea also matters strongly, with imports of USD 56.2 billion and exports of USD 25.5 billion. ASEAN supplied USD 46.9 billion in imports, while Japan supplied USD 21.4 billion. These numbers show why Viet Nam&#x27;s export competitiveness is partly built on imported intermediate goods. The country exports large volumes to the United States and Europe, but many of the components, machinery, textiles, electronics inputs, and production materials originate in China and other Asian partners.
+
+This is the core supply-chain structure: **Western final demand plus Asian intermediate-input dependence**. It is not a simple weakness. Access to efficient Asian suppliers allows Viet Nam to produce at scale, meet delivery deadlines, and enter global value chains quickly. But it limits domestic value capture when local suppliers cannot provide components, materials, design, engineering, testing, certification, logistics, or industrial services at the standards multinational firms require.
+
+| Partner or bloc, 2024 | Viet Nam exports to partner | Viet Nam imports from partner | Balance | Supply-chain meaning |
+| --- | ---: | ---: | ---: | --- |
+| United States | USD 119.6 bn | USD 15.0 bn | +USD 104.6 bn | Largest final-demand market; high tariff and compliance exposure. |
+| China | USD 60.6 bn | USD 144.3 bn | -USD 83.7 bn | Largest input supplier; machinery, components, materials, and industrial inputs. |
+| European Union | USD 52.1 bn | USD 16.7 bn | +USD 35.4 bn | High-income export market with standards and rules-of-origin requirements. |
+| ASEAN | USD 37.0 bn | USD 46.9 bn | -USD 9.9 bn | Regional market and production network. |
+| South Korea | USD 25.5 bn | USD 56.2 bn | -USD 30.7 bn | FDI-linked electronics, machinery, components, and technology networks. |
+| Japan | USD 24.6 bn | USD 21.4 bn | +USD 3.2 bn | Technology, capital goods, quality standards, and supply-chain upgrading. |
+
+### 10.3.1 FDI-Led Supply Chains and Domestic Value Capture
+
+FDI is the mechanism that makes the triangular trade structure work. Foreign-invested firms locate production in Viet Nam, import machinery and components from Asian suppliers, use Viet Nam&#x27;s labor, land, infrastructure, and industrial-zone system, and export to the United States, Europe, Japan, and other markets. This has generated jobs, foreign exchange, logistics investment, industrial learning, and rapid export growth.
+
+The same mechanism also explains the domestic value-added constraint. Viet Nam Government Portal / General Department of Customs data report total merchandise exports of USD 405.53 billion in 2024. Of this, the domestic sector exported USD 114.59 billion, while the foreign-invested sector, including crude oil, exported USD 290.94 billion. That means foreign-invested firms accounted for about 71.7 percent of merchandise exports. The figure is not a criticism of FDI; it is evidence of how central FDI is to the export model. But it also shows why Viet Nam&#x27;s next development challenge is less about attracting more investment than increasing the domestic share of components, services, engineering, supplier activity, and technology inside the export system.
+
+Domestic firms often struggle to enter multinational supplier networks. They may lack quality certification, scale, precision manufacturing capacity, stable finance, management systems, intellectual property compliance, environmental compliance, design capability, or delivery reliability. As a result, high export volume can coexist with limited domestic spillover. The economy can look technologically sophisticated at the export-goods level while domestic firms remain concentrated in lower-value stages of the chain.
+
+&lt;figure class=&quot;map-card&quot;&gt;
+&lt;img alt=&quot;Vietnam supply-chain upgrading indicators including U.S. exposure, FDI export share, high-tech exports, and AI signals&quot; class=&quot;admin-map&quot; src=&quot;../assets/vnm_supply_chain_upgrading_indicators.svg&quot;/&gt;
+&lt;figcaption&gt;Sources: Viet Nam Government Portal / General Department of Customs 2024 trade data; USTR 2025 Viet Nam country page; World Bank WDI export-technology indicators; Reuters reporting on FPT and NVIDIA; White House fact sheet on the U.S.-Viet Nam Comprehensive Strategic Partnership. The figure distinguishes high-tech exports produced in Viet Nam from high-tech capability owned by Vietnamese domestic firms.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+### 10.3.2 U.S.-China Rivalry and China-Plus-One Relocation
+
+Viet Nam&#x27;s supply-chain position has been reshaped by U.S.-China strategic competition. Since the first U.S.-China trade war, multinational firms have used Viet Nam as part of a China-plus-one strategy. Production rarely left China in a clean transfer and simply became Vietnamese. More often, firms diversified assembly, final processing, or additional capacity into Viet Nam while maintaining input, component, machinery, and managerial links with China and other Asian production hubs.
+
+This gives Viet Nam a geopolitical opportunity. It can attract firms seeking supply-chain diversification, reduce overconcentration risk for multinational companies, and deepen its role in Asian manufacturing networks. But it also creates scrutiny. If Viet Nam&#x27;s exports to the United States rise while imports of Chinese components also rise, U.S. authorities may pay closer attention to transshipment, rules of origin, anti-circumvention, and domestic value-added verification. Viet Nam therefore needs stronger customs administration, origin certification, product traceability, and compliance systems. Supply-chain upgrading is not only about factories; it is also about administrative credibility.
+
+### 10.3.3 Technology Upgrading: Production Location versus Domestic Capability
+
+Technology upgrading is the decisive next-stage challenge. WDI data show that manufactures accounted for 85.0 percent of merchandise exports in 2023, and high-technology exports accounted for 44.3 percent of manufactured exports. These are impressive figures for a lower-middle-income economy. They show that goods exported from Viet Nam increasingly come from electronics, machinery, phones, computers, components, and technology-intensive manufacturing chains.
+
+The interpretation must be careful. **High-tech exports produced in Viet Nam are not the same as high-tech capability owned by Vietnamese firms.** A phone, computer component, chip-related product, or electronic device may be assembled in Viet Nam using imported inputs, foreign intellectual property, foreign design, multinational management, and supplier networks controlled outside the country. The domestic gains are still meaningful: jobs, wages, infrastructure use, logistics, taxes, local services, learning by workers, and some supplier opportunities. But national technological capability requires more: component production, engineering, design, testing, standards, data infrastructure, intellectual property, domestic R&amp;D, and Vietnamese-owned firms that can compete in higher-value functions.
+
+Recent technology partnerships show that Viet Nam is trying to move up the ladder. The 2023 U.S.-Viet Nam Comprehensive Strategic Partnership placed science, technology, innovation, and semiconductor ecosystem development at the center of bilateral cooperation. The White House fact sheet announced initial U.S. seed funding for semiconductor workforce development. In the private sector, FPT announced a USD 200 million AI factory using NVIDIA chips and software, and Reuters reported that NVIDIA had already invested more than USD 250 million in Viet Nam. These developments matter because the upgrading agenda is no longer limited to garments, footwear, furniture, and basic electronics assembly. It increasingly includes semiconductors, AI, cloud services, data infrastructure, software, digital engineering, and automation.
+
+Still, Viet Nam is not yet a high-technology innovation economy in the same sense as Korea, Taiwan, Japan, or Singapore. Much of the high-tech export value remains embedded in foreign-invested production networks. The policy test is whether Viet Nam can convert the presence of global firms into domestic capability. That requires supplier-development programs, vocational and engineering education, university-industry collaboration, applied research funding, standards laboratories, certification bodies, intellectual-property enforcement, data infrastructure, and stronger domestic private firms.
+
+### 10.3.4 Partner Diversification and Strategic Autonomy
+
+Trade partner diversification remains necessary. Viet Nam benefits from access to the United States, China, ASEAN, Japan, South Korea, the EU, India, Australia, and other partners. But each relationship carries a different risk. The United States offers demand but also tariff and compliance pressure. China offers input supply and geographic connectivity but creates dependence and strategic anxiety. South Korea and Japan provide investment, technology, quality standards, and production networks, but their role can also reinforce foreign-firm dominance if domestic suppliers do not upgrade. ASEAN offers regional diversification, but its market and technology role remains different from that of the United States, China, Korea, and Japan.
+
+Strategic autonomy therefore does not mean self-sufficiency. A small open economy cannot and should not produce every input domestically. The goal is resilience and value capture: diversify markets where possible, verify origin rules, build alternative input sources for critical products, strengthen local suppliers, and increase domestic services and engineering content in exports.
+
+### 10.3.5 Administrative Implications
+
+Supply-chain upgrading is an administrative-capacity problem. Customs agencies must manage rules-of-origin compliance and prevent transshipment risks. Industrial ministries must support supplier upgrading and technology extension. Education institutions must produce technical workers, engineers, semiconductor specialists, data scientists, logistics managers, and compliance professionals. Provincial governments must improve industrial-zone governance, land procedures, infrastructure coordination, labor services, and investment aftercare. Science and technology agencies must support standards, testing, certification, intellectual property, and applied research. Digital agencies must support data infrastructure, cybersecurity, cloud capacity, and public digital services.
+
+This is why the trade chapter belongs in a book on political administration and policy. Viet Nam&#x27;s external success depends on the ability of the party-state to coordinate across trade, investment, customs, education, science, technology, infrastructure, finance, and local government. Export upgrading is not produced by market access alone. It is produced when firms and public agencies together solve standards, logistics, skills, land, data, technology, and compliance problems.
+
+### 10.3.6 Policy Implications
+
+Viet Nam should shift from a trade-expansion strategy to a value-capture strategy. First, trade policy should focus on domestic value added, rules-of-origin compliance, supplier development, and product traceability, not only export volume. Second, FDI policy should prioritize technology transfer, local procurement, workforce development, domestic supplier integration, and higher-value functions such as design, testing, engineering, logistics management, and R&amp;D. Third, Viet Nam should reduce excessive dependence on any single final market by diversifying exports beyond the United States while maintaining U.S. access. Fourth, it should manage input dependence on China by developing alternative suppliers where feasible, without undermining efficient regional production networks. Fifth, technology upgrading should be treated as an economy-wide agenda involving education, innovation, standards, digital infrastructure, intellectual property, finance, and domestic firm growth.
+
+| Dimension | Current pattern | Policy issue |
+| --- | --- | --- |
+| Export markets | United States, EU, Japan, South Korea, China, and ASEAN | High U.S. exposure creates tariff, rules-of-origin, and compliance risk. |
+| Import sources | China, South Korea, Japan, ASEAN, and Taiwan-linked production networks | Imported intermediate goods support exports but can limit domestic value capture. |
+| Supply-chain model | FDI-led assembly and manufacturing | Need stronger Vietnamese supplier participation. |
+| U.S.-China rivalry | Viet Nam benefits from China-plus-one relocation | Need to manage transshipment scrutiny and geopolitical pressure. |
+| Domestic firms | Many remain outside high-value supplier networks | Need finance, certification, management, standards, and technology upgrading. |
+| Technology upgrading | Semiconductors, AI, cloud, electronics, automation, and digital engineering are emerging | Need skills, R&amp;D, data infrastructure, and domestic ownership. |
+| FDI quality | Large export role by foreign-invested firms | Need stronger spillovers, local procurement, and training. |
+| Strategic autonomy | Diversified partnerships but concentrated dependencies | Need market diversification and supply-chain resilience. |
+
+What matters now is whether Viet Nam can use its current position in global supply chains as a platform for upgrading. If it succeeds, trade and FDI will support movement toward higher income and stronger technological autonomy. If it fails, Viet Nam may remain a highly successful export platform while capturing only a limited share of the knowledge, profits, and strategic capabilities embedded in global production.</textarea>
+</article>
+      
+<figure class="chart-card">
+  <h2>exports-imports</h2>
+  <div class="chart-frame"><canvas id="chart-exports-imports"></canvas></div>
+  <figcaption>Source:  Unit: </figcaption>
+  <p>The figure is included as chapter-level evidence. Interpret it by identifying direction, turning points, divergence among series, and the policy or institutional mechanism that could plausibly explain the pattern.</p>
+</figure>
+
+
+<figure class="chart-card">
+  <h2>current-account</h2>
+  <div class="chart-frame"><canvas id="chart-current-account"></canvas></div>
+  <figcaption>Source:  Unit: </figcaption>
+  <p>The figure is included as chapter-level evidence. Interpret it by identifying direction, turning points, divergence among series, and the policy or institutional mechanism that could plausibly explain the pattern.</p>
+</figure>
+
+
+<figure class="chart-card">
+  <h2>fdi-amount</h2>
+  <div class="chart-frame"><canvas id="chart-fdi-amount"></canvas></div>
+  <figcaption>Source:  Unit: </figcaption>
+  <p>The figure is included as chapter-level evidence. Interpret it by identifying direction, turning points, divergence among series, and the policy or institutional mechanism that could plausibly explain the pattern.</p>
+</figure>
+
+
+<figure class="chart-card">
+  <h2>fdi-share</h2>
+  <div class="chart-frame"><canvas id="chart-fdi-share"></canvas></div>
+  <figcaption>Source:  Unit: </figcaption>
+  <p>The figure is included as chapter-level evidence. Interpret it by identifying direction, turning points, divergence among series, and the policy or institutional mechanism that could plausibly explain the pattern.</p>
+</figure>
+
+    </main>
+  </div>
+  <script>
+    window.REPORT_CHARTS = [];
+    document.addEventListener('DOMContentLoaded', () => {
+      if (!window.Chart || !window.REPORT_CHARTS) return;
+      window.REPORT_CHARTS.forEach((entry) => {
+        const cfg = entry.data || {};
+        const el = document.getElementById('chart-' + entry.id);
+        if (!el || !cfg.datasets) return;
+        const colors = ['#197278', '#246b46', '#b7860b', '#7b2d26', '#3f4e9a', '#6a4c93'];
+        const dashes = [[], [8, 4], [2, 3], [10, 4, 2, 4], [1, 4], [12, 3, 3, 3]];
+        const pointStyles = ['circle', 'rect', 'triangle', 'rectRot', 'crossRot', 'star'];
+        const datasets = (cfg.datasets || []).map((dataset, i) => ({
+          ...dataset,
+          borderColor: dataset.borderColor || colors[i % colors.length],
+          backgroundColor: dataset.backgroundColor || 'transparent',
+          borderDash: dataset.borderDash || dashes[i % dashes.length],
+          borderWidth: dataset.borderWidth || 2.4,
+          pointStyle: dataset.pointStyle || pointStyles[i % pointStyles.length],
+          pointRadius: dataset.pointRadius ?? 1.8,
+          tension: dataset.tension ?? 0.25,
+          spanGaps: dataset.spanGaps ?? true
+        }));
+        new Chart(el, {
+          type: 'line',
+          data: { labels: cfg.labels || [], datasets },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            interaction: { mode: 'index', intersect: false },
+            plugins: { legend: { position: 'bottom', labels: { boxWidth: 28 } } },
+            scales: { x: { title: { display: true, text: 'Year' } }, y: { title: { display: true, text: cfg.unit || 'Value' } } }
+          }
+        });
+      });
+    });
+  </script>
+  <script src="../assets/report.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  function fallbackMarkdown(text) {
+    const escaped = text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    return escaped.split(/\n{2,}/).map((block) => `<p>${block.replace(/\n/g, "<br>")}</p>`).join("");
+  }
+  function renderMarkdown(text) {
+    return window.marked ? marked.parse(text) : fallbackMarkdown(text);
+  }
+  document.querySelectorAll('[data-md-panel]').forEach((panel) => {
+    const id = panel.getAttribute('data-md-panel');
+    const source = panel.getAttribute('data-md-source');
+    const preview = panel.querySelector('.md-preview');
+    const editor = panel.querySelector('.md-editor');
+    const edit = panel.querySelector('[data-md-action="edit"]');
+    const save = panel.querySelector('[data-md-action="save"]');
+    const cancel = panel.querySelector('[data-md-action="cancel"]');
+    if (!preview || !editor || !edit || !save || !cancel) return;
+    const storageKey = `country-report-markdown:v1:${source || id}`;
+    const original = editor.value;
+    const stored = localStorage.getItem(storageKey);
+    const hasStoredDraft = stored !== null && (!source || window.location.protocol === 'file:');
+    if (hasStoredDraft) editor.value = stored;
+    const showPreview = () => { preview.innerHTML = renderMarkdown(editor.value); };
+    const setEditing = (editing) => {
+      editor.hidden = !editing;
+      preview.hidden = editing;
+      edit.hidden = editing;
+      save.hidden = !editing;
+      cancel.hidden = !editing;
+    };
+    async function saveMarkdown() {
+      if (source && window.location.protocol.startsWith('http')) {
+        const response = await fetch('/api/save-section', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ source, markdown: editor.value })
+        });
+        if (!response.ok) throw new Error(await response.text());
+        localStorage.removeItem(storageKey);
+        return true;
+      } else {
+        localStorage.setItem(storageKey, editor.value);
+        if (source) window.alert('This edit was saved only as a browser draft. Open the report through code/serve_report.py to save it permanently to the Markdown source file.');
+        return false;
+      }
+    }
+    if (hasStoredDraft) showPreview();
+    setEditing(false);
+    edit.addEventListener('click', () => setEditing(true));
+    save.addEventListener('click', async () => {
+      save.disabled = true;
+      try {
+        const savedToServer = await saveMarkdown();
+        if (savedToServer) {
+          window.location.reload();
+          return;
+        }
+        showPreview();
+        setEditing(false);
+      } catch (error) {
+        window.alert(error.message || 'Could not save the Markdown source.');
+      } finally {
+        save.disabled = false;
+      }
+    });
+    cancel.addEventListener('click', () => {
+      editor.value = localStorage.getItem(storageKey) ?? original;
+      if (hasStoredDraft || window.location.protocol === 'file:') showPreview();
+      setEditing(false);
+    });
+  });
+});
+</script>
+
+</body>
+</html>

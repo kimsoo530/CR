@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 760" role="img" aria-label="Vietnam labor market scale, participation, unemployment, and trained-worker snapshot">
+  
+  <style>
+    .title{font:700 28px Arial,sans-serif;fill:#172026}
+    .subtitle{font:15px Arial,sans-serif;fill:#526069}
+    .panel-title{font:700 16px Arial,sans-serif;fill:#172026}
+    .panel-y{font:11px Arial,sans-serif;fill:#526069;text-anchor:end}
+    .panel-x{font:11px Arial,sans-serif;fill:#526069;text-anchor:middle}
+    .panel-last{font:700 11px Arial,sans-serif;fill:#172026}
+    .legend{font:11px Arial,sans-serif;fill:#526069}
+    .label{font:12px Arial,sans-serif;fill:#526069}
+    .small{font:11px Arial,sans-serif;fill:#65717a}
+    .value{font:700 22px Arial,sans-serif;fill:#172026}
+    .source{font:12px Arial,sans-serif;fill:#65717a}
+    .box-title{font:700 14px Arial,sans-serif;fill:#172026}
+    .box-text{font:12px Arial,sans-serif;fill:#526069}
+  </style>
+  <rect width="1100" height="760" fill="#f6f4ee"/>
+  <text x="54" y="44" class="title">Labor Market Scale, Participation, and Policy Pressure</text>
+  <text x="54" y="68" class="subtitle">Viet Nam still has a large active workforce, but participation is easing and upgrading depends on mobility, training, and formal job quality.</text>
+  <rect x="54" y="104" width="496" height="236" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="76" y="136" class="panel-title">Labor force, age 15+ (million persons)</text>
+  <line x1="108" y1="294.00" x2="520" y2="294.00" stroke="#edf2ef"/>
+  <text x="98" y="298.00" class="panel-y">35</text>
+  <line x1="108" y1="265.30" x2="520" y2="265.30" stroke="#edf2ef"/>
+  <text x="98" y="269.30" class="panel-y">40</text>
+  <line x1="108" y1="236.61" x2="520" y2="236.61" stroke="#edf2ef"/>
+  <text x="98" y="240.61" class="panel-y">45</text>
+  <line x1="108" y1="207.91" x2="520" y2="207.91" stroke="#edf2ef"/>
+  <text x="98" y="211.91" class="panel-y">50</text>
+  <line x1="108" y1="179.22" x2="520" y2="179.22" stroke="#edf2ef"/>
+  <text x="98" y="183.22" class="panel-y">55</text>
+  <line x1="108.00" y1="162" x2="108.00" y2="294" stroke="#f1f4f5"/>
+  <text x="108.00" y="318" class="panel-x">2000</text>
+  <line x1="190.40" y1="162" x2="190.40" y2="294" stroke="#f1f4f5"/>
+  <text x="190.40" y="318" class="panel-x">2005</text>
+  <line x1="272.80" y1="162" x2="272.80" y2="294" stroke="#f1f4f5"/>
+  <text x="272.80" y="318" class="panel-x">2010</text>
+  <line x1="355.20" y1="162" x2="355.20" y2="294" stroke="#f1f4f5"/>
+  <text x="355.20" y="318" class="panel-x">2015</text>
+  <line x1="437.60" y1="162" x2="437.60" y2="294" stroke="#f1f4f5"/>
+  <text x="437.60" y="318" class="panel-x">2020</text>
+  <line x1="520.00" y1="162" x2="520.00" y2="294" stroke="#f1f4f5"/>
+  <text x="520.00" y="318" class="panel-x">2025</text>
+  <path d="M108.00,269.59 L124.48,264.69 L140.96,259.37 L157.44,253.11 L173.92,246.70 L206.88,229.50 L223.36,225.29 L239.84,218.19 L256.32,214.45 L272.80,207.62 L289.28,199.91 L305.76,196.69 L322.24,191.24 L338.72,188.25 L355.20,185.91 L371.68,183.20 L388.16,180.77 L404.64,179.87 L421.12,176.31 L437.60,182.25 L454.08,180.71 L470.56,174.08 L487.04,174.19 L503.52,172.68 L520.00,187.83" fill="none" stroke="#176b63" stroke-width="3"/>
+  <circle cx="520.00" cy="187.83" r="4" fill="#176b63" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="468.00" y="179.83" class="panel-last">53.5</text>
+  <rect x="76" y="310" width="10" height="10" fill="#176b63" rx="2"/>
+  <text x="92" y="319" class="legend">Labor force</text>
+  <rect x="590" y="104" width="456" height="236" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="612" y="136" class="panel-title">Labor-force participation (% of ages 15+)</text>
+  <line x1="644" y1="294.00" x2="1016" y2="294.00" stroke="#edf2ef"/>
+  <text x="634" y="298.00" class="panel-y">60%</text>
+  <line x1="644" y1="261.00" x2="1016" y2="261.00" stroke="#edf2ef"/>
+  <text x="634" y="265.00" class="panel-y">65%</text>
+  <line x1="644" y1="228.00" x2="1016" y2="228.00" stroke="#edf2ef"/>
+  <text x="634" y="232.00" class="panel-y">70%</text>
+  <line x1="644" y1="195.00" x2="1016" y2="195.00" stroke="#edf2ef"/>
+  <text x="634" y="199.00" class="panel-y">75%</text>
+  <line x1="644" y1="162.00" x2="1016" y2="162.00" stroke="#edf2ef"/>
+  <text x="634" y="166.00" class="panel-y">80%</text>
+  <line x1="644.00" y1="162" x2="644.00" y2="294" stroke="#f1f4f5"/>
+  <text x="644.00" y="318" class="panel-x">2000</text>
+  <line x1="718.40" y1="162" x2="718.40" y2="294" stroke="#f1f4f5"/>
+  <text x="718.40" y="318" class="panel-x">2005</text>
+  <line x1="792.80" y1="162" x2="792.80" y2="294" stroke="#f1f4f5"/>
+  <text x="792.80" y="318" class="panel-x">2010</text>
+  <line x1="867.20" y1="162" x2="867.20" y2="294" stroke="#f1f4f5"/>
+  <text x="867.20" y="318" class="panel-x">2015</text>
+  <line x1="941.60" y1="162" x2="941.60" y2="294" stroke="#f1f4f5"/>
+  <text x="941.60" y="318" class="panel-x">2020</text>
+  <line x1="1016.00" y1="162" x2="1016.00" y2="294" stroke="#f1f4f5"/>
+  <text x="1016.00" y="318" class="panel-x">2025</text>
+  <path d="M644.00,205.61 L658.88,195.59 L673.76,198.85 L688.64,200.97 L703.52,201.69 L718.40,199.97 L733.28,197.67 L748.16,194.79 L763.04,191.13 L777.92,188.14 L792.80,186.63 L807.68,185.94 L822.56,186.27 L837.44,180.26 L852.32,179.78 L867.20,178.96 L882.08,182.03 L896.96,180.48 L911.84,178.62 L926.72,184.34 L941.60,199.18 L956.48,203.33 L971.36,198.41 L986.24,204.60 L1001.12,207.32 L1016.00,209.67" fill="none" stroke="#345995" stroke-width="3"/>
+  <circle cx="1016.00" cy="209.67" r="4" fill="#345995" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="964.00" y="201.67" class="panel-last">72.8%</text>
+  <rect x="612" y="310" width="10" height="10" fill="#345995" rx="2"/>
+  <text x="628" y="319" class="legend">Total</text>
+  <path d="M644.00,228.17 L658.88,218.15 L673.76,222.50 L688.64,225.67 L703.52,227.35 L718.40,225.49 L733.28,223.20 L748.16,220.49 L763.04,217.77 L777.92,215.42 L792.80,216.58 L807.68,216.68 L822.56,214.91 L837.44,208.82 L852.32,207.81 L867.20,209.10 L882.08,211.30 L896.96,211.00 L911.84,208.88 L926.72,218.03 L941.60,233.97 L956.48,233.89 L971.36,228.81 L986.24,233.18 L1001.12,235.23 L1016.00,237.56" fill="none" stroke="#7c2f2a" stroke-width="3"/>
+  <circle cx="1016.00" cy="237.56" r="4" fill="#7c2f2a" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="964.00" y="229.56" class="panel-last">68.6%</text>
+  <rect x="750" y="310" width="10" height="10" fill="#7c2f2a" rx="2"/>
+  <text x="766" y="319" class="legend">Female</text>
+  <rect x="54" y="408" width="496" height="220" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="76" y="440" class="panel-title">Unemployment and youth unemployment</text>
+  <line x1="108" y1="582.00" x2="520" y2="582.00" stroke="#edf2ef"/>
+  <text x="98" y="586.00" class="panel-y">0%</text>
+  <line x1="108" y1="558.80" x2="520" y2="558.80" stroke="#edf2ef"/>
+  <text x="98" y="562.80" class="panel-y">2%</text>
+  <line x1="108" y1="535.60" x2="520" y2="535.60" stroke="#edf2ef"/>
+  <text x="98" y="539.60" class="panel-y">4%</text>
+  <line x1="108" y1="512.40" x2="520" y2="512.40" stroke="#edf2ef"/>
+  <text x="98" y="516.40" class="panel-y">6%</text>
+  <line x1="108" y1="489.20" x2="520" y2="489.20" stroke="#edf2ef"/>
+  <text x="98" y="493.20" class="panel-y">8%</text>
+  <line x1="108" y1="466.00" x2="520" y2="466.00" stroke="#edf2ef"/>
+  <text x="98" y="470.00" class="panel-y">10%</text>
+  <line x1="108.00" y1="466" x2="108.00" y2="582" stroke="#f1f4f5"/>
+  <text x="108.00" y="606" class="panel-x">2000</text>
+  <line x1="190.40" y1="466" x2="190.40" y2="582" stroke="#f1f4f5"/>
+  <text x="190.40" y="606" class="panel-x">2005</text>
+  <line x1="272.80" y1="466" x2="272.80" y2="582" stroke="#f1f4f5"/>
+  <text x="272.80" y="606" class="panel-x">2010</text>
+  <line x1="355.20" y1="466" x2="355.20" y2="582" stroke="#f1f4f5"/>
+  <text x="355.20" y="606" class="panel-x">2015</text>
+  <line x1="437.60" y1="466" x2="437.60" y2="582" stroke="#f1f4f5"/>
+  <text x="437.60" y="606" class="panel-x">2020</text>
+  <line x1="520.00" y1="466" x2="520.00" y2="582" stroke="#f1f4f5"/>
+  <text x="520.00" y="606" class="panel-x">2025</text>
+  <path d="M108.00,555.78 L124.48,549.98 L140.96,557.41 L157.44,555.90 L173.92,557.18 L190.40,557.90 L206.88,558.27 L223.36,558.50 L239.84,560.09 L256.32,561.85 L272.80,569.08 L289.28,570.41 L305.76,570.09 L322.24,566.73 L338.72,567.43 L355.20,560.56 L371.68,560.56 L388.16,560.26 L404.64,568.53 L421.12,562.50 L437.60,557.61 L454.08,554.36 L470.56,563.79 L487.04,562.92 L503.52,563.42 L520.00,556.25" fill="none" stroke="#176b63" stroke-width="3"/>
+  <circle cx="520.00" cy="556.25" r="4" fill="#176b63" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="468.00" y="548.25" class="panel-last">2.2%</text>
+  <rect x="76" y="598" width="10" height="10" fill="#176b63" rx="2"/>
+  <text x="92" y="607" class="legend">Total</text>
+  <path d="M108.00,527.11 L124.48,517.13 L140.96,530.75 L157.44,527.27 L173.92,528.99 L190.40,524.43 L206.88,519.35 L223.36,513.73 L239.84,521.87 L256.32,530.58 L272.80,542.19 L289.28,544.58 L305.76,539.89 L322.24,529.12 L338.72,527.87 L355.20,509.30 L371.68,503.55 L388.16,499.36 L404.64,528.08 L421.12,516.76 L437.60,506.07 L454.08,501.93 L470.56,511.27 L487.04,507.28 L503.52,508.48 L520.00,490.01" fill="none" stroke="#b8873a" stroke-width="3"/>
+  <circle cx="520.00" cy="490.01" r="4" fill="#b8873a" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="468.00" y="482.01" class="panel-last">7.9%</text>
+  <rect x="214" y="598" width="10" height="10" fill="#b8873a" rx="2"/>
+  <text x="230" y="607" class="legend">Youth 15-24</text>
+  <rect x="590" y="408" width="456" height="220" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="612" y="442" class="panel-title">2025 administrative snapshot</text>
+  <text x="612" y="478" class="value">52.4m</text>
+  <text x="732" y="478" class="small">employed persons, annual NSO estimate</text>
+  <text x="612" y="516" class="value">8.4m VND</text>
+  <text x="804" y="516" class="small">average monthly employee income</text>
+  <text x="612" y="554" class="value">29.2%</text>
+  <text x="744" y="554" class="small">trained workers with diploma/certificate</text>
+  <text x="612" y="592" class="value">1.65%</text>
+  <text x="744" y="592" class="small">underemployment at working age</text>
+  
+  <rect x="54" y="654" width="314" height="92" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="70" y="680" class="label">Policy reading</text>
+  <text x="70" y="712" class="value" fill="#176b63">from jobs to job quality</text>
+  <text x="70" y="732" class="small">employment is high; protection is uneven</text>
+  
+  <rect x="394" y="654" width="314" height="92" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="410" y="680" class="label">Main administrative task</text>
+  <text x="410" y="712" class="value" fill="#345995">mobility management</text>
+  <text x="410" y="732" class="small">housing, schools, services, and labor matching</text>
+  
+  <rect x="734" y="654" width="314" height="92" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="750" y="680" class="label">Capability bottleneck</text>
+  <text x="750" y="712" class="value" fill="#7c2f2a">29.2% trained</text>
+  <text x="750" y="732" class="small">skill upgrading lags industrial ambition</text>
+  <text x="54" y="738" class="source">Sources: NSO Viet Nam, Socio-economic situation in Q4 and 2025; ILOSTAT; World Bank WDI table IDs SL.TLF.CACT.ZS, SL.TLF.CACT.FE.ZS, SL.UEM.TOTL.ZS, SL.UEM.1524.ZS.</text>
+</svg>

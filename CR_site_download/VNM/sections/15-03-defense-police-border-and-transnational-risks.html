@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>15.3 Defense, Police, Border, and Transnational Risks | VNM Country Report</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+  <script src="../assets/chart.umd.min.js"></script>
+  <style>
+    body{margin:0;background:#f4f6f4;color:#17201b;font-family:Arial,Helvetica,sans-serif;line-height:1.65}
+    .layout{display:grid;grid-template-columns:320px minmax(0,1fr);min-height:100vh}
+    aside{position:sticky;top:0;height:100vh;overflow:auto;background:#fff;border-right:1px solid #d9ded8;padding:18px}
+    aside a{display:block;color:#25312a;text-decoration:none;border-radius:6px;padding:6px 8px;font-size:13px}
+    aside a:hover,aside a.active{background:#e8f0ea;color:#0d5a6a} summary{cursor:pointer;font-weight:700;margin:10px 0 4px}
+    .home{font-weight:800;margin-bottom:8px}
+    main{max-width:1050px;padding:36px min(6vw,72px) 90px}
+    .crumb{font-size:13px;color:#607067;margin:0 0 8px} h1{font-size:36px;line-height:1.15;margin:0 0 8px}
+    .chapter-title{color:#56645c;margin:0 0 26px}
+    .section-body,.chart-card{background:#fff;border:1px solid #d9ded8;border-radius:8px;padding:18px;margin:0 0 22px}
+    .section-body h2{font-size:26px;margin:0 0 14px} .section-body p{font-family:Georgia,'Times New Roman',serif;font-size:18px;margin:0 0 14px}
+    table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px} th,td{border:1px solid #d9ded8;padding:8px;vertical-align:top} th{background:#edf2ea;text-align:left}
+    code{background:#eef2ee;border:1px solid #d8ded8;border-radius:4px;padding:1px 4px} .source-note,figcaption{font-size:12px;color:#607067}
+    .chart-frame{height:340px} .chart-frame canvas{width:100%;height:100%}
+    .figure-card,.map-card,.symbol-figure{background:#fff;border:1px solid #d9ded8;border-radius:8px;padding:14px;margin:18px 0 24px}
+    .source{color:#607067;font-size:12px;margin:10px 0 0} .map-grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(280px,.7fr);gap:16px;align-items:start}
+    .adm-map{width:100%;height:auto;border:1px solid #d9ded8;background:#f7fbfc} .adm-path{stroke:#fff;stroke-width:.7} .map-label{font-size:6px;fill:#32424f;text-anchor:middle;pointer-events:none} .neighbor-label{font-size:12px;fill:#6c7b88}
+    .capital-marker circle{fill:#c23b22;stroke:#fff;stroke-width:1.4} .capital-marker text{font-size:12px;fill:#17212b;font-weight:700} .map-table-wrap{max-height:420px;overflow:auto}
+    .symbol-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px} .symbol-card{min-height:260px;border:1px solid #d9ded8;border-radius:8px;background:#fbfdfe;padding:14px;display:flex;flex-direction:column;gap:10px}
+    .symbol-card h3{font-size:18px;margin:2px 0 0} .symbol-card p{font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:1.48;color:#34424e;margin:0} .symbol-kicker{color:#607067;font-size:11px;text-transform:uppercase;letter-spacing:.06em}
+    .flag-indonesia{height:92px;border:1px solid #b9c6cd;border-radius:4px;overflow:hidden} .flag-indonesia span{display:block;height:50%} .flag-indonesia span:first-child{background:#c9182b} .flag-indonesia span:last-child{background:#fff}
+    .garuda-mark{height:92px;display:grid;grid-template-columns:1fr 56px 1fr;align-items:center;gap:4px} .garuda-mark .wing{height:60px;background:#c59a35;border:1px solid #9d761e} .garuda-mark .left{border-radius:60px 10px 18px 60px} .garuda-mark .right{border-radius:10px 60px 60px 18px}
+    .garuda-mark .body{height:82px;background:#d6ad46;border:1px solid #9d761e;border-radius:36px 36px 18px 18px} .garuda-mark .shield{grid-column:2;justify-self:center;margin-top:-58px;width:36px;height:42px;border-radius:8px 8px 14px 14px;background:#1f3f68;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;border:2px solid #f1d47b}
+    .motto-line{height:92px;display:flex;align-items:center;justify-content:center;text-align:center;border:1px solid #cfd9de;border-radius:6px;background:linear-gradient(180deg,#fff,#eef5f7);font-weight:800;color:#15384a;padding:12px} .anthem-bars{height:92px;display:flex;align-items:end;gap:8px;justify-content:center;border:1px solid #cfd9de;border-radius:6px;background:#f8fbfc;padding:16px}
+    .anthem-bars span{width:22px;background:#0f6f87;border-radius:4px 4px 0 0} .anthem-bars span:nth-child(1){height:38px} .anthem-bars span:nth-child(2){height:62px} .anthem-bars span:nth-child(3){height:48px} .anthem-bars span:nth-child(4){height:72px}
+    @media(max-width:860px){.layout{grid-template-columns:1fr}aside{position:relative;height:auto}main{padding:24px 18px}}
+  
+    .md-toolbar{display:flex;justify-content:flex-end;gap:8px;margin:0 0 14px}
+    .md-toolbar button{border:1px solid #0d5a6a;background:#0d5a6a;color:#fff;border-radius:5px;padding:7px 11px;font:700 12px Arial,Helvetica,sans-serif;cursor:pointer}
+    .md-toolbar button[data-md-action='cancel']{background:#fff;color:#25312a;border-color:#cfd8d3}
+    .md-editor{width:100%;min-height:520px;border:1px solid #cfd8d3;border-radius:6px;padding:14px;font:14px Consolas,monospace;line-height:1.45}
+
+  </style>
+  <script src="../assets/marked.min.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <aside><a class='home' href='../index.html'>VNM cover</a>
+<details ><summary>1. Country Overview</summary><a class='section-link ' href='01-01-national-profile.html'>1.1 National Profile</a><a class='section-link ' href='01-02-state-symbols.html'>1.2 State Symbols</a><a class='section-link ' href='01-03-geography-and-administrative-divisions.html'>1.3 Geography and Administrative Divisions</a><a class='section-link ' href='01-04-core-institutional-diagnosis.html'>1.4 Core Institutional Diagnosis</a><a class='section-link ' href='01-05-evidence-base.html'>1.5 Evidence Base and Reading Direction</a></details>
+<details ><summary>2. Historical Background</summary><a class='section-link ' href='02-01-civilizational-layers-and-frontier-statecraft.html'>2.1 Civilizational Layers and Frontier Statecraft</a><a class='section-link ' href='02-02-colonial-rule-revolution-and-war.html'>2.2 Colonial Rule, Revolution, and War</a><a class='section-link ' href='02-03-reunification-and-doi-moi.html'>2.3 Reunification and Doi Moi</a><a class='section-link ' href='02-04-historical-legacies-in-present-institutions.html'>2.4 Historical Legacies in Present Institutions</a></details>
+<details ><summary>3. Constitution and Basic State Order</summary><a class='section-link ' href='03-01-constitutional-order-and-amendments.html'>3.1 Constitutional Order, Ownership, and the Architecture of State Power</a><a class='section-link ' href='03-02-sovereignty-party-leadership-and-territorial-integrity.html'>3.2 Sovereignty, Party Leadership, and Territorial Integrity</a><a class='section-link ' href='03-03-rights-duties-and-socialist-rule-of-law.html'>3.3 Rights, Duties, and Socialist Rule of Law</a><a class='section-link ' href='03-04-state-power-review-audit-and-emergency-authority.html'>3.4 State Power, Review, Audit, and Emergency Authority</a></details>
+<details ><summary>4. Political System and Power Structure</summary><a class='section-link ' href='04-01-party-leadership-and-state-institutions.html'>4.1 Party Leadership and State Institutions</a><a class='section-link ' href='04-02-national-assembly-elections-and-representation.html'>4.2 National Assembly, Elections, and Representation</a><a class='section-link ' href='04-03-executive-coordination-and-government-formation.html'>4.3 Executive Coordination and Government Formation</a><a class='section-link ' href='04-04-judiciary-rule-of-law-corruption-and-accountability.html'>4.4 Courts, Procuracy, Inspection, and Anti-Corruption</a><a class='section-link ' href='04-05-local-politics-and-real-power-relations.html'>4.5 Local Politics and Real Power Relations</a><a class='section-link ' href='04-06-political-system-diagnostics-and-democratic-trajectory.html'>4.6 Political System Diagnostics and Democratic Trajectory</a></details>
+<details ><summary>5. Administrative System and Government Organization</summary><a class='section-link ' href='05-01-central-government-and-ministerial-system.html'>5.1 Central Government and Ministerial System</a><a class='section-link ' href='05-02-organizational-management-and-bureaucratic-reform.html'>5.2 Organizational Management and Bureaucratic Reform</a><a class='section-link ' href='05-03-human-resource-management-and-civil-service.html'>5.3 Human Resource Management and Civil Service</a><a class='section-link ' href='05-04-financial-administration-procurement-audit-and-inspection.html'>5.4 Financial Administration, Procurement, Audit, and Inspection</a><a class='section-link ' href='05-05-local-administration-and-service-delivery.html'>5.5 Local Administration and Service Delivery</a><a class='section-link ' href='05-06-digital-government-and-administrative-accountability.html'>5.6 Digital Government and Administrative Accountability</a><a class='section-link ' href='05-07-implementation-capacity-and-administrative-performance.html'>5.7 Implementation Capacity and Administrative Performance</a></details>
+<details ><summary>6. Governance and Institutional Capacity</summary><a class='section-link ' href='06-01-government-effectiveness-and-regulatory-quality.html'>6.1 Government Effectiveness and Regulatory Quality</a><a class='section-link ' href='06-02-rule-of-law-and-corruption-control.html'>6.2 Rule of Law and Corruption Control</a><a class='section-link ' href='06-03-voice-accountability-and-stability.html'>6.3 Voice, Accountability, and Stability</a><a class='section-link ' href='06-04-what-governance-indicators-reveal.html'>6.4 What Governance Indicators Reveal</a></details>
+<details ><summary>7. Fiscal System and Public Sector</summary><a class='section-link ' href='07-01-revenue-taxation-and-expenditure.html'>7.1 Revenue, Taxation, and Expenditure</a><a class='section-link ' href='07-02-deficit-debt-and-fiscal-space.html'>7.2 Fiscal Balance, Debt, and Fiscal Space</a><a class='section-link ' href='07-03-public-investment-soes-and-quasi-fiscal-risk.html'>7.3 Public Investment, Procurement, SOEs, and Quasi-Fiscal Risk</a><a class='section-link ' href='07-04-budget-decentralization-and-audit.html'>7.4 Budget Decentralization, Procurement Oversight, and Audit</a><a class='section-link ' href='07-05-fiscal-capacity-and-public-sector-risks.html'>7.5 Fiscal Capacity and Public Sector Risks</a></details>
+<details ><summary>8. Population and Social Structure</summary><a class='section-link ' href='08-01-population-scale-and-age-structure.html'>8.1 Population Scale and Age Structure</a><a class='section-link ' href='08-02-urbanization-and-regional-distribution.html'>8.2 Urbanization and Regional Distribution</a><a class='section-link ' href='08-03-ethnicity-language-religion-and-social-cohesion.html'>8.3 Ethnicity, Language, Religion, and Social Cohesion</a><a class='section-link ' href='08-04-migration-remittances-and-inclusion.html'>8.4 Migration, Remittances, and Inclusion</a></details>
+<details ><summary>9. Macroeconomic Structure</summary><a class='section-link ' href='09-01-gdp-scale-growth-and-income.html'>9.1 GDP Scale, Growth, and Income Level</a><a class='section-link ' href='09-02-inflation-exchange-rate-and-macro-stability.html'>9.2 Inflation, Exchange-Rate Management, and Macro Stability</a><a class='section-link ' href='09-03-industrial-structure-and-productivity.html'>9.3 Industrial Structure, Sectoral Transformation, and Productivity</a><a class='section-link ' href='09-04-growth-model-and-structural-vulnerabilities.html'>9.4 External Position, Trade Balance, and Structural Constraints</a><a class='section-link ' href='09-05-growth-driver-model-and-interpretation.html'>9.5 Growth Driver Model and Interpretation</a></details>
+<details ><summary>10. Trade, Investment, and External Economy</summary><a class='section-link ' href='10-01-exports-imports-and-current-account.html'>10.1 Export-Import Trends, Trade Dependence, and Export Transformation</a><a class='section-link ' href='10-02-fdi-and-export-manufacturing.html'>10.2 FDI and Export Manufacturing</a><a class='section-link ' href='10-03-trading-partners-supply-chains-and-technology-upgrading.html'>10.3 Trading Partners, Supply Chains, and Technology Upgrading</a><a class='section-link ' href='10-04-investment-rules-zones-and-industrial-policy.html'>10.4 Investment Rules, Zones, and Industrial Policy</a></details>
+<details ><summary>11. Infrastructure, Energy, and Digital Connectivity</summary><a class='section-link ' href='11-01-energy-access-and-power-system-reform.html'>11.1 Energy Access and Power System Reform</a><a class='section-link ' href='11-02-transport-logistics-and-corridors.html'>11.2 Transport, Logistics, and Corridors</a><a class='section-link ' href='11-03-digital-connectivity.html'>11.3 Digital Connectivity, AI Infrastructure, and the Digital Economy</a><a class='section-link ' href='11-04-infrastructure-governance-and-climate-resilience.html'>11.4 Infrastructure Governance and Climate Resilience</a></details>
+<details ><summary>12. Labor Market and Human Capital</summary><a class='section-link ' href='12-01-labor-force-and-participation.html'>12.1 Labor Force and Participation</a><a class='section-link ' href='12-02-women-youth-and-informality.html'>12.2 Women, Youth, and Informality</a><a class='section-link ' href='12-03-agricultural-employment-and-productivity.html'>12.3 Agricultural Employment and Productivity</a><a class='section-link ' href='12-04-skills-education-and-human-capital.html'>12.4 Skills, Education, and Human Capital</a></details>
+<details ><summary>13. Education, Health, and Welfare</summary><a class='section-link ' href='13-01-education-system-and-public-spending.html'>13.1 Education System, Skills Policy, and Public Spending</a><a class='section-link ' href='13-02-health-outcomes-and-service-capacity.html'>13.2 Health Care, Population Ageing, and Financial Protection</a><a class='section-link ' href='13-03-water-sanitation-nutrition-and-welfare.html'>13.3 Water, Sanitation, Nutrition, and Welfare</a><a class='section-link ' href='13-04-human-development-and-territorial-equity.html'>13.4 Human Development and Territorial Equity</a></details>
+<details ><summary>14. Financial Sector and Economic Institutions</summary><a class='section-link ' href='14-01-banks-credit-and-capital-markets.html'>14.1 Banks, Credit, and Capital Markets</a><a class='section-link ' href='14-02-state-bank-of-vietnam-and-financial-supervision.html'>14.2 State Bank of Vietnam and Financial Supervision</a><a class='section-link ' href='14-03-fintech-payments-and-inclusion.html'>14.3 Fintech, Payments, and Inclusion</a><a class='section-link ' href='14-04-financial-stability-and-reform-priorities.html'>14.4 Financial Stability and Reform Priorities</a></details>
+<details open><summary>15. Foreign Relations, Security, and Geopolitics</summary><a class='section-link ' href='15-01-bamboo-diplomacy-and-asean.html'>15.1 Bamboo Diplomacy, ASEAN, and the Evolution of Vietnam’s Foreign Policy Principles</a><a class='section-link ' href='15-02-china-the-united-states-and-the-east-sea.html'>15.2 China, the United States, and the East Sea</a><a class='section-link active' href='15-03-defense-police-border-and-transnational-risks.html'>15.3 Defense, Police, Border, and Transnational Risks</a><a class='section-link ' href='15-04-mekong-energy-security-and-strategic-corridors.html'>15.4 Mekong, Energy Security, and Strategic Corridors</a></details>
+<details ><summary>16. Major Policies and National Development Strategy</summary><a class='section-link ' href='16-01-evolution-of-national-development-strategy.html'>16.1 Evolution of National Development Strategy</a><a class='section-link ' href='16-02-socio-economic-development-strategy-2021-2030.html'>16.2 Socio-Economic Development Strategy 2021-2030</a><a class='section-link ' href='16-03-administrative-restructuring-and-public-administration-reform.html'>16.3 Administrative Restructuring and Public Administration Reform</a><a class='section-link ' href='16-04-digital-green-and-industrial-transformation.html'>16.4 Digital, Green, and Industrial Transformation</a><a class='section-link ' href='16-05-implementation-matrix-and-risks.html'>16.5 Implementation Matrix and Risks</a><a class='section-link ' href='16-06-green-growth-climate-governance-and-sdg-implementation.html'>16.6 Green Growth, Climate Governance, and SDG Implementation</a></details>
+<details ><summary>17. Integrated Assessment</summary><a class='section-link ' href='17-01-national-operating-model.html'>17.1 National Operating Model</a><a class='section-link ' href='17-02-institutional-strengths-risks-and-bottlenecks.html'>17.2 Institutional Strengths, Risks, and Bottlenecks</a><a class='section-link ' href='17-03-implications-for-korea-and-international-cooperation.html'>17.3 Implications for Korea and International Cooperation</a><a class='section-link ' href='17-04-vietnam-and-comparative-administration-theory.html'>17.4 Vietnam and Comparative Administration Theory</a><a class='section-link ' href='17-05-strategic-outlook.html'>17.5 Strategic Outlook</a></details>
+<details ><summary>18. Appendix, Sources, and Method</summary><a class='section-link ' href='18-01-timeline.html'>18.1 Timeline</a><a class='section-link ' href='18-02-government-organization-chart.html'>18.2 Government Organization Chart</a><a class='section-link ' href='18-03-major-laws-and-policy-documents.html'>18.3 Major Laws and Policy Documents</a><a class='section-link ' href='18-04-indicator-codebook.html'>18.4 Indicator Codebook</a><a class='section-link ' href='18-05-update-workflow-and-evidence-archive.html'>18.5 Update Workflow and Evidence Archive</a></details>
+<details ><summary>19. References</summary><a class='section-link ' href='19-01-references.html'>19.1 References</a><a class='section-link ' href='19-02-citation-and-source-integrity-notes.html'>19.2 Citation and Source Integrity Notes</a></details></aside>
+    <main>
+      <p class="crumb"><a href="../15-security.html">Chapter 15</a> / Section 3</p>
+      <h1>15.3 Defense, Police, Border, and Transnational Risks</h1>
+      <p class="chapter-title">15. Foreign Relations, Security, and Geopolitics</p>
+      <article class="section-body editable-section" data-md-panel="15-03-defense-police-border-and-transnational-risks" data-md-source="sections/15-03-defense-police-border-and-transnational-risks.md">
+  <div class="md-toolbar">
+    <button type="button" data-md-action="edit">Edit Markdown</button>
+    <button type="button" data-md-action="save" hidden>Save</button>
+    <button type="button" data-md-action="cancel" hidden>Cancel</button>
+  </div>
+  <div class="md-preview"><h2 id='15-3-defense-police-border-and-transnational-risks'>15.3 Defense, Police, Border, and Transnational Risks</h2>
+<p><strong>ASEAN comparative lens (2026).</strong> Vietnam should be read in ASEAN comparison as ASEAN&#x27;s most prominent party-led, export-manufacturing upgrading case. Unlike the Philippines&#x27; service-remittance profile, Thailand&#x27;s older industrial-tourism base, Malaysia&#x27;s resource-industrial federal structure, or Indonesia&#x27;s archipelagic domestic-market scale, Vietnam&#x27;s comparative issue is how a socialist party-state manages very open global production networks. For this section, the regional comparison should compare foreign policy, maritime or mainland security, borders, great-power exposure, ASEAN diplomacy, and transnational risks. Local comparable indicators show: population 100.99 million (2024), rank 3 among the nine ASEAN reports in this workspace; GDP US$476.39 billion (2024), rank 4 among the nine ASEAN reports in this workspace; GDP per capita US$4,717 (2024), rank 5 among the nine ASEAN reports in this workspace; real GDP growth 7.09% (2024), rank 1 among the nine ASEAN reports in this workspace; government effectiveness 0.09 (2023), rank 6 among the nine ASEAN reports in this workspace; internet use 84.15% (2024), rank 4 among the nine ASEAN reports in this workspace. Use `sources/documents/regional/asean_comparative_lens_2026.md` together with ASEANstats, ASEAN Secretariat materials, and the country processed-indicator files before making cross-ASEAN claims.</p>
+<p>Vietnam’s security environment is shaped by the interaction of maritime disputes, land borders, transnational crime, cyber threats, and disaster risks. Security cannot therefore be understood only through military expenditure or formal defense doctrine. Vietnam faces a broader problem of security administration: how to protect sovereignty, maintain domestic order, manage borders, respond to non-traditional risks, and preserve strategic autonomy in a contested regional environment. China to the north, the East Sea to the east, Laos and Cambodia to the west and southwest, and ASEAN as the principal regional framework together define the spatial setting of Vietnamese security policy.</p>
+<p>The most sensitive external security issue is the East Sea. For Vietnam, the East Sea is not only a maritime boundary question. It is connected to sovereignty, fisheries, offshore energy, shipping lanes, submarine cables, marine scientific research, coast-guard operations, and national identity. China’s growing maritime presence, including coast-guard patrols, maritime militia activity, artificial-island infrastructure, research vessels, and administrative assertion over disputed areas, creates a persistent grey-zone challenge. This challenge is difficult because it often remains below the threshold of conventional war while still altering facts at sea. Vietnam must therefore rely not only on the navy, but also on coast-guard capacity, maritime domain awareness, legal documentation, diplomatic communication, fisheries administration, and coordination with coastal provinces.</p>
+<p>Recent South China Sea developments reinforce this point. In April and May 2026, China conducted naval and air patrols near Scarborough Shoal while the United States, the Philippines, Japan, Australia, and other partners carried out large-scale Balikatan exercises near the South China Sea and the Taiwan Strait. Although these incidents directly involved the Philippines rather than Vietnam, they matter for Vietnam because they signal a more militarized regional maritime environment and a greater risk that localized maritime incidents may become connected to broader U.S.–China competition. ([Reuters][1]) Japan’s participation in live-fire maritime drills with the United States and partners in the northern Philippines further indicates that middle powers are becoming more active in regional maritime security. ([Reuters][2])</p>
+<p>Vietnam’s defense policy responds to these pressures through cautious modernization and strategic non-alignment. The 2019 National Defence White Paper articulated the “four no’s”: no military alliances, no siding with one country against another, no foreign military bases or use of Vietnamese territory against other countries, and no use or threat of force in international relations. ([en.baochinhphu.vn][3]) This principle does not mean that Vietnam is passive. Rather, it allows Vietnam to modernize defense capabilities, expand maritime security cooperation, participate in peacekeeping, and deepen partnerships with multiple countries while avoiding formal alliance dependence. In practical terms, Vietnam’s defense posture combines deterrence, restraint, and diplomatic flexibility.</p>
+<p>The police and internal security apparatus are equally important because many of Vietnam’s risks are non-traditional. Cybercrime, online fraud, trafficking in persons, narcotics, money laundering, environmental crime, and illicit cross-border movement connect domestic order with regional networks. UNODC’s Vietnam programming highlights cooperation on drug trafficking, money laundering, corruption, terrorism prevention, border management, human trafficking, and migrant smuggling. ([НҮБ: Эрүүл мэнд, мансууруулах бодис][4]) These risks are not peripheral to national security. They affect financial integrity, labor migration, border communities, social stability, and trust in public institutions.</p>
+<p>Border management is especially complex because Vietnam’s land borders are economically and politically diverse. The northern border with China is central to trade, manufacturing inputs, tourism, migration control, and illicit trafficking risks. The western border with Laos is linked to mountainous terrain, ethnic minority areas, narcotics routes, forest governance, and infrastructure connectivity. The southwestern border with Cambodia is connected to labor mobility, trade, migration, trafficking, and Mekong Delta security. Effective border governance therefore requires customs capacity, immigration control, police cooperation, local administration, disease surveillance, transport infrastructure, and anti-corruption safeguards. Border security cannot be reduced to blocking movement; it is about distinguishing legal circulation from illicit networks.</p>
+<p>The Mekong region adds another layer of security risk. Water security, upstream dam construction, drought, saltwater intrusion, fisheries decline, agricultural vulnerability, and climate change directly affect Vietnam’s Mekong Delta. These are not conventional military threats, but they can destabilize livelihoods, food security, rural incomes, and internal migration. For this reason, Mekong security requires environmental monitoring, hydrological data, regional negotiation, disaster response, agricultural adaptation, and coordination among central ministries and local governments. It also links Vietnam’s relations with China, Laos, Cambodia, Thailand, and ASEAN-led mechanisms.</p>
+<p>Cybersecurity has become a further bridge between external security and domestic administration. Vietnam’s digital transformation, e-government programs, banking digitalization, logistics platforms, industrial upgrading, and public-service modernization increase the state’s dependence on secure data systems. Cyber risks include state-linked intrusion, ransomware, online scams, data theft, misinformation, and vulnerabilities in critical infrastructure. The administrative challenge is therefore to develop cybersecurity capacity without undermining innovation, digital commerce, and public trust. Cybersecurity also intersects with police authority, data governance, censorship, platform regulation, and national-security law.</p>
+<p>These security issues have important institutional consequences. Vietnam’s Ministry of National Defence, Ministry of Public Security, Ministry of Foreign Affairs, coast guard, border guard, customs agencies, provincial governments, courts, procuracies, and specialized regulators must operate across overlapping jurisdictions. Maritime disputes require coordination between defense, diplomacy, energy, fisheries, transport, and local authorities. Transnational crime requires coordination among police, border guards, customs, prosecutors, courts, financial-intelligence bodies, and international partners. Disaster and climate risks require coordination among agriculture, environment, transport, health, provincial authorities, and local communities. Security governance is therefore a test of interministerial coordination.</p>
+<p>The relationship between security and development is particularly important. Defense modernization affects shipbuilding, ports, surveillance, communications, and dual-use infrastructure. Border management affects trade facilitation and regional connectivity. Police capacity affects investment confidence, anti-corruption credibility, and financial integrity. Cybersecurity affects digital transformation and high-tech industrial policy. Disaster response affects agricultural resilience and local service delivery. In this sense, Vietnam’s security institutions support both sovereignty and administrative resilience. Their performance determines whether external pressure becomes a manageable risk or a constraint on development.</p>
+<p>At the same time, the expansion of security functions creates governance risks. A stronger security state can improve border control, anti-trafficking efforts, cyber protection, and maritime resilience. However, it can also increase administrative discretion, limit transparency, and expand surveillance powers. The policy issue is therefore not a matter of whether Vietnam should strengthen security institutions. It is how security capacity can be professionalized, legally bounded, accountable, and coordinated with civilian administration.</p>
+<p>The visual evidence below should therefore be read as part of a broader security-administration diagnosis. Military expenditure, maritime incidents, border trade, cybercrime exposure, trafficking routes, disaster vulnerability, and water-security indicators all show how external and transnational pressures enter domestic governance. A professional country report should not treat security as a separate defense chapter. It should show how defense, police, border, maritime, cyber, environmental, and diplomatic functions together shape Vietnam’s state capacity.</p>
+<h3>Policy Implications</h3>
+<p>Vietnam’s next-stage security challenge is not limited to defending territory. It is to build an integrated security-administration system capable of managing grey-zone maritime pressure, land-border risks, transnational crime, cyber threats, and climate-related instability. This requires stronger coast-guard and maritime-domain awareness, more professional border management, better police and customs coordination, credible legal procedures, regional intelligence sharing, and stronger cyber and disaster-response capacity. At the same time, Vietnam must preserve strategic flexibility by avoiding excessive dependence on any one partner. In this respect, defense and police reform reach beyond the security sector. They are part of Vietnam’s broader effort to maintain sovereignty, support economic integration, protect citizens, and manage the risks of a more contested regional order.</p>
+<p>---</p>
+<h3>Main Security Risks and Administrative Implications</h3>
+<table><thead><tr><th>Risk area</th><th>Main issue</th><th>Administrative implication</th></tr></thead><tbody><tr><td>East Sea / South China Sea</td><td>Sovereignty, fisheries, offshore energy, coast-guard confrontation, maritime militia</td><td>Requires maritime-domain awareness, coast-guard capacity, legal diplomacy, fisheries administration, and coastal coordination</td></tr><tr><td>China border</td><td>Trade, migration, illicit trafficking, disease surveillance, political sensitivity</td><td>Requires customs modernization, border policing, trade facilitation, and crisis communication</td></tr><tr><td>Laos border</td><td>Mountainous terrain, narcotics routes, ethnic minority areas, forest governance</td><td>Requires border-guard capacity, anti-narcotics cooperation, local development, and environmental monitoring</td></tr><tr><td>Cambodia border</td><td>Migration, trafficking, labor mobility, trade, Mekong Delta linkages</td><td>Requires immigration control, anti-trafficking cooperation, local administration, and labor protection</td></tr><tr><td>Mekong security</td><td>Upstream dams, drought, saltwater intrusion, fisheries decline, climate risk</td><td>Requires hydrological data, regional diplomacy, agricultural adaptation, and disaster planning</td></tr><tr><td>Cybersecurity</td><td>Online fraud, data theft, ransomware, critical infrastructure vulnerability</td><td>Requires cybersecurity regulation, digital forensics, data governance, and public-sector capacity</td></tr><tr><td>Transnational crime</td><td>Drugs, money laundering, trafficking, smuggling, organized crime</td><td>Requires police, customs, prosecutors, courts, and international cooperation</td></tr><tr><td>Disaster response</td><td>Typhoons, floods, landslides, heat, public-health emergencies</td><td>Requires early warning, local government capacity, emergency logistics, and social protection</td></tr></tbody></table>
+<p>[1]: https://www.reuters.com/world/china/china-conducts-combat-readiness-patrols-scarborough-shoal-2026-04-30/?utm_source=chatgpt.com &quot;China holds naval, air patrols near Scarborough Shoal as Philippines, US stage drills&quot;</p>
+<p>[2]: https://www.reuters.com/business/aerospace-defense/japan-fires-missile-joint-drill-with-us-allies-northern-philippines-facing-south-2026-05-06/?utm_source=chatgpt.com &quot;Japan fires missile in joint drill with US and allies in northern Philippines, facing South China Sea&quot;</p>
+<p>[3]: https://en.baochinhphu.vn/four-nos-principle-of-national-defense-policy-11137244.htm?utm_source=chatgpt.com &quot;“Four No&#x27;s” principle of national defense policy&quot;</p>
+<p>[4]: https://www.unodc.org/vietnam/index.html?utm_source=chatgpt.com &quot;UNODC Viet Nam Office&quot;</p></div>
+  <textarea class="md-editor" hidden>## 15.3 Defense, Police, Border, and Transnational Risks
+
+&lt;!-- asean-comparative-lens-2026:start --&gt;
+**ASEAN comparative lens (2026).** Vietnam should be read in ASEAN comparison as ASEAN&#x27;s most prominent party-led, export-manufacturing upgrading case. Unlike the Philippines&#x27; service-remittance profile, Thailand&#x27;s older industrial-tourism base, Malaysia&#x27;s resource-industrial federal structure, or Indonesia&#x27;s archipelagic domestic-market scale, Vietnam&#x27;s comparative issue is how a socialist party-state manages very open global production networks. For this section, the regional comparison should compare foreign policy, maritime or mainland security, borders, great-power exposure, ASEAN diplomacy, and transnational risks. Local comparable indicators show: population 100.99 million (2024), rank 3 among the nine ASEAN reports in this workspace; GDP US$476.39 billion (2024), rank 4 among the nine ASEAN reports in this workspace; GDP per capita US$4,717 (2024), rank 5 among the nine ASEAN reports in this workspace; real GDP growth 7.09% (2024), rank 1 among the nine ASEAN reports in this workspace; government effectiveness 0.09 (2023), rank 6 among the nine ASEAN reports in this workspace; internet use 84.15% (2024), rank 4 among the nine ASEAN reports in this workspace. Use `sources/documents/regional/asean_comparative_lens_2026.md` together with ASEANstats, ASEAN Secretariat materials, and the country processed-indicator files before making cross-ASEAN claims.
+&lt;!-- asean-comparative-lens-2026:end --&gt;
+
+Vietnam’s security environment is shaped by the interaction of maritime disputes, land borders, transnational crime, cyber threats, and disaster risks. Security cannot therefore be understood only through military expenditure or formal defense doctrine. Vietnam faces a broader problem of security administration: how to protect sovereignty, maintain domestic order, manage borders, respond to non-traditional risks, and preserve strategic autonomy in a contested regional environment. China to the north, the East Sea to the east, Laos and Cambodia to the west and southwest, and ASEAN as the principal regional framework together define the spatial setting of Vietnamese security policy.
+
+The most sensitive external security issue is the East Sea. For Vietnam, the East Sea is not only a maritime boundary question. It is connected to sovereignty, fisheries, offshore energy, shipping lanes, submarine cables, marine scientific research, coast-guard operations, and national identity. China’s growing maritime presence, including coast-guard patrols, maritime militia activity, artificial-island infrastructure, research vessels, and administrative assertion over disputed areas, creates a persistent grey-zone challenge. This challenge is difficult because it often remains below the threshold of conventional war while still altering facts at sea. Vietnam must therefore rely not only on the navy, but also on coast-guard capacity, maritime domain awareness, legal documentation, diplomatic communication, fisheries administration, and coordination with coastal provinces.
+
+Recent South China Sea developments reinforce this point. In April and May 2026, China conducted naval and air patrols near Scarborough Shoal while the United States, the Philippines, Japan, Australia, and other partners carried out large-scale Balikatan exercises near the South China Sea and the Taiwan Strait. Although these incidents directly involved the Philippines rather than Vietnam, they matter for Vietnam because they signal a more militarized regional maritime environment and a greater risk that localized maritime incidents may become connected to broader U.S.–China competition. ([Reuters][1]) Japan’s participation in live-fire maritime drills with the United States and partners in the northern Philippines further indicates that middle powers are becoming more active in regional maritime security. ([Reuters][2])
+
+Vietnam’s defense policy responds to these pressures through cautious modernization and strategic non-alignment. The 2019 National Defence White Paper articulated the “four no’s”: no military alliances, no siding with one country against another, no foreign military bases or use of Vietnamese territory against other countries, and no use or threat of force in international relations. ([en.baochinhphu.vn][3]) This principle does not mean that Vietnam is passive. Rather, it allows Vietnam to modernize defense capabilities, expand maritime security cooperation, participate in peacekeeping, and deepen partnerships with multiple countries while avoiding formal alliance dependence. In practical terms, Vietnam’s defense posture combines deterrence, restraint, and diplomatic flexibility.
+
+The police and internal security apparatus are equally important because many of Vietnam’s risks are non-traditional. Cybercrime, online fraud, trafficking in persons, narcotics, money laundering, environmental crime, and illicit cross-border movement connect domestic order with regional networks. UNODC’s Vietnam programming highlights cooperation on drug trafficking, money laundering, corruption, terrorism prevention, border management, human trafficking, and migrant smuggling. ([НҮБ: Эрүүл мэнд, мансууруулах бодис][4]) These risks are not peripheral to national security. They affect financial integrity, labor migration, border communities, social stability, and trust in public institutions.
+
+Border management is especially complex because Vietnam’s land borders are economically and politically diverse. The northern border with China is central to trade, manufacturing inputs, tourism, migration control, and illicit trafficking risks. The western border with Laos is linked to mountainous terrain, ethnic minority areas, narcotics routes, forest governance, and infrastructure connectivity. The southwestern border with Cambodia is connected to labor mobility, trade, migration, trafficking, and Mekong Delta security. Effective border governance therefore requires customs capacity, immigration control, police cooperation, local administration, disease surveillance, transport infrastructure, and anti-corruption safeguards. Border security cannot be reduced to blocking movement; it is about distinguishing legal circulation from illicit networks.
+
+The Mekong region adds another layer of security risk. Water security, upstream dam construction, drought, saltwater intrusion, fisheries decline, agricultural vulnerability, and climate change directly affect Vietnam’s Mekong Delta. These are not conventional military threats, but they can destabilize livelihoods, food security, rural incomes, and internal migration. For this reason, Mekong security requires environmental monitoring, hydrological data, regional negotiation, disaster response, agricultural adaptation, and coordination among central ministries and local governments. It also links Vietnam’s relations with China, Laos, Cambodia, Thailand, and ASEAN-led mechanisms.
+
+Cybersecurity has become a further bridge between external security and domestic administration. Vietnam’s digital transformation, e-government programs, banking digitalization, logistics platforms, industrial upgrading, and public-service modernization increase the state’s dependence on secure data systems. Cyber risks include state-linked intrusion, ransomware, online scams, data theft, misinformation, and vulnerabilities in critical infrastructure. The administrative challenge is therefore to develop cybersecurity capacity without undermining innovation, digital commerce, and public trust. Cybersecurity also intersects with police authority, data governance, censorship, platform regulation, and national-security law.
+
+These security issues have important institutional consequences. Vietnam’s Ministry of National Defence, Ministry of Public Security, Ministry of Foreign Affairs, coast guard, border guard, customs agencies, provincial governments, courts, procuracies, and specialized regulators must operate across overlapping jurisdictions. Maritime disputes require coordination between defense, diplomacy, energy, fisheries, transport, and local authorities. Transnational crime requires coordination among police, border guards, customs, prosecutors, courts, financial-intelligence bodies, and international partners. Disaster and climate risks require coordination among agriculture, environment, transport, health, provincial authorities, and local communities. Security governance is therefore a test of interministerial coordination.
+
+The relationship between security and development is particularly important. Defense modernization affects shipbuilding, ports, surveillance, communications, and dual-use infrastructure. Border management affects trade facilitation and regional connectivity. Police capacity affects investment confidence, anti-corruption credibility, and financial integrity. Cybersecurity affects digital transformation and high-tech industrial policy. Disaster response affects agricultural resilience and local service delivery. In this sense, Vietnam’s security institutions support both sovereignty and administrative resilience. Their performance determines whether external pressure becomes a manageable risk or a constraint on development.
+
+At the same time, the expansion of security functions creates governance risks. A stronger security state can improve border control, anti-trafficking efforts, cyber protection, and maritime resilience. However, it can also increase administrative discretion, limit transparency, and expand surveillance powers. The policy issue is therefore not a matter of whether Vietnam should strengthen security institutions. It is how security capacity can be professionalized, legally bounded, accountable, and coordinated with civilian administration.
+
+The visual evidence below should therefore be read as part of a broader security-administration diagnosis. Military expenditure, maritime incidents, border trade, cybercrime exposure, trafficking routes, disaster vulnerability, and water-security indicators all show how external and transnational pressures enter domestic governance. A professional country report should not treat security as a separate defense chapter. It should show how defense, police, border, maritime, cyber, environmental, and diplomatic functions together shape Vietnam’s state capacity.
+
+### Policy Implications
+
+Vietnam’s next-stage security challenge is not limited to defending territory. It is to build an integrated security-administration system capable of managing grey-zone maritime pressure, land-border risks, transnational crime, cyber threats, and climate-related instability. This requires stronger coast-guard and maritime-domain awareness, more professional border management, better police and customs coordination, credible legal procedures, regional intelligence sharing, and stronger cyber and disaster-response capacity. At the same time, Vietnam must preserve strategic flexibility by avoiding excessive dependence on any one partner. In this respect, defense and police reform reach beyond the security sector. They are part of Vietnam’s broader effort to maintain sovereignty, support economic integration, protect citizens, and manage the risks of a more contested regional order.
+
+---
+
+### Main Security Risks and Administrative Implications
+
+| Risk area                  | Main issue                                                                           | Administrative implication                                                                                                    |
+| -------------------------- | ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
+| East Sea / South China Sea | Sovereignty, fisheries, offshore energy, coast-guard confrontation, maritime militia | Requires maritime-domain awareness, coast-guard capacity, legal diplomacy, fisheries administration, and coastal coordination |
+| China border               | Trade, migration, illicit trafficking, disease surveillance, political sensitivity   | Requires customs modernization, border policing, trade facilitation, and crisis communication                                 |
+| Laos border                | Mountainous terrain, narcotics routes, ethnic minority areas, forest governance      | Requires border-guard capacity, anti-narcotics cooperation, local development, and environmental monitoring                   |
+| Cambodia border            | Migration, trafficking, labor mobility, trade, Mekong Delta linkages                 | Requires immigration control, anti-trafficking cooperation, local administration, and labor protection                        |
+| Mekong security            | Upstream dams, drought, saltwater intrusion, fisheries decline, climate risk         | Requires hydrological data, regional diplomacy, agricultural adaptation, and disaster planning                                |
+| Cybersecurity              | Online fraud, data theft, ransomware, critical infrastructure vulnerability          | Requires cybersecurity regulation, digital forensics, data governance, and public-sector capacity                             |
+| Transnational crime        | Drugs, money laundering, trafficking, smuggling, organized crime                     | Requires police, customs, prosecutors, courts, and international cooperation                                                  |
+| Disaster response          | Typhoons, floods, landslides, heat, public-health emergencies                        | Requires early warning, local government capacity, emergency logistics, and social protection                                 |
+
+[1]: https://www.reuters.com/world/china/china-conducts-combat-readiness-patrols-scarborough-shoal-2026-04-30/?utm_source=chatgpt.com &quot;China holds naval, air patrols near Scarborough Shoal as Philippines, US stage drills&quot;
+[2]: https://www.reuters.com/business/aerospace-defense/japan-fires-missile-joint-drill-with-us-allies-northern-philippines-facing-south-2026-05-06/?utm_source=chatgpt.com &quot;Japan fires missile in joint drill with US and allies in northern Philippines, facing South China Sea&quot;
+[3]: https://en.baochinhphu.vn/four-nos-principle-of-national-defense-policy-11137244.htm?utm_source=chatgpt.com &quot;“Four No&#x27;s” principle of national defense policy&quot;
+[4]: https://www.unodc.org/vietnam/index.html?utm_source=chatgpt.com &quot;UNODC Viet Nam Office&quot;</textarea>
+</article>
+      
+<figure class="chart-card">
+  <h2>military</h2>
+  <div class="chart-frame"><canvas id="chart-military"></canvas></div>
+  <figcaption>Source:  Unit: </figcaption>
+  <p>The figure is included as chapter-level evidence. Interpret it by identifying direction, turning points, divergence among series, and the policy or institutional mechanism that could plausibly explain the pattern.</p>
+</figure>
+
+    </main>
+  </div>
+  <script>
+    window.REPORT_CHARTS = [];
+    document.addEventListener('DOMContentLoaded', () => {
+      if (!window.Chart || !window.REPORT_CHARTS) return;
+      window.REPORT_CHARTS.forEach((entry) => {
+        const cfg = entry.data || {};
+        const el = document.getElementById('chart-' + entry.id);
+        if (!el || !cfg.datasets) return;
+        const colors = ['#197278', '#246b46', '#b7860b', '#7b2d26', '#3f4e9a', '#6a4c93'];
+        const dashes = [[], [8, 4], [2, 3], [10, 4, 2, 4], [1, 4], [12, 3, 3, 3]];
+        const pointStyles = ['circle', 'rect', 'triangle', 'rectRot', 'crossRot', 'star'];
+        const datasets = (cfg.datasets || []).map((dataset, i) => ({
+          ...dataset,
+          borderColor: dataset.borderColor || colors[i % colors.length],
+          backgroundColor: dataset.backgroundColor || 'transparent',
+          borderDash: dataset.borderDash || dashes[i % dashes.length],
+          borderWidth: dataset.borderWidth || 2.4,
+          pointStyle: dataset.pointStyle || pointStyles[i % pointStyles.length],
+          pointRadius: dataset.pointRadius ?? 1.8,
+          tension: dataset.tension ?? 0.25,
+          spanGaps: dataset.spanGaps ?? true
+        }));
+        new Chart(el, {
+          type: 'line',
+          data: { labels: cfg.labels || [], datasets },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            interaction: { mode: 'index', intersect: false },
+            plugins: { legend: { position: 'bottom', labels: { boxWidth: 28 } } },
+            scales: { x: { title: { display: true, text: 'Year' } }, y: { title: { display: true, text: cfg.unit || 'Value' } } }
+          }
+        });
+      });
+    });
+  </script>
+  <script src="../assets/report.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  function fallbackMarkdown(text) {
+    const escaped = text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    return escaped.split(/\n{2,}/).map((block) => `<p>${block.replace(/\n/g, "<br>")}</p>`).join("");
+  }
+  function renderMarkdown(text) {
+    return window.marked ? marked.parse(text) : fallbackMarkdown(text);
+  }
+  document.querySelectorAll('[data-md-panel]').forEach((panel) => {
+    const id = panel.getAttribute('data-md-panel');
+    const source = panel.getAttribute('data-md-source');
+    const preview = panel.querySelector('.md-preview');
+    const editor = panel.querySelector('.md-editor');
+    const edit = panel.querySelector('[data-md-action="edit"]');
+    const save = panel.querySelector('[data-md-action="save"]');
+    const cancel = panel.querySelector('[data-md-action="cancel"]');
+    if (!preview || !editor || !edit || !save || !cancel) return;
+    const storageKey = `country-report-markdown:v1:${source || id}`;
+    const original = editor.value;
+    const stored = localStorage.getItem(storageKey);
+    const hasStoredDraft = stored !== null && (!source || window.location.protocol === 'file:');
+    if (hasStoredDraft) editor.value = stored;
+    const showPreview = () => { preview.innerHTML = renderMarkdown(editor.value); };
+    const setEditing = (editing) => {
+      editor.hidden = !editing;
+      preview.hidden = editing;
+      edit.hidden = editing;
+      save.hidden = !editing;
+      cancel.hidden = !editing;
+    };
+    async function saveMarkdown() {
+      if (source && window.location.protocol.startsWith('http')) {
+        const response = await fetch('/api/save-section', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ source, markdown: editor.value })
+        });
+        if (!response.ok) throw new Error(await response.text());
+        localStorage.removeItem(storageKey);
+        return true;
+      } else {
+        localStorage.setItem(storageKey, editor.value);
+        if (source) window.alert('This edit was saved only as a browser draft. Open the report through code/serve_report.py to save it permanently to the Markdown source file.');
+        return false;
+      }
+    }
+    if (hasStoredDraft) showPreview();
+    setEditing(false);
+    edit.addEventListener('click', () => setEditing(true));
+    save.addEventListener('click', async () => {
+      save.disabled = true;
+      try {
+        const savedToServer = await saveMarkdown();
+        if (savedToServer) {
+          window.location.reload();
+          return;
+        }
+        showPreview();
+        setEditing(false);
+      } catch (error) {
+        window.alert(error.message || 'Could not save the Markdown source.');
+      } finally {
+        save.disabled = false;
+      }
+    });
+    cancel.addEventListener('click', () => {
+      editor.value = localStorage.getItem(storageKey) ?? original;
+      if (hasStoredDraft || window.location.protocol === 'file:') showPreview();
+      setEditing(false);
+    });
+  });
+});
+</script>
+
+</body>
+</html>

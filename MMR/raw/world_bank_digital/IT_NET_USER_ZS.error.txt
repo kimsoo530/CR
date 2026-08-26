@@ -1,0 +1,2 @@
+https://api.worldbank.org/v2/country/MMR/indicator/IT.NET.USER.ZS?format=json&per_page=20000
+Failed to fetch https://api.worldbank.org/v2/country/MMR/indicator/IT.NET.USER.ZS?format=json&per_page=20000

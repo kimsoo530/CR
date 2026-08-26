@@ -1,0 +1,1068 @@
+[
+  {
+    "page": 1,
+    "pages": 1,
+    "per_page": 20000,
+    "total": 66,
+    "sourceid": "2",
+    "lastupdated": "2026-04-08"
+  },
+  [
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2025",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2024",
+      "value": 15.2759866470065,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2023",
+      "value": 18.5621659533207,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2022",
+      "value": 20.5015111684972,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2021",
+      "value": 21.0676114738987,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2020",
+      "value": 17.2950651539903,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2019",
+      "value": 15.3935737924956,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2018",
+      "value": 16.2637631750898,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2017",
+      "value": 16.8609916662603,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2016",
+      "value": 16.4019689211179,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2015",
+      "value": 17.7737905538591,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2014",
+      "value": 16.0697456201098,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2013",
+      "value": 16.9906663206016,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2012",
+      "value": 19.1699328228031,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2011",
+      "value": 18.0535304149224,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2010",
+      "value": 20.170486209262,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2009",
+      "value": 25.7356031426676,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2008",
+      "value": 28.1222825205722,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2007",
+      "value": 39.9842237302244,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2006",
+      "value": 51.8668270840157,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2005",
+      "value": 59.9123580516691,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2004",
+      "value": 72.975594102393,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2003",
+      "value": 71.0874524528629,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2002",
+      "value": 99.0206326979547,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2001",
+      "value": 94.1601537423973,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2000",
+      "value": 72.8275113146935,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1999",
+      "value": 75.985428284476,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1998",
+      "value": 94.6378020591453,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1997",
+      "value": 124.834747447232,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1996",
+      "value": 95.1322557404488,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1995",
+      "value": 118.497080286955,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1994",
+      "value": 144.9376314102,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1993",
+      "value": 184.730148829794,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1992",
+      "value": 230.249292178716,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1991",
+      "value": 267.355039461299,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1990",
+      "value": 254.132366626374,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1989",
+      "value": 236.607598942509,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1988",
+      "value": 318.768433779108,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1987",
+      "value": 309.05473471653,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1986",
+      "value": 242.911407294201,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1985",
+      "value": 210.239771300033,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1984",
+      "value": 193.707916715072,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1983",
+      "value": 179.647736979925,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1982",
+      "value": 153.31032885976,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1981",
+      "value": 178.678185734518,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1980",
+      "value": 163.256388611906,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1979",
+      "value": 148.070522354383,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1978",
+      "value": 109.051610935938,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1977",
+      "value": 69.663477205037,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1976",
+      "value": 32.3035400799809,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1975",
+      "value": 35.199515669384,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1974",
+      "value": 29.0977484169643,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1973",
+      "value": 42.3410074426231,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1972",
+      "value": 33.4086906626367,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1971",
+      "value": 33.0201557356537,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1970",
+      "value": 29.0259463549153,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1969",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1968",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1967",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1966",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1965",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1964",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1963",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1962",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1961",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "DT.DOD.DECT.GN.ZS",
+        "value": "External debt stocks (% of GNI)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1960",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    }
+  ]
+]

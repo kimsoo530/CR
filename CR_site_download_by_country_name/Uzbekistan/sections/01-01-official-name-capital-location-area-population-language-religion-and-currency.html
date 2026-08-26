@@ -1,0 +1,974 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>1.1 Official Name, Capital, Location, Area, Population, Language, Religion, and Currency | Uzbekistan Country Report</title>
+  <script src="../assets/chart.umd.min.js"></script>
+  <script src="../assets/marked.min.js"></script>
+  <style>
+    :root {
+      --ink: #17212b;
+      --muted: #5b6773;
+      --line: #d9e1e8;
+      --panel: #f7f9fb;
+      --accent: #146c94;
+      --paper: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.62;
+    }
+    .layout {
+      display: grid;
+      grid-template-columns: 310px minmax(0, 1fr);
+      min-height: 100vh;
+    }
+    aside {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      overflow: auto;
+      border-right: 1px solid var(--line);
+      background: var(--panel);
+      padding: 22px 18px;
+    }
+    aside h1 { font-size: 20px; margin: 0 0 6px; }
+    aside h1 a { color: var(--ink); text-decoration: none; }
+    aside h1 a:hover { color: var(--accent); }
+    aside p { color: var(--muted); font-size: 13px; margin: 0 0 18px; }
+    nav a {
+      display: block;
+      color: var(--ink);
+      text-decoration: none;
+      padding: 8px 10px;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+    nav a:hover, nav a.active { background: #e9f1f6; color: var(--accent); }
+    .chapter-link { font-weight: 700; }
+    .toc-group {
+      margin: 1px 0;
+      border-radius: 6px;
+    }
+    .toc-group summary {
+      list-style: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .toc-group summary::-webkit-details-marker { display: none; }
+    .toc-group summary::before {
+      content: "›";
+      color: var(--muted);
+      font-size: 15px;
+      transform: rotate(0deg);
+      transition: transform 0.12s ease;
+    }
+    .toc-group[open] summary::before { transform: rotate(90deg); }
+    .toc-group summary a { flex: 1; }
+    .section-nav {
+      margin: 2px 0 8px 8px;
+      padding-left: 10px;
+      border-left: 2px solid #d2dde6;
+    }
+    .section-link {
+      padding: 5px 8px;
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.35;
+    }
+    .anchor-target {
+      display: block;
+      position: relative;
+      top: -18px;
+      visibility: hidden;
+    }
+    main { padding: 34px min(7vw, 86px); max-width: 980px; }
+    .hero { border-bottom: 1px solid var(--line); padding-bottom: 24px; margin-bottom: 24px; }
+    .hero h2 { font-size: 34px; margin: 0 0 8px; letter-spacing: 0; }
+    .hero p { color: var(--muted); max-width: 820px; }
+    .chapter h2 { font-size: 24px; margin: 0 0 12px; }
+    .chapter-landing-note {
+      color: var(--muted);
+      max-width: 760px;
+      margin: 0 0 18px;
+    }
+    .chapter-section-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 12px;
+      margin: 18px 0 28px;
+    }
+    .chapter-section-card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      padding: 14px;
+    }
+    .chapter-section-card a {
+      display: grid;
+      grid-template-columns: 48px minmax(0, 1fr);
+      gap: 10px;
+      align-items: start;
+      text-decoration: none;
+      color: var(--ink);
+    }
+    .chapter-section-card a:hover strong { color: var(--accent); }
+    .chapter-section-card span {
+      font-weight: 800;
+      color: var(--accent);
+      font-size: 15px;
+    }
+    .chapter-section-card strong {
+      font-size: 16px;
+      line-height: 1.35;
+      transition: color 0.12s ease;
+    }
+    .section-source {
+      margin: 10px 0 0 58px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.35;
+    }
+    .facts {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 10px;
+      margin: 18px 0;
+    }
+    .facts div { border: 1px solid var(--line); border-radius: 8px; padding: 12px; background: #fff; }
+    .facts b { display: block; font-size: 12px; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+    .facts span { font-weight: 700; }
+    .figure-card {
+      margin: 28px 0 34px;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+    .symbol-gallery {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin: 24px 0 30px;
+    }
+    .symbol-card {
+      margin: 0;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+    .symbol-card-wide { grid-column: 1 / -1; }
+    .symbol-card img {
+      display: block;
+      width: 100%;
+      max-height: 360px;
+      object-fit: contain;
+      background: #f7fbfc;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 10px;
+    }
+    .symbol-card-wide img {
+      max-height: 300px;
+      padding: 0;
+      object-fit: contain;
+    }
+    .symbol-card p {
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.55;
+    }
+    .heritage-photo {
+      margin: 24px 0 30px;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+    .heritage-photo img {
+      display: block;
+      width: 100%;
+      max-height: 520px;
+      object-fit: cover;
+      border-radius: 6px;
+      border: 1px solid var(--line);
+      background: #f7fbfc;
+    }
+    .heritage-photo figcaption {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+    .gov-org-chart {
+      margin: 24px 0 30px;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+    .gov-org-chart > figcaption {
+      font-weight: 800;
+      font-size: 18px;
+      margin: 0 0 14px;
+    }
+    .org-flow {
+      display: grid;
+      gap: 14px;
+    }
+    .org-branches,
+    .org-implementation {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      position: relative;
+    }
+    .org-node {
+      border: 1px solid #cfdce3;
+      border-radius: 8px;
+      padding: 13px;
+      background: #f8fbfc;
+      min-height: 146px;
+    }
+    .org-presidency {
+      background: #e9f4f7;
+      border-color: #9fc7d3;
+      max-width: 720px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .org-executive {
+      background: #f4f8ee;
+      border-color: #bfd4a5;
+    }
+    .org-node span {
+      display: block;
+      color: var(--accent);
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 6px;
+    }
+    .org-node strong {
+      display: block;
+      font-size: 16px;
+      line-height: 1.25;
+      margin-bottom: 8px;
+    }
+    .org-node p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+    .map-card {
+      margin: 24px 0 30px;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      width: min(1180px, calc(100vw - 380px));
+      max-width: none;
+    }
+    .map-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(250px, 0.85fr);
+      gap: 18px;
+      align-items: start;
+    }
+    .adm-map {
+      width: 100%;
+      height: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #f7fbfc;
+    }
+    .adm-path {
+      stroke: #415766;
+      stroke-width: 1;
+      vector-effect: non-scaling-stroke;
+    }
+    .adm-path:hover { fill: #98c6d2; }
+    .map-label {
+      font-size: 15px;
+      font-weight: 700;
+      text-anchor: middle;
+      fill: #253746;
+      paint-order: stroke;
+      stroke: #ffffff;
+      stroke-width: 3.8px;
+      stroke-linejoin: round;
+      pointer-events: none;
+    }
+    .neighbor-label {
+      font-size: 17px;
+      font-weight: 700;
+      text-anchor: middle;
+      fill: #6a7782;
+      letter-spacing: 0;
+    }
+    .capital-marker circle {
+      fill: #a12222;
+      stroke: #ffffff;
+      stroke-width: 2.2;
+    }
+    .capital-marker text {
+      font-size: 16px;
+      font-weight: 700;
+      fill: #17212b;
+      paint-order: stroke;
+      stroke: #ffffff;
+      stroke-width: 3.6px;
+    }
+    .map-table-wrap {
+      max-height: 660px;
+      overflow: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+    .compact-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12px;
+      line-height: 1.35;
+    }
+    .compact-table th, .compact-table td {
+      padding: 7px 8px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+    .compact-table th {
+      position: sticky;
+      top: 0;
+      background: #eef5f8;
+    }
+    .map-missing {
+      border: 1px dashed #aab7c2;
+      border-radius: 8px;
+      padding: 16px;
+      color: var(--muted);
+      background: #fbfcfd;
+    }
+    figcaption {
+      font-weight: 700;
+      margin-bottom: 8px;
+      text-align: center;
+    }
+    .chart-frame { height: 420px; width: 100%; }
+    .hdi-scatter-frame { width: 100%; overflow-x: auto; }
+    .hdi-scatter-svg {
+      display: block;
+      width: 100%;
+      min-width: 720px;
+      height: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+    canvas { display: block; width: 100%; height: 100%; }
+    .panel-figure { margin-top: -14px; }
+    .panel-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 14px;
+    }
+    .panel-chart {
+      min-height: 210px;
+      height: 230px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 10px;
+      background: #fbfcfd;
+    }
+    .source { color: var(--muted); font-size: 12px; }
+    .chart-empty { border: 1px dashed #aab7c2; border-radius: 8px; padding: 16px; background: #fbfcfd; }
+    .chart-empty strong, .chart-empty span, .chart-empty small { display: block; }
+    .editable-prose {
+      position: relative;
+      margin: 0 0 20px;
+    }
+    .prose-toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin: 0 0 12px;
+      padding: 8px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .prose-toolbar span {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .prose-toolbar div { display: flex; gap: 6px; flex-wrap: wrap; justify-content: flex-end; }
+    .prose-toolbar button {
+      border: 1px solid #b9c6d0;
+      background: #fff;
+      color: var(--ink);
+      border-radius: 6px;
+      padding: 6px 9px;
+      font-size: 12px;
+      cursor: pointer;
+    }
+    .prose-toolbar button:hover { border-color: var(--accent); color: var(--accent); }
+    .prose-body {
+      font-size: 17px;
+      line-height: 1.78;
+    }
+    .prose-body h1, .prose-body h2, .prose-body h3 {
+      margin: 24px 0 10px;
+      line-height: 1.25;
+      scroll-margin-top: 24px;
+    }
+    .prose-body p { margin: 0 0 16px; }
+    .prose-body ul, .prose-body ol { padding-left: 24px; margin: 0 0 16px; }
+    .prose-body blockquote { margin: 18px 0; padding-left: 14px; border-left: 3px solid var(--line); color: var(--muted); }
+    .prose-body table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0 22px;
+      font-size: 15px;
+      line-height: 1.55;
+      background: #fff;
+      border: 1px solid #b8c7d2;
+    }
+    .prose-body th,
+    .prose-body td {
+      border: 1px solid #b8c7d2;
+      padding: 9px 11px;
+      text-align: left;
+      vertical-align: top;
+    }
+    .prose-body th {
+      background: #eef5f8;
+      font-weight: 800;
+    }
+    .prose-body tr:nth-child(even) td {
+      background: #fbfcfd;
+    }
+    .equation-block {
+      margin: 18px 0 22px;
+      padding: 16px 18px;
+      border: 1px solid #b8c7d2;
+      border-left: 4px solid var(--accent);
+      border-radius: 8px;
+      background: #fbfcfd;
+      overflow-x: auto;
+    }
+    .equation-label {
+      margin-bottom: 8px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+    .equation-line {
+      min-width: 680px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 21px;
+      line-height: 1.8;
+      white-space: normal;
+    }
+    .equation-line sub {
+      font-size: 65%;
+    }
+    .markdown-editor {
+      display: block;
+      width: 100%;
+      min-height: 520px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 12px 14px;
+      resize: vertical;
+      font: 13px/1.55 Consolas, "Courier New", monospace;
+      color: var(--ink);
+      background: #fbfcfd;
+    }
+    .cover-body {
+      min-height: 100vh;
+      background:
+        linear-gradient(90deg, rgba(20, 108, 148, 0.08) 1px, transparent 1px),
+        linear-gradient(0deg, rgba(111, 122, 133, 0.08) 1px, transparent 1px),
+        #eef3f5;
+      background-size: 42px 42px;
+    }
+    .cover-page {
+      max-width: none;
+      min-height: 100vh;
+      padding: 42px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .book-cover {
+      width: min(980px, 100%);
+      min-height: min(780px, calc(100vh - 84px));
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 260px;
+      grid-template-rows: auto auto 1fr auto auto;
+      gap: 20px 34px;
+      border: 1px solid #c8d3dc;
+      background: linear-gradient(90deg, #ffffff 0%, #ffffff 66%, #f3f7f8 66%, #f3f7f8 100%);
+      box-shadow: 0 18px 50px rgba(23, 33, 43, 0.14);
+      padding: clamp(30px, 5vw, 64px);
+      position: relative;
+      overflow: hidden;
+    }
+    .book-cover::before {
+      content: "";
+      position: absolute;
+      inset: 24px auto 24px 24px;
+      width: 8px;
+      background: #b43a32;
+    }
+    .book-cover::after {
+      content: "UZB";
+      position: absolute;
+      right: 34px;
+      bottom: 16px;
+      color: rgba(20, 108, 148, 0.1);
+      font-size: clamp(82px, 18vw, 176px);
+      line-height: 1;
+      font-weight: 800;
+      letter-spacing: 0;
+      pointer-events: none;
+    }
+    .cover-kicker {
+      grid-column: 1 / 3;
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+    .cover-rule {
+      grid-column: 1 / 3;
+      height: 1px;
+      background: #c8d3dc;
+    }
+    .book-cover h1 {
+      grid-column: 1 / 2;
+      margin: 10px 0 0;
+      font-size: clamp(48px, 8vw, 92px);
+      line-height: 0.96;
+      letter-spacing: 0;
+      font-weight: 800;
+    }
+    .cover-subtitle {
+      grid-column: 1 / 2;
+      margin: 0;
+      max-width: 650px;
+      color: #344451;
+      font-size: clamp(18px, 2.4vw, 25px);
+      line-height: 1.32;
+      font-weight: 700;
+    }
+    .cover-purpose {
+      grid-column: 1 / 2;
+      max-width: 680px;
+      margin: 0;
+      color: #344451;
+      font-size: 16px;
+      line-height: 1.74;
+    }
+    .cover-editor {
+      grid-column: 2 / 3;
+      grid-row: 3 / 5;
+      align-self: start;
+      border-top: 4px solid var(--accent);
+      padding-top: 18px;
+      z-index: 1;
+    }
+    .cover-editor span {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+    .cover-editor strong {
+      display: block;
+      margin-top: 8px;
+      font-size: 24px;
+      line-height: 1.1;
+    }
+    .cover-editor em {
+      display: block;
+      margin-top: 6px;
+      color: #344451;
+      font-style: normal;
+      font-size: 14px;
+    }
+    .cover-actions {
+      grid-column: 1 / 2;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-self: end;
+      z-index: 1;
+    }
+    .primary-link, .secondary-link {
+      display: inline-flex;
+      align-items: center;
+      min-height: 42px;
+      padding: 9px 14px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 14px;
+    }
+    .primary-link { background: var(--accent); color: #fff; border: 1px solid var(--accent); }
+    .secondary-link { background: #fff; color: var(--ink); border: 1px solid #b9c6d0; }
+    .cover-method {
+      grid-column: 1 / 3;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      z-index: 1;
+    }
+    .cover-method div {
+      border-top: 1px solid #c8d3dc;
+      padding-top: 12px;
+    }
+    .cover-method b {
+      display: block;
+      font-size: 13px;
+      text-transform: uppercase;
+      color: var(--ink);
+    }
+    .cover-method span {
+      display: block;
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+    [hidden] { display: none !important; }
+    code, pre { background: #eef3f6; border-radius: 5px; }
+    code { padding: 1px 4px; }
+    pre { padding: 12px; overflow: auto; }
+    @media (max-width: 980px) {
+      .layout { grid-template-columns: 1fr; }
+      aside { position: relative; height: auto; }
+      main { padding: 24px 18px; }
+      .chart-frame { height: 320px; }
+      .symbol-gallery { grid-template-columns: 1fr; }
+      .symbol-card-wide { grid-column: auto; }
+      .map-card { width: 100%; }
+      .map-grid { grid-template-columns: 1fr; }
+      .cover-page { padding: 18px; align-items: stretch; }
+      .book-cover {
+        min-height: auto;
+        grid-template-columns: 1fr;
+        background: #fff;
+      }
+      .cover-kicker, .cover-rule, .book-cover h1, .cover-subtitle,
+      .cover-purpose, .cover-editor, .cover-actions, .cover-method {
+        grid-column: 1 / 2;
+        grid-row: auto;
+      }
+      .cover-method { grid-template-columns: 1fr; }
+    }
+    </style>
+</head>
+<body>
+  <div class="layout">
+    <aside>
+      <h1><a href="../index.html">Uzbekistan</a></h1>
+      <p>Official-source country report with reproducible indicators and editable Markdown notes.</p>
+      <nav><details class="toc-group active" open><summary><a class="chapter-link active" href="../01-overview.html">1. Country Overview</a></summary><div class="section-nav"><a class="section-link" href="../sections/01-01-official-name-capital-location-area-population-language-religion-and-currency.html">1.1 Official Name, Capital, Location, Area, Population, Language, Religion, and Currency</a><a class="section-link" href="../sections/01-02-state-symbols.html">1.2 State Symbols</a><a class="section-link" href="../sections/01-03-country-profile-and-strategic-setting.html">1.3 Country Profile and Strategic Setting</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../02-history.html">2. Historical Background</a></summary><div class="section-nav"><a class="section-link" href="../sections/02-01-ancient-and-medieval-political-communities-and-civilizational-zones.html">2.1 Ancient and Medieval Political Communities and Civilizational Zones</a><a class="section-link" href="../sections/02-02-empire-colonial-rule-and-pre-independence-state-formation.html">2.2 Empire, Colonial Rule, and Pre-Independence State Formation</a><a class="section-link" href="../sections/02-03-independence-transition-and-constitutional-turning-points.html">2.3 Independence, Transition, and Constitutional Turning Points</a><a class="section-link" href="../sections/02-04-historical-legacies-in-present-institutions.html">2.4 Historical Legacies in Present Institutions</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../03-constitution.html">3. Constitution and Basic State Order</a></summary><div class="section-nav"><a class="section-link" href="../sections/03-01-enactment-and-amendment-history.html">3.1 Enactment and Amendment History</a><a class="section-link" href="../sections/03-02-state-identity-sovereignty-territory-and-people.html">3.2 State Identity, Sovereignty, Territory, and People</a><a class="section-link" href="../sections/03-03-fundamental-rights-system.html">3.3 Fundamental Rights System</a><a class="section-link" href="../sections/03-04-separation-of-powers-constitutional-review-judicial-review-and-emergency-powers.html">3.4 Separation of Powers, Constitutional Review, Judicial Review, and Emergency Powers</a><a class="section-link" href="../sections/03-05-constitutional-implications-for-state-authority.html">3.5 Constitutional Implications for State Authority</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../04-politics.html">4. Political System and Power Structure</a></summary><div class="section-nav"><a class="section-link" href="../sections/04-01-form-of-government.html">4.1 Form of Government</a><a class="section-link" href="../sections/04-02-head-of-state-and-head-of-government.html">4.2 Head of State and Head of Government</a><a class="section-link" href="../sections/04-03-parliament-legislative-process-parties-and-elections.html">4.3 Parliament, Legislative Process, Parties, and Elections</a><a class="section-link" href="../sections/04-04-local-politics-and-real-power-relations.html">4.4 Local Politics and Real Power Relations</a><a class="section-link" href="../sections/04-05-political-dynamics-and-institutional-accountability.html">4.5 Political Dynamics and Institutional Accountability</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../05-administration.html">5. Administrative System and Government Organization</a></summary><div class="section-nav"><a class="section-link" href="../sections/05-01-central-executive-administration-strategic-planning-and-policy-coordination.html">5.1 Central Executive Administration, Strategic Planning, and Policy Coordination</a><a class="section-link" href="../sections/05-02-organizational-management-and-administrative-reform.html">5.2 Organizational Management and Administrative Reform</a><a class="section-link" href="../sections/05-03-human-resource-management-and-civil-service.html">5.3 Human Resource Management and Civil Service</a><a class="section-link" href="../sections/05-04-financial-administration-budget-execution-procurement-and-audit.html">5.4 Financial Administration, Budget Execution, Procurement, and Audit</a><a class="section-link" href="../sections/05-05-local-administration-mahalla-and-service-delivery.html">5.5 Local Administration, Mahalla, and Service Delivery</a><a class="section-link" href="../sections/05-06-administrative-governance-accountability-and-digital-government.html">5.6 Administrative Governance, Accountability, and Digital Government</a><a class="section-link" href="../sections/05-07-implementation-capacity-and-administrative-performance.html">5.7 Implementation Capacity and Administrative Performance</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../06-governance.html">6. Governance and Institutional Capacity</a></summary><div class="section-nav"><a class="section-link" href="../sections/06-01-government-effectiveness-and-regulatory-quality.html">6.1 Government Effectiveness and Regulatory Quality</a><a class="section-link" href="../sections/06-02-rule-of-law-and-control-of-corruption.html">6.2 Rule of Law and Control of Corruption</a><a class="section-link" href="../sections/06-03-political-stability-citizen-participation-and-accountability.html">6.3 Political Stability, Citizen Participation, and Accountability</a><a class="section-link" href="../sections/06-04-institutional-performance-and-reform-credibility.html">6.4 Institutional Performance and Reform Credibility</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../07-fiscal.html">7. Fiscal System and Public Sector</a></summary><div class="section-nav"><a class="section-link" href="../sections/07-01-government-revenue-tax-revenue-and-expenditure-structure.html">7.1 Government Revenue, Tax Revenue, and Expenditure Structure</a><a class="section-link" href="../sections/07-02-fiscal-balance-debt-and-interest-burden.html">7.2 Fiscal Balance, Debt, and Interest Burden</a><a class="section-link" href="../sections/07-03-state-owned-enterprises-and-quasi-public-sector.html">7.3 State-Owned Enterprises and Quasi-Public Sector</a><a class="section-link" href="../sections/07-04-defense-and-public-security-spending.html">7.4 Defense and Public Security Spending</a><a class="section-link" href="../sections/07-05-fiscal-capacity-and-public-sector-risks.html">7.5 Fiscal Capacity and Public Sector Risks</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../08-society.html">8. Population and Social Structure</a></summary><div class="section-nav"><a class="section-link" href="../sections/08-01-population-size-growth-age-structure-and-dependency.html">8.1 Population Size, Growth, Age Structure, and Dependency</a><a class="section-link" href="../sections/08-02-urbanization-and-regional-distribution.html">8.2 Urbanization and Regional Distribution</a><a class="section-link" href="../sections/08-03-ethnicity-language-religion-migration-remittances-and-diaspora.html">8.3 Ethnicity, Language, Religion, Migration, Remittances, and Diaspora</a><a class="section-link" href="../sections/08-04-social-integration-and-conflict-factors.html">8.4 Social Integration and Conflict Factors</a><a class="section-link" href="../sections/08-05-demographic-pressures-and-social-cohesion.html">8.5 Demographic Pressures and Social Cohesion</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../09-macro.html">9. Macroeconomic Structure</a></summary><div class="section-nav"><a class="section-link" href="../sections/09-01-gdp-scale-growth-and-gdp-per-capita.html">9.1 GDP Scale, Growth, and GDP per Capita</a><a class="section-link" href="../sections/09-02-prices-exchange-rate-and-macroeconomic-stability.html">9.2 Prices, Exchange Rate, and Macroeconomic Stability</a><a class="section-link" href="../sections/09-03-sectoral-structure-resource-dependence-growth-model-and-vulnerabilities.html">9.3 Sectoral Structure, Resource Dependence, Growth Model, and Vulnerabilities</a><a class="section-link" href="../sections/09-04-growth-sustainability-and-structural-constraints.html">9.4 Growth Sustainability and Structural Constraints</a><a class="section-link" href="../sections/09-05-growth-driver-models-and-interpretation.html">9.5 Growth Driver Models and Interpretation</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../10-trade.html">10. Trade, Investment, and External Economy</a></summary><div class="section-nav"><a class="section-link" href="../sections/10-01-exports-imports-trading-partners-and-current-account.html">10.1 Exports, Imports, Trading Partners, and Current Account</a><a class="section-link" href="../sections/10-02-tourism-high-technology-exports-and-services.html">10.2 Tourism, High-Technology Exports, and Services</a><a class="section-link" href="../sections/10-03-fdi-absolute-amount-and-share-of-gdp.html">10.3 FDI: Absolute Amount and Share of GDP</a><a class="section-link" href="../sections/10-04-investment-regime-foreign-exchange-economic-zones-and-industrial-policy.html">10.4 Investment Regime, Foreign Exchange, Economic Zones, and Industrial Policy</a><a class="section-link" href="../sections/10-05-external-integration-and-competitiveness.html">10.5 External Integration and Competitiveness</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../11-infrastructure.html">11. Infrastructure, Energy, and Digital Connectivity</a></summary><div class="section-nav"><a class="section-link" href="../sections/11-01-electricity-access-and-energy-dependence.html">11.1 Electricity Access and Energy Dependence</a><a class="section-link" href="../sections/11-02-transport-logistics-air-rail-road-and-ports.html">11.2 Transport, Logistics, Air, Rail, Road, and Ports</a><a class="section-link" href="../sections/11-03-internet-mobile-connectivity-secure-servers-and-logistics-performance.html">11.3 Internet, Mobile Connectivity, Secure Servers, and Logistics Performance</a><a class="section-link" href="../sections/11-04-connectivity-service-delivery-and-bottlenecks.html">11.4 Connectivity, Service Delivery, and Bottlenecks</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../12-labor.html">12. Labor Market and Human Capital</a></summary><div class="section-nav"><a class="section-link" href="../sections/12-01-labor-force-size-and-participation.html">12.1 Labor Force Size and Participation</a><a class="section-link" href="../sections/12-02-female-participation-unemployment-youth-unemployment-and-vulnerable-employment.html">12.2 Female Participation, Unemployment, Youth Unemployment, and Vulnerable Employment</a><a class="section-link" href="../sections/12-03-agricultural-employment-education-literacy-productivity-hdi-and-r-d.html">12.3 Agricultural Employment, Education, Literacy, Productivity, HDI, and R&amp;D</a><a class="section-link" href="../sections/12-04-employment-absorption-and-human-capital-use.html">12.4 Employment Absorption and Human Capital Use</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../13-education-health.html">13. Education, Health, and Welfare</a></summary><div class="section-nav"><a class="section-link" href="../sections/13-01-education-system-and-public-expenditure.html">13.1 Education System and Public Expenditure</a><a class="section-link" href="../sections/13-02-life-expectancy-infant-mortality-hospital-beds-doctors-and-health-expenditure.html">13.2 Life Expectancy, Infant Mortality, Hospital Beds, Doctors, and Health Expenditure</a><a class="section-link" href="../sections/13-03-sanitation-public-health-risks-and-welfare.html">13.3 Sanitation, Public Health Risks, and Welfare</a><a class="section-link" href="../sections/13-04-human-development-outcomes-and-welfare-capacity.html">13.4 Human Development Outcomes and Welfare Capacity</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../14-finance.html">14. Financial Sector and Economic Institutions</a></summary><div class="section-nav"><a class="section-link" href="../sections/14-01-domestic-credit-private-credit-stock-market-and-fintech.html">14.1 Domestic Credit, Private Credit, Stock Market, and Fintech</a><a class="section-link" href="../sections/14-02-central-bank-monetary-policy-and-supervision.html">14.2 Central Bank, Monetary Policy, and Supervision</a><a class="section-link" href="../sections/14-03-foreign-investment-protection-and-capital-market-openness.html">14.3 Foreign Investment Protection and Capital-Market Openness</a><a class="section-link" href="../sections/14-04-financial-deepening-and-market-institutions.html">14.4 Financial Deepening and Market Institutions</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../15-security.html">15. Foreign Relations, Security, and Geopolitics</a></summary><div class="section-nav"><a class="section-link" href="../sections/15-01-foreign-policy-orientation-and-international-organizations.html">15.1 Foreign Policy Orientation and International Organizations</a><a class="section-link" href="../sections/15-02-borders-security-organizations-military-capacity-and-transnational-issues.html">15.2 Borders, Security Organizations, Military Capacity, and Transnational Issues</a><a class="section-link" href="../sections/15-03-strategic-resources-and-corridors.html">15.3 Strategic Resources and Corridors</a><a class="section-link" href="../sections/15-04-strategic-environment-and-transnational-risks.html">15.4 Strategic Environment and Transnational Risks</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../16-policy.html">16. Major Policies and National Development Strategy</a></summary><div class="section-nav"><a class="section-link" href="../sections/16-01-evolution-of-national-development-strategy.html">16.1 Evolution of National Development Strategy</a><a class="section-link" href="../sections/16-02-national-development-plan-and-industrial-policy.html">16.2 National Development Plan and Industrial Policy</a><a class="section-link" href="../sections/16-03-digital-transformation-energy-transition-climate-policy-and-administrative-reform.html">16.3 Digital Transformation, Energy Transition, Climate Policy, and Administrative Reform</a><a class="section-link" href="../sections/16-04-welfare-education-health-and-recent-five-year-policy-changes.html">16.4 Welfare, Education, Health, and Recent Five-Year Policy Changes</a><a class="section-link" href="../sections/16-05-policy-implementation-and-reform-sequencing.html">16.5 Policy Implementation and Reform Sequencing</a><a class="section-link" href="../sections/16-06-environmental-sustainability-sdgs-and-green-transition.html">16.6 Environmental Sustainability, SDGs, and Green Transition</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../17-assessment.html">17. Integrated Assessment</a></summary><div class="section-nav"><a class="section-link" href="../sections/17-01-national-operating-model.html">17.1 National Operating Model</a><a class="section-link" href="../sections/17-02-political-stability-institutional-risk-growth-drivers-and-bottlenecks.html">17.2 Political Stability, Institutional Risk, Growth Drivers, and Bottlenecks</a><a class="section-link" href="../sections/17-03-administrative-capacity-and-international-cooperation-implications.html">17.3 Administrative Capacity and International Cooperation Implications</a><a class="section-link" href="../sections/17-04-uzbekistan-and-comparative-administration-theory.html">17.4 Uzbekistan and Comparative Administration Theory</a><a class="section-link" href="../sections/17-05-evidence-limits-and-source-triangulation.html">17.5 Evidence Limits and Source Triangulation</a><a class="section-link" href="../sections/17-06-strategic-diagnosis-and-outlook.html">17.6 Strategic Diagnosis and Outlook</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../18-appendix.html">18. Appendix, Sources, and Method</a></summary><div class="section-nav"><a class="section-link" href="../sections/18-01-annual-data-revision-protocol.html">18.1 Annual Data Revision Protocol</a><a class="section-link" href="../sections/18-02-editorial-workflow-and-manuscript-preservation.html">18.2 Editorial Workflow and Manuscript Preservation</a><a class="section-link" href="../sections/18-03-data-integrity.html">18.3 Data Integrity</a><a class="section-link" href="../sections/18-04-evidence-archive-and-review-trail.html">18.4 Evidence Archive and Review Trail</a><a class="section-link" href="../sections/18-05-data-limits-and-source-triangulation.html">18.5 Data Limits and Source Triangulation</a><a class="section-link" href="../sections/18-06-external-review-checklist.html">18.6 External Review Checklist</a><a class="section-link" href="../sections/18-07-comparative-administration-benchmark.html">18.7 Comparative Administration Benchmark</a><a class="section-link" href="../sections/18-08-timeline.html">18.8 Timeline</a><a class="section-link" href="../sections/18-09-government-organization-chart.html">18.9 Government Organization Chart</a><a class="section-link" href="../sections/18-10-constitution-and-major-laws.html">18.10 Constitution and Major Laws</a><a class="section-link" href="../sections/18-11-key-indicator-table-source-list-and-data-codebook.html">18.11 Key Indicator Table, Source List, and Data Codebook</a><a class="section-link" href="../sections/18-12-methodological-notes-and-update-standards.html">18.12 Methodological Notes and Update Standards</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../19-references.html">19. References</a></summary><div class="section-nav"><a class="section-link" href="../sections/19-01-references.html">19.1 References</a><a class="section-link" href="../sections/19-02-source-integrity-and-citation-notes.html">19.2 Source Integrity and Citation Notes</a></div></details></nav>
+    </aside>
+    <main>
+      <header class="hero">
+        <h2>1.1 Official Name, Capital, Location, Area, Population, Language, Religion, and Currency</h2>
+      </header>
+      <section class="chapter">
+    <article class="editable-prose" data-md-panel="overview-official-name-capital-location-area-population-language-religion-and-currency-text" data-md-source="sections/01-01-official-name-capital-location-area-population-language-religion-and-currency.md">
+      <div class="prose-toolbar">
+        <span>Editable chapter text</span>
+        <div>
+          <button type="button" data-md-action="edit">Edit Markdown</button>
+          <button type="button" data-md-action="save" hidden>Save</button>
+          <button type="button" data-md-action="cancel" hidden>Cancel</button>
+        </div>
+      </div>
+      <div class="markdown-preview prose-body"></div>
+      <textarea class="markdown-editor" hidden>&lt;span id=&quot;1-1-official-name-capital-location-area-population-language-religion-and-currency&quot; class=&quot;anchor-target&quot;&gt;&lt;/span&gt;
+## 1.1 Official Name, Capital, Location, Area, Population, Language, Religion, and Currency
+
+Uzbekistan is the country through which many of Central Asia&#x27;s largest questions pass. It is the region&#x27;s most populous state, the only country bordering all four other Central Asian republics, a double-landlocked economy whose external trade depends on corridors through other landlocked states, and a historical center of the Silk Road urban world. A reader cannot understand Central Asian politics, water and energy bargaining, labor migration, regional transport, Islamic and Turkic-Persianate heritage, or post-Soviet state reform without understanding Uzbekistan&#x27;s position.
+
+The country&#x27;s importance also comes from the way different layers meet in one territory. **Tashkent** is a political and administrative capital connected to Soviet-era industrial and transport networks. **Samarkand, Bukhara, and Khiva** carry the memory of Silk Road commerce, Islamic scholarship, Timurid statecraft, and urban cultural heritage. The **Fergana Valley** links dense population, agriculture, cross-border mobility, and local security concerns. **Karakalpakstan** connects the national story to the Aral Sea disaster, water scarcity, environmental justice, and regional autonomy. Uzbekistan is therefore not simply a country located in Central Asia; it is one of the places where Central Asia&#x27;s historical depth, demographic pressure, ecological risk, and development ambitions are most concentrated.
+
+Internationally, Uzbekistan&#x27;s location makes it a hinge state. Russia remains important through migration, energy, security history, language networks, and post-Soviet economic ties. China is important through trade, infrastructure, finance, industrial cooperation, and westward connectivity. Turkiye brings Turkic identity, business networks, construction, textiles, education, and cultural diplomacy. Korea is relevant through industrial cooperation, development experience, technology, education, labor mobility, and the Korean diaspora legacy in Central Asia. Gulf states have become increasingly visible in energy, renewable power, infrastructure finance, Islamic finance, and investment diplomacy. These relationships are not separate from the country profile. They are direct consequences of geography, demography, historical identity, and the state&#x27;s post-2016 reform strategy.
+
+The official name of the country is the **Republic of Uzbekistan**, and its capital is **Tashkent**, the country&#x27;s largest city and principal political, administrative, economic, and transport hub. The Constitution identifies Uzbek as the state language and Tashkent as the capital city, linking national identity, public administration, and territorial governance within the formal constitutional order. Uzbekistan covers approximately **448.9 thousand square kilometers**, making it one of the larger states in Central Asia by land area. Its population has been growing steadily; according to the National Statistics Committee, the permanent population reached approximately **38.2 million as of January 1, 2026**, confirming Uzbekistan&#x27;s position as the most populous country in Central Asia. The national currency is the **Uzbekistani som**.
+
+| Basic Feature | Analytical Significance |
+|---|---|
+| Double-landlocked location | Makes transit diplomacy, railway corridors, customs administration, and regional cooperation central to economic strategy. |
+| Largest population in Central Asia | Creates a large domestic market, a young labor force, and intense demand for jobs, education, housing, health care, and local services. |
+| Silk Road cities | Gives the modern state deep civilizational legitimacy and strong tourism, heritage, and cultural diplomacy assets. |
+| Tashkent as capital | Concentrates executive power, finance, transport, universities, diplomacy, and national administrative capacity. |
+| Multilingual and multi-script environment | Makes language policy relevant to education, digital government, archives, AI, and inclusive service delivery. |
+| Secular constitutional order with Muslim cultural heritage | Requires analysis of religion as cultural identity and social life within a formally secular administrative system. |
+| Uzbekistani som | Links the country profile to inflation, convertibility, investment confidence, and household purchasing power. |
+
+&lt;span id=&quot;language-script-transition-and-digital-ai-challenges&quot; class=&quot;anchor-target&quot;&gt;&lt;/span&gt;
+### Language, Script Transition, and Digital-AI Challenges
+
+The state language, **Uzbek**, is a Turkic language that plays a central role in nation-building, public administration, education, and cultural identity. Uzbekistan is nevertheless a multilingual society. Russian continues to function in some domains of interethnic communication, higher education, business, and regional networks, while Karakalpak is especially important in the Republic of Karakalpakstan. The constitutional language provision also requires respect for the languages, customs, and traditions of all nationalities and ethnic groups living on the territory of Uzbekistan.
+
+The linguistic situation is more complex than a simple statement of the official language suggests. One distinctive feature of Uzbek language policy is the coexistence and transition between writing systems. Uzbek was historically written in Arabic-based scripts, then in Latin script in the early Soviet period, then in Cyrillic script during the Soviet era. After independence, the state adopted a policy of returning to a Latin-based alphabet. Although the Latin-based Uzbek alphabet has official status, Cyrillic remains widely used among older generations, in legacy publications, archives, informal communication, and parts of the media and digital environment. Uzbek-speaking communities outside Uzbekistan, especially in Afghanistan, have also maintained Arabic-script traditions. Uzbek is therefore not only a low-resource language in the technological sense; it is also a **multi-script language**.
+
+This script multiplicity has practical consequences for public administration and knowledge management. Government documents, educational materials, legal texts, newspapers, websites, and historical archives may exist in different scripts. Even where the content is linguistically Uzbek, the same word may appear in different written forms depending on whether it is rendered in Latin or Cyrillic. This complicates document retrieval, archival integration, public communication, and administrative standardization. A citizen, researcher, or official searching in Latin script may fail to retrieve relevant Cyrillic materials unless search systems include reliable transliteration and normalization functions. The script issue is therefore not only cultural or symbolic; it directly affects the efficiency of state information systems, legal accessibility, educational consistency, and digital public services.
+
+The problem becomes more significant in the context of artificial intelligence. Modern AI systems, especially natural language processing models and large language models, require large, clean, standardized, and well-annotated corpora. Uzbek is generally classified as a **low-resource language** in NLP research, meaning that it has fewer publicly available datasets, linguistic tools, annotated corpora, and pretrained models than high-resource languages. The coexistence of Cyrillic and Latin scripts fragments available data: public data may exist in Cyrillic or Latin, but rarely in both in a systematically aligned form. This reduces the effective size of training data, weakens search and classification performance, and increases preprocessing costs because developers must build transliteration tools, script converters, normalization pipelines, and error-correction systems before higher-level AI applications can be trained reliably.
+
+The script issue also affects speech and multimodal AI. Text-to-speech, speech recognition, machine translation, educational AI tools, automated call centers, public-service chatbots, and voice assistants require consistent mapping between written symbols, pronunciation, morphology, and meaning. If spelling systems are unstable or underrepresented in digital resources, speech-based AI services may perform unevenly across user groups. From a policy perspective, Uzbekistan&#x27;s language question is therefore part of the broader agenda of digital state capacity. A successful AI ecosystem requires standardized linguistic resources: machine-readable legal and administrative texts, large-scale balanced corpora, Latin-Cyrillic parallel datasets, open dictionaries, morphological analyzers, spell-checkers, speech datasets, and benchmark tasks for Uzbek language models.
+
+&lt;span id=&quot;geography&quot; class=&quot;anchor-target&quot;&gt;&lt;/span&gt;
+### Geography
+
+{{map:uzbekistan-administrative-divisions}}
+
+Uzbekistan is not merely a Central Asian country in a conventional geographic sense. It is one of the world&#x27;s few **double-landlocked states**, meaning that it is landlocked and surrounded by other landlocked countries. The World Bank notes that Uzbekistan is one of only two doubly landlocked countries in the world and the only state bordering all four other Central Asian republics, Kazakhstan, Kyrgyzstan, Tajikistan, and Turkmenistan, as well as Afghanistan. This geographic condition has profound policy consequences. Because Uzbekistan has no direct access to the sea, external trade depends heavily on cross-border transport corridors, railway interoperability, customs facilitation, transit agreements, and diplomatic relations with neighboring states. Geography therefore shapes not only foreign policy but also domestic economic planning, logistics infrastructure, border administration, and regional integration strategies.
+
+The administrative map is a political-economic map, not only a territorial reference. Uzbekistan&#x27;s first-order divisions show how national development is distributed across very different regional systems: the capital region, the Fergana Valley, the historic oasis cities, the lower Amu Darya and Aral Sea zone, resource and desert territories, and southern border regions. These divisions matter because reform implementation, infrastructure needs, public service delivery, employment pressure, and ecological vulnerability vary sharply across space.
+
+| Administrative Area | Political-Economic Meaning |
+|---|---|
+| Tashkent City and Tashkent Region | National executive center, diplomatic hub, financial and industrial concentration, and the main gateway for air, rail, and administrative coordination. |
+| Samarkand, Bukhara, and Khiva/Xorazm | Historic urban civilization, cultural heritage, tourism potential, crafts, education, and regional identity formation. |
+| Andijan, Fergana, and Namangan | Dense population, labor-market pressure, agriculture, small industry, cross-border mobility, and social-service demand in the Fergana Valley. |
+| Karakalpakstan and Xorazm | Lower Amu Darya, Aral Sea legacy, environmental stress, water scarcity, health concerns, and the politics of regional inclusion. |
+| Navoi, Bukhara, and Jizzakh/Sirdaryo | Mining, energy, desert infrastructure, industrial zones, logistics, and state-led regional development projects. |
+| Kashkadarya and Surkhandarya | Energy, agriculture, southern connectivity, Afghanistan-related strategic relevance, and rural development challenges. |
+
+The country&#x27;s location places it at the center of multiple regional systems. To the north and northwest, Uzbekistan is connected to Kazakhstan and onward Eurasian transport routes. To the east, it is linked to Kyrgyzstan and Tajikistan, including the densely populated Fergana Valley, where borders, water use, agriculture, and local mobility are closely intertwined. To the south, its border with Afghanistan gives Uzbekistan strategic significance in relation to South Asian connectivity, security policy, energy transmission, and humanitarian concerns. To the southwest, Turkmenistan provides links toward the Caspian region and alternative westward corridors. Uzbekistan&#x27;s development model therefore cannot be understood without reference to regional transport, water management, energy exchange, and customs cooperation.
+
+Internally, Uzbekistan&#x27;s spatial structure is highly differentiated. The western territories, particularly **Karakalpakstan** and **Xorazm**, are located near the lower Amu Darya and the Aral Sea region. These areas face distinctive ecological and developmental challenges, including water scarcity, salinization, public health concerns, and the long-term consequences of the Aral Sea crisis. By contrast, the eastern part of the country, especially **Tashkent, Fergana, Andijan, and Namangan**, is more densely populated and more closely connected to industrial, agricultural, and cross-border economic networks. This east-west contrast is central to understanding why infrastructure, social services, local administration, and regional development cannot be analyzed only through national averages.
+
+Uzbekistan&#x27;s population structure further reinforces the importance of territorial governance. With more than 37 million people and continuing demographic growth, the country faces simultaneous pressures in education, employment, housing, urban services, health care, and regional labor markets. The 2025 official data also show a relatively balanced urban-rural distribution, with approximately 19.2 million urban residents and 18.5 million rural residents as of April 2025. This means that Uzbekistan&#x27;s development challenge is not simply one of urban modernization. It also involves rural livelihoods, irrigation-based agriculture, secondary cities, local public service delivery, and balanced regional development.
+
+Religion is another important component of Uzbekistan&#x27;s social landscape. Islam, particularly Sunni Islam, is the predominant religion, while the country is constitutionally secular. Religious identity is socially significant, but the state formally maintains separation between religious institutions and public authority. This distinction is important for understanding Uzbekistan&#x27;s governance model: religion contributes to cultural heritage, social norms, and community life, yet the institutional framework is organized around secular public administration. As in many post-Soviet societies, religious revival, national identity, and state regulation coexist within a carefully managed public sphere.
+
+In sum, Uzbekistan&#x27;s basic national profile, official name, capital, location, area, population, language, religion, and currency, is not a simple introductory list. These characteristics form the structural background for the country&#x27;s policy agenda. Its double-landlocked geography makes transport diplomacy and customs cooperation indispensable. Its large and growing population creates strong demand for employment, education, and public services. Its internal territorial diversity requires differentiated regional policy rather than uniform national planning. Its linguistic and religious composition reflects both nation-building and plural social governance. Uzbekistan&#x27;s geography and demography are therefore not merely descriptive facts; they are foundational conditions shaping the country&#x27;s administrative capacity, economic strategy, and regional development trajectory.
+
+Sources: Constitution of the Republic of Uzbekistan; National Statistics Committee of the Republic of Uzbekistan; World Bank country profile for Uzbekistan; Encyclopaedia Britannica, Uzbekistan and Aral Sea entries.</textarea>
+    </article>
+    
+<template data-figure-template="map:uzbekistan-administrative-divisions">
+    <figure class="map-card" id="overview-administrative-map">
+      <figcaption>Uzbekistan: Location and First-Order Administrative Divisions</figcaption>
+      <div class="map-grid">
+        <svg class="adm-map" viewBox="0 0 1220 660" role="img" aria-label="Map of Uzbekistan with first-order administrative divisions">
+          <rect x="0" y="0" width="1220" height="660" fill="#f7fbfc"></rect>
+          <g>
+      <text class="neighbor-label" x="610" y="34">Kazakhstan</text>
+      <text class="neighbor-label" x="90" y="520">Turkmenistan</text>
+      <text class="neighbor-label" x="770" y="625">Afghanistan</text>
+      <text class="neighbor-label" x="1150" y="270">Kyrgyzstan</text>
+      <text class="neighbor-label" x="1120" y="480">Tajikistan</text>
+    </g>
+          <g><path class="adm-path" d="M1073.9,370.5 L1074.7,371.7 L1069.0,373.0 L1071.8,374.4 L1074.7,378.6 L1075.0,380.0 L1077.5,377.8 L1078.5,377.5 L1077.6,376.0 L1077.9,375.6 L1078.2,374.8 L1078.1,374.4 L1077.9,374.3 L1077.9,373.8 L1078.3,373.1 L1078.9,372.8 L1079.6,372.2 L1081.1,373.6 L1081.4,373.8 L1081.4,374.1 L1084.6,374.8 L1085.8,374.5 L1086.5,375.0 L1089.1,376.1 L1091.0,377.1 L1093.3,380.0 L1093.8,380.5 L1096.0,380.9 L1107.0,382.3 L1107.5,382.3 L1107.9,382.1 L1111.1,382.6 L1116.8,384.0 L1117.0,384.2 L1117.3,384.9 L1117.2,389.6 L1118.5,389.7 L1118.6,389.4 L1119.3,389.8 L1118.6,391.2 L1120.5,391.8 L1121.4,391.7 L1121.7,392.1 L1122.2,392.4 L1123.3,392.0 L1123.8,392.1 L1124.7,392.6 L1126.5,393.9 L1126.9,394.4 L1127.6,394.7 L1128.1,394.9 L1128.9,394.9 L1129.7,395.1 L1130.1,395.0 L1130.4,394.9 L1130.4,394.2 L1130.0,393.3 L1130.7,391.9 L1131.7,390.3 L1131.3,389.5 L1130.8,389.2 L1130.3,388.3 L1130.0,388.2 L1130.0,388.0 L1129.5,387.9 L1128.6,388.1 L1127.9,387.8 L1127.6,387.8 L1127.6,387.5 L1127.9,387.3 L1127.8,387.1 L1128.7,387.0 L1129.2,386.9 L1129.3,386.8 L1129.3,386.7 L1129.6,386.4 L1130.1,386.3 L1130.5,385.9 L1130.7,385.9 L1130.7,385.8 L1130.3,385.7 L1130.2,385.4 L1130.3,385.3 L1130.0,385.1 L1130.0,384.8 L1130.3,384.5 L1129.9,384.4 L1129.6,384.5 L1128.3,384.2 L1128.2,383.8 L1128.3,383.7 L1128.4,383.8 L1128.7,383.7 L1128.6,383.6 L1127.6,383.5 L1127.2,383.3 L1126.7,382.7 L1125.3,381.9 L1125.4,381.7 L1125.7,381.7 L1126.8,381.7 L1127.3,381.6 L1127.5,381.8 L1127.7,381.7 L1127.9,381.8 L1128.0,381.7 L1127.9,381.2 L1128.1,381.0 L1128.3,381.1 L1128.7,380.8 L1129.6,380.7 L1129.8,380.7 L1130.0,381.3 L1131.1,381.8 L1132.4,383.7 L1134.0,385.2 L1134.7,384.8 L1135.0,384.9 L1136.0,384.5 L1136.7,384.7 L1138.0,385.7 L1139.0,386.1 L1140.3,386.1 L1141.1,386.2 L1143.3,387.6 L1144.4,387.8 L1145.9,387.9 L1146.8,387.0 L1146.7,385.0 L1146.0,384.5 L1146.4,384.5 L1146.4,384.4 L1146.6,384.3 L1146.8,384.4 L1147.1,384.3 L1146.7,383.4 L1146.4,383.2 L1146.6,383.1 L1146.3,383.1 L1146.5,383.0 L1146.5,382.9 L1146.7,382.9 L1146.6,382.8 L1147.0,382.5 L1148.5,382.1 L1148.4,382.2 L1149.0,382.5 L1148.9,382.7 L1150.0,382.6 L1150.8,382.9 L1151.2,383.1 L1151.5,383.0 L1152.0,383.2 L1152.0,383.4 L1151.8,383.6 L1152.0,383.7 L1152.0,383.8 L1152.2,383.8 L1152.4,383.6 L1152.6,383.8 L1152.8,383.7 L1152.9,383.5 L1152.5,383.2 L1152.5,383.0 L1152.1,382.2 L1152.1,381.4 L1152.8,380.2 L1154.0,379.2 L1154.2,378.8 L1154.9,378.4 L1154.5,377.5 L1155.4,377.2 L1155.6,376.8 L1156.1,376.9 L1156.3,376.8 L1156.5,376.9 L1156.8,376.8 L1158.6,377.1 L1159.8,375.3 L1159.4,375.2 L1159.4,374.8 L1159.0,374.8 L1159.0,374.5 L1160.3,374.6 L1161.9,374.0 L1163.2,373.8 L1164.4,373.2 L1165.2,373.2 L1166.6,372.0 L1168.1,371.0 L1169.0,371.1 L1170.1,370.8 L1170.9,370.9 L1171.1,370.8 L1172.2,371.0 L1172.6,370.7 L1173.0,370.7 L1178.0,369.7 L1177.8,368.3 L1177.9,366.8 L1177.7,366.5 L1177.1,366.0 L1176.8,366.0 L1176.4,366.3 L1175.8,366.5 L1174.9,366.1 L1174.7,365.4 L1174.3,365.3 L1174.1,365.4 L1173.7,365.3 L1172.6,365.6 L1171.4,365.7 L1170.8,366.1 L1170.5,366.0 L1170.4,365.7 L1170.2,365.6 L1169.7,365.7 L1169.1,366.1 L1168.7,365.8 L1168.6,366.4 L1168.4,366.6 L1167.4,366.7 L1167.4,366.9 L1167.4,367.1 L1167.1,367.2 L1167.2,367.4 L1167.0,367.4 L1166.9,367.3 L1166.7,367.3 L1166.7,367.2 L1166.5,367.3 L1166.3,367.5 L1166.0,367.6 L1165.9,368.2 L1166.0,368.4 L1164.7,368.7 L1163.2,368.2 L1162.1,367.7 L1162.1,367.2 L1161.6,366.7 L1160.8,366.2 L1160.0,365.8 L1157.6,364.9 L1157.1,365.2 L1153.6,365.2 L1149.7,365.5 L1148.7,365.1 L1148.3,365.3 L1147.3,365.3 L1146.2,365.0 L1144.1,364.5 L1142.8,364.0 L1141.7,364.2 L1141.0,363.0 L1141.8,361.7 L1141.5,361.2 L1140.7,360.6 L1140.2,359.8 L1139.9,359.5 L1139.8,359.2 L1139.6,359.2 L1139.7,359.0 L1139.7,358.8 L1139.4,358.4 L1138.9,358.2 L1139.0,358.0 L1138.6,357.7 L1138.1,358.0 L1137.7,358.0 L1137.5,357.8 L1137.3,358.1 L1136.8,357.5 L1136.4,357.4 L1136.1,357.5 L1136.0,357.3 L1135.6,357.6 L1135.4,357.5 L1135.3,357.6 L1135.0,357.4 L1134.8,357.2 L1135.6,356.5 L1135.7,356.3 L1135.5,356.3 L1135.4,356.2 L1134.7,356.0 L1134.8,355.4 L1134.3,354.8 L1133.5,354.4 L1132.5,353.6 L1131.9,353.3 L1130.7,353.2 L1130.1,353.7 L1128.5,353.6 L1128.2,353.5 L1127.8,353.3 L1127.5,352.7 L1126.7,352.7 L1126.4,352.5 L1125.7,351.6 L1125.7,351.4 L1125.5,351.4 L1125.0,352.3 L1124.8,352.6 L1124.5,352.7 L1124.3,352.8 L1124.4,353.0 L1123.3,353.4 L1122.0,353.5 L1121.7,353.5 L1121.5,353.7 L1121.6,353.8 L1121.3,354.1 L1120.4,354.7 L1120.1,354.6 L1118.8,355.2 L1118.5,355.1 L1118.2,355.3 L1117.3,355.4 L1117.0,355.4 L1116.3,355.6 L1115.7,355.5 L1115.5,355.6 L1113.7,361.0 L1113.2,360.8 L1111.8,361.1 L1111.0,361.6 L1110.8,362.3 L1105.3,362.7 L1103.2,362.6 L1098.4,361.8 L1098.0,361.6 L1097.3,361.2 L1096.5,360.9 L1091.3,360.8 L1078.9,363.2 L1077.2,364.1 L1074.3,366.2 L1077.5,369.1 L1073.9,370.5 Z M1152.7,377.6 L1152.8,376.9 L1153.8,376.8 L1153.8,377.7 L1153.3,378.0 L1152.7,377.6 Z" fill="#d9eef2"><title>Andijan Region (UZ-AN)</title></path><path class="adm-path" d="M456.0,355.5 L457.1,356.5 L468.7,366.4 L469.7,367.7 L469.6,369.3 L468.5,373.5 L461.9,379.1 L452.9,387.4 L453.5,388.0 L455.4,389.0 L457.2,389.6 L459.1,391.2 L461.0,392.1 L461.5,392.2 L462.9,392.7 L463.0,393.0 L462.5,394.6 L461.8,396.3 L461.9,396.9 L462.9,398.0 L464.0,398.6 L464.6,399.2 L465.7,400.6 L465.8,401.1 L465.7,401.7 L465.2,402.7 L465.1,403.4 L465.5,404.2 L465.6,405.5 L466.4,407.7 L466.6,409.1 L467.2,410.2 L467.2,411.6 L467.0,413.1 L466.1,414.4 L466.0,415.1 L466.3,415.5 L468.0,417.4 L468.2,419.3 L468.6,420.1 L468.6,420.7 L469.1,422.3 L470.4,423.7 L472.1,424.9 L492.6,436.6 L502.6,441.8 L517.3,449.9 L523.4,453.0 L526.1,454.6 L529.8,456.5 L533.9,458.5 L534.5,460.7 L543.5,465.6 L552.0,469.9 L552.7,473.1 L556.5,475.2 L557.4,475.8 L572.0,483.8 L572.9,484.4 L578.6,487.5 L583.6,489.9 L584.3,490.5 L587.8,490.2 L593.1,490.2 L595.8,489.5 L597.9,491.1 L605.3,484.5 L622.4,479.6 L631.3,477.1 L631.6,476.8 L631.7,476.4 L631.4,475.8 L630.2,474.5 L629.0,473.6 L628.3,472.8 L628.0,472.2 L627.8,471.3 L627.8,470.9 L628.3,470.1 L628.6,469.8 L635.4,464.9 L635.6,464.8 L636.8,464.8 L638.5,461.7 L641.3,460.7 L645.1,458.6 L645.5,458.2 L645.2,454.5 L644.7,453.3 L638.4,442.8 L631.4,438.7 L626.8,439.6 L625.2,439.5 L617.1,432.6 L612.5,427.3 L612.8,424.6 L616.0,421.8 L619.8,419.6 L624.5,417.5 L624.8,416.5 L625.1,413.7 L626.5,412.7 L627.0,412.1 L629.3,411.9 L630.6,411.7 L631.3,411.4 L631.9,408.4 L631.5,406.7 L631.2,403.8 L631.0,403.3 L630.5,402.7 L627.9,400.3 L629.2,398.8 L630.0,398.2 L631.1,397.5 L631.8,397.3 L633.3,397.1 L634.8,397.1 L636.2,397.3 L638.4,398.1 L639.3,398.4 L642.5,398.7 L644.7,399.1 L649.1,399.4 L649.4,398.1 L650.5,395.2 L653.2,393.2 L655.4,386.6 L662.5,386.3 L663.6,385.5 L662.8,382.0 L663.0,378.3 L664.3,374.4 L652.9,377.3 L644.4,376.6 L632.0,375.3 L630.5,375.0 L629.4,374.5 L627.8,373.3 L624.7,362.3 L623.6,359.2 L622.2,359.0 L621.5,359.2 L620.5,361.4 L618.9,364.4 L615.6,364.8 L610.2,364.9 L603.0,365.5 L602.2,365.7 L601.0,370.6 L600.7,371.1 L577.5,369.0 L577.4,360.8 L575.0,358.7 L573.7,358.5 L570.6,359.8 L569.1,361.0 L561.4,374.2 L560.6,374.4 L556.8,374.7 L552.2,374.8 L551.9,374.8 L552.6,372.4 L552.1,370.7 L551.3,369.6 L548.3,367.8 L537.4,360.0 L522.0,356.6 L514.3,354.1 L509.8,353.1 L506.9,353.1 L506.2,353.5 L504.9,353.6 L504.1,352.1 L502.1,346.5 L499.1,341.8 L496.9,340.1 L491.8,338.0 L488.4,336.4 L485.3,333.9 L483.3,331.6 L478.5,324.4 L454.2,326.7 L466.1,344.5 L471.3,350.0 L456.0,355.5 Z" fill="#cbe4d8"><title>Bukhara Region (UZ-BU)</title></path><path class="adm-path" d="M1073.9,370.5 L1069.8,371.5 L1063.9,374.0 L1062.1,374.8 L1061.1,376.4 L1060.0,377.5 L1055.7,380.6 L1054.6,381.1 L1054.0,381.0 L1046.0,378.0 L1043.3,376.0 L1042.1,373.8 L1044.1,372.0 L1044.6,371.4 L1044.6,371.2 L1034.9,371.3 L1030.1,372.0 L1023.1,373.3 L1022.7,373.6 L1022.8,374.0 L1022.2,374.0 L1021.4,374.2 L1021.1,375.0 L1020.9,375.3 L1020.7,376.1 L1020.4,376.4 L1019.9,376.5 L1018.8,376.1 L1018.4,376.2 L1018.3,376.5 L1018.8,377.9 L1018.6,378.1 L1018.1,378.3 L1017.9,378.2 L1017.6,377.9 L1017.3,377.7 L1016.5,377.8 L1015.9,378.4 L1015.4,378.5 L1014.7,378.9 L1013.6,380.0 L1013.3,380.1 L1012.5,380.0 L1012.1,380.3 L1011.5,381.0 L1010.2,383.0 L1008.8,384.2 L1008.2,384.4 L1007.2,384.4 L1006.5,384.8 L1005.4,384.7 L1004.6,384.8 L1004.0,385.0 L1003.7,385.5 L1003.5,386.4 L1002.9,386.9 L1002.7,387.8 L1002.0,388.3 L1000.9,388.3 L998.5,389.2 L997.3,389.3 L996.1,389.7 L995.5,390.1 L993.2,390.8 L992.1,391.0 L991.9,391.3 L991.7,392.2 L992.3,392.9 L992.8,393.2 L993.0,393.5 L993.1,394.6 L993.8,394.9 L994.4,395.6 L995.0,396.1 L996.7,396.5 L997.9,396.6 L998.2,396.8 L998.6,397.2 L999.9,397.4 L1000.1,397.5 L1000.0,397.7 L1001.3,398.3 L1002.0,398.4 L1007.0,398.2 L1007.1,398.8 L1007.8,399.0 L1008.2,399.3 L1007.2,400.4 L1007.0,401.0 L1007.2,401.4 L1007.4,401.5 L1007.7,402.3 L1008.1,402.9 L1007.9,405.7 L1008.3,406.2 L1008.7,406.9 L1009.4,407.6 L1010.5,408.4 L1011.5,409.7 L1011.8,410.0 L1015.8,409.5 L1017.2,409.1 L1019.2,409.3 L1020.3,409.2 L1022.2,408.3 L1025.3,407.7 L1026.3,407.3 L1027.3,407.0 L1030.9,407.1 L1034.3,407.0 L1035.0,406.7 L1035.0,406.3 L1034.9,405.6 L1034.5,405.1 L1034.6,404.7 L1033.6,404.0 L1033.5,402.8 L1033.8,402.6 L1034.4,402.6 L1035.2,402.7 L1037.4,402.1 L1038.3,402.5 L1037.6,402.9 L1038.3,403.2 L1038.5,403.2 L1039.9,402.6 L1040.7,402.6 L1041.2,402.3 L1042.0,401.6 L1042.6,401.3 L1043.0,400.8 L1043.4,400.5 L1044.5,399.5 L1044.9,399.3 L1045.8,399.4 L1046.5,399.4 L1049.7,398.8 L1051.1,399.0 L1052.3,399.3 L1052.9,399.7 L1052.9,399.9 L1052.1,400.3 L1052.2,400.4 L1052.6,400.2 L1052.6,400.3 L1053.1,399.8 L1053.8,399.5 L1054.3,398.9 L1055.1,399.1 L1056.1,399.8 L1055.6,400.1 L1056.0,400.8 L1056.7,401.3 L1057.3,401.1 L1057.7,400.6 L1058.4,400.7 L1058.3,400.9 L1058.5,400.9 L1059.2,400.8 L1059.1,400.6 L1059.6,400.5 L1059.6,400.6 L1059.9,400.6 L1059.9,400.7 L1060.6,400.6 L1060.8,400.8 L1061.1,400.7 L1061.2,400.9 L1060.6,401.2 L1060.5,401.4 L1061.1,401.3 L1061.5,401.4 L1062.1,401.2 L1062.5,401.4 L1062.6,401.7 L1063.6,402.4 L1064.6,402.9 L1066.7,403.3 L1067.5,403.3 L1067.9,403.5 L1068.3,403.4 L1068.7,403.5 L1069.4,403.3 L1069.8,403.7 L1070.1,403.9 L1070.0,404.0 L1070.2,404.2 L1070.1,404.7 L1070.2,405.1 L1070.1,405.5 L1070.5,405.9 L1070.2,406.4 L1070.6,406.7 L1071.8,406.8 L1072.9,407.3 L1073.9,407.5 L1074.3,407.3 L1074.5,407.3 L1074.5,407.5 L1074.6,407.5 L1074.6,407.2 L1075.5,407.3 L1075.7,407.7 L1077.0,408.0 L1077.2,408.0 L1077.3,407.6 L1077.1,407.4 L1077.0,407.4 L1077.0,407.2 L1077.7,407.4 L1077.9,407.3 L1077.6,407.0 L1077.5,406.4 L1077.3,405.9 L1077.4,405.2 L1077.2,405.1 L1077.2,405.0 L1077.2,404.8 L1077.3,404.8 L1077.3,404.6 L1077.2,404.5 L1077.3,404.0 L1077.9,403.9 L1078.0,404.1 L1078.2,404.2 L1078.9,404.0 L1079.0,403.8 L1079.5,403.7 L1080.5,403.7 L1080.8,403.9 L1081.3,403.8 L1081.3,404.4 L1081.3,404.5 L1081.4,404.8 L1082.2,405.1 L1082.6,405.7 L1082.6,406.2 L1082.2,406.8 L1082.4,407.1 L1082.5,407.5 L1083.0,408.3 L1083.0,408.4 L1082.7,408.2 L1082.6,407.9 L1082.1,408.1 L1082.3,408.6 L1082.6,408.9 L1081.7,408.7 L1081.2,408.7 L1081.1,408.7 L1081.5,408.8 L1081.3,409.2 L1081.6,409.2 L1081.6,409.3 L1081.9,409.3 L1082.5,409.8 L1083.3,409.9 L1083.4,409.8 L1083.8,410.1 L1084.2,410.8 L1084.1,411.1 L1084.3,411.7 L1084.4,411.9 L1084.6,411.9 L1084.9,410.9 L1085.7,410.5 L1085.5,410.4 L1085.6,410.2 L1086.1,410.1 L1086.4,409.8 L1087.1,409.3 L1088.2,408.2 L1090.0,407.7 L1090.2,407.5 L1090.2,407.6 L1091.3,407.2 L1091.1,405.7 L1091.3,405.6 L1091.3,405.4 L1091.8,405.3 L1091.9,404.9 L1092.2,404.9 L1093.2,404.6 L1093.5,404.6 L1094.1,404.3 L1094.8,404.3 L1094.9,404.5 L1095.3,404.4 L1095.9,404.6 L1096.6,404.6 L1097.0,404.8 L1097.3,404.8 L1097.6,405.0 L1097.6,405.7 L1097.9,405.6 L1098.1,405.8 L1098.2,405.8 L1098.7,406.0 L1100.0,405.7 L1100.3,405.5 L1099.6,405.4 L1099.6,405.3 L1098.5,405.1 L1099.1,404.7 L1101.0,404.7 L1101.5,404.4 L1101.8,403.9 L1102.8,403.4 L1103.3,403.6 L1104.1,404.2 L1104.1,403.9 L1104.8,403.5 L1105.8,403.3 L1105.9,403.2 L1106.0,402.8 L1105.9,402.7 L1105.4,402.6 L1105.3,402.5 L1103.5,402.2 L1102.8,401.9 L1101.9,401.8 L1100.5,400.9 L1100.2,400.5 L1101.0,399.9 L1101.8,399.4 L1102.4,399.3 L1102.5,399.1 L1102.5,399.1 L1104.2,397.8 L1105.7,397.1 L1105.4,396.6 L1106.1,396.5 L1106.2,396.1 L1106.5,396.1 L1106.9,395.5 L1107.6,395.1 L1107.9,395.1 L1108.4,394.8 L1108.2,394.4 L1108.3,394.2 L1108.6,393.1 L1108.2,391.8 L1109.4,391.5 L1110.4,391.3 L1111.1,391.4 L1111.0,391.2 L1112.3,390.3 L1113.0,389.7 L1113.9,389.5 L1113.9,388.9 L1114.0,388.8 L1114.1,388.9 L1114.2,389.1 L1114.8,388.8 L1114.9,389.5 L1115.3,389.8 L1115.6,389.8 L1115.8,389.4 L1117.2,389.6 L1117.3,384.9 L1117.0,384.2 L1116.8,384.0 L1111.1,382.6 L1107.9,382.1 L1107.5,382.3 L1107.0,382.3 L1096.0,380.9 L1093.8,380.5 L1093.3,380.0 L1091.0,377.1 L1089.1,376.1 L1086.5,375.0 L1085.8,374.5 L1084.6,374.8 L1081.4,374.1 L1081.4,373.8 L1081.1,373.6 L1079.6,372.2 L1078.9,372.8 L1078.3,373.1 L1077.9,373.8 L1077.9,374.3 L1078.1,374.4 L1078.2,374.8 L1077.9,375.6 L1077.6,376.0 L1078.5,377.5 L1077.5,377.8 L1075.0,380.0 L1074.7,378.6 L1071.8,374.4 L1069.0,373.0 L1074.7,371.7 L1073.9,370.5 Z M1036.2,409.5 L1036.2,409.9 L1036.8,410.6 L1037.5,413.7 L1037.2,415.6 L1037.0,415.9 L1036.5,416.3 L1036.9,418.3 L1037.8,419.3 L1039.3,420.2 L1041.0,420.1 L1041.8,420.1 L1042.6,420.4 L1043.5,420.3 L1043.8,420.8 L1043.7,421.4 L1043.8,422.1 L1043.3,422.3 L1042.9,421.8 L1042.4,422.0 L1042.2,422.3 L1042.4,422.7 L1042.6,422.8 L1042.4,423.0 L1042.7,423.1 L1042.7,423.1 L1042.9,423.1 L1042.8,423.4 L1043.0,423.6 L1043.4,423.9 L1043.8,423.7 L1044.0,423.8 L1044.1,424.4 L1043.6,424.5 L1043.1,424.8 L1042.8,424.7 L1041.7,425.5 L1041.4,425.9 L1041.2,426.4 L1041.2,426.7 L1041.4,427.1 L1041.4,427.4 L1040.5,427.7 L1040.3,427.9 L1040.0,428.0 L1039.6,428.3 L1039.9,428.5 L1040.3,428.5 L1040.5,428.6 L1041.5,428.6 L1041.9,428.8 L1042.3,428.9 L1042.4,429.3 L1042.5,429.3 L1042.8,429.0 L1042.7,428.8 L1042.5,428.7 L1042.5,428.5 L1042.7,428.2 L1042.7,427.7 L1042.8,427.6 L1042.9,427.9 L1043.2,427.8 L1043.2,427.5 L1043.4,427.2 L1044.1,426.8 L1045.1,427.8 L1045.0,428.1 L1044.7,428.5 L1044.9,429.2 L1045.6,429.2 L1046.0,429.1 L1046.5,429.2 L1046.8,429.0 L1047.2,429.2 L1047.7,428.6 L1048.2,428.7 L1049.0,428.6 L1049.4,428.2 L1049.0,427.9 L1049.2,427.6 L1050.1,427.4 L1050.5,427.5 L1050.6,427.2 L1050.3,426.9 L1050.6,426.8 L1050.6,426.7 L1050.9,426.8 L1051.2,426.6 L1051.1,426.3 L1050.9,426.1 L1050.0,425.7 L1049.3,425.6 L1048.8,425.2 L1049.8,425.2 L1050.4,425.0 L1050.5,424.9 L1050.0,424.8 L1049.1,425.0 L1048.1,424.9 L1047.1,425.0 L1046.4,424.9 L1045.6,424.9 L1045.0,424.7 L1045.0,424.5 L1045.5,424.4 L1046.8,423.9 L1047.2,423.6 L1047.1,423.3 L1047.3,422.7 L1047.3,422.5 L1047.0,422.3 L1046.3,422.1 L1045.6,421.7 L1045.8,421.6 L1047.2,421.7 L1047.3,421.6 L1047.6,421.7 L1048.5,421.6 L1048.6,421.0 L1049.2,420.7 L1049.9,419.2 L1049.6,419.2 L1049.0,419.4 L1048.5,419.6 L1048.1,419.9 L1047.4,419.8 L1046.5,420.0 L1045.6,420.0 L1045.3,420.4 L1044.8,420.6 L1044.2,420.7 L1043.9,420.5 L1043.8,420.3 L1043.9,419.8 L1043.7,418.9 L1043.0,418.0 L1042.9,416.7 L1042.8,416.6 L1043.0,416.1 L1042.7,415.7 L1042.3,415.5 L1042.5,414.9 L1042.1,414.1 L1041.7,413.5 L1041.6,412.8 L1041.1,411.1 L1040.7,410.6 L1039.2,409.5 L1039.0,409.6 L1039.0,409.9 L1038.8,410.0 L1038.6,409.7 L1037.6,409.9 L1036.2,409.4 L1036.2,409.5 Z M1083.5,423.9 L1083.7,424.9 L1083.9,424.8 L1083.9,424.5 L1084.1,424.4 L1085.4,424.6 L1085.7,424.8 L1085.4,425.8 L1085.6,426.1 L1086.2,426.0 L1086.5,425.7 L1087.4,425.1 L1087.7,424.7 L1087.8,424.2 L1088.4,423.9 L1088.6,423.9 L1089.1,424.4 L1091.2,424.7 L1092.1,425.3 L1092.3,425.0 L1092.4,424.3 L1092.9,423.7 L1093.1,422.7 L1091.1,422.7 L1090.7,422.5 L1090.5,422.4 L1090.6,422.1 L1090.3,421.6 L1089.9,421.5 L1089.2,421.5 L1087.9,420.3 L1087.7,420.3 L1087.6,420.4 L1087.9,420.6 L1088.5,421.4 L1088.0,422.0 L1088.1,422.1 L1088.4,422.1 L1088.4,422.3 L1087.7,422.5 L1087.3,422.8 L1086.9,423.0 L1086.8,423.2 L1085.2,423.2 L1084.6,423.6 L1083.5,423.9 Z M1038.1,405.8 L1038.1,406.0 L1038.4,406.3 L1038.5,406.6 L1038.8,406.6 L1039.0,406.3 L1038.8,405.6 L1039.1,405.0 L1039.0,404.6 L1038.7,404.6 L1038.3,405.0 L1038.1,405.8 Z M1079.6,408.0 L1080.0,408.3 L1080.7,408.6 L1080.7,408.3 L1080.5,408.1 L1079.9,408.0 L1079.6,408.0 Z" fill="#f3e4b5"><title>Fergana Region (UZ-FA)</title></path><path class="adm-path" d="M745.9,388.9 L748.9,389.2 L757.1,389.9 L763.7,390.0 L765.1,392.4 L765.1,393.6 L765.0,394.0 L763.9,395.6 L763.7,396.4 L763.8,400.8 L765.0,405.3 L767.7,407.1 L769.7,409.8 L769.8,410.2 L769.7,411.1 L769.0,412.5 L768.7,412.7 L766.9,413.0 L766.8,413.4 L767.1,416.8 L767.3,417.5 L775.6,421.8 L778.7,422.7 L785.6,423.2 L800.4,425.8 L801.2,426.5 L802.3,426.9 L804.4,432.8 L804.5,433.9 L804.1,434.1 L802.7,434.1 L800.5,434.5 L797.4,435.7 L796.4,436.2 L795.3,437.3 L790.7,443.1 L790.5,443.9 L790.6,448.1 L790.9,449.1 L791.8,450.2 L793.3,451.4 L797.8,454.4 L799.5,455.5 L800.0,454.9 L797.9,454.3 L797.8,454.2 L797.8,453.9 L797.4,453.6 L797.5,453.4 L797.2,453.3 L797.4,453.0 L797.7,452.6 L798.3,452.7 L798.5,452.5 L800.2,452.4 L802.0,452.8 L802.2,452.7 L802.3,452.4 L802.3,452.1 L801.9,452.0 L801.6,452.0 L801.3,451.7 L801.0,451.6 L800.6,451.6 L800.5,451.5 L800.9,450.4 L801.3,450.0 L801.0,449.7 L801.1,449.6 L801.2,449.6 L801.8,449.9 L802.3,449.7 L803.2,449.7 L804.1,449.3 L804.8,449.6 L805.5,449.5 L805.8,449.3 L806.3,449.2 L806.5,448.9 L807.3,448.9 L807.5,449.0 L808.0,449.0 L808.6,448.6 L809.3,448.6 L809.7,448.2 L810.3,448.4 L811.8,448.3 L812.1,448.2 L812.7,448.2 L812.9,447.9 L812.7,447.5 L812.8,447.3 L813.2,446.9 L814.0,446.5 L814.0,446.2 L814.3,445.9 L814.8,445.8 L815.1,445.4 L816.2,445.7 L816.4,445.6 L818.0,444.3 L819.8,444.9 L821.5,445.6 L821.9,445.5 L822.9,445.1 L823.7,444.4 L824.5,444.7 L825.3,445.3 L826.0,445.6 L826.5,446.2 L828.2,446.6 L829.1,446.4 L830.7,447.5 L831.5,447.6 L833.3,448.3 L834.0,448.0 L835.8,447.9 L837.3,448.8 L838.8,449.2 L839.7,449.8 L841.7,450.1 L842.7,449.8 L844.7,450.6 L845.0,450.8 L846.2,450.9 L846.9,450.6 L848.0,450.7 L848.9,450.4 L849.8,450.8 L850.3,451.3 L851.5,451.4 L853.0,451.1 L853.3,451.1 L854.0,450.7 L854.5,450.9 L855.3,451.0 L855.8,450.8 L856.3,450.9 L857.2,451.6 L857.9,451.2 L858.4,451.5 L859.8,451.9 L860.5,452.3 L860.8,452.6 L861.9,452.9 L862.4,452.3 L863.3,451.9 L864.4,452.1 L864.9,452.0 L865.5,452.3 L866.8,452.2 L867.1,452.4 L867.3,452.4 L867.6,452.6 L867.9,452.6 L868.2,452.3 L869.2,452.4 L869.3,452.3 L869.8,452.2 L869.9,452.0 L870.6,452.2 L870.9,452.5 L871.2,452.5 L871.3,452.8 L872.1,452.7 L872.2,452.6 L873.7,452.3 L873.7,451.9 L873.3,451.5 L873.6,450.9 L872.9,450.1 L873.0,449.2 L873.5,449.0 L873.9,448.2 L874.7,448.3 L875.3,448.0 L875.8,446.5 L877.1,446.5 L877.5,446.2 L877.9,445.7 L878.3,445.7 L878.5,443.7 L879.1,442.8 L877.6,442.1 L877.5,440.5 L876.9,440.3 L876.4,439.9 L876.7,439.6 L877.5,439.0 L878.1,438.9 L879.4,437.4 L879.5,433.0 L879.1,432.3 L879.3,431.5 L879.5,431.3 L879.8,431.4 L880.7,431.9 L881.6,431.9 L881.7,432.1 L881.7,432.5 L882.5,432.6 L884.1,431.6 L884.8,431.4 L885.2,431.1 L886.0,431.2 L886.6,431.5 L887.1,432.9 L887.9,433.3 L888.5,433.2 L888.9,433.0 L889.3,431.4 L889.7,431.0 L891.0,430.7 L892.2,430.1 L893.1,429.0 L893.2,427.5 L893.0,427.0 L892.8,425.9 L892.3,425.3 L891.9,425.1 L891.5,423.8 L891.2,423.8 L891.1,423.4 L891.8,423.1 L891.7,422.6 L892.0,422.6 L892.3,423.6 L893.4,425.6 L893.6,427.2 L893.7,429.2 L893.6,430.4 L895.1,430.7 L896.6,430.4 L897.7,429.6 L898.6,427.6 L899.3,427.3 L899.3,426.9 L899.0,426.6 L898.1,426.1 L897.8,424.7 L896.3,422.4 L895.4,421.6 L894.1,419.4 L893.5,418.5 L894.7,418.1 L895.5,418.0 L896.3,418.1 L896.6,418.5 L896.8,418.4 L897.1,417.3 L897.3,417.2 L897.8,417.4 L898.1,417.6 L898.8,417.6 L900.0,417.6 L901.5,417.3 L900.8,416.2 L901.0,415.9 L901.7,415.6 L902.4,415.5 L903.3,415.7 L904.2,415.1 L905.3,413.9 L905.3,412.0 L905.2,411.6 L904.7,411.5 L903.4,411.8 L902.5,412.3 L899.7,412.1 L898.8,412.2 L898.0,412.5 L896.8,412.6 L895.8,412.9 L894.3,413.4 L893.9,413.5 L893.6,413.7 L892.4,413.9 L891.1,414.0 L889.2,414.6 L888.6,415.1 L888.1,415.2 L887.1,415.0 L886.2,415.1 L885.3,415.1 L883.9,415.4 L883.4,415.4 L880.7,416.3 L879.3,416.6 L872.6,413.9 L872.7,412.2 L874.1,411.7 L875.9,411.5 L877.0,411.3 L877.6,411.0 L879.8,410.4 L879.9,409.5 L881.0,404.0 L880.6,403.2 L870.3,405.0 L867.1,405.9 L863.1,406.6 L861.3,406.8 L854.8,407.0 L845.4,406.6 L844.9,406.6 L843.9,405.5 L843.5,404.5 L843.2,403.5 L843.4,402.2 L845.3,398.7 L851.5,393.8 L850.0,392.8 L850.1,389.2 L846.6,388.7 L847.5,385.5 L848.4,383.0 L850.4,384.6 L850.5,383.6 L853.8,376.9 L851.8,376.1 L848.5,374.0 L842.5,369.4 L838.9,368.6 L835.8,366.5 L836.0,366.0 L835.4,365.3 L835.5,365.1 L835.4,365.0 L835.5,364.6 L836.5,364.7 L836.9,364.8 L837.0,364.7 L837.8,364.7 L837.9,363.2 L837.8,363.0 L838.2,362.7 L838.0,362.5 L839.2,361.9 L839.5,361.9 L839.6,361.7 L840.0,361.4 L840.6,361.4 L841.0,361.2 L842.2,360.9 L842.2,360.4 L842.8,360.5 L843.3,360.4 L843.8,359.6 L843.4,359.3 L843.0,359.3 L841.6,359.0 L841.8,358.7 L842.1,358.5 L842.3,358.8 L842.8,358.5 L842.4,358.1 L843.0,357.9 L843.0,357.7 L843.2,357.4 L842.6,356.2 L842.5,355.8 L842.8,355.3 L841.9,354.9 L841.2,355.1 L840.6,354.2 L841.1,354.0 L842.3,354.0 L843.2,353.4 L844.6,353.2 L844.7,353.0 L845.8,353.3 L845.8,352.9 L845.8,352.5 L845.3,352.3 L845.0,351.8 L844.8,351.0 L844.4,351.0 L844.1,350.9 L843.3,350.5 L843.0,350.1 L842.7,350.0 L842.1,350.1 L841.9,350.3 L841.4,351.1 L840.8,352.6 L840.5,352.7 L840.1,352.5 L839.0,352.9 L839.0,354.2 L838.7,354.2 L838.7,354.1 L836.3,353.7 L836.3,353.5 L836.5,353.3 L836.5,352.8 L836.3,351.1 L836.6,349.8 L836.5,349.0 L835.1,345.5 L833.8,345.4 L833.7,345.4 L833.6,345.5 L833.1,345.5 L830.2,345.3 L828.4,346.5 L824.8,345.0 L819.7,343.3 L817.4,343.7 L816.6,344.0 L809.1,344.3 L795.2,347.0 L791.9,346.5 L772.2,346.3 L771.1,346.1 L754.9,346.1 L754.7,347.7 L745.1,347.9 L746.5,358.5 L746.7,359.5 L747.3,360.3 L747.8,360.9 L749.1,361.5 L751.1,361.8 L755.2,362.6 L755.6,362.9 L755.9,363.5 L758.2,370.9 L757.8,371.7 L756.4,373.3 L753.3,377.5 L747.0,386.9 L746.2,388.1 L745.9,388.9 Z" fill="#ead2d4"><title>Jizzakh Region (UZ-JI)</title></path><path class="adm-path" d="M1115.5,355.6 L1114.7,355.6 L1114.5,355.2 L1114.1,354.2 L1114.4,353.8 L1116.2,353.5 L1116.4,352.1 L1116.3,351.5 L1115.3,349.7 L1115.1,348.6 L1114.4,348.4 L1114.3,347.7 L1113.6,347.5 L1113.3,347.3 L1112.4,347.1 L1112.5,346.3 L1113.4,345.8 L1114.2,345.1 L1113.6,344.6 L1113.5,344.7 L1113.3,344.6 L1112.8,344.8 L1112.2,344.9 L1111.5,344.7 L1110.4,345.3 L1109.8,345.2 L1109.6,345.3 L1108.8,346.1 L1108.7,346.5 L1107.4,347.4 L1107.2,347.6 L1106.7,347.4 L1106.5,347.1 L1106.1,347.0 L1106.0,346.8 L1105.8,346.8 L1105.6,346.7 L1104.5,346.4 L1104.2,346.4 L1103.3,346.0 L1102.9,345.4 L1102.9,345.1 L1099.8,345.0 L1099.3,345.7 L1098.7,345.8 L1098.2,345.4 L1097.9,345.3 L1097.4,345.1 L1097.0,345.1 L1096.7,344.8 L1096.1,344.9 L1095.5,344.7 L1094.9,344.3 L1094.7,343.6 L1094.9,342.8 L1094.8,342.6 L1094.0,342.6 L1093.4,342.3 L1093.3,342.1 L1093.8,341.0 L1094.4,340.5 L1094.4,340.2 L1094.5,339.9 L1094.7,339.8 L1095.0,338.5 L1095.6,338.3 L1095.9,338.0 L1096.4,337.0 L1096.2,336.7 L1096.8,336.5 L1097.5,335.9 L1095.9,334.9 L1095.0,333.8 L1094.5,333.0 L1095.4,332.7 L1095.3,332.2 L1094.7,331.7 L1094.8,331.6 L1094.7,331.4 L1094.4,331.3 L1094.0,331.9 L1093.7,332.0 L1093.6,332.3 L1092.2,332.1 L1091.7,331.9 L1091.5,331.4 L1091.7,330.8 L1091.2,330.3 L1091.3,330.2 L1091.2,330.1 L1090.9,329.7 L1090.0,329.4 L1089.7,328.8 L1089.6,329.0 L1089.2,328.4 L1089.0,328.4 L1088.7,327.8 L1088.9,327.6 L1088.9,327.0 L1088.7,326.3 L1087.5,325.7 L1087.2,325.9 L1086.5,326.6 L1086.1,326.7 L1085.8,326.2 L1085.8,325.8 L1085.4,325.5 L1085.0,325.5 L1085.0,325.8 L1084.4,326.0 L1083.9,326.4 L1084.2,326.8 L1084.1,327.4 L1083.7,327.6 L1083.1,327.3 L1082.5,326.6 L1082.4,326.1 L1082.5,325.6 L1083.7,324.4 L1083.8,323.9 L1084.3,323.5 L1084.4,323.0 L1084.2,322.5 L1084.1,321.5 L1084.5,320.4 L1085.0,320.2 L1084.7,319.4 L1084.3,319.2 L1083.4,319.5 L1083.2,319.6 L1083.1,320.0 L1082.8,320.1 L1082.1,320.5 L1082.1,320.6 L1081.1,321.3 L1081.2,321.7 L1080.6,322.4 L1080.1,322.6 L1079.3,322.7 L1078.8,322.9 L1079.1,323.2 L1080.2,323.5 L1080.6,323.9 L1080.9,324.3 L1081.0,325.1 L1080.3,325.6 L1080.7,326.0 L1080.6,326.4 L1080.7,326.6 L1081.1,326.7 L1081.1,327.2 L1081.3,327.5 L1080.0,328.8 L1079.6,330.5 L1079.1,331.3 L1078.7,332.3 L1078.4,332.3 L1077.9,332.1 L1077.5,332.3 L1077.1,333.1 L1076.2,333.6 L1076.0,334.0 L1076.0,334.3 L1075.7,334.3 L1075.4,335.3 L1075.2,335.5 L1074.4,335.9 L1073.0,336.2 L1073.0,335.9 L1072.6,335.7 L1072.3,335.6 L1071.2,335.7 L1070.8,335.1 L1069.7,335.0 L1068.5,334.5 L1068.1,334.6 L1067.5,335.2 L1066.5,335.9 L1066.0,336.4 L1065.9,336.9 L1066.3,337.7 L1065.9,338.6 L1065.9,339.2 L1066.6,340.1 L1066.8,341.0 L1066.6,341.7 L1065.2,342.4 L1065.3,343.6 L1066.2,344.3 L1066.1,345.1 L1065.3,346.4 L1065.3,347.0 L1063.6,348.5 L1062.8,348.5 L1062.4,348.3 L1062.2,348.0 L1061.9,346.1 L1061.5,345.5 L1060.4,344.6 L1059.8,344.4 L1059.1,344.4 L1058.3,344.8 L1057.8,345.2 L1057.5,346.7 L1056.9,347.6 L1055.8,348.4 L1055.1,348.5 L1054.5,348.4 L1054.3,348.1 L1054.6,345.5 L1054.3,343.9 L1053.9,343.5 L1053.3,343.1 L1052.9,343.3 L1052.1,342.8 L1051.6,342.9 L1051.2,343.1 L1051.0,343.5 L1051.1,344.1 L1050.6,344.3 L1050.2,344.3 L1049.6,343.1 L1049.1,343.1 L1048.6,343.4 L1048.0,344.2 L1047.3,344.2 L1046.9,344.4 L1045.7,345.3 L1044.6,345.9 L1043.9,345.8 L1042.7,345.2 L1042.1,344.8 L1041.2,343.7 L1040.1,343.5 L1039.3,343.2 L1038.3,342.6 L1037.5,342.7 L1036.0,343.7 L1035.6,343.6 L1034.8,344.2 L1034.0,344.4 L1033.9,344.6 L1033.7,344.4 L1032.9,344.2 L1032.4,343.8 L1031.8,342.7 L1030.5,342.2 L1030.1,342.0 L1029.8,341.7 L1029.3,341.6 L1028.8,341.2 L1028.5,340.7 L1028.3,340.6 L1028.2,340.2 L1028.0,340.0 L1026.8,339.2 L1026.6,338.8 L1026.2,338.9 L1025.7,338.8 L1025.2,338.8 L1024.9,339.0 L1024.6,339.4 L1023.9,339.6 L1023.4,340.1 L1022.9,340.1 L1022.7,340.6 L1022.8,341.1 L1022.7,341.4 L1022.1,342.1 L1022.0,342.5 L1021.8,342.3 L1021.7,341.7 L1021.3,341.1 L1021.1,339.2 L1021.2,338.3 L1020.8,337.9 L1021.0,337.5 L1021.4,336.9 L1021.5,336.4 L1021.2,335.2 L1021.4,334.4 L1021.9,334.2 L1022.0,333.8 L1021.8,333.5 L1021.4,333.4 L1021.7,333.0 L1021.6,332.6 L1022.1,332.3 L1021.9,332.0 L1021.7,331.9 L1021.6,331.2 L1021.3,330.9 L1021.5,330.5 L1021.6,329.8 L1021.0,329.4 L1020.7,329.0 L1020.1,328.7 L1019.6,327.9 L1019.1,327.6 L1018.8,327.1 L1018.6,327.1 L1018.5,326.6 L1017.7,326.1 L1017.3,325.4 L1017.5,325.0 L1017.4,324.6 L1016.4,324.6 L1015.6,324.4 L1015.4,324.2 L1015.2,324.2 L1014.9,324.3 L1014.1,324.3 L1012.9,325.1 L1012.2,325.1 L1011.7,324.9 L1011.5,325.0 L1011.0,325.0 L1010.2,325.4 L1009.9,325.4 L1009.6,325.2 L1009.3,325.2 L1009.1,325.3 L1009.1,325.9 L1008.7,326.1 L1008.0,326.0 L1007.7,326.1 L1007.5,326.8 L1007.5,327.1 L1007.0,327.2 L1006.6,327.5 L1006.4,328.3 L1006.3,328.3 L1005.8,328.2 L1005.4,328.3 L1004.2,328.8 L1004.0,329.0 L1003.7,329.0 L1003.4,328.7 L1002.7,329.1 L1002.4,329.6 L1002.5,329.8 L1002.2,330.5 L1001.9,330.7 L1001.3,331.2 L1001.5,331.7 L1001.2,331.8 L1001.1,332.4 L1000.0,332.9 L999.4,333.5 L998.8,333.9 L998.5,334.3 L997.8,334.6 L997.5,335.0 L997.0,335.0 L996.5,334.7 L996.1,335.1 L996.0,335.8 L995.6,336.2 L995.7,338.1 L996.2,338.0 L996.8,338.0 L997.8,337.8 L998.5,338.1 L999.6,338.1 L999.7,338.1 L999.5,338.6 L999.1,338.9 L998.2,339.9 L998.2,341.6 L998.8,342.4 L998.7,343.2 L999.8,344.2 L999.8,344.6 L999.0,345.2 L999.4,346.0 L1000.7,346.8 L1002.0,347.4 L1003.0,348.2 L1004.3,349.0 L1003.6,349.2 L1002.8,349.5 L1002.9,349.8 L1002.9,350.2 L1001.8,351.5 L1001.2,352.7 L1001.5,353.0 L1002.0,353.2 L1002.3,353.9 L1002.7,353.9 L1002.9,354.2 L1004.0,354.7 L1003.9,354.9 L1004.4,355.6 L1004.5,356.2 L1004.7,356.5 L1005.2,356.8 L1006.4,356.7 L1007.3,357.4 L1007.7,358.1 L1008.3,358.6 L1008.8,359.3 L1009.4,359.9 L1009.7,360.7 L1009.9,360.9 L1010.2,361.5 L1010.6,362.0 L1011.7,362.4 L1011.9,362.7 L1012.3,363.1 L1012.5,363.5 L1012.5,363.8 L1012.7,364.4 L1013.2,364.6 L1014.0,365.2 L1014.3,365.2 L1014.9,365.9 L1015.8,366.1 L1016.7,366.6 L1017.2,367.0 L1018.2,368.1 L1017.9,368.5 L1017.6,368.7 L1017.4,368.5 L1017.2,368.7 L1016.6,368.7 L1019.2,370.4 L1019.4,370.8 L1019.0,370.9 L1019.1,371.0 L1019.7,371.1 L1020.5,371.4 L1021.3,371.9 L1021.6,372.3 L1022.1,372.5 L1022.6,373.0 L1022.7,373.6 L1023.1,373.3 L1030.1,372.0 L1034.9,371.3 L1044.6,371.2 L1044.6,371.4 L1044.1,372.0 L1042.1,373.8 L1043.3,376.0 L1046.0,378.0 L1054.0,381.0 L1054.6,381.1 L1055.7,380.6 L1060.0,377.5 L1061.1,376.4 L1062.1,374.8 L1063.9,374.0 L1069.8,371.5 L1073.9,370.5 L1077.5,369.1 L1074.3,366.2 L1077.2,364.1 L1078.9,363.2 L1091.3,360.8 L1096.5,360.9 L1097.3,361.2 L1098.0,361.6 L1098.4,361.8 L1103.2,362.6 L1105.3,362.7 L1110.8,362.3 L1111.0,361.6 L1111.8,361.1 L1113.2,360.8 L1113.7,361.0 L1115.5,355.6 Z M1005.9,356.2 L1006.0,356.0 L1006.3,355.7 L1006.9,355.1 L1007.3,355.0 L1007.5,355.0 L1008.5,355.8 L1009.5,356.3 L1010.8,357.2 L1012.5,359.2 L1013.8,360.2 L1014.3,360.9 L1014.3,361.1 L1013.4,360.8 L1011.7,359.2 L1010.4,357.7 L1009.9,357.3 L1009.2,357.0 L1008.7,356.5 L1007.6,356.0 L1006.6,356.2 L1005.9,356.2 Z" fill="#d7d7ef"><title>Namangan Region (UZ-NG)</title></path><path class="adm-path" d="M454.2,326.7 L478.5,324.4 L483.3,331.6 L485.3,333.9 L488.4,336.4 L491.8,338.0 L496.9,340.1 L499.1,341.8 L502.1,346.5 L504.1,352.1 L504.9,353.6 L506.2,353.5 L506.9,353.1 L509.8,353.1 L514.3,354.1 L522.0,356.6 L537.4,360.0 L548.3,367.8 L551.3,369.6 L552.1,370.7 L552.6,372.4 L551.9,374.8 L552.2,374.8 L556.8,374.7 L560.6,374.4 L561.4,374.2 L569.1,361.0 L570.6,359.8 L573.7,358.5 L575.0,358.7 L577.4,360.8 L577.5,369.0 L600.7,371.1 L601.0,370.6 L602.2,365.7 L603.0,365.5 L610.2,364.9 L615.6,364.8 L618.9,364.4 L620.5,361.4 L621.5,359.2 L622.2,359.0 L623.6,359.2 L624.7,362.3 L627.8,373.3 L629.4,374.5 L630.5,375.0 L632.0,375.3 L644.4,376.6 L652.9,377.3 L664.3,374.4 L663.0,378.3 L662.8,382.0 L663.6,385.5 L662.5,386.3 L655.4,386.6 L653.2,393.2 L650.5,395.2 L649.4,398.1 L649.1,399.4 L644.7,399.1 L642.5,398.7 L639.3,398.4 L638.4,398.1 L636.2,397.3 L634.8,397.1 L633.3,397.1 L631.8,397.3 L631.1,397.5 L630.0,398.2 L629.2,398.8 L627.9,400.3 L630.5,402.7 L631.0,403.3 L631.2,403.8 L631.5,406.7 L631.9,408.4 L631.3,411.4 L630.6,411.7 L629.3,411.9 L627.0,412.1 L626.5,412.7 L625.1,413.7 L624.8,416.5 L624.5,417.5 L619.8,419.6 L616.0,421.8 L612.8,424.6 L612.5,427.3 L617.1,432.6 L625.2,439.5 L626.8,439.6 L631.4,438.7 L638.4,442.8 L644.7,453.3 L645.2,454.5 L645.5,458.2 L647.3,457.4 L648.4,457.0 L650.4,456.5 L654.2,456.1 L654.9,455.9 L655.3,455.7 L655.5,455.4 L652.5,451.2 L651.3,449.2 L651.1,448.3 L651.1,447.6 L652.0,446.0 L652.8,445.0 L653.5,443.3 L653.8,442.3 L653.6,441.6 L651.8,436.5 L651.5,435.9 L650.5,434.9 L649.1,434.0 L647.0,432.3 L646.5,431.5 L646.6,431.1 L647.3,430.7 L659.7,427.4 L661.2,428.0 L663.8,428.7 L665.2,429.0 L666.1,428.9 L666.8,428.6 L667.4,428.0 L667.9,427.2 L670.5,421.1 L671.1,414.7 L671.0,413.6 L672.5,412.1 L672.9,411.4 L673.4,411.3 L673.9,411.5 L681.8,414.4 L682.1,414.6 L683.2,416.1 L683.6,416.9 L683.9,417.2 L684.6,417.6 L686.9,418.5 L694.6,421.0 L696.3,421.2 L701.8,420.4 L702.3,420.5 L709.1,419.1 L711.5,418.3 L716.5,414.6 L717.1,414.0 L717.3,412.7 L717.0,412.2 L715.8,412.2 L713.8,413.2 L712.6,413.1 L712.4,412.0 L715.7,405.3 L716.9,403.8 L718.2,397.1 L718.4,394.6 L717.9,393.8 L717.1,393.6 L716.7,393.2 L717.6,387.9 L720.7,382.7 L722.0,381.6 L723.5,381.4 L725.3,381.5 L726.7,383.2 L728.2,384.0 L730.9,384.3 L732.8,384.2 L736.2,382.8 L739.2,380.7 L740.1,381.0 L741.4,382.2 L744.1,385.1 L745.9,388.9 L746.2,388.1 L747.0,386.9 L753.3,377.5 L756.4,373.3 L757.8,371.7 L758.2,370.9 L755.9,363.5 L755.6,362.9 L755.2,362.6 L751.1,361.8 L749.1,361.5 L747.8,360.9 L747.3,360.3 L746.7,359.5 L746.5,358.5 L745.1,347.9 L754.7,347.7 L754.9,346.1 L751.7,346.0 L747.6,332.6 L745.0,322.7 L742.7,309.8 L740.1,297.3 L704.7,293.3 L705.0,265.2 L709.5,266.8 L711.1,251.6 L711.2,227.0 L694.5,232.3 L687.7,222.9 L675.6,203.7 L673.8,202.0 L671.4,200.8 L650.8,190.1 L638.7,175.5 L634.1,174.1 L607.7,185.1 L562.8,183.2 L529.1,179.8 L455.8,188.5 L440.0,189.4 L449.6,201.6 L471.7,206.0 L458.4,224.5 L442.7,246.1 L439.4,261.0 L439.1,270.4 L441.5,276.7 L444.2,281.0 L445.5,282.7 L445.6,283.4 L445.1,284.2 L443.8,285.0 L426.5,291.8 L426.2,292.1 L426.1,292.8 L436.0,306.2 L446.6,317.6 L454.2,326.7 Z" fill="#cfe2f3"><title>Navoiy Region (UZ-NW)</title></path><path class="adm-path" d="M645.5,458.2 L645.1,458.6 L641.3,460.7 L638.5,461.7 L636.8,464.8 L635.6,464.8 L635.4,464.9 L628.6,469.8 L628.3,470.1 L627.8,470.9 L627.8,471.3 L628.0,472.2 L628.3,472.8 L629.0,473.6 L630.2,474.5 L631.4,475.8 L631.7,476.4 L631.6,476.8 L631.3,477.1 L622.4,479.6 L605.3,484.5 L597.9,491.1 L607.1,498.1 L616.3,503.2 L617.7,503.6 L618.7,504.1 L619.8,504.4 L624.2,507.2 L625.1,508.1 L626.7,509.0 L629.5,509.1 L631.7,509.8 L632.7,510.6 L636.1,512.7 L637.0,513.0 L638.3,513.7 L640.6,514.0 L641.0,514.1 L648.9,519.8 L649.9,520.9 L659.7,526.4 L674.5,534.3 L674.2,534.6 L674.2,535.0 L674.3,535.1 L675.8,535.1 L680.9,536.0 L690.6,537.1 L693.5,537.3 L693.7,537.4 L693.7,537.6 L694.1,537.7 L694.4,537.5 L694.6,536.8 L695.0,536.1 L696.4,535.8 L697.9,535.8 L699.2,536.0 L700.6,537.1 L701.9,538.3 L703.2,538.9 L704.4,539.2 L706.4,539.2 L707.0,539.4 L707.8,540.1 L708.1,540.3 L709.4,540.4 L710.4,540.7 L711.1,540.9 L711.8,542.0 L712.7,542.4 L714.4,542.9 L717.7,543.6 L720.4,543.7 L721.1,544.0 L723.0,546.7 L725.6,549.0 L726.4,549.4 L727.8,550.0 L729.6,550.9 L731.3,552.1 L733.1,552.5 L734.0,552.4 L737.7,551.5 L741.4,551.7 L742.3,551.9 L744.2,552.5 L745.9,553.3 L749.4,556.5 L749.0,555.5 L750.5,550.6 L751.1,549.2 L767.7,535.5 L772.8,533.4 L775.4,532.0 L778.8,529.2 L779.5,528.3 L780.0,526.7 L780.3,525.0 L781.0,521.9 L781.3,521.2 L794.0,511.2 L795.7,508.7 L796.9,507.2 L797.8,506.5 L798.4,506.1 L800.0,505.8 L802.1,505.8 L803.5,506.2 L804.2,506.6 L805.5,507.8 L805.9,508.0 L806.3,508.0 L808.1,503.6 L808.2,503.2 L808.0,498.5 L807.8,497.9 L807.3,497.4 L805.8,495.0 L805.0,491.5 L805.1,491.0 L805.8,490.1 L806.7,489.5 L807.5,489.2 L808.7,488.9 L813.1,488.8 L814.4,488.6 L815.2,488.4 L815.8,488.0 L817.0,487.1 L816.3,486.7 L816.6,486.3 L816.1,485.4 L816.4,485.1 L816.4,484.4 L816.2,484.2 L815.6,483.8 L815.7,483.2 L815.4,482.4 L815.8,481.4 L816.0,479.4 L815.9,478.4 L815.0,478.5 L813.7,478.4 L812.9,478.3 L812.5,477.9 L812.5,476.9 L811.5,476.2 L809.8,475.5 L808.8,475.8 L807.5,476.0 L806.5,476.0 L804.4,475.8 L804.3,474.9 L801.7,474.5 L800.3,473.9 L797.8,473.3 L797.7,473.0 L794.7,472.9 L793.0,472.3 L794.8,469.1 L793.5,468.3 L793.4,467.7 L792.2,466.8 L789.0,467.6 L787.5,467.2 L783.8,466.0 L778.4,464.7 L777.4,464.6 L776.5,464.6 L776.1,464.6 L775.8,464.8 L775.5,465.2 L775.4,465.8 L775.6,466.5 L775.6,467.2 L775.5,467.5 L774.9,468.1 L773.7,468.3 L768.1,468.6 L766.8,468.6 L765.4,468.4 L764.1,467.8 L763.8,467.6 L763.6,467.3 L763.5,466.6 L764.2,464.7 L764.3,463.3 L763.6,461.9 L763.4,461.6 L762.7,461.1 L750.4,459.4 L748.7,459.5 L747.6,459.8 L746.4,460.9 L744.8,462.8 L743.6,463.9 L743.3,464.1 L738.4,465.6 L738.0,465.7 L737.0,465.3 L734.6,464.0 L732.3,462.4 L730.6,461.6 L729.7,461.4 L718.9,463.5 L714.2,465.3 L711.0,466.9 L710.6,467.0 L708.8,466.9 L704.4,466.0 L703.4,465.8 L703.1,465.5 L702.9,463.9 L699.0,458.7 L694.2,454.5 L688.0,453.5 L688.0,453.9 L687.7,454.2 L685.7,455.4 L683.8,456.0 L681.6,456.2 L669.6,455.9 L656.5,455.6 L655.5,455.4 L655.3,455.7 L654.9,455.9 L654.2,456.1 L650.4,456.5 L648.4,457.0 L647.3,457.4 L645.5,458.2 Z" fill="#d9eef2"><title>Qashqadaryo Region (UZ-QA)</title></path><path class="adm-path" d="M440.0,189.4 L401.7,156.6 L382.6,141.6 L380.5,132.7 L377.7,131.9 L372.8,129.3 L345.0,112.4 L306.6,90.1 L298.3,87.6 L297.8,91.3 L297.2,92.6 L293.8,94.7 L292.9,95.1 L291.9,95.2 L291.6,95.6 L291.4,96.2 L291.2,96.3 L290.2,95.8 L289.7,95.8 L289.3,96.4 L289.1,97.4 L288.5,97.5 L287.9,97.3 L287.5,97.3 L287.3,97.6 L287.6,98.5 L287.5,98.7 L287.1,98.8 L286.6,99.3 L286.0,99.5 L285.1,99.6 L284.9,99.4 L285.0,98.4 L283.4,96.8 L282.9,96.8 L282.2,97.2 L281.1,97.6 L279.4,98.0 L278.5,97.7 L277.7,96.7 L277.5,95.8 L277.4,94.7 L277.6,94.4 L278.1,93.9 L278.5,93.0 L278.5,92.3 L277.9,92.0 L278.2,91.4 L277.7,91.0 L277.7,90.6 L278.3,90.5 L278.7,90.7 L279.1,90.5 L278.7,89.8 L278.1,89.6 L278.7,89.2 L278.5,88.6 L278.1,88.2 L278.1,87.3 L278.8,86.3 L278.3,85.3 L278.5,83.3 L278.1,81.6 L273.9,80.3 L247.3,68.9 L224.2,56.8 L223.5,57.7 L222.8,59.0 L220.6,60.5 L220.5,60.8 L220.1,61.0 L220.0,61.3 L219.9,61.3 L219.9,61.5 L219.5,61.8 L219.6,62.3 L219.3,62.3 L219.0,63.4 L218.5,63.8 L218.7,64.1 L218.3,64.7 L218.4,64.9 L218.1,65.5 L218.1,66.2 L218.0,66.6 L217.8,66.8 L217.8,67.0 L218.0,67.0 L217.8,67.2 L217.9,67.2 L218.0,68.1 L217.5,68.6 L217.4,68.8 L217.7,69.1 L217.7,69.3 L217.5,70.0 L217.6,70.2 L217.4,70.7 L217.4,71.1 L217.2,71.4 L217.3,71.8 L217.4,72.2 L217.6,72.3 L217.6,72.1 L217.8,72.1 L217.8,72.2 L217.5,72.6 L217.5,72.9 L217.9,72.6 L218.0,72.7 L217.9,72.9 L218.1,73.0 L217.8,73.4 L217.9,73.5 L217.9,73.4 L218.3,73.1 L218.2,73.5 L218.4,73.5 L218.3,73.9 L218.2,73.9 L218.4,74.3 L218.9,74.6 L219.1,74.9 L218.9,75.2 L219.2,75.7 L219.7,76.1 L219.4,76.1 L220.0,76.4 L219.7,76.4 L220.3,76.9 L220.1,77.2 L220.3,77.4 L220.2,78.7 L220.0,78.5 L220.1,78.9 L220.4,79.4 L220.5,80.9 L220.1,82.5 L219.2,83.8 L217.3,85.8 L216.4,86.8 L216.4,87.0 L216.1,87.2 L215.9,87.2 L215.8,87.8 L215.8,88.0 L215.9,88.0 L215.6,88.5 L215.5,89.1 L215.3,89.0 L215.4,89.8 L215.2,89.6 L215.3,89.9 L215.1,89.7 L215.1,90.9 L214.3,92.1 L214.1,92.6 L214.2,93.4 L213.7,94.4 L213.6,94.8 L214.3,95.7 L214.8,96.0 L216.0,96.2 L216.9,96.4 L217.5,97.1 L218.3,98.3 L218.4,100.0 L218.1,102.9 L217.7,103.8 L216.9,104.9 L215.7,105.7 L214.4,106.9 L212.4,111.1 L213.5,118.8 L210.1,123.6 L206.8,125.2 L206.0,126.0 L205.7,126.2 L205.6,126.4 L205.4,126.5 L204.4,127.3 L203.2,128.1 L201.9,128.7 L199.7,129.3 L196.4,129.7 L195.3,129.7 L193.8,129.4 L191.9,128.8 L191.1,128.2 L190.8,127.9 L190.2,126.5 L189.9,124.2 L190.0,123.1 L190.2,122.0 L190.8,120.9 L191.5,120.0 L192.3,119.2 L193.1,119.0 L194.4,119.2 L194.6,119.1 L195.2,117.7 L195.5,116.2 L195.2,115.0 L194.6,113.5 L191.5,108.4 L189.8,105.0 L189.1,101.0 L189.0,99.7 L189.2,98.5 L190.0,96.7 L190.6,95.6 L193.0,92.6 L193.5,90.7 L194.1,89.2 L194.4,87.9 L194.7,87.1 L195.8,85.4 L196.2,84.9 L197.7,83.8 L199.0,81.6 L199.9,77.1 L200.4,76.2 L201.3,75.1 L201.5,74.5 L201.4,73.5 L201.6,72.7 L202.3,71.2 L203.1,70.0 L205.6,67.2 L207.8,65.9 L209.4,64.3 L210.5,63.7 L210.4,63.5 L210.7,63.4 L211.1,60.6 L211.2,59.3 L211.3,58.7 L211.8,58.1 L212.1,57.2 L212.2,55.6 L212.5,55.0 L213.4,54.2 L214.0,53.4 L214.5,52.1 L214.7,51.8 L213.6,51.2 L174.6,59.9 L137.0,68.2 L108.4,74.6 L85.4,80.0 L42.0,90.3 L42.0,127.7 L42.0,146.2 L42.0,173.0 L42.2,333.9 L45.2,334.4 L51.0,334.7 L55.6,334.8 L63.1,335.3 L65.8,335.3 L70.8,335.6 L79.2,336.3 L84.6,336.4 L94.3,336.8 L100.2,337.5 L105.9,337.8 L108.5,338.3 L110.4,338.3 L111.2,338.0 L111.9,337.4 L112.3,336.7 L112.4,335.1 L113.1,334.1 L114.3,333.2 L117.1,332.5 L117.8,332.1 L118.4,331.7 L118.9,330.9 L118.8,330.4 L118.2,330.0 L115.4,330.6 L114.1,330.6 L113.8,330.4 L112.9,329.2 L111.4,327.7 L110.9,326.9 L110.5,325.9 L109.9,322.5 L109.9,320.0 L110.2,318.7 L110.0,317.8 L109.7,316.6 L108.9,315.5 L108.4,315.3 L108.4,315.0 L107.9,314.5 L107.3,313.4 L106.8,312.1 L106.5,310.9 L106.7,307.9 L106.3,305.1 L106.2,302.1 L106.4,301.2 L106.9,300.1 L107.3,297.9 L107.6,297.3 L108.5,296.0 L109.9,295.1 L110.9,294.6 L111.8,294.4 L112.4,292.0 L113.1,290.4 L114.9,284.0 L117.1,279.3 L118.0,276.7 L118.7,275.3 L120.1,272.7 L121.5,270.6 L122.7,269.2 L123.4,268.5 L124.7,267.8 L125.3,267.6 L128.0,266.2 L129.5,265.7 L131.0,265.4 L132.2,265.3 L133.2,265.3 L134.2,265.4 L135.2,265.7 L135.9,266.2 L136.4,266.7 L136.8,267.3 L137.5,268.1 L138.4,268.5 L141.3,268.8 L143.0,269.2 L146.1,270.5 L146.9,271.1 L148.1,272.3 L149.3,273.9 L150.2,275.8 L150.3,276.8 L150.3,278.8 L151.2,279.3 L152.1,279.3 L153.1,279.1 L155.6,278.1 L159.3,277.1 L163.7,277.7 L164.3,277.7 L165.0,277.6 L165.3,277.1 L164.6,275.9 L163.6,274.7 L164.1,273.4 L164.5,272.8 L164.7,272.7 L165.1,272.7 L167.5,273.5 L168.7,273.5 L169.4,273.3 L169.9,272.9 L170.2,272.3 L170.4,270.6 L170.3,268.9 L170.6,267.7 L170.6,266.2 L171.1,265.1 L171.1,264.5 L170.7,263.4 L170.1,262.6 L168.8,261.7 L168.3,260.9 L168.7,259.3 L169.0,258.9 L170.0,258.6 L170.5,259.5 L172.0,260.8 L172.4,260.9 L173.6,257.6 L173.2,257.4 L173.1,257.1 L173.5,257.0 L174.4,257.2 L174.7,257.0 L174.9,256.5 L175.6,256.4 L176.6,256.1 L177.3,255.7 L179.2,255.7 L180.7,255.9 L182.4,256.5 L183.0,256.8 L183.8,257.3 L183.5,259.8 L183.8,259.4 L184.2,259.2 L185.4,259.0 L185.9,258.7 L186.7,258.5 L187.8,258.0 L194.7,259.0 L196.1,259.5 L198.7,261.3 L199.8,262.7 L201.2,266.7 L200.8,270.1 L203.1,269.6 L204.5,269.6 L205.8,269.8 L207.1,270.2 L209.1,271.0 L209.5,270.4 L209.9,270.0 L209.0,269.7 L208.8,269.6 L208.8,269.3 L209.3,268.5 L209.2,267.8 L208.8,267.5 L208.0,267.2 L204.4,265.0 L202.9,264.0 L202.2,262.9 L200.6,261.6 L198.8,259.4 L197.6,257.3 L196.8,256.1 L196.2,254.7 L195.0,252.8 L194.3,252.2 L192.4,252.0 L191.0,251.6 L187.6,250.2 L185.6,249.1 L185.2,248.7 L184.9,248.1 L185.1,247.6 L185.4,247.4 L185.6,247.4 L186.5,247.2 L187.0,246.7 L188.3,245.8 L189.6,245.4 L190.7,244.9 L191.5,244.3 L193.3,243.7 L196.5,244.1 L198.6,244.4 L202.3,245.5 L205.0,245.8 L206.0,246.1 L207.5,246.0 L210.1,245.6 L211.3,245.5 L212.9,245.9 L213.6,245.5 L214.1,245.0 L214.7,242.7 L214.3,242.3 L213.3,241.7 L213.3,241.5 L213.7,241.0 L214.1,240.8 L215.0,240.8 L215.8,241.1 L216.4,241.2 L216.9,240.9 L217.1,240.4 L217.0,240.1 L215.8,239.1 L215.6,238.6 L216.1,237.3 L216.2,236.3 L219.1,238.5 L219.3,238.8 L224.1,242.0 L226.3,243.9 L232.3,248.6 L233.8,249.1 L236.9,251.1 L239.1,252.7 L240.1,253.3 L241.2,253.7 L241.9,254.2 L244.8,254.2 L245.9,254.6 L246.0,254.7 L251.6,254.1 L252.1,254.2 L253.7,254.9 L254.4,255.3 L255.7,256.7 L258.5,259.2 L258.8,261.1 L258.1,261.7 L259.0,262.8 L259.1,263.4 L260.9,264.6 L260.9,264.8 L261.1,265.2 L263.2,265.7 L266.3,267.0 L268.6,267.6 L268.8,268.8 L269.5,269.2 L269.7,269.8 L270.6,269.9 L271.6,269.9 L272.1,269.7 L273.2,270.0 L275.3,269.9 L275.6,269.8 L276.1,269.9 L276.8,269.6 L277.3,269.6 L277.7,269.8 L278.4,270.5 L280.6,269.9 L281.3,269.4 L281.6,269.4 L283.5,270.0 L283.4,270.6 L284.6,270.4 L285.7,270.2 L288.5,270.2 L289.2,270.4 L289.6,270.3 L289.9,270.4 L290.9,270.8 L292.8,271.1 L293.5,271.3 L294.2,271.3 L294.7,271.0 L295.4,269.4 L296.0,269.2 L296.6,269.3 L297.3,269.7 L300.1,270.4 L300.1,270.5 L301.0,270.9 L302.0,270.9 L302.4,271.4 L303.3,271.8 L303.3,272.8 L304.2,273.8 L305.4,273.7 L306.3,274.2 L306.2,274.7 L306.7,275.2 L306.8,275.2 L307.0,274.8 L308.2,275.1 L308.1,275.3 L307.9,276.2 L308.6,276.5 L308.5,276.9 L308.6,277.3 L308.2,278.2 L305.0,277.3 L305.3,278.7 L304.9,278.7 L304.7,279.1 L303.9,279.7 L304.5,280.2 L305.6,280.9 L306.2,281.1 L307.6,281.5 L307.7,281.3 L308.5,281.3 L310.0,282.5 L310.5,282.7 L310.9,283.2 L310.5,283.6 L310.3,284.3 L310.5,284.6 L310.5,285.2 L309.9,286.7 L310.1,287.3 L310.0,288.1 L309.7,288.2 L309.4,288.9 L308.7,289.0 L304.6,289.2 L303.8,289.7 L303.6,290.0 L303.8,290.9 L304.4,291.4 L305.1,292.9 L305.9,292.9 L306.7,292.3 L307.9,292.1 L309.1,292.5 L309.0,293.0 L310.2,294.7 L311.3,295.2 L314.8,296.1 L315.6,296.5 L316.8,297.6 L318.3,296.5 L317.4,295.6 L317.2,295.2 L316.1,294.4 L316.1,294.3 L316.4,294.2 L317.0,293.1 L318.9,292.6 L319.6,292.6 L320.2,292.8 L319.9,293.6 L321.3,294.2 L321.9,293.7 L322.1,293.8 L322.2,293.4 L322.5,293.0 L324.6,291.8 L323.9,290.8 L326.1,290.8 L326.0,290.2 L326.9,289.9 L329.1,290.5 L329.3,290.5 L335.9,292.0 L337.5,293.3 L337.1,297.0 L337.5,297.7 L338.0,298.0 L339.1,298.0 L339.6,298.3 L340.2,298.3 L340.6,298.4 L340.6,298.7 L341.5,299.1 L341.2,299.7 L341.7,299.7 L341.8,299.9 L341.5,300.8 L341.5,301.8 L342.1,302.8 L346.8,304.4 L348.5,305.3 L349.2,305.8 L350.4,307.2 L350.4,307.7 L351.4,308.8 L351.9,310.1 L353.0,310.9 L353.3,311.2 L353.2,311.5 L353.3,311.7 L353.7,312.0 L354.9,312.6 L355.9,312.8 L356.3,313.0 L357.1,312.9 L357.5,313.1 L358.2,313.2 L358.3,313.7 L359.5,314.2 L359.9,315.6 L361.6,315.7 L361.9,316.0 L362.4,316.0 L362.9,316.2 L362.9,316.6 L364.3,317.1 L367.4,320.0 L369.0,320.5 L369.1,320.8 L369.7,321.1 L370.3,321.5 L371.4,321.7 L371.3,322.4 L370.7,323.6 L370.9,323.8 L372.1,324.8 L373.0,324.9 L378.3,327.6 L378.9,327.8 L380.7,328.2 L381.9,328.9 L382.6,329.2 L383.4,329.3 L388.0,331.4 L388.7,332.1 L389.3,332.5 L390.5,332.4 L391.0,332.8 L390.4,333.4 L390.2,333.8 L390.3,334.2 L391.9,335.1 L391.6,336.1 L391.9,337.4 L392.2,338.1 L393.3,338.8 L393.6,339.2 L394.2,339.6 L395.3,340.2 L396.2,341.0 L397.0,341.2 L399.8,341.4 L400.2,341.4 L400.5,341.2 L400.4,340.8 L399.9,340.7 L399.0,337.9 L399.2,336.9 L399.6,335.7 L399.5,334.8 L399.3,333.4 L399.8,332.8 L402.0,331.9 L416.4,333.7 L428.7,333.9 L445.5,350.2 L453.9,356.7 L456.0,355.5 L471.3,350.0 L466.1,344.5 L454.2,326.7 L446.6,317.6 L436.0,306.2 L426.1,292.8 L426.2,292.1 L426.5,291.8 L443.8,285.0 L445.1,284.2 L445.6,283.4 L445.5,282.7 L444.2,281.0 L441.5,276.7 L439.1,270.4 L439.4,261.0 L442.7,246.1 L458.4,224.5 L471.7,206.0 L449.6,201.6 L440.0,189.4 Z" fill="#bcd7df"><title>Republic of Karakalpakstan (UZ-QR)</title></path><path class="adm-path" d="M655.5,455.4 L656.5,455.6 L669.6,455.9 L681.6,456.2 L683.8,456.0 L685.7,455.4 L687.7,454.2 L688.0,453.9 L688.0,453.5 L694.2,454.5 L699.0,458.7 L702.9,463.9 L703.1,465.5 L703.4,465.8 L704.4,466.0 L708.8,466.9 L710.6,467.0 L711.0,466.9 L714.2,465.3 L718.9,463.5 L729.7,461.4 L730.6,461.6 L732.3,462.4 L734.6,464.0 L737.0,465.3 L738.0,465.7 L738.4,465.6 L743.3,464.1 L743.6,463.9 L744.8,462.8 L746.4,460.9 L747.6,459.8 L748.7,459.5 L750.4,459.4 L762.7,461.1 L763.4,461.6 L763.6,461.9 L764.3,463.3 L764.2,464.7 L763.5,466.6 L763.6,467.3 L763.8,467.6 L764.1,467.8 L765.4,468.4 L766.8,468.6 L768.1,468.6 L773.7,468.3 L774.9,468.1 L775.5,467.5 L775.6,467.2 L775.6,466.5 L775.4,465.8 L775.5,465.2 L775.8,464.8 L776.1,464.6 L776.5,464.6 L777.4,464.6 L778.4,464.7 L783.8,466.0 L787.5,467.2 L789.0,467.6 L792.2,466.8 L793.4,467.7 L793.8,467.5 L795.3,467.4 L796.7,467.1 L800.9,467.3 L802.6,466.5 L802.5,465.9 L802.3,465.2 L802.5,464.4 L803.4,462.9 L803.1,461.1 L803.0,460.8 L801.6,459.9 L801.7,459.0 L801.3,458.7 L801.7,458.1 L801.8,458.0 L801.9,457.3 L801.5,456.6 L801.0,456.2 L800.7,455.5 L800.0,454.9 L799.5,455.5 L797.8,454.4 L793.3,451.4 L791.8,450.2 L790.9,449.1 L790.6,448.1 L790.5,443.9 L790.7,443.1 L795.3,437.3 L796.4,436.2 L797.4,435.7 L800.5,434.5 L802.7,434.1 L804.1,434.1 L804.5,433.9 L804.4,432.8 L802.3,426.9 L801.2,426.5 L800.4,425.8 L785.6,423.2 L778.7,422.7 L775.6,421.8 L767.3,417.5 L767.1,416.8 L766.8,413.4 L766.9,413.0 L768.7,412.7 L769.0,412.5 L769.7,411.1 L769.8,410.2 L769.7,409.8 L767.7,407.1 L765.0,405.3 L763.8,400.8 L763.7,396.4 L763.9,395.6 L765.0,394.0 L765.1,393.6 L765.1,392.4 L763.7,390.0 L757.1,389.9 L748.9,389.2 L745.9,388.9 L744.1,385.1 L741.4,382.2 L740.1,381.0 L739.2,380.7 L736.2,382.8 L732.8,384.2 L730.9,384.3 L728.2,384.0 L726.7,383.2 L725.3,381.5 L723.5,381.4 L722.0,381.6 L720.7,382.7 L717.6,387.9 L716.7,393.2 L717.1,393.6 L717.9,393.8 L718.4,394.6 L718.2,397.1 L716.9,403.8 L715.7,405.3 L712.4,412.0 L712.6,413.1 L713.8,413.2 L715.8,412.2 L717.0,412.2 L717.3,412.7 L717.1,414.0 L716.5,414.6 L711.5,418.3 L709.1,419.1 L702.3,420.5 L701.8,420.4 L696.3,421.2 L694.6,421.0 L686.9,418.5 L684.6,417.6 L683.9,417.2 L683.6,416.9 L683.2,416.1 L682.1,414.6 L681.8,414.4 L673.9,411.5 L673.4,411.3 L672.9,411.4 L672.5,412.1 L671.0,413.6 L671.1,414.7 L670.5,421.1 L667.9,427.2 L667.4,428.0 L666.8,428.6 L666.1,428.9 L665.2,429.0 L663.8,428.7 L661.2,428.0 L659.7,427.4 L647.3,430.7 L646.6,431.1 L646.5,431.5 L647.0,432.3 L649.1,434.0 L650.5,434.9 L651.5,435.9 L651.8,436.5 L653.6,441.6 L653.8,442.3 L653.5,443.3 L652.8,445.0 L652.0,446.0 L651.1,447.6 L651.1,448.3 L651.3,449.2 L652.5,451.2 L655.5,455.4 Z" fill="#f3e4b5"><title>Samarqand Region (UZ-SA)</title></path><path class="adm-path" d="M879.8,359.1 L879.0,358.0 L878.9,357.7 L879.0,357.5 L879.2,357.3 L879.6,357.1 L880.8,357.0 L881.6,356.8 L881.9,356.6 L882.0,356.3 L881.8,356.0 L881.3,355.8 L880.5,355.6 L879.2,355.6 L878.4,355.3 L877.8,354.6 L877.7,353.6 L877.5,353.4 L877.3,353.3 L876.4,353.5 L875.7,354.0 L875.2,354.6 L874.4,355.0 L872.9,354.6 L872.6,354.4 L872.4,354.5 L872.0,354.5 L871.4,354.8 L870.8,355.4 L870.8,356.0 L870.3,356.8 L870.4,357.2 L868.2,357.9 L868.3,358.4 L869.0,358.7 L869.4,358.6 L869.5,358.4 L869.9,358.3 L870.3,358.1 L870.5,358.2 L870.9,358.1 L871.4,357.9 L871.6,358.3 L871.5,358.5 L871.8,358.7 L871.7,358.9 L871.7,359.2 L873.7,359.0 L873.9,359.1 L874.2,359.2 L874.4,359.5 L875.0,359.8 L875.5,360.3 L876.0,360.4 L875.9,360.7 L875.9,360.9 L875.6,361.6 L875.6,362.3 L876.2,363.0 L876.5,364.4 L876.1,364.9 L875.8,365.1 L874.8,365.5 L874.6,365.9 L874.6,368.3 L875.4,369.3 L876.2,370.0 L876.1,374.8 L877.7,374.8 L878.4,375.3 L878.4,375.4 L879.4,375.5 L879.5,375.2 L880.0,375.7 L880.0,375.9 L879.5,376.2 L880.2,376.2 L880.2,376.5 L880.5,376.5 L880.5,376.6 L880.7,376.6 L880.4,376.9 L880.3,378.7 L880.0,378.9 L879.9,379.4 L879.6,379.7 L878.9,379.6 L878.6,379.9 L880.7,381.1 L881.0,381.4 L881.3,382.0 L879.9,382.0 L877.8,383.5 L875.9,384.0 L874.7,383.3 L872.8,383.3 L872.6,383.0 L872.1,383.2 L870.7,383.3 L870.0,383.8 L869.1,382.8 L866.2,382.1 L864.6,380.9 L862.0,380.8 L857.1,378.2 L853.8,376.9 L850.5,383.6 L850.4,384.6 L848.4,383.0 L847.5,385.5 L846.6,388.7 L850.1,389.2 L850.0,392.8 L851.5,393.8 L845.3,398.7 L843.4,402.2 L843.2,403.5 L843.5,404.5 L843.9,405.5 L844.9,406.6 L845.4,406.6 L854.8,407.0 L861.3,406.8 L863.1,406.6 L867.1,405.9 L870.3,405.0 L880.6,403.2 L881.0,404.0 L879.9,409.5 L879.8,410.4 L882.5,409.9 L883.0,409.9 L883.4,409.7 L884.6,409.3 L889.0,408.2 L890.2,410.3 L891.1,409.9 L892.0,409.8 L893.3,409.5 L893.1,408.8 L893.5,408.8 L893.8,408.6 L893.8,408.2 L894.6,407.8 L906.0,406.5 L907.1,406.7 L907.7,406.9 L908.7,407.0 L908.8,406.9 L911.9,407.2 L913.5,407.4 L914.6,407.7 L914.9,407.6 L914.6,407.6 L914.4,407.4 L913.9,406.4 L913.0,405.8 L912.4,404.2 L912.0,404.0 L911.2,403.1 L909.2,401.5 L908.6,400.6 L908.5,398.0 L909.4,397.1 L908.8,396.6 L909.0,395.9 L908.7,395.3 L909.5,395.1 L910.0,394.4 L911.0,393.9 L911.4,393.3 L911.5,393.0 L911.3,392.5 L911.3,391.9 L910.6,391.4 L910.5,390.9 L910.5,390.3 L909.4,389.8 L909.3,389.7 L909.3,389.3 L909.4,389.1 L909.9,389.0 L910.3,388.9 L910.8,388.7 L910.8,388.5 L910.7,388.2 L910.1,387.9 L909.3,388.4 L908.4,388.5 L907.9,388.4 L908.1,388.2 L908.7,387.8 L909.0,387.3 L909.0,385.3 L909.1,384.9 L908.7,383.9 L909.2,383.8 L909.7,383.9 L910.3,384.5 L910.5,384.4 L910.7,384.2 L910.0,383.3 L909.2,382.9 L909.0,382.9 L908.7,383.2 L908.6,383.8 L907.8,383.9 L907.5,383.6 L907.6,383.3 L909.1,382.6 L909.5,382.3 L909.7,381.9 L909.5,381.5 L908.3,381.3 L907.1,380.3 L907.1,380.0 L907.8,379.6 L907.1,379.0 L906.1,378.8 L904.1,379.2 L902.9,379.0 L902.8,378.7 L903.9,377.8 L904.0,377.4 L903.7,377.3 L903.2,377.2 L902.3,377.5 L901.1,377.6 L900.6,377.2 L900.5,377.1 L900.5,376.9 L901.1,376.6 L901.3,376.4 L900.8,375.8 L900.5,375.5 L900.4,374.6 L900.4,374.6 L899.3,374.3 L898.5,374.4 L898.1,374.3 L897.8,374.1 L897.4,373.4 L897.5,372.6 L897.3,372.4 L897.4,372.3 L897.3,372.0 L896.8,371.4 L896.7,370.6 L895.8,369.9 L894.6,369.4 L893.4,369.2 L892.6,369.3 L892.4,369.1 L892.2,368.9 L892.4,368.7 L892.4,368.3 L892.3,367.6 L892.0,367.4 L890.9,367.3 L890.5,367.2 L889.9,366.6 L888.0,366.1 L887.6,365.5 L887.0,365.4 L886.1,365.7 L885.7,365.6 L885.5,365.2 L886.4,364.5 L886.5,364.3 L886.4,363.8 L885.9,363.7 L885.7,363.9 L885.1,364.8 L884.9,364.9 L884.3,364.9 L884.2,364.8 L884.4,364.2 L884.4,363.8 L884.8,363.5 L885.2,362.9 L885.2,362.7 L884.4,362.4 L884.1,362.1 L883.2,361.7 L883.0,361.1 L882.8,360.9 L881.4,360.6 L881.1,360.2 L880.8,360.1 L880.2,359.6 L879.8,359.1 Z" fill="#ead2d4"><title>Sirdaryo Region (UZ-SI)</title></path><path class="adm-path" d="M749.4,556.5 L749.7,556.8 L750.1,557.7 L750.2,558.7 L749.8,559.6 L749.2,560.1 L746.2,561.4 L745.9,561.6 L745.1,562.4 L744.4,563.9 L743.3,564.7 L742.2,566.0 L741.2,568.0 L740.6,570.8 L740.5,572.3 L740.9,574.0 L740.5,576.6 L740.0,582.2 L739.7,583.5 L739.8,584.9 L740.1,585.4 L742.8,587.0 L743.6,589.4 L743.6,591.1 L743.3,591.5 L743.4,592.0 L741.7,592.8 L740.0,593.8 L739.7,594.2 L739.7,595.0 L739.3,595.4 L739.4,595.7 L741.4,596.4 L741.6,597.0 L742.0,596.5 L742.9,596.1 L743.5,596.0 L744.2,596.1 L744.9,596.4 L745.2,596.7 L745.3,597.4 L745.9,598.0 L746.1,598.5 L746.6,598.7 L747.7,598.8 L748.1,599.1 L748.3,599.1 L749.0,598.7 L749.4,598.2 L749.3,597.9 L750.7,596.9 L751.9,596.9 L753.4,596.4 L754.1,597.0 L754.6,597.1 L755.8,596.6 L757.9,596.4 L759.4,596.9 L760.6,596.9 L760.9,597.1 L761.2,597.1 L762.7,596.2 L764.4,595.8 L765.4,595.1 L766.0,594.9 L767.0,594.3 L767.6,594.1 L767.8,594.1 L768.6,594.4 L769.1,594.7 L769.4,594.7 L769.7,594.9 L770.5,595.0 L771.0,595.5 L771.6,595.6 L771.8,595.8 L772.6,595.7 L773.2,595.5 L774.1,595.3 L775.0,595.8 L775.7,596.7 L776.9,597.4 L776.9,597.9 L777.5,598.3 L777.9,598.4 L778.5,598.8 L778.6,599.7 L778.4,600.4 L778.4,601.3 L779.2,601.8 L779.4,602.4 L779.7,602.6 L780.4,602.7 L780.6,603.0 L781.9,603.4 L784.0,603.2 L784.7,603.6 L785.9,604.4 L787.4,608.0 L788.2,608.4 L789.0,608.5 L791.3,607.7 L792.7,607.4 L793.7,607.0 L795.0,606.6 L796.1,606.0 L797.7,606.1 L801.1,604.8 L801.9,604.2 L802.5,603.3 L803.8,602.7 L804.4,602.7 L805.4,602.9 L805.9,603.3 L806.7,604.1 L808.1,605.8 L808.6,606.0 L809.1,606.1 L810.0,604.9 L810.7,604.8 L811.5,604.8 L813.0,605.7 L813.7,605.9 L816.8,606.0 L819.0,606.0 L821.2,606.8 L822.1,607.6 L822.5,608.2 L823.3,608.8 L823.4,608.0 L823.7,607.2 L823.9,607.1 L825.1,604.2 L824.8,603.1 L825.0,602.9 L824.9,602.7 L825.2,602.6 L825.6,602.2 L825.9,601.7 L825.8,601.4 L826.1,601.2 L826.6,600.5 L826.8,600.1 L826.9,598.7 L826.2,597.4 L825.5,596.8 L825.1,595.6 L824.1,594.8 L824.1,594.2 L824.2,594.0 L823.6,593.2 L823.4,592.8 L824.5,591.8 L824.7,589.6 L825.1,588.7 L825.5,588.3 L826.0,587.3 L826.3,586.9 L826.5,585.8 L826.2,585.1 L826.1,584.4 L826.6,583.8 L826.9,582.8 L827.6,582.1 L827.6,581.8 L828.2,581.3 L828.3,581.0 L828.1,581.0 L827.6,579.9 L828.6,579.5 L828.6,578.7 L828.3,578.3 L829.3,578.3 L832.4,579.2 L834.9,575.9 L835.2,575.8 L836.2,575.5 L836.8,575.2 L837.0,575.0 L838.2,573.5 L838.1,572.8 L838.6,572.6 L838.9,571.9 L839.9,571.2 L841.5,568.2 L842.1,567.7 L842.7,567.0 L842.9,566.6 L842.9,565.6 L844.3,564.0 L845.6,561.7 L845.7,559.3 L846.0,558.8 L846.4,558.6 L847.5,558.8 L848.2,558.6 L849.0,558.7 L849.8,558.5 L850.0,558.6 L850.2,558.7 L850.8,558.6 L852.3,558.7 L854.3,559.7 L854.8,560.2 L854.9,560.9 L855.8,560.1 L856.2,559.1 L855.7,558.8 L855.6,558.4 L856.0,558.0 L856.1,557.8 L856.0,557.5 L856.2,557.2 L855.9,556.6 L856.4,556.2 L856.4,556.0 L856.2,555.6 L856.4,555.4 L856.3,555.0 L856.5,554.3 L857.2,553.6 L857.3,553.1 L857.8,552.3 L858.3,552.1 L858.7,552.1 L858.9,551.7 L859.4,551.4 L859.6,550.9 L860.1,550.5 L860.1,550.3 L860.4,550.1 L861.1,550.0 L861.3,549.7 L861.6,549.7 L861.8,549.5 L862.1,548.9 L862.4,548.6 L862.1,548.1 L862.2,547.7 L862.6,547.3 L862.3,546.9 L862.4,546.4 L863.1,545.4 L863.0,544.7 L863.5,544.8 L863.6,544.7 L863.5,544.0 L863.8,543.8 L863.6,543.4 L864.1,542.8 L864.2,542.3 L864.0,541.5 L864.2,541.2 L864.1,541.1 L863.0,540.7 L862.6,540.8 L862.5,539.9 L862.2,539.4 L862.1,538.2 L861.9,538.0 L861.3,538.4 L860.5,538.5 L860.2,538.5 L859.5,538.7 L859.2,538.7 L858.5,538.3 L858.5,537.8 L858.4,537.6 L857.6,537.4 L857.4,537.3 L856.6,534.7 L857.0,533.4 L856.8,533.2 L856.5,532.8 L856.1,532.7 L855.2,533.0 L854.8,533.0 L854.3,532.8 L854.3,533.1 L853.9,533.1 L852.8,532.9 L852.4,532.5 L852.4,532.1 L852.2,531.8 L851.5,532.0 L851.3,531.8 L851.5,531.4 L851.1,531.0 L851.1,530.7 L850.1,530.2 L849.6,530.0 L849.4,529.8 L848.6,529.9 L848.3,529.8 L847.8,529.4 L847.5,528.4 L847.0,527.9 L846.7,527.8 L846.4,527.0 L844.7,527.6 L843.5,528.4 L843.3,528.3 L842.7,528.5 L842.6,528.4 L841.5,528.2 L841.7,527.1 L842.0,526.4 L842.8,526.0 L845.1,523.2 L844.6,522.2 L843.8,521.6 L844.3,520.8 L844.1,520.1 L843.9,519.9 L843.4,520.0 L843.0,520.0 L843.0,519.6 L843.1,519.3 L843.0,518.9 L842.1,518.9 L841.9,517.8 L841.4,517.2 L841.4,516.4 L841.7,516.0 L841.9,515.6 L842.5,515.3 L842.6,515.0 L842.5,514.2 L842.8,512.4 L843.4,511.9 L843.5,511.7 L842.8,511.0 L842.7,510.4 L842.5,510.1 L842.7,509.6 L842.2,509.0 L842.3,508.5 L841.6,508.0 L841.6,507.7 L841.1,507.0 L841.2,506.8 L841.4,506.6 L842.9,506.0 L844.2,505.9 L845.9,505.7 L845.4,504.4 L844.1,503.1 L844.0,502.4 L843.4,501.7 L842.5,501.6 L842.5,501.4 L842.1,501.4 L841.8,501.3 L842.0,501.0 L841.9,500.7 L842.0,500.0 L843.7,500.3 L844.0,500.2 L845.0,500.0 L845.6,500.1 L846.2,499.9 L846.1,499.5 L846.2,499.4 L847.6,499.4 L848.1,499.2 L848.7,499.2 L848.8,498.6 L849.1,498.2 L849.8,497.7 L850.7,497.5 L850.7,496.8 L849.7,496.3 L849.3,495.9 L849.4,495.5 L849.2,495.2 L849.3,495.0 L850.3,494.7 L850.4,493.6 L851.1,493.4 L851.1,493.2 L850.8,492.9 L850.4,492.0 L849.9,491.9 L848.8,491.4 L847.9,491.3 L847.5,491.2 L847.3,491.0 L846.7,490.6 L846.4,490.6 L846.3,490.4 L846.3,490.0 L846.6,489.6 L846.6,489.4 L846.3,489.2 L846.0,488.1 L845.3,487.7 L845.2,487.3 L845.0,487.0 L844.3,487.0 L844.0,486.9 L843.6,486.5 L843.1,486.5 L842.6,486.2 L842.3,486.4 L841.9,486.3 L841.8,486.6 L841.4,486.8 L840.5,486.9 L839.2,487.3 L838.7,487.0 L837.4,486.7 L836.9,486.3 L836.9,486.1 L836.7,485.8 L836.4,485.7 L836.1,485.8 L835.6,486.3 L835.2,486.4 L834.4,486.4 L833.8,486.5 L833.4,486.4 L832.4,486.4 L832.2,486.2 L831.0,486.8 L830.4,486.6 L830.1,486.7 L830.0,486.9 L829.6,487.1 L829.3,487.6 L828.7,487.9 L828.0,487.7 L827.0,487.3 L826.4,487.3 L826.2,487.1 L825.9,487.2 L825.5,486.9 L825.1,487.0 L824.8,487.2 L823.8,487.2 L822.0,486.9 L821.3,487.6 L820.8,487.9 L820.2,487.6 L819.3,487.9 L819.0,487.9 L818.5,487.7 L818.1,487.9 L817.7,487.9 L817.4,487.8 L817.1,487.4 L817.0,487.1 L815.8,488.0 L815.2,488.4 L814.4,488.6 L813.1,488.8 L808.7,488.9 L807.5,489.2 L806.7,489.5 L805.8,490.1 L805.1,491.0 L805.0,491.5 L805.8,495.0 L807.3,497.4 L807.8,497.9 L808.0,498.5 L808.2,503.2 L808.1,503.6 L806.3,508.0 L805.9,508.0 L805.5,507.8 L804.2,506.6 L803.5,506.2 L802.1,505.8 L800.0,505.8 L798.4,506.1 L797.8,506.5 L796.9,507.2 L795.7,508.7 L794.0,511.2 L781.3,521.2 L781.0,521.9 L780.3,525.0 L780.0,526.7 L779.5,528.3 L778.8,529.2 L775.4,532.0 L772.8,533.4 L767.7,535.5 L751.1,549.2 L750.5,550.6 L749.0,555.5 L749.4,556.5 Z" fill="#d7d7ef"><title>Surxondaryo Region (UZ-SU)</title></path><path class="adm-path" d="M911.7,337.8 L911.8,337.7 L912.4,337.6 L912.9,337.2 L913.0,337.0 L913.4,336.8 L913.3,337.2 L913.4,338.1 L914.5,338.9 L914.7,339.4 L914.5,339.8 L915.3,340.8 L915.2,341.1 L915.9,341.5 L916.0,341.3 L915.9,341.1 L916.1,341.1 L916.0,340.9 L916.0,340.8 L916.1,340.8 L916.0,340.7 L916.2,340.7 L916.1,340.6 L916.4,340.5 L916.5,340.1 L916.9,339.8 L917.0,339.5 L917.9,339.0 L917.9,338.7 L918.0,338.7 L918.1,339.1 L917.1,340.2 L917.3,340.5 L916.2,341.8 L916.3,341.9 L917.0,341.9 L917.1,342.3 L916.8,342.5 L916.1,342.7 L915.6,343.4 L916.5,343.3 L916.7,343.0 L917.0,342.9 L919.2,342.8 L919.0,343.4 L918.6,343.7 L919.0,344.0 L919.3,344.2 L919.5,344.1 L920.9,344.1 L921.0,343.2 L920.6,342.7 L921.1,342.4 L922.3,341.9 L923.2,341.6 L924.3,341.2 L924.9,340.5 L925.0,340.8 L925.3,340.6 L925.5,340.6 L925.6,340.5 L925.9,340.5 L925.8,340.6 L926.3,340.3 L926.6,340.5 L926.8,340.5 L926.9,340.1 L927.4,339.6 L927.8,339.3 L928.1,339.3 L928.4,339.1 L928.5,339.1 L928.4,339.3 L929.0,339.3 L929.3,339.6 L929.7,339.4 L929.7,339.0 L929.1,338.6 L929.9,338.0 L930.0,337.8 L929.5,337.8 L928.5,337.0 L928.3,336.6 L928.6,336.4 L928.6,336.2 L928.4,336.2 L927.9,335.7 L929.0,335.2 L928.9,335.1 L928.5,335.2 L928.5,335.4 L927.7,335.5 L927.5,335.2 L926.8,335.1 L926.9,334.7 L928.6,333.5 L928.8,333.2 L928.9,332.8 L929.3,332.9 L929.7,332.8 L929.8,333.0 L930.7,332.6 L930.1,331.9 L929.8,331.9 L929.9,331.5 L930.2,331.4 L930.2,331.2 L930.5,331.1 L930.3,330.9 L930.0,331.1 L929.9,331.1 L929.8,331.2 L929.6,331.1 L928.5,331.5 L927.8,331.4 L927.3,331.8 L926.9,331.9 L926.4,331.8 L925.2,330.9 L924.7,330.0 L922.5,330.0 L921.0,329.1 L919.5,329.0 L919.1,329.1 L917.9,329.8 L917.6,329.8 L917.6,330.0 L914.8,331.8 L914.6,332.2 L914.4,333.4 L914.2,333.5 L914.2,333.7 L913.9,333.7 L913.9,334.2 L913.4,334.6 L913.5,335.0 L913.5,335.2 L912.8,335.9 L912.8,336.0 L912.4,336.3 L912.6,336.6 L912.5,336.9 L912.4,336.9 L912.2,337.1 L912.0,337.5 L911.8,337.5 L911.7,337.8 Z M917.8,339.7 L918.3,339.3 L919.7,339.2 L924.3,339.3 L924.9,339.7 L924.7,339.7 L924.3,340.0 L923.6,340.3 L922.6,340.9 L922.1,341.0 L921.7,341.2 L921.0,340.7 L919.9,341.1 L919.7,339.8 L919.0,339.8 L918.4,340.6 L917.8,339.7 Z M932.0,328.9 L932.0,329.0 L932.4,329.0 L932.8,329.1 L934.1,328.8 L934.8,328.5 L934.9,328.4 L934.7,328.4 L934.4,328.3 L935.0,327.9 L934.9,327.9 L934.4,328.1 L934.3,328.3 L933.8,328.6 L933.0,328.4 L932.7,328.5 L932.9,328.7 L932.5,328.9 L932.4,328.7 L932.5,328.6 L932.5,328.5 L932.1,328.5 L932.3,328.7 L932.0,328.9 Z" fill="#cfe2f3"><title>Tashkent (UZ-TK)</title></path><path class="adm-path" d="M1002.7,329.1 L1002.3,329.0 L1001.3,328.4 L1001.1,328.3 L1001.1,327.8 L1000.7,327.1 L1000.1,326.8 L999.9,326.7 L999.6,326.4 L999.2,326.3 L999.0,325.8 L997.7,325.3 L997.5,325.1 L997.2,324.9 L996.9,324.3 L996.2,324.2 L995.9,324.4 L995.2,324.5 L994.6,323.8 L994.6,323.4 L994.0,322.8 L993.0,322.8 L992.4,322.5 L992.3,322.3 L992.1,322.3 L991.5,322.3 L991.2,321.8 L990.5,321.6 L990.0,320.9 L989.7,320.9 L989.0,321.3 L988.2,321.5 L988.0,322.1 L987.6,322.4 L986.7,322.6 L985.9,322.9 L985.1,322.8 L984.5,322.6 L984.3,322.3 L983.9,322.0 L982.8,321.8 L981.6,321.3 L981.1,321.3 L981.5,320.7 L981.9,320.5 L982.1,319.5 L982.4,319.3 L982.1,318.8 L981.8,318.5 L982.4,318.2 L982.6,317.7 L983.7,317.4 L983.8,317.0 L984.1,316.6 L984.2,316.0 L983.7,315.4 L983.8,315.2 L983.8,314.9 L984.5,314.9 L985.2,314.8 L985.9,314.6 L986.9,314.9 L987.4,315.2 L988.1,314.8 L988.4,314.3 L989.3,314.2 L989.9,313.6 L991.3,313.2 L992.6,313.1 L993.1,312.8 L994.2,312.5 L994.8,311.9 L994.9,311.6 L995.5,310.8 L996.2,310.1 L997.1,309.7 L997.7,309.7 L997.8,309.5 L998.8,309.0 L999.7,308.9 L1000.2,308.3 L1000.7,307.9 L1000.9,307.7 L1001.5,307.6 L1002.8,307.7 L1003.3,306.8 L1003.5,306.6 L1003.4,306.2 L1003.6,305.9 L1003.4,305.7 L1003.6,305.0 L1003.6,304.3 L1004.0,303.7 L1004.1,303.4 L1004.9,302.5 L1005.4,302.5 L1005.9,302.3 L1006.7,301.9 L1007.1,301.9 L1007.3,301.7 L1007.6,301.7 L1008.3,301.1 L1009.3,301.2 L1009.6,301.1 L1009.5,300.8 L1009.5,300.1 L1009.9,299.0 L1010.6,298.9 L1011.0,299.0 L1011.5,299.0 L1011.6,298.9 L1012.1,298.0 L1012.3,297.9 L1012.2,297.6 L1012.7,297.5 L1012.9,297.0 L1013.3,296.8 L1013.8,296.2 L1013.8,296.0 L1013.7,295.7 L1014.0,295.3 L1014.5,295.2 L1014.9,294.9 L1015.2,294.9 L1015.5,294.7 L1015.9,294.8 L1016.8,294.5 L1017.2,294.4 L1018.3,294.4 L1018.4,294.6 L1018.9,294.9 L1019.8,294.9 L1020.1,294.6 L1020.1,293.4 L1020.7,293.4 L1021.2,293.9 L1021.6,294.0 L1021.9,294.0 L1022.3,293.9 L1023.4,294.4 L1024.0,294.0 L1024.7,294.0 L1025.2,294.2 L1025.9,293.6 L1026.0,293.2 L1026.5,293.0 L1026.4,292.6 L1026.6,292.4 L1026.6,292.1 L1026.4,292.0 L1026.5,291.6 L1026.3,291.4 L1026.2,290.7 L1026.4,289.9 L1025.9,289.7 L1025.4,289.2 L1025.7,288.8 L1025.7,288.3 L1026.1,288.1 L1026.0,287.9 L1026.9,287.4 L1026.9,287.2 L1026.7,286.9 L1026.6,286.5 L1027.0,286.3 L1027.0,286.0 L1027.3,285.6 L1028.2,286.1 L1028.6,286.0 L1028.8,285.7 L1029.1,285.8 L1029.3,286.0 L1029.3,286.2 L1029.6,286.4 L1030.3,286.5 L1030.5,286.4 L1031.5,286.9 L1032.4,287.1 L1033.6,287.1 L1034.8,287.0 L1035.7,287.1 L1036.3,286.4 L1036.3,286.2 L1036.9,285.9 L1037.1,285.7 L1037.0,285.5 L1036.6,285.4 L1037.2,285.1 L1037.8,285.1 L1037.9,284.9 L1038.1,284.7 L1038.5,284.9 L1038.9,284.9 L1039.3,284.4 L1039.2,284.2 L1039.5,283.8 L1039.9,283.7 L1039.9,283.5 L1040.7,283.5 L1041.2,283.1 L1041.8,282.9 L1042.8,282.9 L1043.1,281.7 L1043.3,281.5 L1043.7,281.7 L1044.0,281.7 L1044.8,281.4 L1045.2,281.0 L1045.5,280.3 L1046.3,280.5 L1047.1,279.9 L1047.8,279.6 L1048.3,279.8 L1049.1,279.6 L1049.4,280.0 L1050.1,280.1 L1050.6,280.1 L1051.0,279.9 L1051.2,279.6 L1050.9,279.5 L1050.8,279.3 L1051.9,279.0 L1052.6,278.2 L1053.0,278.2 L1053.3,278.0 L1053.4,277.7 L1053.1,277.5 L1052.8,277.1 L1053.2,277.0 L1053.3,276.6 L1054.0,276.1 L1053.8,275.9 L1053.9,275.5 L1052.8,275.2 L1052.8,275.0 L1052.5,274.6 L1052.4,274.1 L1052.0,274.1 L1051.7,274.0 L1051.2,274.3 L1050.6,274.4 L1049.9,274.2 L1049.8,274.1 L1050.0,273.4 L1049.5,273.0 L1049.0,273.2 L1048.9,273.2 L1048.0,272.5 L1047.7,272.5 L1047.5,272.4 L1047.2,272.0 L1046.3,271.7 L1046.0,271.4 L1045.5,271.1 L1045.5,270.8 L1045.0,270.5 L1044.4,270.4 L1044.3,270.7 L1043.7,271.0 L1043.3,271.0 L1042.3,270.4 L1041.6,270.3 L1041.3,270.4 L1040.7,270.0 L1040.4,269.6 L1040.1,269.6 L1039.5,269.9 L1038.8,269.9 L1038.9,269.6 L1038.6,269.8 L1038.1,269.7 L1037.9,269.8 L1037.6,270.0 L1037.4,270.5 L1036.8,270.7 L1036.7,271.0 L1036.5,271.2 L1036.7,271.6 L1036.5,271.6 L1036.5,271.9 L1036.2,272.2 L1035.9,272.2 L1035.4,272.4 L1035.2,272.3 L1033.7,272.2 L1032.6,271.6 L1032.4,271.7 L1031.9,272.5 L1031.5,272.7 L1031.3,273.1 L1031.3,273.4 L1031.0,273.5 L1030.6,273.4 L1030.5,273.5 L1030.2,274.1 L1029.7,274.2 L1029.2,274.5 L1028.8,274.6 L1028.8,275.0 L1028.6,275.1 L1028.5,275.2 L1027.9,275.1 L1027.3,275.1 L1026.6,275.4 L1026.2,276.1 L1025.3,276.3 L1025.0,276.2 L1024.7,275.9 L1024.3,275.9 L1024.1,275.7 L1022.5,275.3 L1022.2,275.5 L1021.0,275.8 L1020.8,276.3 L1020.4,276.4 L1019.7,276.3 L1018.9,276.9 L1018.9,277.1 L1019.0,277.3 L1019.9,277.5 L1020.0,277.8 L1019.8,277.9 L1019.6,278.2 L1019.2,278.1 L1018.8,278.2 L1018.0,278.7 L1017.9,279.0 L1018.0,279.4 L1017.3,279.7 L1017.3,280.0 L1016.8,280.3 L1016.8,280.5 L1016.0,280.7 L1015.5,281.1 L1014.9,282.6 L1014.9,283.3 L1014.1,284.0 L1014.0,284.4 L1013.7,284.6 L1013.4,285.1 L1013.1,286.4 L1012.2,287.5 L1012.4,287.8 L1012.0,288.1 L1011.2,288.2 L1010.5,288.4 L1010.1,288.7 L1009.2,288.5 L1008.8,288.5 L1008.1,287.8 L1007.0,287.6 L1006.3,286.8 L1006.9,286.3 L1006.8,285.8 L1006.9,285.7 L1006.5,285.3 L1006.4,284.7 L1006.1,284.3 L1005.0,283.5 L1004.2,283.7 L1004.0,283.6 L1003.9,283.3 L1003.5,283.2 L1003.1,282.6 L1002.7,282.5 L1002.5,282.2 L1001.6,281.9 L1001.5,281.9 L1001.4,282.4 L1001.0,282.7 L1000.9,282.9 L1000.7,283.0 L1000.3,283.5 L1000.0,283.5 L999.2,283.1 L999.0,283.2 L997.9,283.6 L997.5,284.0 L997.2,284.0 L997.1,284.2 L996.5,284.6 L995.9,284.6 L995.6,284.4 L994.7,284.6 L994.6,284.9 L994.0,285.3 L993.5,285.3 L993.2,285.8 L991.9,286.0 L991.9,286.3 L991.8,286.4 L991.3,286.5 L991.2,286.6 L991.3,287.3 L991.9,287.7 L992.0,287.9 L991.8,289.3 L992.1,290.0 L992.2,290.2 L992.1,290.8 L991.7,290.9 L991.7,291.1 L991.0,291.1 L990.9,291.3 L990.4,291.3 L990.1,291.5 L989.2,291.6 L989.0,291.9 L988.6,292.0 L988.1,292.3 L987.7,292.3 L987.2,292.2 L987.1,292.5 L986.7,292.6 L986.2,292.9 L985.9,292.9 L985.8,293.2 L985.0,293.5 L985.0,293.7 L984.7,293.9 L984.8,294.2 L985.1,294.4 L985.0,294.6 L984.5,294.9 L984.3,294.9 L984.1,295.3 L983.8,295.5 L983.0,295.4 L982.9,295.5 L982.8,296.4 L983.0,296.6 L982.2,296.9 L981.9,296.9 L981.9,297.6 L982.1,298.1 L981.6,298.7 L981.2,298.7 L980.7,299.1 L980.4,299.1 L980.1,299.8 L979.6,300.0 L979.3,299.6 L978.9,299.5 L977.9,299.7 L977.7,299.9 L976.7,299.9 L976.3,300.6 L976.2,300.9 L975.8,301.0 L975.5,301.5 L975.1,301.6 L975.0,301.8 L974.4,302.1 L973.7,302.1 L973.3,302.4 L973.3,302.8 L973.2,303.2 L973.3,303.6 L973.2,303.6 L972.5,303.7 L971.8,303.4 L971.3,303.4 L971.3,302.5 L970.3,302.5 L970.4,302.8 L970.4,303.0 L968.2,304.0 L968.1,304.8 L967.1,305.7 L967.3,306.3 L967.1,306.8 L966.2,307.2 L965.9,307.4 L964.9,307.3 L964.7,307.4 L964.7,307.8 L964.9,308.0 L964.3,308.2 L963.8,308.2 L963.4,308.4 L963.0,308.4 L962.9,308.6 L962.6,308.5 L962.0,308.6 L961.6,308.4 L961.0,308.3 L960.6,307.9 L959.8,307.6 L959.3,307.7 L957.5,308.4 L956.5,308.5 L955.8,309.0 L955.3,309.0 L955.0,309.2 L954.3,309.1 L953.9,309.2 L953.1,309.0 L952.9,309.1 L952.5,309.1 L951.8,309.5 L951.7,309.8 L951.5,309.9 L951.2,309.9 L951.1,310.1 L951.1,310.5 L950.9,310.6 L950.4,310.5 L949.8,310.8 L949.5,310.8 L948.8,310.5 L948.0,311.1 L947.7,311.0 L947.1,311.1 L946.0,311.2 L945.5,311.5 L944.5,311.5 L944.2,312.0 L944.1,312.4 L943.3,312.6 L941.9,313.7 L941.5,314.5 L941.1,314.7 L941.0,315.2 L940.8,315.4 L940.7,315.7 L940.6,315.9 L940.2,316.0 L940.1,316.2 L939.4,316.4 L939.3,316.7 L939.4,317.1 L940.1,317.5 L940.1,317.7 L938.6,318.1 L936.8,319.2 L935.5,318.9 L935.1,318.3 L934.7,318.2 L934.2,317.7 L933.9,317.7 L933.8,317.9 L932.9,318.3 L932.0,319.6 L930.6,320.7 L930.0,321.8 L930.2,322.1 L931.8,322.4 L932.4,322.8 L932.7,323.1 L933.1,323.0 L933.8,323.1 L934.0,323.9 L933.9,324.3 L934.2,324.5 L933.7,324.7 L933.5,324.8 L933.4,324.7 L933.2,324.7 L932.5,324.9 L931.7,324.8 L931.7,324.7 L931.3,324.7 L931.2,324.7 L931.2,324.5 L931.1,324.5 L931.1,324.5 L930.9,324.4 L931.0,324.3 L930.2,324.4 L928.5,324.6 L927.5,324.3 L927.4,324.2 L927.2,324.1 L927.2,324.4 L926.6,324.8 L926.5,325.0 L926.4,324.9 L926.3,325.0 L926.0,325.0 L926.0,325.1 L925.8,325.1 L925.9,325.2 L925.3,325.6 L925.0,325.6 L925.0,325.7 L924.4,326.2 L924.5,326.3 L924.4,326.2 L924.2,326.3 L923.9,326.4 L923.9,326.3 L923.7,326.4 L923.6,326.3 L923.6,326.5 L923.4,326.4 L923.3,326.6 L923.2,326.4 L923.1,326.5 L923.0,326.4 L923.1,326.3 L922.9,326.3 L922.9,326.1 L922.8,326.2 L922.6,326.2 L922.5,326.0 L922.0,325.6 L921.6,325.4 L921.0,325.4 L920.6,325.1 L920.2,324.5 L919.9,324.8 L919.6,324.8 L919.5,325.0 L919.2,325.0 L918.9,325.0 L918.7,324.8 L918.4,325.0 L917.6,325.1 L917.3,325.3 L917.1,325.2 L916.8,325.5 L916.5,325.3 L916.3,325.5 L916.0,325.4 L915.9,325.6 L916.0,325.7 L915.6,325.9 L915.4,326.4 L915.5,326.5 L915.3,326.5 L915.3,326.2 L915.2,326.2 L915.0,326.7 L914.7,326.6 L914.3,326.7 L914.0,326.6 L914.0,326.7 L913.7,326.8 L913.9,326.9 L913.7,327.0 L913.7,326.8 L913.5,326.9 L913.6,326.9 L913.6,327.1 L914.2,327.3 L914.8,328.6 L915.0,328.7 L915.3,328.7 L915.1,328.9 L914.8,328.9 L914.7,329.2 L914.4,329.3 L913.9,329.8 L913.7,329.8 L913.5,329.4 L912.5,329.5 L912.1,329.6 L911.8,329.5 L911.4,329.4 L911.1,329.5 L910.6,330.0 L910.3,330.8 L910.2,330.8 L910.1,331.0 L910.0,331.7 L909.6,331.8 L908.9,331.7 L909.2,331.4 L909.2,331.2 L909.5,331.0 L908.9,330.4 L908.1,330.7 L907.9,330.8 L907.6,330.8 L907.6,330.9 L907.1,331.0 L906.9,331.3 L906.4,331.2 L905.9,331.3 L905.1,331.9 L905.1,332.0 L905.3,332.1 L906.0,332.2 L906.5,332.2 L906.8,332.3 L906.2,333.8 L906.6,334.8 L906.0,335.4 L905.6,335.3 L905.4,335.6 L904.9,335.6 L904.5,336.2 L904.8,337.1 L904.8,337.3 L906.3,337.9 L906.3,338.5 L906.0,338.7 L905.3,338.8 L905.0,339.1 L905.4,339.3 L905.5,339.6 L905.4,340.1 L905.6,340.5 L905.2,340.6 L904.4,340.3 L903.7,339.6 L903.2,340.2 L903.5,340.5 L903.2,341.0 L902.8,341.5 L902.4,341.5 L900.4,342.5 L899.9,342.6 L899.3,343.1 L899.2,343.3 L898.0,343.4 L897.9,344.0 L896.9,344.5 L896.1,344.7 L895.7,344.9 L894.4,345.9 L893.9,346.1 L893.1,346.5 L892.8,346.5 L891.4,347.4 L890.9,347.6 L890.7,347.5 L890.6,347.8 L890.2,348.1 L888.2,349.7 L887.0,350.8 L885.5,351.9 L884.7,353.3 L884.7,353.4 L885.2,353.5 L886.6,355.0 L886.9,355.1 L887.3,354.5 L887.3,354.7 L887.4,354.6 L887.5,354.8 L887.6,354.7 L887.6,354.8 L887.5,354.9 L887.8,355.0 L887.5,355.2 L887.5,355.1 L887.3,355.2 L887.6,355.6 L887.4,355.7 L887.4,355.8 L887.2,355.8 L887.1,356.0 L886.9,356.1 L887.0,356.3 L886.9,356.4 L887.0,356.5 L887.0,356.6 L886.7,356.8 L886.5,356.7 L886.6,356.8 L886.4,356.8 L886.2,357.0 L886.2,357.2 L886.1,357.1 L885.7,357.4 L885.1,357.5 L884.5,357.8 L884.1,357.6 L883.9,357.7 L883.6,357.6 L882.7,357.8 L882.7,358.0 L882.2,357.9 L881.5,358.3 L880.5,359.2 L880.0,359.2 L879.8,359.1 L880.2,359.6 L880.8,360.1 L881.1,360.2 L881.4,360.6 L882.8,360.9 L883.0,361.1 L883.2,361.7 L884.1,362.1 L884.4,362.4 L885.2,362.7 L885.2,362.9 L884.8,363.5 L884.4,363.8 L884.4,364.2 L884.2,364.8 L884.3,364.9 L884.9,364.9 L885.1,364.8 L885.7,363.9 L885.9,363.7 L886.4,363.8 L886.5,364.3 L886.4,364.5 L885.5,365.2 L885.7,365.6 L886.1,365.7 L887.0,365.4 L887.6,365.5 L888.0,366.1 L889.9,366.6 L890.5,367.2 L890.9,367.3 L892.0,367.4 L892.3,367.6 L892.4,368.3 L892.4,368.7 L892.2,368.9 L892.4,369.1 L892.6,369.3 L893.4,369.2 L894.6,369.4 L895.8,369.9 L896.7,370.6 L896.8,371.4 L897.3,372.0 L897.4,372.3 L897.3,372.4 L897.5,372.6 L897.4,373.4 L897.8,374.1 L898.1,374.3 L898.5,374.4 L899.3,374.3 L900.4,374.6 L900.4,374.6 L900.5,375.5 L900.8,375.8 L901.3,376.4 L901.1,376.6 L900.5,376.9 L900.5,377.1 L900.6,377.2 L901.1,377.6 L902.3,377.5 L903.2,377.2 L903.7,377.3 L904.0,377.4 L903.9,377.8 L902.8,378.7 L902.9,379.0 L904.1,379.2 L906.1,378.8 L907.1,379.0 L907.8,379.6 L907.1,380.0 L907.1,380.3 L908.3,381.3 L909.5,381.5 L909.7,381.9 L909.5,382.3 L909.1,382.6 L907.6,383.3 L907.5,383.6 L907.8,383.9 L908.6,383.8 L908.7,383.2 L909.0,382.9 L909.2,382.9 L910.0,383.3 L910.7,384.2 L910.5,384.4 L910.3,384.5 L909.7,383.9 L909.2,383.8 L908.7,383.9 L909.1,384.9 L909.0,385.3 L909.0,387.3 L908.7,387.8 L908.1,388.2 L907.9,388.4 L908.4,388.5 L909.3,388.4 L910.1,387.9 L910.7,388.2 L910.8,388.5 L910.8,388.7 L910.3,388.9 L909.9,389.0 L909.4,389.1 L909.3,389.3 L909.3,389.7 L909.4,389.8 L910.5,390.3 L910.5,390.9 L910.6,391.4 L911.3,391.9 L911.3,392.5 L911.5,393.0 L911.4,393.3 L911.0,393.9 L910.0,394.4 L909.5,395.1 L908.7,395.3 L909.0,395.9 L908.8,396.6 L909.4,397.1 L908.5,398.0 L908.6,400.6 L909.2,401.5 L911.2,403.1 L912.0,404.0 L912.4,404.2 L913.0,405.8 L913.9,406.4 L914.4,407.4 L914.6,407.6 L914.9,407.6 L916.8,407.4 L918.9,408.0 L920.0,408.0 L921.0,408.4 L921.9,408.4 L923.5,409.2 L923.8,409.3 L923.9,408.8 L923.6,408.7 L923.4,408.5 L923.5,408.0 L923.3,407.6 L922.9,407.3 L922.8,406.7 L923.3,406.2 L923.6,405.5 L922.8,405.3 L922.6,405.1 L922.0,404.9 L921.4,404.6 L921.1,404.6 L921.0,404.2 L920.6,404.1 L920.5,403.8 L920.3,403.8 L920.1,403.5 L920.2,403.1 L920.5,402.9 L920.4,402.4 L920.0,402.1 L920.2,401.6 L920.9,402.0 L921.2,402.0 L924.0,403.0 L924.0,402.7 L924.3,402.5 L924.8,402.3 L925.0,402.3 L925.4,402.0 L925.3,401.7 L925.4,401.3 L925.7,401.0 L925.8,400.7 L926.0,400.4 L926.2,399.2 L925.9,398.6 L925.2,398.4 L924.6,398.1 L923.7,397.3 L923.8,396.8 L924.0,396.5 L924.0,396.1 L923.8,395.9 L923.4,395.8 L923.1,395.5 L922.9,395.0 L923.0,394.9 L923.4,394.7 L923.4,394.4 L923.2,394.2 L922.8,394.2 L922.4,393.9 L922.6,393.6 L922.5,393.4 L922.5,392.9 L922.4,392.8 L922.5,392.3 L922.2,391.8 L921.4,391.2 L921.7,390.7 L921.4,390.5 L921.3,390.2 L921.7,389.9 L921.5,389.6 L921.6,389.4 L922.1,389.3 L922.2,389.0 L921.1,388.6 L920.6,388.1 L920.1,387.9 L919.6,387.2 L918.9,387.1 L918.8,386.8 L918.3,386.5 L918.3,386.2 L917.7,385.9 L917.6,385.5 L918.3,385.4 L918.6,385.3 L919.1,384.9 L919.6,384.4 L920.2,384.2 L921.1,383.5 L921.9,383.7 L922.3,383.5 L922.5,383.3 L922.8,383.5 L923.9,383.4 L924.7,383.5 L925.0,383.3 L925.2,383.4 L925.4,383.3 L926.4,383.3 L926.7,382.6 L926.6,382.5 L926.7,381.0 L926.2,379.3 L926.3,378.5 L926.1,378.1 L926.1,377.5 L926.3,376.3 L926.0,376.0 L926.0,375.7 L925.8,375.7 L925.8,375.5 L925.5,375.4 L925.4,375.0 L925.8,374.9 L925.8,374.7 L926.2,374.5 L926.6,374.5 L926.6,373.7 L926.8,373.5 L927.2,373.5 L926.9,373.2 L927.6,373.2 L927.7,373.0 L927.5,372.7 L927.8,372.4 L927.5,372.0 L927.6,371.8 L927.5,371.6 L927.7,370.9 L928.5,370.5 L929.2,369.6 L929.4,369.4 L929.7,369.4 L930.6,369.4 L932.5,369.2 L934.3,369.2 L934.9,369.4 L935.4,369.7 L936.3,369.9 L936.8,370.2 L936.9,370.6 L937.7,370.5 L938.6,370.6 L938.9,370.8 L939.9,371.1 L940.6,371.7 L941.8,373.2 L941.6,373.4 L941.7,374.0 L942.0,374.3 L942.0,374.4 L942.3,374.6 L942.3,375.0 L943.0,375.5 L943.6,375.7 L943.8,375.9 L944.4,375.9 L945.1,376.9 L945.8,377.1 L946.3,377.0 L946.8,377.2 L946.9,377.6 L947.5,378.1 L947.6,378.5 L947.8,378.7 L947.8,379.4 L948.0,379.7 L949.1,379.8 L949.4,379.9 L949.7,379.9 L949.9,380.1 L950.6,380.0 L950.8,379.9 L951.4,380.0 L951.9,379.7 L952.3,379.6 L952.8,379.1 L953.3,378.9 L953.6,379.1 L953.9,378.9 L954.3,378.5 L954.1,378.0 L954.7,377.7 L954.9,377.3 L955.0,377.0 L955.3,376.7 L955.5,376.4 L956.0,376.0 L956.2,375.2 L957.7,374.8 L958.0,374.9 L958.3,375.3 L958.8,375.2 L959.0,375.3 L959.4,374.9 L961.0,374.3 L961.5,374.3 L961.9,374.1 L962.1,373.8 L962.6,373.6 L962.7,373.9 L963.0,374.0 L963.5,373.9 L963.8,374.0 L964.4,374.0 L965.4,374.2 L966.0,374.0 L966.7,373.6 L967.4,373.6 L967.5,373.2 L968.2,372.7 L968.7,372.8 L969.0,372.8 L969.8,373.0 L970.4,372.9 L971.2,372.5 L972.0,372.3 L972.3,372.2 L972.5,371.8 L973.0,371.8 L973.6,371.6 L974.4,371.7 L975.1,371.1 L975.4,370.7 L976.0,370.3 L976.4,369.9 L977.5,369.5 L977.6,369.1 L977.9,368.8 L978.2,368.2 L977.9,367.7 L978.4,367.2 L979.4,367.1 L980.0,366.6 L980.7,366.4 L981.4,366.5 L981.9,366.4 L982.1,366.6 L982.7,366.9 L983.3,367.2 L984.1,366.8 L984.4,366.8 L985.0,366.4 L985.7,366.1 L986.1,366.0 L987.6,365.4 L988.1,364.3 L988.4,364.0 L988.9,363.7 L990.0,363.6 L990.7,363.2 L991.2,363.1 L991.5,362.9 L991.7,362.9 L992.1,363.2 L993.4,362.8 L994.6,362.2 L995.1,360.9 L994.8,360.5 L994.5,359.2 L995.2,359.0 L995.6,358.6 L995.7,357.6 L995.6,357.1 L995.3,356.8 L995.1,355.9 L994.9,355.7 L994.7,355.2 L995.5,354.8 L995.8,354.4 L996.1,353.6 L996.5,353.6 L997.3,353.1 L997.8,353.1 L998.3,353.0 L999.4,352.4 L999.6,352.6 L999.9,352.9 L1000.3,353.0 L1000.9,352.7 L1001.2,352.7 L1001.8,351.5 L1002.9,350.2 L1002.9,349.8 L1002.8,349.5 L1003.6,349.2 L1004.3,349.0 L1003.0,348.2 L1002.0,347.4 L1000.7,346.8 L999.4,346.0 L999.0,345.2 L999.8,344.6 L999.8,344.2 L998.7,343.2 L998.8,342.4 L998.2,341.6 L998.2,339.9 L999.1,338.9 L999.5,338.6 L999.7,338.1 L999.6,338.1 L998.5,338.1 L997.8,337.8 L996.8,338.0 L996.2,338.0 L995.7,338.1 L995.6,336.2 L996.0,335.8 L996.1,335.1 L996.5,334.7 L997.0,335.0 L997.5,335.0 L997.8,334.6 L998.5,334.3 L998.8,333.9 L999.4,333.5 L1000.0,332.9 L1001.1,332.4 L1001.2,331.8 L1001.5,331.7 L1001.3,331.2 L1001.9,330.7 L1002.2,330.5 L1002.5,329.8 L1002.4,329.6 L1002.7,329.1 Z M911.7,337.8 L911.8,337.5 L912.0,337.5 L912.2,337.1 L912.4,336.9 L912.5,336.9 L912.6,336.6 L912.4,336.3 L912.8,336.0 L912.8,335.9 L913.5,335.2 L913.5,335.0 L913.4,334.6 L913.9,334.2 L913.9,333.7 L914.2,333.7 L914.2,333.5 L914.4,333.4 L914.6,332.2 L914.8,331.8 L917.6,330.0 L917.6,329.8 L917.9,329.8 L919.1,329.1 L919.5,329.0 L921.0,329.1 L922.5,330.0 L924.7,330.0 L925.2,330.9 L926.4,331.8 L926.9,331.9 L927.3,331.8 L927.8,331.4 L928.5,331.5 L929.6,331.1 L929.8,331.2 L929.9,331.1 L930.0,331.1 L930.3,330.9 L930.5,331.1 L930.2,331.2 L930.2,331.4 L929.9,331.5 L929.8,331.9 L930.1,331.9 L930.7,332.6 L929.8,333.0 L929.7,332.8 L929.3,332.9 L928.9,332.8 L928.8,333.2 L928.6,333.5 L926.9,334.7 L926.8,335.1 L927.5,335.2 L927.7,335.5 L928.5,335.4 L928.5,335.2 L928.9,335.1 L929.0,335.2 L927.9,335.7 L928.4,336.2 L928.6,336.2 L928.6,336.4 L928.3,336.6 L928.5,337.0 L929.5,337.8 L930.0,337.8 L929.9,338.0 L929.1,338.6 L929.7,339.0 L929.7,339.4 L929.3,339.6 L929.0,339.3 L928.4,339.3 L928.5,339.1 L928.4,339.1 L928.1,339.3 L927.8,339.3 L927.4,339.6 L926.9,340.1 L926.8,340.5 L926.6,340.5 L926.3,340.3 L925.8,340.6 L925.9,340.5 L925.6,340.5 L925.5,340.6 L925.3,340.6 L925.0,340.8 L924.9,340.5 L924.3,341.2 L923.2,341.6 L922.3,341.9 L921.1,342.4 L920.6,342.7 L921.0,343.2 L920.9,344.1 L919.5,344.1 L919.3,344.2 L919.0,344.0 L918.6,343.7 L919.0,343.4 L919.2,342.8 L917.0,342.9 L916.7,343.0 L916.5,343.3 L915.6,343.4 L916.1,342.7 L916.8,342.5 L917.1,342.3 L917.0,341.9 L916.3,341.9 L916.2,341.8 L917.3,340.5 L917.1,340.2 L918.1,339.1 L918.0,338.7 L917.9,338.7 L917.9,339.0 L917.0,339.5 L916.9,339.8 L916.5,340.1 L916.4,340.5 L916.1,340.6 L916.2,340.7 L916.0,340.7 L916.1,340.8 L916.0,340.8 L916.0,340.9 L916.1,341.1 L915.9,341.1 L916.0,341.3 L915.9,341.5 L915.2,341.1 L915.3,340.8 L914.5,339.8 L914.7,339.4 L914.5,338.9 L913.4,338.1 L913.3,337.2 L913.4,336.8 L913.0,337.0 L912.9,337.2 L912.4,337.6 L911.8,337.7 L911.7,337.8 Z M932.0,328.9 L932.3,328.7 L932.1,328.5 L932.5,328.5 L932.5,328.6 L932.4,328.7 L932.5,328.9 L932.9,328.7 L932.7,328.5 L933.0,328.4 L933.8,328.6 L934.3,328.3 L934.4,328.1 L934.9,327.9 L935.0,327.9 L934.4,328.3 L934.7,328.4 L934.9,328.4 L934.8,328.5 L934.1,328.8 L932.8,329.1 L932.4,329.0 L932.0,329.0 L932.0,328.9 Z M917.8,339.7 L918.4,340.6 L919.0,339.8 L919.7,339.8 L919.9,341.1 L921.0,340.7 L921.7,341.2 L922.1,341.0 L922.6,340.9 L923.6,340.3 L924.3,340.0 L924.7,339.7 L924.9,339.7 L924.3,339.3 L919.7,339.2 L918.3,339.3 L917.8,339.7 Z" fill="#d9eef2"><title>Tashkent Region (UZ-TO)</title></path><path class="adm-path" d="M316.8,297.6 L317.1,297.8 L317.5,298.5 L318.6,299.4 L319.8,300.1 L320.6,300.4 L322.9,300.8 L324.7,301.4 L326.4,302.8 L328.0,303.8 L328.8,304.5 L328.7,305.0 L328.3,305.7 L327.8,305.4 L326.9,305.6 L325.8,305.3 L324.6,304.6 L323.4,304.7 L322.9,304.6 L321.1,303.5 L319.5,302.9 L319.5,303.0 L317.7,302.5 L316.8,302.4 L316.7,302.2 L315.5,301.9 L315.4,302.0 L315.7,302.6 L314.0,302.3 L313.8,302.2 L313.9,302.0 L313.4,301.8 L313.3,301.7 L313.1,301.7 L312.5,302.5 L312.6,302.9 L312.4,303.1 L312.2,304.1 L311.3,304.4 L311.0,304.7 L311.8,305.9 L312.2,307.1 L313.2,308.5 L314.8,310.3 L316.8,311.8 L317.7,312.6 L318.6,313.9 L318.6,314.6 L318.9,315.2 L318.6,315.5 L319.0,316.2 L319.0,316.4 L318.7,316.5 L318.6,316.7 L318.9,317.1 L318.6,317.2 L318.0,317.0 L317.6,317.0 L316.7,317.8 L316.8,318.0 L316.5,318.2 L316.5,318.6 L315.7,319.0 L315.3,318.7 L314.1,319.5 L314.1,319.8 L313.2,322.3 L312.1,325.1 L312.3,325.7 L312.2,326.1 L312.3,326.6 L313.4,328.0 L315.8,329.2 L318.4,330.9 L322.4,333.1 L323.3,333.3 L325.5,333.5 L329.9,335.9 L334.1,338.7 L338.7,340.8 L339.8,341.0 L341.1,341.1 L344.8,340.6 L345.6,340.6 L352.5,338.4 L358.0,338.3 L361.3,338.3 L371.3,339.1 L373.4,339.4 L373.5,339.3 L373.6,339.9 L375.1,340.7 L375.4,340.7 L375.5,338.2 L375.3,338.2 L375.7,337.6 L375.7,338.1 L375.9,338.1 L376.3,337.8 L376.4,337.9 L376.3,338.5 L376.9,339.1 L377.1,338.4 L377.2,338.5 L377.4,338.6 L377.6,338.5 L377.8,338.6 L377.8,339.3 L378.9,341.2 L379.1,341.1 L379.2,340.5 L379.5,340.2 L380.2,341.4 L382.0,342.8 L389.4,345.8 L395.4,345.6 L399.2,342.7 L399.8,342.4 L399.8,342.1 L400.1,341.9 L400.3,341.5 L400.2,341.4 L399.8,341.4 L397.0,341.2 L396.2,341.0 L395.3,340.2 L394.2,339.6 L393.6,339.2 L393.3,338.8 L392.2,338.1 L391.9,337.4 L391.6,336.1 L391.9,335.1 L390.3,334.2 L390.2,333.8 L390.4,333.4 L391.0,332.8 L390.5,332.4 L389.3,332.5 L388.7,332.1 L388.0,331.4 L383.4,329.3 L382.6,329.2 L381.9,328.9 L380.7,328.2 L378.9,327.8 L378.3,327.6 L373.0,324.9 L372.1,324.8 L370.9,323.8 L370.7,323.6 L371.3,322.4 L371.4,321.7 L370.3,321.5 L369.7,321.1 L369.1,320.8 L369.0,320.5 L367.4,320.0 L364.3,317.1 L362.9,316.6 L362.9,316.2 L362.4,316.0 L361.9,316.0 L361.6,315.7 L359.9,315.6 L359.5,314.2 L358.3,313.7 L358.2,313.2 L357.5,313.1 L357.1,312.9 L356.3,313.0 L355.9,312.8 L354.9,312.6 L353.7,312.0 L353.3,311.7 L353.2,311.5 L353.3,311.2 L353.0,310.9 L351.9,310.1 L351.4,308.8 L350.4,307.7 L350.4,307.2 L349.2,305.8 L348.5,305.3 L346.8,304.4 L342.1,302.8 L341.5,301.8 L341.5,300.8 L341.8,299.9 L341.7,299.7 L341.2,299.7 L341.5,299.1 L340.6,298.7 L340.6,298.4 L340.2,298.3 L339.6,298.3 L339.1,298.0 L338.0,298.0 L337.5,297.7 L337.1,297.0 L337.5,293.3 L335.9,292.0 L329.3,290.5 L329.1,290.5 L326.9,289.9 L326.0,290.2 L326.1,290.8 L323.9,290.8 L324.6,291.8 L322.5,293.0 L322.2,293.4 L322.1,293.8 L321.9,293.7 L321.3,294.2 L319.9,293.6 L320.2,292.8 L319.6,292.6 L318.9,292.6 L317.0,293.1 L316.4,294.2 L316.1,294.3 L316.1,294.4 L317.2,295.2 L317.4,295.6 L318.3,296.5 L316.8,297.6 Z M400.4,340.8 L400.1,338.8 L400.5,337.2 L400.5,336.4 L402.1,336.1 L403.9,336.5 L405.3,336.4 L409.6,338.1 L410.2,337.9 L410.6,337.7 L411.1,337.6 L411.3,337.8 L412.2,338.1 L413.2,338.4 L413.8,338.4 L414.8,338.0 L415.0,337.9 L415.6,338.7 L415.9,339.7 L416.5,340.1 L417.2,340.5 L418.2,340.7 L420.0,340.8 L420.7,341.2 L423.6,343.8 L425.7,344.9 L427.4,345.2 L430.1,347.4 L431.5,347.7 L432.0,348.1 L432.2,348.3 L433.0,350.3 L433.1,350.9 L432.9,351.6 L433.2,351.9 L434.7,352.2 L436.7,353.1 L437.3,353.6 L437.8,354.2 L438.2,355.0 L438.2,355.7 L438.4,356.5 L439.2,356.7 L439.5,357.2 L439.2,358.9 L439.3,360.0 L439.4,360.5 L439.5,362.0 L439.7,362.6 L438.9,363.9 L439.3,365.2 L439.0,365.6 L438.8,366.2 L439.1,366.9 L439.5,367.6 L440.6,368.5 L441.5,369.6 L441.9,370.7 L442.5,371.5 L442.7,374.5 L443.2,375.4 L444.2,376.1 L444.9,376.9 L445.8,378.2 L446.7,380.0 L446.8,381.1 L447.0,381.8 L448.7,384.3 L449.3,384.8 L452.2,386.5 L452.9,387.4 L461.9,379.1 L468.5,373.5 L469.6,369.3 L469.7,367.7 L468.7,366.4 L457.1,356.5 L456.0,355.5 L453.9,356.7 L445.5,350.2 L428.7,333.9 L416.4,333.7 L402.0,331.9 L399.8,332.8 L399.3,333.4 L399.5,334.8 L399.6,335.7 L399.2,336.9 L399.0,337.9 L399.9,340.7 L400.4,340.8 Z" fill="#cbe4d8"><title>Xorazm Region (UZ-XO)</title></path></g>
+          <g><text class="map-label" x="1135.1" y="373.5">Andijan</text><text class="map-label" x="562.5" y="406.5">Bukhara</text><text class="map-label" x="1059.4" y="405.5">Fergana</text><text class="map-label" x="841.7" y="412.7">Jizzakh</text><text class="map-label" x="1050.7" y="342.5">Namangan</text><text class="map-label" x="634.8" y="371.6">Navoiy</text><text class="map-label" x="731.2" y="494.2">Qashqadaryo</text><text class="map-label" x="245.2" y="217.8">Karakalpakstan</text><text class="map-label" x="736.3" y="436.2">Samarqand</text><text class="map-label" x="887.5" y="378.3">Sirdaryo</text><text class="map-label" x="819.8" y="546.0">Surxondaryo</text><text class="map-label" x="922.9" y="336.5">Tashkent</text><text class="map-label" x="956.2" y="333.4">Tashkent</text><text class="map-label" x="370.0" y="327.5">Xorazm</text></g>
+          <g class="capital-marker"><circle cx="922.2" cy="334.8" r="4.6"></circle><text x="930.2" y="327.8">Tashkent</text></g>
+        </svg>
+        <div class="map-table-wrap">
+          <table class="compact-table">
+            <thead><tr><th>Division</th><th>Status</th><th>Capital/seat</th></tr></thead>
+            <tbody><tr><td>Republic of Karakalpakstan</td><td>Autonomous republic</td><td>Nukus</td></tr>
+<tr><td>Andijan</td><td>Region</td><td>Andijan</td></tr>
+<tr><td>Bukhara</td><td>Region</td><td>Bukhara</td></tr>
+<tr><td>Fergana</td><td>Region</td><td>Fergana</td></tr>
+<tr><td>Jizzakh</td><td>Region</td><td>Jizzakh</td></tr>
+<tr><td>Namangan</td><td>Region</td><td>Namangan</td></tr>
+<tr><td>Navoiy</td><td>Region</td><td>Navoiy</td></tr>
+<tr><td>Qashqadaryo</td><td>Region</td><td>Qarshi</td></tr>
+<tr><td>Samarqand</td><td>Region</td><td>Samarqand</td></tr>
+<tr><td>Sirdaryo</td><td>Region</td><td>Guliston</td></tr>
+<tr><td>Surxondaryo</td><td>Region</td><td>Termez</td></tr>
+<tr><td>Tashkent</td><td>Region</td><td>Tashkent</td></tr>
+<tr><td>Tashkent City</td><td>Independent city</td><td>Tashkent</td></tr>
+<tr><td>Xorazm</td><td>Region</td><td>Urgench</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      <p class="source">Source: geoBoundaries ADM1, boundary ID UZB-ADM1-4885205, boundary year represented 2017, source OpenStreetMap/Wambacher, ODbL 1.0. Administrative structure cross-checked against the Constitution of the Republic of Uzbekistan and official government sources.</p>
+    </figure>
+    </template></section>
+    </main>
+  </div>
+  <script>
+    function fallbackMarkdown(text) {
+      const escaped = text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+      return escaped.split(/\n{2,}/).map((block) => `<p>${block.replace(/\n/g, "<br>")}</p>`).join("");
+    }
+    function renderMarkdown(text) {
+      return window.marked ? marked.parse(text) : fallbackMarkdown(text);
+    }
+    function replaceFigurePlaceholders(preview, panel) {
+      const pattern = /^\{\{\s*(figure|map|image):([a-z0-9-]+)\s*\}\}$/i;
+      preview.querySelectorAll("p").forEach((paragraph) => {
+        const match = (paragraph.textContent || "").trim().match(pattern);
+        if (!match) return;
+        const key = match[1].toLowerCase() === "figure" ? match[2].toLowerCase() : `${match[1].toLowerCase()}:${match[2].toLowerCase()}`;
+        const template = panel.querySelector(`template[data-figure-template="${key}"]`) || document.querySelector(`template[data-figure-template="${key}"]`);
+        if (!template) {
+          const note = document.createElement("p");
+          note.className = "source";
+          note.textContent = `Figure not available: ${key}`;
+          paragraph.replaceWith(note);
+          return;
+        }
+        paragraph.replaceWith(template.content.cloneNode(true));
+      });
+    }
+    function slugifyHeading(text) {
+      return text.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "") || "section";
+    }
+    function enhancePreview(preview) {
+      preview.querySelectorAll("h2, h3").forEach((heading) => {
+        if (!heading.id) heading.id = slugifyHeading(heading.textContent || "");
+      });
+    }
+    function scrollToHashTarget() {
+      if (!window.location.hash) return;
+      const id = decodeURIComponent(window.location.hash.slice(1));
+      const target = document.getElementById(id);
+      if (target) target.scrollIntoView({ block: "start" });
+    }
+    function setupSectionNavigation() {
+      document.querySelectorAll("a.section-link").forEach((link) => {
+        link.addEventListener("click", () => {
+          window.setTimeout(scrollToHashTarget, 30);
+        });
+      });
+    }
+    function setupMarkdownPanels() {
+      document.querySelectorAll("[data-md-panel]").forEach((panel) => {
+        const id = panel.getAttribute("data-md-panel");
+        const preview = panel.querySelector(".markdown-preview");
+        const editor = panel.querySelector(".markdown-editor");
+        const edit = panel.querySelector("[data-md-action='edit']");
+        const save = panel.querySelector("[data-md-action='save']");
+        const cancel = panel.querySelector("[data-md-action='cancel']");
+        const source = panel.getAttribute("data-md-source");
+        const storageKey = `uzb-report-markdown:v5:${id}`;
+        const original = editor.value;
+        const stored = localStorage.getItem(storageKey);
+        if (stored !== null && (!source || window.location.protocol === "file:")) editor.value = stored;
+        const showPreview = () => {
+          preview.innerHTML = renderMarkdown(editor.value);
+          replaceFigurePlaceholders(preview, panel);
+          enhancePreview(preview);
+          setupCharts();
+        };
+        const saveMarkdown = async () => {
+          if (source && window.location.protocol.startsWith("http")) {
+            const response = await fetch("/api/save-section", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ source, markdown: editor.value })
+            });
+            if (!response.ok) {
+              const message = await response.text();
+              throw new Error(message || `Save failed with ${response.status}`);
+            }
+            localStorage.removeItem(storageKey);
+          } else {
+            localStorage.setItem(storageKey, editor.value);
+            if (source) {
+              window.alert("This edit was saved only as a browser draft. Open the report through UZB/code/serve_report.py to save it permanently to the Markdown source file.");
+            }
+          }
+        };
+        const setEditing = (editing) => {
+          editor.hidden = !editing;
+          preview.hidden = editing;
+          edit.hidden = editing;
+          save.hidden = !editing;
+          cancel.hidden = !editing;
+        };
+        showPreview();
+        setEditing(false);
+        edit.addEventListener("click", () => setEditing(true));
+        save.addEventListener("click", async () => {
+          save.disabled = true;
+          try {
+            await saveMarkdown();
+            showPreview();
+            setEditing(false);
+          } catch (error) {
+            window.alert(error.message || "Could not save the Markdown source.");
+          } finally {
+            save.disabled = false;
+          }
+        });
+        cancel.addEventListener("click", () => {
+          editor.value = localStorage.getItem(storageKey) ?? original;
+          showPreview();
+          setEditing(false);
+        });
+      });
+    }
+    function setupCharts() {
+      if (!window.Chart) {
+        document.querySelectorAll(".figure-card").forEach((card) => {
+          const note = document.createElement("p");
+          note.className = "source";
+          note.textContent = "Chart.js could not be loaded from local assets/chart.umd.min.js.";
+          card.appendChild(note);
+        });
+        return;
+      }
+      document.querySelectorAll("script[type='application/json'][id$='-config']").forEach((script) => {
+        const canvasId = script.id.replace("-config", "");
+        const canvas = document.getElementById(canvasId);
+        if (!canvas) return;
+        if (canvas.dataset.chartReady === "1") return;
+        canvas.dataset.chartReady = "1";
+        new Chart(canvas, JSON.parse(script.textContent));
+      });
+    }
+    window.addEventListener("DOMContentLoaded", () => {
+      setupMarkdownPanels();
+      setupSectionNavigation();
+      setupCharts();
+      window.setTimeout(scrollToHashTarget, 60);
+    });
+    </script>
+</body>
+</html>

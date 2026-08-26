@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 800" role="img" aria-label="Vietnam education access, public spending, and skills bottlenecks">
+  
+  <style>
+    .title{font:700 28px Arial,sans-serif;fill:#172026}
+    .subtitle{font:15px Arial,sans-serif;fill:#526069}
+    .panel-title{font:700 16px Arial,sans-serif;fill:#172026}
+    .panel-y{font:11px Arial,sans-serif;fill:#526069;text-anchor:end}
+    .panel-x{font:11px Arial,sans-serif;fill:#526069;text-anchor:middle}
+    .panel-last{font:700 11px Arial,sans-serif;fill:#172026}
+    .legend{font:11px Arial,sans-serif;fill:#526069}
+    .label{font:12px Arial,sans-serif;fill:#526069}
+    .small{font:11px Arial,sans-serif;fill:#65717a}
+    .value{font:700 22px Arial,sans-serif;fill:#172026}
+    .source{font:12px Arial,sans-serif;fill:#65717a}
+    .box-title{font:700 14px Arial,sans-serif;fill:#172026}
+    .box-text{font:12px Arial,sans-serif;fill:#526069}
+    .bar-label{font:700 12px Arial,sans-serif;fill:#172026}
+    .bar-value{font:12px Arial,sans-serif;fill:#526069}
+  </style>
+  <rect width="1100" height="800" fill="#f6f4ee"/>
+  <text x="54" y="44" class="title">Education, Skills, and Industrial-Upgrading Bottlenecks</text>
+  <text x="54" y="68" class="subtitle">Vietnam's school access is strong, but tertiary quality, TVET pathways, STEM depth, and employer linkage now shape productivity.</text>
+  <rect x="54" y="104" width="496" height="248" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="76" y="136" class="panel-title">Secondary and tertiary gross enrollment</text>
+  <line x1="108" y1="306.00" x2="520" y2="306.00" stroke="#edf2ef"/>
+  <text x="98" y="310.00" class="panel-y">0%</text>
+  <line x1="108" y1="273.27" x2="520" y2="273.27" stroke="#edf2ef"/>
+  <text x="98" y="277.27" class="panel-y">25%</text>
+  <line x1="108" y1="240.55" x2="520" y2="240.55" stroke="#edf2ef"/>
+  <text x="98" y="244.55" class="panel-y">50%</text>
+  <line x1="108" y1="207.82" x2="520" y2="207.82" stroke="#edf2ef"/>
+  <text x="98" y="211.82" class="panel-y">75%</text>
+  <line x1="108" y1="175.09" x2="520" y2="175.09" stroke="#edf2ef"/>
+  <text x="98" y="179.09" class="panel-y">100%</text>
+  <line x1="108.00" y1="162" x2="108.00" y2="306" stroke="#f1f4f5"/>
+  <text x="108.00" y="330" class="panel-x">2000</text>
+  <line x1="190.40" y1="162" x2="190.40" y2="306" stroke="#f1f4f5"/>
+  <text x="190.40" y="330" class="panel-x">2005</text>
+  <line x1="272.80" y1="162" x2="272.80" y2="306" stroke="#f1f4f5"/>
+  <text x="272.80" y="330" class="panel-x">2010</text>
+  <line x1="355.20" y1="162" x2="355.20" y2="306" stroke="#f1f4f5"/>
+  <text x="355.20" y="330" class="panel-x">2015</text>
+  <line x1="437.60" y1="162" x2="437.60" y2="306" stroke="#f1f4f5"/>
+  <text x="437.60" y="330" class="panel-x">2020</text>
+  <line x1="520.00" y1="162" x2="520.00" y2="306" stroke="#f1f4f5"/>
+  <text x="520.00" y="330" class="panel-x">2025</text>
+  <path d="M355.20,188.90 L371.68,187.97 L388.16,186.78 L404.64,184.47 L421.12,182.09 L437.60,184.00 L454.08,184.56 L470.56,183.71" fill="none" stroke="#176b63" stroke-width="3"/>
+  <circle cx="470.56" cy="183.71" r="4" fill="#176b63" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="468.00" y="175.71" class="panel-last">93.4%</text>
+  <rect x="76" y="322" width="10" height="10" fill="#176b63" rx="2"/>
+  <text x="92" y="331" class="legend">Secondary</text>
+  <path d="M108.00,293.89 L124.48,293.82 L140.96,293.49 L157.44,293.02 L190.40,285.22 L206.88,284.00 L223.36,281.19 L239.84,279.75 L256.32,277.85 L272.80,274.68 L289.28,272.14 L305.76,272.29 L322.24,272.45 L338.72,264.99 L355.20,267.09 L371.68,267.93 L388.16,272.03 L421.12,266.43 L454.08,251.08 L470.56,247.41 L487.04,263.01 L503.52,256.79" fill="none" stroke="#345995" stroke-width="3"/>
+  <circle cx="503.52" cy="256.79" r="4" fill="#345995" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="468.00" y="248.79" class="panel-last">37.6%</text>
+  <rect x="222" y="322" width="10" height="10" fill="#345995" rx="2"/>
+  <text x="238" y="331" class="legend">Tertiary</text>
+  <rect x="590" y="104" width="456" height="248" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="612" y="136" class="panel-title">Government education expenditure</text>
+  <line x1="644" y1="306.00" x2="1016" y2="306.00" stroke="#edf2ef"/>
+  <text x="634" y="310.00" class="panel-y">0% of GDP</text>
+  <line x1="644" y1="258.00" x2="1016" y2="258.00" stroke="#edf2ef"/>
+  <text x="634" y="262.00" class="panel-y">2% of GDP</text>
+  <line x1="644" y1="210.00" x2="1016" y2="210.00" stroke="#edf2ef"/>
+  <text x="634" y="214.00" class="panel-y">4% of GDP</text>
+  <line x1="644" y1="162.00" x2="1016" y2="162.00" stroke="#edf2ef"/>
+  <text x="634" y="166.00" class="panel-y">6% of GDP</text>
+  <line x1="644.00" y1="162" x2="644.00" y2="306" stroke="#f1f4f5"/>
+  <text x="644.00" y="330" class="panel-x">2000</text>
+  <line x1="718.40" y1="162" x2="718.40" y2="306" stroke="#f1f4f5"/>
+  <text x="718.40" y="330" class="panel-x">2005</text>
+  <line x1="792.80" y1="162" x2="792.80" y2="306" stroke="#f1f4f5"/>
+  <text x="792.80" y="330" class="panel-x">2010</text>
+  <line x1="867.20" y1="162" x2="867.20" y2="306" stroke="#f1f4f5"/>
+  <text x="867.20" y="330" class="panel-x">2015</text>
+  <line x1="941.60" y1="162" x2="941.60" y2="306" stroke="#f1f4f5"/>
+  <text x="941.60" y="330" class="panel-x">2020</text>
+  <line x1="1016.00" y1="162" x2="1016.00" y2="306" stroke="#f1f4f5"/>
+  <text x="1016.00" y="330" class="panel-x">2025</text>
+  <path d="M763.04,188.72 L777.92,190.40 L792.80,208.90 L807.68,215.27 L822.56,200.20 L837.44,197.32 L852.32,221.04 L867.20,224.00 L882.08,222.74 L896.96,223.95 L911.84,226.91 L926.72,231.96 L941.60,228.80 L956.48,235.32 L971.36,236.70" fill="none" stroke="#7c2f2a" stroke-width="3"/>
+  <circle cx="971.36" cy="236.70" r="4" fill="#7c2f2a" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="964.00" y="228.70" class="panel-last">2.9% of GDP</text>
+  <rect x="612" y="322" width="10" height="10" fill="#7c2f2a" rx="2"/>
+  <text x="628" y="331" class="legend">Education spending</text>
+  
+  <rect x="54" y="386" width="314" height="90" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="70" y="411" class="label">2025-2026 system scale</text>
+  <text x="70" y="444" class="value" fill="#176b63">26m students</text>
+  <text x="70" y="464" class="small">and about 1.6m teachers</text>
+  
+  <rect x="394" y="386" width="314" height="90" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="410" y="411" class="label">High-school completion</text>
+  <text x="410" y="444" class="value" fill="#345995">99.25%</text>
+  <text x="410" y="464" class="small">2025 graduation rate</text>
+  
+  <rect x="734" y="386" width="314" height="90" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="750" y="411" class="label">High-tech human resources</text>
+  <text x="750" y="444" class="value" fill="#7c2f2a">2025-2035</text>
+  <text x="750" y="464" class="small">new STEM and high-tech training push</text>
+  <rect x="54" y="516" width="496" height="210" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="76" y="550" class="panel-title">Skills pipeline pressure</text>
+  <text x="76" y="572" class="small">Selected 2025 indicators and OECD diagnostics</text>
+  <text x="76" y="623" class="bar-label">Trained workers</text>
+  <rect x="264" y="608" width="196.89" height="22" rx="5" fill="#176b63"/>
+  <text x="468.89" y="624" class="bar-value">29.2%</text>
+  <text x="76" y="668" class="bar-label">TVET participation</text>
+  <rect x="264" y="653" width="40.46" height="22" rx="5" fill="#b8873a"/>
+  <text x="312.46" y="669" class="bar-value">6.0%</text>
+  <text x="76" y="713" class="bar-label">University completion</text>
+  <rect x="264" y="698" width="67.43" height="22" rx="5" fill="#345995"/>
+  <text x="339.43" y="714" class="bar-value">10.0%</text>
+  <text x="76" y="758" class="bar-label">Vocational completion</text>
+  <rect x="264" y="743" width="20.23" height="22" rx="5" fill="#7c2f2a"/>
+  <text x="292.23" y="759" class="bar-value">3.0%</text>
+  <rect x="590" y="516" width="456" height="210" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="612" y="550" class="panel-title">Administrative reading</text>
+  <text x="612" y="584" class="box-text">The problem is no longer access alone. It is the alignment of schools, TVET, universities, firms, industrial parks, and provincial planning.</text>
+  <text x="612" y="622" class="box-text">MOET's 2025 high-tech human-resource agenda asks universities to refresh STEM curricula for digital technology, AI, biotechnology, and practical capability.</text>
+  <text x="612" y="660" class="box-text">The bottleneck is implementation: employer participation, lab capacity, faculty quality, scholarships, and pathways for rural and minority students.</text>
+  <text x="54" y="768" class="source">Sources: World Bank WDI table IDs SE.SEC.ENRR, SE.TER.ENRR, SE.XPD.TOTL.GD.ZS; NSO Viet Nam 2025; OECD Economic Surveys: Viet Nam 2025; MOET 2025; UNICEF Viet Nam 2025 impact report.</text>
+</svg>

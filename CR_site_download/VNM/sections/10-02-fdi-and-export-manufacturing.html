@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>10.2 FDI and Export Manufacturing | VNM Country Report</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+  <script src="../assets/chart.umd.min.js"></script>
+  <style>
+    body{margin:0;background:#f4f6f4;color:#17201b;font-family:Arial,Helvetica,sans-serif;line-height:1.65}
+    .layout{display:grid;grid-template-columns:320px minmax(0,1fr);min-height:100vh}
+    aside{position:sticky;top:0;height:100vh;overflow:auto;background:#fff;border-right:1px solid #d9ded8;padding:18px}
+    aside a{display:block;color:#25312a;text-decoration:none;border-radius:6px;padding:6px 8px;font-size:13px}
+    aside a:hover,aside a.active{background:#e8f0ea;color:#0d5a6a} summary{cursor:pointer;font-weight:700;margin:10px 0 4px}
+    .home{font-weight:800;margin-bottom:8px}
+    main{max-width:1050px;padding:36px min(6vw,72px) 90px}
+    .crumb{font-size:13px;color:#607067;margin:0 0 8px} h1{font-size:36px;line-height:1.15;margin:0 0 8px}
+    .chapter-title{color:#56645c;margin:0 0 26px}
+    .section-body,.chart-card{background:#fff;border:1px solid #d9ded8;border-radius:8px;padding:18px;margin:0 0 22px}
+    .section-body h2{font-size:26px;margin:0 0 14px} .section-body p{font-family:Georgia,'Times New Roman',serif;font-size:18px;margin:0 0 14px}
+    table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px} th,td{border:1px solid #d9ded8;padding:8px;vertical-align:top} th{background:#edf2ea;text-align:left}
+    code{background:#eef2ee;border:1px solid #d8ded8;border-radius:4px;padding:1px 4px} .source-note,figcaption{font-size:12px;color:#607067}
+    .chart-frame{height:340px} .chart-frame canvas{width:100%;height:100%}
+    .figure-card,.map-card,.symbol-figure{background:#fff;border:1px solid #d9ded8;border-radius:8px;padding:14px;margin:18px 0 24px}
+    .source{color:#607067;font-size:12px;margin:10px 0 0} .map-grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(280px,.7fr);gap:16px;align-items:start}
+    .adm-map{width:100%;height:auto;border:1px solid #d9ded8;background:#f7fbfc} .adm-path{stroke:#fff;stroke-width:.7} .map-label{font-size:6px;fill:#32424f;text-anchor:middle;pointer-events:none} .neighbor-label{font-size:12px;fill:#6c7b88}
+    .capital-marker circle{fill:#c23b22;stroke:#fff;stroke-width:1.4} .capital-marker text{font-size:12px;fill:#17212b;font-weight:700} .map-table-wrap{max-height:420px;overflow:auto}
+    .symbol-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px} .symbol-card{min-height:260px;border:1px solid #d9ded8;border-radius:8px;background:#fbfdfe;padding:14px;display:flex;flex-direction:column;gap:10px}
+    .symbol-card h3{font-size:18px;margin:2px 0 0} .symbol-card p{font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:1.48;color:#34424e;margin:0} .symbol-kicker{color:#607067;font-size:11px;text-transform:uppercase;letter-spacing:.06em}
+    .flag-indonesia{height:92px;border:1px solid #b9c6cd;border-radius:4px;overflow:hidden} .flag-indonesia span{display:block;height:50%} .flag-indonesia span:first-child{background:#c9182b} .flag-indonesia span:last-child{background:#fff}
+    .garuda-mark{height:92px;display:grid;grid-template-columns:1fr 56px 1fr;align-items:center;gap:4px} .garuda-mark .wing{height:60px;background:#c59a35;border:1px solid #9d761e} .garuda-mark .left{border-radius:60px 10px 18px 60px} .garuda-mark .right{border-radius:10px 60px 60px 18px}
+    .garuda-mark .body{height:82px;background:#d6ad46;border:1px solid #9d761e;border-radius:36px 36px 18px 18px} .garuda-mark .shield{grid-column:2;justify-self:center;margin-top:-58px;width:36px;height:42px;border-radius:8px 8px 14px 14px;background:#1f3f68;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;border:2px solid #f1d47b}
+    .motto-line{height:92px;display:flex;align-items:center;justify-content:center;text-align:center;border:1px solid #cfd9de;border-radius:6px;background:linear-gradient(180deg,#fff,#eef5f7);font-weight:800;color:#15384a;padding:12px} .anthem-bars{height:92px;display:flex;align-items:end;gap:8px;justify-content:center;border:1px solid #cfd9de;border-radius:6px;background:#f8fbfc;padding:16px}
+    .anthem-bars span{width:22px;background:#0f6f87;border-radius:4px 4px 0 0} .anthem-bars span:nth-child(1){height:38px} .anthem-bars span:nth-child(2){height:62px} .anthem-bars span:nth-child(3){height:48px} .anthem-bars span:nth-child(4){height:72px}
+    @media(max-width:860px){.layout{grid-template-columns:1fr}aside{position:relative;height:auto}main{padding:24px 18px}}
+  
+    .md-toolbar{display:flex;justify-content:flex-end;gap:8px;margin:0 0 14px}
+    .md-toolbar button{border:1px solid #0d5a6a;background:#0d5a6a;color:#fff;border-radius:5px;padding:7px 11px;font:700 12px Arial,Helvetica,sans-serif;cursor:pointer}
+    .md-toolbar button[data-md-action='cancel']{background:#fff;color:#25312a;border-color:#cfd8d3}
+    .md-editor{width:100%;min-height:520px;border:1px solid #cfd8d3;border-radius:6px;padding:14px;font:14px Consolas,monospace;line-height:1.45}
+
+  </style>
+  <script src="../assets/marked.min.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <aside><a class='home' href='../index.html'>VNM cover</a>
+<details ><summary>1. Country Overview</summary><a class='section-link ' href='01-01-national-profile.html'>1.1 National Profile</a><a class='section-link ' href='01-02-state-symbols.html'>1.2 State Symbols</a><a class='section-link ' href='01-03-geography-and-administrative-divisions.html'>1.3 Geography and Administrative Divisions</a><a class='section-link ' href='01-04-core-institutional-diagnosis.html'>1.4 Core Institutional Diagnosis</a><a class='section-link ' href='01-05-evidence-base.html'>1.5 Evidence Base and Reading Direction</a></details>
+<details ><summary>2. Historical Background</summary><a class='section-link ' href='02-01-civilizational-layers-and-frontier-statecraft.html'>2.1 Civilizational Layers and Frontier Statecraft</a><a class='section-link ' href='02-02-colonial-rule-revolution-and-war.html'>2.2 Colonial Rule, Revolution, and War</a><a class='section-link ' href='02-03-reunification-and-doi-moi.html'>2.3 Reunification and Doi Moi</a><a class='section-link ' href='02-04-historical-legacies-in-present-institutions.html'>2.4 Historical Legacies in Present Institutions</a></details>
+<details ><summary>3. Constitution and Basic State Order</summary><a class='section-link ' href='03-01-constitutional-order-and-amendments.html'>3.1 Constitutional Order, Ownership, and the Architecture of State Power</a><a class='section-link ' href='03-02-sovereignty-party-leadership-and-territorial-integrity.html'>3.2 Sovereignty, Party Leadership, and Territorial Integrity</a><a class='section-link ' href='03-03-rights-duties-and-socialist-rule-of-law.html'>3.3 Rights, Duties, and Socialist Rule of Law</a><a class='section-link ' href='03-04-state-power-review-audit-and-emergency-authority.html'>3.4 State Power, Review, Audit, and Emergency Authority</a></details>
+<details ><summary>4. Political System and Power Structure</summary><a class='section-link ' href='04-01-party-leadership-and-state-institutions.html'>4.1 Party Leadership and State Institutions</a><a class='section-link ' href='04-02-national-assembly-elections-and-representation.html'>4.2 National Assembly, Elections, and Representation</a><a class='section-link ' href='04-03-executive-coordination-and-government-formation.html'>4.3 Executive Coordination and Government Formation</a><a class='section-link ' href='04-04-judiciary-rule-of-law-corruption-and-accountability.html'>4.4 Courts, Procuracy, Inspection, and Anti-Corruption</a><a class='section-link ' href='04-05-local-politics-and-real-power-relations.html'>4.5 Local Politics and Real Power Relations</a><a class='section-link ' href='04-06-political-system-diagnostics-and-democratic-trajectory.html'>4.6 Political System Diagnostics and Democratic Trajectory</a></details>
+<details ><summary>5. Administrative System and Government Organization</summary><a class='section-link ' href='05-01-central-government-and-ministerial-system.html'>5.1 Central Government and Ministerial System</a><a class='section-link ' href='05-02-organizational-management-and-bureaucratic-reform.html'>5.2 Organizational Management and Bureaucratic Reform</a><a class='section-link ' href='05-03-human-resource-management-and-civil-service.html'>5.3 Human Resource Management and Civil Service</a><a class='section-link ' href='05-04-financial-administration-procurement-audit-and-inspection.html'>5.4 Financial Administration, Procurement, Audit, and Inspection</a><a class='section-link ' href='05-05-local-administration-and-service-delivery.html'>5.5 Local Administration and Service Delivery</a><a class='section-link ' href='05-06-digital-government-and-administrative-accountability.html'>5.6 Digital Government and Administrative Accountability</a><a class='section-link ' href='05-07-implementation-capacity-and-administrative-performance.html'>5.7 Implementation Capacity and Administrative Performance</a></details>
+<details ><summary>6. Governance and Institutional Capacity</summary><a class='section-link ' href='06-01-government-effectiveness-and-regulatory-quality.html'>6.1 Government Effectiveness and Regulatory Quality</a><a class='section-link ' href='06-02-rule-of-law-and-corruption-control.html'>6.2 Rule of Law and Corruption Control</a><a class='section-link ' href='06-03-voice-accountability-and-stability.html'>6.3 Voice, Accountability, and Stability</a><a class='section-link ' href='06-04-what-governance-indicators-reveal.html'>6.4 What Governance Indicators Reveal</a></details>
+<details ><summary>7. Fiscal System and Public Sector</summary><a class='section-link ' href='07-01-revenue-taxation-and-expenditure.html'>7.1 Revenue, Taxation, and Expenditure</a><a class='section-link ' href='07-02-deficit-debt-and-fiscal-space.html'>7.2 Fiscal Balance, Debt, and Fiscal Space</a><a class='section-link ' href='07-03-public-investment-soes-and-quasi-fiscal-risk.html'>7.3 Public Investment, Procurement, SOEs, and Quasi-Fiscal Risk</a><a class='section-link ' href='07-04-budget-decentralization-and-audit.html'>7.4 Budget Decentralization, Procurement Oversight, and Audit</a><a class='section-link ' href='07-05-fiscal-capacity-and-public-sector-risks.html'>7.5 Fiscal Capacity and Public Sector Risks</a></details>
+<details ><summary>8. Population and Social Structure</summary><a class='section-link ' href='08-01-population-scale-and-age-structure.html'>8.1 Population Scale and Age Structure</a><a class='section-link ' href='08-02-urbanization-and-regional-distribution.html'>8.2 Urbanization and Regional Distribution</a><a class='section-link ' href='08-03-ethnicity-language-religion-and-social-cohesion.html'>8.3 Ethnicity, Language, Religion, and Social Cohesion</a><a class='section-link ' href='08-04-migration-remittances-and-inclusion.html'>8.4 Migration, Remittances, and Inclusion</a></details>
+<details ><summary>9. Macroeconomic Structure</summary><a class='section-link ' href='09-01-gdp-scale-growth-and-income.html'>9.1 GDP Scale, Growth, and Income Level</a><a class='section-link ' href='09-02-inflation-exchange-rate-and-macro-stability.html'>9.2 Inflation, Exchange-Rate Management, and Macro Stability</a><a class='section-link ' href='09-03-industrial-structure-and-productivity.html'>9.3 Industrial Structure, Sectoral Transformation, and Productivity</a><a class='section-link ' href='09-04-growth-model-and-structural-vulnerabilities.html'>9.4 External Position, Trade Balance, and Structural Constraints</a><a class='section-link ' href='09-05-growth-driver-model-and-interpretation.html'>9.5 Growth Driver Model and Interpretation</a></details>
+<details open><summary>10. Trade, Investment, and External Economy</summary><a class='section-link ' href='10-01-exports-imports-and-current-account.html'>10.1 Export-Import Trends, Trade Dependence, and Export Transformation</a><a class='section-link active' href='10-02-fdi-and-export-manufacturing.html'>10.2 FDI and Export Manufacturing</a><a class='section-link ' href='10-03-trading-partners-supply-chains-and-technology-upgrading.html'>10.3 Trading Partners, Supply Chains, and Technology Upgrading</a><a class='section-link ' href='10-04-investment-rules-zones-and-industrial-policy.html'>10.4 Investment Rules, Zones, and Industrial Policy</a></details>
+<details ><summary>11. Infrastructure, Energy, and Digital Connectivity</summary><a class='section-link ' href='11-01-energy-access-and-power-system-reform.html'>11.1 Energy Access and Power System Reform</a><a class='section-link ' href='11-02-transport-logistics-and-corridors.html'>11.2 Transport, Logistics, and Corridors</a><a class='section-link ' href='11-03-digital-connectivity.html'>11.3 Digital Connectivity, AI Infrastructure, and the Digital Economy</a><a class='section-link ' href='11-04-infrastructure-governance-and-climate-resilience.html'>11.4 Infrastructure Governance and Climate Resilience</a></details>
+<details ><summary>12. Labor Market and Human Capital</summary><a class='section-link ' href='12-01-labor-force-and-participation.html'>12.1 Labor Force and Participation</a><a class='section-link ' href='12-02-women-youth-and-informality.html'>12.2 Women, Youth, and Informality</a><a class='section-link ' href='12-03-agricultural-employment-and-productivity.html'>12.3 Agricultural Employment and Productivity</a><a class='section-link ' href='12-04-skills-education-and-human-capital.html'>12.4 Skills, Education, and Human Capital</a></details>
+<details ><summary>13. Education, Health, and Welfare</summary><a class='section-link ' href='13-01-education-system-and-public-spending.html'>13.1 Education System, Skills Policy, and Public Spending</a><a class='section-link ' href='13-02-health-outcomes-and-service-capacity.html'>13.2 Health Care, Population Ageing, and Financial Protection</a><a class='section-link ' href='13-03-water-sanitation-nutrition-and-welfare.html'>13.3 Water, Sanitation, Nutrition, and Welfare</a><a class='section-link ' href='13-04-human-development-and-territorial-equity.html'>13.4 Human Development and Territorial Equity</a></details>
+<details ><summary>14. Financial Sector and Economic Institutions</summary><a class='section-link ' href='14-01-banks-credit-and-capital-markets.html'>14.1 Banks, Credit, and Capital Markets</a><a class='section-link ' href='14-02-state-bank-of-vietnam-and-financial-supervision.html'>14.2 State Bank of Vietnam and Financial Supervision</a><a class='section-link ' href='14-03-fintech-payments-and-inclusion.html'>14.3 Fintech, Payments, and Inclusion</a><a class='section-link ' href='14-04-financial-stability-and-reform-priorities.html'>14.4 Financial Stability and Reform Priorities</a></details>
+<details ><summary>15. Foreign Relations, Security, and Geopolitics</summary><a class='section-link ' href='15-01-bamboo-diplomacy-and-asean.html'>15.1 Bamboo Diplomacy, ASEAN, and the Evolution of Vietnam’s Foreign Policy Principles</a><a class='section-link ' href='15-02-china-the-united-states-and-the-east-sea.html'>15.2 China, the United States, and the East Sea</a><a class='section-link ' href='15-03-defense-police-border-and-transnational-risks.html'>15.3 Defense, Police, Border, and Transnational Risks</a><a class='section-link ' href='15-04-mekong-energy-security-and-strategic-corridors.html'>15.4 Mekong, Energy Security, and Strategic Corridors</a></details>
+<details ><summary>16. Major Policies and National Development Strategy</summary><a class='section-link ' href='16-01-evolution-of-national-development-strategy.html'>16.1 Evolution of National Development Strategy</a><a class='section-link ' href='16-02-socio-economic-development-strategy-2021-2030.html'>16.2 Socio-Economic Development Strategy 2021-2030</a><a class='section-link ' href='16-03-administrative-restructuring-and-public-administration-reform.html'>16.3 Administrative Restructuring and Public Administration Reform</a><a class='section-link ' href='16-04-digital-green-and-industrial-transformation.html'>16.4 Digital, Green, and Industrial Transformation</a><a class='section-link ' href='16-05-implementation-matrix-and-risks.html'>16.5 Implementation Matrix and Risks</a><a class='section-link ' href='16-06-green-growth-climate-governance-and-sdg-implementation.html'>16.6 Green Growth, Climate Governance, and SDG Implementation</a></details>
+<details ><summary>17. Integrated Assessment</summary><a class='section-link ' href='17-01-national-operating-model.html'>17.1 National Operating Model</a><a class='section-link ' href='17-02-institutional-strengths-risks-and-bottlenecks.html'>17.2 Institutional Strengths, Risks, and Bottlenecks</a><a class='section-link ' href='17-03-implications-for-korea-and-international-cooperation.html'>17.3 Implications for Korea and International Cooperation</a><a class='section-link ' href='17-04-vietnam-and-comparative-administration-theory.html'>17.4 Vietnam and Comparative Administration Theory</a><a class='section-link ' href='17-05-strategic-outlook.html'>17.5 Strategic Outlook</a></details>
+<details ><summary>18. Appendix, Sources, and Method</summary><a class='section-link ' href='18-01-timeline.html'>18.1 Timeline</a><a class='section-link ' href='18-02-government-organization-chart.html'>18.2 Government Organization Chart</a><a class='section-link ' href='18-03-major-laws-and-policy-documents.html'>18.3 Major Laws and Policy Documents</a><a class='section-link ' href='18-04-indicator-codebook.html'>18.4 Indicator Codebook</a><a class='section-link ' href='18-05-update-workflow-and-evidence-archive.html'>18.5 Update Workflow and Evidence Archive</a></details>
+<details ><summary>19. References</summary><a class='section-link ' href='19-01-references.html'>19.1 References</a><a class='section-link ' href='19-02-citation-and-source-integrity-notes.html'>19.2 Citation and Source Integrity Notes</a></details></aside>
+    <main>
+      <p class="crumb"><a href="../10-trade.html">Chapter 10</a> / Section 2</p>
+      <h1>10.2 FDI and Export Manufacturing</h1>
+      <p class="chapter-title">10. Trade, Investment, and External Economy</p>
+      <article class="section-body editable-section" data-md-panel="10-02-fdi-and-export-manufacturing" data-md-source="sections/10-02-fdi-and-export-manufacturing.md">
+  <div class="md-toolbar">
+    <button type="button" data-md-action="edit">Edit Markdown</button>
+    <button type="button" data-md-action="save" hidden>Save</button>
+    <button type="button" data-md-action="cancel" hidden>Cancel</button>
+  </div>
+  <div class="md-preview"><h2 id='10-2-fdi-and-export-manufacturing'>10.2 FDI and Export Manufacturing</h2>
+<p><strong>ASEAN comparative lens (2026).</strong> Vietnam should be read in ASEAN comparison as ASEAN&#x27;s most prominent party-led, export-manufacturing upgrading case. Unlike the Philippines&#x27; service-remittance profile, Thailand&#x27;s older industrial-tourism base, Malaysia&#x27;s resource-industrial federal structure, or Indonesia&#x27;s archipelagic domestic-market scale, Vietnam&#x27;s comparative issue is how a socialist party-state manages very open global production networks. For this section, the regional comparison should compare trade, FDI, current-account structure, supply-chain depth, remittances, tourism receipts, and regional integration with ASEAN peers. Local comparable indicators show: population 100.99 million (2024), rank 3 among the nine ASEAN reports in this workspace; GDP US$476.39 billion (2024), rank 4 among the nine ASEAN reports in this workspace; GDP per capita US$4,717 (2024), rank 5 among the nine ASEAN reports in this workspace; real GDP growth 7.09% (2024), rank 1 among the nine ASEAN reports in this workspace; government effectiveness 0.09 (2023), rank 6 among the nine ASEAN reports in this workspace; internet use 84.15% (2024), rank 4 among the nine ASEAN reports in this workspace. Use `sources/documents/regional/asean_comparative_lens_2026.md` together with ASEANstats, ASEAN Secretariat materials, and the country processed-indicator files before making cross-ASEAN claims.</p>
+<p>Section 10.1 explained Viet Nam&#x27;s export and import transformation. This section explains the mechanism behind that transformation: foreign direct investment. FDI is more than an inflow of capital. It is the organizational system through which multinational firms connect Viet Nam&#x27;s labor force, land, industrial zones, ports, customs procedures, tax incentives, and political stability to global production networks.</p>
+<p>The headline figures show that Viet Nam remains one of Asia&#x27;s strongest FDI destinations. In 2025, total inward foreign investment registered in Viet Nam reached USD 38.42 billion, including new projects, capital adjustments, and foreign capital contributions or share purchases. Disbursed FDI reached USD 27.62 billion, up 9.0 percent year on year and the highest level in the 2021-2025 period. The distinction matters. Registered FDI is a pipeline indicator; it measures investor commitments that may be implemented over time. Disbursed FDI is the executed investment that actually enters projects, factories, equipment, construction, payroll, and operations.[1]</p>
+<figure class="map-card">
+<img class="admin-map" src="../assets/vnm_fdi_scale_export_role_2021_2025.svg" alt="Vietnam registered FDI, disbursed FDI, and FDI sector export role from 2021 to 2025">
+<figcaption>Sources: Ministry of Planning and Investment / Foreign Investment Agency reports for 2021-2024; National Statistics Office of Viet Nam, 2025 socio-economic situation report. The figure separates investment commitments from executed capital and shows the foreign-invested sector's role in exports and imports.</figcaption>
+</figure>
+<h3>10.2.1 Registered FDI, Disbursed FDI, and Investor Confidence</h3>
+<p>The 2021-2025 sequence is revealing. Registered FDI moved from USD 31.15 billion in 2021 to USD 27.72 billion in 2022, then recovered to USD 36.60 billion in 2023, USD 38.23 billion in 2024, and USD 38.42 billion in 2025. Disbursed FDI rose more steadily from USD 19.74 billion in 2021 to USD 22.40 billion in 2022, USD 23.18 billion in 2023, USD 25.35 billion in 2024, and USD 27.62 billion in 2025.[1][2][3][4][5]</p>
+<p>This pattern suggests that Viet Nam&#x27;s FDI model has two strengths. First, existing investors continue to execute projects even when registered capital fluctuates. Second, the pipeline remains large enough to support future manufacturing expansion. The 2025 composition confirms this point. Newly registered FDI capital reached USD 17.32 billion across 4,054 newly licensed projects. Existing projects registered an additional USD 14.07 billion, while capital contributions and share purchases reached USD 7.03 billion. The rise of adjusted capital and equity transactions suggests that foreign investors are not only entering Viet Nam; many are expanding, restructuring, or deepening existing operations.[1]</p>
+<p>The policy meaning is different from a simple &quot;more FDI is good&quot; story. High registration is useful only if projects are implemented, linked to productive sectors, supported by infrastructure, and governed cleanly. High disbursement is more meaningful because it indicates execution. But even executed FDI can create limited domestic spillovers if the project remains an imported-input assembly operation with few Vietnamese suppliers.</p>
+<h3>10.2.2 Investor Origins: Asian Production Networks Dominate</h3>
+<p>The investor-country structure shows how Viet Nam is embedded in Asian production networks. In 2025, among newly licensed FDI projects, Singapore was the largest investor, with USD 4.84 billion, or 27.9 percent of newly registered capital. China followed with USD 3.64 billion, or 21.0 percent. Hong Kong (China) accounted for about USD 1.73 billion, Japan for USD 1.62 billion, Sweden for USD 1.00 billion, Taiwan (China) for about USD 0.97 billion, and the Republic of Korea for about USD 0.90 billion.[6]</p>
+<figure class="map-card">
+<img class="admin-map" src="../assets/vnm_fdi_structure_investors_sectors_regions_2025.svg" alt="Vietnam FDI structure by investor country, sector, and locality in 2025">
+<figcaption>Sources: National Statistics Office of Viet Nam 2025 data; VnEconomy reporting based on NSO data for the investor-country split; Vietnam.vn / Bao Dau Tu reporting based on Foreign Investment Agency data for post-merger locality concentration.</figcaption>
+</figure>
+<p>The dominance of Singapore, China, Hong Kong, Japan, Taiwan, and Korea is not accidental. These economies are closely connected to electronics, machinery, components, textiles, logistics, finance, and regional headquarters functions. Singapore&#x27;s large share can include regional holding-company structures as well as operating investment. China&#x27;s rising position reflects supply-chain relocation, China-plus-one strategies, and the movement of component producers and assembly suppliers into Viet Nam. Japanese and Korean investors remain important because they have long-standing production networks, quality systems, and supplier relationships in electronics, machinery, automotive components, and industrial services.</p>
+<p>This investor composition creates opportunity and risk at the same time. The opportunity is that Viet Nam can receive production know-how, export orders, supplier standards, training, and integration into regional manufacturing systems. The risk is that Viet Nam can become an extension of foreign production networks without building enough domestic firms capable of supplying components, materials, engineering, design, testing, logistics, or after-sales services.</p>
+<h3>10.2.3 Industry Structure: Manufacturing Leads, Real Estate Still Matters</h3>
+<p>By sector, newly licensed FDI in 2025 remained strongly manufacturing-oriented. Processing and manufacturing attracted USD 9.80 billion, equal to 56.5 percent of newly licensed FDI capital. Real estate business attracted USD 3.67 billion, or 21.2 percent. Other sectors accounted for USD 3.85 billion, or 22.2 percent.[1]</p>
+<p>This composition is broadly positive because manufacturing FDI is more directly connected to exports, employment, industrial zones, technology exposure, logistics, and supplier development than purely asset-based investment. It is also consistent with Viet Nam&#x27;s export structure: manufactured goods accounted for 88.7 percent of goods exports in 2025.[1]</p>
+<p>However, the real-estate share deserves attention. Real estate FDI can support urban development, industrial parks, logistics facilities, housing, and commercial infrastructure. But if too much FDI flows into land appreciation, speculative property, or enclave-style projects, it may raise land prices without strengthening technological capability. For a country trying to upgrade from assembly to higher-value manufacturing and services, FDI quality matters more than FDI volume.</p>
+<p>The industry question should therefore be asked in three layers. First, does FDI enter productive sectors such as electronics, machinery, semiconductors, clean energy, logistics, digital services, and supporting industries? Second, does it create higher-skilled employment and supplier opportunities? Third, does it increase Vietnamese-owned capability, or does it mainly increase foreign-owned output produced on Vietnamese territory?</p>
+<h3>10.2.4 Regional Concentration after the 2025 Local Government Reform</h3>
+<p>FDI is not distributed evenly across Viet Nam. It concentrates in regions with industrial parks, ports, airports, expressways, skilled labor, reliable electricity, supplier density, customs capacity, and proactive provincial governments. After the 2025 administrative mergers and the move to a two-tier local government model, the geography of FDI became even more important.</p>
+<p>Post-merger cumulative FDI data reported by Vietnam.vn / Bao Dau Tu from Foreign Investment Agency figures show Ho Chi Minh City leading with more than USD 140.7 billion in valid registered capital and 19,511 valid projects. Bac Ninh followed with more than USD 46.85 billion, Hanoi with nearly USD 45.6 billion, Hai Phong with more than USD 44.8 billion, and Dong Nai with USD 44.64 billion. Other major locations included Tay Ninh, Quang Ninh, Thanh Hoa, Hung Yen, and Ninh Binh.[7]</p>
+<p>This pattern has clear administrative meaning. FDI attraction is not only a national investment-policy matter. It is a local governance question. Investors choose locations where land clearance is faster, infrastructure is coordinated, industrial zones are credible, labor supply is available, and provincial officials can solve problems. The 2025 merger map may create larger planning spaces for metropolitan regions and industrial corridors, but it also requires stronger coordination of land records, tax administration, labor services, environmental permits, industrial-zone management, and transport planning.</p>
+<p>Regional concentration is efficient when it produces industrial clusters. It is risky when it deepens inequality between leading industrial regions and lagging provinces. The state must therefore use FDI clusters as learning platforms while also building connecting infrastructure, supplier programs, vocational training, and logistics links for less-developed regions.</p>
+<h3>10.2.5 FDI Firms and the Export Platform</h3>
+<p>The foreign-invested sector dominates Viet Nam&#x27;s export system. In 2025, total goods exports reached USD 475.04 billion. The domestic economic sector exported USD 107.95 billion, down 6.1 percent from the previous year and accounting for 22.7 percent of total goods exports. The FDI sector, including crude oil, exported USD 367.09 billion, up 26.1 percent and accounting for 77.3 percent of total goods exports.[1]</p>
+<p>The import side tells the same story. Total goods imports reached USD 455.01 billion in 2025. The domestic sector imported USD 137.38 billion, while the FDI sector imported USD 317.63 billion, up 31.9 percent. The FDI sector recorded a goods trade surplus of USD 49.46 billion, while the domestic sector recorded a deficit of USD 29.43 billion.[1]</p>
+<p>This is the core of Viet Nam&#x27;s export-manufacturing model. FDI firms import machinery, components, intermediate goods, materials, and production inputs; use Viet Nam as a manufacturing and assembly platform; and export finished or semi-finished goods to global markets. The model has produced extraordinary export growth, but it also means that much of the export system is organized by foreign firms and foreign supply chains.</p>
+<p>This is not a failure. It is a stage of development. FDI-led exports have generated jobs, industrial discipline, logistics demand, worker learning, tax revenue, foreign exchange, and production visibility. But it is an incomplete development model if domestic firms remain outside the higher-value parts of the chain.</p>
+<h3>10.2.6 Domestic Linkages and the Spillover Problem</h3>
+<p>The domestic linkage problem is the central weakness of Viet Nam&#x27;s FDI model. OECD analysis warned that Viet Nam risks a dualistic economic structure if foreign-invested exporters, SOEs, large private groups, and smaller domestic firms operate under unequal opportunities and weak integration. OECD also emphasized that linkages with domestic firms do not emerge automatically; they require domestic technological and managerial capability. When capability gaps are large, multinationals tend to rely on their own foreign suppliers rather than local Vietnamese firms.[8]</p>
+<p>The trade data support this diagnosis. A country in which the FDI sector accounts for 77.3 percent of goods exports and about 69.8 percent of goods imports is deeply integrated into global production. But that same structure can limit domestic value added if Vietnamese firms supply mainly low-value services, packaging, simple inputs, labor, land, utilities, and logistics rather than components, tooling, design, engineering, software, certification, testing, and after-sales functions.</p>
+<p>The problem is not only firm capability. It is also administrative. Domestic suppliers need finance, quality certification, testing laboratories, standards information, contract enforcement, tax predictability, customs transparency, industrial land, skilled technicians, and connections to multinational procurement systems. Provincial investment-promotion agencies often try to match foreign investors with local suppliers, but matchmaking alone is weak if local firms cannot meet cost, quality, delivery, environmental, and compliance standards.</p>
+<h3>10.2.7 Policy Interpretation</h3>
+<p>Viet Nam should treat FDI as a platform, not a destination. The first-stage success is clear: the country has attracted large capital commitments, executed record disbursements, built manufacturing exports, and become a critical node in Asian supply chains. The second-stage challenge is more demanding: raise domestic value added, strengthen supporting industries, reduce excessive imported-input dependence, and ensure that technology spillovers become real capabilities inside Vietnamese firms.</p>
+<p>This requires a shift from attraction policy to embedding policy. Investment promotion should still bring in capital, but screening and incentives should favor projects that provide local procurement, workforce training, technology transfer, R&amp;D, engineering, design, energy efficiency, and domestic supplier development. Industrial-zone governance should include supplier databases, certification support, logistics services, worker training, environmental compliance, and dispute-resolution channels. Customs and tax agencies should support rules-of-origin compliance so that FDI-led exports do not become vulnerable to transshipment scrutiny.</p>
+<p>Viet Nam has already proved that it can attract FDI. The next stage is conversion: turning foreign-invested production into Vietnamese supplier capability, engineering depth, managerial learning, and technological absorption. If that conversion works, FDI will support movement toward higher income and technological upgrading. If it stalls, Viet Nam may remain an exceptionally successful export platform while domestic firms capture too little of the knowledge, profits, and strategic capabilities embedded in global production.</p>
+<p>[1]: https://www.nso.gov.vn/en/data-and-statistics/2026/01/socio-economic-situation-in-the-fourth-quarter-and-2025/ &quot;National Statistics Office of Viet Nam, Socio-economic situation in the fourth quarter and 2025&quot;</p>
+<p>[2]: https://www.mpi.gov.vn/en/Pages/2021/Report-on-foreign-direct-investment-in-2021-739397.aspx &quot;Ministry of Planning and Investment, Report on foreign direct investment in 2021&quot;</p>
+<p>[3]: https://mpi.gov.vn/en/Pages/2022/Report-on-foreign-direct-investment-in-2022-403479.aspx &quot;Ministry of Planning and Investment, Report on foreign direct investment in 2022&quot;</p>
+<p>[4]: https://www.mpi.gov.vn/en/Pages/2023-12-29/FDI-attraction-situation-in-Vietnam-and-Vietnam-s-fh2c25.aspx &quot;Ministry of Planning and Investment, FDI attraction situation in Vietnam and Vietnam&#x27;s overseas investment in 2023&quot;</p>
+<p>[5]: https://www.mpi.gov.vn/en/Pages/2025-1-14/FDI-attraction-situation-in-Vietnam-and-Vietnam-s-ehsipf.aspx &quot;Ministry of Planning and Investment, FDI attraction situation in Vietnam and Vietnam&#x27;s overseas investment in 2024&quot;</p>
+<p>[6]: https://en.vneconomy.vn/vietnam-attracts-3842-billion-of-fdi-in-2025.htm &quot;VnEconomy, Vietnam attracts $38.42 billion of FDI in 2025&quot;</p>
+<p>[7]: https://www.vietnam.vn/en/hau-sap-nhap-dia-phuong-nao-dan-dau-ve-thu-hut-von-fdi &quot;Vietnam.vn / Bao Dau Tu, post-merger FDI locality concentration&quot;</p>
+<p>[8]: https://www.oecd.org/en/publications/multi-dimensional-review-of-viet-nam_367b585c-en/full-report/component-12.html &quot;OECD Multi-dimensional Review of Viet Nam, leveraging FDI to develop firm-level capabilities&quot;</p></div>
+  <textarea class="md-editor" hidden>## 10.2 FDI and Export Manufacturing
+
+&lt;!-- asean-comparative-lens-2026:start --&gt;
+**ASEAN comparative lens (2026).** Vietnam should be read in ASEAN comparison as ASEAN&#x27;s most prominent party-led, export-manufacturing upgrading case. Unlike the Philippines&#x27; service-remittance profile, Thailand&#x27;s older industrial-tourism base, Malaysia&#x27;s resource-industrial federal structure, or Indonesia&#x27;s archipelagic domestic-market scale, Vietnam&#x27;s comparative issue is how a socialist party-state manages very open global production networks. For this section, the regional comparison should compare trade, FDI, current-account structure, supply-chain depth, remittances, tourism receipts, and regional integration with ASEAN peers. Local comparable indicators show: population 100.99 million (2024), rank 3 among the nine ASEAN reports in this workspace; GDP US$476.39 billion (2024), rank 4 among the nine ASEAN reports in this workspace; GDP per capita US$4,717 (2024), rank 5 among the nine ASEAN reports in this workspace; real GDP growth 7.09% (2024), rank 1 among the nine ASEAN reports in this workspace; government effectiveness 0.09 (2023), rank 6 among the nine ASEAN reports in this workspace; internet use 84.15% (2024), rank 4 among the nine ASEAN reports in this workspace. Use `sources/documents/regional/asean_comparative_lens_2026.md` together with ASEANstats, ASEAN Secretariat materials, and the country processed-indicator files before making cross-ASEAN claims.
+&lt;!-- asean-comparative-lens-2026:end --&gt;
+
+Section 10.1 explained Viet Nam&#x27;s export and import transformation. This section explains the mechanism behind that transformation: foreign direct investment. FDI is more than an inflow of capital. It is the organizational system through which multinational firms connect Viet Nam&#x27;s labor force, land, industrial zones, ports, customs procedures, tax incentives, and political stability to global production networks.
+
+The headline figures show that Viet Nam remains one of Asia&#x27;s strongest FDI destinations. In 2025, total inward foreign investment registered in Viet Nam reached USD 38.42 billion, including new projects, capital adjustments, and foreign capital contributions or share purchases. Disbursed FDI reached USD 27.62 billion, up 9.0 percent year on year and the highest level in the 2021-2025 period. The distinction matters. Registered FDI is a pipeline indicator; it measures investor commitments that may be implemented over time. Disbursed FDI is the executed investment that actually enters projects, factories, equipment, construction, payroll, and operations.[1]
+
+&lt;figure class=&quot;map-card&quot;&gt;
+&lt;img class=&quot;admin-map&quot; src=&quot;../assets/vnm_fdi_scale_export_role_2021_2025.svg&quot; alt=&quot;Vietnam registered FDI, disbursed FDI, and FDI sector export role from 2021 to 2025&quot;&gt;
+&lt;figcaption&gt;Sources: Ministry of Planning and Investment / Foreign Investment Agency reports for 2021-2024; National Statistics Office of Viet Nam, 2025 socio-economic situation report. The figure separates investment commitments from executed capital and shows the foreign-invested sector&#x27;s role in exports and imports.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+### 10.2.1 Registered FDI, Disbursed FDI, and Investor Confidence
+
+The 2021-2025 sequence is revealing. Registered FDI moved from USD 31.15 billion in 2021 to USD 27.72 billion in 2022, then recovered to USD 36.60 billion in 2023, USD 38.23 billion in 2024, and USD 38.42 billion in 2025. Disbursed FDI rose more steadily from USD 19.74 billion in 2021 to USD 22.40 billion in 2022, USD 23.18 billion in 2023, USD 25.35 billion in 2024, and USD 27.62 billion in 2025.[1][2][3][4][5]
+
+This pattern suggests that Viet Nam&#x27;s FDI model has two strengths. First, existing investors continue to execute projects even when registered capital fluctuates. Second, the pipeline remains large enough to support future manufacturing expansion. The 2025 composition confirms this point. Newly registered FDI capital reached USD 17.32 billion across 4,054 newly licensed projects. Existing projects registered an additional USD 14.07 billion, while capital contributions and share purchases reached USD 7.03 billion. The rise of adjusted capital and equity transactions suggests that foreign investors are not only entering Viet Nam; many are expanding, restructuring, or deepening existing operations.[1]
+
+The policy meaning is different from a simple &quot;more FDI is good&quot; story. High registration is useful only if projects are implemented, linked to productive sectors, supported by infrastructure, and governed cleanly. High disbursement is more meaningful because it indicates execution. But even executed FDI can create limited domestic spillovers if the project remains an imported-input assembly operation with few Vietnamese suppliers.
+
+### 10.2.2 Investor Origins: Asian Production Networks Dominate
+
+The investor-country structure shows how Viet Nam is embedded in Asian production networks. In 2025, among newly licensed FDI projects, Singapore was the largest investor, with USD 4.84 billion, or 27.9 percent of newly registered capital. China followed with USD 3.64 billion, or 21.0 percent. Hong Kong (China) accounted for about USD 1.73 billion, Japan for USD 1.62 billion, Sweden for USD 1.00 billion, Taiwan (China) for about USD 0.97 billion, and the Republic of Korea for about USD 0.90 billion.[6]
+
+&lt;figure class=&quot;map-card&quot;&gt;
+&lt;img class=&quot;admin-map&quot; src=&quot;../assets/vnm_fdi_structure_investors_sectors_regions_2025.svg&quot; alt=&quot;Vietnam FDI structure by investor country, sector, and locality in 2025&quot;&gt;
+&lt;figcaption&gt;Sources: National Statistics Office of Viet Nam 2025 data; VnEconomy reporting based on NSO data for the investor-country split; Vietnam.vn / Bao Dau Tu reporting based on Foreign Investment Agency data for post-merger locality concentration.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+The dominance of Singapore, China, Hong Kong, Japan, Taiwan, and Korea is not accidental. These economies are closely connected to electronics, machinery, components, textiles, logistics, finance, and regional headquarters functions. Singapore&#x27;s large share can include regional holding-company structures as well as operating investment. China&#x27;s rising position reflects supply-chain relocation, China-plus-one strategies, and the movement of component producers and assembly suppliers into Viet Nam. Japanese and Korean investors remain important because they have long-standing production networks, quality systems, and supplier relationships in electronics, machinery, automotive components, and industrial services.
+
+This investor composition creates opportunity and risk at the same time. The opportunity is that Viet Nam can receive production know-how, export orders, supplier standards, training, and integration into regional manufacturing systems. The risk is that Viet Nam can become an extension of foreign production networks without building enough domestic firms capable of supplying components, materials, engineering, design, testing, logistics, or after-sales services.
+
+### 10.2.3 Industry Structure: Manufacturing Leads, Real Estate Still Matters
+
+By sector, newly licensed FDI in 2025 remained strongly manufacturing-oriented. Processing and manufacturing attracted USD 9.80 billion, equal to 56.5 percent of newly licensed FDI capital. Real estate business attracted USD 3.67 billion, or 21.2 percent. Other sectors accounted for USD 3.85 billion, or 22.2 percent.[1]
+
+This composition is broadly positive because manufacturing FDI is more directly connected to exports, employment, industrial zones, technology exposure, logistics, and supplier development than purely asset-based investment. It is also consistent with Viet Nam&#x27;s export structure: manufactured goods accounted for 88.7 percent of goods exports in 2025.[1]
+
+However, the real-estate share deserves attention. Real estate FDI can support urban development, industrial parks, logistics facilities, housing, and commercial infrastructure. But if too much FDI flows into land appreciation, speculative property, or enclave-style projects, it may raise land prices without strengthening technological capability. For a country trying to upgrade from assembly to higher-value manufacturing and services, FDI quality matters more than FDI volume.
+
+The industry question should therefore be asked in three layers. First, does FDI enter productive sectors such as electronics, machinery, semiconductors, clean energy, logistics, digital services, and supporting industries? Second, does it create higher-skilled employment and supplier opportunities? Third, does it increase Vietnamese-owned capability, or does it mainly increase foreign-owned output produced on Vietnamese territory?
+
+### 10.2.4 Regional Concentration after the 2025 Local Government Reform
+
+FDI is not distributed evenly across Viet Nam. It concentrates in regions with industrial parks, ports, airports, expressways, skilled labor, reliable electricity, supplier density, customs capacity, and proactive provincial governments. After the 2025 administrative mergers and the move to a two-tier local government model, the geography of FDI became even more important.
+
+Post-merger cumulative FDI data reported by Vietnam.vn / Bao Dau Tu from Foreign Investment Agency figures show Ho Chi Minh City leading with more than USD 140.7 billion in valid registered capital and 19,511 valid projects. Bac Ninh followed with more than USD 46.85 billion, Hanoi with nearly USD 45.6 billion, Hai Phong with more than USD 44.8 billion, and Dong Nai with USD 44.64 billion. Other major locations included Tay Ninh, Quang Ninh, Thanh Hoa, Hung Yen, and Ninh Binh.[7]
+
+This pattern has clear administrative meaning. FDI attraction is not only a national investment-policy matter. It is a local governance question. Investors choose locations where land clearance is faster, infrastructure is coordinated, industrial zones are credible, labor supply is available, and provincial officials can solve problems. The 2025 merger map may create larger planning spaces for metropolitan regions and industrial corridors, but it also requires stronger coordination of land records, tax administration, labor services, environmental permits, industrial-zone management, and transport planning.
+
+Regional concentration is efficient when it produces industrial clusters. It is risky when it deepens inequality between leading industrial regions and lagging provinces. The state must therefore use FDI clusters as learning platforms while also building connecting infrastructure, supplier programs, vocational training, and logistics links for less-developed regions.
+
+### 10.2.5 FDI Firms and the Export Platform
+
+The foreign-invested sector dominates Viet Nam&#x27;s export system. In 2025, total goods exports reached USD 475.04 billion. The domestic economic sector exported USD 107.95 billion, down 6.1 percent from the previous year and accounting for 22.7 percent of total goods exports. The FDI sector, including crude oil, exported USD 367.09 billion, up 26.1 percent and accounting for 77.3 percent of total goods exports.[1]
+
+The import side tells the same story. Total goods imports reached USD 455.01 billion in 2025. The domestic sector imported USD 137.38 billion, while the FDI sector imported USD 317.63 billion, up 31.9 percent. The FDI sector recorded a goods trade surplus of USD 49.46 billion, while the domestic sector recorded a deficit of USD 29.43 billion.[1]
+
+This is the core of Viet Nam&#x27;s export-manufacturing model. FDI firms import machinery, components, intermediate goods, materials, and production inputs; use Viet Nam as a manufacturing and assembly platform; and export finished or semi-finished goods to global markets. The model has produced extraordinary export growth, but it also means that much of the export system is organized by foreign firms and foreign supply chains.
+
+This is not a failure. It is a stage of development. FDI-led exports have generated jobs, industrial discipline, logistics demand, worker learning, tax revenue, foreign exchange, and production visibility. But it is an incomplete development model if domestic firms remain outside the higher-value parts of the chain.
+
+### 10.2.6 Domestic Linkages and the Spillover Problem
+
+The domestic linkage problem is the central weakness of Viet Nam&#x27;s FDI model. OECD analysis warned that Viet Nam risks a dualistic economic structure if foreign-invested exporters, SOEs, large private groups, and smaller domestic firms operate under unequal opportunities and weak integration. OECD also emphasized that linkages with domestic firms do not emerge automatically; they require domestic technological and managerial capability. When capability gaps are large, multinationals tend to rely on their own foreign suppliers rather than local Vietnamese firms.[8]
+
+The trade data support this diagnosis. A country in which the FDI sector accounts for 77.3 percent of goods exports and about 69.8 percent of goods imports is deeply integrated into global production. But that same structure can limit domestic value added if Vietnamese firms supply mainly low-value services, packaging, simple inputs, labor, land, utilities, and logistics rather than components, tooling, design, engineering, software, certification, testing, and after-sales functions.
+
+The problem is not only firm capability. It is also administrative. Domestic suppliers need finance, quality certification, testing laboratories, standards information, contract enforcement, tax predictability, customs transparency, industrial land, skilled technicians, and connections to multinational procurement systems. Provincial investment-promotion agencies often try to match foreign investors with local suppliers, but matchmaking alone is weak if local firms cannot meet cost, quality, delivery, environmental, and compliance standards.
+
+### 10.2.7 Policy Interpretation
+
+Viet Nam should treat FDI as a platform, not a destination. The first-stage success is clear: the country has attracted large capital commitments, executed record disbursements, built manufacturing exports, and become a critical node in Asian supply chains. The second-stage challenge is more demanding: raise domestic value added, strengthen supporting industries, reduce excessive imported-input dependence, and ensure that technology spillovers become real capabilities inside Vietnamese firms.
+
+This requires a shift from attraction policy to embedding policy. Investment promotion should still bring in capital, but screening and incentives should favor projects that provide local procurement, workforce training, technology transfer, R&amp;D, engineering, design, energy efficiency, and domestic supplier development. Industrial-zone governance should include supplier databases, certification support, logistics services, worker training, environmental compliance, and dispute-resolution channels. Customs and tax agencies should support rules-of-origin compliance so that FDI-led exports do not become vulnerable to transshipment scrutiny.
+
+Viet Nam has already proved that it can attract FDI. The next stage is conversion: turning foreign-invested production into Vietnamese supplier capability, engineering depth, managerial learning, and technological absorption. If that conversion works, FDI will support movement toward higher income and technological upgrading. If it stalls, Viet Nam may remain an exceptionally successful export platform while domestic firms capture too little of the knowledge, profits, and strategic capabilities embedded in global production.
+
+[1]: https://www.nso.gov.vn/en/data-and-statistics/2026/01/socio-economic-situation-in-the-fourth-quarter-and-2025/ &quot;National Statistics Office of Viet Nam, Socio-economic situation in the fourth quarter and 2025&quot;
+[2]: https://www.mpi.gov.vn/en/Pages/2021/Report-on-foreign-direct-investment-in-2021-739397.aspx &quot;Ministry of Planning and Investment, Report on foreign direct investment in 2021&quot;
+[3]: https://mpi.gov.vn/en/Pages/2022/Report-on-foreign-direct-investment-in-2022-403479.aspx &quot;Ministry of Planning and Investment, Report on foreign direct investment in 2022&quot;
+[4]: https://www.mpi.gov.vn/en/Pages/2023-12-29/FDI-attraction-situation-in-Vietnam-and-Vietnam-s-fh2c25.aspx &quot;Ministry of Planning and Investment, FDI attraction situation in Vietnam and Vietnam&#x27;s overseas investment in 2023&quot;
+[5]: https://www.mpi.gov.vn/en/Pages/2025-1-14/FDI-attraction-situation-in-Vietnam-and-Vietnam-s-ehsipf.aspx &quot;Ministry of Planning and Investment, FDI attraction situation in Vietnam and Vietnam&#x27;s overseas investment in 2024&quot;
+[6]: https://en.vneconomy.vn/vietnam-attracts-3842-billion-of-fdi-in-2025.htm &quot;VnEconomy, Vietnam attracts $38.42 billion of FDI in 2025&quot;
+[7]: https://www.vietnam.vn/en/hau-sap-nhap-dia-phuong-nao-dan-dau-ve-thu-hut-von-fdi &quot;Vietnam.vn / Bao Dau Tu, post-merger FDI locality concentration&quot;
+[8]: https://www.oecd.org/en/publications/multi-dimensional-review-of-viet-nam_367b585c-en/full-report/component-12.html &quot;OECD Multi-dimensional Review of Viet Nam, leveraging FDI to develop firm-level capabilities&quot;</textarea>
+</article>
+      
+<figure class="chart-card">
+  <h2>exports-imports</h2>
+  <div class="chart-frame"><canvas id="chart-exports-imports"></canvas></div>
+  <figcaption>Source:  Unit: </figcaption>
+  <p>The figure is included as chapter-level evidence. Interpret it by identifying direction, turning points, divergence among series, and the policy or institutional mechanism that could plausibly explain the pattern.</p>
+</figure>
+
+
+<figure class="chart-card">
+  <h2>current-account</h2>
+  <div class="chart-frame"><canvas id="chart-current-account"></canvas></div>
+  <figcaption>Source:  Unit: </figcaption>
+  <p>The figure is included as chapter-level evidence. Interpret it by identifying direction, turning points, divergence among series, and the policy or institutional mechanism that could plausibly explain the pattern.</p>
+</figure>
+
+
+<figure class="chart-card">
+  <h2>fdi-amount</h2>
+  <div class="chart-frame"><canvas id="chart-fdi-amount"></canvas></div>
+  <figcaption>Source:  Unit: </figcaption>
+  <p>The figure is included as chapter-level evidence. Interpret it by identifying direction, turning points, divergence among series, and the policy or institutional mechanism that could plausibly explain the pattern.</p>
+</figure>
+
+
+<figure class="chart-card">
+  <h2>fdi-share</h2>
+  <div class="chart-frame"><canvas id="chart-fdi-share"></canvas></div>
+  <figcaption>Source:  Unit: </figcaption>
+  <p>The figure is included as chapter-level evidence. Interpret it by identifying direction, turning points, divergence among series, and the policy or institutional mechanism that could plausibly explain the pattern.</p>
+</figure>
+
+    </main>
+  </div>
+  <script>
+    window.REPORT_CHARTS = [];
+    document.addEventListener('DOMContentLoaded', () => {
+      if (!window.Chart || !window.REPORT_CHARTS) return;
+      window.REPORT_CHARTS.forEach((entry) => {
+        const cfg = entry.data || {};
+        const el = document.getElementById('chart-' + entry.id);
+        if (!el || !cfg.datasets) return;
+        const colors = ['#197278', '#246b46', '#b7860b', '#7b2d26', '#3f4e9a', '#6a4c93'];
+        const dashes = [[], [8, 4], [2, 3], [10, 4, 2, 4], [1, 4], [12, 3, 3, 3]];
+        const pointStyles = ['circle', 'rect', 'triangle', 'rectRot', 'crossRot', 'star'];
+        const datasets = (cfg.datasets || []).map((dataset, i) => ({
+          ...dataset,
+          borderColor: dataset.borderColor || colors[i % colors.length],
+          backgroundColor: dataset.backgroundColor || 'transparent',
+          borderDash: dataset.borderDash || dashes[i % dashes.length],
+          borderWidth: dataset.borderWidth || 2.4,
+          pointStyle: dataset.pointStyle || pointStyles[i % pointStyles.length],
+          pointRadius: dataset.pointRadius ?? 1.8,
+          tension: dataset.tension ?? 0.25,
+          spanGaps: dataset.spanGaps ?? true
+        }));
+        new Chart(el, {
+          type: 'line',
+          data: { labels: cfg.labels || [], datasets },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            interaction: { mode: 'index', intersect: false },
+            plugins: { legend: { position: 'bottom', labels: { boxWidth: 28 } } },
+            scales: { x: { title: { display: true, text: 'Year' } }, y: { title: { display: true, text: cfg.unit || 'Value' } } }
+          }
+        });
+      });
+    });
+  </script>
+  <script src="../assets/report.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  function fallbackMarkdown(text) {
+    const escaped = text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    return escaped.split(/\n{2,}/).map((block) => `<p>${block.replace(/\n/g, "<br>")}</p>`).join("");
+  }
+  function renderMarkdown(text) {
+    return window.marked ? marked.parse(text) : fallbackMarkdown(text);
+  }
+  document.querySelectorAll('[data-md-panel]').forEach((panel) => {
+    const id = panel.getAttribute('data-md-panel');
+    const source = panel.getAttribute('data-md-source');
+    const preview = panel.querySelector('.md-preview');
+    const editor = panel.querySelector('.md-editor');
+    const edit = panel.querySelector('[data-md-action="edit"]');
+    const save = panel.querySelector('[data-md-action="save"]');
+    const cancel = panel.querySelector('[data-md-action="cancel"]');
+    if (!preview || !editor || !edit || !save || !cancel) return;
+    const storageKey = `country-report-markdown:v1:${source || id}`;
+    const original = editor.value;
+    const stored = localStorage.getItem(storageKey);
+    const hasStoredDraft = stored !== null && (!source || window.location.protocol === 'file:');
+    if (hasStoredDraft) editor.value = stored;
+    const showPreview = () => { preview.innerHTML = renderMarkdown(editor.value); };
+    const setEditing = (editing) => {
+      editor.hidden = !editing;
+      preview.hidden = editing;
+      edit.hidden = editing;
+      save.hidden = !editing;
+      cancel.hidden = !editing;
+    };
+    async function saveMarkdown() {
+      if (source && window.location.protocol.startsWith('http')) {
+        const response = await fetch('/api/save-section', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ source, markdown: editor.value })
+        });
+        if (!response.ok) throw new Error(await response.text());
+        localStorage.removeItem(storageKey);
+        return true;
+      } else {
+        localStorage.setItem(storageKey, editor.value);
+        if (source) window.alert('This edit was saved only as a browser draft. Open the report through code/serve_report.py to save it permanently to the Markdown source file.');
+        return false;
+      }
+    }
+    if (hasStoredDraft) showPreview();
+    setEditing(false);
+    edit.addEventListener('click', () => setEditing(true));
+    save.addEventListener('click', async () => {
+      save.disabled = true;
+      try {
+        const savedToServer = await saveMarkdown();
+        if (savedToServer) {
+          window.location.reload();
+          return;
+        }
+        showPreview();
+        setEditing(false);
+      } catch (error) {
+        window.alert(error.message || 'Could not save the Markdown source.');
+      } finally {
+        save.disabled = false;
+      }
+    });
+    cancel.addEventListener('click', () => {
+      editor.value = localStorage.getItem(storageKey) ?? original;
+      if (hasStoredDraft || window.location.protocol === 'file:') showPreview();
+      setEditing(false);
+    });
+  });
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>9.2 Inflation, Exchange-Rate Management, and Macro Stability | VNM Country Report</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+  <script src="../assets/chart.umd.min.js"></script>
+  <style>
+    body{margin:0;background:#f4f6f4;color:#17201b;font-family:Arial,Helvetica,sans-serif;line-height:1.65}
+    .layout{display:grid;grid-template-columns:320px minmax(0,1fr);min-height:100vh}
+    aside{position:sticky;top:0;height:100vh;overflow:auto;background:#fff;border-right:1px solid #d9ded8;padding:18px}
+    aside a{display:block;color:#25312a;text-decoration:none;border-radius:6px;padding:6px 8px;font-size:13px}
+    aside a:hover,aside a.active{background:#e8f0ea;color:#0d5a6a} summary{cursor:pointer;font-weight:700;margin:10px 0 4px}
+    .home{font-weight:800;margin-bottom:8px}
+    main{max-width:1050px;padding:36px min(6vw,72px) 90px}
+    .crumb{font-size:13px;color:#607067;margin:0 0 8px} h1{font-size:36px;line-height:1.15;margin:0 0 8px}
+    .chapter-title{color:#56645c;margin:0 0 26px}
+    .section-body,.chart-card{background:#fff;border:1px solid #d9ded8;border-radius:8px;padding:18px;margin:0 0 22px}
+    .section-body h2{font-size:26px;margin:0 0 14px} .section-body p{font-family:Georgia,'Times New Roman',serif;font-size:18px;margin:0 0 14px}
+    table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px} th,td{border:1px solid #d9ded8;padding:8px;vertical-align:top} th{background:#edf2ea;text-align:left}
+    code{background:#eef2ee;border:1px solid #d8ded8;border-radius:4px;padding:1px 4px} .source-note,figcaption{font-size:12px;color:#607067}
+    .chart-frame{height:340px} .chart-frame canvas{width:100%;height:100%}
+    .figure-card,.map-card,.symbol-figure{background:#fff;border:1px solid #d9ded8;border-radius:8px;padding:14px;margin:18px 0 24px}
+    .source{color:#607067;font-size:12px;margin:10px 0 0} .map-grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(280px,.7fr);gap:16px;align-items:start}
+    .adm-map{width:100%;height:auto;border:1px solid #d9ded8;background:#f7fbfc} .adm-path{stroke:#fff;stroke-width:.7} .map-label{font-size:6px;fill:#32424f;text-anchor:middle;pointer-events:none} .neighbor-label{font-size:12px;fill:#6c7b88}
+    .capital-marker circle{fill:#c23b22;stroke:#fff;stroke-width:1.4} .capital-marker text{font-size:12px;fill:#17212b;font-weight:700} .map-table-wrap{max-height:420px;overflow:auto}
+    .symbol-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px} .symbol-card{min-height:260px;border:1px solid #d9ded8;border-radius:8px;background:#fbfdfe;padding:14px;display:flex;flex-direction:column;gap:10px}
+    .symbol-card h3{font-size:18px;margin:2px 0 0} .symbol-card p{font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:1.48;color:#34424e;margin:0} .symbol-kicker{color:#607067;font-size:11px;text-transform:uppercase;letter-spacing:.06em}
+    .flag-indonesia{height:92px;border:1px solid #b9c6cd;border-radius:4px;overflow:hidden} .flag-indonesia span{display:block;height:50%} .flag-indonesia span:first-child{background:#c9182b} .flag-indonesia span:last-child{background:#fff}
+    .garuda-mark{height:92px;display:grid;grid-template-columns:1fr 56px 1fr;align-items:center;gap:4px} .garuda-mark .wing{height:60px;background:#c59a35;border:1px solid #9d761e} .garuda-mark .left{border-radius:60px 10px 18px 60px} .garuda-mark .right{border-radius:10px 60px 60px 18px}
+    .garuda-mark .body{height:82px;background:#d6ad46;border:1px solid #9d761e;border-radius:36px 36px 18px 18px} .garuda-mark .shield{grid-column:2;justify-self:center;margin-top:-58px;width:36px;height:42px;border-radius:8px 8px 14px 14px;background:#1f3f68;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;border:2px solid #f1d47b}
+    .motto-line{height:92px;display:flex;align-items:center;justify-content:center;text-align:center;border:1px solid #cfd9de;border-radius:6px;background:linear-gradient(180deg,#fff,#eef5f7);font-weight:800;color:#15384a;padding:12px} .anthem-bars{height:92px;display:flex;align-items:end;gap:8px;justify-content:center;border:1px solid #cfd9de;border-radius:6px;background:#f8fbfc;padding:16px}
+    .anthem-bars span{width:22px;background:#0f6f87;border-radius:4px 4px 0 0} .anthem-bars span:nth-child(1){height:38px} .anthem-bars span:nth-child(2){height:62px} .anthem-bars span:nth-child(3){height:48px} .anthem-bars span:nth-child(4){height:72px}
+    @media(max-width:860px){.layout{grid-template-columns:1fr}aside{position:relative;height:auto}main{padding:24px 18px}}
+  
+    .md-toolbar{display:flex;justify-content:flex-end;gap:8px;margin:0 0 14px}
+    .md-toolbar button{border:1px solid #0d5a6a;background:#0d5a6a;color:#fff;border-radius:5px;padding:7px 11px;font:700 12px Arial,Helvetica,sans-serif;cursor:pointer}
+    .md-toolbar button[data-md-action='cancel']{background:#fff;color:#25312a;border-color:#cfd8d3}
+    .md-editor{width:100%;min-height:520px;border:1px solid #cfd8d3;border-radius:6px;padding:14px;font:14px Consolas,monospace;line-height:1.45}
+
+  </style>
+  <script src="../assets/marked.min.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <aside><a class='home' href='../index.html'>VNM cover</a>
+<details ><summary>1. Country Overview</summary><a class='section-link ' href='01-01-national-profile.html'>1.1 National Profile</a><a class='section-link ' href='01-02-state-symbols.html'>1.2 State Symbols</a><a class='section-link ' href='01-03-geography-and-administrative-divisions.html'>1.3 Geography and Administrative Divisions</a><a class='section-link ' href='01-04-core-institutional-diagnosis.html'>1.4 Core Institutional Diagnosis</a><a class='section-link ' href='01-05-evidence-base.html'>1.5 Evidence Base and Reading Direction</a></details>
+<details ><summary>2. Historical Background</summary><a class='section-link ' href='02-01-civilizational-layers-and-frontier-statecraft.html'>2.1 Civilizational Layers and Frontier Statecraft</a><a class='section-link ' href='02-02-colonial-rule-revolution-and-war.html'>2.2 Colonial Rule, Revolution, and War</a><a class='section-link ' href='02-03-reunification-and-doi-moi.html'>2.3 Reunification and Doi Moi</a><a class='section-link ' href='02-04-historical-legacies-in-present-institutions.html'>2.4 Historical Legacies in Present Institutions</a></details>
+<details ><summary>3. Constitution and Basic State Order</summary><a class='section-link ' href='03-01-constitutional-order-and-amendments.html'>3.1 Constitutional Order, Ownership, and the Architecture of State Power</a><a class='section-link ' href='03-02-sovereignty-party-leadership-and-territorial-integrity.html'>3.2 Sovereignty, Party Leadership, and Territorial Integrity</a><a class='section-link ' href='03-03-rights-duties-and-socialist-rule-of-law.html'>3.3 Rights, Duties, and Socialist Rule of Law</a><a class='section-link ' href='03-04-state-power-review-audit-and-emergency-authority.html'>3.4 State Power, Review, Audit, and Emergency Authority</a></details>
+<details ><summary>4. Political System and Power Structure</summary><a class='section-link ' href='04-01-party-leadership-and-state-institutions.html'>4.1 Party Leadership and State Institutions</a><a class='section-link ' href='04-02-national-assembly-elections-and-representation.html'>4.2 National Assembly, Elections, and Representation</a><a class='section-link ' href='04-03-executive-coordination-and-government-formation.html'>4.3 Executive Coordination and Government Formation</a><a class='section-link ' href='04-04-judiciary-rule-of-law-corruption-and-accountability.html'>4.4 Courts, Procuracy, Inspection, and Anti-Corruption</a><a class='section-link ' href='04-05-local-politics-and-real-power-relations.html'>4.5 Local Politics and Real Power Relations</a><a class='section-link ' href='04-06-political-system-diagnostics-and-democratic-trajectory.html'>4.6 Political System Diagnostics and Democratic Trajectory</a></details>
+<details ><summary>5. Administrative System and Government Organization</summary><a class='section-link ' href='05-01-central-government-and-ministerial-system.html'>5.1 Central Government and Ministerial System</a><a class='section-link ' href='05-02-organizational-management-and-bureaucratic-reform.html'>5.2 Organizational Management and Bureaucratic Reform</a><a class='section-link ' href='05-03-human-resource-management-and-civil-service.html'>5.3 Human Resource Management and Civil Service</a><a class='section-link ' href='05-04-financial-administration-procurement-audit-and-inspection.html'>5.4 Financial Administration, Procurement, Audit, and Inspection</a><a class='section-link ' href='05-05-local-administration-and-service-delivery.html'>5.5 Local Administration and Service Delivery</a><a class='section-link ' href='05-06-digital-government-and-administrative-accountability.html'>5.6 Digital Government and Administrative Accountability</a><a class='section-link ' href='05-07-implementation-capacity-and-administrative-performance.html'>5.7 Implementation Capacity and Administrative Performance</a></details>
+<details ><summary>6. Governance and Institutional Capacity</summary><a class='section-link ' href='06-01-government-effectiveness-and-regulatory-quality.html'>6.1 Government Effectiveness and Regulatory Quality</a><a class='section-link ' href='06-02-rule-of-law-and-corruption-control.html'>6.2 Rule of Law and Corruption Control</a><a class='section-link ' href='06-03-voice-accountability-and-stability.html'>6.3 Voice, Accountability, and Stability</a><a class='section-link ' href='06-04-what-governance-indicators-reveal.html'>6.4 What Governance Indicators Reveal</a></details>
+<details ><summary>7. Fiscal System and Public Sector</summary><a class='section-link ' href='07-01-revenue-taxation-and-expenditure.html'>7.1 Revenue, Taxation, and Expenditure</a><a class='section-link ' href='07-02-deficit-debt-and-fiscal-space.html'>7.2 Fiscal Balance, Debt, and Fiscal Space</a><a class='section-link ' href='07-03-public-investment-soes-and-quasi-fiscal-risk.html'>7.3 Public Investment, Procurement, SOEs, and Quasi-Fiscal Risk</a><a class='section-link ' href='07-04-budget-decentralization-and-audit.html'>7.4 Budget Decentralization, Procurement Oversight, and Audit</a><a class='section-link ' href='07-05-fiscal-capacity-and-public-sector-risks.html'>7.5 Fiscal Capacity and Public Sector Risks</a></details>
+<details ><summary>8. Population and Social Structure</summary><a class='section-link ' href='08-01-population-scale-and-age-structure.html'>8.1 Population Scale and Age Structure</a><a class='section-link ' href='08-02-urbanization-and-regional-distribution.html'>8.2 Urbanization and Regional Distribution</a><a class='section-link ' href='08-03-ethnicity-language-religion-and-social-cohesion.html'>8.3 Ethnicity, Language, Religion, and Social Cohesion</a><a class='section-link ' href='08-04-migration-remittances-and-inclusion.html'>8.4 Migration, Remittances, and Inclusion</a></details>
+<details open><summary>9. Macroeconomic Structure</summary><a class='section-link ' href='09-01-gdp-scale-growth-and-income.html'>9.1 GDP Scale, Growth, and Income Level</a><a class='section-link active' href='09-02-inflation-exchange-rate-and-macro-stability.html'>9.2 Inflation, Exchange-Rate Management, and Macro Stability</a><a class='section-link ' href='09-03-industrial-structure-and-productivity.html'>9.3 Industrial Structure, Sectoral Transformation, and Productivity</a><a class='section-link ' href='09-04-growth-model-and-structural-vulnerabilities.html'>9.4 External Position, Trade Balance, and Structural Constraints</a><a class='section-link ' href='09-05-growth-driver-model-and-interpretation.html'>9.5 Growth Driver Model and Interpretation</a></details>
+<details ><summary>10. Trade, Investment, and External Economy</summary><a class='section-link ' href='10-01-exports-imports-and-current-account.html'>10.1 Export-Import Trends, Trade Dependence, and Export Transformation</a><a class='section-link ' href='10-02-fdi-and-export-manufacturing.html'>10.2 FDI and Export Manufacturing</a><a class='section-link ' href='10-03-trading-partners-supply-chains-and-technology-upgrading.html'>10.3 Trading Partners, Supply Chains, and Technology Upgrading</a><a class='section-link ' href='10-04-investment-rules-zones-and-industrial-policy.html'>10.4 Investment Rules, Zones, and Industrial Policy</a></details>
+<details ><summary>11. Infrastructure, Energy, and Digital Connectivity</summary><a class='section-link ' href='11-01-energy-access-and-power-system-reform.html'>11.1 Energy Access and Power System Reform</a><a class='section-link ' href='11-02-transport-logistics-and-corridors.html'>11.2 Transport, Logistics, and Corridors</a><a class='section-link ' href='11-03-digital-connectivity.html'>11.3 Digital Connectivity, AI Infrastructure, and the Digital Economy</a><a class='section-link ' href='11-04-infrastructure-governance-and-climate-resilience.html'>11.4 Infrastructure Governance and Climate Resilience</a></details>
+<details ><summary>12. Labor Market and Human Capital</summary><a class='section-link ' href='12-01-labor-force-and-participation.html'>12.1 Labor Force and Participation</a><a class='section-link ' href='12-02-women-youth-and-informality.html'>12.2 Women, Youth, and Informality</a><a class='section-link ' href='12-03-agricultural-employment-and-productivity.html'>12.3 Agricultural Employment and Productivity</a><a class='section-link ' href='12-04-skills-education-and-human-capital.html'>12.4 Skills, Education, and Human Capital</a></details>
+<details ><summary>13. Education, Health, and Welfare</summary><a class='section-link ' href='13-01-education-system-and-public-spending.html'>13.1 Education System, Skills Policy, and Public Spending</a><a class='section-link ' href='13-02-health-outcomes-and-service-capacity.html'>13.2 Health Care, Population Ageing, and Financial Protection</a><a class='section-link ' href='13-03-water-sanitation-nutrition-and-welfare.html'>13.3 Water, Sanitation, Nutrition, and Welfare</a><a class='section-link ' href='13-04-human-development-and-territorial-equity.html'>13.4 Human Development and Territorial Equity</a></details>
+<details ><summary>14. Financial Sector and Economic Institutions</summary><a class='section-link ' href='14-01-banks-credit-and-capital-markets.html'>14.1 Banks, Credit, and Capital Markets</a><a class='section-link ' href='14-02-state-bank-of-vietnam-and-financial-supervision.html'>14.2 State Bank of Vietnam and Financial Supervision</a><a class='section-link ' href='14-03-fintech-payments-and-inclusion.html'>14.3 Fintech, Payments, and Inclusion</a><a class='section-link ' href='14-04-financial-stability-and-reform-priorities.html'>14.4 Financial Stability and Reform Priorities</a></details>
+<details ><summary>15. Foreign Relations, Security, and Geopolitics</summary><a class='section-link ' href='15-01-bamboo-diplomacy-and-asean.html'>15.1 Bamboo Diplomacy, ASEAN, and the Evolution of Vietnam’s Foreign Policy Principles</a><a class='section-link ' href='15-02-china-the-united-states-and-the-east-sea.html'>15.2 China, the United States, and the East Sea</a><a class='section-link ' href='15-03-defense-police-border-and-transnational-risks.html'>15.3 Defense, Police, Border, and Transnational Risks</a><a class='section-link ' href='15-04-mekong-energy-security-and-strategic-corridors.html'>15.4 Mekong, Energy Security, and Strategic Corridors</a></details>
+<details ><summary>16. Major Policies and National Development Strategy</summary><a class='section-link ' href='16-01-evolution-of-national-development-strategy.html'>16.1 Evolution of National Development Strategy</a><a class='section-link ' href='16-02-socio-economic-development-strategy-2021-2030.html'>16.2 Socio-Economic Development Strategy 2021-2030</a><a class='section-link ' href='16-03-administrative-restructuring-and-public-administration-reform.html'>16.3 Administrative Restructuring and Public Administration Reform</a><a class='section-link ' href='16-04-digital-green-and-industrial-transformation.html'>16.4 Digital, Green, and Industrial Transformation</a><a class='section-link ' href='16-05-implementation-matrix-and-risks.html'>16.5 Implementation Matrix and Risks</a><a class='section-link ' href='16-06-green-growth-climate-governance-and-sdg-implementation.html'>16.6 Green Growth, Climate Governance, and SDG Implementation</a></details>
+<details ><summary>17. Integrated Assessment</summary><a class='section-link ' href='17-01-national-operating-model.html'>17.1 National Operating Model</a><a class='section-link ' href='17-02-institutional-strengths-risks-and-bottlenecks.html'>17.2 Institutional Strengths, Risks, and Bottlenecks</a><a class='section-link ' href='17-03-implications-for-korea-and-international-cooperation.html'>17.3 Implications for Korea and International Cooperation</a><a class='section-link ' href='17-04-vietnam-and-comparative-administration-theory.html'>17.4 Vietnam and Comparative Administration Theory</a><a class='section-link ' href='17-05-strategic-outlook.html'>17.5 Strategic Outlook</a></details>
+<details ><summary>18. Appendix, Sources, and Method</summary><a class='section-link ' href='18-01-timeline.html'>18.1 Timeline</a><a class='section-link ' href='18-02-government-organization-chart.html'>18.2 Government Organization Chart</a><a class='section-link ' href='18-03-major-laws-and-policy-documents.html'>18.3 Major Laws and Policy Documents</a><a class='section-link ' href='18-04-indicator-codebook.html'>18.4 Indicator Codebook</a><a class='section-link ' href='18-05-update-workflow-and-evidence-archive.html'>18.5 Update Workflow and Evidence Archive</a></details>
+<details ><summary>19. References</summary><a class='section-link ' href='19-01-references.html'>19.1 References</a><a class='section-link ' href='19-02-citation-and-source-integrity-notes.html'>19.2 Citation and Source Integrity Notes</a></details></aside>
+    <main>
+      <p class="crumb"><a href="../09-macro.html">Chapter 9</a> / Section 2</p>
+      <h1>9.2 Inflation, Exchange-Rate Management, and Macro Stability</h1>
+      <p class="chapter-title">9. Macroeconomic Structure</p>
+      <article class="section-body editable-section" data-md-panel="09-02-inflation-exchange-rate-and-macro-stability" data-md-source="sections/09-02-inflation-exchange-rate-and-macro-stability.md">
+  <div class="md-toolbar">
+    <button type="button" data-md-action="edit">Edit Markdown</button>
+    <button type="button" data-md-action="save" hidden>Save</button>
+    <button type="button" data-md-action="cancel" hidden>Cancel</button>
+  </div>
+  <div class="md-preview"><h2 id='9-2-inflation-exchange-rate-management-and-macro-stability'>9.2 Inflation, Exchange-Rate Management, and Macro Stability</h2>
+<p><strong>ASEAN comparative lens (2026).</strong> Vietnam should be read in ASEAN comparison as ASEAN&#x27;s most prominent party-led, export-manufacturing upgrading case. Unlike the Philippines&#x27; service-remittance profile, Thailand&#x27;s older industrial-tourism base, Malaysia&#x27;s resource-industrial federal structure, or Indonesia&#x27;s archipelagic domestic-market scale, Vietnam&#x27;s comparative issue is how a socialist party-state manages very open global production networks. For this section, the regional comparison should compare growth, inflation, exchange-rate exposure, productivity, and sectoral structure with ASEAN&#x27;s manufacturing, services, tourism, resource, and corridor-based models. Local comparable indicators show: population 100.99 million (2024), rank 3 among the nine ASEAN reports in this workspace; GDP US$476.39 billion (2024), rank 4 among the nine ASEAN reports in this workspace; GDP per capita US$4,717 (2024), rank 5 among the nine ASEAN reports in this workspace; real GDP growth 7.09% (2024), rank 1 among the nine ASEAN reports in this workspace; government effectiveness 0.09 (2023), rank 6 among the nine ASEAN reports in this workspace; internet use 84.15% (2024), rank 4 among the nine ASEAN reports in this workspace. Use `sources/documents/regional/asean_comparative_lens_2026.md` together with ASEANstats, ASEAN Secretariat materials, and the country processed-indicator files before making cross-ASEAN claims.</p>
+<p>Macroeconomic stability is the operating discipline behind Vietnam&#x27;s growth model. The country is highly open, export-oriented, import-intensive, and credit-dependent. That means inflation, exchange-rate pressure, external buffers, credit growth, and fiscal policy cannot be analyzed separately. A shock to global demand can affect exports; a depreciation of the dong can raise import costs; higher food, housing, electricity, health-care, or education prices can affect household welfare; rapid credit growth can support investment but also feed real-estate and balance-sheet risk.</p>
+<p>The core question is therefore not whether Vietnam has achieved stability in a narrow technical sense. It is whether stability is strong enough to support the next stage of development: productivity upgrading, domestic supplier development, infrastructure investment, financial-sector resilience, and protection of household purchasing power. Vietnam&#x27;s recent record is comparatively strong, but the indicators show a more demanding policy environment than the simple phrase &quot;macro stability&quot; suggests.</p>
+<figure class="institution-figure">
+  <img class="institution-diagram" src="../assets/vnm_prices_exchange_rate_1996_2025.svg" alt="Vietnam inflation, GDP deflator, and exchange-rate trends from 1996 to 2025">
+  <figcaption>Figure 9.2a. Price and exchange-rate conditions. Sources: World Bank WDI table IDs FP.CPI.TOTL.ZG, NY.GDP.DEFL.KD.ZG, and PA.NUS.FCRF; National Statistics Office of Viet Nam 2025 CPI estimate.</figcaption>
+</figure>
+<h3>9.2.1 Inflation as a Welfare, Credibility, and Stability Indicator</h3>
+<p>Inflation is not only a monetary statistic. In Vietnam, it is a social-stability variable because food, fuel, transport, housing, education, and health-care prices directly affect household welfare. It is also a credibility variable because firms and households make wage, price, borrowing, and investment decisions based on whether they believe the authorities can keep inflation contained.</p>
+<p>World Bank WDI data show three inflation regimes. The first was the post-stabilization and early opening period, when inflation was much lower than the extreme volatility of the late planned economy but still uneven. From 1996 to 2007, CPI inflation averaged about 4.8 percent, with deflation in 2000 and higher price pressure in some years. This was a period of rapid market transition, trade opening, and institutional adjustment.</p>
+<p>The second regime was the high-inflation shock period around the global financial crisis and its aftermath. CPI inflation reached 23.1 percent in 2008 and 18.7 percent in 2011. The GDP deflator also surged, reaching very high levels in the same period. This phase matters because it shows the danger of rapid credit growth, commodity-price pressure, exchange-rate adjustment, and policy stimulus interacting at the same time. High inflation can quickly reduce real incomes, weaken confidence, and force monetary tightening.</p>
+<p>The third regime is the more stable period after 2012. CPI inflation averaged about 4.1 percent during 2012-2019 and about 3.0 percent during 2020-2024. WDI reports CPI inflation at 3.25 percent in 2023 and 3.62 percent in 2024. The National Statistics Office reported that average CPI rose 3.31 percent in 2025, while core inflation rose 3.21 percent, meeting the National Assembly&#x27;s inflation objective. This is a notable achievement because 2025 also saw strong GDP growth, high export and import growth, and rising service activity.</p>
+<p>The policy interpretation is straightforward: Vietnam has learned to operate a much more stable price regime than in the late 2000s, but price stability remains exposed to food prices, administered service prices, electricity tariffs, housing costs, wage growth, natural disasters, and import prices. Inflation management is therefore partly monetary policy, partly supply management, partly fiscal policy, and partly administrative coordination.</p>
+<h3>9.2.2 Consumer Price Inflation versus GDP Deflator</h3>
+<p>CPI inflation measures consumer prices faced by households. The GDP deflator measures prices of domestically produced output. Reading both indicators together helps separate household cost-of-living pressure from broader nominal price movements in the production economy.</p>
+<p>The two indicators moved together during the major shock years. In 2008, CPI inflation reached 23.1 percent and the GDP deflator rose 22.7 percent. In 2011, CPI inflation reached 18.7 percent and the GDP deflator rose 21.4 percent. These were not small household price fluctuations; they were economy-wide nominal stress episodes.</p>
+<p>After 2012, both indicators stabilized. CPI inflation fell to 0.6 percent in 2015, while the GDP deflator was negative in the same year. From 2020 to 2024, CPI inflation averaged about 3.0 percent and the GDP deflator also averaged about 3.0 percent. The similarity is important because it suggests that recent price stability was not only a statistical artifact of consumer basket composition. It reflected a broader stabilization of nominal conditions.</p>
+<p>However, the two indicators also point to different policy concerns. CPI inflation matters most for household welfare and wage bargaining. The GDP deflator matters for nominal GDP, fiscal ratios, enterprise revenue, and real growth interpretation. If nominal growth rises because prices rise, the development effect is weaker than if real productivity rises. Vietnam&#x27;s macro policy therefore needs to distinguish price-led nominal expansion from productivity-led real expansion.</p>
+<h3>9.2.3 Exchange-Rate Management in an Import-Intensive Export Economy</h3>
+<p>Vietnam&#x27;s exchange-rate problem is delicate because the economy is both export-oriented and import-intensive. A weaker dong may help some exporters, but many exporters also import components, machinery, fabric, fuel, chemicals, and technology. Depreciation can therefore raise input costs and inflation pressure even while supporting export competitiveness. A stronger dong may reduce import costs, but it can also weaken price competitiveness and encourage external imbalances if domestic demand is strong.</p>
+<p>The WDI annual average official exchange rate shows a gradual long-run depreciation of the dong against the U.S. dollar. The rate was about VND 11,033 per USD in 1996, VND 14,168 in 2000, VND 20,510 in 2011, VND 23,050 in 2019, VND 23,208 in 2020, VND 23,272 in 2022, VND 23,787 in 2023, and VND 24,165 in 2024. IMF&#x27;s selected indicators report the end-period nominal exchange rate at VND 25,485 per USD in 2024.</p>
+<p>The policy lesson is not that depreciation is always bad. Vietnam needs exchange-rate flexibility because external shocks must be absorbed somewhere: through reserves, interest rates, prices, fiscal support, output, or the exchange rate. The IMF&#x27;s 2025 Article IV assessment emphasized that greater exchange-rate flexibility is important for adjustment to external shocks. The constraint is pass-through: if depreciation quickly raises import costs, energy prices, producer costs, or inflation expectations, the State Bank of Vietnam has less room to support growth through easier monetary policy.</p>
+<h3>9.2.4 Monetary Policy: Growth Support under Limited Easing Space</h3>
+<p>Vietnam&#x27;s monetary authorities operate in a system where bank credit is central to growth. Credit supports firms, households, construction, real estate, infrastructure, trade finance, and consumption. But monetary easing can be risky when growth is already strong, inflation pressure is present, and exchange-rate pressure exists.</p>
+<p>The IMF&#x27;s 2025 Article IV selected indicators show credit to the economy growing by 14.9 percent at end-2024 and projected at 15.0 percent at end-2025. This is rapid enough to support output and investment, but it also raises the question of credit allocation. If credit flows into productive manufacturing, logistics, energy, export capacity, technology adoption, and working capital for viable firms, it can support long-term growth. If it flows into speculative real estate, weak corporate balance sheets, or low-return projects, it can create future financial stress.</p>
+<p>This is why the policy mix matters. IMF directors judged that room for monetary easing was limited and that inflation and foreign-exchange risks should be closely monitored. They also argued that fiscal policy could play a larger role if growth slowed. In practical terms, Vietnam should not rely on credit expansion as the default growth instrument. It should use monetary policy to maintain liquidity and confidence while using fiscal and structural policy to address infrastructure, public investment, skills, and productivity.</p>
+<figure class="institution-figure">
+  <img class="institution-diagram" src="../assets/vnm_macro_stability_external_credit_fiscal.svg" alt="Vietnam reserve cover, current account balance, private credit, and public debt trends">
+  <figcaption>Figure 9.2b. External, credit, and fiscal stability indicators. Sources: World Bank WDI table IDs FI.RES.TOTL.MO, BN.CAB.XOKA.GD.ZS, and FS.AST.PRVT.GD.ZS; IMF DataMapper table ID GGXWDG_NGDP; IMF 2025 Article IV selected indicators for 2025 reserve-cover and current-account markers.</figcaption>
+</figure>
+<h3>9.2.5 Foreign-Exchange Reserves and External Buffers</h3>
+<p>Foreign-exchange reserves are the buffer that allows an open economy to manage currency pressure, import needs, debt service, and confidence shocks. WDI reserve-cover data show that Vietnam&#x27;s reserves have not been uniformly high. Reserve cover was about 1.6 months of imports in 1996, 2.3 months in 2000, 3.2 months in 2008, 1.4 months in 2011, 2.5 months in 2012, 1.9 months in 2015, 3.4 months in 2019, 4.0 months in 2020, 3.0 months in 2023, and 2.4 months in 2024.</p>
+<p>IMF selected indicators show gross international reserves at USD 83.1 billion in 2024 and projected USD 79.3 billion in 2025. In months of prospective goods-and-services imports, the IMF indicator falls from 2.4 months in 2024 to 2.2 months in 2025. That does not mean Vietnam faces an immediate external crisis, but it does mean the policy authorities have to treat reserve adequacy carefully in a highly open economy.</p>
+<p>The external buffer problem is tied to the exchange-rate problem. If the authorities defend the currency too aggressively, reserves can fall. If they allow faster depreciation, inflation and balance-sheet pressures can rise. If they raise interest rates to defend the currency, credit and domestic demand can weaken. This is why exchange-rate flexibility, reserve management, and monetary credibility are part of the same macro-stability system.</p>
+<h3>9.2.6 Current Account Balance: Strength with Exposure</h3>
+<p>The current account shows whether the economy is generating external surplus or deficit through trade, services, income flows, and transfers. Vietnam&#x27;s current account has moved through distinct phases. WDI reports a deficit of 8.2 percent of GDP in 1996 and a very large deficit of 10.9 percent in 2008. After adjustment, the current account moved into surplus in several years, including 4.8 percent in 2012, 3.9 percent in 2019, 4.3 percent in 2020, 5.9 percent in 2023, and 6.3 percent in 2024. IMF selected indicators report a 6.6 percent current-account surplus in 2024 and project a surplus of 4.0 percent in 2025.</p>
+<p>This looks strong, but it should not be read as pure autonomy. Vietnam&#x27;s external position depends heavily on export manufacturing, imported intermediate inputs, FDI firms, remittances, tourism, and global demand. A current-account surplus can coexist with large import needs and profit repatriation by foreign firms. The correct interpretation is that Vietnam has external strength, but that strength is embedded in global production networks.</p>
+<p>The 2025 context makes this point clear. Strong export frontloading and large trade flows supported growth, but future trade-policy uncertainty could reduce the surplus. Macro stability therefore requires more than a positive current account. It requires diversified export markets, stronger domestic suppliers, credible rules of origin, logistics resilience, and the ability to absorb shifts in global electronics and manufacturing demand.</p>
+<h3>9.2.7 Credit Depth and Financial-Sector Risk</h3>
+<p>Domestic credit to the private sector is a useful indicator of financial deepening. WDI data show private credit rising from about 18.7 percent of GDP in 1996 to 35.3 percent in 2000, 82.9 percent in 2008, 103.3 percent in 2009, 90.4 percent in 2015, 108.0 percent in 2019, 115.5 percent in 2020, 124.3 percent in 2021, and 125.0 percent in 2022. This is a dramatic change. Vietnam has moved from a shallow financial system to a bank-centered economy where credit conditions strongly affect investment, real estate, firm survival, and household welfare.</p>
+<p>Financial deepening is not itself a problem. It supports development when credit finances productive firms, export capacity, infrastructure, SMEs, technology adoption, and household smoothing. The risk is that bank credit can also amplify real-estate cycles, corporate leverage, connected lending, maturity mismatch, and nonperforming loans. The IMF&#x27;s 2025 Article IV assessment explicitly warned that domestic financial stress could re-emerge from tighter financial conditions and high corporate indebtedness.</p>
+<p>This means macro stability depends on banking supervision, provisioning, corporate-bond regulation, real-estate market transparency, insolvency frameworks, and crisis preparedness. Credit growth must be judged by allocation quality, not only by aggregate speed.</p>
+<h3>9.2.8 Public Debt and Fiscal Space</h3>
+<p>Fiscal indicators are part of macro stability because Vietnam&#x27;s next growth stage requires large public investment in transport, energy, digital infrastructure, water, climate adaptation, education, and health. Public debt is moderate compared with many emerging economies. IMF DataMapper&#x27;s general-government gross debt series places debt around the low-30-percent-of-GDP range in 2024-2025, while the IMF&#x27;s 2025 Article IV selected indicators report public and publicly guaranteed debt at 31.3 percent of GDP in 2024 and a projected 32.0 percent in 2025.</p>
+<p>The central fiscal issue is therefore not an immediate debt crisis. It is execution quality. Vietnam has fiscal space relative to many peers, but using that space well requires stronger public investment management, appraisal, procurement, land clearance, intergovernmental coordination, fiscal transparency, and control of contingent liabilities from SOEs, banks, public-private partnerships, and local projects.</p>
+<p>Fiscal policy can support growth more safely than monetary policy when inflation and exchange-rate risks limit monetary easing. But fiscal expansion is useful only if it raises potential growth. Low-return projects, delayed disbursement, fragmented provincial priorities, or weak maintenance can convert fiscal space into waste.</p>
+<h3>9.2.9 Macro Stability as a Political-Administrative Capacity</h3>
+<p>Vietnam&#x27;s macro stability should be understood as a political-administrative achievement, as much as a political-administrative achievement as a central-bank function. Inflation management requires ministries that monitor food supply, energy tariffs, health-care prices, education fees, transport costs, and disaster impacts. Exchange-rate management requires coordination between the State Bank of Vietnam, fiscal authorities, trade agencies, state-owned enterprises, banks, and major importers and exporters. Public investment requires ministries and provinces to prepare projects, clear land, procure transparently, and disburse effectively.</p>
+<p>This is why macroeconomic management belongs in a book about politics and administration. The Vietnamese party-state derives part of its performance legitimacy from growth and stability. If inflation rises, credit stress spreads, or exchange-rate pressure weakens confidence, the problem becomes political as well as economic. Conversely, credible stability expands room for long-term development policy.</p>
+<h3>9.2.10 Indicator-by-Indicator Interpretation</h3>
+<table><thead><tr><th>Indicator</th><th>Main trend</th><th>Interpretation</th><th>Policy warning</th></tr></thead><tbody><tr><td>CPI inflation</td><td>23.1% in 2008; 18.7% in 2011; 3.62% in 2024; 3.31% in 2025</td><td>Vietnam moved from episodic high inflation to a more stable price regime.</td><td>Food, energy, housing, health-care, wage, and exchange-rate pressures can still pass through to households.</td></tr><tr><td>GDP deflator</td><td>22.7% in 2008; 21.4% in 2011; 4.16% in 2024</td><td>Economy-wide nominal pressure has stabilized since the early 2010s.</td><td>Nominal expansion should not be confused with productivity-led real growth.</td></tr><tr><td>Exchange rate</td><td>Annual average VND/USD moved from about 11,033 in 1996 to 24,165 in 2024</td><td>Gradual depreciation reflects adjustment in an open economy.</td><td>Excessive depreciation can raise import costs, inflation, and balance-sheet stress.</td></tr><tr><td>Reserve cover</td><td>4.0 months of imports in 2020; 2.4 in 2024; IMF projection 2.2 in 2025</td><td>External buffers remain important but not unlimited.</td><td>Defending the currency too strongly can use reserves; allowing depreciation can raise inflation.</td></tr><tr><td>Current account</td><td>6.3% of GDP surplus in WDI 2024; IMF projection 4.0% in 2025</td><td>External balance is strong after earlier deficit episodes.</td><td>Surplus depends on export manufacturing, FDI networks, and global demand conditions.</td></tr><tr><td>Private credit</td><td>About 18.7% of GDP in 1996; 125.0% in 2022</td><td>Financial deepening has become central to growth.</td><td>Credit allocation, real estate, corporate leverage, and bank supervision are core macro risks.</td></tr><tr><td>Public debt</td><td>Low-30-percent-of-GDP range in 2024-2025</td><td>Debt level is moderate and fiscal space exists.</td><td>Public investment quality, contingent liabilities, and fiscal transparency matter more than the headline debt ratio alone.</td></tr></tbody></table>
+<h3>9.2.11 Policy Implications</h3>
+<p>Vietnam&#x27;s macroeconomic strategy should combine stability with structural upgrading. Monetary policy should remain credible enough to anchor inflation expectations, but flexible enough to manage liquidity and external shocks. Exchange-rate policy should allow adjustment while avoiding disorderly depreciation and excessive pass-through into domestic prices. Credit policy should support productive investment and SMEs while restraining speculative real-estate and corporate-leverage risks.</p>
+<p>Fiscal policy should carry more of the growth-support burden when monetary space is limited. But that means better public investment, not larger spending envelopes by themselves. Infrastructure, power reliability, logistics, climate adaptation, digital systems, education, and health investments should be selected by their contribution to productivity and resilience.</p>
+<p>The larger conclusion is that Vietnam&#x27;s macro stability is strong but conditional. It rests on controlled inflation, credible exchange-rate management, adequate external buffers, disciplined credit growth, and effective fiscal execution. If those elements reinforce one another, Vietnam can use stability as a platform for higher-value growth. If they diverge, the same open and credit-dependent growth model that supports rapid expansion can transmit inflation, external, and financial stress very quickly.</p></div>
+  <textarea class="md-editor" hidden>## 9.2 Inflation, Exchange-Rate Management, and Macro Stability
+
+&lt;!-- asean-comparative-lens-2026:start --&gt;
+**ASEAN comparative lens (2026).** Vietnam should be read in ASEAN comparison as ASEAN&#x27;s most prominent party-led, export-manufacturing upgrading case. Unlike the Philippines&#x27; service-remittance profile, Thailand&#x27;s older industrial-tourism base, Malaysia&#x27;s resource-industrial federal structure, or Indonesia&#x27;s archipelagic domestic-market scale, Vietnam&#x27;s comparative issue is how a socialist party-state manages very open global production networks. For this section, the regional comparison should compare growth, inflation, exchange-rate exposure, productivity, and sectoral structure with ASEAN&#x27;s manufacturing, services, tourism, resource, and corridor-based models. Local comparable indicators show: population 100.99 million (2024), rank 3 among the nine ASEAN reports in this workspace; GDP US$476.39 billion (2024), rank 4 among the nine ASEAN reports in this workspace; GDP per capita US$4,717 (2024), rank 5 among the nine ASEAN reports in this workspace; real GDP growth 7.09% (2024), rank 1 among the nine ASEAN reports in this workspace; government effectiveness 0.09 (2023), rank 6 among the nine ASEAN reports in this workspace; internet use 84.15% (2024), rank 4 among the nine ASEAN reports in this workspace. Use `sources/documents/regional/asean_comparative_lens_2026.md` together with ASEANstats, ASEAN Secretariat materials, and the country processed-indicator files before making cross-ASEAN claims.
+&lt;!-- asean-comparative-lens-2026:end --&gt;
+
+Macroeconomic stability is the operating discipline behind Vietnam&#x27;s growth model. The country is highly open, export-oriented, import-intensive, and credit-dependent. That means inflation, exchange-rate pressure, external buffers, credit growth, and fiscal policy cannot be analyzed separately. A shock to global demand can affect exports; a depreciation of the dong can raise import costs; higher food, housing, electricity, health-care, or education prices can affect household welfare; rapid credit growth can support investment but also feed real-estate and balance-sheet risk.
+
+The core question is therefore not whether Vietnam has achieved stability in a narrow technical sense. It is whether stability is strong enough to support the next stage of development: productivity upgrading, domestic supplier development, infrastructure investment, financial-sector resilience, and protection of household purchasing power. Vietnam&#x27;s recent record is comparatively strong, but the indicators show a more demanding policy environment than the simple phrase &quot;macro stability&quot; suggests.
+
+&lt;figure class=&quot;institution-figure&quot;&gt;
+  &lt;img class=&quot;institution-diagram&quot; src=&quot;../assets/vnm_prices_exchange_rate_1996_2025.svg&quot; alt=&quot;Vietnam inflation, GDP deflator, and exchange-rate trends from 1996 to 2025&quot;&gt;
+  &lt;figcaption&gt;Figure 9.2a. Price and exchange-rate conditions. Sources: World Bank WDI table IDs FP.CPI.TOTL.ZG, NY.GDP.DEFL.KD.ZG, and PA.NUS.FCRF; National Statistics Office of Viet Nam 2025 CPI estimate.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+### 9.2.1 Inflation as a Welfare, Credibility, and Stability Indicator
+
+Inflation is not only a monetary statistic. In Vietnam, it is a social-stability variable because food, fuel, transport, housing, education, and health-care prices directly affect household welfare. It is also a credibility variable because firms and households make wage, price, borrowing, and investment decisions based on whether they believe the authorities can keep inflation contained.
+
+World Bank WDI data show three inflation regimes. The first was the post-stabilization and early opening period, when inflation was much lower than the extreme volatility of the late planned economy but still uneven. From 1996 to 2007, CPI inflation averaged about 4.8 percent, with deflation in 2000 and higher price pressure in some years. This was a period of rapid market transition, trade opening, and institutional adjustment.
+
+The second regime was the high-inflation shock period around the global financial crisis and its aftermath. CPI inflation reached 23.1 percent in 2008 and 18.7 percent in 2011. The GDP deflator also surged, reaching very high levels in the same period. This phase matters because it shows the danger of rapid credit growth, commodity-price pressure, exchange-rate adjustment, and policy stimulus interacting at the same time. High inflation can quickly reduce real incomes, weaken confidence, and force monetary tightening.
+
+The third regime is the more stable period after 2012. CPI inflation averaged about 4.1 percent during 2012-2019 and about 3.0 percent during 2020-2024. WDI reports CPI inflation at 3.25 percent in 2023 and 3.62 percent in 2024. The National Statistics Office reported that average CPI rose 3.31 percent in 2025, while core inflation rose 3.21 percent, meeting the National Assembly&#x27;s inflation objective. This is a notable achievement because 2025 also saw strong GDP growth, high export and import growth, and rising service activity.
+
+The policy interpretation is straightforward: Vietnam has learned to operate a much more stable price regime than in the late 2000s, but price stability remains exposed to food prices, administered service prices, electricity tariffs, housing costs, wage growth, natural disasters, and import prices. Inflation management is therefore partly monetary policy, partly supply management, partly fiscal policy, and partly administrative coordination.
+
+### 9.2.2 Consumer Price Inflation versus GDP Deflator
+
+CPI inflation measures consumer prices faced by households. The GDP deflator measures prices of domestically produced output. Reading both indicators together helps separate household cost-of-living pressure from broader nominal price movements in the production economy.
+
+The two indicators moved together during the major shock years. In 2008, CPI inflation reached 23.1 percent and the GDP deflator rose 22.7 percent. In 2011, CPI inflation reached 18.7 percent and the GDP deflator rose 21.4 percent. These were not small household price fluctuations; they were economy-wide nominal stress episodes.
+
+After 2012, both indicators stabilized. CPI inflation fell to 0.6 percent in 2015, while the GDP deflator was negative in the same year. From 2020 to 2024, CPI inflation averaged about 3.0 percent and the GDP deflator also averaged about 3.0 percent. The similarity is important because it suggests that recent price stability was not only a statistical artifact of consumer basket composition. It reflected a broader stabilization of nominal conditions.
+
+However, the two indicators also point to different policy concerns. CPI inflation matters most for household welfare and wage bargaining. The GDP deflator matters for nominal GDP, fiscal ratios, enterprise revenue, and real growth interpretation. If nominal growth rises because prices rise, the development effect is weaker than if real productivity rises. Vietnam&#x27;s macro policy therefore needs to distinguish price-led nominal expansion from productivity-led real expansion.
+
+### 9.2.3 Exchange-Rate Management in an Import-Intensive Export Economy
+
+Vietnam&#x27;s exchange-rate problem is delicate because the economy is both export-oriented and import-intensive. A weaker dong may help some exporters, but many exporters also import components, machinery, fabric, fuel, chemicals, and technology. Depreciation can therefore raise input costs and inflation pressure even while supporting export competitiveness. A stronger dong may reduce import costs, but it can also weaken price competitiveness and encourage external imbalances if domestic demand is strong.
+
+The WDI annual average official exchange rate shows a gradual long-run depreciation of the dong against the U.S. dollar. The rate was about VND 11,033 per USD in 1996, VND 14,168 in 2000, VND 20,510 in 2011, VND 23,050 in 2019, VND 23,208 in 2020, VND 23,272 in 2022, VND 23,787 in 2023, and VND 24,165 in 2024. IMF&#x27;s selected indicators report the end-period nominal exchange rate at VND 25,485 per USD in 2024.
+
+The policy lesson is not that depreciation is always bad. Vietnam needs exchange-rate flexibility because external shocks must be absorbed somewhere: through reserves, interest rates, prices, fiscal support, output, or the exchange rate. The IMF&#x27;s 2025 Article IV assessment emphasized that greater exchange-rate flexibility is important for adjustment to external shocks. The constraint is pass-through: if depreciation quickly raises import costs, energy prices, producer costs, or inflation expectations, the State Bank of Vietnam has less room to support growth through easier monetary policy.
+
+### 9.2.4 Monetary Policy: Growth Support under Limited Easing Space
+
+Vietnam&#x27;s monetary authorities operate in a system where bank credit is central to growth. Credit supports firms, households, construction, real estate, infrastructure, trade finance, and consumption. But monetary easing can be risky when growth is already strong, inflation pressure is present, and exchange-rate pressure exists.
+
+The IMF&#x27;s 2025 Article IV selected indicators show credit to the economy growing by 14.9 percent at end-2024 and projected at 15.0 percent at end-2025. This is rapid enough to support output and investment, but it also raises the question of credit allocation. If credit flows into productive manufacturing, logistics, energy, export capacity, technology adoption, and working capital for viable firms, it can support long-term growth. If it flows into speculative real estate, weak corporate balance sheets, or low-return projects, it can create future financial stress.
+
+This is why the policy mix matters. IMF directors judged that room for monetary easing was limited and that inflation and foreign-exchange risks should be closely monitored. They also argued that fiscal policy could play a larger role if growth slowed. In practical terms, Vietnam should not rely on credit expansion as the default growth instrument. It should use monetary policy to maintain liquidity and confidence while using fiscal and structural policy to address infrastructure, public investment, skills, and productivity.
+
+&lt;figure class=&quot;institution-figure&quot;&gt;
+  &lt;img class=&quot;institution-diagram&quot; src=&quot;../assets/vnm_macro_stability_external_credit_fiscal.svg&quot; alt=&quot;Vietnam reserve cover, current account balance, private credit, and public debt trends&quot;&gt;
+  &lt;figcaption&gt;Figure 9.2b. External, credit, and fiscal stability indicators. Sources: World Bank WDI table IDs FI.RES.TOTL.MO, BN.CAB.XOKA.GD.ZS, and FS.AST.PRVT.GD.ZS; IMF DataMapper table ID GGXWDG_NGDP; IMF 2025 Article IV selected indicators for 2025 reserve-cover and current-account markers.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+### 9.2.5 Foreign-Exchange Reserves and External Buffers
+
+Foreign-exchange reserves are the buffer that allows an open economy to manage currency pressure, import needs, debt service, and confidence shocks. WDI reserve-cover data show that Vietnam&#x27;s reserves have not been uniformly high. Reserve cover was about 1.6 months of imports in 1996, 2.3 months in 2000, 3.2 months in 2008, 1.4 months in 2011, 2.5 months in 2012, 1.9 months in 2015, 3.4 months in 2019, 4.0 months in 2020, 3.0 months in 2023, and 2.4 months in 2024.
+
+IMF selected indicators show gross international reserves at USD 83.1 billion in 2024 and projected USD 79.3 billion in 2025. In months of prospective goods-and-services imports, the IMF indicator falls from 2.4 months in 2024 to 2.2 months in 2025. That does not mean Vietnam faces an immediate external crisis, but it does mean the policy authorities have to treat reserve adequacy carefully in a highly open economy.
+
+The external buffer problem is tied to the exchange-rate problem. If the authorities defend the currency too aggressively, reserves can fall. If they allow faster depreciation, inflation and balance-sheet pressures can rise. If they raise interest rates to defend the currency, credit and domestic demand can weaken. This is why exchange-rate flexibility, reserve management, and monetary credibility are part of the same macro-stability system.
+
+### 9.2.6 Current Account Balance: Strength with Exposure
+
+The current account shows whether the economy is generating external surplus or deficit through trade, services, income flows, and transfers. Vietnam&#x27;s current account has moved through distinct phases. WDI reports a deficit of 8.2 percent of GDP in 1996 and a very large deficit of 10.9 percent in 2008. After adjustment, the current account moved into surplus in several years, including 4.8 percent in 2012, 3.9 percent in 2019, 4.3 percent in 2020, 5.9 percent in 2023, and 6.3 percent in 2024. IMF selected indicators report a 6.6 percent current-account surplus in 2024 and project a surplus of 4.0 percent in 2025.
+
+This looks strong, but it should not be read as pure autonomy. Vietnam&#x27;s external position depends heavily on export manufacturing, imported intermediate inputs, FDI firms, remittances, tourism, and global demand. A current-account surplus can coexist with large import needs and profit repatriation by foreign firms. The correct interpretation is that Vietnam has external strength, but that strength is embedded in global production networks.
+
+The 2025 context makes this point clear. Strong export frontloading and large trade flows supported growth, but future trade-policy uncertainty could reduce the surplus. Macro stability therefore requires more than a positive current account. It requires diversified export markets, stronger domestic suppliers, credible rules of origin, logistics resilience, and the ability to absorb shifts in global electronics and manufacturing demand.
+
+### 9.2.7 Credit Depth and Financial-Sector Risk
+
+Domestic credit to the private sector is a useful indicator of financial deepening. WDI data show private credit rising from about 18.7 percent of GDP in 1996 to 35.3 percent in 2000, 82.9 percent in 2008, 103.3 percent in 2009, 90.4 percent in 2015, 108.0 percent in 2019, 115.5 percent in 2020, 124.3 percent in 2021, and 125.0 percent in 2022. This is a dramatic change. Vietnam has moved from a shallow financial system to a bank-centered economy where credit conditions strongly affect investment, real estate, firm survival, and household welfare.
+
+Financial deepening is not itself a problem. It supports development when credit finances productive firms, export capacity, infrastructure, SMEs, technology adoption, and household smoothing. The risk is that bank credit can also amplify real-estate cycles, corporate leverage, connected lending, maturity mismatch, and nonperforming loans. The IMF&#x27;s 2025 Article IV assessment explicitly warned that domestic financial stress could re-emerge from tighter financial conditions and high corporate indebtedness.
+
+This means macro stability depends on banking supervision, provisioning, corporate-bond regulation, real-estate market transparency, insolvency frameworks, and crisis preparedness. Credit growth must be judged by allocation quality, not only by aggregate speed.
+
+### 9.2.8 Public Debt and Fiscal Space
+
+Fiscal indicators are part of macro stability because Vietnam&#x27;s next growth stage requires large public investment in transport, energy, digital infrastructure, water, climate adaptation, education, and health. Public debt is moderate compared with many emerging economies. IMF DataMapper&#x27;s general-government gross debt series places debt around the low-30-percent-of-GDP range in 2024-2025, while the IMF&#x27;s 2025 Article IV selected indicators report public and publicly guaranteed debt at 31.3 percent of GDP in 2024 and a projected 32.0 percent in 2025.
+
+The central fiscal issue is therefore not an immediate debt crisis. It is execution quality. Vietnam has fiscal space relative to many peers, but using that space well requires stronger public investment management, appraisal, procurement, land clearance, intergovernmental coordination, fiscal transparency, and control of contingent liabilities from SOEs, banks, public-private partnerships, and local projects.
+
+Fiscal policy can support growth more safely than monetary policy when inflation and exchange-rate risks limit monetary easing. But fiscal expansion is useful only if it raises potential growth. Low-return projects, delayed disbursement, fragmented provincial priorities, or weak maintenance can convert fiscal space into waste.
+
+### 9.2.9 Macro Stability as a Political-Administrative Capacity
+
+Vietnam&#x27;s macro stability should be understood as a political-administrative achievement, as much as a political-administrative achievement as a central-bank function. Inflation management requires ministries that monitor food supply, energy tariffs, health-care prices, education fees, transport costs, and disaster impacts. Exchange-rate management requires coordination between the State Bank of Vietnam, fiscal authorities, trade agencies, state-owned enterprises, banks, and major importers and exporters. Public investment requires ministries and provinces to prepare projects, clear land, procure transparently, and disburse effectively.
+
+This is why macroeconomic management belongs in a book about politics and administration. The Vietnamese party-state derives part of its performance legitimacy from growth and stability. If inflation rises, credit stress spreads, or exchange-rate pressure weakens confidence, the problem becomes political as well as economic. Conversely, credible stability expands room for long-term development policy.
+
+### 9.2.10 Indicator-by-Indicator Interpretation
+
+| Indicator | Main trend | Interpretation | Policy warning |
+|---|---:|---|---|
+| CPI inflation | 23.1% in 2008; 18.7% in 2011; 3.62% in 2024; 3.31% in 2025 | Vietnam moved from episodic high inflation to a more stable price regime. | Food, energy, housing, health-care, wage, and exchange-rate pressures can still pass through to households. |
+| GDP deflator | 22.7% in 2008; 21.4% in 2011; 4.16% in 2024 | Economy-wide nominal pressure has stabilized since the early 2010s. | Nominal expansion should not be confused with productivity-led real growth. |
+| Exchange rate | Annual average VND/USD moved from about 11,033 in 1996 to 24,165 in 2024 | Gradual depreciation reflects adjustment in an open economy. | Excessive depreciation can raise import costs, inflation, and balance-sheet stress. |
+| Reserve cover | 4.0 months of imports in 2020; 2.4 in 2024; IMF projection 2.2 in 2025 | External buffers remain important but not unlimited. | Defending the currency too strongly can use reserves; allowing depreciation can raise inflation. |
+| Current account | 6.3% of GDP surplus in WDI 2024; IMF projection 4.0% in 2025 | External balance is strong after earlier deficit episodes. | Surplus depends on export manufacturing, FDI networks, and global demand conditions. |
+| Private credit | About 18.7% of GDP in 1996; 125.0% in 2022 | Financial deepening has become central to growth. | Credit allocation, real estate, corporate leverage, and bank supervision are core macro risks. |
+| Public debt | Low-30-percent-of-GDP range in 2024-2025 | Debt level is moderate and fiscal space exists. | Public investment quality, contingent liabilities, and fiscal transparency matter more than the headline debt ratio alone. |
+
+### 9.2.11 Policy Implications
+
+Vietnam&#x27;s macroeconomic strategy should combine stability with structural upgrading. Monetary policy should remain credible enough to anchor inflation expectations, but flexible enough to manage liquidity and external shocks. Exchange-rate policy should allow adjustment while avoiding disorderly depreciation and excessive pass-through into domestic prices. Credit policy should support productive investment and SMEs while restraining speculative real-estate and corporate-leverage risks.
+
+Fiscal policy should carry more of the growth-support burden when monetary space is limited. But that means better public investment, not larger spending envelopes by themselves. Infrastructure, power reliability, logistics, climate adaptation, digital systems, education, and health investments should be selected by their contribution to productivity and resilience.
+
+The larger conclusion is that Vietnam&#x27;s macro stability is strong but conditional. It rests on controlled inflation, credible exchange-rate management, adequate external buffers, disciplined credit growth, and effective fiscal execution. If those elements reinforce one another, Vietnam can use stability as a platform for higher-value growth. If they diverge, the same open and credit-dependent growth model that supports rapid expansion can transmit inflation, external, and financial stress very quickly.</textarea>
+</article>
+      
+<figure class="chart-card">
+  <h2>growth-inflation</h2>
+  <div class="chart-frame"><canvas id="chart-growth-inflation"></canvas></div>
+  <figcaption>Source:  Unit: </figcaption>
+  <p>The figure is included as chapter-level evidence. Interpret it by identifying direction, turning points, divergence among series, and the policy or institutional mechanism that could plausibly explain the pattern.</p>
+</figure>
+
+
+<figure class="chart-card">
+  <h2>gdp-capita</h2>
+  <div class="chart-frame"><canvas id="chart-gdp-capita"></canvas></div>
+  <figcaption>Source:  Unit: </figcaption>
+  <p>The figure is included as chapter-level evidence. Interpret it by identifying direction, turning points, divergence among series, and the policy or institutional mechanism that could plausibly explain the pattern.</p>
+</figure>
+
+    </main>
+  </div>
+  <script>
+    window.REPORT_CHARTS = [];
+    document.addEventListener('DOMContentLoaded', () => {
+      if (!window.Chart || !window.REPORT_CHARTS) return;
+      window.REPORT_CHARTS.forEach((entry) => {
+        const cfg = entry.data || {};
+        const el = document.getElementById('chart-' + entry.id);
+        if (!el || !cfg.datasets) return;
+        const colors = ['#197278', '#246b46', '#b7860b', '#7b2d26', '#3f4e9a', '#6a4c93'];
+        const dashes = [[], [8, 4], [2, 3], [10, 4, 2, 4], [1, 4], [12, 3, 3, 3]];
+        const pointStyles = ['circle', 'rect', 'triangle', 'rectRot', 'crossRot', 'star'];
+        const datasets = (cfg.datasets || []).map((dataset, i) => ({
+          ...dataset,
+          borderColor: dataset.borderColor || colors[i % colors.length],
+          backgroundColor: dataset.backgroundColor || 'transparent',
+          borderDash: dataset.borderDash || dashes[i % dashes.length],
+          borderWidth: dataset.borderWidth || 2.4,
+          pointStyle: dataset.pointStyle || pointStyles[i % pointStyles.length],
+          pointRadius: dataset.pointRadius ?? 1.8,
+          tension: dataset.tension ?? 0.25,
+          spanGaps: dataset.spanGaps ?? true
+        }));
+        new Chart(el, {
+          type: 'line',
+          data: { labels: cfg.labels || [], datasets },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            interaction: { mode: 'index', intersect: false },
+            plugins: { legend: { position: 'bottom', labels: { boxWidth: 28 } } },
+            scales: { x: { title: { display: true, text: 'Year' } }, y: { title: { display: true, text: cfg.unit || 'Value' } } }
+          }
+        });
+      });
+    });
+  </script>
+  <script src="../assets/report.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  function fallbackMarkdown(text) {
+    const escaped = text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    return escaped.split(/\n{2,}/).map((block) => `<p>${block.replace(/\n/g, "<br>")}</p>`).join("");
+  }
+  function renderMarkdown(text) {
+    return window.marked ? marked.parse(text) : fallbackMarkdown(text);
+  }
+  document.querySelectorAll('[data-md-panel]').forEach((panel) => {
+    const id = panel.getAttribute('data-md-panel');
+    const source = panel.getAttribute('data-md-source');
+    const preview = panel.querySelector('.md-preview');
+    const editor = panel.querySelector('.md-editor');
+    const edit = panel.querySelector('[data-md-action="edit"]');
+    const save = panel.querySelector('[data-md-action="save"]');
+    const cancel = panel.querySelector('[data-md-action="cancel"]');
+    if (!preview || !editor || !edit || !save || !cancel) return;
+    const storageKey = `country-report-markdown:v1:${source || id}`;
+    const original = editor.value;
+    const stored = localStorage.getItem(storageKey);
+    const hasStoredDraft = stored !== null && (!source || window.location.protocol === 'file:');
+    if (hasStoredDraft) editor.value = stored;
+    const showPreview = () => { preview.innerHTML = renderMarkdown(editor.value); };
+    const setEditing = (editing) => {
+      editor.hidden = !editing;
+      preview.hidden = editing;
+      edit.hidden = editing;
+      save.hidden = !editing;
+      cancel.hidden = !editing;
+    };
+    async function saveMarkdown() {
+      if (source && window.location.protocol.startsWith('http')) {
+        const response = await fetch('/api/save-section', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ source, markdown: editor.value })
+        });
+        if (!response.ok) throw new Error(await response.text());
+        localStorage.removeItem(storageKey);
+        return true;
+      } else {
+        localStorage.setItem(storageKey, editor.value);
+        if (source) window.alert('This edit was saved only as a browser draft. Open the report through code/serve_report.py to save it permanently to the Markdown source file.');
+        return false;
+      }
+    }
+    if (hasStoredDraft) showPreview();
+    setEditing(false);
+    edit.addEventListener('click', () => setEditing(true));
+    save.addEventListener('click', async () => {
+      save.disabled = true;
+      try {
+        const savedToServer = await saveMarkdown();
+        if (savedToServer) {
+          window.location.reload();
+          return;
+        }
+        showPreview();
+        setEditing(false);
+      } catch (error) {
+        window.alert(error.message || 'Could not save the Markdown source.');
+      } finally {
+        save.disabled = false;
+      }
+    });
+    cancel.addEventListener('click', () => {
+      editor.value = localStorage.getItem(storageKey) ?? original;
+      if (hasStoredDraft || window.location.protocol === 'file:') showPreview();
+      setEditing(false);
+    });
+  });
+});
+</script>
+
+</body>
+</html>

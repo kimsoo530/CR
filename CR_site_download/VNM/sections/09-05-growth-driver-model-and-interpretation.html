@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>9.5 Growth Driver Model and Interpretation | VNM Country Report</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+  <script src="../assets/chart.umd.min.js"></script>
+  <style>
+    body{margin:0;background:#f4f6f4;color:#17201b;font-family:Arial,Helvetica,sans-serif;line-height:1.65}
+    .layout{display:grid;grid-template-columns:320px minmax(0,1fr);min-height:100vh}
+    aside{position:sticky;top:0;height:100vh;overflow:auto;background:#fff;border-right:1px solid #d9ded8;padding:18px}
+    aside a{display:block;color:#25312a;text-decoration:none;border-radius:6px;padding:6px 8px;font-size:13px}
+    aside a:hover,aside a.active{background:#e8f0ea;color:#0d5a6a} summary{cursor:pointer;font-weight:700;margin:10px 0 4px}
+    .home{font-weight:800;margin-bottom:8px}
+    main{max-width:1050px;padding:36px min(6vw,72px) 90px}
+    .crumb{font-size:13px;color:#607067;margin:0 0 8px} h1{font-size:36px;line-height:1.15;margin:0 0 8px}
+    .chapter-title{color:#56645c;margin:0 0 26px}
+    .section-body,.chart-card{background:#fff;border:1px solid #d9ded8;border-radius:8px;padding:18px;margin:0 0 22px}
+    .section-body h2{font-size:26px;margin:0 0 14px} .section-body p{font-family:Georgia,'Times New Roman',serif;font-size:18px;margin:0 0 14px}
+    table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px} th,td{border:1px solid #d9ded8;padding:8px;vertical-align:top} th{background:#edf2ea;text-align:left}
+    code{background:#eef2ee;border:1px solid #d8ded8;border-radius:4px;padding:1px 4px} .source-note,figcaption{font-size:12px;color:#607067}
+    .chart-frame{height:340px} .chart-frame canvas{width:100%;height:100%}
+    .figure-card,.map-card,.symbol-figure{background:#fff;border:1px solid #d9ded8;border-radius:8px;padding:14px;margin:18px 0 24px}
+    .source{color:#607067;font-size:12px;margin:10px 0 0} .map-grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(280px,.7fr);gap:16px;align-items:start}
+    .adm-map{width:100%;height:auto;border:1px solid #d9ded8;background:#f7fbfc} .adm-path{stroke:#fff;stroke-width:.7} .map-label{font-size:6px;fill:#32424f;text-anchor:middle;pointer-events:none} .neighbor-label{font-size:12px;fill:#6c7b88}
+    .capital-marker circle{fill:#c23b22;stroke:#fff;stroke-width:1.4} .capital-marker text{font-size:12px;fill:#17212b;font-weight:700} .map-table-wrap{max-height:420px;overflow:auto}
+    .symbol-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px} .symbol-card{min-height:260px;border:1px solid #d9ded8;border-radius:8px;background:#fbfdfe;padding:14px;display:flex;flex-direction:column;gap:10px}
+    .symbol-card h3{font-size:18px;margin:2px 0 0} .symbol-card p{font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:1.48;color:#34424e;margin:0} .symbol-kicker{color:#607067;font-size:11px;text-transform:uppercase;letter-spacing:.06em}
+    .flag-indonesia{height:92px;border:1px solid #b9c6cd;border-radius:4px;overflow:hidden} .flag-indonesia span{display:block;height:50%} .flag-indonesia span:first-child{background:#c9182b} .flag-indonesia span:last-child{background:#fff}
+    .garuda-mark{height:92px;display:grid;grid-template-columns:1fr 56px 1fr;align-items:center;gap:4px} .garuda-mark .wing{height:60px;background:#c59a35;border:1px solid #9d761e} .garuda-mark .left{border-radius:60px 10px 18px 60px} .garuda-mark .right{border-radius:10px 60px 60px 18px}
+    .garuda-mark .body{height:82px;background:#d6ad46;border:1px solid #9d761e;border-radius:36px 36px 18px 18px} .garuda-mark .shield{grid-column:2;justify-self:center;margin-top:-58px;width:36px;height:42px;border-radius:8px 8px 14px 14px;background:#1f3f68;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;border:2px solid #f1d47b}
+    .motto-line{height:92px;display:flex;align-items:center;justify-content:center;text-align:center;border:1px solid #cfd9de;border-radius:6px;background:linear-gradient(180deg,#fff,#eef5f7);font-weight:800;color:#15384a;padding:12px} .anthem-bars{height:92px;display:flex;align-items:end;gap:8px;justify-content:center;border:1px solid #cfd9de;border-radius:6px;background:#f8fbfc;padding:16px}
+    .anthem-bars span{width:22px;background:#0f6f87;border-radius:4px 4px 0 0} .anthem-bars span:nth-child(1){height:38px} .anthem-bars span:nth-child(2){height:62px} .anthem-bars span:nth-child(3){height:48px} .anthem-bars span:nth-child(4){height:72px}
+    @media(max-width:860px){.layout{grid-template-columns:1fr}aside{position:relative;height:auto}main{padding:24px 18px}}
+  
+    .md-toolbar{display:flex;justify-content:flex-end;gap:8px;margin:0 0 14px}
+    .md-toolbar button{border:1px solid #0d5a6a;background:#0d5a6a;color:#fff;border-radius:5px;padding:7px 11px;font:700 12px Arial,Helvetica,sans-serif;cursor:pointer}
+    .md-toolbar button[data-md-action='cancel']{background:#fff;color:#25312a;border-color:#cfd8d3}
+    .md-editor{width:100%;min-height:520px;border:1px solid #cfd8d3;border-radius:6px;padding:14px;font:14px Consolas,monospace;line-height:1.45}
+
+  </style>
+  <script src="../assets/marked.min.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <aside><a class='home' href='../index.html'>VNM cover</a>
+<details ><summary>1. Country Overview</summary><a class='section-link ' href='01-01-national-profile.html'>1.1 National Profile</a><a class='section-link ' href='01-02-state-symbols.html'>1.2 State Symbols</a><a class='section-link ' href='01-03-geography-and-administrative-divisions.html'>1.3 Geography and Administrative Divisions</a><a class='section-link ' href='01-04-core-institutional-diagnosis.html'>1.4 Core Institutional Diagnosis</a><a class='section-link ' href='01-05-evidence-base.html'>1.5 Evidence Base and Reading Direction</a></details>
+<details ><summary>2. Historical Background</summary><a class='section-link ' href='02-01-civilizational-layers-and-frontier-statecraft.html'>2.1 Civilizational Layers and Frontier Statecraft</a><a class='section-link ' href='02-02-colonial-rule-revolution-and-war.html'>2.2 Colonial Rule, Revolution, and War</a><a class='section-link ' href='02-03-reunification-and-doi-moi.html'>2.3 Reunification and Doi Moi</a><a class='section-link ' href='02-04-historical-legacies-in-present-institutions.html'>2.4 Historical Legacies in Present Institutions</a></details>
+<details ><summary>3. Constitution and Basic State Order</summary><a class='section-link ' href='03-01-constitutional-order-and-amendments.html'>3.1 Constitutional Order, Ownership, and the Architecture of State Power</a><a class='section-link ' href='03-02-sovereignty-party-leadership-and-territorial-integrity.html'>3.2 Sovereignty, Party Leadership, and Territorial Integrity</a><a class='section-link ' href='03-03-rights-duties-and-socialist-rule-of-law.html'>3.3 Rights, Duties, and Socialist Rule of Law</a><a class='section-link ' href='03-04-state-power-review-audit-and-emergency-authority.html'>3.4 State Power, Review, Audit, and Emergency Authority</a></details>
+<details ><summary>4. Political System and Power Structure</summary><a class='section-link ' href='04-01-party-leadership-and-state-institutions.html'>4.1 Party Leadership and State Institutions</a><a class='section-link ' href='04-02-national-assembly-elections-and-representation.html'>4.2 National Assembly, Elections, and Representation</a><a class='section-link ' href='04-03-executive-coordination-and-government-formation.html'>4.3 Executive Coordination and Government Formation</a><a class='section-link ' href='04-04-judiciary-rule-of-law-corruption-and-accountability.html'>4.4 Courts, Procuracy, Inspection, and Anti-Corruption</a><a class='section-link ' href='04-05-local-politics-and-real-power-relations.html'>4.5 Local Politics and Real Power Relations</a><a class='section-link ' href='04-06-political-system-diagnostics-and-democratic-trajectory.html'>4.6 Political System Diagnostics and Democratic Trajectory</a></details>
+<details ><summary>5. Administrative System and Government Organization</summary><a class='section-link ' href='05-01-central-government-and-ministerial-system.html'>5.1 Central Government and Ministerial System</a><a class='section-link ' href='05-02-organizational-management-and-bureaucratic-reform.html'>5.2 Organizational Management and Bureaucratic Reform</a><a class='section-link ' href='05-03-human-resource-management-and-civil-service.html'>5.3 Human Resource Management and Civil Service</a><a class='section-link ' href='05-04-financial-administration-procurement-audit-and-inspection.html'>5.4 Financial Administration, Procurement, Audit, and Inspection</a><a class='section-link ' href='05-05-local-administration-and-service-delivery.html'>5.5 Local Administration and Service Delivery</a><a class='section-link ' href='05-06-digital-government-and-administrative-accountability.html'>5.6 Digital Government and Administrative Accountability</a><a class='section-link ' href='05-07-implementation-capacity-and-administrative-performance.html'>5.7 Implementation Capacity and Administrative Performance</a></details>
+<details ><summary>6. Governance and Institutional Capacity</summary><a class='section-link ' href='06-01-government-effectiveness-and-regulatory-quality.html'>6.1 Government Effectiveness and Regulatory Quality</a><a class='section-link ' href='06-02-rule-of-law-and-corruption-control.html'>6.2 Rule of Law and Corruption Control</a><a class='section-link ' href='06-03-voice-accountability-and-stability.html'>6.3 Voice, Accountability, and Stability</a><a class='section-link ' href='06-04-what-governance-indicators-reveal.html'>6.4 What Governance Indicators Reveal</a></details>
+<details ><summary>7. Fiscal System and Public Sector</summary><a class='section-link ' href='07-01-revenue-taxation-and-expenditure.html'>7.1 Revenue, Taxation, and Expenditure</a><a class='section-link ' href='07-02-deficit-debt-and-fiscal-space.html'>7.2 Fiscal Balance, Debt, and Fiscal Space</a><a class='section-link ' href='07-03-public-investment-soes-and-quasi-fiscal-risk.html'>7.3 Public Investment, Procurement, SOEs, and Quasi-Fiscal Risk</a><a class='section-link ' href='07-04-budget-decentralization-and-audit.html'>7.4 Budget Decentralization, Procurement Oversight, and Audit</a><a class='section-link ' href='07-05-fiscal-capacity-and-public-sector-risks.html'>7.5 Fiscal Capacity and Public Sector Risks</a></details>
+<details ><summary>8. Population and Social Structure</summary><a class='section-link ' href='08-01-population-scale-and-age-structure.html'>8.1 Population Scale and Age Structure</a><a class='section-link ' href='08-02-urbanization-and-regional-distribution.html'>8.2 Urbanization and Regional Distribution</a><a class='section-link ' href='08-03-ethnicity-language-religion-and-social-cohesion.html'>8.3 Ethnicity, Language, Religion, and Social Cohesion</a><a class='section-link ' href='08-04-migration-remittances-and-inclusion.html'>8.4 Migration, Remittances, and Inclusion</a></details>
+<details open><summary>9. Macroeconomic Structure</summary><a class='section-link ' href='09-01-gdp-scale-growth-and-income.html'>9.1 GDP Scale, Growth, and Income Level</a><a class='section-link ' href='09-02-inflation-exchange-rate-and-macro-stability.html'>9.2 Inflation, Exchange-Rate Management, and Macro Stability</a><a class='section-link ' href='09-03-industrial-structure-and-productivity.html'>9.3 Industrial Structure, Sectoral Transformation, and Productivity</a><a class='section-link ' href='09-04-growth-model-and-structural-vulnerabilities.html'>9.4 External Position, Trade Balance, and Structural Constraints</a><a class='section-link active' href='09-05-growth-driver-model-and-interpretation.html'>9.5 Growth Driver Model and Interpretation</a></details>
+<details ><summary>10. Trade, Investment, and External Economy</summary><a class='section-link ' href='10-01-exports-imports-and-current-account.html'>10.1 Export-Import Trends, Trade Dependence, and Export Transformation</a><a class='section-link ' href='10-02-fdi-and-export-manufacturing.html'>10.2 FDI and Export Manufacturing</a><a class='section-link ' href='10-03-trading-partners-supply-chains-and-technology-upgrading.html'>10.3 Trading Partners, Supply Chains, and Technology Upgrading</a><a class='section-link ' href='10-04-investment-rules-zones-and-industrial-policy.html'>10.4 Investment Rules, Zones, and Industrial Policy</a></details>
+<details ><summary>11. Infrastructure, Energy, and Digital Connectivity</summary><a class='section-link ' href='11-01-energy-access-and-power-system-reform.html'>11.1 Energy Access and Power System Reform</a><a class='section-link ' href='11-02-transport-logistics-and-corridors.html'>11.2 Transport, Logistics, and Corridors</a><a class='section-link ' href='11-03-digital-connectivity.html'>11.3 Digital Connectivity, AI Infrastructure, and the Digital Economy</a><a class='section-link ' href='11-04-infrastructure-governance-and-climate-resilience.html'>11.4 Infrastructure Governance and Climate Resilience</a></details>
+<details ><summary>12. Labor Market and Human Capital</summary><a class='section-link ' href='12-01-labor-force-and-participation.html'>12.1 Labor Force and Participation</a><a class='section-link ' href='12-02-women-youth-and-informality.html'>12.2 Women, Youth, and Informality</a><a class='section-link ' href='12-03-agricultural-employment-and-productivity.html'>12.3 Agricultural Employment and Productivity</a><a class='section-link ' href='12-04-skills-education-and-human-capital.html'>12.4 Skills, Education, and Human Capital</a></details>
+<details ><summary>13. Education, Health, and Welfare</summary><a class='section-link ' href='13-01-education-system-and-public-spending.html'>13.1 Education System, Skills Policy, and Public Spending</a><a class='section-link ' href='13-02-health-outcomes-and-service-capacity.html'>13.2 Health Care, Population Ageing, and Financial Protection</a><a class='section-link ' href='13-03-water-sanitation-nutrition-and-welfare.html'>13.3 Water, Sanitation, Nutrition, and Welfare</a><a class='section-link ' href='13-04-human-development-and-territorial-equity.html'>13.4 Human Development and Territorial Equity</a></details>
+<details ><summary>14. Financial Sector and Economic Institutions</summary><a class='section-link ' href='14-01-banks-credit-and-capital-markets.html'>14.1 Banks, Credit, and Capital Markets</a><a class='section-link ' href='14-02-state-bank-of-vietnam-and-financial-supervision.html'>14.2 State Bank of Vietnam and Financial Supervision</a><a class='section-link ' href='14-03-fintech-payments-and-inclusion.html'>14.3 Fintech, Payments, and Inclusion</a><a class='section-link ' href='14-04-financial-stability-and-reform-priorities.html'>14.4 Financial Stability and Reform Priorities</a></details>
+<details ><summary>15. Foreign Relations, Security, and Geopolitics</summary><a class='section-link ' href='15-01-bamboo-diplomacy-and-asean.html'>15.1 Bamboo Diplomacy, ASEAN, and the Evolution of Vietnam’s Foreign Policy Principles</a><a class='section-link ' href='15-02-china-the-united-states-and-the-east-sea.html'>15.2 China, the United States, and the East Sea</a><a class='section-link ' href='15-03-defense-police-border-and-transnational-risks.html'>15.3 Defense, Police, Border, and Transnational Risks</a><a class='section-link ' href='15-04-mekong-energy-security-and-strategic-corridors.html'>15.4 Mekong, Energy Security, and Strategic Corridors</a></details>
+<details ><summary>16. Major Policies and National Development Strategy</summary><a class='section-link ' href='16-01-evolution-of-national-development-strategy.html'>16.1 Evolution of National Development Strategy</a><a class='section-link ' href='16-02-socio-economic-development-strategy-2021-2030.html'>16.2 Socio-Economic Development Strategy 2021-2030</a><a class='section-link ' href='16-03-administrative-restructuring-and-public-administration-reform.html'>16.3 Administrative Restructuring and Public Administration Reform</a><a class='section-link ' href='16-04-digital-green-and-industrial-transformation.html'>16.4 Digital, Green, and Industrial Transformation</a><a class='section-link ' href='16-05-implementation-matrix-and-risks.html'>16.5 Implementation Matrix and Risks</a><a class='section-link ' href='16-06-green-growth-climate-governance-and-sdg-implementation.html'>16.6 Green Growth, Climate Governance, and SDG Implementation</a></details>
+<details ><summary>17. Integrated Assessment</summary><a class='section-link ' href='17-01-national-operating-model.html'>17.1 National Operating Model</a><a class='section-link ' href='17-02-institutional-strengths-risks-and-bottlenecks.html'>17.2 Institutional Strengths, Risks, and Bottlenecks</a><a class='section-link ' href='17-03-implications-for-korea-and-international-cooperation.html'>17.3 Implications for Korea and International Cooperation</a><a class='section-link ' href='17-04-vietnam-and-comparative-administration-theory.html'>17.4 Vietnam and Comparative Administration Theory</a><a class='section-link ' href='17-05-strategic-outlook.html'>17.5 Strategic Outlook</a></details>
+<details ><summary>18. Appendix, Sources, and Method</summary><a class='section-link ' href='18-01-timeline.html'>18.1 Timeline</a><a class='section-link ' href='18-02-government-organization-chart.html'>18.2 Government Organization Chart</a><a class='section-link ' href='18-03-major-laws-and-policy-documents.html'>18.3 Major Laws and Policy Documents</a><a class='section-link ' href='18-04-indicator-codebook.html'>18.4 Indicator Codebook</a><a class='section-link ' href='18-05-update-workflow-and-evidence-archive.html'>18.5 Update Workflow and Evidence Archive</a></details>
+<details ><summary>19. References</summary><a class='section-link ' href='19-01-references.html'>19.1 References</a><a class='section-link ' href='19-02-citation-and-source-integrity-notes.html'>19.2 Citation and Source Integrity Notes</a></details></aside>
+    <main>
+      <p class="crumb"><a href="../09-macro.html">Chapter 9</a> / Section 5</p>
+      <h1>9.5 Growth Driver Model and Interpretation</h1>
+      <p class="chapter-title">9. Macroeconomic Structure</p>
+      <article class="section-body editable-section" data-md-panel="09-05-growth-driver-model-and-interpretation" data-md-source="sections/09-05-growth-driver-model-and-interpretation.md">
+  <div class="md-toolbar">
+    <button type="button" data-md-action="edit">Edit Markdown</button>
+    <button type="button" data-md-action="save" hidden>Save</button>
+    <button type="button" data-md-action="cancel" hidden>Cancel</button>
+  </div>
+  <div class="md-preview"><h2 id='9-5-growth-driver-model-and-interpretation'>9.5 Growth Driver Model and Interpretation</h2>
+<p><strong>ASEAN comparative lens (2026).</strong> Vietnam should be read in ASEAN comparison as ASEAN&#x27;s most prominent party-led, export-manufacturing upgrading case. Unlike the Philippines&#x27; service-remittance profile, Thailand&#x27;s older industrial-tourism base, Malaysia&#x27;s resource-industrial federal structure, or Indonesia&#x27;s archipelagic domestic-market scale, Vietnam&#x27;s comparative issue is how a socialist party-state manages very open global production networks. For this section, the regional comparison should compare growth, inflation, exchange-rate exposure, productivity, and sectoral structure with ASEAN&#x27;s manufacturing, services, tourism, resource, and corridor-based models. Local comparable indicators show: population 100.99 million (2024), rank 3 among the nine ASEAN reports in this workspace; GDP US$476.39 billion (2024), rank 4 among the nine ASEAN reports in this workspace; GDP per capita US$4,717 (2024), rank 5 among the nine ASEAN reports in this workspace; real GDP growth 7.09% (2024), rank 1 among the nine ASEAN reports in this workspace; government effectiveness 0.09 (2023), rank 6 among the nine ASEAN reports in this workspace; internet use 84.15% (2024), rank 4 among the nine ASEAN reports in this workspace. Use `sources/documents/regional/asean_comparative_lens_2026.md` together with ASEANstats, ASEAN Secretariat materials, and the country processed-indicator files before making cross-ASEAN claims.</p>
+<p>This section asks a direct question: what has driven Viet Nam&#x27;s economic growth? The answer cannot be reduced to one variable. Viet Nam&#x27;s growth has been produced by the interaction of institutional reform, capital accumulation, foreign investment, trade openness, labor reallocation, human-development gains, infrastructure expansion, and macroeconomic stability. A useful model therefore has to do two things at once. It should test whether the usual growth variables move with GDP growth, but it should also interpret those variables through the country&#x27;s political economy: Doi Moi reform, a party-led development state, provincial implementation, export manufacturing, FDI, demographic transition, and integration into global value chains.</p>
+<p>The analysis below uses three complementary models. The first is a first-difference regression close to the model specification suggested in the prompt. It asks whether changes in investment, FDI, HDI, population growth, trade openness, and inflation are associated with changes in GDP growth. The second is a growth-accounting proxy that decomposes real GDP growth into labor-force growth and output-per-labor-force growth. The third is a political-economy interpretation model that connects the statistical signals to the institutional mechanisms discussed in the rest of the book.</p>
+<figure class="map-card">
+<img alt="Growth driver model framework for Viet Nam" class="admin-map" src="../assets/vnm_growth_driver_model_framework.svg"/>
+<figcaption>Source: Author's model design using World Bank WDI and UNDP HDI variables. The model is intended as a diagnostic framework, not a mechanical causal proof.</figcaption>
+</figure>
+<h3>9.5.1 Model 1: First-Difference Growth Acceleration Model</h3>
+<p>The first model follows the logic of a growth-acceleration equation:</p>
+<p>```text</p>
+<p>Delta GDP_growth_t =</p>
+<p>  beta_0</p>
+<p>  + beta_1 Delta investment_t</p>
+<p>  + beta_2 Delta FDI_t</p>
+<p>  + beta_3 Delta HDI_t</p>
+<p>  + beta_4 Delta population_growth_t</p>
+<p>  + beta_5 Delta trade_openness_t</p>
+<p>  + beta_6 Delta inflation_t</p>
+<p>  + error_t</p>
+<p>```</p>
+<p>The dependent variable is the annual change in real GDP growth. The explanatory variables are first differences in gross capital formation as a share of GDP, FDI net inflows as a share of GDP, the Human Development Index, population growth, trade openness, and CPI inflation. First differences are useful because they reduce the risk of simply measuring common upward or downward trends. In this specification, the model does not ask whether Viet Nam is richer when trade is higher or HDI is higher. It asks whether growth accelerates when these variables change.</p>
+<p>The dataset combines World Bank WDI indicators and the UNDP Human Development Report 2025 HDI series accessed through Our World in Data. The usable regression sample is 1997-2023 because investment and inflation data begin later than the GDP, population, trade, and HDI series. The model uses 27 annual observations. This is a small sample for a six-variable time-series regression, so the results should be read as diagnostic evidence rather than causal proof.</p>
+<table><thead><tr><th>Variable in first-difference model</th><th>Coefficient</th><th>Standardized beta</th><th>t-statistic</th><th>Interpretation</th></tr></thead><tbody><tr><td>Change in gross capital formation, percentage points of GDP</td><td>-0.065</td><td>-0.07</td><td>-0.25</td><td>Investment quantity alone does not explain annual growth acceleration. This does not mean investment is unimportant; it means the annual investment share is a noisy proxy for capital quality, project execution, and lagged effects.</td></tr><tr><td>Change in FDI net inflows, percentage points of GDP</td><td>0.705</td><td>0.51</td><td>1.51</td><td>FDI has the strongest positive acceleration signal among the economic-opening variables. Years when FDI inflows rise tend to be years when growth momentum improves, although causality can run both ways.</td></tr><tr><td>Change in HDI, index points multiplied by 100</td><td>1.800</td><td>0.25</td><td>1.14</td><td>Human development moves in the expected positive direction, but HDI changes slowly and includes an income component, so it should be interpreted as a broad capability signal rather than a clean independent cause.</td></tr><tr><td>Change in population growth, percentage points</td><td>-7.530</td><td>-0.67</td><td>-2.01</td><td>The negative sign reflects Viet Nam&#x27;s demographic transition rather than a simple claim that people reduce growth. As population growth slows, growth can still remain high if productivity and capital deepening rise.</td></tr><tr><td>Change in trade openness, percentage points of GDP</td><td>0.065</td><td>0.36</td><td>1.45</td><td>Trade openness has a positive acceleration signal. This fits the export-platform interpretation: trade integration helps growth when it is paired with FDI, logistics, industrial zones, and macro stability.</td></tr><tr><td>Change in CPI inflation, percentage points</td><td>-0.047</td><td>-0.15</td><td>-0.59</td><td>Inflation changes carry a weak negative signal. The stronger interpretation is institutional: stable inflation protects investor confidence, household purchasing power, and exchange-rate credibility.</td></tr></tbody></table>
+<p>The model&#x27;s R-squared is 0.209 and adjusted R-squared is -0.028. This weak fit is important. It tells us that Viet Nam&#x27;s growth cannot be explained well by a simple annual first-difference equation. Several reasons are likely. Investment affects growth with lags, not only in the same year. FDI is both a cause and a response: investors enter Viet Nam because growth prospects are strong, and their entry then reinforces exports, employment, and technology absorption. Trade openness is structurally rising over time, but global shocks can reduce growth even when trade ratios remain high. HDI improves gradually and is partly endogenous because income is one component of the index. Finally, annual country-level time series cannot easily capture policy reforms, provincial implementation quality, supply-chain relocation, infrastructure completion, anti-corruption cycles, or global demand shocks.</p>
+<p>The regression is therefore most useful for ranking signals, not for proving causation. The strongest positive standardized signals are FDI and trade openness. HDI is positive but slower-moving. Inflation is negative but weak. Investment is statistically weak in this short-run acceleration form. Population growth has a negative coefficient because the demographic dividend is changing: Viet Nam can no longer rely on rapid labor-force expansion as much as it did in earlier decades.</p>
+<figure class="map-card">
+<img alt="Empirical signals from Viet Nam growth driver model and growth accounting proxy" class="admin-map" src="../assets/vnm_growth_driver_empirical_results.svg"/>
+<figcaption>Sources: World Bank WDI API and UNDP Human Development Report 2025 HDI series accessed through Our World in Data. Calculations are stored in `VNM/processed/growth_driver_model_dataset_1990_2024.csv`, `growth_driver_model_results.csv`, and `growth_accounting_periods.csv`.</figcaption>
+</figure>
+<h3>9.5.2 Model 2: Growth Accounting Proxy</h3>
+<p>The second model uses a simpler identity. Real GDP growth can be approximated as labor-force growth plus output-per-labor-force growth:</p>
+<p>```text</p>
+<p>Real GDP growth ~= labor-force growth + output per labor-force worker growth</p>
+<p>```</p>
+<p>This is not a full Solow growth accounting exercise because it does not separately estimate physical capital, human capital, and total factor productivity. But it is still helpful because it separates the demographic-labor contribution from the productivity-capital-structural contribution. The calculation uses World Bank WDI real GDP in constant 2015 US dollars and total labor force.</p>
+<table><thead><tr><th>Period</th><th>Average real GDP growth</th><th>Average labor-force growth</th><th>Average output per labor-force worker growth</th><th>Interpretation</th></tr></thead><tbody><tr><td>1991-2000</td><td>7.30%</td><td>2.08%</td><td>5.22%</td><td>Early post-Doi Moi growth combined labor absorption with very rapid output-per-worker gains from market reform, agricultural incentives, early industrialization, and normalization of external economic relations.</td></tr><tr><td>2001-2010</td><td>6.40%</td><td>2.60%</td><td>3.80%</td><td>Labor-force growth was still large, while WTO accession, FDI, trade, construction, and credit expansion deepened the growth model. Productivity growth was positive but less dominant than in the 1990s.</td></tr><tr><td>2011-2019</td><td>6.38%</td><td>1.23%</td><td>5.15%</td><td>The labor contribution slowed, but output-per-worker growth rose again. Export manufacturing, electronics, industrial zones, infrastructure, services, and macro stabilization carried more of the growth burden.</td></tr><tr><td>2020-2024</td><td>5.07%</td><td>0.19%</td><td>4.88%</td><td>COVID-19 and global shocks lowered average growth, but the accounting signal is clear: growth is now overwhelmingly dependent on productivity, capital quality, supply-chain upgrading, and institutional capacity rather than labor-force expansion.</td></tr></tbody></table>
+<p>This decomposition is one of the strongest findings in the section. Viet Nam&#x27;s growth was never only a population story, but demographic expansion mattered much more in the 1990s and 2000s than it does now. The 2020-2024 period shows labor-force growth close to zero in average terms, while output per labor-force worker still grew strongly. That means the next stage of growth must come from capital productivity, skills, technology transfer, domestic supplier upgrading, logistics, energy reliability, digitalization, better public investment, and higher-value services.</p>
+<h3>9.5.3 Model 3: Production-Function Interpretation</h3>
+<p>A standard production-function lens writes output as a function of capital, labor, human capital, and technology:</p>
+<p>```text</p>
+<p>Y_t = A_t <em> K_t^alpha </em> (H_t L_t)^(1-alpha)</p>
+<p>```</p>
+<p>In this interpretation, Viet Nam&#x27;s growth has four engines. First, capital accumulation has been high. Gross capital formation averaged 28.3 percent of GDP in 1991-2000, 35.4 percent in 2001-2010, 31.5 percent in 2011-2019, and 31.9 percent in 2020-2024. These are high investment ratios for a lower-middle-income economy. But the regression result warns that the investment share alone is not enough. What matters is whether investment becomes productive infrastructure, reliable electricity, logistics capacity, industrial land, digital systems, water management, and skills formation rather than low-return construction, real-estate speculation, or delayed public projects.</p>
+<p>Second, labor and demographic change supported growth, but their role is declining. In the earlier period, a growing labor force and movement out of agriculture helped Viet Nam absorb workers into factories, construction, services, and urban-industrial corridors. That labor reallocation raised output per worker even when technology was not frontier-level. But the labor-force growth contribution has fallen sharply. This makes aging, skills, health, vocational training, labor mobility, affordable urban housing, and social insurance portability more important for macroeconomic performance.</p>
+<p>Third, human development has raised the economy&#x27;s absorptive capacity. HDI rose from 0.499 in 1990 to the mid-0.7 range by the early 2020s. This matters because FDI does not automatically create domestic capability. Workers must be educated enough to use imported machinery, firms must learn from foreign buyers, and public institutions must provide health, transport, electricity, and administrative services. HDI should therefore be read not as a short-run growth trigger but as a capacity foundation that makes capital and trade more productive.</p>
+<p>Fourth, total factor productivity in a broad sense has come from reform, openness, and coordination. Doi Moi changed incentives; ASEAN, WTO, CPTPP, RCEP, bilateral trade agreements, and supply-chain relocation widened markets; provincial industrial zones converted land and infrastructure into production platforms; and macro stability made long-term investment less risky. These are not captured well by a single annual variable, but they explain why the same investment ratio can generate different growth outcomes depending on policy quality.</p>
+<h3>9.5.4 Export-Platform and FDI-Led Growth Model</h3>
+<p>High investment alone does not explain Viet Nam&#x27;s growth. It is the combination of FDI, trade openness, manufacturing exports, and state coordination. Trade openness averaged 85.7 percent of GDP in 1991-2000, 131.3 percent in 2001-2010, 143.9 percent in 2011-2019, and 174.4 percent in 2020-2024. FDI net inflows averaged 6.95 percent of GDP in the 1990s, then 5.31 percent in 2001-2010, 4.59 percent in 2011-2019, and 4.33 percent in 2020-2024. Even as FDI&#x27;s GDP share eased, its structural role remained large because it anchored electronics, machinery, garments, footwear, furniture, phones, computers, and export-platform manufacturing.</p>
+<p>This model works through five mechanisms. FDI brings capital, managerial routines, export orders, supplier requirements, and technology exposure. Trade agreements and customs integration give firms market access. Provincial governments provide industrial parks, licensing, land conversion, labor supply, and infrastructure support. Macroeconomic stability protects exchange-rate and inflation expectations. A disciplined political system can prioritize industrialization, logistics, and export competitiveness across ministries and provinces.</p>
+<p>The same model also creates vulnerabilities. FDI can remain enclave-like if domestic suppliers do not upgrade. Trade openness exposes Viet Nam to external demand cycles, tariff shocks, rule-of-origin pressure, and geopolitical risk. Export success can hide weak domestic value added. Industrialization raises electricity, transport, land, and environmental pressure. If domestic private firms, research institutions, skills systems, and regulatory predictability do not improve, Viet Nam may remain a strong assembly platform without becoming a deeper innovation economy.</p>
+<h3>9.5.5 Why the Regression Understates Institutions</h3>
+<p>The model specification includes investment, FDI, HDI, population, trade, and inflation, but the most important driver behind these variables is institutional conversion. Doi Moi was an institutional shock that changed incentives. WTO accession was not only a trade event; it changed legal commitments, firm expectations, customs administration, and investor confidence. Public investment matters only when planning, procurement, land clearance, and implementation work. FDI matters only when the state can provide predictable procedures, electricity, roads, ports, workforce supply, and political stability. HDI matters only when education and health systems produce usable capability. Inflation matters because macro stability is a credibility asset.</p>
+<p>This is why a purely econometric answer would be too narrow. Viet Nam&#x27;s growth has been driven by a governance model that converts political centralization into development coordination, while allowing market-oriented production and international integration. The model is not frictionless: anti-corruption campaigns can slow approvals, local implementation can be uneven, SOE and banking risks remain, and policy uncertainty can discourage private investment. But the broad historical pattern is clear. Growth has been strongest when party-state coordination, provincial implementation, FDI, trade, infrastructure, and macro stability reinforce one another.</p>
+<h3>9.5.6 Answer: What Has Driven Viet Nam&#x27;s Growth?</h3>
+<p>The evidence points to a layered answer.</p>
+<p>First, the foundational driver was reform. Doi Moi, market pricing, agricultural decollectivization, private-enterprise recognition, legal reform, and external opening raised productivity by changing incentives. This explains why the 1990s combined rapid growth with strong output-per-worker gains.</p>
+<p>Second, the central growth mechanism became FDI-led export manufacturing. The first-difference model gives FDI and trade openness the strongest positive acceleration signals. This does not prove simple causality, but it fits the historical evidence: Viet Nam grew by becoming a reliable production platform inside Asian and global value chains.</p>
+<p>Third, investment mattered through capital deepening, but investment quality mattered more than the investment share. High gross capital formation gave Viet Nam roads, ports, factories, urban construction, power systems, and industrial capacity. Yet the weak short-run coefficient on investment shows that capital accumulation is not automatically growth-enhancing. Public investment execution, logistics efficiency, power reliability, environmental standards, and industrial upgrading determine the payoff.</p>
+<p>Fourth, labor reallocation mattered, but the demographic dividend is fading. Earlier growth benefited from labor-force expansion and movement out of agriculture. The growth-accounting proxy now shows that labor-force growth contributes little to aggregate growth. Future growth must therefore come from productivity rather than more workers.</p>
+<p>Fifth, human development and macro stability are enabling conditions. HDI improvement made Viet Nam better able to absorb technology, organize production, and support urban-industrial growth. Inflation control and macro stability protected the confidence needed for investment and trade. They do not always appear as large annual coefficients, but without them the FDI-export model would be much less durable.</p>
+<p>The policy implication is direct. Viet Nam&#x27;s past growth was driven by reform, labor absorption, capital accumulation, FDI, trade, and macro stability. Its future growth will depend more on productivity, domestic firm upgrading, higher-value services, innovation, skills, infrastructure quality, energy reliability, climate resilience, and predictable regulation. The growth model is therefore shifting from &quot;mobilize labor and attract factories&quot; toward &quot;raise productivity and capture more value.&quot; That shift is the central macroeconomic challenge for Viet Nam&#x27;s next development stage.</p></div>
+  <textarea class="md-editor" hidden>## 9.5 Growth Driver Model and Interpretation
+
+&lt;!-- asean-comparative-lens-2026:start --&gt;
+**ASEAN comparative lens (2026).** Vietnam should be read in ASEAN comparison as ASEAN&#x27;s most prominent party-led, export-manufacturing upgrading case. Unlike the Philippines&#x27; service-remittance profile, Thailand&#x27;s older industrial-tourism base, Malaysia&#x27;s resource-industrial federal structure, or Indonesia&#x27;s archipelagic domestic-market scale, Vietnam&#x27;s comparative issue is how a socialist party-state manages very open global production networks. For this section, the regional comparison should compare growth, inflation, exchange-rate exposure, productivity, and sectoral structure with ASEAN&#x27;s manufacturing, services, tourism, resource, and corridor-based models. Local comparable indicators show: population 100.99 million (2024), rank 3 among the nine ASEAN reports in this workspace; GDP US$476.39 billion (2024), rank 4 among the nine ASEAN reports in this workspace; GDP per capita US$4,717 (2024), rank 5 among the nine ASEAN reports in this workspace; real GDP growth 7.09% (2024), rank 1 among the nine ASEAN reports in this workspace; government effectiveness 0.09 (2023), rank 6 among the nine ASEAN reports in this workspace; internet use 84.15% (2024), rank 4 among the nine ASEAN reports in this workspace. Use `sources/documents/regional/asean_comparative_lens_2026.md` together with ASEANstats, ASEAN Secretariat materials, and the country processed-indicator files before making cross-ASEAN claims.
+&lt;!-- asean-comparative-lens-2026:end --&gt;
+
+This section asks a direct question: what has driven Viet Nam&#x27;s economic growth? The answer cannot be reduced to one variable. Viet Nam&#x27;s growth has been produced by the interaction of institutional reform, capital accumulation, foreign investment, trade openness, labor reallocation, human-development gains, infrastructure expansion, and macroeconomic stability. A useful model therefore has to do two things at once. It should test whether the usual growth variables move with GDP growth, but it should also interpret those variables through the country&#x27;s political economy: Doi Moi reform, a party-led development state, provincial implementation, export manufacturing, FDI, demographic transition, and integration into global value chains.
+
+The analysis below uses three complementary models. The first is a first-difference regression close to the model specification suggested in the prompt. It asks whether changes in investment, FDI, HDI, population growth, trade openness, and inflation are associated with changes in GDP growth. The second is a growth-accounting proxy that decomposes real GDP growth into labor-force growth and output-per-labor-force growth. The third is a political-economy interpretation model that connects the statistical signals to the institutional mechanisms discussed in the rest of the book.
+
+&lt;figure class=&quot;map-card&quot;&gt;
+&lt;img alt=&quot;Growth driver model framework for Viet Nam&quot; class=&quot;admin-map&quot; src=&quot;../assets/vnm_growth_driver_model_framework.svg&quot;/&gt;
+&lt;figcaption&gt;Source: Author&#x27;s model design using World Bank WDI and UNDP HDI variables. The model is intended as a diagnostic framework, not a mechanical causal proof.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+### 9.5.1 Model 1: First-Difference Growth Acceleration Model
+
+The first model follows the logic of a growth-acceleration equation:
+
+```text
+Delta GDP_growth_t =
+  beta_0
+  + beta_1 Delta investment_t
+  + beta_2 Delta FDI_t
+  + beta_3 Delta HDI_t
+  + beta_4 Delta population_growth_t
+  + beta_5 Delta trade_openness_t
+  + beta_6 Delta inflation_t
+  + error_t
+```
+
+The dependent variable is the annual change in real GDP growth. The explanatory variables are first differences in gross capital formation as a share of GDP, FDI net inflows as a share of GDP, the Human Development Index, population growth, trade openness, and CPI inflation. First differences are useful because they reduce the risk of simply measuring common upward or downward trends. In this specification, the model does not ask whether Viet Nam is richer when trade is higher or HDI is higher. It asks whether growth accelerates when these variables change.
+
+The dataset combines World Bank WDI indicators and the UNDP Human Development Report 2025 HDI series accessed through Our World in Data. The usable regression sample is 1997-2023 because investment and inflation data begin later than the GDP, population, trade, and HDI series. The model uses 27 annual observations. This is a small sample for a six-variable time-series regression, so the results should be read as diagnostic evidence rather than causal proof.
+
+| Variable in first-difference model | Coefficient | Standardized beta | t-statistic | Interpretation |
+| --- | ---: | ---: | ---: | --- |
+| Change in gross capital formation, percentage points of GDP | -0.065 | -0.07 | -0.25 | Investment quantity alone does not explain annual growth acceleration. This does not mean investment is unimportant; it means the annual investment share is a noisy proxy for capital quality, project execution, and lagged effects. |
+| Change in FDI net inflows, percentage points of GDP | 0.705 | 0.51 | 1.51 | FDI has the strongest positive acceleration signal among the economic-opening variables. Years when FDI inflows rise tend to be years when growth momentum improves, although causality can run both ways. |
+| Change in HDI, index points multiplied by 100 | 1.800 | 0.25 | 1.14 | Human development moves in the expected positive direction, but HDI changes slowly and includes an income component, so it should be interpreted as a broad capability signal rather than a clean independent cause. |
+| Change in population growth, percentage points | -7.530 | -0.67 | -2.01 | The negative sign reflects Viet Nam&#x27;s demographic transition rather than a simple claim that people reduce growth. As population growth slows, growth can still remain high if productivity and capital deepening rise. |
+| Change in trade openness, percentage points of GDP | 0.065 | 0.36 | 1.45 | Trade openness has a positive acceleration signal. This fits the export-platform interpretation: trade integration helps growth when it is paired with FDI, logistics, industrial zones, and macro stability. |
+| Change in CPI inflation, percentage points | -0.047 | -0.15 | -0.59 | Inflation changes carry a weak negative signal. The stronger interpretation is institutional: stable inflation protects investor confidence, household purchasing power, and exchange-rate credibility. |
+
+The model&#x27;s R-squared is 0.209 and adjusted R-squared is -0.028. This weak fit is important. It tells us that Viet Nam&#x27;s growth cannot be explained well by a simple annual first-difference equation. Several reasons are likely. Investment affects growth with lags, not only in the same year. FDI is both a cause and a response: investors enter Viet Nam because growth prospects are strong, and their entry then reinforces exports, employment, and technology absorption. Trade openness is structurally rising over time, but global shocks can reduce growth even when trade ratios remain high. HDI improves gradually and is partly endogenous because income is one component of the index. Finally, annual country-level time series cannot easily capture policy reforms, provincial implementation quality, supply-chain relocation, infrastructure completion, anti-corruption cycles, or global demand shocks.
+
+The regression is therefore most useful for ranking signals, not for proving causation. The strongest positive standardized signals are FDI and trade openness. HDI is positive but slower-moving. Inflation is negative but weak. Investment is statistically weak in this short-run acceleration form. Population growth has a negative coefficient because the demographic dividend is changing: Viet Nam can no longer rely on rapid labor-force expansion as much as it did in earlier decades.
+
+&lt;figure class=&quot;map-card&quot;&gt;
+&lt;img alt=&quot;Empirical signals from Viet Nam growth driver model and growth accounting proxy&quot; class=&quot;admin-map&quot; src=&quot;../assets/vnm_growth_driver_empirical_results.svg&quot;/&gt;
+&lt;figcaption&gt;Sources: World Bank WDI API and UNDP Human Development Report 2025 HDI series accessed through Our World in Data. Calculations are stored in `VNM/processed/growth_driver_model_dataset_1990_2024.csv`, `growth_driver_model_results.csv`, and `growth_accounting_periods.csv`.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+### 9.5.2 Model 2: Growth Accounting Proxy
+
+The second model uses a simpler identity. Real GDP growth can be approximated as labor-force growth plus output-per-labor-force growth:
+
+```text
+Real GDP growth ~= labor-force growth + output per labor-force worker growth
+```
+
+This is not a full Solow growth accounting exercise because it does not separately estimate physical capital, human capital, and total factor productivity. But it is still helpful because it separates the demographic-labor contribution from the productivity-capital-structural contribution. The calculation uses World Bank WDI real GDP in constant 2015 US dollars and total labor force.
+
+| Period | Average real GDP growth | Average labor-force growth | Average output per labor-force worker growth | Interpretation |
+| --- | ---: | ---: | ---: | --- |
+| 1991-2000 | 7.30% | 2.08% | 5.22% | Early post-Doi Moi growth combined labor absorption with very rapid output-per-worker gains from market reform, agricultural incentives, early industrialization, and normalization of external economic relations. |
+| 2001-2010 | 6.40% | 2.60% | 3.80% | Labor-force growth was still large, while WTO accession, FDI, trade, construction, and credit expansion deepened the growth model. Productivity growth was positive but less dominant than in the 1990s. |
+| 2011-2019 | 6.38% | 1.23% | 5.15% | The labor contribution slowed, but output-per-worker growth rose again. Export manufacturing, electronics, industrial zones, infrastructure, services, and macro stabilization carried more of the growth burden. |
+| 2020-2024 | 5.07% | 0.19% | 4.88% | COVID-19 and global shocks lowered average growth, but the accounting signal is clear: growth is now overwhelmingly dependent on productivity, capital quality, supply-chain upgrading, and institutional capacity rather than labor-force expansion. |
+
+This decomposition is one of the strongest findings in the section. Viet Nam&#x27;s growth was never only a population story, but demographic expansion mattered much more in the 1990s and 2000s than it does now. The 2020-2024 period shows labor-force growth close to zero in average terms, while output per labor-force worker still grew strongly. That means the next stage of growth must come from capital productivity, skills, technology transfer, domestic supplier upgrading, logistics, energy reliability, digitalization, better public investment, and higher-value services.
+
+### 9.5.3 Model 3: Production-Function Interpretation
+
+A standard production-function lens writes output as a function of capital, labor, human capital, and technology:
+
+```text
+Y_t = A_t * K_t^alpha * (H_t L_t)^(1-alpha)
+```
+
+In this interpretation, Viet Nam&#x27;s growth has four engines. First, capital accumulation has been high. Gross capital formation averaged 28.3 percent of GDP in 1991-2000, 35.4 percent in 2001-2010, 31.5 percent in 2011-2019, and 31.9 percent in 2020-2024. These are high investment ratios for a lower-middle-income economy. But the regression result warns that the investment share alone is not enough. What matters is whether investment becomes productive infrastructure, reliable electricity, logistics capacity, industrial land, digital systems, water management, and skills formation rather than low-return construction, real-estate speculation, or delayed public projects.
+
+Second, labor and demographic change supported growth, but their role is declining. In the earlier period, a growing labor force and movement out of agriculture helped Viet Nam absorb workers into factories, construction, services, and urban-industrial corridors. That labor reallocation raised output per worker even when technology was not frontier-level. But the labor-force growth contribution has fallen sharply. This makes aging, skills, health, vocational training, labor mobility, affordable urban housing, and social insurance portability more important for macroeconomic performance.
+
+Third, human development has raised the economy&#x27;s absorptive capacity. HDI rose from 0.499 in 1990 to the mid-0.7 range by the early 2020s. This matters because FDI does not automatically create domestic capability. Workers must be educated enough to use imported machinery, firms must learn from foreign buyers, and public institutions must provide health, transport, electricity, and administrative services. HDI should therefore be read not as a short-run growth trigger but as a capacity foundation that makes capital and trade more productive.
+
+Fourth, total factor productivity in a broad sense has come from reform, openness, and coordination. Doi Moi changed incentives; ASEAN, WTO, CPTPP, RCEP, bilateral trade agreements, and supply-chain relocation widened markets; provincial industrial zones converted land and infrastructure into production platforms; and macro stability made long-term investment less risky. These are not captured well by a single annual variable, but they explain why the same investment ratio can generate different growth outcomes depending on policy quality.
+
+### 9.5.4 Export-Platform and FDI-Led Growth Model
+
+High investment alone does not explain Viet Nam&#x27;s growth. It is the combination of FDI, trade openness, manufacturing exports, and state coordination. Trade openness averaged 85.7 percent of GDP in 1991-2000, 131.3 percent in 2001-2010, 143.9 percent in 2011-2019, and 174.4 percent in 2020-2024. FDI net inflows averaged 6.95 percent of GDP in the 1990s, then 5.31 percent in 2001-2010, 4.59 percent in 2011-2019, and 4.33 percent in 2020-2024. Even as FDI&#x27;s GDP share eased, its structural role remained large because it anchored electronics, machinery, garments, footwear, furniture, phones, computers, and export-platform manufacturing.
+
+This model works through five mechanisms. FDI brings capital, managerial routines, export orders, supplier requirements, and technology exposure. Trade agreements and customs integration give firms market access. Provincial governments provide industrial parks, licensing, land conversion, labor supply, and infrastructure support. Macroeconomic stability protects exchange-rate and inflation expectations. A disciplined political system can prioritize industrialization, logistics, and export competitiveness across ministries and provinces.
+
+The same model also creates vulnerabilities. FDI can remain enclave-like if domestic suppliers do not upgrade. Trade openness exposes Viet Nam to external demand cycles, tariff shocks, rule-of-origin pressure, and geopolitical risk. Export success can hide weak domestic value added. Industrialization raises electricity, transport, land, and environmental pressure. If domestic private firms, research institutions, skills systems, and regulatory predictability do not improve, Viet Nam may remain a strong assembly platform without becoming a deeper innovation economy.
+
+### 9.5.5 Why the Regression Understates Institutions
+
+The model specification includes investment, FDI, HDI, population, trade, and inflation, but the most important driver behind these variables is institutional conversion. Doi Moi was an institutional shock that changed incentives. WTO accession was not only a trade event; it changed legal commitments, firm expectations, customs administration, and investor confidence. Public investment matters only when planning, procurement, land clearance, and implementation work. FDI matters only when the state can provide predictable procedures, electricity, roads, ports, workforce supply, and political stability. HDI matters only when education and health systems produce usable capability. Inflation matters because macro stability is a credibility asset.
+
+This is why a purely econometric answer would be too narrow. Viet Nam&#x27;s growth has been driven by a governance model that converts political centralization into development coordination, while allowing market-oriented production and international integration. The model is not frictionless: anti-corruption campaigns can slow approvals, local implementation can be uneven, SOE and banking risks remain, and policy uncertainty can discourage private investment. But the broad historical pattern is clear. Growth has been strongest when party-state coordination, provincial implementation, FDI, trade, infrastructure, and macro stability reinforce one another.
+
+### 9.5.6 Answer: What Has Driven Viet Nam&#x27;s Growth?
+
+The evidence points to a layered answer.
+
+First, the foundational driver was reform. Doi Moi, market pricing, agricultural decollectivization, private-enterprise recognition, legal reform, and external opening raised productivity by changing incentives. This explains why the 1990s combined rapid growth with strong output-per-worker gains.
+
+Second, the central growth mechanism became FDI-led export manufacturing. The first-difference model gives FDI and trade openness the strongest positive acceleration signals. This does not prove simple causality, but it fits the historical evidence: Viet Nam grew by becoming a reliable production platform inside Asian and global value chains.
+
+Third, investment mattered through capital deepening, but investment quality mattered more than the investment share. High gross capital formation gave Viet Nam roads, ports, factories, urban construction, power systems, and industrial capacity. Yet the weak short-run coefficient on investment shows that capital accumulation is not automatically growth-enhancing. Public investment execution, logistics efficiency, power reliability, environmental standards, and industrial upgrading determine the payoff.
+
+Fourth, labor reallocation mattered, but the demographic dividend is fading. Earlier growth benefited from labor-force expansion and movement out of agriculture. The growth-accounting proxy now shows that labor-force growth contributes little to aggregate growth. Future growth must therefore come from productivity rather than more workers.
+
+Fifth, human development and macro stability are enabling conditions. HDI improvement made Viet Nam better able to absorb technology, organize production, and support urban-industrial growth. Inflation control and macro stability protected the confidence needed for investment and trade. They do not always appear as large annual coefficients, but without them the FDI-export model would be much less durable.
+
+The policy implication is direct. Viet Nam&#x27;s past growth was driven by reform, labor absorption, capital accumulation, FDI, trade, and macro stability. Its future growth will depend more on productivity, domestic firm upgrading, higher-value services, innovation, skills, infrastructure quality, energy reliability, climate resilience, and predictable regulation. The growth model is therefore shifting from &quot;mobilize labor and attract factories&quot; toward &quot;raise productivity and capture more value.&quot; That shift is the central macroeconomic challenge for Viet Nam&#x27;s next development stage.</textarea>
+</article>
+      
+<figure class="chart-card">
+  <h2>growth-inflation</h2>
+  <div class="chart-frame"><canvas id="chart-growth-inflation"></canvas></div>
+  <figcaption>Source:  Unit: </figcaption>
+  <p>The figure is included as chapter-level evidence. Interpret it by identifying direction, turning points, divergence among series, and the policy or institutional mechanism that could plausibly explain the pattern.</p>
+</figure>
+
+
+<figure class="chart-card">
+  <h2>gdp-capita</h2>
+  <div class="chart-frame"><canvas id="chart-gdp-capita"></canvas></div>
+  <figcaption>Source:  Unit: </figcaption>
+  <p>The figure is included as chapter-level evidence. Interpret it by identifying direction, turning points, divergence among series, and the policy or institutional mechanism that could plausibly explain the pattern.</p>
+</figure>
+
+    </main>
+  </div>
+  <script>
+    window.REPORT_CHARTS = [];
+    document.addEventListener('DOMContentLoaded', () => {
+      if (!window.Chart || !window.REPORT_CHARTS) return;
+      window.REPORT_CHARTS.forEach((entry) => {
+        const cfg = entry.data || {};
+        const el = document.getElementById('chart-' + entry.id);
+        if (!el || !cfg.datasets) return;
+        const colors = ['#197278', '#246b46', '#b7860b', '#7b2d26', '#3f4e9a', '#6a4c93'];
+        const dashes = [[], [8, 4], [2, 3], [10, 4, 2, 4], [1, 4], [12, 3, 3, 3]];
+        const pointStyles = ['circle', 'rect', 'triangle', 'rectRot', 'crossRot', 'star'];
+        const datasets = (cfg.datasets || []).map((dataset, i) => ({
+          ...dataset,
+          borderColor: dataset.borderColor || colors[i % colors.length],
+          backgroundColor: dataset.backgroundColor || 'transparent',
+          borderDash: dataset.borderDash || dashes[i % dashes.length],
+          borderWidth: dataset.borderWidth || 2.4,
+          pointStyle: dataset.pointStyle || pointStyles[i % pointStyles.length],
+          pointRadius: dataset.pointRadius ?? 1.8,
+          tension: dataset.tension ?? 0.25,
+          spanGaps: dataset.spanGaps ?? true
+        }));
+        new Chart(el, {
+          type: 'line',
+          data: { labels: cfg.labels || [], datasets },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            interaction: { mode: 'index', intersect: false },
+            plugins: { legend: { position: 'bottom', labels: { boxWidth: 28 } } },
+            scales: { x: { title: { display: true, text: 'Year' } }, y: { title: { display: true, text: cfg.unit || 'Value' } } }
+          }
+        });
+      });
+    });
+  </script>
+  <script src="../assets/report.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  function fallbackMarkdown(text) {
+    const escaped = text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    return escaped.split(/\n{2,}/).map((block) => `<p>${block.replace(/\n/g, "<br>")}</p>`).join("");
+  }
+  function renderMarkdown(text) {
+    return window.marked ? marked.parse(text) : fallbackMarkdown(text);
+  }
+  document.querySelectorAll('[data-md-panel]').forEach((panel) => {
+    const id = panel.getAttribute('data-md-panel');
+    const source = panel.getAttribute('data-md-source');
+    const preview = panel.querySelector('.md-preview');
+    const editor = panel.querySelector('.md-editor');
+    const edit = panel.querySelector('[data-md-action="edit"]');
+    const save = panel.querySelector('[data-md-action="save"]');
+    const cancel = panel.querySelector('[data-md-action="cancel"]');
+    if (!preview || !editor || !edit || !save || !cancel) return;
+    const storageKey = `country-report-markdown:v1:${source || id}`;
+    const original = editor.value;
+    const stored = localStorage.getItem(storageKey);
+    const hasStoredDraft = stored !== null && (!source || window.location.protocol === 'file:');
+    if (hasStoredDraft) editor.value = stored;
+    const showPreview = () => { preview.innerHTML = renderMarkdown(editor.value); };
+    const setEditing = (editing) => {
+      editor.hidden = !editing;
+      preview.hidden = editing;
+      edit.hidden = editing;
+      save.hidden = !editing;
+      cancel.hidden = !editing;
+    };
+    async function saveMarkdown() {
+      if (source && window.location.protocol.startsWith('http')) {
+        const response = await fetch('/api/save-section', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ source, markdown: editor.value })
+        });
+        if (!response.ok) throw new Error(await response.text());
+        localStorage.removeItem(storageKey);
+        return true;
+      } else {
+        localStorage.setItem(storageKey, editor.value);
+        if (source) window.alert('This edit was saved only as a browser draft. Open the report through code/serve_report.py to save it permanently to the Markdown source file.');
+        return false;
+      }
+    }
+    if (hasStoredDraft) showPreview();
+    setEditing(false);
+    edit.addEventListener('click', () => setEditing(true));
+    save.addEventListener('click', async () => {
+      save.disabled = true;
+      try {
+        const savedToServer = await saveMarkdown();
+        if (savedToServer) {
+          window.location.reload();
+          return;
+        }
+        showPreview();
+        setEditing(false);
+      } catch (error) {
+        window.alert(error.message || 'Could not save the Markdown source.');
+      } finally {
+        save.disabled = false;
+      }
+    });
+    cancel.addEventListener('click', () => {
+      editor.value = localStorage.getItem(storageKey) ?? original;
+      if (hasStoredDraft || window.location.protocol === 'file:') showPreview();
+      setEditing(false);
+    });
+  });
+});
+</script>
+
+</body>
+</html>

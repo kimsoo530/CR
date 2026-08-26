@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>18.5 Update Workflow and Evidence Archive | THA Country Report</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+  <script src="../assets/chart.umd.min.js"></script>
+  <style>
+    body{margin:0;background:#f4f6f4;color:#17201b;font-family:Arial,Helvetica,sans-serif;line-height:1.65}
+    .layout{display:grid;grid-template-columns:320px minmax(0,1fr);min-height:100vh}
+    aside{position:sticky;top:0;height:100vh;overflow:auto;background:#fff;border-right:1px solid #d9ded8;padding:18px}
+    aside a{display:block;color:#25312a;text-decoration:none;border-radius:6px;padding:6px 8px;font-size:13px}
+    aside a:hover,aside a.active{background:#e8f0ea;color:#0d5a6a} summary{cursor:pointer;font-weight:700;margin:10px 0 4px}
+    .home{font-weight:800;margin-bottom:8px}
+    main{max-width:1050px;padding:36px min(6vw,72px) 90px}
+    .crumb{font-size:13px;color:#607067;margin:0 0 8px} h1{font-size:36px;line-height:1.15;margin:0 0 8px}
+    .chapter-title{color:#56645c;margin:0 0 26px}
+    .section-body,.chart-card{background:#fff;border:1px solid #d9ded8;border-radius:8px;padding:18px;margin:0 0 22px}
+    .section-body h2{font-size:26px;margin:0 0 14px} .section-body p{font-family:Georgia,'Times New Roman',serif;font-size:18px;margin:0 0 14px}
+    table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px} th,td{border:1px solid #d9ded8;padding:8px;vertical-align:top} th{background:#edf2ea;text-align:left}
+    code{background:#eef2ee;border:1px solid #d8ded8;border-radius:4px;padding:1px 4px} .source-note,figcaption{font-size:12px;color:#607067}
+    .chart-frame{height:340px} .chart-frame canvas{width:100%;height:100%}
+    .figure-card,.map-card,.symbol-figure{background:#fff;border:1px solid #d9ded8;border-radius:8px;padding:14px;margin:18px 0 24px}
+    .source{color:#607067;font-size:12px;margin:10px 0 0} .map-grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(280px,.7fr);gap:16px;align-items:start}
+    .adm-map{width:100%;height:auto;border:1px solid #d9ded8;background:#f7fbfc} .adm-path{stroke:#fff;stroke-width:.7} .map-label{font-size:6px;fill:#32424f;text-anchor:middle;pointer-events:none} .neighbor-label{font-size:12px;fill:#6c7b88}
+    .capital-marker circle{fill:#c23b22;stroke:#fff;stroke-width:1.4} .capital-marker text{font-size:12px;fill:#17212b;font-weight:700} .map-table-wrap{max-height:420px;overflow:auto}
+    .symbol-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px} .symbol-card{min-height:260px;border:1px solid #d9ded8;border-radius:8px;background:#fbfdfe;padding:14px;display:flex;flex-direction:column;gap:10px}
+    .symbol-card h3{font-size:18px;margin:2px 0 0} .symbol-card p{font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:1.48;color:#34424e;margin:0} .symbol-kicker{color:#607067;font-size:11px;text-transform:uppercase;letter-spacing:.06em}
+    .flag-indonesia{height:92px;border:1px solid #b9c6cd;border-radius:4px;overflow:hidden} .flag-indonesia span{display:block;height:50%} .flag-indonesia span:first-child{background:#c9182b} .flag-indonesia span:last-child{background:#fff}
+    .garuda-mark{height:92px;display:grid;grid-template-columns:1fr 56px 1fr;align-items:center;gap:4px} .garuda-mark .wing{height:60px;background:#c59a35;border:1px solid #9d761e} .garuda-mark .left{border-radius:60px 10px 18px 60px} .garuda-mark .right{border-radius:10px 60px 60px 18px}
+    .garuda-mark .body{height:82px;background:#d6ad46;border:1px solid #9d761e;border-radius:36px 36px 18px 18px} .garuda-mark .shield{grid-column:2;justify-self:center;margin-top:-58px;width:36px;height:42px;border-radius:8px 8px 14px 14px;background:#1f3f68;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;border:2px solid #f1d47b}
+    .motto-line{height:92px;display:flex;align-items:center;justify-content:center;text-align:center;border:1px solid #cfd9de;border-radius:6px;background:linear-gradient(180deg,#fff,#eef5f7);font-weight:800;color:#15384a;padding:12px} .anthem-bars{height:92px;display:flex;align-items:end;gap:8px;justify-content:center;border:1px solid #cfd9de;border-radius:6px;background:#f8fbfc;padding:16px}
+    .anthem-bars span{width:22px;background:#0f6f87;border-radius:4px 4px 0 0} .anthem-bars span:nth-child(1){height:38px} .anthem-bars span:nth-child(2){height:62px} .anthem-bars span:nth-child(3){height:48px} .anthem-bars span:nth-child(4){height:72px}
+    @media(max-width:860px){.layout{grid-template-columns:1fr}aside{position:relative;height:auto}main{padding:24px 18px}}
+  
+    .md-toolbar{display:flex;justify-content:flex-end;gap:8px;margin:0 0 14px}
+    .md-toolbar button{border:1px solid #0d5a6a;background:#0d5a6a;color:#fff;border-radius:5px;padding:7px 11px;font:700 12px Arial,Helvetica,sans-serif;cursor:pointer}
+    .md-toolbar button[data-md-action='cancel']{background:#fff;color:#25312a;border-color:#cfd8d3}
+    .md-editor{width:100%;min-height:520px;border:1px solid #cfd8d3;border-radius:6px;padding:14px;font:14px Consolas,monospace;line-height:1.45}
+
+  </style>
+  <script src="../assets/marked.min.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <aside><a class='home' href='../index.html'>THA cover</a>
+<details ><summary>1. Country Overview</summary><a class='section-link ' href='01-01-national-profile.html'>1.1 National Profile</a><a class='section-link ' href='01-02-state-symbols.html'>1.2 State Symbols</a><a class='section-link ' href='01-03-geography-regions-bangkok-and-administrative-divisions.html'>1.3 Geography, Regions, Bangkok, and Administrative Divisions</a><a class='section-link ' href='01-04-the-core-institutional-puzzle.html'>1.4 The Core Institutional Puzzle</a><a class='section-link ' href='01-05-evidence-base.html'>1.5 Evidence Base</a></details>
+<details ><summary>2. Historical Background</summary><a class='section-link ' href='02-01-mandala-polities-ayutthaya-thonburi-and-rattanakosin.html'>2.1 Mandala Polities, Ayutthaya, Thonburi, and Rattanakosin</a><a class='section-link ' href='02-02-colonial-avoidance-and-bureaucratic-centralization.html'>2.2 Colonial Avoidance and Bureaucratic Centralization</a><a class='section-link ' href='02-03-1932-revolution-military-rule-constitutional-cycles-and-democratization.html'>2.3 1932 Revolution, Military Rule, Constitutional Cycles, and Democratization</a><a class='section-link ' href='02-04-historical-legacies-in-contemporary-administration.html'>2.4 Historical Legacies in Contemporary Administration</a></details>
+<details ><summary>3. Constitution and Basic State Order</summary><a class='section-link ' href='03-01-constitutional-order-and-amendments.html'>3.1 Constitutional Order and Amendments</a><a class='section-link ' href='03-02-monarchy-sovereignty-rights-and-national-unity.html'>3.2 Monarchy, Sovereignty, Rights, and National Unity</a><a class='section-link ' href='03-03-executive-parliament-courts-and-independent-bodies.html'>3.3 Executive, Parliament, Courts, and Independent Bodies</a><a class='section-link ' href='03-04-constitutional-court-senate-emergency-powers-and-reform-debates.html'>3.4 Constitutional Court, Senate, Emergency Powers, and Reform Debates</a></details>
+<details ><summary>4. Political System and Power Structure</summary><a class='section-link ' href='04-01-historical-formation-of-the-political-order.html'>4.1 Historical Formation of the Political Order</a><a class='section-link ' href='04-02-executive-power-and-government-formation.html'>4.2 Executive Power and Government Formation</a><a class='section-link ' href='04-03-parliament-parties-and-elections.html'>4.3 Parliament, Parties, and Elections</a><a class='section-link ' href='04-04-judiciary-rule-of-law-corruption-and-accountability.html'>4.4 Judiciary, Rule of Law, Corruption, and Accountability</a><a class='section-link ' href='04-05-local-politics-and-real-power-relations.html'>4.5 Local Politics and Real Power Relations</a><a class='section-link ' href='04-06-political-system-diagnostics-and-democratic-trajectory.html'>4.6 Political System Diagnostics and Democratic Trajectory</a></details>
+<details ><summary>5. Administrative System and Government Organization</summary><a class='section-link ' href='05-01-central-government-and-core-coordinating-institutions.html'>5.1 Central Government and Core Coordinating Institutions</a><a class='section-link ' href='05-02-organizational-management-and-bureaucratic-reform.html'>5.2 Organizational Management and Bureaucratic Reform</a><a class='section-link ' href='05-03-human-resource-management-and-civil-service.html'>5.3 Human Resource Management and Civil Service</a><a class='section-link ' href='05-04-financial-administration-procurement-audit-and-inspection.html'>5.4 Financial Administration, Procurement, Audit, and Inspection</a><a class='section-link ' href='05-05-local-administration-and-service-delivery.html'>5.5 Local Administration and Service Delivery</a><a class='section-link ' href='05-06-digital-government-and-administrative-accountability.html'>5.6 Digital Government and Administrative Accountability</a><a class='section-link ' href='05-07-implementation-capacity-and-administrative-performance.html'>5.7 Implementation Capacity and Administrative Performance</a></details>
+<details ><summary>6. Governance and Institutional Capacity</summary><a class='section-link ' href='06-01-government-effectiveness-and-regulatory-quality.html'>6.1 Government Effectiveness and Regulatory Quality</a><a class='section-link ' href='06-02-rule-of-law-corruption-control-and-judicial-capacity.html'>6.2 Rule of Law, Corruption Control, and Judicial Capacity</a><a class='section-link ' href='06-03-voice-accountability-stability-and-security-pressure.html'>6.3 Voice, Accountability, Stability, and Security Pressure</a><a class='section-link ' href='06-04-reading-governance-indicators-with-thai-institutions.html'>6.4 Reading Governance Indicators with Thai Institutions</a></details>
+<details ><summary>7. Fiscal System and Public Sector</summary><a class='section-link ' href='07-01-revenue-taxation-and-intergovernmental-finance.html'>7.1 Government Revenue, Tax Revenue, and Expenditure Structure</a><a class='section-link ' href='07-02-expenditure-deficit-debt-and-aging-related-pressure.html'>7.2 Fiscal Balance, Debt, and Interest Burden</a><a class='section-link ' href='07-03-public-financial-management-and-budget-reform.html'>7.3 Public Financial Management and Budget Reform</a><a class='section-link ' href='07-04-soes-infrastructure-ppps-and-fiscal-risk.html'>7.4 Defense and Public Security Spending</a><a class='section-link ' href='07-05-fiscal-capacity-and-public-sector-risks.html'>7.5 Fiscal Capacity and Public Sector Risks</a></details>
+<details ><summary>8. Population and Social Structure</summary><a class='section-link ' href='08-01-aging-fertility-decline-and-demographic-pressure.html'>8.1 Population Size, Growth, Age Structure, and Dependency</a><a class='section-link ' href='08-02-bangkok-regional-inequality-and-urbanization.html'>8.2 Urbanization and Regional Distribution</a><a class='section-link ' href='08-03-ethnicity-language-religion-and-southern-border-provinces.html'>8.3 Ethnicity, Language, Religion, and Southern Border Provinces</a><a class='section-link ' href='08-04-migration-foreign-workers-and-social-cohesion.html'>8.4 Migration, Foreign Workers, and Social Cohesion</a></details>
+<details ><summary>9. Macroeconomic Structure</summary><a class='section-link ' href='09-01-gdp-scale-growth-and-income.html'>9.1 GDP Scale, Growth, and Income Level</a><a class='section-link ' href='09-02-inflation-exchange-rate-and-macroeconomic-stabilization.html'>9.2 Prices, Exchange Rate, and Macroeconomic Stability</a><a class='section-link ' href='09-03-industrial-structure-manufacturing-agriculture-tourism-and-services.html'>9.3 Sectoral Structure, Resource Dependence, and Growth Model</a><a class='section-link ' href='09-04-middle-income-trap-and-structural-vulnerabilities.html'>9.4 External Position, Trade Balance, and Structural Constraints</a></details>
+<details ><summary>10. Trade, Investment, and External Economy</summary><a class='section-link ' href='10-01-exports-imports-tourism-and-current-account.html'>10.1 Exports, Imports, Tourism, and Current Account</a><a class='section-link ' href='10-02-manufacturing-supply-chains-automotive-electronics-agriculture-and-services.html'>10.2 Manufacturing Supply Chains, Automotive, Electronics, Agriculture, and Services</a><a class='section-link ' href='10-03-fdi-investment-climate-boi-and-eastern-economic-corridor.html'>10.3 FDI, Investment Climate, BOI, and Eastern Economic Corridor</a><a class='section-link ' href='10-04-asean-rcep-logistics-and-diversification.html'>10.4 ASEAN, RCEP, Logistics, and Diversification</a></details>
+<details ><summary>11. Infrastructure, Energy, and Digital Connectivity</summary><a class='section-link ' href='11-01-electricity-gas-renewables-and-energy-security.html'>11.1 Electricity, Gas, Renewables, and Energy Security</a><a class='section-link ' href='11-02-transport-rail-ports-airports-and-eec-corridors.html'>11.2 Transport, Rail, Ports, Airports, and EEC Corridors</a><a class='section-link ' href='11-03-digital-connectivity-broadband-5g-and-cyber-capacity.html'>11.3 Digital Connectivity, Broadband, 5G, and Cyber Capacity</a><a class='section-link ' href='11-04-infrastructure-finance-climate-resilience-and-maintenance.html'>11.4 Infrastructure Finance, Climate Resilience, and Maintenance</a></details>
+<details ><summary>12. Labor Market and Human Capital</summary><a class='section-link ' href='12-01-labor-force-participation-and-informality.html'>12.1 Labor Force, Participation, and Informality</a><a class='section-link ' href='12-02-women-youth-migrant-labor-and-aging-workforce.html'>12.2 Women, Youth, Migrant Labor, and Aging Workforce</a><a class='section-link ' href='12-03-agriculture-manufacturing-services-and-skills-mismatch.html'>12.3 Agriculture, Manufacturing, Services, and Skills Mismatch</a><a class='section-link ' href='12-04-education-productivity-tvet-and-innovation.html'>12.4 Education, Productivity, TVET, and Innovation</a></details>
+<details ><summary>13. Education, Health, and Welfare</summary><a class='section-link ' href='13-01-education-system-learning-outcomes-and-public-spending.html'>13.1 Education System, Learning Outcomes, and Public Spending</a><a class='section-link ' href='13-02-universal-coverage-health-outcomes-and-service-capacity.html'>13.2 Universal Coverage, Health Outcomes, and Service Capacity</a><a class='section-link ' href='13-03-aging-long-term-care-public-health-and-welfare.html'>13.3 Aging, Long-Term Care, Public Health, and Welfare</a><a class='section-link ' href='13-04-human-development-regional-equity-and-state-capacity.html'>13.4 Human Development, Regional Equity, and State Capacity</a></details>
+<details ><summary>14. Financial Sector and Economic Institutions</summary><a class='section-link ' href='14-01-bank-of-thailand-monetary-policy-and-exchange-rate.html'>14.1 Bank of Thailand, Monetary Policy, and Exchange Rate</a><a class='section-link ' href='14-02-banks-private-credit-household-debt-and-financial-stability.html'>14.2 Banks, Private Credit, Household Debt, and Financial Stability</a><a class='section-link ' href='14-03-capital-markets-digital-payments-and-fintech.html'>14.3 Capital Markets, Digital Payments, and Fintech</a><a class='section-link ' href='14-04-financial-regulation-investor-protection-and-reform-priorities.html'>14.4 Financial Regulation, Investor Protection, and Reform Priorities</a></details>
+<details ><summary>15. Foreign Relations, Security, and Geopolitics</summary><a class='section-link ' href='15-01-foreign-policy-asean-mekong-and-middle-power-diplomacy.html'>15.1 Foreign Policy, ASEAN, Mekong, and Middle-Power Diplomacy</a><a class='section-link ' href='15-02-borders-southern-insurgency-myanmar-crisis-and-regional-security.html'>15.2 Borders, Southern Insurgency, Myanmar Crisis, and Regional Security</a><a class='section-link ' href='15-03-defense-police-intelligence-and-internal-security-governance.html'>15.3 Defense, Police, Intelligence, and Internal Security Governance</a><a class='section-link ' href='15-04-strategic-geography-food-energy-climate-and-maritime-connectivity.html'>15.4 Strategic Geography, Food, Energy, Climate, and Maritime Connectivity</a></details>
+<details ><summary>16. Major Policies and National Development Strategy</summary><a class='section-link ' href='16-01-evolution-of-national-development-strategy.html'>16.1 Evolution of National Development Strategy</a><a class='section-link ' href='16-02-20-year-national-strategy-13th-plan-thailand-4-0-and-bcg-economy.html'>16.2 20-Year National Strategy, 13th Plan, Thailand 4.0, and BCG Economy</a><a class='section-link ' href='16-03-macroeconomic-reform-fiscal-discipline-and-aging-costs.html'>16.3 Macroeconomic Reform, Fiscal Discipline, and Aging Costs</a><a class='section-link ' href='16-04-eec-industrial-upgrading-energy-climate-and-digital-economy.html'>16.4 EEC, Industrial Upgrading, Energy, Climate, and Digital Economy</a><a class='section-link ' href='16-05-public-administration-reform-and-human-capital-strategy.html'>16.5 Public Administration Reform and Human-Capital Strategy</a></details>
+<details ><summary>17. Integrated Assessment</summary><a class='section-link ' href='17-01-national-operating-model.html'>17.1 National Operating Model</a><a class='section-link ' href='17-02-institutional-strengths-risks-and-bottlenecks.html'>17.2 Institutional Strengths, Risks, and Bottlenecks</a><a class='section-link ' href='17-03-implications-for-korea-and-international-cooperation.html'>17.3 Implications for Korea and International Cooperation</a><a class='section-link ' href='17-04-thailand-and-comparative-administration-theory.html'>17.4 Thailand and Comparative Administration Theory</a><a class='section-link ' href='17-05-strategic-outlook.html'>17.5 Strategic Outlook</a></details>
+<details open><summary>18. Appendix, Sources, and Method</summary><a class='section-link ' href='18-01-timeline.html'>18.1 Timeline</a><a class='section-link ' href='18-02-government-organization-map.html'>18.2 Government Organization Map</a><a class='section-link ' href='18-03-major-laws-and-policy-documents.html'>18.3 Major Laws and Policy Documents</a><a class='section-link ' href='18-04-indicator-codebook.html'>18.4 Indicator Codebook</a><a class='section-link active' href='18-05-update-workflow-and-evidence-archive.html'>18.5 Update Workflow and Evidence Archive</a></details>
+<details ><summary>19. References</summary><a class='section-link ' href='19-01-references.html'>19.1 References</a><a class='section-link ' href='19-02-citation-and-source-integrity-notes.html'>19.2 Citation and Source Integrity Notes</a></details></aside>
+    <main>
+      <p class="crumb"><a href="../18-appendix.html">Chapter 18</a> / Section 5</p>
+      <h1>18.5 Update Workflow and Evidence Archive</h1>
+      <p class="chapter-title">18. Appendix, Sources, and Method</p>
+      <article class="section-body editable-section" data-md-panel="18-05-update-workflow-and-evidence-archive" data-md-source="sections/18-05-update-workflow-and-evidence-archive.md">
+  <div class="md-toolbar">
+    <button type="button" data-md-action="edit">Edit Markdown</button>
+    <button type="button" data-md-action="save" hidden>Save</button>
+    <button type="button" data-md-action="cancel" hidden>Cancel</button>
+  </div>
+  <div class="md-preview"><h2 id='18-5-update-workflow-and-evidence-archive'>18.5 Update Workflow and Evidence Archive</h2>
+<p><strong>ASEAN comparative lens (2026).</strong> Thailand should be read in ASEAN comparison as an upper-middle-income mainland hub shaped by tourism, automotive manufacturing, civil-military politics, and rapid aging. It differs from Vietnam&#x27;s newer FDI-led industrial acceleration, Indonesia&#x27;s scale-driven domestic market, Singapore&#x27;s high-capacity city-state, and Cambodia-Laos resource/corridor models because its central challenge is upgrading a mature but politically constrained middle-income economy. For this section, the regional comparison should make ASEAN comparison methodologically transparent by recording which indicators and source layers support cross-national claims. Local comparable indicators show: population 71.67 million (2024), rank 4 among the nine ASEAN reports in this workspace; GDP US$526.52 billion (2024), rank 3 among the nine ASEAN reports in this workspace; GDP per capita US$7,347 (2024), rank 3 among the nine ASEAN reports in this workspace; real GDP growth 2.54% (2024), rank 8 among the nine ASEAN reports in this workspace; government effectiveness 0.12 (2023), rank 4 among the nine ASEAN reports in this workspace; internet use 90.87% (2024), rank 3 among the nine ASEAN reports in this workspace. Use `sources/documents/regional/asean_comparative_lens_2026.md` together with ASEANstats, ASEAN Secretariat materials, and the country processed-indicator files before making cross-ASEAN claims.</p>
+<p>Run `python THA\code\fetch_data.py`, verify `THA/raw` and `THA/processed`, rebuild with `python THA\code\build_report.py`, archive sources with `python THA\code\download_sources.py`, then rerun `python tools\sectionize_reports.py` and `python tools\enhance_reports_with_diagnostics.py`. Store source originals or failure logs in `THA/sources/documents` and keep annual snapshots in `THA/raw` and `THA/processed`.</p></div>
+  <textarea class="md-editor" hidden>## 18.5 Update Workflow and Evidence Archive
+
+&lt;!-- asean-comparative-lens-2026:start --&gt;
+**ASEAN comparative lens (2026).** Thailand should be read in ASEAN comparison as an upper-middle-income mainland hub shaped by tourism, automotive manufacturing, civil-military politics, and rapid aging. It differs from Vietnam&#x27;s newer FDI-led industrial acceleration, Indonesia&#x27;s scale-driven domestic market, Singapore&#x27;s high-capacity city-state, and Cambodia-Laos resource/corridor models because its central challenge is upgrading a mature but politically constrained middle-income economy. For this section, the regional comparison should make ASEAN comparison methodologically transparent by recording which indicators and source layers support cross-national claims. Local comparable indicators show: population 71.67 million (2024), rank 4 among the nine ASEAN reports in this workspace; GDP US$526.52 billion (2024), rank 3 among the nine ASEAN reports in this workspace; GDP per capita US$7,347 (2024), rank 3 among the nine ASEAN reports in this workspace; real GDP growth 2.54% (2024), rank 8 among the nine ASEAN reports in this workspace; government effectiveness 0.12 (2023), rank 4 among the nine ASEAN reports in this workspace; internet use 90.87% (2024), rank 3 among the nine ASEAN reports in this workspace. Use `sources/documents/regional/asean_comparative_lens_2026.md` together with ASEANstats, ASEAN Secretariat materials, and the country processed-indicator files before making cross-ASEAN claims.
+&lt;!-- asean-comparative-lens-2026:end --&gt;
+
+Run `python THA\code\fetch_data.py`, verify `THA/raw` and `THA/processed`, rebuild with `python THA\code\build_report.py`, archive sources with `python THA\code\download_sources.py`, then rerun `python tools\sectionize_reports.py` and `python tools\enhance_reports_with_diagnostics.py`. Store source originals or failure logs in `THA/sources/documents` and keep annual snapshots in `THA/raw` and `THA/processed`.</textarea>
+</article>
+      
+    </main>
+  </div>
+  <script>
+    window.REPORT_CHARTS = [];
+    document.addEventListener('DOMContentLoaded', () => {
+      if (!window.Chart || !window.REPORT_CHARTS) return;
+      window.REPORT_CHARTS.forEach((entry) => {
+        const cfg = entry.data || {};
+        const el = document.getElementById('chart-' + entry.id);
+        if (!el || !cfg.datasets) return;
+        const colors = ['#197278', '#246b46', '#b7860b', '#7b2d26', '#3f4e9a', '#6a4c93'];
+        const dashes = [[], [8, 4], [2, 3], [10, 4, 2, 4], [1, 4], [12, 3, 3, 3]];
+        const pointStyles = ['circle', 'rect', 'triangle', 'rectRot', 'crossRot', 'star'];
+        const datasets = (cfg.datasets || []).map((dataset, i) => ({
+          ...dataset,
+          borderColor: dataset.borderColor || colors[i % colors.length],
+          backgroundColor: dataset.backgroundColor || 'transparent',
+          borderDash: dataset.borderDash || dashes[i % dashes.length],
+          borderWidth: dataset.borderWidth || 2.4,
+          pointStyle: dataset.pointStyle || pointStyles[i % pointStyles.length],
+          pointRadius: dataset.pointRadius ?? 1.8,
+          tension: dataset.tension ?? 0.25,
+          spanGaps: dataset.spanGaps ?? true
+        }));
+        new Chart(el, {
+          type: 'line',
+          data: { labels: cfg.labels || [], datasets },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            interaction: { mode: 'index', intersect: false },
+            plugins: { legend: { position: 'bottom', labels: { boxWidth: 28 } } },
+            scales: { x: { title: { display: true, text: 'Year' } }, y: { title: { display: true, text: cfg.unit || 'Value' } } }
+          }
+        });
+      });
+    });
+  </script>
+  <script src="../assets/report.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  function fallbackMarkdown(text) {
+    const escaped = text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    return escaped.split(/\n{2,}/).map((block) => `<p>${block.replace(/\n/g, "<br>")}</p>`).join("");
+  }
+  function renderMarkdown(text) {
+    return window.marked ? marked.parse(text) : fallbackMarkdown(text);
+  }
+  document.querySelectorAll('[data-md-panel]').forEach((panel) => {
+    const id = panel.getAttribute('data-md-panel');
+    const source = panel.getAttribute('data-md-source');
+    const preview = panel.querySelector('.md-preview');
+    const editor = panel.querySelector('.md-editor');
+    const edit = panel.querySelector('[data-md-action="edit"]');
+    const save = panel.querySelector('[data-md-action="save"]');
+    const cancel = panel.querySelector('[data-md-action="cancel"]');
+    if (!preview || !editor || !edit || !save || !cancel) return;
+    const storageKey = `country-report-markdown:v1:${source || id}`;
+    const original = editor.value;
+    const stored = localStorage.getItem(storageKey);
+    const hasStoredDraft = stored !== null && (!source || window.location.protocol === 'file:');
+    if (hasStoredDraft) editor.value = stored;
+    const showPreview = () => { preview.innerHTML = renderMarkdown(editor.value); };
+    const setEditing = (editing) => {
+      editor.hidden = !editing;
+      preview.hidden = editing;
+      edit.hidden = editing;
+      save.hidden = !editing;
+      cancel.hidden = !editing;
+    };
+    async function saveMarkdown() {
+      if (source && window.location.protocol.startsWith('http')) {
+        const response = await fetch('/api/save-section', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ source, markdown: editor.value })
+        });
+        if (!response.ok) throw new Error(await response.text());
+        localStorage.removeItem(storageKey);
+        return true;
+      } else {
+        localStorage.setItem(storageKey, editor.value);
+        if (source) window.alert('This edit was saved only as a browser draft. Open the report through code/serve_report.py to save it permanently to the Markdown source file.');
+        return false;
+      }
+    }
+    if (hasStoredDraft) showPreview();
+    setEditing(false);
+    edit.addEventListener('click', () => setEditing(true));
+    save.addEventListener('click', async () => {
+      save.disabled = true;
+      try {
+        const savedToServer = await saveMarkdown();
+        if (savedToServer) {
+          window.location.reload();
+          return;
+        }
+        showPreview();
+        setEditing(false);
+      } catch (error) {
+        window.alert(error.message || 'Could not save the Markdown source.');
+      } finally {
+        save.disabled = false;
+      }
+    });
+    cancel.addEventListener('click', () => {
+      editor.value = localStorage.getItem(storageKey) ?? original;
+      if (hasStoredDraft || window.location.protocol === 'file:') showPreview();
+      setEditing(false);
+    });
+  });
+});
+</script>
+
+</body>
+</html>

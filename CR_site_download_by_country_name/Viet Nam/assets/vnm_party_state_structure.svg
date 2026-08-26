@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820" role="img" aria-labelledby="title desc">
+  <title id="title">Vietnam Party-State Operating Structure</title>
+  <desc id="desc">A diagram showing how the Communist Party of Viet Nam leads state institutions, which then translate political direction into law, administration, oversight, and local implementation.</desc>
+  <defs>
+    <marker id="arrow" markerHeight="10" markerWidth="10" orient="auto" refX="9" refY="3">
+      <path d="M0,0 L9,3 L0,6 Z" fill="#46545c"/>
+    </marker>
+    <marker id="partyArrow" markerHeight="10" markerWidth="10" orient="auto" refX="9" refY="3">
+      <path d="M0,0 L9,3 L0,6 Z" fill="#9b2f2f"/>
+    </marker>
+    <style>
+      .bg{fill:#fbfcfb;stroke:#d7dee2;stroke-width:1.5}
+      .box{stroke-width:2;rx:12}
+      .party{fill:#fff1f0;stroke:#9b2f2f}
+      .state{fill:#eef6f5;stroke:#176b63}
+      .oversight{fill:#f4f2fb;stroke:#5d5a8c}
+      .local{fill:#fff7e6;stroke:#b8873a}
+      .society{fill:#f1f5f8;stroke:#6b7d88}
+      .title{font:700 30px Arial,sans-serif;fill:#172026}
+      .subtitle{font:17px Arial,sans-serif;fill:#526069}
+      .label{font:700 18px Arial,sans-serif;fill:#172026}
+      .small{font:14px Arial,sans-serif;fill:#4c5a62}
+      .tiny{font:12px Arial,sans-serif;fill:#526069}
+      .partyLine{stroke:#9b2f2f;stroke-width:3;fill:none;marker-end:url(#partyArrow)}
+      .adminLine{stroke:#46545c;stroke-width:2.4;fill:none;marker-end:url(#arrow)}
+      .feedback{stroke:#6f7f88;stroke-width:2;stroke-dasharray:7 7;fill:none;marker-end:url(#arrow)}
+    </style>
+  </defs>
+
+  <rect class="bg" x="24" y="24" width="1152" height="772" rx="18"/>
+  <text class="title" x="600" y="72" text-anchor="middle">Vietnam's Party-State Operating Structure</text>
+  <text class="subtitle" x="600" y="102" text-anchor="middle">Political leadership, legal formalization, administrative implementation, and feedback are connected rather than separate spheres.</text>
+
+  <rect class="box party" x="360" y="136" width="480" height="96" rx="12"/>
+  <text class="label" x="600" y="172" text-anchor="middle">Communist Party of Viet Nam</text>
+  <text class="small" x="600" y="198" text-anchor="middle">strategic orientation | ideological discipline | cadre appointments | party inspection</text>
+
+  <rect class="box state" x="70" y="320" width="250" height="104" rx="12"/>
+  <text class="label" x="195" y="358" text-anchor="middle">National Assembly</text>
+  <text class="small" x="195" y="384" text-anchor="middle">laws, resolutions, oversight,</text>
+  <text class="small" x="195" y="406" text-anchor="middle">budget and appointments</text>
+
+  <rect class="box state" x="475" y="320" width="250" height="104" rx="12"/>
+  <text class="label" x="600" y="358" text-anchor="middle">Government and Prime Minister</text>
+  <text class="small" x="600" y="384" text-anchor="middle">executive coordination, policy</text>
+  <text class="small" x="600" y="406" text-anchor="middle">programs and administration</text>
+
+  <rect class="box state" x="880" y="320" width="250" height="104" rx="12"/>
+  <text class="label" x="1005" y="358" text-anchor="middle">Courts and Procuracies</text>
+  <text class="small" x="1005" y="384" text-anchor="middle">socialist legality, adjudication,</text>
+  <text class="small" x="1005" y="406" text-anchor="middle">prosecution and legal control</text>
+
+  <rect class="box state" x="250" y="520" width="230" height="98" rx="12"/>
+  <text class="label" x="365" y="558" text-anchor="middle">Ministries</text>
+  <text class="small" x="365" y="584" text-anchor="middle">sector rules, plans, standards,</text>
+  <text class="small" x="365" y="606" text-anchor="middle">and professional guidance</text>
+
+  <rect class="box oversight" x="720" y="520" width="230" height="98" rx="12"/>
+  <text class="label" x="835" y="558" text-anchor="middle">Audit and Inspection</text>
+  <text class="small" x="835" y="584" text-anchor="middle">financial control, inspection,</text>
+  <text class="small" x="835" y="606" text-anchor="middle">anti-corruption discipline</text>
+
+  <rect class="box local" x="155" y="680" width="300" height="76" rx="12"/>
+  <text class="label" x="305" y="710" text-anchor="middle">Local Party Committees</text>
+  <text class="small" x="305" y="734" text-anchor="middle">local political leadership and cadre discipline</text>
+
+  <rect class="box local" x="745" y="680" width="300" height="76" rx="12"/>
+  <text class="label" x="895" y="710" text-anchor="middle">People's Councils and Committees</text>
+  <text class="small" x="895" y="734" text-anchor="middle">territorial administration and service delivery</text>
+
+  <rect class="box society" x="500" y="680" width="200" height="76" rx="12"/>
+  <text class="label" x="600" y="710" text-anchor="middle">Citizens and Firms</text>
+  <text class="small" x="600" y="734" text-anchor="middle">services, petitions, feedback</text>
+
+  <path class="partyLine" d="M600 232 L195 320"/>
+  <path class="partyLine" d="M600 232 L600 320"/>
+  <path class="partyLine" d="M600 232 L1005 320"/>
+  <path class="partyLine" d="M600 232 C520 390, 430 560, 305 680"/>
+
+  <path class="adminLine" d="M600 424 L365 520"/>
+  <path class="adminLine" d="M600 424 L835 520"/>
+  <path class="adminLine" d="M365 618 C480 660, 640 670, 895 680"/>
+  <path class="adminLine" d="M195 424 C300 535, 500 650, 895 680"/>
+  <path class="adminLine" d="M895 680 L700 718"/>
+
+  <path class="feedback" d="M600 680 C585 620, 685 610, 835 618"/>
+  <path class="feedback" d="M1005 424 C1010 535, 970 620, 895 680"/>
+  <path class="feedback" d="M305 680 C310 625, 335 590, 365 618"/>
+
+  <rect x="72" y="770" width="34" height="5" fill="#9b2f2f"/>
+  <text class="tiny" x="116" y="776">party leadership and cadre direction</text>
+  <rect x="370" y="770" width="34" height="5" fill="#46545c"/>
+  <text class="tiny" x="414" y="776">legal-administrative implementation</text>
+  <line x1="688" y1="772" x2="728" y2="772" stroke="#6f7f88" stroke-width="2" stroke-dasharray="7 7"/>
+  <text class="tiny" x="738" y="776">oversight, discipline, and feedback</text>
+</svg>

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 760" role="img" aria-label="Vietnam investment composition and FDI strategy dashboard 2025">
+  
+  <style>
+    .title{font:700 28px Arial,sans-serif;fill:#172026}
+    .subtitle{font:15px Arial,sans-serif;fill:#526069}
+    .panel-title{font:700 17px Arial,sans-serif;fill:#172026}
+    .label{font:12px Arial,sans-serif;fill:#526069}
+    .small{font:11px Arial,sans-serif;fill:#65717a}
+    .value{font:700 22px Arial,sans-serif;fill:#172026}
+    .source{font:12px Arial,sans-serif;fill:#65717a}
+  </style>
+  <rect width="1100" height="760" fill="#f6f4ee"/>
+  <text x="54" y="44" class="title">Investment Composition and FDI Policy Dashboard, 2025</text>
+  <text x="54" y="68" class="subtitle">The state, domestic private sector, and foreign capital all matter; the policy task is to convert investment into productivity, technology, and regional upgrading.</text>
+  
+  <rect x="54" y="102" width="238" height="96" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="72" y="130" class="label">Total disbursed investment</text>
+  <text x="72" y="162" class="value">VND 4,150.5 tn</text>
+  <text x="72" y="184" class="small">current prices, 2025</text>
+  
+  <rect x="306" y="102" width="238" height="96" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="324" y="130" class="label">Registered inward FDI</text>
+  <text x="324" y="162" class="value">USD 38.42 bn</text>
+  <text x="324" y="184" class="small">all registration channels</text>
+  
+  <rect x="558" y="102" width="238" height="96" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="576" y="130" class="label">Disbursed FDI</text>
+  <text x="576" y="162" class="value">USD 27.62 bn</text>
+  <text x="576" y="184" class="small">highest in five-year period</text>
+  
+  <rect x="810" y="102" width="238" height="96" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="828" y="130" class="label">New FDI projects</text>
+  <text x="828" y="162" class="value">4,054</text>
+  <text x="828" y="184" class="small">newly licensed projects</text>
+  <rect x="54" y="242" width="992" height="180" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="76" y="276" class="panel-title">Disbursed investment by ownership sector</text>
+  <rect x="76" y="314" width="249.48" height="34" rx="7" fill="#345995"/>
+  <rect x="325.48" y="314" width="452.76" height="34" rx="7" fill="#176b63"/>
+  <rect x="778.24" y="314" width="137.76" height="34" rx="7" fill="#b8873a"/>
+  <text x="76" y="376" class="small">State sector 29.7%</text>
+  <text x="250" y="376" class="small">Non-state domestic sector 53.9%</text>
+  <text x="524" y="376" class="small">FDI sector 16.4%</text>
+  <text x="76" y="402" class="label">Reading: foreign capital is strategically important, but domestic private investment is the largest investment block.</text>
+  <rect x="54" y="460" width="992" height="180" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="76" y="494" class="panel-title">Newly licensed FDI by sector</text>
+  <rect x="76" y="532" width="474.60" height="34" rx="7" fill="#176b63"/>
+  <rect x="550.60" y="532" width="178.08" height="34" rx="7" fill="#7c2f2a"/>
+  <rect x="728.68" y="532" width="186.48" height="34" rx="7" fill="#b8873a"/>
+  <text x="76" y="594" class="small">Manufacturing 56.5% | USD 9.80 bn</text>
+  <text x="326" y="594" class="small">Real estate 21.2% | USD 3.67 bn</text>
+  <text x="570" y="594" class="small">Other sectors 22.2% | USD 3.85 bn</text>
+  <text x="76" y="620" class="label">Reading: the quality question is whether new FDI expands manufacturing depth, supporting industries, technology, and services rather than only asset accumulation.</text>
+  <text x="54" y="718" class="source">Source: National Statistics Office of Viet Nam, Socio-economic situation in Q4 and 2025; Decision 667/QD-TTg for strategy interpretation.</text>
+</svg>

@@ -1,0 +1,3 @@
+# Enhanced Diagnostic Method
+
+This update deepens the country report by linking each substantive chapter to topic-specific international datasets and diagnostics. Fiscal and debt analysis uses IMF DataMapper together with World Bank fiscal and International Debt Statistics series. Labor analysis registers ILOSTAT as the preferred source for employment quality and labor-force structure. Trade and investment analysis uses UNCTAD World Investment Report/Data Hub diagnostics alongside comparable World Bank FDI and external-sector series. National government budget, debt, labor-force, trade, central-bank, and sector-ministry data should be used first for the latest year and for implementation detail.

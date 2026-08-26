@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 760" role="img" aria-label="Vietnam logistics performance and corridor capacity indicators">
+  
+  <style>
+    .title{font:700 28px Arial,sans-serif;fill:#172026}
+    .subtitle{font:15px Arial,sans-serif;fill:#526069}
+    .panel-title{font:700 17px Arial,sans-serif;fill:#172026}
+    .label{font:12px Arial,sans-serif;fill:#526069}
+    .value{font:700 13px Arial,sans-serif;fill:#172026}
+    .source{font:12px Arial,sans-serif;fill:#65717a}
+  </style>
+  <rect width="1100" height="760" fill="#f6f4ee"/>
+  <text x="54" y="44" class="title">Logistics Performance and Corridor Capacity</text>
+  <text x="54" y="68" class="subtitle">Vietnam's logistics challenge is not only building more infrastructure, but integrating customs, roads, ports, waterways, and services.</text>
+  <rect x="54" y="104" width="496" height="308" rx="10" fill="#ffffff" stroke="#d7dee2"/><text x="76" y="136" class="panel-title">World Bank LPI 2023 scorecard</text><text x="76" y="180" class="label">Overall LPI</text><rect x="250" y="166" width="159.72" height="16" rx="4" fill="#176b63"/><text x="417.72" y="179" class="value">3.3 | rank 43</text><text x="76" y="211" class="label">Customs</text><rect x="250" y="197" width="150.04" height="16" rx="4" fill="#345995"/><text x="408.04" y="210" class="value">3.1 | rank 43</text><text x="76" y="242" class="label">Infrastructure</text><rect x="250" y="228" width="154.88" height="16" rx="4" fill="#345995"/><text x="412.88" y="241" class="value">3.2 | rank 47</text><text x="76" y="273" class="label">International shipments</text><rect x="250" y="259" width="159.72" height="16" rx="4" fill="#345995"/><text x="417.72" y="272" class="value">3.3 | rank 38</text><text x="76" y="304" class="label">Logistics competence</text><rect x="250" y="290" width="154.88" height="16" rx="4" fill="#345995"/><text x="412.88" y="303" class="value">3.2 | rank 53</text><text x="76" y="335" class="label">Tracking and tracing</text><rect x="250" y="321" width="164.56" height="16" rx="4" fill="#345995"/><text x="422.56" y="334" class="value">3.4 | rank 41</text><text x="76" y="366" class="label">Timeliness</text><rect x="250" y="352" width="159.72" height="16" rx="4" fill="#345995"/><text x="417.72" y="365" class="value">3.3 | rank 59</text>
+  
+  <rect x="590" y="104" width="456" height="308" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="612" y="136" class="panel-title">Corridor capacity and modal balance</text>
+  <text x="612" y="170" class="value">Expressways by end-2025</text>
+  <rect x="612" y="194" width="273.82" height="28" rx="6" fill="#b8873a"/>
+  <rect x="612" y="194" width="240.84" height="28" rx="6" fill="#176b63"/>
+  <text x="612" y="242" class="label">3,345 km main routes plus 458 km connecting roads.</text>
+  <text x="612" y="264" class="label">3,803 km total reported against a 5,000 km 2030 target.</text>
+  <text x="612" y="286" class="value">Southern inland waterways</text>
+  <text x="612" y="314" class="label">World Bank credit: USD 107 million.</text>
+  <text x="612" y="338" class="label">East-West corridor upgrade expected to reduce Can Tho to HCMC</text>
+  <text x="612" y="360" class="label">port transport distance by about 30%.</text>
+  <text x="612" y="386" class="label">Road trucking accounts for about 80% of transport GHG emissions</text>
+  <text x="612" y="408" class="label">and emits up to six times more CO2 than waterways.</text>
+
+  <rect x="54" y="456" width="992" height="210" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="76" y="488" class="panel-title">Overall Logistics Performance Index trend</text>
+  <line x1="108" y1="620.00" x2="1016" y2="620.00" stroke="#edf2ef"/>
+  <text x="98" y="624.00" class="panel-y">2.4</text>
+  <line x1="108" y1="584.67" x2="1016" y2="584.67" stroke="#edf2ef"/>
+  <text x="98" y="588.67" class="panel-y">2.8</text>
+  <line x1="108" y1="549.33" x2="1016" y2="549.33" stroke="#edf2ef"/>
+  <text x="98" y="553.33" class="panel-y">3.2</text>
+  <line x1="108" y1="514.00" x2="1016" y2="514.00" stroke="#edf2ef"/>
+  <text x="98" y="518.00" class="panel-y">3.6</text>
+  <line x1="108.00" y1="514" x2="108.00" y2="620" stroke="#f1f4f5"/>
+  <text x="108.00" y="644" class="panel-x">2007</text>
+  <line x1="278.25" y1="514" x2="278.25" y2="620" stroke="#f1f4f5"/>
+  <text x="278.25" y="644" class="panel-x">2010</text>
+  <line x1="505.25" y1="514" x2="505.25" y2="620" stroke="#f1f4f5"/>
+  <text x="505.25" y="644" class="panel-x">2014</text>
+  <line x1="732.25" y1="514" x2="732.25" y2="620" stroke="#f1f4f5"/>
+  <text x="732.25" y="644" class="panel-x">2018</text>
+  <line x1="959.25" y1="514" x2="959.25" y2="620" stroke="#f1f4f5"/>
+  <text x="959.25" y="644" class="panel-x">2022</text>
+  <line x1="1016.00" y1="514" x2="1016.00" y2="620" stroke="#f1f4f5"/>
+  <text x="1016.00" y="644" class="panel-x">2023</text>
+  <path d="M108.00,576.72 L278.25,570.53 L391.75,567.00 L505.25,553.33 L618.75,569.06 L732.25,543.15 L959.25,540.50 L1016.00,540.50" fill="none" stroke="#176b63" stroke-width="3"/>
+  <circle cx="1016.00" cy="540.50" r="4" fill="#176b63" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="964.00" y="532.50" class="panel-last">3.3</text>
+  <rect x="76" y="636" width="10" height="10" fill="#176b63" rx="2"/>
+  <text x="92" y="645" class="legend">Overall LPI</text>
+  <text x="54" y="724" class="source">Sources: World Bank Logistics Performance Index 2023; WDI table ID LP.LPI.OVRL.XQ for historical LPI points; Ministry of Construction/VietnamPlus for expressways; World Bank 2024 waterways project release.</text>
+</svg>

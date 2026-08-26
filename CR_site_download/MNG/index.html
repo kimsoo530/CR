@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GDI Country Studies: Mongolia</title>
+  <style>
+    :root { --ink: #162029; --muted: #62707c; --line: #d8e0e6; --panel: #f5f7f8; --accent: #0f6f78; --accent2: #7a5b1e; --paper: #ffffff; --soft: #edf5f2; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: var(--ink); background: var(--paper); line-height: 1.62; }
+    .layout { display: grid; grid-template-columns: 310px minmax(0, 1fr); min-height: 100vh; }
+    .toc { position: sticky; top: 0; height: 100vh; overflow: auto; border-right: 1px solid var(--line); background: var(--panel); padding: 22px 18px; }
+    .toc h1 { font-size: 20px; margin: 0 0 6px; }
+    .toc h1 a { color: var(--ink); text-decoration: none; }
+    .toc p { color: var(--muted); font-size: 13px; margin: 0 0 18px; }
+    nav a { display: block; color: var(--ink); text-decoration: none; padding: 8px 10px; border-radius: 6px; font-size: 14px; }
+    nav a:hover, nav a.active { background: #e3f0ef; color: var(--accent); }
+    .chapter-link { font-weight: 700; }
+    .toc-group { margin: 1px 0; border-radius: 6px; }
+    .toc-group summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 4px; }
+    .toc-group summary::-webkit-details-marker { display: none; }
+    .toc-group summary::before { content: ">"; color: var(--muted); font-size: 12px; transition: transform .12s ease; }
+    .toc-group[open] summary::before { transform: rotate(90deg); }
+    .toc-group summary a { flex: 1; }
+    .section-nav { margin: 2px 0 8px 8px; padding-left: 10px; border-left: 2px solid #cdd9df; }
+    .section-link { padding: 5px 8px; font-size: 12px; color: var(--muted); line-height: 1.35; }
+    main { padding: 34px min(6vw, 82px); max-width: 1120px; }
+    .hero { border-bottom: 1px solid var(--line); padding-bottom: 20px; margin-bottom: 24px; }
+    .hero h2 { font-size: 34px; margin: 0 0 8px; letter-spacing: 0; }
+    .hero p, .chapter-landing-note { color: var(--muted); max-width: 860px; }
+    .chapter-thesis { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 16px; border: 1px solid var(--line); border-radius: 8px; padding: 14px; background: var(--soft); margin: 18px 0; }
+    .chapter-thesis b { color: var(--accent); }
+    .chapter-section-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 12px; margin: 18px 0 28px; }
+    .chapter-section-card { border: 1px solid var(--line); border-radius: 8px; background: #fff; padding: 14px; }
+    .chapter-section-card a { display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: 10px; align-items: start; text-decoration: none; color: var(--ink); }
+    .chapter-section-card span { font-weight: 800; color: var(--accent); font-size: 15px; }
+    .chapter-section-card strong { font-size: 16px; line-height: 1.35; }
+    .chapter-section-card p { color: var(--muted); font-size: 13px; margin: 10px 0 0; }
+    .section-reading { max-width: 940px; }
+    .editable-prose { border: 1px solid var(--line); border-radius: 8px; background: #fff; overflow: hidden; }
+    .prose-toolbar { display: flex; justify-content: space-between; gap: 10px; align-items: center; border-bottom: 1px solid var(--line); background: #f8fafb; padding: 10px 12px; color: var(--muted); font-size: 13px; }
+    .prose-toolbar button, .primary-link, .secondary-link { border: 1px solid var(--accent); border-radius: 6px; background: var(--accent); color: #fff; padding: 7px 10px; text-decoration: none; cursor: pointer; font-weight: 700; font-size: 13px; }
+    .prose-toolbar button[data-md-action='cancel'], .secondary-link { background: #fff; color: var(--accent); }
+    .prose-body { padding: 18px 22px; }
+    .prose-body h2 { font-size: 25px; margin: 0 0 14px; }
+    .prose-body h3 { font-size: 18px; margin: 24px 0 8px; }
+    .prose-body img { display: block; max-width: 100%; height: auto; margin: 14px auto; border: 1px solid var(--line); border-radius: 8px; background: #f8fafb; padding: 8px; }
+    .prose-body figure { margin: 18px 0; }
+    .prose-body figcaption { color: var(--muted); font-size: 13px; line-height: 1.45; }
+    .prose-body table, .index-table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+    .prose-body th, .prose-body td, .index-table th, .index-table td { border: 1px solid var(--line); padding: 8px 10px; vertical-align: top; }
+    .prose-body th, .index-table th { background: #f4f8f7; }
+    .visual-analysis { margin-top: 20px; }
+    .visual-analysis > p { color: #34444f; margin: 0 0 12px; max-width: 880px; }
+    .map-figure, .image-figure { margin: 20px 0 18px; }
+    .map-figure img, .image-figure img { display: block; width: min(100%, 900px); height: auto; border: 1px solid var(--line); border-radius: 8px; background: #fff; padding: 8px; }
+    .image-figure img { width: min(100%, 760px); }
+    .map-figure figcaption, .image-figure figcaption { color: var(--muted); font-size: 13px; line-height: 1.45; margin-top: 8px; }
+    .paired-images { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; align-items: start; }
+    .paired-images img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+    .paired-images span { display: block; margin-top: 6px; color: var(--muted); font-size: 12px; font-weight: 700; }
+    .figure-card, .chart-empty { border: 1px solid var(--line); border-radius: 8px; background: #fff; margin: 16px 0; padding: 16px; }
+    .figure-card figcaption { font-weight: 800; font-size: 16px; margin-bottom: 12px; color: var(--ink); }
+    .chart-frame { height: 360px; position: relative; }
+    .chart-panel-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+    .chart-panel { min-width: 0; padding: 12px; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+    .chart-panel h3 { margin: 0 0 8px; font-size: 0.92rem; line-height: 1.25; color: var(--ink); }
+    .chart-panel-frame { height: 220px; position: relative; }
+    .figure-interpretation { margin: -4px 0 18px; color: #34444f; }
+    .figure-interpretation p { margin: 0 0 8px; }
+    .figure-interpretation ul { margin: 8px 0 0 18px; padding: 0; }
+    .chart-empty { display: grid; gap: 6px; color: var(--muted); }
+    [hidden] { display: none !important; }
+    .markdown-editor { display: block; width: 100%; min-height: 560px; border: 0; padding: 16px; font-family: Consolas, monospace; font-size: 14px; line-height: 1.55; resize: vertical; }
+    .source { color: var(--muted); font-size: 13px; }
+    .cover-body { background: linear-gradient(90deg, rgba(8, 25, 36, .9), rgba(11, 42, 54, .28)), url('assets/cover-background.webp') center / cover fixed no-repeat; }
+    .cover-page { min-height: 100vh; display: grid; place-items: center; padding: 36px; }
+    .book-cover { width: min(980px, 100%); min-height: 760px; background: linear-gradient(90deg, rgba(255,255,255,.97), rgba(255,255,255,.88) 70%, rgba(255,255,255,.62)); border: 1px solid rgba(255,255,255,.7); border-radius: 8px; padding: 58px; box-shadow: 0 24px 70px rgba(7, 20, 30, .38); backdrop-filter: blur(2px); }
+    .cover-kicker { color: var(--accent); font-weight: 800; text-transform: uppercase; font-size: 13px; letter-spacing: .08em; }
+    .cover-rule { height: 7px; width: 150px; background: linear-gradient(90deg, var(--accent), var(--accent2)); margin: 22px 0 42px; border-radius: 999px; }
+    .book-cover h1 { font-size: clamp(52px, 8vw, 92px); line-height: .96; margin: 0 0 24px; letter-spacing: 0; }
+    .cover-subtitle { font-size: 22px; max-width: 760px; color: #33414c; }
+    .cover-purpose { max-width: 820px; color: var(--muted); font-size: 16px; }
+    .cover-editor { margin: 36px 0; display: grid; gap: 3px; }
+    .cover-editor span { color: var(--muted); font-size: 12px; text-transform: uppercase; }
+    .cover-editor strong { font-size: 20px; }
+    .cover-editor em { color: var(--muted); font-style: normal; }
+    .cover-actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 22px 0; }
+    .cover-method { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 30px; }
+    .cover-method div { border-top: 1px solid var(--line); padding-top: 12px; }
+    .cover-method b { display: block; color: var(--accent); }
+    .cover-method span { color: var(--muted); font-size: 13px; }
+    @media (max-width: 1040px) { .layout { grid-template-columns: 1fr; } .toc { position: static; height: auto; } .cover-method { grid-template-columns: 1fr; } main { padding: 24px 18px; } .book-cover { padding: 32px; min-height: auto; } .chart-frame { height: 300px; } .chart-panel-grid { grid-template-columns: 1fr; } .paired-images { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body class="cover-body">
+  <main class="cover-page">
+    <section class="book-cover" aria-label="GDI Country Studies: Mongolia cover">
+      <div class="cover-kicker">GDI Country Studies</div>
+      <div class="cover-rule"></div>
+      <h1>GDI Country Studies:<br>Mongolia</h1>
+      <p class="cover-subtitle">Understanding Mongolia's Democratic State, Mineral Economy, Steppe Society, Administrative Capacity, and Strategic Position</p>
+      <p class="cover-purpose">
+        This electronic book is organized around a Mongolia-specific thesis: a democratic, resource-rich, landlocked state must convert mineral wealth into resilient institutions, diversified growth, and services that work across a vast low-density territory.
+      </p>
+      <div class="cover-editor">
+        <span>Editor in Chief</span>
+        <strong>Kilkon Ko</strong>
+        <em>Seoul National University</em>
+      </div>
+      <div class="cover-actions">
+        <a class="primary-link" href="01-overview.html">Begin Reading</a>
+        <a class="secondary-link" href="section-index.html">Section Index</a>
+      </div>
+      <div class="cover-method">
+        <div><b>Official Sources</b><span>Constitution, parliament, government strategies, statistics, budget, and legal portals</span></div>
+        <div><b>International Diagnostics</b><span>World Bank, IMF, WHO, ILO, governance indicators, and development diagnostics</span></div>
+        <div><b>Mongolia Lens</b><span>Mineral dependence, Ulaanbaatar concentration, low-density territory, herder livelihoods, and strategic balancing</span></div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

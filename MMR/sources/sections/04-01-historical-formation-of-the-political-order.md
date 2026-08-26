@@ -1,0 +1,17 @@
+## 4.1 Historical Formation of the Political Order
+
+<!-- asean-comparative-lens-2026:start -->
+**ASEAN comparative lens (2026).** Myanmar should be read in ASEAN comparison as ASEAN's most fragile contemporary state-capacity and conflict-governance case. It differs from the developmental trajectories of Vietnam, Thailand, Malaysia, and Indonesia because regime conflict, armed fragmentation, sanctions, and administrative breakdown dominate the policy environment. For this section, the regional comparison should explain how political authority differs from neighboring ASEAN cases in party organization, executive power, local mediation, civil-military influence, and informal power. Local comparable indicators show: population 54.50 million (2024), rank 5 among the nine ASEAN reports in this workspace; GDP US$74.07 billion (2024), rank 7 among the nine ASEAN reports in this workspace; GDP per capita US$1,359 (2024), rank 9 among the nine ASEAN reports in this workspace; real GDP growth -0.97% (2024), rank 9 among the nine ASEAN reports in this workspace; government effectiveness -1.23 (2023), rank 9 among the nine ASEAN reports in this workspace; internet use 45.45% (2020), rank 9 among the nine ASEAN reports in this workspace. Use `sources/documents/regional/asean_comparative_lens_2026.md` together with ASEANstats, ASEAN Secretariat materials, and the country processed-indicator files before making cross-ASEAN claims.
+<!-- asean-comparative-lens-2026:end -->
+
+The political system of Myanmar is best understood as a historical settlement as well as a current constitutional design. V-Dem's latest electoral-democracy score is 0.08 and its regime classification is closed autocracy, which places the country in a pattern of highly constrained political competition. The interpretation below connects formal offices, parties, elections, courts, corruption control, and local power relations to long-run political development.
+
+| Period or benchmark year | V-Dem electoral democracy | Institutional meaning |
+| 1789 | 0.02 | Highly constrained political competition; V-Dem regime classification is not classified in the local extract; liberal-democracy score is 0.04. |
+| 1990 | 0.12 | Highly constrained political competition; V-Dem regime classification is closed autocracy; liberal-democracy score is 0.02. |
+| 2000 | 0.10 | Highly constrained political competition; V-Dem regime classification is closed autocracy; liberal-democracy score is 0.02. |
+| 2010 | 0.12 | Highly constrained political competition; V-Dem regime classification is closed autocracy; liberal-democracy score is 0.03. |
+| 2020 | 0.43 | Limited electoral competition; V-Dem regime classification is electoral autocracy; liberal-democracy score is 0.25. |
+| 2025 | 0.08 | Highly constrained political competition; V-Dem regime classification is closed autocracy; liberal-democracy score is 0.01. |
+
+Myanmar's current political order is the product of earlier state-building, regime formation, constitutional redesign, party-system development, and executive-legislative bargaining. The historical table does not replace country-specific political history; it gives a quantitative spine for reading that history. A rising electoral-democracy score usually signals broader contestation or cleaner electoral competition, while a flat or declining line points to executive dominance, party-system narrowing, constrained opposition, weak electoral integrity, or pressure on rights and courts.

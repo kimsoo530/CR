@@ -1,0 +1,55 @@
+{
+  "report_country": "NGA",
+  "purpose": "Example only: replace countries, indicators, years, units, and value types to match the section claim.",
+  "indicators": [
+    {
+      "source": "world_bank",
+      "source_id": 2,
+      "indicator_code": "NY.GDP.MKTP.KD.ZG",
+      "indicator_name": "GDP growth (annual %)",
+      "unit": "percent",
+      "countries": ["NGA", "GHA", "KEN"],
+      "start_year": 2000,
+      "end_year": 2025,
+      "frequency": "annual",
+      "value_type": "internationally harmonized estimate",
+      "limitations": "Latest year may differ across countries; national-account revisions can alter the series."
+    },
+    {
+      "source": "imf",
+      "indicator_code": "NGDP_RPCH",
+      "indicator_name": "Real GDP growth",
+      "unit": "percent change",
+      "countries": ["NGA", "GHA", "KEN"],
+      "start_year": 2000,
+      "end_year": 2030,
+      "frequency": "annual",
+      "value_type": "IMF estimate and projection; verify WEO vintage and projection boundary"
+    },
+    {
+      "source": "who",
+      "indicator_code": "WHOSIS_000001",
+      "indicator_name": "Life expectancy at birth",
+      "unit": "years",
+      "countries": ["NGA", "GHA", "KEN"],
+      "start_year": 2000,
+      "end_year": 2025,
+      "frequency": "annual",
+      "value_type": "WHO international estimate",
+      "dimensions": {"Dim1": "SEX_BTSX"},
+      "limitations": "Confirm the sex dimension code and current WHO endpoint before publication."
+    },
+    {
+      "source": "undp_hdi",
+      "indicator_code": "hdi",
+      "indicator_name": "Human Development Index",
+      "unit": "index (0-1)",
+      "countries": ["NGA", "GHA", "KEN"],
+      "start_year": 2000,
+      "end_year": 2023,
+      "frequency": "annual",
+      "value_type": "UNDP HDRO composite index estimate",
+      "limitations": "Use a single HDR vintage for all countries and years."
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+Source ID: GEOBOUNDARIES-MMR-ADM1
+URL: https://www.geoboundaries.org/
+Citation: geoBoundaries. (2025). Myanmar ADM1 boundaries.

@@ -1,0 +1,172 @@
+{
+  "report_country": "UZB",
+  "purpose": "WhoGov 4.0 example for leadership and cabinet-composition evidence. Replace peers and years only after defining the analytical comparison.",
+  "indicators": [
+    {
+      "source": "whogov",
+      "dataset_version": "4.0",
+      "indicator_code": "leaderexperience_total",
+      "indicator_name": "Leader experience, total observed years",
+      "unit": "years",
+      "countries": ["UZB", "KAZ", "KOR"],
+      "start_year": 1992,
+      "end_year": 2025,
+      "frequency": "annual snapshot",
+      "value_type": "research-dataset observation"
+    },
+    {
+      "source": "whogov",
+      "dataset_version": "4.0",
+      "indicator_code": "leaderexperience_continuous",
+      "indicator_name": "Leader experience, continuous years",
+      "unit": "years",
+      "countries": ["UZB", "KAZ", "KOR"],
+      "start_year": 1992,
+      "end_year": 2025,
+      "frequency": "annual snapshot",
+      "value_type": "research-dataset observation"
+    },
+    {
+      "source": "whogov",
+      "dataset_version": "4.0",
+      "indicator_code": "n_minister",
+      "indicator_name": "Number of cabinet ministers",
+      "unit": "persons",
+      "countries": ["UZB", "KAZ", "KOR"],
+      "start_year": 1992,
+      "end_year": 2025,
+      "frequency": "annual snapshot",
+      "value_type": "research-dataset observation"
+    },
+    {
+      "source": "whogov",
+      "dataset_version": "4.0",
+      "indicator_code": "n_core",
+      "indicator_name": "Number of core cabinet members",
+      "unit": "persons",
+      "countries": ["UZB", "KAZ", "KOR"],
+      "start_year": 1992,
+      "end_year": 2025,
+      "frequency": "annual snapshot",
+      "value_type": "research-dataset observation"
+    },
+    {
+      "source": "whogov",
+      "dataset_version": "4.0",
+      "indicator_code": "n_female_minister",
+      "indicator_name": "Number of female cabinet ministers",
+      "unit": "persons",
+      "countries": ["UZB", "KAZ", "KOR"],
+      "start_year": 1992,
+      "end_year": 2025,
+      "frequency": "annual snapshot",
+      "value_type": "research-dataset observation"
+    },
+    {
+      "source": "whogov",
+      "dataset_version": "4.0",
+      "indicator_code": "n_female_core",
+      "indicator_name": "Number of female core cabinet members",
+      "unit": "persons",
+      "countries": ["UZB", "KAZ", "KOR"],
+      "start_year": 1992,
+      "end_year": 2025,
+      "frequency": "annual snapshot",
+      "value_type": "research-dataset observation"
+    },
+    {
+      "source": "whogov",
+      "dataset_version": "4.0",
+      "indicator_code": "average_minister",
+      "indicator_name": "Average cabinet tenure of ministers",
+      "unit": "years",
+      "countries": ["UZB", "KAZ", "KOR"],
+      "start_year": 1992,
+      "end_year": 2025,
+      "frequency": "annual snapshot",
+      "value_type": "research-dataset estimate"
+    },
+    {
+      "source": "whogov",
+      "dataset_version": "4.0",
+      "indicator_code": "average_core",
+      "indicator_name": "Average cabinet tenure of core members",
+      "unit": "years",
+      "countries": ["UZB", "KAZ", "KOR"],
+      "start_year": 1992,
+      "end_year": 2025,
+      "frequency": "annual snapshot",
+      "value_type": "research-dataset estimate"
+    },
+    {
+      "source": "whogov",
+      "dataset_version": "4.0",
+      "indicator_code": "age_minister",
+      "indicator_name": "Average age of cabinet ministers",
+      "unit": "years",
+      "countries": ["UZB", "KAZ", "KOR"],
+      "start_year": 1992,
+      "end_year": 2025,
+      "frequency": "annual snapshot",
+      "value_type": "research-dataset estimate from coded birth years"
+    },
+    {
+      "source": "whogov",
+      "dataset_version": "4.0",
+      "indicator_code": "age_core",
+      "indicator_name": "Average age of core cabinet members",
+      "unit": "years",
+      "countries": ["UZB", "KAZ", "KOR"],
+      "start_year": 1992,
+      "end_year": 2025,
+      "frequency": "annual snapshot",
+      "value_type": "research-dataset estimate from coded birth years"
+    },
+    {
+      "source": "whogov",
+      "dataset_version": "4.0",
+      "indicator_code": "retention_rateadj_minister",
+      "indicator_name": "Adjusted retention rate of cabinet ministers",
+      "unit": "proportion (0-1)",
+      "countries": ["UZB", "KAZ", "KOR"],
+      "start_year": 1992,
+      "end_year": 2025,
+      "frequency": "annual snapshot",
+      "value_type": "research-dataset derived measure"
+    },
+    {
+      "source": "whogov",
+      "dataset_version": "4.0",
+      "indicator_code": "retention_rateadj_core",
+      "indicator_name": "Adjusted retention rate of core cabinet members",
+      "unit": "proportion (0-1)",
+      "countries": ["UZB", "KAZ", "KOR"],
+      "start_year": 1992,
+      "end_year": 2025,
+      "frequency": "annual snapshot",
+      "value_type": "research-dataset derived measure"
+    }
+  ],
+  "derived_indicators": [
+    {
+      "operation": "ratio",
+      "numerator": "n_female_minister",
+      "denominator": "n_minister",
+      "scale": 100,
+      "indicator_code": "female_minister_share",
+      "indicator_name": "Women among cabinet ministers",
+      "unit": "percent",
+      "value_type": "GDI calculation from WhoGov counts"
+    },
+    {
+      "operation": "ratio",
+      "numerator": "n_female_core",
+      "denominator": "n_core",
+      "scale": 100,
+      "indicator_code": "female_core_share",
+      "indicator_name": "Women among core cabinet members",
+      "unit": "percent",
+      "value_type": "GDI calculation from WhoGov counts"
+    }
+  ]
+}

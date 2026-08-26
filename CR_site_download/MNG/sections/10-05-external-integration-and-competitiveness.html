@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>10.5 External Integration and Competitiveness | Mongolia Country Report</title>
+  <script src="../assets/marked.min.js"></script>
+  <script src="../assets/chart.umd.min.js"></script>
+  <style>
+    :root { --ink: #162029; --muted: #62707c; --line: #d8e0e6; --panel: #f5f7f8; --accent: #0f6f78; --accent2: #7a5b1e; --paper: #ffffff; --soft: #edf5f2; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: var(--ink); background: var(--paper); line-height: 1.62; }
+    .layout { display: grid; grid-template-columns: 310px minmax(0, 1fr); min-height: 100vh; }
+    .toc { position: sticky; top: 0; height: 100vh; overflow: auto; border-right: 1px solid var(--line); background: var(--panel); padding: 22px 18px; }
+    .toc h1 { font-size: 20px; margin: 0 0 6px; }
+    .toc h1 a { color: var(--ink); text-decoration: none; }
+    .toc p { color: var(--muted); font-size: 13px; margin: 0 0 18px; }
+    nav a { display: block; color: var(--ink); text-decoration: none; padding: 8px 10px; border-radius: 6px; font-size: 14px; }
+    nav a:hover, nav a.active { background: #e3f0ef; color: var(--accent); }
+    .chapter-link { font-weight: 700; }
+    .toc-group { margin: 1px 0; border-radius: 6px; }
+    .toc-group summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 4px; }
+    .toc-group summary::-webkit-details-marker { display: none; }
+    .toc-group summary::before { content: ">"; color: var(--muted); font-size: 12px; transition: transform .12s ease; }
+    .toc-group[open] summary::before { transform: rotate(90deg); }
+    .toc-group summary a { flex: 1; }
+    .section-nav { margin: 2px 0 8px 8px; padding-left: 10px; border-left: 2px solid #cdd9df; }
+    .section-link { padding: 5px 8px; font-size: 12px; color: var(--muted); line-height: 1.35; }
+    main { padding: 34px min(6vw, 82px); max-width: 1120px; }
+    .hero { border-bottom: 1px solid var(--line); padding-bottom: 20px; margin-bottom: 24px; }
+    .hero h2 { font-size: 34px; margin: 0 0 8px; letter-spacing: 0; }
+    .hero p, .chapter-landing-note { color: var(--muted); max-width: 860px; }
+    .chapter-thesis { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 16px; border: 1px solid var(--line); border-radius: 8px; padding: 14px; background: var(--soft); margin: 18px 0; }
+    .chapter-thesis b { color: var(--accent); }
+    .chapter-section-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 12px; margin: 18px 0 28px; }
+    .chapter-section-card { border: 1px solid var(--line); border-radius: 8px; background: #fff; padding: 14px; }
+    .chapter-section-card a { display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: 10px; align-items: start; text-decoration: none; color: var(--ink); }
+    .chapter-section-card span { font-weight: 800; color: var(--accent); font-size: 15px; }
+    .chapter-section-card strong { font-size: 16px; line-height: 1.35; }
+    .chapter-section-card p { color: var(--muted); font-size: 13px; margin: 10px 0 0; }
+    .section-reading { max-width: 940px; }
+    .editable-prose { border: 1px solid var(--line); border-radius: 8px; background: #fff; overflow: hidden; }
+    .prose-toolbar { display: flex; justify-content: space-between; gap: 10px; align-items: center; border-bottom: 1px solid var(--line); background: #f8fafb; padding: 10px 12px; color: var(--muted); font-size: 13px; }
+    .prose-toolbar button, .primary-link, .secondary-link { border: 1px solid var(--accent); border-radius: 6px; background: var(--accent); color: #fff; padding: 7px 10px; text-decoration: none; cursor: pointer; font-weight: 700; font-size: 13px; }
+    .prose-toolbar button[data-md-action='cancel'], .secondary-link { background: #fff; color: var(--accent); }
+    .prose-body { padding: 18px 22px; }
+    .prose-body h2 { font-size: 25px; margin: 0 0 14px; }
+    .prose-body h3 { font-size: 18px; margin: 24px 0 8px; }
+    .prose-body img { display: block; max-width: 100%; height: auto; margin: 14px auto; border: 1px solid var(--line); border-radius: 8px; background: #f8fafb; padding: 8px; }
+    .prose-body figure { margin: 18px 0; }
+    .prose-body figcaption { color: var(--muted); font-size: 13px; line-height: 1.45; }
+    .prose-body table, .index-table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+    .prose-body th, .prose-body td, .index-table th, .index-table td { border: 1px solid var(--line); padding: 8px 10px; vertical-align: top; }
+    .prose-body th, .index-table th { background: #f4f8f7; }
+    .visual-analysis { margin-top: 20px; }
+    .visual-analysis > p { color: #34444f; margin: 0 0 12px; max-width: 880px; }
+    .map-figure, .image-figure { margin: 20px 0 18px; }
+    .map-figure img, .image-figure img { display: block; width: min(100%, 900px); height: auto; border: 1px solid var(--line); border-radius: 8px; background: #fff; padding: 8px; }
+    .image-figure img { width: min(100%, 760px); }
+    .map-figure figcaption, .image-figure figcaption { color: var(--muted); font-size: 13px; line-height: 1.45; margin-top: 8px; }
+    .paired-images { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; align-items: start; }
+    .paired-images img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+    .paired-images span { display: block; margin-top: 6px; color: var(--muted); font-size: 12px; font-weight: 700; }
+    .figure-card, .chart-empty { border: 1px solid var(--line); border-radius: 8px; background: #fff; margin: 16px 0; padding: 16px; }
+    .figure-card figcaption { font-weight: 800; font-size: 16px; margin-bottom: 12px; color: var(--ink); }
+    .chart-frame { height: 360px; position: relative; }
+    .chart-panel-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+    .chart-panel { min-width: 0; padding: 12px; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+    .chart-panel h3 { margin: 0 0 8px; font-size: 0.92rem; line-height: 1.25; color: var(--ink); }
+    .chart-panel-frame { height: 220px; position: relative; }
+    .figure-interpretation { margin: -4px 0 18px; color: #34444f; }
+    .figure-interpretation p { margin: 0 0 8px; }
+    .figure-interpretation ul { margin: 8px 0 0 18px; padding: 0; }
+    .chart-empty { display: grid; gap: 6px; color: var(--muted); }
+    [hidden] { display: none !important; }
+    .markdown-editor { display: block; width: 100%; min-height: 560px; border: 0; padding: 16px; font-family: Consolas, monospace; font-size: 14px; line-height: 1.55; resize: vertical; }
+    .source { color: var(--muted); font-size: 13px; }
+    .cover-body { background: #e9eef0; }
+    .cover-page { min-height: 100vh; display: grid; place-items: center; padding: 36px; }
+    .book-cover { width: min(980px, 100%); min-height: 760px; background: #fff; border: 1px solid #cfd8de; border-radius: 8px; padding: 58px; box-shadow: 0 24px 70px rgba(22, 32, 41, .14); }
+    .cover-kicker { color: var(--accent); font-weight: 800; text-transform: uppercase; font-size: 13px; letter-spacing: .08em; }
+    .cover-rule { height: 7px; width: 150px; background: linear-gradient(90deg, var(--accent), var(--accent2)); margin: 22px 0 42px; border-radius: 999px; }
+    .book-cover h1 { font-size: clamp(52px, 8vw, 92px); line-height: .96; margin: 0 0 24px; letter-spacing: 0; }
+    .cover-subtitle { font-size: 22px; max-width: 760px; color: #33414c; }
+    .cover-purpose { max-width: 820px; color: var(--muted); font-size: 16px; }
+    .cover-editor { margin: 36px 0; display: grid; gap: 3px; }
+    .cover-editor span { color: var(--muted); font-size: 12px; text-transform: uppercase; }
+    .cover-editor strong { font-size: 20px; }
+    .cover-editor em { color: var(--muted); font-style: normal; }
+    .cover-actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 22px 0; }
+    .cover-method { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 30px; }
+    .cover-method div { border-top: 1px solid var(--line); padding-top: 12px; }
+    .cover-method b { display: block; color: var(--accent); }
+    .cover-method span { color: var(--muted); font-size: 13px; }
+    @media (max-width: 1040px) { .layout { grid-template-columns: 1fr; } .toc { position: static; height: auto; } .cover-method { grid-template-columns: 1fr; } main { padding: 24px 18px; } .book-cover { padding: 32px; min-height: auto; } .chart-frame { height: 300px; } .chart-panel-grid { grid-template-columns: 1fr; } .paired-images { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+  <div class="layout">
+    <aside class="toc">
+      <h1><a href="../index.html">Mongolia</a></h1>
+      <p>Official-source country report with section-level Markdown editing and separated analysis visuals.</p>
+      <nav><details class="toc-group"><summary><a class="chapter-link" href="../01-overview.html">1. Country Overview</a></summary><div class="section-nav"><a class="section-link" href="../sections/01-01-official-name-capital-location-area-population-language-religion-and-currency.html">1.1 Official Name, Capital, Location, Area, Population, Language, Religion, and Currency</a><a class="section-link" href="../sections/01-02-state-symbols.html">1.2 State Symbols</a><a class="section-link" href="../sections/01-03-country-profile-and-strategic-setting.html">1.3 Country Profile and Strategic Setting</a><a class="section-link" href="../sections/01-04-territory-climate-settlement-and-administrative-divisions.html">1.4 Territory, Climate, Settlement, and Administrative Divisions</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../02-history.html">2. Historical Background</a></summary><div class="section-nav"><a class="section-link" href="../sections/02-01-steppe-polities-empire-and-civilizational-zones.html">2.1 Steppe Polities, Empire, and Civilizational Zones</a><a class="section-link" href="../sections/02-02-qing-rule-autonomy-socialism-and-state-formation.html">2.2 Qing Rule, Autonomy, Socialism, and State Formation</a><a class="section-link" href="../sections/02-03-democratic-transition-and-constitutional-turning-points.html">2.3 Democratic Transition and Constitutional Turning Points</a><a class="section-link" href="../sections/02-04-historical-legacies-in-present-institutions.html">2.4 Historical Legacies in Present Institutions</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../03-constitution.html">3. Constitution and Basic State Order</a></summary><div class="section-nav"><a class="section-link" href="../sections/03-01-constitutional-order-and-amendments.html">3.1 Constitutional Order and Amendments</a><a class="section-link" href="../sections/03-02-fundamental-rights-system.html">3.2 Fundamental Rights System</a><a class="section-link" href="../sections/03-03-separation-of-powers-constitutional-review-judicial-review-and-emergency-powers.html">3.3 Separation of Powers, Constitutional Review, Judicial Review, and Emergency Powers</a><a class="section-link" href="../sections/03-04-constitutional-implications-for-state-authority.html">3.4 Constitutional Implications for State Authority</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../04-politics.html">4. Political System and Power Structure</a></summary><div class="section-nav"><a class="section-link" href="../sections/04-01-form-of-government.html">4.1 Form of Government</a><a class="section-link" href="../sections/04-02-president-prime-minister-cabinet-and-parliament.html">4.2 President, Prime Minister, Cabinet, and Parliament</a><a class="section-link" href="../sections/04-03-party-system-elections-representation-and-coalition-politics.html">4.3 Party System, Elections, Representation, and Coalition Politics</a><a class="section-link" href="../sections/04-04-local-politics-governors-and-real-power-relations.html">4.4 Local Politics, Governors, and Real Power Relations</a><a class="section-link" href="../sections/04-05-political-dynamics-and-institutional-accountability.html">4.5 Political Dynamics and Institutional Accountability</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../05-administration.html">5. Administrative System and Government Organization</a></summary><div class="section-nav"><a class="section-link" href="../sections/05-01-central-executive-administration-and-policy-coordination.html">5.1 Central Executive Administration and Policy Coordination</a><a class="section-link" href="../sections/05-02-organizational-management-and-administrative-reform.html">5.2 Organizational Management and Administrative Reform</a><a class="section-link" href="../sections/05-03-human-resource-management-and-civil-service.html">5.3 Human Resource Management and Civil Service</a><a class="section-link" href="../sections/05-04-budget-execution-procurement-audit-and-anti-corruption-administration.html">5.4 Budget Execution, Procurement, Audit, and Anti-Corruption Administration</a><a class="section-link" href="../sections/05-05-aimags-soums-districts-khoroos-and-service-delivery.html">5.5 Aimags, Soums, Districts, Khoroos, and Service Delivery</a><a class="section-link" href="../sections/05-06-digital-government-e-mongolia-and-administrative-accountability.html">5.6 Digital Government, E-Mongolia, and Administrative Accountability</a><a class="section-link" href="../sections/05-07-implementation-capacity-in-a-low-density-territory.html">5.7 Implementation Capacity in a Low-Density Territory</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../06-governance.html">6. Governance and Institutional Capacity</a></summary><div class="section-nav"><a class="section-link" href="../sections/06-01-government-effectiveness-and-regulatory-quality.html">6.1 Government Effectiveness and Regulatory Quality</a><a class="section-link" href="../sections/06-02-rule-of-law-and-control-of-corruption.html">6.2 Rule of Law and Control of Corruption</a><a class="section-link" href="../sections/06-03-voice-accountability-political-stability-and-citizen-participation.html">6.3 Voice, Accountability, Political Stability, and Citizen Participation</a><a class="section-link" href="../sections/06-04-institutional-performance-and-reform-credibility.html">6.4 Institutional Performance and Reform Credibility</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../07-fiscal.html">7. Fiscal System and Public Sector</a></summary><div class="section-nav"><a class="section-link" href="../sections/07-01-government-revenue-mineral-revenue-and-expenditure-structure.html">7.1 Government Revenue, Mineral Revenue, and Expenditure Structure</a><a class="section-link" href="../sections/07-02-fiscal-balance-debt-stabilization-funds-and-interest-burden.html">7.2 Fiscal Balance, Debt, Stabilization Funds, and Interest Burden</a><a class="section-link" href="../sections/07-03-state-owned-enterprises-mining-soes-and-quasi-public-sector.html">7.3 State-Owned Enterprises, Mining SOEs, and Quasi-Public Sector</a><a class="section-link" href="../sections/07-04-public-investment-roads-urban-infrastructure-and-investment-decision-making.html">7.4 Public Investment, Roads, Urban Infrastructure, and Investment Decision-Making</a><a class="section-link" href="../sections/07-05-fiscal-capacity-commodity-cycles-and-public-sector-risks.html">7.5 Fiscal Capacity, Commodity Cycles, and Public Sector Risks</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../08-society.html">8. Population and Social Structure</a></summary><div class="section-nav"><a class="section-link" href="../sections/08-01-population-size-growth-age-structure-and-dependency.html">8.1 Population Size, Growth, Age Structure, and Dependency</a><a class="section-link" href="../sections/08-02-urbanization-ulaanbaatar-concentration-and-regional-distribution.html">8.2 Urbanization, Ulaanbaatar Concentration, and Regional Distribution</a><a class="section-link" href="../sections/08-03-ethnicity-language-religion-migration-remittances-and-diaspora.html">8.3 Ethnicity, Language, Religion, Migration, Remittances, and Diaspora</a><a class="section-link" href="../sections/08-04-nomadic-livelihoods-social-integration-and-conflict-factors.html">8.4 Nomadic Livelihoods, Social Integration, and Conflict Factors</a><a class="section-link" href="../sections/08-05-demographic-pressures-and-social-cohesion.html">8.5 Demographic Pressures and Social Cohesion</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../09-macro.html">9. Macroeconomic Structure</a></summary><div class="section-nav"><a class="section-link" href="../sections/09-01-gdp-scale-growth-and-gdp-per-capita.html">9.1 GDP Scale, Growth, and GDP Per Capita</a><a class="section-link" href="../sections/09-02-prices-exchange-rate-and-macroeconomic-stability.html">9.2 Prices, Exchange Rate, and Macroeconomic Stability</a><a class="section-link" href="../sections/09-03-sectoral-structure-mineral-dependence-growth-model-and-vulnerabilities.html">9.3 Sectoral Structure, Mineral Dependence, Growth Model, and Vulnerabilities</a><a class="section-link" href="../sections/09-04-growth-sustainability-and-structural-constraints.html">9.4 Growth Sustainability and Structural Constraints</a></div></details>
+<details class="toc-group active" open><summary><a class="chapter-link active" href="../10-trade.html">10. Trade, Investment, and External Economy</a></summary><div class="section-nav"><a class="section-link" href="../sections/10-01-exports-imports-trading-partners-and-current-account.html">10.1 Exports, Imports, Trading Partners, and Current Account</a><a class="section-link" href="../sections/10-02-copper-coal-gold-cashmere-tourism-and-services.html">10.2 Copper, Coal, Gold, Cashmere, Tourism, and Services</a><a class="section-link" href="../sections/10-03-fdi-absolute-amount-and-share-of-gdp.html">10.3 FDI Absolute Amount and Share of GDP</a><a class="section-link" href="../sections/10-04-investment-regime-economic-zones-and-industrial-policy.html">10.4 Investment Regime, Economic Zones, and Industrial Policy</a><a class="section-link" href="../sections/10-05-external-integration-and-competitiveness.html">10.5 External Integration and Competitiveness</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../11-infrastructure.html">11. Infrastructure, Energy, and Digital Connectivity</a></summary><div class="section-nav"><a class="section-link" href="../sections/11-01-electricity-access-heating-energy-dependence-and-transition.html">11.1 Electricity Access, Heating, Energy Dependence, and Transition</a><a class="section-link" href="../sections/11-02-transport-logistics-rail-road-air-and-border-corridors.html">11.2 Transport, Logistics, Rail, Road, Air, and Border Corridors</a><a class="section-link" href="../sections/11-03-internet-mobile-connectivity-secure-servers-and-logistics-performance.html">11.3 Internet, Mobile Connectivity, Secure Servers, and Logistics Performance</a><a class="section-link" href="../sections/11-04-connectivity-service-delivery-and-bottlenecks.html">11.4 Connectivity, Service Delivery, and Bottlenecks</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../12-labor.html">12. Labor Market and Human Capital</a></summary><div class="section-nav"><a class="section-link" href="../sections/12-01-labor-force-size-and-participation.html">12.1 Labor Force Size and Participation</a><a class="section-link" href="../sections/12-02-female-participation-unemployment-youth-unemployment-and-vulnerable-employment.html">12.2 Female Participation, Unemployment, Youth Unemployment, and Vulnerable Employment</a><a class="section-link" href="../sections/12-03-herding-mining-education-productivity-hdi-and-r-d.html">12.3 Herding, Mining, Education, Productivity, HDI, and R&amp;D</a><a class="section-link" href="../sections/12-04-employment-absorption-and-human-capital-use.html">12.4 Employment Absorption and Human Capital Use</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../13-education-health.html">13. Education, Health, and Welfare</a></summary><div class="section-nav"><a class="section-link" href="../sections/13-01-education-system-and-public-expenditure.html">13.1 Education System and Public Expenditure</a><a class="section-link" href="../sections/13-02-life-expectancy-infant-mortality-hospital-beds-doctors-and-health-expenditure.html">13.2 Life Expectancy, Infant Mortality, Hospital Beds, Doctors, and Health Expenditure</a><a class="section-link" href="../sections/13-03-air-pollution-sanitation-public-health-risks-and-welfare.html">13.3 Air Pollution, Sanitation, Public Health Risks, and Welfare</a><a class="section-link" href="../sections/13-04-human-development-outcomes-and-welfare-capacity.html">13.4 Human Development Outcomes and Welfare Capacity</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../14-environment.html">14. Environment, Climate Risk, and Sustainable Development</a></summary><div class="section-nav"><a class="section-link" href="../sections/14-01-climate-change-dzud-desertification-and-rural-livelihood-risk.html">14.1 Climate Change, Dzud, Desertification, and Rural Livelihood Risk</a><a class="section-link" href="../sections/14-02-ger-district-and-urban-public-health.html">14.2 Ger District and Urban Public Health</a><a class="section-link" href="../sections/14-03-mining-water-land-restoration-and-environmental-governance.html">14.3 Mining, Water, Land Restoration, and Environmental Governance</a><a class="section-link" href="../sections/14-04-sdg-performance-green-development-and-policy-implementation.html">14.4 SDG Performance, Green Development, and Policy Implementation</a><a class="section-link" href="../sections/14-05-environmental-sustainability-sdg-implementation-and-future-policy-direction.html">14.5 Environmental Sustainability, SDG Implementation, and Future Policy Direction</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../15-finance.html">15. Financial Sector and Economic Institutions</a></summary><div class="section-nav"><a class="section-link" href="../sections/15-01-domestic-credit-private-credit-capital-markets-and-fintech.html">15.1 Domestic Credit, Private Credit, Capital Markets, and Fintech</a><a class="section-link" href="../sections/15-02-central-bank-monetary-policy-supervision-and-exchange-rate.html">15.2 Central Bank, Monetary Policy, Supervision, and Exchange Rate</a><a class="section-link" href="../sections/15-03-foreign-investment-protection-and-capital-market-openness.html">15.3 Foreign Investment Protection and Capital Market Openness</a><a class="section-link" href="../sections/15-04-financial-deepening-and-market-institutions.html">15.4 Financial Deepening and Market Institutions</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../16-security.html">16. Foreign Relations, Security, and Geopolitics</a></summary><div class="section-nav"><a class="section-link" href="../sections/16-01-foreign-policy-orientation-and-international-organizations.html">16.1 Foreign Policy Orientation and International Organizations</a><a class="section-link" href="../sections/16-02-china-russia-third-neighbor-policy-and-strategic-balancing.html">16.2 China, Russia, Third Neighbor Policy, and Strategic Balancing</a><a class="section-link" href="../sections/16-03-borders-security-organizations-military-capacity-and-transnational-issues.html">16.3 Borders, Security Organizations, Military Capacity, and Transnational Issues</a><a class="section-link" href="../sections/16-04-strategic-resources-corridors-and-climate-security-risks.html">16.4 Strategic Resources, Corridors, and Climate-Security Risks</a><a class="section-link" href="../sections/16-05-strategic-environment-and-transnational-risks.html">16.5 Strategic Environment and Transnational Risks</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../17-policy.html">17. Major Policies and National Development Strategy</a></summary><div class="section-nav"><a class="section-link" href="../sections/17-01-evolution-of-national-development-strategy.html">17.1 Evolution of National Development Strategy</a><a class="section-link" href="../sections/17-02-vision-2050-new-recovery-policy-and-industrial-policy.html">17.2 Vision 2050, New Recovery Policy, and Industrial Policy</a><a class="section-link" href="../sections/17-03-digital-transformation-energy-transition-climate-policy-and-administrative-reform.html">17.3 Digital Transformation, Energy Transition, Climate Policy, and Administrative Reform</a><a class="section-link" href="../sections/17-04-welfare-education-health-and-recent-five-year-policy-changes.html">17.4 Welfare, Education, Health, and Recent Five-Year Policy Changes</a><a class="section-link" href="../sections/17-05-policy-implementation-and-reform-sequencing.html">17.5 Policy Implementation and Reform Sequencing</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../18-assessment.html">18. Integrated Assessment</a></summary><div class="section-nav"><a class="section-link" href="../sections/18-01-national-operating-model.html">18.1 National Operating Model</a><a class="section-link" href="../sections/18-02-political-stability-institutional-risk-growth-drivers-and-bottlenecks.html">18.2 Political Stability, Institutional Risk, Growth Drivers, and Bottlenecks</a><a class="section-link" href="../sections/18-03-administrative-capacity-and-international-cooperation-implications.html">18.3 Administrative Capacity and International Cooperation Implications</a><a class="section-link" href="../sections/18-04-mongolia-and-comparative-administration-theory.html">18.4 Mongolia and Comparative Administration Theory</a><a class="section-link" href="../sections/18-05-evidence-limits-and-source-triangulation.html">18.5 Evidence Limits and Source Triangulation</a><a class="section-link" href="../sections/18-06-strategic-diagnosis-and-outlook.html">18.6 Strategic Diagnosis and Outlook</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../19-appendix.html">19. Appendix and Update Workflow</a></summary><div class="section-nav"><a class="section-link" href="../sections/19-01-annual-revision-method.html">19.1 Annual Revision Method</a><a class="section-link" href="../sections/19-02-editorial-revision-method.html">19.2 Editorial Revision Method</a><a class="section-link" href="../sections/19-03-data-integrity.html">19.3 Data Integrity</a><a class="section-link" href="../sections/19-04-evidence-archive-and-review-trail.html">19.4 Evidence Archive and Review Trail</a><a class="section-link" href="../sections/19-05-data-limits-and-source-triangulation.html">19.5 Data Limits and Source Triangulation</a><a class="section-link" href="../sections/19-06-external-review-checklist.html">19.6 External Review Checklist</a><a class="section-link" href="../sections/19-07-comparative-administration-benchmark.html">19.7 Comparative Administration Benchmark</a><a class="section-link" href="../sections/19-08-timeline.html">19.8 Timeline</a><a class="section-link" href="../sections/19-09-government-organization-chart.html">19.9 Government Organization Chart</a><a class="section-link" href="../sections/19-10-constitution-and-major-laws.html">19.10 Constitution and Major Laws</a><a class="section-link" href="../sections/19-11-key-indicator-table-source-list-and-data-codebook.html">19.11 Key Indicator Table, Source List, and Data Codebook</a><a class="section-link" href="../sections/19-12-methodological-notes-and-update-standards.html">19.12 Methodological Notes and Update Standards</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../20-references.html">20. References</a></summary><div class="section-nav"><a class="section-link" href="../sections/20-01-references.html">20.1 References</a><a class="section-link" href="../sections/20-02-source-integrity-and-citation-notes.html">20.2 Source Integrity and Citation Notes</a></div></details></nav>
+    </aside>
+    <main>
+      <header class="hero"><h2>10.5 External Integration and Competitiveness</h2></header>
+      
+    <section class="section-reading">
+      
+    <article class="editable-prose" data-md-panel="trade-external-integration-and-competitiveness-text" data-md-source="sections/10-05-external-integration-and-competitiveness.md">
+      <div class="prose-toolbar">
+        <span>Editable section manuscript</span>
+        <div>
+          <button type="button" data-md-action="edit">Edit Markdown</button>
+          <button type="button" data-md-action="save" hidden>Save</button>
+          <button type="button" data-md-action="cancel" hidden>Cancel</button>
+        </div>
+      </div>
+      <div class="markdown-preview prose-body"></div>
+      <textarea class="markdown-editor" hidden>## 10.5 External Integration and Competitiveness
+
+Mongolia&#x27;s external integration has produced growth, foreign exchange, fiscal revenue, and strategic relevance, but it has not yet produced a sufficiently diversified or resilient competitiveness base. The country is open to trade, receives substantial FDI, and supplies important minerals to regional markets. At the same time, exports remain concentrated in coal, copper, gold, and other minerals; China remains the dominant export destination; fuel and machinery imports remain essential; and a limited number of corridors carry much of the economy&#x27;s external exchange.
+
+The competitiveness issue is therefore not a simple matter of exporting more. Mongolia already exports large volumes when commodity prices and border conditions are favorable. The harder problem is whether it can lower logistics costs, reduce corridor risk, improve customs and standards systems, build non-mineral export capacity, attract diversified investment, and convert digital connectivity into trade facilitation. Competitiveness is an institutional and infrastructure problem.
+
+### 10.5.1 Trade Openness and External Volatility
+
+Mongolia is highly open relative to the size of its economy. Trade in goods and services often represents a very large share of GDP, which means that domestic output, revenue, and foreign exchange are closely connected to external demand. This openness is a source of opportunity when mineral demand is strong. It is also a source of volatility when commodity prices fall, border throughput slows, import prices rise, or external financing tightens.
+
+{{figure:trade-openness-current-account}}
+
+The current-account series shows why openness is not the same as resilience. A mineral boom can improve exports and public revenue, but it can also increase imports of fuel, equipment, construction materials, and technical services. Large investment projects may bring FDI while also raising future income outflows. Public spending during boom years can increase import demand and inflationary pressure. Mongolia&#x27;s competitiveness therefore depends on stabilization institutions as much as on export capacity: fiscal rules, reserve buffers, prudent debt management, disciplined public investment, and exchange-rate flexibility.
+
+### 10.5.2 Logistics Performance: The Landlocked Competitiveness Constraint
+
+For Mongolia, logistics is one of the most important determinants of competitiveness. The country is landlocked, sparsely populated, and dependent on a small number of railways, roads, border crossings, and transit arrangements. Mineral exports, fuel imports, machinery, consumer goods, cashmere, meat products, tourism flows, and e-commerce all depend on whether corridors function reliably.
+
+The Logistics Performance Index components show the measurable side of this problem. Overall logistics performance, infrastructure quality, customs efficiency, logistics-service competence, and timeliness all shape the cost and reliability of trade. Mongolia&#x27;s challenge is not simply distance. Distance becomes expensive when infrastructure is weak, customs is slow, storage is inadequate, border coordination is uncertain, or logistics services lack scale.
+
+{{figure:logistics-performance}}
+
+This has direct policy implications. Border-port development should combine hard infrastructure and soft infrastructure. Railways, roads, terminals, dry ports, inspection facilities, and warehouses matter, but so do customs digitization, risk-based inspection, data sharing, electronic certificates, anti-corruption safeguards, and coordination with Chinese and Russian authorities. A corridor is only competitive when goods move predictably, not merely when infrastructure exists.
+
+Logistics also determines diversification. Coal and copper can tolerate some logistics inefficiency because commodity margins are large and volumes are high. Cashmere garments, meat products, tourism, digital-linked services, and SME exports are much more sensitive to reliability, standards, and transaction costs. If Mongolia wants diversified exports, it must build trade systems that work for smaller firms and time-sensitive products, not only for bulk minerals.
+
+### 10.5.3 Digital Connectivity as Trade Infrastructure
+
+Digital connectivity should be treated as part of external competitiveness. In a low-density country, digital systems can reduce distance costs and improve coordination among firms, customs agencies, banks, regulators, logistics providers, and local governments. Internet access, electricity reliability, digital payments, online permits, electronic certificates, export portals, customs data systems, and e-commerce platforms can make trade easier for firms outside the largest mining projects.
+
+{{figure:digital-connectivity}}
+
+The chart shows that Mongolia has made meaningful progress in connectivity and electricity access. This creates a platform for digital trade facilitation. But digital access alone does not create competitiveness. Systems must be interoperable, data must be trusted, rural firms must be able to use platforms, and public agencies must redesign procedures rather than simply move paper processes online. Digital government becomes trade policy when it reduces clearance times, lowers compliance costs, expands market information, and makes standards certification easier.
+
+Digital connectivity also matters for services. Tourism booking, digital payments, online marketing, remote work, professional services, logistics tracking, and cross-border business services all depend on reliable networks and trust. Mongolia&#x27;s geography makes digital channels especially valuable, but skills, cybersecurity, payment systems, and regulatory credibility remain essential.
+
+### 10.5.4 Services and Tourism as Competitiveness Tests
+
+Services and tourism reveal whether Mongolia can compete beyond mineral exports. Service exports can grow through logistics, tourism, finance, professional services, digital services, education, and health-related activities. Tourism can generate foreign exchange and regional employment while supporting cultural and environmental assets. These sectors are attractive because they are more labor-intensive than mining and can spread benefits across regions.
+
+{{figure:services-tourism}}
+
+The available WDI series shows service-export recovery after the pandemic and illustrates the tourism shock in 2020. The policy lesson is that services are not a residual sector. They require infrastructure, quality standards, skills, safety, digital payments, environmental management, and local coordination. Tourism in particular depends on airports, roads, sanitation, protected-area management, accommodation quality, language skills, emergency services, and destination management.
+
+Services can help Mongolia diversify, but only if public administration supports firm capability. A tourism-promotion campaign will not be enough if roads, waste systems, payment systems, and safety standards are weak. A digital-services strategy will not work if cybersecurity, broadband, skills, and data rules are insufficient. A logistics-services strategy will not work if customs and border coordination remain unpredictable.
+
+### 10.5.5 Standards, Value Addition, and Non-Mineral Export Capacity
+
+Competitiveness also depends on standards. Cashmere needs quality certification, traceability, sustainability claims, design capability, and market branding. Meat and livestock products need veterinary systems, disease control, cold chains, sanitary and phytosanitary certification, and reliable market access. Tourism needs safety, environmental, and service standards. Digital and professional services need data protection, payment systems, and international trust.
+
+This is why diversification is slow. Mongolia cannot simply redirect exports from minerals to non-minerals. It must build the institutional infrastructure of competitiveness. Standards agencies, laboratories, inspection systems, local governments, export finance, banks, training institutions, customs, environmental regulators, and sector ministries all have to work together. The binding constraint is often coordination rather than sector identification.
+
+Value addition should also be selective. Coal washing, copper processing, gold refining, cashmere garments, meat processing, leather goods, tourism services, and logistics services all offer potential. But each requires energy, water, skills, finance, environmental safeguards, and market access. Competitiveness policy should prioritize activities where Mongolia has realistic advantages and where public support produces measurable spillovers.
+
+### 10.5.6 Whole-of-Government Competitiveness
+
+Mongolia&#x27;s competitiveness agenda cannot be owned by one ministry. Trade performance depends on finance, mining, agriculture, transport, energy, customs, standards, digital policy, tourism, environment, local government, SOEs, banks, and private firms. This is why Vision 2050 and the New Recovery Policy are relevant but insufficient. They identify the right themes, but implementation requires a stronger whole-of-government mechanism.
+
+Such a mechanism should track export diversification, logistics performance, customs clearance, border-port reliability, FDI diversification, non-mineral export growth, service exports, digital trade facilitation, and firm-level bottlenecks. It should also connect public investment decisions with competitiveness outcomes. Roads, railways, power projects, digital systems, and economic zones should be evaluated by whether they reduce costs and expand productive capability, not only by whether they are built.
+
+### Policy Implications
+
+Mongolia should move from a mineral-volume strategy to a competitiveness strategy.
+
+First, logistics performance should become a central economic indicator. Border-port modernization should combine rail, roads, terminals, storage, customs digitization, risk-based inspection, electronic certificates, and cross-border coordination.
+
+Second, digital systems should be used to lower trade costs. E-permits, customs data platforms, online standards certification, digital payments, and export portals can help smaller firms participate in trade.
+
+Third, non-mineral exports need standards infrastructure. Cashmere, meat, tourism, and services require certification, quality control, branding, training, and market intelligence.
+
+Fourth, services and tourism should be treated as export sectors. Infrastructure, safety, sanitation, protected-area management, digital booking, and local enterprise support are competitiveness investments.
+
+Fifth, import resilience should be included in competitiveness policy. Fuel storage, energy diversification, renewable generation, logistics planning, and diversified procurement reduce the vulnerability of firms and households.
+
+Sixth, trade policy should be linked to macroeconomic stabilization. Fiscal rules, sovereign wealth management, debt discipline, and public investment appraisal are necessary because commodity cycles quickly affect the external account.
+
+Finally, Mongolia should create a whole-of-government trade competitiveness dashboard. It should connect trade data, logistics performance, investment bottlenecks, standards readiness, digital adoption, and public investment results.
+
+In conclusion, Mongolia&#x27;s external integration has scale and strategic value, but competitiveness remains constrained by concentration, corridors, logistics, standards, and administrative coordination. The country should not abandon mining. It should use mining revenue and investment to build the institutions, infrastructure, firms, and services that make the economy less dependent on a narrow commodity cycle.
+
+### Sources
+
+* World Bank WDI. Mongolia indicators on trade openness, current account, Logistics Performance Index, internet access, electricity access, service exports, tourism receipts, and tourism arrivals.
+* World Bank Logistics Performance Index.
+* IMF. 2025. *Mongolia: 2025 Article IV Consultation*, IMF Country Report No. 25/265.
+* Government of Mongolia. *Vision 2050: Long-Term Development Policy of Mongolia.*
+* New Recovery Policy Accelerator. *New Recovery Policy.*</textarea>
+      <template data-figure-template="trade-openness-current-account">
+    <figure class="figure-card" id="trade-openness-current-account">
+      <figcaption>Mongolia: Trade Openness and Current-Account Pressure</figcaption>
+      <div class="chart-frame">
+        <canvas id="chart-trade-openness-current-account" aria-label="Mongolia: Trade Openness and Current-Account Pressure" role="img"></canvas>
+      </div>
+      <p class="source">Source: World Bank WDI, Mongolia country code MNG. Indicator IDs: NE.TRD.GNFS.ZS, BN.CAB.XOKA.GD.ZS. Unit: Percent of GDP (%).</p>
+      <script type="application/json" id="chart-trade-openness-current-account-config">{"type": "line", "data": {"labels": [1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], "datasets": [{"label": "Trade (% of GDP)", "data": [94.9046298489965, 90.7163276191427, 89.0299379498623, 94.2512407238152, 94.9363378566431, 111.57131685444, 103.065555774643, 94.47149764016, 76.3641464792647, 58.6218949695306, 136.6037874065, 65.2956469006826, 129.742059708532, 99.1572950855527, 82.1036587592106, 77.9740756901741, 99.9914490021753, 107.351210779428, 112.241338547745, 121.886609754208, 115.81832687888, 118.517253113943, 120.299393514881, 131.329318233554, 122.381459889773, 112.929983096983, 117.880426425377, 121.198013401183, 107.813757166177, 103.350031656557, 126.999228633482, 109.588564338415, 100.311989662943, 109.322311877187, 89.653663477814, 101.055237224997, 115.932901867963, 126.355873241513, 124.396514621165, 112.838647629317, 119.098078437771, 136.327929944516, 142.864246599181, 138.448379141249], "borderColor": "#0f6f78", "backgroundColor": "#0f6f78", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}, {"label": "Current account balance (% of GDP)", "data": [-34.9552103630533, -33.1256605379471, -30.2340288464406, -35.2593415098793, -37.2054865309679, -36.6206663616978, -32.7946830370379, -32.2456668149356, -33.280152334654, -24.1738310890104, -3.97012494419359, -3.6611692201263, 5.00389357478453, 4.99450705638277, 2.67875894679157, -2.74202764825275, 5.7564595755319, -6.72334550775523, -5.46521084754003, -6.14547875845517, -4.86593852642614, -7.52987540545573, -6.1849966690847, 3.16276343681136, 3.46785355038079, 10.900689191107, 4.05637184446513, -12.2837567825614, -7.45624740801022, -12.3162160595433, -43.34551932851, -43.7712346792978, -37.6076656283991, -15.8208781709903, -8.16234225533352, -6.25748206242188, -10.0640976839598, -14.4368935873351, -15.2163324376399, -5.06732429872456, -13.7928750935516, -13.4342448059604, 0.596631968292985, -10.4453984769033], "borderColor": "#a6502a", "backgroundColor": "#a6502a", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}]}, "options": {"responsive": true, "maintainAspectRatio": false, "interaction": {"mode": "index", "intersect": false}, "plugins": {"legend": {"position": "bottom", "labels": {"boxWidth": 14, "boxHeight": 3}}, "tooltip": {"enabled": true}}, "scales": {"x": {"grid": {"display": false}, "ticks": {"maxTicksLimit": 8}}, "y": {"title": {"display": true, "text": "Percent of GDP (%)"}, "grid": {"color": "#e8eef3"}, "ticks": {"precision": 1}}}}}</script>
+    </figure>
+    
+
+    <div class="figure-interpretation">
+      <p>Trade openness shows how strongly Mongolia&#x27;s income cycle is tied to external demand, while the current account shows whether export earnings are enough to cover imports, services, income outflows, and financing costs. The policy issue is not openness by itself, but the volatility and financing pressure created by a narrow export base.</p>
+      <ul><li>Trade (% of GDP) rose from 94.90 in 1981 to 138.45 in 2024.</li>
+<li>Current account balance (% of GDP) rose from -34.96 in 1981 to -10.45 in 2024.</li></ul>
+    </div>
+    </template>
+<template data-figure-template="logistics-performance">
+    <figure class="figure-card" id="logistics-performance">
+      <figcaption>Mongolia: Logistics Performance Index Components</figcaption>
+      <div class="chart-frame">
+        <canvas id="chart-logistics-performance" aria-label="Mongolia: Logistics Performance Index Components" role="img"></canvas>
+      </div>
+      <p class="source">Source: World Bank Logistics Performance Index through WDI, Mongolia country code MNG. Indicator IDs: LP.LPI.OVRL.XQ, LP.LPI.INFR.XQ, LP.LPI.CUST.XQ, LP.LPI.LOGS.XQ, LP.LPI.TIME.XQ. Unit: LPI score, 1 low to 5 high.</p>
+      <script type="application/json" id="chart-logistics-performance-config">{"type": "line", "data": {"labels": [2007, 2010, 2012, 2014, 2016, 2018, 2022], "datasets": [{"label": "Logistics performance index: Overall (1=low to 5=high)", "data": [2.08, 2.25, 2.25, 2.355608, 2.506056, 2.37, 2.5], "borderColor": "#0f6f78", "backgroundColor": "#0f6f78", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}, {"label": "Logistics performance index: Quality of trade and transport-related infrastructure (1=low to 5=high)", "data": [1.92, 1.94, 2.22, 2.287051, 2.051282, 2.1, 2.3], "borderColor": "#a6502a", "backgroundColor": "#a6502a", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}, {"label": "Logistics performance index: Efficiency of customs clearance process (1=low to 5=high)", "data": [2.0, 1.81, 1.98, 2.2, 2.392385, 2.22, 2.5], "borderColor": "#2f7d4f", "backgroundColor": "#2f7d4f", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}, {"label": "Logistics performance index: Competence and quality of logistics services (1=low to 5=high)", "data": [1.8, 2.24, 1.88, 2.334969, 2.307304, 2.21, 2.3], "borderColor": "#6f4aa8", "backgroundColor": "#6f4aa8", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}, {"label": "Logistics performance index: Frequency with which shipments reach consignee within scheduled or expected time (1=low to 5=high)", "data": [2.25, 2.55, 2.99, 2.514131, 3.398213, 3.06, 2.7], "borderColor": "#9a6a1a", "backgroundColor": "#9a6a1a", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}]}, "options": {"responsive": true, "maintainAspectRatio": false, "interaction": {"mode": "index", "intersect": false}, "plugins": {"legend": {"position": "bottom", "labels": {"boxWidth": 14, "boxHeight": 3}}, "tooltip": {"enabled": true}}, "scales": {"x": {"grid": {"display": false}, "ticks": {"maxTicksLimit": 8}}, "y": {"title": {"display": true, "text": "LPI score, 1 low to 5 high"}, "grid": {"color": "#e8eef3"}, "ticks": {"precision": 1}}}}}</script>
+    </figure>
+    
+
+    <div class="figure-interpretation">
+      <p>The Logistics Performance Index translates landlocked geography into measurable competitiveness constraints. Customs, infrastructure, logistics services, timeliness, and the overall score show whether Mongolia&#x27;s corridors function as reliable trade systems rather than only physical routes.</p>
+      <ul><li>Logistics performance index: Overall (1=low to 5=high) rose from 2.08 in 2007 to 2.50 in 2022.</li>
+<li>Logistics performance index: Quality of trade and transport-related infrastructure (1=low to 5=high) rose from 1.92 in 2007 to 2.30 in 2022.</li>
+<li>Logistics performance index: Efficiency of customs clearance process (1=low to 5=high) rose from 2.00 in 2007 to 2.50 in 2022.</li>
+<li>Logistics performance index: Competence and quality of logistics services (1=low to 5=high) rose from 1.80 in 2007 to 2.30 in 2022.</li>
+<li>Logistics performance index: Frequency with which shipments reach consignee within scheduled or expected time (1=low to 5=high) rose from 2.25 in 2007 to 2.70 in 2022.</li></ul>
+    </div>
+    </template>
+<template data-figure-template="digital-connectivity">
+    <figure class="figure-card" id="digital-connectivity">
+      <figcaption>Mongolia: Digital and Electricity Access</figcaption>
+      <div class="chart-frame">
+        <canvas id="chart-digital-connectivity" aria-label="Mongolia: Digital and Electricity Access" role="img"></canvas>
+      </div>
+      <p class="source">Source: World Bank API, Mongolia country code MNG. Indicator IDs: IT.NET.USER.ZS, EG.ELC.ACCS.ZS. Unit: Percent of population (%).</p>
+      <script type="application/json" id="chart-digital-connectivity-config">{"type": "line", "data": {"labels": [1990, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], "datasets": [{"label": "Individuals using the Internet (% of population)", "data": [0.0, 0.00881, 0.0182, 0.113, 0.146, 0.508, 1.25565200358112, 1.65323823906982, 2.0395726034818, null, null, 9.0, 9.0, 9.0, 9.800000191, 10.0, 10.2, 12.4999911084745, 16.4, 17.699984237, 19.9424474349209, 22.5000041337688, 22.2657705007562, 23.71430016, 47.1300018848989, 51.079994082603, 62.50002848, 81.60682285, 81.07720184, 83.74320221, 85.12349701], "borderColor": "#0f6f78", "backgroundColor": "#0f6f78", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}, {"label": "Access to electricity (% of population)", "data": [null, null, null, null, null, null, 67.3, 71.7, 72.8, 76.3, 74.8, 86.2, 77.0, 78.1, 79.2, 80.3, 78.5, 72.1, 83.7, 81.2, 86.0, 88.0, 90.8, 93.6, 98.1, 98.9, 99.5, 100.0, 100.0, 100.0, null], "borderColor": "#a6502a", "backgroundColor": "#a6502a", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}]}, "options": {"responsive": true, "maintainAspectRatio": false, "interaction": {"mode": "index", "intersect": false}, "plugins": {"legend": {"position": "bottom", "labels": {"boxWidth": 14, "boxHeight": 3}}, "tooltip": {"enabled": true}}, "scales": {"x": {"grid": {"display": false}, "ticks": {"maxTicksLimit": 8}}, "y": {"title": {"display": true, "text": "Percent of population (%)"}, "grid": {"color": "#e8eef3"}, "ticks": {"precision": 1}}}}}</script>
+    </figure>
+    
+
+    <div class="figure-interpretation">
+      <p>Digital and electricity access are delivery-capacity indicators. For a low-density country, online public services, reliable power, and connectivity can reduce distance costs only if rural households and local administrations can actually use them.</p>
+      <ul><li>Individuals using the Internet (% of population) rose from 0.00 in 1990 to 85.12 in 2024.</li>
+<li>Access to electricity (% of population) rose from 67.30 in 2000 to 100.00 in 2023.</li></ul>
+    </div>
+    </template>
+<template data-figure-template="services-tourism">
+    <figure class="figure-card" id="services-tourism">
+      <figcaption>Mongolia: Service Exports, Tourism Receipts, and Tourist Arrivals</figcaption>
+      <div class="chart-frame">
+        <canvas id="chart-services-tourism" aria-label="Mongolia: Service Exports, Tourism Receipts, and Tourist Arrivals" role="img"></canvas>
+      </div>
+      <p class="source">Source: World Bank WDI, Mongolia country code MNG. Tourism arrivals and receipts are shown where WDI observations are available. Indicator IDs: BX.GSR.NFSV.CD, ST.INT.RCPT.CD, ST.INT.ARVL. Unit: US$ billions and arrivals in millions.</p>
+      <script type="application/json" id="chart-services-tourism-config">{"type": "line", "data": {"labels": [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], "datasets": [{"label": "Service exports (current US$ billions)", "data": [0.07751038813781891, 0.11354268347445799, 0.18453903864566498, 0.20792033674000002, 0.33823151323, 0.41444195871905204, 0.485803490492635, 0.573790761260779, 0.519390372481845, 0.417598385572585, 0.48580826962893997, 0.520940377933534, 0.6515338113745379, 0.688763054093953, 0.607007302831731, 0.6888476352165299, 0.8008833052179789, 0.9663409927477761, 1.15745327269479, 1.2327320958060501, 0.6549196992259311, 0.8144726033338341, 1.13511813627948, 1.58697039432971, 1.6043202586739098], "borderColor": "#0f6f78", "backgroundColor": "#0f6f78", "borderWidth": 2, "pointRadius": 2, "tension": 0.25, "spanGaps": true, "yAxisID": "y"}, {"label": "Tourism receipts (current US$ billions)", "data": [0.043, 0.049, 0.143, 0.154, 0.205, 0.203, 0.261, 0.349, 0.272, 0.253, 0.288, 0.197, 0.215, 0.236, 0.257, 0.279, 0.379, 0.462, 0.526, 0.605, 0.049, null, null, null, null], "borderColor": "#a6502a", "backgroundColor": "#a6502a", "borderWidth": 2, "pointRadius": 2, "tension": 0.25, "spanGaps": true, "yAxisID": "y"}, {"label": "Tourist arrivals (millions)", "data": [0.158, 0.192, 0.235, 0.205, 0.305, 0.345, 0.408, 0.455, 0.469, 0.465, 0.557, 0.627, 0.624, 0.515, 0.506, 0.467, 0.471, 0.543, 0.598, 0.637, 0.06690000152587891, null, null, null, null], "borderColor": "#6f4aa8", "backgroundColor": "#6f4aa8", "borderWidth": 2, "pointRadius": 2, "tension": 0.25, "spanGaps": true, "yAxisID": "y1"}]}, "options": {"responsive": true, "maintainAspectRatio": false, "interaction": {"mode": "index", "intersect": false}, "plugins": {"legend": {"position": "bottom", "labels": {"boxWidth": 14, "boxHeight": 3}}}, "scales": {"x": {"grid": {"display": false}, "ticks": {"maxTicksLimit": 8}}, "y": {"type": "linear", "position": "left", "title": {"display": true, "text": "Current US$ billions"}}, "y1": {"type": "linear", "position": "right", "title": {"display": true, "text": "Arrivals, millions"}, "grid": {"drawOnChartArea": false}}}}}</script>
+    </figure>
+    
+    <div class="figure-interpretation">
+      <p>The figure separates two related but different questions. Service exports show whether Mongolia is building non-mineral foreign-exchange capacity, while tourism receipts and arrivals show the pre-pandemic service base and the scale of the COVID shock in the available WDI series. The policy lesson is that tourism and services can diversify external earnings, but only if air connectivity, local infrastructure, standards, digital payments, safety, and environmental management are reliable enough to turn visitors and service contracts into repeatable export revenue.</p>
+    </div>
+    </template>
+    </article>
+    
+    </section>
+    
+    </main>
+  </div>
+  <script>
+    function fallbackMarkdown(text) {
+      const escaped = text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+      return escaped.split(/\n{2,}/).map((block) => `<p>${block.replace(/\n/g, "<br>")}</p>`).join("");
+    }
+    function renderMarkdown(text) {
+      return window.marked ? marked.parse(text) : fallbackMarkdown(text);
+    }
+    function replaceFigurePlaceholders(preview, panel) {
+      const pattern = /^\{\{(figure|map|image):([a-z0-9-]+)\}\}$/;
+      preview.querySelectorAll("p").forEach((paragraph) => {
+        const match = (paragraph.textContent || "").trim().match(pattern);
+        if (!match) return;
+        const key = match[1] === "figure" ? match[2] : `${match[1]}:${match[2]}`;
+        const template = panel.querySelector(`template[data-figure-template="${key}"]`);
+        if (!template) {
+          const note = document.createElement("p");
+          note.className = "source";
+          note.textContent = `Figure not available: ${key}`;
+          paragraph.replaceWith(note);
+          return;
+        }
+        paragraph.replaceWith(template.content.cloneNode(true));
+      });
+    }
+    function setupMarkdownPanels() {
+      document.querySelectorAll("[data-md-panel]").forEach((panel) => {
+        const id = panel.getAttribute("data-md-panel");
+        const preview = panel.querySelector(".markdown-preview");
+        const editor = panel.querySelector(".markdown-editor");
+        const edit = panel.querySelector("[data-md-action='edit']");
+        const save = panel.querySelector("[data-md-action='save']");
+        const cancel = panel.querySelector("[data-md-action='cancel']");
+        const source = panel.getAttribute("data-md-source");
+        const original = editor.value;
+        let hash = 0;
+        for (let i = 0; i < original.length; i += 1) {
+          hash = ((hash << 5) - hash + original.charCodeAt(i)) | 0;
+        }
+        const storageKey = `mng-report-markdown:v2:${id}:${hash}`;
+        const stored = localStorage.getItem(storageKey);
+        const isPermanentMode = source && window.location.protocol.startsWith("http");
+        if (stored !== null && (!source || window.location.protocol === "file:")) {
+          editor.value = stored;
+        } else if (stored !== null && isPermanentMode && stored !== editor.value) {
+          const useDraft = window.confirm("A browser draft exists for this section. Load it into the editor so you can save it permanently?");
+          if (useDraft) editor.value = stored;
+        }
+        const showPreview = () => {
+          preview.innerHTML = renderMarkdown(editor.value);
+          replaceFigurePlaceholders(preview, panel);
+          setupCharts();
+        };
+        const setEditing = (editing) => {
+          editor.hidden = !editing;
+          preview.hidden = editing;
+          edit.hidden = editing;
+          save.hidden = !editing;
+          cancel.hidden = !editing;
+        };
+        const saveMarkdown = async () => {
+          if (isPermanentMode) {
+            const response = await fetch("/api/save-section", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ source, markdown: editor.value })
+            });
+            if (!response.ok) {
+              const message = await response.text();
+              throw new Error(message || `Save failed with ${response.status}`);
+            }
+            localStorage.removeItem(storageKey);
+            window.alert("Saved permanently to the Markdown source file.");
+          } else {
+            localStorage.setItem(storageKey, editor.value);
+            if (source) {
+              window.alert("This edit was saved only as a browser draft. Open the report through MNG/code/serve_report.py to save it permanently to the Markdown source file.");
+            }
+          }
+        };
+        showPreview();
+        setEditing(false);
+        edit.addEventListener("click", () => setEditing(true));
+        save.addEventListener("click", async () => {
+          save.disabled = true;
+          try {
+            await saveMarkdown();
+            showPreview();
+            setEditing(false);
+          } catch (error) {
+            window.alert(error.message || "Could not save the Markdown source.");
+          } finally {
+            save.disabled = false;
+          }
+        });
+        cancel.addEventListener("click", () => {
+          editor.value = localStorage.getItem(storageKey) ?? original;
+          showPreview();
+          setEditing(false);
+        });
+      });
+    }
+    function setupCharts() {
+      if (!window.Chart) {
+        document.querySelectorAll(".figure-card").forEach((card) => {
+          const note = document.createElement("p");
+          note.className = "source";
+          note.textContent = "Chart.js could not be loaded from local assets/chart.umd.min.js.";
+          card.appendChild(note);
+        });
+        return;
+      }
+      document.querySelectorAll("script[type='application/json'][id$='-config']").forEach((script) => {
+        const canvasId = script.id.replace("-config", "");
+        const canvas = document.getElementById(canvasId);
+        if (!canvas) return;
+        if (canvas.dataset.chartReady === "1") return;
+        canvas.dataset.chartReady = "1";
+        new Chart(canvas, JSON.parse(script.textContent));
+      });
+    }
+    window.addEventListener("DOMContentLoaded", () => {
+      setupMarkdownPanels();
+      setupCharts();
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 780" role="img" aria-label="Vietnam fintech, payments, and financial inclusion indicators">
+  
+  <style>
+    .title{font:700 28px Arial,sans-serif;fill:#172026}
+    .subtitle{font:15px Arial,sans-serif;fill:#526069}
+    .panel-title{font:700 16px Arial,sans-serif;fill:#172026}
+    .panel-y{font:11px Arial,sans-serif;fill:#526069;text-anchor:end}
+    .panel-x{font:11px Arial,sans-serif;fill:#526069;text-anchor:middle}
+    .panel-last{font:700 11px Arial,sans-serif;fill:#172026}
+    .legend{font:11px Arial,sans-serif;fill:#526069}
+    .label{font:12px Arial,sans-serif;fill:#526069}
+    .small{font:11px Arial,sans-serif;fill:#65717a}
+    .value{font:700 22px Arial,sans-serif;fill:#172026}
+    .source{font:12px Arial,sans-serif;fill:#65717a}
+    .box-title{font:700 14px Arial,sans-serif;fill:#172026}
+    .box-text{font:12px Arial,sans-serif;fill:#526069}
+  </style>
+  <rect width="1100" height="780" fill="#f6f4ee"/>
+  <text x="54" y="44" class="title">Fintech, Payments, and Financial Inclusion</text>
+  <text x="54" y="68" class="subtitle">Digital payments are scaling faster than physical financial access, but income gaps remain visible in survey data.</text>
+  <rect x="54" y="104" width="496" height="300" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="76" y="136" class="panel-title">Account ownership (% of adults)</text>
+  <line x1="108" y1="358.00" x2="520" y2="358.00" stroke="#edf2ef"/>
+  <text x="98" y="362.00" class="panel-y">0%</text>
+  <line x1="108" y1="309.00" x2="520" y2="309.00" stroke="#edf2ef"/>
+  <text x="98" y="313.00" class="panel-y">25%</text>
+  <line x1="108" y1="260.00" x2="520" y2="260.00" stroke="#edf2ef"/>
+  <text x="98" y="264.00" class="panel-y">50%</text>
+  <line x1="108" y1="211.00" x2="520" y2="211.00" stroke="#edf2ef"/>
+  <text x="98" y="215.00" class="panel-y">75%</text>
+  <line x1="108" y1="162.00" x2="520" y2="162.00" stroke="#edf2ef"/>
+  <text x="98" y="166.00" class="panel-y">100%</text>
+  <line x1="108.00" y1="162" x2="108.00" y2="358" stroke="#f1f4f5"/>
+  <text x="108.00" y="382" class="panel-x">2011</text>
+  <line x1="203.08" y1="162" x2="203.08" y2="358" stroke="#f1f4f5"/>
+  <text x="203.08" y="382" class="panel-x">2014</text>
+  <line x1="298.15" y1="162" x2="298.15" y2="358" stroke="#f1f4f5"/>
+  <text x="298.15" y="382" class="panel-x">2017</text>
+  <line x1="456.62" y1="162" x2="456.62" y2="358" stroke="#f1f4f5"/>
+  <text x="456.62" y="382" class="panel-x">2022</text>
+  <line x1="520.00" y1="162" x2="520.00" y2="358" stroke="#f1f4f5"/>
+  <text x="520.00" y="382" class="panel-x">2024</text>
+  <path d="M108.00,316.12 L203.08,297.34 L298.15,297.64 L456.62,247.72 L520.00,219.72" fill="none" stroke="#176b63" stroke-width="3"/>
+  <circle cx="520.00" cy="219.72" r="4" fill="#176b63" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="468.00" y="211.72" class="panel-last">70.6%</text>
+  <rect x="76" y="374" width="10" height="10" fill="#176b63" rx="2"/>
+  <text x="92" y="383" class="legend">Total</text>
+  <path d="M108.00,320.94 L203.08,295.22 L298.15,298.38 L456.62,254.55 L520.00,221.03" fill="none" stroke="#7c2f2a" stroke-width="3"/>
+  <circle cx="520.00" cy="221.03" r="4" fill="#7c2f2a" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="468.00" y="213.03" class="panel-last">69.9%</text>
+  <rect x="214" y="374" width="10" height="10" fill="#7c2f2a" rx="2"/>
+  <text x="230" y="383" class="legend">Female</text>
+  <path d="M108.00,310.95 L203.08,299.56 L298.15,296.84 L456.62,240.49 L520.00,218.35" fill="none" stroke="#345995" stroke-width="3"/>
+  <circle cx="520.00" cy="218.35" r="4" fill="#345995" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="468.00" y="210.35" class="panel-last">71.2%</text>
+  <rect x="354" y="374" width="10" height="10" fill="#345995" rx="2"/>
+  <text x="370" y="383" class="legend">Male</text>
+  <path d="M108.00,336.34 L203.08,321.33 L298.15,318.26 L456.62,278.25 L520.00,263.71" fill="none" stroke="#b8873a" stroke-width="3"/>
+  <circle cx="520.00" cy="263.71" r="4" fill="#b8873a" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="468.00" y="255.71" class="panel-last">48.1%</text>
+  <rect x="490" y="374" width="10" height="10" fill="#b8873a" rx="2"/>
+  <text x="506" y="383" class="legend">Poorest 40%</text>
+  <path d="M108.00,302.65 L203.08,281.45 L298.15,283.90 L456.62,227.40 L520.00,190.45" fill="none" stroke="#8b5e34" stroke-width="3"/>
+  <circle cx="520.00" cy="190.45" r="4" fill="#8b5e34" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="468.00" y="182.45" class="panel-last">85.5%</text>
+  <rect x="640" y="374" width="10" height="10" fill="#8b5e34" rx="2"/>
+  <text x="656" y="383" class="legend">Richest 60%</text>
+  <rect x="590" y="104" width="456" height="300" rx="10" fill="#ffffff" stroke="#d7dee2"/><text x="612" y="138" class="panel-title">Cashless-payment acceleration, 2021-2025</text><text x="612" y="164" class="label">Cashless value</text><rect x="752" y="148" width="64.62" height="24" rx="6" fill="#7c2f2a"/><text x="826.62" y="165" class="small">28.00x GDP</text><text x="612" y="207" class="label">Transactions CAGR</text><rect x="752" y="191" width="135.83" height="24" rx="6" fill="#176b63"/><text x="897.83" y="208" class="small">58.86%</text><text x="612" y="250" class="label">Mobile value CAGR</text><rect x="752" y="234" width="121.27" height="24" rx="6" fill="#345995"/><text x="883.27" y="251" class="small">52.55%</text><text x="612" y="293" class="label">QR volume CAGR</text><rect x="752" y="277" width="245.17" height="24" rx="6" fill="#b8873a"/><text x="1007.17" y="294" class="small">106.24%</text><text x="612" y="336" class="label">QR value CAGR</text><rect x="752" y="320" width="295.73" height="24" rx="6" fill="#8b5e34"/><text x="1010.00" y="337" class="small">128.15%</text>
+  <rect x="54" y="468" width="496" height="210" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="76" y="500" class="panel-title">Physical access points per 100,000 adults</text>
+  <line x1="108" y1="632.00" x2="520" y2="632.00" stroke="#edf2ef"/>
+  <text x="98" y="636.00" class="panel-y">0</text>
+  <line x1="108" y1="596.67" x2="520" y2="596.67" stroke="#edf2ef"/>
+  <text x="98" y="600.67" class="panel-y">10</text>
+  <line x1="108" y1="561.33" x2="520" y2="561.33" stroke="#edf2ef"/>
+  <text x="98" y="565.33" class="panel-y">20</text>
+  <line x1="108" y1="526.00" x2="520" y2="526.00" stroke="#edf2ef"/>
+  <text x="98" y="530.00" class="panel-y">30</text>
+  <line x1="108.00" y1="526" x2="108.00" y2="632" stroke="#f1f4f5"/>
+  <text x="108.00" y="656" class="panel-x">2004</text>
+  <line x1="194.74" y1="526" x2="194.74" y2="632" stroke="#f1f4f5"/>
+  <text x="194.74" y="656" class="panel-x">2008</text>
+  <line x1="281.47" y1="526" x2="281.47" y2="632" stroke="#f1f4f5"/>
+  <text x="281.47" y="656" class="panel-x">2012</text>
+  <line x1="368.21" y1="526" x2="368.21" y2="632" stroke="#f1f4f5"/>
+  <text x="368.21" y="656" class="panel-x">2016</text>
+  <line x1="454.95" y1="526" x2="454.95" y2="632" stroke="#f1f4f5"/>
+  <text x="454.95" y="656" class="panel-x">2020</text>
+  <line x1="520.00" y1="526" x2="520.00" y2="632" stroke="#f1f4f5"/>
+  <text x="520.00" y="656" class="panel-x">2023</text>
+  <path d="M108.00,626.97 L194.74,589.63 L238.11,570.96 L346.53,547.24 L454.95,539.14 L520.00,535.71" fill="none" stroke="#345995" stroke-width="3"/>
+  <circle cx="520.00" cy="535.71" r="4" fill="#345995" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="468.00" y="527.71" class="panel-last">27.3</text>
+  <rect x="76" y="648" width="10" height="10" fill="#345995" rx="2"/>
+  <text x="92" y="657" class="legend">ATMs</text>
+  <path d="M194.74,620.31 L238.11,620.48 L346.53,618.60 L454.95,617.83 L520.00,621.18" fill="none" stroke="#176b63" stroke-width="3"/>
+  <circle cx="520.00" cy="621.18" r="4" fill="#176b63" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="468.00" y="613.18" class="panel-last">3.1</text>
+  <rect x="212" y="648" width="10" height="10" fill="#176b63" rx="2"/>
+  <text x="228" y="657" class="legend">Branches</text>
+  <rect x="590" y="468" width="456" height="210" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="612" y="502" class="panel-title">Inclusion and regulation</text>
+  <text x="612" y="538" class="value">87%</text>
+  <text x="722" y="538" class="small">people age 15+ with bank accounts, SBV 2024 administrative estimate</text>
+  <text x="612" y="574" class="value">30.27m</text>
+  <text x="760" y="574" class="small">active e-wallet accounts, early 2025 SBV reporting</text>
+  <text x="612" y="610" class="value">232m+</text>
+  <text x="760" y="610" class="small">individual payment accounts, Dec. 2025</text>
+  <text x="612" y="648" class="box-text">Decree 94/2025 creates a banking-sector sandbox for credit scoring, Open API, and P2P lending.</text>
+  <text x="54" y="738" class="source">Sources: World Bank Global Findex/WDI account and access indicators; SBV Cashless Day 2025; VietnamPlus/VNA report on SBV 2021-2025 cashless-payment review; Government Decree 94/2025/ND-CP.</text>
+</svg>

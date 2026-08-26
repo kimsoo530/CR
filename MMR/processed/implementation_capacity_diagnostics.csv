@@ -1,0 +1,201 @@
+source,indicator_code,indicator_name,unit,country,year,value
+World Bank WDI/WGI CSV download,CC.EST,Control of corruption,WGI estimate,MMR,1996,-2.55130348205566
+World Bank WDI/WGI CSV download,CC.EST,Control of corruption,WGI estimate,MMR,1998,-2.2686000704765403
+World Bank WDI/WGI CSV download,CC.EST,Control of corruption,WGI estimate,MMR,2000,-2.3146049618721003
+World Bank WDI/WGI CSV download,CC.EST,Control of corruption,WGI estimate,MMR,2002,-2.21514474153519
+World Bank WDI/WGI CSV download,CC.EST,Control of corruption,WGI estimate,MMR,2003,-2.50340152978897
+World Bank WDI/WGI CSV download,CC.EST,Control of corruption,WGI estimate,MMR,2004,-2.80483094453812
+World Bank WDI/WGI CSV download,CC.EST,Control of corruption,WGI estimate,MMR,2005,-2.61916115283965
+World Bank WDI/WGI CSV download,CC.EST,Control of corruption,WGI estimate,MMR,2006,-2.82161347866059
+World Bank WDI/WGI CSV download,CC.EST,Control of corruption,WGI estimate,MMR,2007,-2.76347619295121
+World Bank WDI/WGI CSV download,CC.EST,Control of corruption,WGI estimate,MMR,2008,-2.7467682361602703
+World Bank WDI/WGI CSV download,CC.EST,Control of corruption,WGI estimate,MMR,2009,-2.82143453359603
+World Bank WDI/WGI CSV download,CC.EST,Control of corruption,WGI estimate,MMR,2010,-2.84377490282059
+World Bank WDI/WGI CSV download,CC.EST,Control of corruption,WGI estimate,MMR,2011,-2.7109713196754397
+World Bank WDI/WGI CSV download,CC.EST,Control of corruption,WGI estimate,MMR,2012,-1.81864584684371
+World Bank WDI/WGI CSV download,CC.EST,Control of corruption,WGI estimate,MMR,2013,-1.71039686203003
+World Bank WDI/WGI CSV download,CC.EST,Control of corruption,WGI estimate,MMR,2014,-1.5030717849731399
+World Bank WDI/WGI CSV download,CC.EST,Control of corruption,WGI estimate,MMR,2015,-1.4447964608669301
+World Bank WDI/WGI CSV download,CC.EST,Control of corruption,WGI estimate,MMR,2016,-1.08471115231514
+World Bank WDI/WGI CSV download,CC.EST,Control of corruption,WGI estimate,MMR,2017,-0.998354882001877
+World Bank WDI/WGI CSV download,CC.EST,Control of corruption,WGI estimate,MMR,2018,-1.03505102396011
+World Bank WDI/WGI CSV download,CC.EST,Control of corruption,WGI estimate,MMR,2019,-1.0904610812664
+World Bank WDI/WGI CSV download,CC.EST,Control of corruption,WGI estimate,MMR,2020,-1.14988120794296
+World Bank WDI/WGI CSV download,CC.EST,Control of corruption,WGI estimate,MMR,2021,-1.7756762742996202
+World Bank WDI/WGI CSV download,CC.EST,Control of corruption,WGI estimate,MMR,2022,-1.61220428943634
+World Bank WDI/WGI CSV download,CC.EST,Control of corruption,WGI estimate,MMR,2023,-0.851549530029296
+World Bank Indicators API,GC.XPN.COMP.ZS,Compensation of employees,% of expense,MMR,2012,15.7574919363954
+World Bank Indicators API,GC.XPN.COMP.ZS,Compensation of employees,% of expense,MMR,2013,13.4742561416347
+World Bank Indicators API,GC.XPN.COMP.ZS,Compensation of employees,% of expense,MMR,2014,12.7384323829294
+World Bank Indicators API,GC.XPN.COMP.ZS,Compensation of employees,% of expense,MMR,2015,15.4346255417892
+World Bank Indicators API,GC.XPN.COMP.ZS,Compensation of employees,% of expense,MMR,2016,21.9944189322859
+World Bank Indicators API,GC.XPN.COMP.ZS,Compensation of employees,% of expense,MMR,2017,19.3513491185611
+World Bank Indicators API,GC.XPN.COMP.ZS,Compensation of employees,% of expense,MMR,2018,26.3209004189039
+World Bank Indicators API,GC.XPN.COMP.ZS,Compensation of employees,% of expense,MMR,2019,22.0176472308502
+World Bank WDI/WGI CSV download,GC.XPN.INTP.RV.ZS,Interest payments,% of revenue,MMR,2012,6.7426178287944
+World Bank WDI/WGI CSV download,GC.XPN.INTP.RV.ZS,Interest payments,% of revenue,MMR,2013,6.54237562544988
+World Bank WDI/WGI CSV download,GC.XPN.INTP.RV.ZS,Interest payments,% of revenue,MMR,2014,6.03031348580595
+World Bank WDI/WGI CSV download,GC.XPN.INTP.RV.ZS,Interest payments,% of revenue,MMR,2015,6.29137217722853
+World Bank WDI/WGI CSV download,GC.XPN.INTP.RV.ZS,Interest payments,% of revenue,MMR,2016,7.59522767740611
+World Bank WDI/WGI CSV download,GC.XPN.INTP.RV.ZS,Interest payments,% of revenue,MMR,2017,8.85396756453864
+World Bank WDI/WGI CSV download,GC.XPN.INTP.RV.ZS,Interest payments,% of revenue,MMR,2018,10.3799013458567
+World Bank WDI/WGI CSV download,GC.XPN.INTP.RV.ZS,Interest payments,% of revenue,MMR,2019,9.55530955337015
+World Bank WDI/WGI CSV download,GE.EST,Government effectiveness,WGI estimate,MMR,1996,-2.05290925502777
+World Bank WDI/WGI CSV download,GE.EST,Government effectiveness,WGI estimate,MMR,1998,-2.02423893213272
+World Bank WDI/WGI CSV download,GE.EST,Government effectiveness,WGI estimate,MMR,2000,-2.05105191469193
+World Bank WDI/WGI CSV download,GE.EST,Government effectiveness,WGI estimate,MMR,2002,-2.2738478422165
+World Bank WDI/WGI CSV download,GE.EST,Government effectiveness,WGI estimate,MMR,2003,-2.19627118110656
+World Bank WDI/WGI CSV download,GE.EST,Government effectiveness,WGI estimate,MMR,2004,-2.67792698144912
+World Bank WDI/WGI CSV download,GE.EST,Government effectiveness,WGI estimate,MMR,2005,-2.61132460832596
+World Bank WDI/WGI CSV download,GE.EST,Government effectiveness,WGI estimate,MMR,2006,-2.50497705936432
+World Bank WDI/WGI CSV download,GE.EST,Government effectiveness,WGI estimate,MMR,2007,-2.53762288093567
+World Bank WDI/WGI CSV download,GE.EST,Government effectiveness,WGI estimate,MMR,2008,-2.6204917550087
+World Bank WDI/WGI CSV download,GE.EST,Government effectiveness,WGI estimate,MMR,2009,-2.75982955694199
+World Bank WDI/WGI CSV download,GE.EST,Government effectiveness,WGI estimate,MMR,2010,-2.76555987596511
+World Bank WDI/WGI CSV download,GE.EST,Government effectiveness,WGI estimate,MMR,2011,-2.73039718866348
+World Bank WDI/WGI CSV download,GE.EST,Government effectiveness,WGI estimate,MMR,2012,-2.51115602254868
+World Bank WDI/WGI CSV download,GE.EST,Government effectiveness,WGI estimate,MMR,2013,-2.56591734886169
+World Bank WDI/WGI CSV download,GE.EST,Government effectiveness,WGI estimate,MMR,2014,-2.20823299884796
+World Bank WDI/WGI CSV download,GE.EST,Government effectiveness,WGI estimate,MMR,2015,-2.18319517374039
+World Bank WDI/WGI CSV download,GE.EST,Government effectiveness,WGI estimate,MMR,2016,-1.71358679533005
+World Bank WDI/WGI CSV download,GE.EST,Government effectiveness,WGI estimate,MMR,2017,-1.8415888190269498
+World Bank WDI/WGI CSV download,GE.EST,Government effectiveness,WGI estimate,MMR,2018,-1.85108463764191
+World Bank WDI/WGI CSV download,GE.EST,Government effectiveness,WGI estimate,MMR,2019,-2.0105287790298503
+World Bank WDI/WGI CSV download,GE.EST,Government effectiveness,WGI estimate,MMR,2020,-1.72601155042648
+World Bank WDI/WGI CSV download,GE.EST,Government effectiveness,WGI estimate,MMR,2021,-2.40234682559967
+World Bank WDI/WGI CSV download,GE.EST,Government effectiveness,WGI estimate,MMR,2022,-2.35834586620331
+World Bank WDI/WGI CSV download,GE.EST,Government effectiveness,WGI estimate,MMR,2023,-1.22696141004562
+IMF DataMapper API,GGXCNL_NGDP,General government net lending/borrowing,% of GDP,MMR,1998,-4.9
+IMF DataMapper API,GGXCNL_NGDP,General government net lending/borrowing,% of GDP,MMR,1999,-4.5
+IMF DataMapper API,GGXCNL_NGDP,General government net lending/borrowing,% of GDP,MMR,2000,-6.0
+IMF DataMapper API,GGXCNL_NGDP,General government net lending/borrowing,% of GDP,MMR,2001,-6.3
+IMF DataMapper API,GGXCNL_NGDP,General government net lending/borrowing,% of GDP,MMR,2002,-4.0
+IMF DataMapper API,GGXCNL_NGDP,General government net lending/borrowing,% of GDP,MMR,2003,-4.2
+IMF DataMapper API,GGXCNL_NGDP,General government net lending/borrowing,% of GDP,MMR,2004,-4.6
+IMF DataMapper API,GGXCNL_NGDP,General government net lending/borrowing,% of GDP,MMR,2005,-3.5
+IMF DataMapper API,GGXCNL_NGDP,General government net lending/borrowing,% of GDP,MMR,2006,-3.4
+IMF DataMapper API,GGXCNL_NGDP,General government net lending/borrowing,% of GDP,MMR,2007,-3.5
+IMF DataMapper API,GGXCNL_NGDP,General government net lending/borrowing,% of GDP,MMR,2008,-2.7
+IMF DataMapper API,GGXCNL_NGDP,General government net lending/borrowing,% of GDP,MMR,2009,-3.6
+IMF DataMapper API,GGXCNL_NGDP,General government net lending/borrowing,% of GDP,MMR,2010,-5.4
+IMF DataMapper API,GGXCNL_NGDP,General government net lending/borrowing,% of GDP,MMR,2011,-4.8
+IMF DataMapper API,GGXCNL_NGDP,General government net lending/borrowing,% of GDP,MMR,2012,-2.7
+IMF DataMapper API,GGXCNL_NGDP,General government net lending/borrowing,% of GDP,MMR,2013,-1.5
+IMF DataMapper API,GGXCNL_NGDP,General government net lending/borrowing,% of GDP,MMR,2014,-1.1
+IMF DataMapper API,GGXCNL_NGDP,General government net lending/borrowing,% of GDP,MMR,2015,-4.3
+IMF DataMapper API,GGXCNL_NGDP,General government net lending/borrowing,% of GDP,MMR,2016,-2.5
+IMF DataMapper API,GGXCNL_NGDP,General government net lending/borrowing,% of GDP,MMR,2017,-3.4
+IMF DataMapper API,GGXCNL_NGDP,General government net lending/borrowing,% of GDP,MMR,2018,-2.8
+IMF DataMapper API,GGXCNL_NGDP,General government net lending/borrowing,% of GDP,MMR,2019,-4.7
+IMF DataMapper API,GGXCNL_NGDP,General government net lending/borrowing,% of GDP,MMR,2020,-6.5
+IMF DataMapper API,GGXCNL_NGDP,General government net lending/borrowing,% of GDP,MMR,2021,-2.2
+IMF DataMapper API,GGXCNL_NGDP,General government net lending/borrowing,% of GDP,MMR,2022,-2.8
+IMF DataMapper API,GGXCNL_NGDP,General government net lending/borrowing,% of GDP,MMR,2023,-2.8
+IMF DataMapper API,GGXCNL_NGDP,General government net lending/borrowing,% of GDP,MMR,2024,-4.1
+IMF DataMapper API,GGXCNL_NGDP,General government net lending/borrowing,% of GDP,MMR,2025,-4.9
+World Bank Indicators API,IQ.CPA.FINQ.XQ,CPIA quality of budgetary and financial management,1=low to 6=high,MMR,2013,3.0
+World Bank Indicators API,IQ.CPA.FINQ.XQ,CPIA quality of budgetary and financial management,1=low to 6=high,MMR,2014,3.5
+World Bank Indicators API,IQ.CPA.FINQ.XQ,CPIA quality of budgetary and financial management,1=low to 6=high,MMR,2015,3.5
+World Bank Indicators API,IQ.CPA.FINQ.XQ,CPIA quality of budgetary and financial management,1=low to 6=high,MMR,2016,3.5
+World Bank Indicators API,IQ.CPA.FINQ.XQ,CPIA quality of budgetary and financial management,1=low to 6=high,MMR,2017,3.5
+World Bank Indicators API,IQ.CPA.FINQ.XQ,CPIA quality of budgetary and financial management,1=low to 6=high,MMR,2018,3.5
+World Bank Indicators API,IQ.CPA.FINQ.XQ,CPIA quality of budgetary and financial management,1=low to 6=high,MMR,2019,3.5
+World Bank Indicators API,IQ.CPA.FINQ.XQ,CPIA quality of budgetary and financial management,1=low to 6=high,MMR,2020,3.5
+World Bank Indicators API,IQ.CPA.FINQ.XQ,CPIA quality of budgetary and financial management,1=low to 6=high,MMR,2021,2.5
+World Bank Indicators API,IQ.CPA.FINQ.XQ,CPIA quality of budgetary and financial management,1=low to 6=high,MMR,2022,2.5
+World Bank Indicators API,IQ.CPA.FINQ.XQ,CPIA quality of budgetary and financial management,1=low to 6=high,MMR,2023,2.5
+World Bank Indicators API,IQ.CPA.FINQ.XQ,CPIA quality of budgetary and financial management,1=low to 6=high,MMR,2024,2.5
+World Bank Indicators API,IQ.CPA.PADM.XQ,CPIA quality of public administration,1=low to 6=high,MMR,2013,2.5
+World Bank Indicators API,IQ.CPA.PADM.XQ,CPIA quality of public administration,1=low to 6=high,MMR,2014,3.0
+World Bank Indicators API,IQ.CPA.PADM.XQ,CPIA quality of public administration,1=low to 6=high,MMR,2015,2.5
+World Bank Indicators API,IQ.CPA.PADM.XQ,CPIA quality of public administration,1=low to 6=high,MMR,2016,2.5
+World Bank Indicators API,IQ.CPA.PADM.XQ,CPIA quality of public administration,1=low to 6=high,MMR,2017,2.5
+World Bank Indicators API,IQ.CPA.PADM.XQ,CPIA quality of public administration,1=low to 6=high,MMR,2018,2.5
+World Bank Indicators API,IQ.CPA.PADM.XQ,CPIA quality of public administration,1=low to 6=high,MMR,2019,2.5
+World Bank Indicators API,IQ.CPA.PADM.XQ,CPIA quality of public administration,1=low to 6=high,MMR,2020,2.5
+World Bank Indicators API,IQ.CPA.PADM.XQ,CPIA quality of public administration,1=low to 6=high,MMR,2021,2.0
+World Bank Indicators API,IQ.CPA.PADM.XQ,CPIA quality of public administration,1=low to 6=high,MMR,2022,2.0
+World Bank Indicators API,IQ.CPA.PADM.XQ,CPIA quality of public administration,1=low to 6=high,MMR,2023,2.0
+World Bank Indicators API,IQ.CPA.PADM.XQ,CPIA quality of public administration,1=low to 6=high,MMR,2024,2.0
+World Bank Indicators API,IQ.SPI.OVRL,Statistical performance overall score,score 0-100,MMR,2016,44.09
+World Bank Indicators API,IQ.SPI.OVRL,Statistical performance overall score,score 0-100,MMR,2017,53.8825
+World Bank Indicators API,IQ.SPI.OVRL,Statistical performance overall score,score 0-100,MMR,2018,60.9366666666667
+World Bank Indicators API,IQ.SPI.OVRL,Statistical performance overall score,score 0-100,MMR,2019,63.7629166666666
+World Bank Indicators API,IQ.SPI.OVRL,Statistical performance overall score,score 0-100,MMR,2020,65.3875
+World Bank Indicators API,IQ.SPI.OVRL,Statistical performance overall score,score 0-100,MMR,2021,65.4308333333333
+World Bank Indicators API,IQ.SPI.OVRL,Statistical performance overall score,score 0-100,MMR,2022,65.9358333333333
+World Bank Indicators API,IQ.SPI.OVRL,Statistical performance overall score,score 0-100,MMR,2023,64.8895833333333
+World Bank Indicators API,IQ.SPI.OVRL,Statistical performance overall score,score 0-100,MMR,2024,64.52125
+World Bank WDI/WGI CSV download,IT.NET.USER.ZS,Internet users,% of population,MMR,1999,0.000152
+World Bank WDI/WGI CSV download,IT.NET.USER.ZS,Internet users,% of population,MMR,2001,0.000289277380848561
+World Bank WDI/WGI CSV download,IT.NET.USER.ZS,Internet users,% of population,MMR,2002,0.00042649350636189
+World Bank WDI/WGI CSV download,IT.NET.USER.ZS,Internet users,% of population,MMR,2003,0.0240641491408465
+World Bank WDI/WGI CSV download,IT.NET.USER.ZS,Internet users,% of population,MMR,2004,0.024337392002823
+World Bank WDI/WGI CSV download,IT.NET.USER.ZS,Internet users,% of population,MMR,2005,0.065200001
+World Bank WDI/WGI CSV download,IT.NET.USER.ZS,Internet users,% of population,MMR,2006,0.18204833106115
+World Bank WDI/WGI CSV download,IT.NET.USER.ZS,Internet users,% of population,MMR,2007,0.217128445069958
+World Bank WDI/WGI CSV download,IT.NET.USER.ZS,Internet users,% of population,MMR,2008,0.22
+World Bank WDI/WGI CSV download,IT.NET.USER.ZS,Internet users,% of population,MMR,2009,0.219999999
+World Bank WDI/WGI CSV download,IT.NET.USER.ZS,Internet users,% of population,MMR,2010,0.25
+World Bank WDI/WGI CSV download,IT.NET.USER.ZS,Internet users,% of population,MMR,2011,0.98
+World Bank WDI/WGI CSV download,IT.NET.USER.ZS,Internet users,% of population,MMR,2012,1.399999976
+World Bank WDI/WGI CSV download,IT.NET.USER.ZS,Internet users,% of population,MMR,2013,1.799999952
+World Bank WDI/WGI CSV download,IT.NET.USER.ZS,Internet users,% of population,MMR,2014,7.400000095
+World Bank WDI/WGI CSV download,IT.NET.USER.ZS,Internet users,% of population,MMR,2015,10.89999962
+World Bank WDI/WGI CSV download,IT.NET.USER.ZS,Internet users,% of population,MMR,2016,16.0
+World Bank WDI/WGI CSV download,IT.NET.USER.ZS,Internet users,% of population,MMR,2017,23.621081950267
+World Bank WDI/WGI CSV download,IT.NET.USER.ZS,Internet users,% of population,MMR,2018,29.37899971
+World Bank WDI/WGI CSV download,IT.NET.USER.ZS,Internet users,% of population,MMR,2019,36.54050064
+World Bank WDI/WGI CSV download,IT.NET.USER.ZS,Internet users,% of population,MMR,2020,45.4477005
+World Bank WDI/WGI CSV download,RQ.EST,Regulatory quality,WGI estimate,MMR,1996,-2.85251179933547
+World Bank WDI/WGI CSV download,RQ.EST,Regulatory quality,WGI estimate,MMR,1998,-3.01914390325547
+World Bank WDI/WGI CSV download,RQ.EST,Regulatory quality,WGI estimate,MMR,2000,-3.4281233549117998
+World Bank WDI/WGI CSV download,RQ.EST,Regulatory quality,WGI estimate,MMR,2002,-3.50166673660278
+World Bank WDI/WGI CSV download,RQ.EST,Regulatory quality,WGI estimate,MMR,2003,-3.45422744750977
+World Bank WDI/WGI CSV download,RQ.EST,Regulatory quality,WGI estimate,MMR,2004,-3.99257404804231
+World Bank WDI/WGI CSV download,RQ.EST,Regulatory quality,WGI estimate,MMR,2005,-3.6167918443679903
+World Bank WDI/WGI CSV download,RQ.EST,Regulatory quality,WGI estimate,MMR,2006,-3.72919731140137
+World Bank WDI/WGI CSV download,RQ.EST,Regulatory quality,WGI estimate,MMR,2007,-3.86534957885742
+World Bank WDI/WGI CSV download,RQ.EST,Regulatory quality,WGI estimate,MMR,2008,-3.76252729892731
+World Bank WDI/WGI CSV download,RQ.EST,Regulatory quality,WGI estimate,MMR,2009,-3.7983856201172004
+World Bank WDI/WGI CSV download,RQ.EST,Regulatory quality,WGI estimate,MMR,2010,-3.8157868623733497
+World Bank WDI/WGI CSV download,RQ.EST,Regulatory quality,WGI estimate,MMR,2011,-3.5734218835830602
+World Bank WDI/WGI CSV download,RQ.EST,Regulatory quality,WGI estimate,MMR,2012,-3.11891763210296
+World Bank WDI/WGI CSV download,RQ.EST,Regulatory quality,WGI estimate,MMR,2013,-2.5500729560852102
+World Bank WDI/WGI CSV download,RQ.EST,Regulatory quality,WGI estimate,MMR,2014,-2.37639309167862
+World Bank WDI/WGI CSV download,RQ.EST,Regulatory quality,WGI estimate,MMR,2015,-2.11763429641724
+World Bank WDI/WGI CSV download,RQ.EST,Regulatory quality,WGI estimate,MMR,2016,-1.48406995534897
+World Bank WDI/WGI CSV download,RQ.EST,Regulatory quality,WGI estimate,MMR,2017,-1.42782371640205
+World Bank WDI/WGI CSV download,RQ.EST,Regulatory quality,WGI estimate,MMR,2018,-1.27531687617302
+World Bank WDI/WGI CSV download,RQ.EST,Regulatory quality,WGI estimate,MMR,2019,-1.28125557303429
+World Bank WDI/WGI CSV download,RQ.EST,Regulatory quality,WGI estimate,MMR,2020,-1.05557861328125
+World Bank WDI/WGI CSV download,RQ.EST,Regulatory quality,WGI estimate,MMR,2021,-1.90520051717758
+World Bank WDI/WGI CSV download,RQ.EST,Regulatory quality,WGI estimate,MMR,2022,-1.7291176795959502
+World Bank WDI/WGI CSV download,RQ.EST,Regulatory quality,WGI estimate,MMR,2023,-1.00579454898834
+IMF DataMapper API,rev,General government revenue,% of GDP,MMR,1998,20.31052633566
+IMF DataMapper API,rev,General government revenue,% of GDP,MMR,1999,18.328016582236
+IMF DataMapper API,rev,General government revenue,% of GDP,MMR,2000,15.41064057964
+IMF DataMapper API,rev,General government revenue,% of GDP,MMR,2001,12.739174988417
+IMF DataMapper API,rev,General government revenue,% of GDP,MMR,2002,11.307917906345
+IMF DataMapper API,rev,General government revenue,% of GDP,MMR,2003,10.102843309489
+IMF DataMapper API,rev,General government revenue,% of GDP,MMR,2004,9.9366771744307
+IMF DataMapper API,rev,General government revenue,% of GDP,MMR,2005,11.15845184428
+IMF DataMapper API,rev,General government revenue,% of GDP,MMR,2006,12.179828872016
+IMF DataMapper API,rev,General government revenue,% of GDP,MMR,2007,12.201441503136
+IMF DataMapper API,rev,General government revenue,% of GDP,MMR,2008,11.670667408619
+IMF DataMapper API,rev,General government revenue,% of GDP,MMR,2009,10.894696974612
+IMF DataMapper API,rev,General government revenue,% of GDP,MMR,2010,10.380308880245
+IMF DataMapper API,rev,General government revenue,% of GDP,MMR,2011,10.785212903994
+IMF DataMapper API,rev,General government revenue,% of GDP,MMR,2012,17.253590489141
+IMF DataMapper API,rev,General government revenue,% of GDP,MMR,2013,22.35941292633
+IMF DataMapper API,rev,General government revenue,% of GDP,MMR,2014,23.674886175309
+IMF DataMapper API,rev,General government revenue,% of GDP,MMR,2015,19.405695721584
+IMF DataMapper API,rev,General government revenue,% of GDP,MMR,2016,18.734868315257
+IMF DataMapper API,rev,General government revenue,% of GDP,MMR,2017,16.272653576874
+IMF DataMapper API,rev,General government revenue,% of GDP,MMR,2018,15.948862125623
+IMF DataMapper API,rev,General government revenue,% of GDP,MMR,2019,15.84474711559
+IMF DataMapper API,rev,General government revenue,% of GDP,MMR,2020,14.805155646835
+IMF DataMapper API,rev,General government revenue,% of GDP,MMR,2021,18.428780728529
+IMF DataMapper API,rev,General government revenue,% of GDP,MMR,2022,18.512206810358
+IMF DataMapper API,rev,General government revenue,% of GDP,MMR,2023,16.230182642096
+IMF DataMapper API,rev,General government revenue,% of GDP,MMR,2024,15.605900809065

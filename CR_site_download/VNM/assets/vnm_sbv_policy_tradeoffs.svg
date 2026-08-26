@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 760" role="img" aria-label="State Bank of Vietnam policy tradeoffs">
+  
+  <style>
+    .title{font:700 28px Arial,sans-serif;fill:#172026}
+    .subtitle{font:15px Arial,sans-serif;fill:#526069}
+    .panel-title{font:700 16px Arial,sans-serif;fill:#172026}
+    .panel-y{font:11px Arial,sans-serif;fill:#526069;text-anchor:end}
+    .panel-x{font:11px Arial,sans-serif;fill:#526069;text-anchor:middle}
+    .panel-last{font:700 11px Arial,sans-serif;fill:#172026}
+    .legend{font:11px Arial,sans-serif;fill:#526069}
+    .label{font:12px Arial,sans-serif;fill:#526069}
+    .small{font:11px Arial,sans-serif;fill:#65717a}
+    .value{font:700 22px Arial,sans-serif;fill:#172026}
+    .source{font:12px Arial,sans-serif;fill:#65717a}
+    .box-title{font:700 14px Arial,sans-serif;fill:#172026}
+    .box-text{font:12px Arial,sans-serif;fill:#526069}
+  </style>
+  <rect width="1100" height="760" fill="#f6f4ee"/>
+  <text x="54" y="44" class="title">State Bank of Vietnam: Policy Trade-Offs</text>
+  <text x="54" y="68" class="subtitle">The SBV balances credit support, exchange-rate pressure, inflation risk, reserve adequacy, and banking-sector resilience.</text>
+  <rect x="54" y="104" width="496" height="236" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="76" y="136" class="panel-title">Official exchange rate, VND per US$</text>
+  <line x1="108" y1="294.00" x2="520" y2="294.00" stroke="#edf2ef"/>
+  <text x="98" y="298.00" class="panel-y">20000</text>
+  <line x1="108" y1="261.00" x2="520" y2="261.00" stroke="#edf2ef"/>
+  <text x="98" y="265.00" class="panel-y">21500</text>
+  <line x1="108" y1="228.00" x2="520" y2="228.00" stroke="#edf2ef"/>
+  <text x="98" y="232.00" class="panel-y">23000</text>
+  <line x1="108" y1="195.00" x2="520" y2="195.00" stroke="#edf2ef"/>
+  <text x="98" y="199.00" class="panel-y">24500</text>
+  <line x1="108" y1="162.00" x2="520" y2="162.00" stroke="#edf2ef"/>
+  <text x="98" y="166.00" class="panel-y">26000</text>
+  <line x1="108.00" y1="162" x2="108.00" y2="294" stroke="#f1f4f5"/>
+  <text x="108.00" y="318" class="panel-x">2015</text>
+  <line x1="245.33" y1="162" x2="245.33" y2="294" stroke="#f1f4f5"/>
+  <text x="245.33" y="318" class="panel-x">2018</text>
+  <line x1="382.67" y1="162" x2="382.67" y2="294" stroke="#f1f4f5"/>
+  <text x="382.67" y="318" class="panel-x">2021</text>
+  <line x1="520.00" y1="162" x2="520.00" y2="294" stroke="#f1f4f5"/>
+  <text x="520.00" y="318" class="panel-x">2024</text>
+  <path d="M108.00,256.65 L153.78,251.43 L199.56,241.86 L245.33,236.75 L291.11,226.89 L336.89,223.42 L382.67,224.48 L428.44,222.03 L474.22,210.68 L520.00,202.37" fill="none" stroke="#7c2f2a" stroke-width="3"/>
+  <circle cx="520.00" cy="202.37" r="4" fill="#7c2f2a" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="468.00" y="194.37" class="panel-last">24,165</text>
+  <rect x="76" y="310" width="10" height="10" fill="#7c2f2a" rx="2"/>
+  <text x="92" y="319" class="legend">VND/USD</text>
+  <rect x="590" y="104" width="456" height="236" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="612" y="136" class="panel-title">Gross reserves, months of imports</text>
+  <line x1="644" y1="294.00" x2="1016" y2="294.00" stroke="#edf2ef"/>
+  <text x="634" y="298.00" class="panel-y">0</text>
+  <line x1="644" y1="267.60" x2="1016" y2="267.60" stroke="#edf2ef"/>
+  <text x="634" y="271.60" class="panel-y">1</text>
+  <line x1="644" y1="241.20" x2="1016" y2="241.20" stroke="#edf2ef"/>
+  <text x="634" y="245.20" class="panel-y">2</text>
+  <line x1="644" y1="214.80" x2="1016" y2="214.80" stroke="#edf2ef"/>
+  <text x="634" y="218.80" class="panel-y">3</text>
+  <line x1="644" y1="188.40" x2="1016" y2="188.40" stroke="#edf2ef"/>
+  <text x="634" y="192.40" class="panel-y">4</text>
+  <line x1="644" y1="162.00" x2="1016" y2="162.00" stroke="#edf2ef"/>
+  <text x="634" y="166.00" class="panel-y">5</text>
+  <line x1="644.00" y1="162" x2="644.00" y2="294" stroke="#f1f4f5"/>
+  <text x="644.00" y="318" class="panel-x">2015</text>
+  <line x1="755.60" y1="162" x2="755.60" y2="294" stroke="#f1f4f5"/>
+  <text x="755.60" y="318" class="panel-x">2018</text>
+  <line x1="867.20" y1="162" x2="867.20" y2="294" stroke="#f1f4f5"/>
+  <text x="867.20" y="318" class="panel-x">2021</text>
+  <line x1="1016.00" y1="162" x2="1016.00" y2="294" stroke="#f1f4f5"/>
+  <text x="1016.00" y="318" class="panel-x">2025</text>
+  <path d="M644.00,245.15 L681.20,235.29 L718.40,228.98 L755.60,227.22 L792.80,205.12 L830.00,188.97 L867.20,196.69 L904.40,224.03 L941.60,214.34 L978.80,231.32 L1016.00,235.92" fill="none" stroke="#176b63" stroke-width="3"/>
+  <circle cx="1016.00" cy="235.92" r="4" fill="#176b63" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="964.00" y="227.92" class="panel-last">2.2</text>
+  <rect x="612" y="310" width="10" height="10" fill="#176b63" rx="2"/>
+  <text x="628" y="319" class="legend">Reserves</text>
+  <rect x="54" y="408" width="496" height="236" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="76" y="440" class="panel-title">Interest-rate environment</text>
+  <line x1="108" y1="598.00" x2="520" y2="598.00" stroke="#edf2ef"/>
+  <text x="98" y="602.00" class="panel-y">0%</text>
+  <line x1="108" y1="568.67" x2="520" y2="568.67" stroke="#edf2ef"/>
+  <text x="98" y="572.67" class="panel-y">4%</text>
+  <line x1="108" y1="539.33" x2="520" y2="539.33" stroke="#edf2ef"/>
+  <text x="98" y="543.33" class="panel-y">8%</text>
+  <line x1="108" y1="510.00" x2="520" y2="510.00" stroke="#edf2ef"/>
+  <text x="98" y="514.00" class="panel-y">12%</text>
+  <line x1="108" y1="480.67" x2="520" y2="480.67" stroke="#edf2ef"/>
+  <text x="98" y="484.67" class="panel-y">16%</text>
+  <line x1="108.00" y1="466" x2="108.00" y2="598" stroke="#f1f4f5"/>
+  <text x="108.00" y="622" class="panel-x">2000</text>
+  <line x1="197.57" y1="466" x2="197.57" y2="598" stroke="#f1f4f5"/>
+  <text x="197.57" y="622" class="panel-x">2005</text>
+  <line x1="287.13" y1="466" x2="287.13" y2="598" stroke="#f1f4f5"/>
+  <text x="287.13" y="622" class="panel-x">2010</text>
+  <line x1="376.70" y1="466" x2="376.70" y2="598" stroke="#f1f4f5"/>
+  <text x="376.70" y="622" class="panel-x">2015</text>
+  <line x1="466.26" y1="466" x2="466.26" y2="598" stroke="#f1f4f5"/>
+  <text x="466.26" y="622" class="panel-x">2020</text>
+  <line x1="520.00" y1="466" x2="520.00" y2="598" stroke="#f1f4f5"/>
+  <text x="520.00" y="622" class="panel-x">2023</text>
+  <path d="M108.00,520.63 L197.57,517.15 L287.13,501.67 L305.04,473.67 L376.70,545.81 L466.26,541.92 L520.00,529.63" fill="none" stroke="#345995" stroke-width="3"/>
+  <circle cx="520.00" cy="529.63" r="4" fill="#345995" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="468.00" y="521.63" class="panel-last">9.3%</text>
+  <rect x="76" y="614" width="10" height="10" fill="#345995" rx="2"/>
+  <text x="92" y="623" class="legend">Lending</text>
+  <path d="M108.00,571.21 L197.57,545.60 L287.13,515.91 L305.04,495.38 L376.70,563.18 L466.26,567.79 L520.00,562.94" fill="none" stroke="#b8873a" stroke-width="3"/>
+  <circle cx="520.00" cy="562.94" r="4" fill="#b8873a" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="468.00" y="554.94" class="panel-last">4.8%</text>
+  <rect x="218" y="614" width="10" height="10" fill="#b8873a" rx="2"/>
+  <text x="234" y="623" class="legend">Deposit</text>
+  <rect x="590" y="408" width="456" height="236" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="612" y="442" class="panel-title">Operating logic</text>
+  <text x="612" y="478" class="box-title">Growth support</text>
+  <text x="746" y="478" class="box-text">credit targets, low funding costs, priority-sector guidance</text>
+  <text x="612" y="514" class="box-title">FX stability</text>
+  <text x="746" y="514" class="box-text">greater flexibility plus sparse intervention when stress is disorderly</text>
+  <text x="612" y="550" class="box-title">Inflation anchor</text>
+  <text x="746" y="550" class="box-text">limited room for easing when rates and reserves are under pressure</text>
+  <text x="612" y="586" class="box-title">Bank quality</text>
+  <text x="746" y="586" class="box-text">capital buffers, NPL recognition, stress tests, resolution planning</text>
+  
+  <rect x="54" y="662" width="314" height="92" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="70" y="688" class="label">Policy shift</text>
+  <text x="70" y="720" class="value" fill="#176b63">credit ceilings -&gt; risk tools</text>
+  <text x="70" y="740" class="small">IMF recommends stronger macroprudential toolkit</text>
+  
+  <rect x="394" y="662" width="314" height="92" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="410" y="688" class="label">Reserve constraint</text>
+  <text x="410" y="720" class="value" fill="#7c2f2a">2.2 months</text>
+  <text x="410" y="740" class="small">IMF projection for 2025 import cover</text>
+  
+  <rect x="734" y="662" width="314" height="92" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="750" y="688" class="label">Credit target</text>
+  <text x="750" y="720" class="value" fill="#345995">16% target</text>
+  <text x="750" y="740" class="small">SBV projection for 2025</text>
+  <text x="54" y="738" class="source">Sources: World Bank WDI table IDs PA.NUS.FCRF, FI.RES.TOTL.MO, FR.INR.LEND, FR.INR.DPST; IMF 2025 Article IV; SBV 2025 credit-target release.</text>
+</svg>

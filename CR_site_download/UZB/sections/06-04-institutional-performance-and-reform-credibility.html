@@ -1,0 +1,982 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>6.4 Institutional Performance and Reform Credibility | Uzbekistan Country Report</title>
+  <script src="../assets/chart.umd.min.js"></script>
+  <script src="../assets/marked.min.js"></script>
+  <style>
+    :root {
+      --ink: #17212b;
+      --muted: #5b6773;
+      --line: #d9e1e8;
+      --panel: #f7f9fb;
+      --accent: #146c94;
+      --paper: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.62;
+    }
+    .layout {
+      display: grid;
+      grid-template-columns: 310px minmax(0, 1fr);
+      min-height: 100vh;
+    }
+    aside {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      overflow: auto;
+      border-right: 1px solid var(--line);
+      background: var(--panel);
+      padding: 22px 18px;
+    }
+    aside h1 { font-size: 20px; margin: 0 0 6px; }
+    aside h1 a { color: var(--ink); text-decoration: none; }
+    aside h1 a:hover { color: var(--accent); }
+    aside p { color: var(--muted); font-size: 13px; margin: 0 0 18px; }
+    nav a {
+      display: block;
+      color: var(--ink);
+      text-decoration: none;
+      padding: 8px 10px;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+    nav a:hover, nav a.active { background: #e9f1f6; color: var(--accent); }
+    .chapter-link { font-weight: 700; }
+    .toc-group {
+      margin: 1px 0;
+      border-radius: 6px;
+    }
+    .toc-group summary {
+      list-style: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .toc-group summary::-webkit-details-marker { display: none; }
+    .toc-group summary::before {
+      content: "›";
+      color: var(--muted);
+      font-size: 15px;
+      transform: rotate(0deg);
+      transition: transform 0.12s ease;
+    }
+    .toc-group[open] summary::before { transform: rotate(90deg); }
+    .toc-group summary a { flex: 1; }
+    .section-nav {
+      margin: 2px 0 8px 8px;
+      padding-left: 10px;
+      border-left: 2px solid #d2dde6;
+    }
+    .section-link {
+      padding: 5px 8px;
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.35;
+    }
+    .anchor-target {
+      display: block;
+      position: relative;
+      top: -18px;
+      visibility: hidden;
+    }
+    main { padding: 34px min(7vw, 86px); max-width: 980px; }
+    .hero { border-bottom: 1px solid var(--line); padding-bottom: 24px; margin-bottom: 24px; }
+    .hero h2 { font-size: 34px; margin: 0 0 8px; letter-spacing: 0; }
+    .hero p { color: var(--muted); max-width: 820px; }
+    .chapter h2 { font-size: 24px; margin: 0 0 12px; }
+    .chapter-landing-note {
+      color: var(--muted);
+      max-width: 760px;
+      margin: 0 0 18px;
+    }
+    .chapter-section-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 12px;
+      margin: 18px 0 28px;
+    }
+    .chapter-section-card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      padding: 14px;
+    }
+    .chapter-section-card a {
+      display: grid;
+      grid-template-columns: 48px minmax(0, 1fr);
+      gap: 10px;
+      align-items: start;
+      text-decoration: none;
+      color: var(--ink);
+    }
+    .chapter-section-card a:hover strong { color: var(--accent); }
+    .chapter-section-card span {
+      font-weight: 800;
+      color: var(--accent);
+      font-size: 15px;
+    }
+    .chapter-section-card strong {
+      font-size: 16px;
+      line-height: 1.35;
+      transition: color 0.12s ease;
+    }
+    .section-source {
+      margin: 10px 0 0 58px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.35;
+    }
+    .facts {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 10px;
+      margin: 18px 0;
+    }
+    .facts div { border: 1px solid var(--line); border-radius: 8px; padding: 12px; background: #fff; }
+    .facts b { display: block; font-size: 12px; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+    .facts span { font-weight: 700; }
+    .figure-card {
+      margin: 28px 0 34px;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+    .symbol-gallery {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin: 24px 0 30px;
+    }
+    .symbol-card {
+      margin: 0;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+    .symbol-card-wide { grid-column: 1 / -1; }
+    .symbol-card img {
+      display: block;
+      width: 100%;
+      max-height: 360px;
+      object-fit: contain;
+      background: #f7fbfc;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 10px;
+    }
+    .symbol-card-wide img {
+      max-height: 300px;
+      padding: 0;
+      object-fit: contain;
+    }
+    .symbol-card p {
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.55;
+    }
+    .heritage-photo {
+      margin: 24px 0 30px;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+    .heritage-photo img {
+      display: block;
+      width: 100%;
+      max-height: 520px;
+      object-fit: cover;
+      border-radius: 6px;
+      border: 1px solid var(--line);
+      background: #f7fbfc;
+    }
+    .heritage-photo figcaption {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+    .gov-org-chart {
+      margin: 24px 0 30px;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+    .gov-org-chart > figcaption {
+      font-weight: 800;
+      font-size: 18px;
+      margin: 0 0 14px;
+    }
+    .org-flow {
+      display: grid;
+      gap: 14px;
+    }
+    .org-branches,
+    .org-implementation {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      position: relative;
+    }
+    .org-node {
+      border: 1px solid #cfdce3;
+      border-radius: 8px;
+      padding: 13px;
+      background: #f8fbfc;
+      min-height: 146px;
+    }
+    .org-presidency {
+      background: #e9f4f7;
+      border-color: #9fc7d3;
+      max-width: 720px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .org-executive {
+      background: #f4f8ee;
+      border-color: #bfd4a5;
+    }
+    .org-node span {
+      display: block;
+      color: var(--accent);
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 6px;
+    }
+    .org-node strong {
+      display: block;
+      font-size: 16px;
+      line-height: 1.25;
+      margin-bottom: 8px;
+    }
+    .org-node p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+    .map-card {
+      margin: 24px 0 30px;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      width: min(1180px, calc(100vw - 380px));
+      max-width: none;
+    }
+    .map-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(250px, 0.85fr);
+      gap: 18px;
+      align-items: start;
+    }
+    .adm-map {
+      width: 100%;
+      height: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #f7fbfc;
+    }
+    .adm-path {
+      stroke: #415766;
+      stroke-width: 1;
+      vector-effect: non-scaling-stroke;
+    }
+    .adm-path:hover { fill: #98c6d2; }
+    .map-label {
+      font-size: 15px;
+      font-weight: 700;
+      text-anchor: middle;
+      fill: #253746;
+      paint-order: stroke;
+      stroke: #ffffff;
+      stroke-width: 3.8px;
+      stroke-linejoin: round;
+      pointer-events: none;
+    }
+    .neighbor-label {
+      font-size: 17px;
+      font-weight: 700;
+      text-anchor: middle;
+      fill: #6a7782;
+      letter-spacing: 0;
+    }
+    .capital-marker circle {
+      fill: #a12222;
+      stroke: #ffffff;
+      stroke-width: 2.2;
+    }
+    .capital-marker text {
+      font-size: 16px;
+      font-weight: 700;
+      fill: #17212b;
+      paint-order: stroke;
+      stroke: #ffffff;
+      stroke-width: 3.6px;
+    }
+    .map-table-wrap {
+      max-height: 660px;
+      overflow: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+    .compact-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12px;
+      line-height: 1.35;
+    }
+    .compact-table th, .compact-table td {
+      padding: 7px 8px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+    .compact-table th {
+      position: sticky;
+      top: 0;
+      background: #eef5f8;
+    }
+    .map-missing {
+      border: 1px dashed #aab7c2;
+      border-radius: 8px;
+      padding: 16px;
+      color: var(--muted);
+      background: #fbfcfd;
+    }
+    figcaption {
+      font-weight: 700;
+      margin-bottom: 8px;
+      text-align: center;
+    }
+    .chart-frame { height: 420px; width: 100%; }
+    .hdi-scatter-frame { width: 100%; overflow-x: auto; }
+    .hdi-scatter-svg {
+      display: block;
+      width: 100%;
+      min-width: 720px;
+      height: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+    canvas { display: block; width: 100%; height: 100%; }
+    .panel-figure { margin-top: -14px; }
+    .panel-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 14px;
+    }
+    .panel-chart {
+      min-height: 210px;
+      height: 230px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 10px;
+      background: #fbfcfd;
+    }
+    .source { color: var(--muted); font-size: 12px; }
+    .chart-empty { border: 1px dashed #aab7c2; border-radius: 8px; padding: 16px; background: #fbfcfd; }
+    .chart-empty strong, .chart-empty span, .chart-empty small { display: block; }
+    .editable-prose {
+      position: relative;
+      margin: 0 0 20px;
+    }
+    .prose-toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin: 0 0 12px;
+      padding: 8px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .prose-toolbar span {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .prose-toolbar div { display: flex; gap: 6px; flex-wrap: wrap; justify-content: flex-end; }
+    .prose-toolbar button {
+      border: 1px solid #b9c6d0;
+      background: #fff;
+      color: var(--ink);
+      border-radius: 6px;
+      padding: 6px 9px;
+      font-size: 12px;
+      cursor: pointer;
+    }
+    .prose-toolbar button:hover { border-color: var(--accent); color: var(--accent); }
+    .prose-body {
+      font-size: 17px;
+      line-height: 1.78;
+    }
+    .prose-body h1, .prose-body h2, .prose-body h3 {
+      margin: 24px 0 10px;
+      line-height: 1.25;
+      scroll-margin-top: 24px;
+    }
+    .prose-body p { margin: 0 0 16px; }
+    .prose-body ul, .prose-body ol { padding-left: 24px; margin: 0 0 16px; }
+    .prose-body blockquote { margin: 18px 0; padding-left: 14px; border-left: 3px solid var(--line); color: var(--muted); }
+    .prose-body table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0 22px;
+      font-size: 15px;
+      line-height: 1.55;
+      background: #fff;
+      border: 1px solid #b8c7d2;
+    }
+    .prose-body th,
+    .prose-body td {
+      border: 1px solid #b8c7d2;
+      padding: 9px 11px;
+      text-align: left;
+      vertical-align: top;
+    }
+    .prose-body th {
+      background: #eef5f8;
+      font-weight: 800;
+    }
+    .prose-body tr:nth-child(even) td {
+      background: #fbfcfd;
+    }
+    .equation-block {
+      margin: 18px 0 22px;
+      padding: 16px 18px;
+      border: 1px solid #b8c7d2;
+      border-left: 4px solid var(--accent);
+      border-radius: 8px;
+      background: #fbfcfd;
+      overflow-x: auto;
+    }
+    .equation-label {
+      margin-bottom: 8px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+    .equation-line {
+      min-width: 680px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 21px;
+      line-height: 1.8;
+      white-space: normal;
+    }
+    .equation-line sub {
+      font-size: 65%;
+    }
+    .markdown-editor {
+      display: block;
+      width: 100%;
+      min-height: 520px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 12px 14px;
+      resize: vertical;
+      font: 13px/1.55 Consolas, "Courier New", monospace;
+      color: var(--ink);
+      background: #fbfcfd;
+    }
+    .cover-body {
+      min-height: 100vh;
+      background:
+        linear-gradient(90deg, rgba(20, 108, 148, 0.08) 1px, transparent 1px),
+        linear-gradient(0deg, rgba(111, 122, 133, 0.08) 1px, transparent 1px),
+        #eef3f5;
+      background-size: 42px 42px;
+    }
+    .cover-page {
+      max-width: none;
+      min-height: 100vh;
+      padding: 42px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .book-cover {
+      width: min(980px, 100%);
+      min-height: min(780px, calc(100vh - 84px));
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 260px;
+      grid-template-rows: auto auto 1fr auto auto;
+      gap: 20px 34px;
+      border: 1px solid #c8d3dc;
+      background: linear-gradient(90deg, #ffffff 0%, #ffffff 66%, #f3f7f8 66%, #f3f7f8 100%);
+      box-shadow: 0 18px 50px rgba(23, 33, 43, 0.14);
+      padding: clamp(30px, 5vw, 64px);
+      position: relative;
+      overflow: hidden;
+    }
+    .book-cover::before {
+      content: "";
+      position: absolute;
+      inset: 24px auto 24px 24px;
+      width: 8px;
+      background: #b43a32;
+    }
+    .book-cover::after {
+      content: "UZB";
+      position: absolute;
+      right: 34px;
+      bottom: 16px;
+      color: rgba(20, 108, 148, 0.1);
+      font-size: clamp(82px, 18vw, 176px);
+      line-height: 1;
+      font-weight: 800;
+      letter-spacing: 0;
+      pointer-events: none;
+    }
+    .cover-kicker {
+      grid-column: 1 / 3;
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+    .cover-rule {
+      grid-column: 1 / 3;
+      height: 1px;
+      background: #c8d3dc;
+    }
+    .book-cover h1 {
+      grid-column: 1 / 2;
+      margin: 10px 0 0;
+      font-size: clamp(48px, 8vw, 92px);
+      line-height: 0.96;
+      letter-spacing: 0;
+      font-weight: 800;
+    }
+    .cover-subtitle {
+      grid-column: 1 / 2;
+      margin: 0;
+      max-width: 650px;
+      color: #344451;
+      font-size: clamp(18px, 2.4vw, 25px);
+      line-height: 1.32;
+      font-weight: 700;
+    }
+    .cover-purpose {
+      grid-column: 1 / 2;
+      max-width: 680px;
+      margin: 0;
+      color: #344451;
+      font-size: 16px;
+      line-height: 1.74;
+    }
+    .cover-editor {
+      grid-column: 2 / 3;
+      grid-row: 3 / 5;
+      align-self: start;
+      border-top: 4px solid var(--accent);
+      padding-top: 18px;
+      z-index: 1;
+    }
+    .cover-editor span {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+    .cover-editor strong {
+      display: block;
+      margin-top: 8px;
+      font-size: 24px;
+      line-height: 1.1;
+    }
+    .cover-editor em {
+      display: block;
+      margin-top: 6px;
+      color: #344451;
+      font-style: normal;
+      font-size: 14px;
+    }
+    .cover-actions {
+      grid-column: 1 / 2;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-self: end;
+      z-index: 1;
+    }
+    .primary-link, .secondary-link {
+      display: inline-flex;
+      align-items: center;
+      min-height: 42px;
+      padding: 9px 14px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 14px;
+    }
+    .primary-link { background: var(--accent); color: #fff; border: 1px solid var(--accent); }
+    .secondary-link { background: #fff; color: var(--ink); border: 1px solid #b9c6d0; }
+    .cover-method {
+      grid-column: 1 / 3;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      z-index: 1;
+    }
+    .cover-method div {
+      border-top: 1px solid #c8d3dc;
+      padding-top: 12px;
+    }
+    .cover-method b {
+      display: block;
+      font-size: 13px;
+      text-transform: uppercase;
+      color: var(--ink);
+    }
+    .cover-method span {
+      display: block;
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+    [hidden] { display: none !important; }
+    code, pre { background: #eef3f6; border-radius: 5px; }
+    code { padding: 1px 4px; }
+    pre { padding: 12px; overflow: auto; }
+    @media (max-width: 980px) {
+      .layout { grid-template-columns: 1fr; }
+      aside { position: relative; height: auto; }
+      main { padding: 24px 18px; }
+      .chart-frame { height: 320px; }
+      .symbol-gallery { grid-template-columns: 1fr; }
+      .symbol-card-wide { grid-column: auto; }
+      .map-card { width: 100%; }
+      .map-grid { grid-template-columns: 1fr; }
+      .cover-page { padding: 18px; align-items: stretch; }
+      .book-cover {
+        min-height: auto;
+        grid-template-columns: 1fr;
+        background: #fff;
+      }
+      .cover-kicker, .cover-rule, .book-cover h1, .cover-subtitle,
+      .cover-purpose, .cover-editor, .cover-actions, .cover-method {
+        grid-column: 1 / 2;
+        grid-row: auto;
+      }
+      .cover-method { grid-template-columns: 1fr; }
+    }
+    </style>
+</head>
+<body>
+  <div class="layout">
+    <aside>
+      <h1><a href="../index.html">Uzbekistan</a></h1>
+      <p>Official-source country report with reproducible indicators and editable Markdown notes.</p>
+      <nav><details class="toc-group"><summary><a class="chapter-link" href="../01-overview.html">1. Country Overview</a></summary><div class="section-nav"><a class="section-link" href="../sections/01-01-official-name-capital-location-area-population-language-religion-and-currency.html">1.1 Official Name, Capital, Location, Area, Population, Language, Religion, and Currency</a><a class="section-link" href="../sections/01-02-state-symbols.html">1.2 State Symbols</a><a class="section-link" href="../sections/01-03-country-profile-and-strategic-setting.html">1.3 Country Profile and Strategic Setting</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../02-history.html">2. Historical Background</a></summary><div class="section-nav"><a class="section-link" href="../sections/02-01-ancient-and-medieval-political-communities-and-civilizational-zones.html">2.1 Ancient and Medieval Political Communities and Civilizational Zones</a><a class="section-link" href="../sections/02-02-empire-colonial-rule-and-pre-independence-state-formation.html">2.2 Empire, Colonial Rule, and Pre-Independence State Formation</a><a class="section-link" href="../sections/02-03-independence-transition-and-constitutional-turning-points.html">2.3 Independence, Transition, and Constitutional Turning Points</a><a class="section-link" href="../sections/02-04-historical-legacies-in-present-institutions.html">2.4 Historical Legacies in Present Institutions</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../03-constitution.html">3. Constitution and Basic State Order</a></summary><div class="section-nav"><a class="section-link" href="../sections/03-01-enactment-and-amendment-history.html">3.1 Enactment and Amendment History</a><a class="section-link" href="../sections/03-02-state-identity-sovereignty-territory-and-people.html">3.2 State Identity, Sovereignty, Territory, and People</a><a class="section-link" href="../sections/03-03-fundamental-rights-system.html">3.3 Fundamental Rights System</a><a class="section-link" href="../sections/03-04-separation-of-powers-constitutional-review-judicial-review-and-emergency-powers.html">3.4 Separation of Powers, Constitutional Review, Judicial Review, and Emergency Powers</a><a class="section-link" href="../sections/03-05-constitutional-implications-for-state-authority.html">3.5 Constitutional Implications for State Authority</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../04-politics.html">4. Political System and Power Structure</a></summary><div class="section-nav"><a class="section-link" href="../sections/04-01-form-of-government.html">4.1 Form of Government</a><a class="section-link" href="../sections/04-02-head-of-state-and-head-of-government.html">4.2 Head of State and Head of Government</a><a class="section-link" href="../sections/04-03-parliament-legislative-process-parties-and-elections.html">4.3 Parliament, Legislative Process, Parties, and Elections</a><a class="section-link" href="../sections/04-04-local-politics-and-real-power-relations.html">4.4 Local Politics and Real Power Relations</a><a class="section-link" href="../sections/04-05-political-dynamics-and-institutional-accountability.html">4.5 Political Dynamics and Institutional Accountability</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../05-administration.html">5. Administrative System and Government Organization</a></summary><div class="section-nav"><a class="section-link" href="../sections/05-01-central-executive-administration-strategic-planning-and-policy-coordination.html">5.1 Central Executive Administration, Strategic Planning, and Policy Coordination</a><a class="section-link" href="../sections/05-02-organizational-management-and-administrative-reform.html">5.2 Organizational Management and Administrative Reform</a><a class="section-link" href="../sections/05-03-human-resource-management-and-civil-service.html">5.3 Human Resource Management and Civil Service</a><a class="section-link" href="../sections/05-04-financial-administration-budget-execution-procurement-and-audit.html">5.4 Financial Administration, Budget Execution, Procurement, and Audit</a><a class="section-link" href="../sections/05-05-local-administration-mahalla-and-service-delivery.html">5.5 Local Administration, Mahalla, and Service Delivery</a><a class="section-link" href="../sections/05-06-administrative-governance-accountability-and-digital-government.html">5.6 Administrative Governance, Accountability, and Digital Government</a><a class="section-link" href="../sections/05-07-implementation-capacity-and-administrative-performance.html">5.7 Implementation Capacity and Administrative Performance</a></div></details>
+<details class="toc-group active" open><summary><a class="chapter-link active" href="../06-governance.html">6. Governance and Institutional Capacity</a></summary><div class="section-nav"><a class="section-link" href="../sections/06-01-government-effectiveness-and-regulatory-quality.html">6.1 Government Effectiveness and Regulatory Quality</a><a class="section-link" href="../sections/06-02-rule-of-law-and-control-of-corruption.html">6.2 Rule of Law and Control of Corruption</a><a class="section-link" href="../sections/06-03-political-stability-citizen-participation-and-accountability.html">6.3 Political Stability, Citizen Participation, and Accountability</a><a class="section-link" href="../sections/06-04-institutional-performance-and-reform-credibility.html">6.4 Institutional Performance and Reform Credibility</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../07-fiscal.html">7. Fiscal System and Public Sector</a></summary><div class="section-nav"><a class="section-link" href="../sections/07-01-government-revenue-tax-revenue-and-expenditure-structure.html">7.1 Government Revenue, Tax Revenue, and Expenditure Structure</a><a class="section-link" href="../sections/07-02-fiscal-balance-debt-and-interest-burden.html">7.2 Fiscal Balance, Debt, and Interest Burden</a><a class="section-link" href="../sections/07-03-state-owned-enterprises-and-quasi-public-sector.html">7.3 State-Owned Enterprises and Quasi-Public Sector</a><a class="section-link" href="../sections/07-04-defense-and-public-security-spending.html">7.4 Defense and Public Security Spending</a><a class="section-link" href="../sections/07-05-fiscal-capacity-and-public-sector-risks.html">7.5 Fiscal Capacity and Public Sector Risks</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../08-society.html">8. Population and Social Structure</a></summary><div class="section-nav"><a class="section-link" href="../sections/08-01-population-size-growth-age-structure-and-dependency.html">8.1 Population Size, Growth, Age Structure, and Dependency</a><a class="section-link" href="../sections/08-02-urbanization-and-regional-distribution.html">8.2 Urbanization and Regional Distribution</a><a class="section-link" href="../sections/08-03-ethnicity-language-religion-migration-remittances-and-diaspora.html">8.3 Ethnicity, Language, Religion, Migration, Remittances, and Diaspora</a><a class="section-link" href="../sections/08-04-social-integration-and-conflict-factors.html">8.4 Social Integration and Conflict Factors</a><a class="section-link" href="../sections/08-05-demographic-pressures-and-social-cohesion.html">8.5 Demographic Pressures and Social Cohesion</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../09-macro.html">9. Macroeconomic Structure</a></summary><div class="section-nav"><a class="section-link" href="../sections/09-01-gdp-scale-growth-and-gdp-per-capita.html">9.1 GDP Scale, Growth, and GDP per Capita</a><a class="section-link" href="../sections/09-02-prices-exchange-rate-and-macroeconomic-stability.html">9.2 Prices, Exchange Rate, and Macroeconomic Stability</a><a class="section-link" href="../sections/09-03-sectoral-structure-resource-dependence-growth-model-and-vulnerabilities.html">9.3 Sectoral Structure, Resource Dependence, Growth Model, and Vulnerabilities</a><a class="section-link" href="../sections/09-04-growth-sustainability-and-structural-constraints.html">9.4 Growth Sustainability and Structural Constraints</a><a class="section-link" href="../sections/09-05-growth-driver-models-and-interpretation.html">9.5 Growth Driver Models and Interpretation</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../10-trade.html">10. Trade, Investment, and External Economy</a></summary><div class="section-nav"><a class="section-link" href="../sections/10-01-exports-imports-trading-partners-and-current-account.html">10.1 Exports, Imports, Trading Partners, and Current Account</a><a class="section-link" href="../sections/10-02-tourism-high-technology-exports-and-services.html">10.2 Tourism, High-Technology Exports, and Services</a><a class="section-link" href="../sections/10-03-fdi-absolute-amount-and-share-of-gdp.html">10.3 FDI: Absolute Amount and Share of GDP</a><a class="section-link" href="../sections/10-04-investment-regime-foreign-exchange-economic-zones-and-industrial-policy.html">10.4 Investment Regime, Foreign Exchange, Economic Zones, and Industrial Policy</a><a class="section-link" href="../sections/10-05-external-integration-and-competitiveness.html">10.5 External Integration and Competitiveness</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../11-infrastructure.html">11. Infrastructure, Energy, and Digital Connectivity</a></summary><div class="section-nav"><a class="section-link" href="../sections/11-01-electricity-access-and-energy-dependence.html">11.1 Electricity Access and Energy Dependence</a><a class="section-link" href="../sections/11-02-transport-logistics-air-rail-road-and-ports.html">11.2 Transport, Logistics, Air, Rail, Road, and Ports</a><a class="section-link" href="../sections/11-03-internet-mobile-connectivity-secure-servers-and-logistics-performance.html">11.3 Internet, Mobile Connectivity, Secure Servers, and Logistics Performance</a><a class="section-link" href="../sections/11-04-connectivity-service-delivery-and-bottlenecks.html">11.4 Connectivity, Service Delivery, and Bottlenecks</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../12-labor.html">12. Labor Market and Human Capital</a></summary><div class="section-nav"><a class="section-link" href="../sections/12-01-labor-force-size-and-participation.html">12.1 Labor Force Size and Participation</a><a class="section-link" href="../sections/12-02-female-participation-unemployment-youth-unemployment-and-vulnerable-employment.html">12.2 Female Participation, Unemployment, Youth Unemployment, and Vulnerable Employment</a><a class="section-link" href="../sections/12-03-agricultural-employment-education-literacy-productivity-hdi-and-r-d.html">12.3 Agricultural Employment, Education, Literacy, Productivity, HDI, and R&amp;D</a><a class="section-link" href="../sections/12-04-employment-absorption-and-human-capital-use.html">12.4 Employment Absorption and Human Capital Use</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../13-education-health.html">13. Education, Health, and Welfare</a></summary><div class="section-nav"><a class="section-link" href="../sections/13-01-education-system-and-public-expenditure.html">13.1 Education System and Public Expenditure</a><a class="section-link" href="../sections/13-02-life-expectancy-infant-mortality-hospital-beds-doctors-and-health-expenditure.html">13.2 Life Expectancy, Infant Mortality, Hospital Beds, Doctors, and Health Expenditure</a><a class="section-link" href="../sections/13-03-sanitation-public-health-risks-and-welfare.html">13.3 Sanitation, Public Health Risks, and Welfare</a><a class="section-link" href="../sections/13-04-human-development-outcomes-and-welfare-capacity.html">13.4 Human Development Outcomes and Welfare Capacity</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../14-finance.html">14. Financial Sector and Economic Institutions</a></summary><div class="section-nav"><a class="section-link" href="../sections/14-01-domestic-credit-private-credit-stock-market-and-fintech.html">14.1 Domestic Credit, Private Credit, Stock Market, and Fintech</a><a class="section-link" href="../sections/14-02-central-bank-monetary-policy-and-supervision.html">14.2 Central Bank, Monetary Policy, and Supervision</a><a class="section-link" href="../sections/14-03-foreign-investment-protection-and-capital-market-openness.html">14.3 Foreign Investment Protection and Capital-Market Openness</a><a class="section-link" href="../sections/14-04-financial-deepening-and-market-institutions.html">14.4 Financial Deepening and Market Institutions</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../15-security.html">15. Foreign Relations, Security, and Geopolitics</a></summary><div class="section-nav"><a class="section-link" href="../sections/15-01-foreign-policy-orientation-and-international-organizations.html">15.1 Foreign Policy Orientation and International Organizations</a><a class="section-link" href="../sections/15-02-borders-security-organizations-military-capacity-and-transnational-issues.html">15.2 Borders, Security Organizations, Military Capacity, and Transnational Issues</a><a class="section-link" href="../sections/15-03-strategic-resources-and-corridors.html">15.3 Strategic Resources and Corridors</a><a class="section-link" href="../sections/15-04-strategic-environment-and-transnational-risks.html">15.4 Strategic Environment and Transnational Risks</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../16-policy.html">16. Major Policies and National Development Strategy</a></summary><div class="section-nav"><a class="section-link" href="../sections/16-01-evolution-of-national-development-strategy.html">16.1 Evolution of National Development Strategy</a><a class="section-link" href="../sections/16-02-national-development-plan-and-industrial-policy.html">16.2 National Development Plan and Industrial Policy</a><a class="section-link" href="../sections/16-03-digital-transformation-energy-transition-climate-policy-and-administrative-reform.html">16.3 Digital Transformation, Energy Transition, Climate Policy, and Administrative Reform</a><a class="section-link" href="../sections/16-04-welfare-education-health-and-recent-five-year-policy-changes.html">16.4 Welfare, Education, Health, and Recent Five-Year Policy Changes</a><a class="section-link" href="../sections/16-05-policy-implementation-and-reform-sequencing.html">16.5 Policy Implementation and Reform Sequencing</a><a class="section-link" href="../sections/16-06-environmental-sustainability-sdgs-and-green-transition.html">16.6 Environmental Sustainability, SDGs, and Green Transition</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../17-assessment.html">17. Integrated Assessment</a></summary><div class="section-nav"><a class="section-link" href="../sections/17-01-national-operating-model.html">17.1 National Operating Model</a><a class="section-link" href="../sections/17-02-political-stability-institutional-risk-growth-drivers-and-bottlenecks.html">17.2 Political Stability, Institutional Risk, Growth Drivers, and Bottlenecks</a><a class="section-link" href="../sections/17-03-administrative-capacity-and-international-cooperation-implications.html">17.3 Administrative Capacity and International Cooperation Implications</a><a class="section-link" href="../sections/17-04-uzbekistan-and-comparative-administration-theory.html">17.4 Uzbekistan and Comparative Administration Theory</a><a class="section-link" href="../sections/17-05-evidence-limits-and-source-triangulation.html">17.5 Evidence Limits and Source Triangulation</a><a class="section-link" href="../sections/17-06-strategic-diagnosis-and-outlook.html">17.6 Strategic Diagnosis and Outlook</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../18-appendix.html">18. Appendix, Sources, and Method</a></summary><div class="section-nav"><a class="section-link" href="../sections/18-01-annual-data-revision-protocol.html">18.1 Annual Data Revision Protocol</a><a class="section-link" href="../sections/18-02-editorial-workflow-and-manuscript-preservation.html">18.2 Editorial Workflow and Manuscript Preservation</a><a class="section-link" href="../sections/18-03-data-integrity.html">18.3 Data Integrity</a><a class="section-link" href="../sections/18-04-evidence-archive-and-review-trail.html">18.4 Evidence Archive and Review Trail</a><a class="section-link" href="../sections/18-05-data-limits-and-source-triangulation.html">18.5 Data Limits and Source Triangulation</a><a class="section-link" href="../sections/18-06-external-review-checklist.html">18.6 External Review Checklist</a><a class="section-link" href="../sections/18-07-comparative-administration-benchmark.html">18.7 Comparative Administration Benchmark</a><a class="section-link" href="../sections/18-08-timeline.html">18.8 Timeline</a><a class="section-link" href="../sections/18-09-government-organization-chart.html">18.9 Government Organization Chart</a><a class="section-link" href="../sections/18-10-constitution-and-major-laws.html">18.10 Constitution and Major Laws</a><a class="section-link" href="../sections/18-11-key-indicator-table-source-list-and-data-codebook.html">18.11 Key Indicator Table, Source List, and Data Codebook</a><a class="section-link" href="../sections/18-12-methodological-notes-and-update-standards.html">18.12 Methodological Notes and Update Standards</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../19-references.html">19. References</a></summary><div class="section-nav"><a class="section-link" href="../sections/19-01-references.html">19.1 References</a><a class="section-link" href="../sections/19-02-source-integrity-and-citation-notes.html">19.2 Source Integrity and Citation Notes</a></div></details></nav>
+    </aside>
+    <main>
+      <header class="hero">
+        <h2>6.4 Institutional Performance and Reform Credibility</h2>
+      </header>
+      <section class="chapter">
+    <article class="editable-prose" data-md-panel="governance-institutional-performance-and-reform-credibility-text" data-md-source="sections/06-04-institutional-performance-and-reform-credibility.md">
+      <div class="prose-toolbar">
+        <span>Editable chapter text</span>
+        <div>
+          <button type="button" data-md-action="edit">Edit Markdown</button>
+          <button type="button" data-md-action="save" hidden>Save</button>
+          <button type="button" data-md-action="cancel" hidden>Cancel</button>
+        </div>
+      </div>
+      <div class="markdown-preview prose-body"></div>
+      <textarea class="markdown-editor" hidden>&lt;span id=&quot;6-4-institutional-performance-and-reform-credibility&quot; class=&quot;anchor-target&quot;&gt;&lt;/span&gt;
+## 6.4 Institutional Performance and Reform Credibility
+The WGI chart is placed at this point because the preceding paragraphs define the institutional concepts and the following paragraphs interpret the pattern. The combined chart gives the full institutional profile; the small multiples beneath it make it easier to see whether each dimension is improving, stagnating, or moving differently from the others.
+
+{{figure:governance-wgi}}
+
+{{figure:comparison-wgi-reform}}
+
+
+The governance figure works as an institutional performance profile rather than a ranking exercise. It shows whether different dimensions of state capacity move together or diverge. A broad-based improvement across government effectiveness, regulatory quality, rule of law, and control of corruption would suggest that reforms are becoming institutionalized. A mixed pattern would suggest that some administrative reforms are advancing faster than legal accountability or participation mechanisms.
+
+- WGI: Government Effectiveness, estimate increased from -2.04 in 1996 to -0.20 in 2023.
+- WGI: Regulatory Quality, estimate increased from -3.02 in 1996 to -0.40 in 2023.
+- WGI: Rule of Law, estimate increased from -2.11 in 1996 to -0.58 in 2023.
+- WGI: Control of Corruption, estimate increased from -1.92 in 1996 to -0.57 in 2023.
+- WGI: Voice and Accountability, estimate increased from -2.72 in 1996 to -0.92 in 2023.
+- WGI: Political Stability and Absence of Violence/Terrorism, estimate increased from -0.92 in 1996 to -0.11 in 2023.
+
+For Uzbekistan, the key interpretive question is whether state-led reform is producing not only policy activity but also more predictable institutions. The category panels above make it easier to see which dimensions are improving, stagnating, or lagging behind the others.
+
+For Uzbekistan, the most important pattern is not any single score. The analytical question is whether improvements are broad-based or concentrated. If regulatory quality improves after ministry restructuring and licensing simplification, but rule of law and control of corruption lag, investors may still face uncertainty in enforcement. If government effectiveness rises while voice and accountability remain weak, the state may implement policy better but still lack strong feedback mechanisms from citizens, firms, and local communities. If political stability is high but institutional accountability is limited, stability may support reform in the short run but constrain adaptive governance in the long run.
+
+Indicator movements gain meaning when they are linked to concrete Uzbek reforms: Cabinet and ministry reorganization, strategic-planning digitalization, mahalla-level service transfers, judicial reform, anti-corruption compliance units, licensing simplification, public procurement, open data, and regulatory agencies. Indicator changes do not stand as proof by themselves; they gain meaning alongside official documents and sector evidence.
+
+The Kazakhstan-Uzbekistan benchmark adds a comparative timing question. Kazakhstan began the post-Soviet period with a stronger institutional baseline in several WGI dimensions, while Uzbekistan shows a sharper post-2016 reform signal from a lower starting point. Uzbekistan therefore appears as a late-reforming centralized state: improvement is analytically important, but absolute levels and durability still have to be tested against legal predictability, citizen feedback, and implementation evidence.
+The governance chapter functions as the book&#x27;s credibility test. It connects WGI movements and international rankings to concrete reforms, while avoiding the mistake of treating indicator improvement as proof by itself. The evidentiary standard is triangulation: governance claims are strongest when an indicator trend, an official reform, and a sector-level outcome all point in the same direction.
+
+&lt;span id=&quot;chapter-takeaway&quot; class=&quot;anchor-target&quot;&gt;&lt;/span&gt;
+### Chapter Takeaway
+
+Governance indicators show that Uzbekistan has improved from a low institutional base, but the country still faces the harder task of reform credibility. Investors, citizens, and international partners will judge reform by predictable regulation, corruption control, legal remedies, procurement integrity, and service quality. Institutional performance is therefore the bridge between reform ambition and development trust.</textarea>
+    </article>
+    
+<template data-figure-template="governance-wgi">
+    <figure class="figure-card" id="governance-wgi">
+      <figcaption>Worldwide Governance Indicators</figcaption>
+      <div class="chart-frame">
+        <canvas id="chart-governance-wgi" aria-label="Worldwide Governance Indicators" role="img"></canvas>
+      </div>
+      <p class="source">Source: World Bank Worldwide Governance Indicators, official World Bank CSV download endpoint. Indicator/Table IDs: GE.EST, RQ.EST, RL.EST, CC.EST, VA.EST, PV.EST. Unit: WGI estimate score.</p>
+      <script type="application/json" id="chart-governance-wgi-config">{"type": "line", "data": {"labels": [1996, 1998, 2000, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023], "datasets": [{"label": "WGI: Government Effectiveness, estimate", "data": [-2.04109381437301, -2.0494185090065, -1.7339715957641701, -2.05426887273789, -2.01838341951371, -2.04132895469666, -2.0805750250816297, -2.01448439359665, -1.9353136181831398, -1.52487682700157, -1.09525220990181, -1.24280877709389, -1.1828701496124299, -1.5707332015037498, -1.5773445725441, -1.07905868291855, -1.25543841719627, -1.10071478486061, -1.05265055894852, -1.02835011482239, -0.997227138280868, -1.02119072079659, -0.430610406398773, -0.461617249250412, -0.19863726496696502], "borderColor": "#146C94", "backgroundColor": "#146C94", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}, {"label": "WGI: Regulatory Quality, estimate", "data": [-3.02051345109939, -3.4362437725067103, -3.8129395484924204, -2.5678681612014698, -2.42063001394272, -2.68802318572998, -2.5735007762909, -2.7683776259422297, -2.5602896451950103, -2.31852878332138, -2.4975946307182197, -2.6120114564895602, -2.64822827577591, -2.68597190380097, -2.72677077054977, -2.94070354700088, -2.86222389936447, -2.77811869382858, -2.19665191173553, -1.9260704398155202, -1.78648490905762, -1.69214534759521, -1.00798095464706, -0.770441615581512, -0.403772133588791], "borderColor": "#D94F30", "backgroundColor": "#D94F30", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}, {"label": "WGI: Rule of Law, estimate", "data": [-2.10660371780396, -2.13762768507004, -2.0413580775261, -2.44811419248582, -2.11924923658371, -2.27257658243179, -2.51380527019501, -2.47111096382141, -2.08199846744537, -1.99518092870711, -2.2545323133468598, -2.40829111337662, -2.46908318996429, -2.2087689876556302, -2.10007585287095, -1.9283160448074401, -1.9339042305946301, -1.9161148548126299, -1.92474831342697, -1.86381042003632, -1.8329773664474502, -1.88459914922715, -1.55611127018929, -1.19449012279511, -0.5829676985740659], "borderColor": "#2E7D32", "backgroundColor": "#2E7D32", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}, {"label": "WGI: Control of Corruption, estimate", "data": [-1.91899511814117, -1.92891187667847, -1.83670511245727, -1.64005613923073, -1.55528228282928, -1.81698042154311, -2.09038395881652, -1.7277711391449, -1.7574354887008798, -1.8068573594093302, -2.16932487487794, -2.22357522249221, -2.35886032581329, -2.22815605401993, -2.16444612741471, -2.03077602386474, -2.18088785409927, -2.03462389707566, -2.01248461008072, -1.83330155611038, -1.77362639904023, -1.81746559143066, -1.4037835896015198, -1.06077557206154, -0.565270531177521], "borderColor": "#7B3FB2", "backgroundColor": "#7B3FB2", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}, {"label": "WGI: Voice and Accountability, estimate", "data": [-2.72062969207763, -2.98943030834197, -3.11675752401351, -3.0758293628692703, -2.99982492923736, -3.02746109962463, -3.28140623569488, -3.52205553054809, -3.5999843835830605, -3.5702426195144703, -3.5744379997253395, -3.5456422328949, -3.61153211593629, -3.4570330142974903, -3.3431638360023497, -3.2526661396026597, -3.3255333900451705, -3.2076398730278, -3.0555258035659802, -2.76726766824722, -2.80915023088455, -2.60395842790603, -2.3765632510185197, -1.8628230094909601, -0.9167596340179409], "borderColor": "#A06A00", "backgroundColor": "#A06A00", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}, {"label": "WGI: Political Stability and Absence of Violence/Terrorism, estimate", "data": [-0.924343973398209, -1.16118404865265, -2.21331577301025, -1.7967020750045701, -2.2086317896842997, -2.4743783831596398, -3.3284225821495, -3.03392115831375, -2.31545672416687, -2.05208100080491, -1.6159392893314402, -1.2247448086738602, -1.01952288746834, -0.8818568825721741, -0.9113342821598049, -0.46428467333316803, -0.636256369948387, -0.47482639253139497, -0.414325539767742, -0.514951610565185, -0.500758171081543, -0.74022510945797, -0.42607446163892704, -0.278285616636276, -0.108226974308491], "borderColor": "#3A7D7A", "backgroundColor": "#3A7D7A", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}]}, "options": {"responsive": true, "maintainAspectRatio": false, "interaction": {"mode": "index", "intersect": false}, "plugins": {"legend": {"position": "bottom", "labels": {"boxWidth": 14, "boxHeight": 3}}, "tooltip": {"enabled": true}}, "scales": {"x": {"grid": {"display": false}, "ticks": {"maxTicksLimit": 8}}, "y": {"title": {"display": true, "text": "WGI estimate score"}, "grid": {"color": "#e8eef3"}, "ticks": {"precision": 1}}}}}</script>
+    </figure>
+    
+
+            <figure class="figure-card panel-figure" id="governance-wgi-panels">
+              <figcaption>Worldwide Governance Indicators: Category Panels</figcaption>
+              <div class="panel-grid">
+                <div class="panel-chart">
+                  <canvas id="chart-governance-wgi-panel-1" aria-label="WGI: Government Effectiveness, estimate" role="img"></canvas>
+                  <script type="application/json" id="chart-governance-wgi-panel-1-config">{"type": "line", "data": {"labels": [1996, 1998, 2000, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023], "datasets": [{"label": "WGI: Government Effectiveness, estimate", "data": [-2.04109381437301, -2.0494185090065, -1.7339715957641701, -2.05426887273789, -2.01838341951371, -2.04132895469666, -2.0805750250816297, -2.01448439359665, -1.9353136181831398, -1.52487682700157, -1.09525220990181, -1.24280877709389, -1.1828701496124299, -1.5707332015037498, -1.5773445725441, -1.07905868291855, -1.25543841719627, -1.10071478486061, -1.05265055894852, -1.02835011482239, -0.997227138280868, -1.02119072079659, -0.430610406398773, -0.461617249250412, -0.19863726496696502], "borderColor": "#146C94", "backgroundColor": "#146C94", "borderWidth": 2, "pointRadius": 1.5, "pointHoverRadius": 3, "tension": 0.25, "spanGaps": true}]}, "options": {"responsive": true, "maintainAspectRatio": false, "plugins": {"legend": {"display": false}, "title": {"display": true, "text": "WGI: Government Effectiveness, estimate", "font": {"size": 11}}, "tooltip": {"enabled": true}}, "scales": {"x": {"grid": {"display": false}, "ticks": {"maxTicksLimit": 4}}, "y": {"title": {"display": true, "text": "WGI estimate score", "font": {"size": 10}}, "grid": {"color": "#eef3f6"}, "ticks": {"precision": 1, "maxTicksLimit": 4}}}}}</script>
+                </div>
+                
+                <div class="panel-chart">
+                  <canvas id="chart-governance-wgi-panel-2" aria-label="WGI: Regulatory Quality, estimate" role="img"></canvas>
+                  <script type="application/json" id="chart-governance-wgi-panel-2-config">{"type": "line", "data": {"labels": [1996, 1998, 2000, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023], "datasets": [{"label": "WGI: Regulatory Quality, estimate", "data": [-3.02051345109939, -3.4362437725067103, -3.8129395484924204, -2.5678681612014698, -2.42063001394272, -2.68802318572998, -2.5735007762909, -2.7683776259422297, -2.5602896451950103, -2.31852878332138, -2.4975946307182197, -2.6120114564895602, -2.64822827577591, -2.68597190380097, -2.72677077054977, -2.94070354700088, -2.86222389936447, -2.77811869382858, -2.19665191173553, -1.9260704398155202, -1.78648490905762, -1.69214534759521, -1.00798095464706, -0.770441615581512, -0.403772133588791], "borderColor": "#D94F30", "backgroundColor": "#D94F30", "borderWidth": 2, "pointRadius": 1.5, "pointHoverRadius": 3, "tension": 0.25, "spanGaps": true}]}, "options": {"responsive": true, "maintainAspectRatio": false, "plugins": {"legend": {"display": false}, "title": {"display": true, "text": "WGI: Regulatory Quality, estimate", "font": {"size": 11}}, "tooltip": {"enabled": true}}, "scales": {"x": {"grid": {"display": false}, "ticks": {"maxTicksLimit": 4}}, "y": {"title": {"display": true, "text": "WGI estimate score", "font": {"size": 10}}, "grid": {"color": "#eef3f6"}, "ticks": {"precision": 1, "maxTicksLimit": 4}}}}}</script>
+                </div>
+                
+                <div class="panel-chart">
+                  <canvas id="chart-governance-wgi-panel-3" aria-label="WGI: Rule of Law, estimate" role="img"></canvas>
+                  <script type="application/json" id="chart-governance-wgi-panel-3-config">{"type": "line", "data": {"labels": [1996, 1998, 2000, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023], "datasets": [{"label": "WGI: Rule of Law, estimate", "data": [-2.10660371780396, -2.13762768507004, -2.0413580775261, -2.44811419248582, -2.11924923658371, -2.27257658243179, -2.51380527019501, -2.47111096382141, -2.08199846744537, -1.99518092870711, -2.2545323133468598, -2.40829111337662, -2.46908318996429, -2.2087689876556302, -2.10007585287095, -1.9283160448074401, -1.9339042305946301, -1.9161148548126299, -1.92474831342697, -1.86381042003632, -1.8329773664474502, -1.88459914922715, -1.55611127018929, -1.19449012279511, -0.5829676985740659], "borderColor": "#2E7D32", "backgroundColor": "#2E7D32", "borderWidth": 2, "pointRadius": 1.5, "pointHoverRadius": 3, "tension": 0.25, "spanGaps": true}]}, "options": {"responsive": true, "maintainAspectRatio": false, "plugins": {"legend": {"display": false}, "title": {"display": true, "text": "WGI: Rule of Law, estimate", "font": {"size": 11}}, "tooltip": {"enabled": true}}, "scales": {"x": {"grid": {"display": false}, "ticks": {"maxTicksLimit": 4}}, "y": {"title": {"display": true, "text": "WGI estimate score", "font": {"size": 10}}, "grid": {"color": "#eef3f6"}, "ticks": {"precision": 1, "maxTicksLimit": 4}}}}}</script>
+                </div>
+                
+                <div class="panel-chart">
+                  <canvas id="chart-governance-wgi-panel-4" aria-label="WGI: Control of Corruption, estimate" role="img"></canvas>
+                  <script type="application/json" id="chart-governance-wgi-panel-4-config">{"type": "line", "data": {"labels": [1996, 1998, 2000, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023], "datasets": [{"label": "WGI: Control of Corruption, estimate", "data": [-1.91899511814117, -1.92891187667847, -1.83670511245727, -1.64005613923073, -1.55528228282928, -1.81698042154311, -2.09038395881652, -1.7277711391449, -1.7574354887008798, -1.8068573594093302, -2.16932487487794, -2.22357522249221, -2.35886032581329, -2.22815605401993, -2.16444612741471, -2.03077602386474, -2.18088785409927, -2.03462389707566, -2.01248461008072, -1.83330155611038, -1.77362639904023, -1.81746559143066, -1.4037835896015198, -1.06077557206154, -0.565270531177521], "borderColor": "#7B3FB2", "backgroundColor": "#7B3FB2", "borderWidth": 2, "pointRadius": 1.5, "pointHoverRadius": 3, "tension": 0.25, "spanGaps": true}]}, "options": {"responsive": true, "maintainAspectRatio": false, "plugins": {"legend": {"display": false}, "title": {"display": true, "text": "WGI: Control of Corruption, estimate", "font": {"size": 11}}, "tooltip": {"enabled": true}}, "scales": {"x": {"grid": {"display": false}, "ticks": {"maxTicksLimit": 4}}, "y": {"title": {"display": true, "text": "WGI estimate score", "font": {"size": 10}}, "grid": {"color": "#eef3f6"}, "ticks": {"precision": 1, "maxTicksLimit": 4}}}}}</script>
+                </div>
+                
+                <div class="panel-chart">
+                  <canvas id="chart-governance-wgi-panel-5" aria-label="WGI: Voice and Accountability, estimate" role="img"></canvas>
+                  <script type="application/json" id="chart-governance-wgi-panel-5-config">{"type": "line", "data": {"labels": [1996, 1998, 2000, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023], "datasets": [{"label": "WGI: Voice and Accountability, estimate", "data": [-2.72062969207763, -2.98943030834197, -3.11675752401351, -3.0758293628692703, -2.99982492923736, -3.02746109962463, -3.28140623569488, -3.52205553054809, -3.5999843835830605, -3.5702426195144703, -3.5744379997253395, -3.5456422328949, -3.61153211593629, -3.4570330142974903, -3.3431638360023497, -3.2526661396026597, -3.3255333900451705, -3.2076398730278, -3.0555258035659802, -2.76726766824722, -2.80915023088455, -2.60395842790603, -2.3765632510185197, -1.8628230094909601, -0.9167596340179409], "borderColor": "#A06A00", "backgroundColor": "#A06A00", "borderWidth": 2, "pointRadius": 1.5, "pointHoverRadius": 3, "tension": 0.25, "spanGaps": true}]}, "options": {"responsive": true, "maintainAspectRatio": false, "plugins": {"legend": {"display": false}, "title": {"display": true, "text": "WGI: Voice and Accountability, estimate", "font": {"size": 11}}, "tooltip": {"enabled": true}}, "scales": {"x": {"grid": {"display": false}, "ticks": {"maxTicksLimit": 4}}, "y": {"title": {"display": true, "text": "WGI estimate score", "font": {"size": 10}}, "grid": {"color": "#eef3f6"}, "ticks": {"precision": 1, "maxTicksLimit": 4}}}}}</script>
+                </div>
+                
+                <div class="panel-chart">
+                  <canvas id="chart-governance-wgi-panel-6" aria-label="WGI: Political Stability and Absence of Violence/Terrorism, estimate" role="img"></canvas>
+                  <script type="application/json" id="chart-governance-wgi-panel-6-config">{"type": "line", "data": {"labels": [1996, 1998, 2000, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023], "datasets": [{"label": "WGI: Political Stability and Absence of Violence/Terrorism, estimate", "data": [-0.924343973398209, -1.16118404865265, -2.21331577301025, -1.7967020750045701, -2.2086317896842997, -2.4743783831596398, -3.3284225821495, -3.03392115831375, -2.31545672416687, -2.05208100080491, -1.6159392893314402, -1.2247448086738602, -1.01952288746834, -0.8818568825721741, -0.9113342821598049, -0.46428467333316803, -0.636256369948387, -0.47482639253139497, -0.414325539767742, -0.514951610565185, -0.500758171081543, -0.74022510945797, -0.42607446163892704, -0.278285616636276, -0.108226974308491], "borderColor": "#3A7D7A", "backgroundColor": "#3A7D7A", "borderWidth": 2, "pointRadius": 1.5, "pointHoverRadius": 3, "tension": 0.25, "spanGaps": true}]}, "options": {"responsive": true, "maintainAspectRatio": false, "plugins": {"legend": {"display": false}, "title": {"display": true, "text": "WGI: Political Stability and Absence of Violence/Terrorism, estimate", "font": {"size": 11}}, "tooltip": {"enabled": true}}, "scales": {"x": {"grid": {"display": false}, "ticks": {"maxTicksLimit": 4}}, "y": {"title": {"display": true, "text": "WGI estimate score", "font": {"size": 10}}, "grid": {"color": "#eef3f6"}, "ticks": {"precision": 1, "maxTicksLimit": 4}}}}}</script>
+                </div>
+                </div>
+              <p class="source">Source: World Bank Worldwide Governance Indicators, official World Bank CSV download endpoint. Indicator/Table IDs: GE.EST, RQ.EST, RL.EST, CC.EST, VA.EST, PV.EST. Unit: WGI estimate score.</p>
+            </figure>
+            
+
+    <article class="editable-prose" data-md-panel="governance-wgi-interpretation">
+      <div class="prose-toolbar">
+        <span>Editable chapter text</span>
+        <div>
+          <button type="button" data-md-action="edit">Edit Markdown</button>
+          <button type="button" data-md-action="save" hidden>Save</button>
+          <button type="button" data-md-action="cancel" hidden>Cancel</button>
+        </div>
+      </div>
+      <div class="markdown-preview prose-body"></div>
+      <textarea class="markdown-editor" hidden>The governance figure works as an institutional performance profile rather than a ranking exercise. It shows whether different dimensions of state capacity move together or diverge. A broad-based improvement across government effectiveness, regulatory quality, rule of law, and control of corruption would suggest that reforms are becoming institutionalized. A mixed pattern would suggest that some administrative reforms are advancing faster than legal accountability or participation mechanisms.
+
+- WGI: Government Effectiveness, estimate increased from -2.04 in 1996 to -0.20 in 2023.
+- WGI: Regulatory Quality, estimate increased from -3.02 in 1996 to -0.40 in 2023.
+- WGI: Rule of Law, estimate increased from -2.11 in 1996 to -0.58 in 2023.
+- WGI: Control of Corruption, estimate increased from -1.92 in 1996 to -0.57 in 2023.
+- WGI: Voice and Accountability, estimate increased from -2.72 in 1996 to -0.92 in 2023.
+- WGI: Political Stability and Absence of Violence/Terrorism, estimate increased from -0.92 in 1996 to -0.11 in 2023.
+
+For Uzbekistan, the key interpretive question is whether state-led reform is producing not only policy activity but also more predictable institutions. The category panels above make it easier to see which dimensions are improving, stagnating, or lagging behind the others.</textarea>
+    </article>
+    </template>
+<template data-figure-template="comparison-wgi-reform">
+    <figure class="figure-card" id="comparison-wgi-reform">
+      <figcaption>Kazakhstan-Uzbekistan Governance Reform Benchmark</figcaption>
+      <div class="chart-frame">
+        <canvas id="chart-comparison-wgi-reform" aria-label="Kazakhstan-Uzbekistan Governance Reform Benchmark" role="img"></canvas>
+      </div>
+      <p class="source">Source: World Bank Worldwide Governance Indicators, official World Bank CSV download endpoint. Indicator/Table IDs: GE.EST, RQ.EST, RL.EST, CC.EST. Unit: WGI estimate score.</p>
+      <script type="application/json" id="chart-comparison-wgi-reform-config">{"type": "line", "data": {"labels": [1996, 1998, 2000, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023], "datasets": [{"label": "UZB - Government effectiveness", "data": [-2.04109381437301, -2.0494185090065, -1.7339715957641701, -2.05426887273789, -2.01838341951371, -2.04132895469666, -2.0805750250816297, -2.01448439359665, -1.9353136181831398, -1.52487682700157, -1.09525220990181, -1.24280877709389, -1.1828701496124299, -1.5707332015037498, -1.5773445725441, -1.07905868291855, -1.25543841719627, -1.10071478486061, -1.05265055894852, -1.02835011482239, -0.997227138280868, -1.02119072079659, -0.430610406398773, -0.461617249250412, -0.19863726496696502], "borderColor": "#146C94", "backgroundColor": "#146C94", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}, {"label": "UZB - Regulatory quality", "data": [-3.02051345109939, -3.4362437725067103, -3.8129395484924204, -2.5678681612014698, -2.42063001394272, -2.68802318572998, -2.5735007762909, -2.7683776259422297, -2.5602896451950103, -2.31852878332138, -2.4975946307182197, -2.6120114564895602, -2.64822827577591, -2.68597190380097, -2.72677077054977, -2.94070354700088, -2.86222389936447, -2.77811869382858, -2.19665191173553, -1.9260704398155202, -1.78648490905762, -1.69214534759521, -1.00798095464706, -0.770441615581512, -0.403772133588791], "borderColor": "#D94F30", "backgroundColor": "#D94F30", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}, {"label": "UZB - Rule of law", "data": [-2.10660371780396, -2.13762768507004, -2.0413580775261, -2.44811419248582, -2.11924923658371, -2.27257658243179, -2.51380527019501, -2.47111096382141, -2.08199846744537, -1.99518092870711, -2.2545323133468598, -2.40829111337662, -2.46908318996429, -2.2087689876556302, -2.10007585287095, -1.9283160448074401, -1.9339042305946301, -1.9161148548126299, -1.92474831342697, -1.86381042003632, -1.8329773664474502, -1.88459914922715, -1.55611127018929, -1.19449012279511, -0.5829676985740659], "borderColor": "#2E7D32", "backgroundColor": "#2E7D32", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}, {"label": "UZB - Control of corruption", "data": [-1.91899511814117, -1.92891187667847, -1.83670511245727, -1.64005613923073, -1.55528228282928, -1.81698042154311, -2.09038395881652, -1.7277711391449, -1.7574354887008798, -1.8068573594093302, -2.16932487487794, -2.22357522249221, -2.35886032581329, -2.22815605401993, -2.16444612741471, -2.03077602386474, -2.18088785409927, -2.03462389707566, -2.01248461008072, -1.83330155611038, -1.77362639904023, -1.81746559143066, -1.4037835896015198, -1.06077557206154, -0.565270531177521], "borderColor": "#7B3FB2", "backgroundColor": "#7B3FB2", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}, {"label": "KAZ - Government effectiveness", "data": [-1.62928761839867, -1.4772152185440102, -1.32348590493202, -1.82690650224685, -1.30097390413284, -1.3206731915473902, -1.14060726165772, -0.8109874963760371, -1.13222202658653, -0.8908322334289551, -0.748458844423294, -0.8377653300762169, -0.868877422809601, -0.89301649928093, -1.05473248362541, -0.136625305563211, -0.238617149740457, -0.22977354601025599, -0.10058170761913102, -0.060509039089083706, 0.128404227644205, 0.189656610786915, 0.0613503713160754, 0.20033057183027297, 0.102770271897316], "borderColor": "#A06A00", "backgroundColor": "#A06A00", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}, {"label": "KAZ - Regulatory quality", "data": [-0.5679319143295289, -0.6974182754755021, -1.0404872238636, -1.1793177902698502, -0.68568187057972, -0.8036018550395969, -0.478052854537964, -0.5836241602897639, -0.59654296040535, -0.5004471808671951, -0.456049349904061, -0.48126008510589696, -0.400155818462372, -0.663986048102379, -0.637980851531029, -0.406513459980489, -0.149278570711613, -0.27124322205781903, 0.26718390285968796, 0.164196395128965, 0.18590611293911902, 0.184691096097231, 0.134785472601652, -0.0157276760786772, 0.046168170124292404], "borderColor": "#3A7D7A", "backgroundColor": "#3A7D7A", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}, {"label": "KAZ - Rule of law", "data": [-2.01711416244507, -1.89268816709519, -1.95655493736268, -2.04412432909011, -1.86472491025924, -1.9149944901466402, -1.62050147652626, -1.87360285520553, -1.7542349457740802, -1.5748561978340099, -1.22984980940819, -1.18258754014969, -1.0907774746418, -1.3139283537864699, -1.2176906704902701, -1.03597179055214, -0.870847201347351, -0.8675162315368651, -0.823180437088013, -0.850525206327438, -0.8610061049461359, -0.786662551760674, -0.858352085947991, -0.664344394207001, -0.312746956944465], "borderColor": "#4B5563", "backgroundColor": "#4B5563", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}, {"label": "KAZ - Control of corruption", "data": [-1.9257946252822902, -1.83405295610428, -1.9548120975494399, -1.89309408664704, -1.7450903058052099, -1.8801212787628099, -1.72543776035308, -1.6917424857616399, -1.68681602478027, -1.66709052324295, -1.58358154296875, -1.70180201530457, -1.6943643450737, -1.56615182757378, -1.58278043270111, -1.40341876149178, -1.47493053674698, -1.40819469690323, -1.42094668745995, -0.829898422956467, -0.479100120067596, -0.635915726423263, -0.43447907716035894, -0.25969073176384, -0.186615148186684], "borderColor": "#C2410C", "backgroundColor": "#C2410C", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}]}, "options": {"responsive": true, "maintainAspectRatio": false, "interaction": {"mode": "index", "intersect": false}, "plugins": {"legend": {"position": "bottom", "labels": {"boxWidth": 14, "boxHeight": 3}}, "tooltip": {"enabled": true}}, "scales": {"x": {"grid": {"display": false}, "ticks": {"maxTicksLimit": 8}}, "y": {"title": {"display": true, "text": "WGI estimate score"}, "grid": {"color": "#e8eef3"}, "ticks": {"precision": 1}}}}}</script>
+    </figure>
+    </template></section>
+    </main>
+  </div>
+  <script>
+    function fallbackMarkdown(text) {
+      const escaped = text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+      return escaped.split(/\n{2,}/).map((block) => `<p>${block.replace(/\n/g, "<br>")}</p>`).join("");
+    }
+    function renderMarkdown(text) {
+      return window.marked ? marked.parse(text) : fallbackMarkdown(text);
+    }
+    function replaceFigurePlaceholders(preview, panel) {
+      const pattern = /^\{\{\s*(figure|map|image):([a-z0-9-]+)\s*\}\}$/i;
+      preview.querySelectorAll("p").forEach((paragraph) => {
+        const match = (paragraph.textContent || "").trim().match(pattern);
+        if (!match) return;
+        const key = match[1].toLowerCase() === "figure" ? match[2].toLowerCase() : `${match[1].toLowerCase()}:${match[2].toLowerCase()}`;
+        const template = panel.querySelector(`template[data-figure-template="${key}"]`) || document.querySelector(`template[data-figure-template="${key}"]`);
+        if (!template) {
+          const note = document.createElement("p");
+          note.className = "source";
+          note.textContent = `Figure not available: ${key}`;
+          paragraph.replaceWith(note);
+          return;
+        }
+        paragraph.replaceWith(template.content.cloneNode(true));
+      });
+    }
+    function slugifyHeading(text) {
+      return text.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "") || "section";
+    }
+    function enhancePreview(preview) {
+      preview.querySelectorAll("h2, h3").forEach((heading) => {
+        if (!heading.id) heading.id = slugifyHeading(heading.textContent || "");
+      });
+    }
+    function scrollToHashTarget() {
+      if (!window.location.hash) return;
+      const id = decodeURIComponent(window.location.hash.slice(1));
+      const target = document.getElementById(id);
+      if (target) target.scrollIntoView({ block: "start" });
+    }
+    function setupSectionNavigation() {
+      document.querySelectorAll("a.section-link").forEach((link) => {
+        link.addEventListener("click", () => {
+          window.setTimeout(scrollToHashTarget, 30);
+        });
+      });
+    }
+    function setupMarkdownPanels() {
+      document.querySelectorAll("[data-md-panel]").forEach((panel) => {
+        const id = panel.getAttribute("data-md-panel");
+        const preview = panel.querySelector(".markdown-preview");
+        const editor = panel.querySelector(".markdown-editor");
+        const edit = panel.querySelector("[data-md-action='edit']");
+        const save = panel.querySelector("[data-md-action='save']");
+        const cancel = panel.querySelector("[data-md-action='cancel']");
+        const source = panel.getAttribute("data-md-source");
+        const storageKey = `uzb-report-markdown:v5:${id}`;
+        const original = editor.value;
+        const stored = localStorage.getItem(storageKey);
+        if (stored !== null && (!source || window.location.protocol === "file:")) editor.value = stored;
+        const showPreview = () => {
+          preview.innerHTML = renderMarkdown(editor.value);
+          replaceFigurePlaceholders(preview, panel);
+          enhancePreview(preview);
+          setupCharts();
+        };
+        const saveMarkdown = async () => {
+          if (source && window.location.protocol.startsWith("http")) {
+            const response = await fetch("/api/save-section", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ source, markdown: editor.value })
+            });
+            if (!response.ok) {
+              const message = await response.text();
+              throw new Error(message || `Save failed with ${response.status}`);
+            }
+            localStorage.removeItem(storageKey);
+          } else {
+            localStorage.setItem(storageKey, editor.value);
+            if (source) {
+              window.alert("This edit was saved only as a browser draft. Open the report through UZB/code/serve_report.py to save it permanently to the Markdown source file.");
+            }
+          }
+        };
+        const setEditing = (editing) => {
+          editor.hidden = !editing;
+          preview.hidden = editing;
+          edit.hidden = editing;
+          save.hidden = !editing;
+          cancel.hidden = !editing;
+        };
+        showPreview();
+        setEditing(false);
+        edit.addEventListener("click", () => setEditing(true));
+        save.addEventListener("click", async () => {
+          save.disabled = true;
+          try {
+            await saveMarkdown();
+            showPreview();
+            setEditing(false);
+          } catch (error) {
+            window.alert(error.message || "Could not save the Markdown source.");
+          } finally {
+            save.disabled = false;
+          }
+        });
+        cancel.addEventListener("click", () => {
+          editor.value = localStorage.getItem(storageKey) ?? original;
+          showPreview();
+          setEditing(false);
+        });
+      });
+    }
+    function setupCharts() {
+      if (!window.Chart) {
+        document.querySelectorAll(".figure-card").forEach((card) => {
+          const note = document.createElement("p");
+          note.className = "source";
+          note.textContent = "Chart.js could not be loaded from local assets/chart.umd.min.js.";
+          card.appendChild(note);
+        });
+        return;
+      }
+      document.querySelectorAll("script[type='application/json'][id$='-config']").forEach((script) => {
+        const canvasId = script.id.replace("-config", "");
+        const canvas = document.getElementById(canvasId);
+        if (!canvas) return;
+        if (canvas.dataset.chartReady === "1") return;
+        canvas.dataset.chartReady = "1";
+        new Chart(canvas, JSON.parse(script.textContent));
+      });
+    }
+    window.addEventListener("DOMContentLoaded", () => {
+      setupMarkdownPanels();
+      setupSectionNavigation();
+      setupCharts();
+      window.setTimeout(scrollToHashTarget, 60);
+    });
+    </script>
+</body>
+</html>

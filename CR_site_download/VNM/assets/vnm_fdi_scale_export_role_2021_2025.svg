@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 800" role="img" aria-label="Vietnam FDI registered disbursed and export role 2021 to 2025">
+  
+  <style>
+    .title{font:700 28px Arial,sans-serif;fill:#172026}
+    .subtitle{font:15px Arial,sans-serif;fill:#526069}
+    .panel-title{font:700 17px Arial,sans-serif;fill:#172026}
+    .panel-y{font:11px Arial,sans-serif;fill:#526069;text-anchor:end}
+    .panel-x{font:11px Arial,sans-serif;fill:#526069;text-anchor:middle}
+    .panel-last{font:700 11px Arial,sans-serif;fill:#172026}
+    .legend{font:11px Arial,sans-serif;fill:#526069}
+    .label{font:12px Arial,sans-serif;fill:#526069}
+    .small{font:11px Arial,sans-serif;fill:#65717a}
+    .value{font:700 22px Arial,sans-serif;fill:#172026}
+    .source{font:12px Arial,sans-serif;fill:#65717a}
+  </style>
+  <rect width="1100" height="800" fill="#f6f4ee"/>
+  <text x="54" y="44" class="title">FDI Scale and Export Role, 2021-2025</text>
+  <text x="54" y="68" class="subtitle">Registered capital shows future pipeline; disbursed FDI shows executed projects; export shares show how deeply foreign-invested firms dominate the trade platform.</text>
+  
+  <rect x="54" y="102" width="238" height="96" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="72" y="130" class="label">Registered FDI, 2025</text>
+  <text x="72" y="162" class="value">USD 38.42 bn</text>
+  <text x="72" y="184" class="small">new, adjusted, and equity capital</text>
+  
+  <rect x="306" y="102" width="238" height="96" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="324" y="130" class="label">Disbursed FDI, 2025</text>
+  <text x="324" y="162" class="value">USD 27.62 bn</text>
+  <text x="324" y="184" class="small">highest in the 2021-2025 period</text>
+  
+  <rect x="558" y="102" width="238" height="96" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="576" y="130" class="label">FDI-sector exports</text>
+  <text x="576" y="162" class="value">USD 367.09 bn</text>
+  <text x="576" y="184" class="small">goods exports including crude oil</text>
+  
+  <rect x="810" y="102" width="238" height="96" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="828" y="130" class="label">FDI export share</text>
+  <text x="828" y="162" class="value">77.3%</text>
+  <text x="828" y="184" class="small">share of goods export turnover</text>
+  <rect x="54" y="236" width="476" height="222" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="76" y="268" class="panel-title">Registered and disbursed FDI</text>
+  <line x1="108" y1="412.00" x2="500" y2="412.00" stroke="#edf2ef"/>
+  <text x="98" y="416.00" class="panel-y">15</text>
+  <line x1="108" y1="372.67" x2="500" y2="372.67" stroke="#edf2ef"/>
+  <text x="98" y="376.67" class="panel-y">25</text>
+  <line x1="108" y1="333.33" x2="500" y2="333.33" stroke="#edf2ef"/>
+  <text x="98" y="337.33" class="panel-y">35</text>
+  <line x1="108" y1="294.00" x2="500" y2="294.00" stroke="#edf2ef"/>
+  <text x="98" y="298.00" class="panel-y">45</text>
+  <line x1="108.00" y1="294" x2="108.00" y2="412" stroke="#f1f4f5"/>
+  <text x="108.00" y="436" class="panel-x">2021</text>
+  <line x1="206.00" y1="294" x2="206.00" y2="412" stroke="#f1f4f5"/>
+  <text x="206.00" y="436" class="panel-x">2022</text>
+  <line x1="304.00" y1="294" x2="304.00" y2="412" stroke="#f1f4f5"/>
+  <text x="304.00" y="436" class="panel-x">2023</text>
+  <line x1="402.00" y1="294" x2="402.00" y2="412" stroke="#f1f4f5"/>
+  <text x="402.00" y="436" class="panel-x">2024</text>
+  <line x1="500.00" y1="294" x2="500.00" y2="412" stroke="#f1f4f5"/>
+  <text x="500.00" y="436" class="panel-x">2025</text>
+  <path d="M108.00,348.48 L206.00,361.97 L304.00,327.04 L402.00,320.63 L500.00,319.88" fill="none" stroke="#176b63" stroke-width="3"/>
+  <circle cx="500.00" cy="319.88" r="4" fill="#176b63" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="448.00" y="311.88" class="panel-last">38.4</text>
+  <rect x="76" y="428" width="10" height="10" fill="#176b63" rx="2"/>
+  <text x="92" y="437" class="legend">Registered FDI</text>
+  <path d="M108.00,393.36 L206.00,382.89 L304.00,379.83 L402.00,371.29 L500.00,362.36" fill="none" stroke="#b8873a" stroke-width="3"/>
+  <circle cx="500.00" cy="362.36" r="4" fill="#b8873a" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="448.00" y="354.36" class="panel-last">27.6</text>
+  <rect x="232" y="428" width="10" height="10" fill="#b8873a" rx="2"/>
+  <text x="248" y="437" class="legend">Disbursed FDI</text>
+  <rect x="570" y="236" width="476" height="222" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="592" y="268" class="panel-title">FDI sector share of trade</text>
+  <line x1="624" y1="412.00" x2="1016" y2="412.00" stroke="#edf2ef"/>
+  <text x="614" y="416.00" class="panel-y">60%</text>
+  <line x1="624" y1="382.50" x2="1016" y2="382.50" stroke="#edf2ef"/>
+  <text x="614" y="386.50" class="panel-y">65%</text>
+  <line x1="624" y1="353.00" x2="1016" y2="353.00" stroke="#edf2ef"/>
+  <text x="614" y="357.00" class="panel-y">70%</text>
+  <line x1="624" y1="323.50" x2="1016" y2="323.50" stroke="#edf2ef"/>
+  <text x="614" y="327.50" class="panel-y">75%</text>
+  <line x1="624" y1="294.00" x2="1016" y2="294.00" stroke="#edf2ef"/>
+  <text x="614" y="298.00" class="panel-y">80%</text>
+  <line x1="624.00" y1="294" x2="624.00" y2="412" stroke="#f1f4f5"/>
+  <text x="624.00" y="436" class="panel-x">2021</text>
+  <line x1="722.00" y1="294" x2="722.00" y2="412" stroke="#f1f4f5"/>
+  <text x="722.00" y="436" class="panel-x">2022</text>
+  <line x1="820.00" y1="294" x2="820.00" y2="412" stroke="#f1f4f5"/>
+  <text x="820.00" y="436" class="panel-x">2023</text>
+  <line x1="918.00" y1="294" x2="918.00" y2="412" stroke="#f1f4f5"/>
+  <text x="918.00" y="436" class="panel-x">2024</text>
+  <line x1="1016.00" y1="294" x2="1016.00" y2="412" stroke="#f1f4f5"/>
+  <text x="1016.00" y="436" class="panel-x">2025</text>
+  <path d="M624.00,331.76 L722.00,327.04 L820.00,334.71 L918.00,342.97 L1016.00,309.93" fill="none" stroke="#176b63" stroke-width="3"/>
+  <circle cx="1016.00" cy="309.93" r="4" fill="#176b63" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="964.00" y="301.93" class="panel-last">77.3%</text>
+  <rect x="592" y="428" width="10" height="10" fill="#176b63" rx="2"/>
+  <text x="608" y="437" class="legend">Exports</text>
+  <path d="M624.00,378.37 L722.00,381.91 L820.00,387.22 L918.00,393.12 L1016.00,354.18" fill="none" stroke="#7c2f2a" stroke-width="3"/>
+  <circle cx="1016.00" cy="354.18" r="4" fill="#7c2f2a" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="964.00" y="346.18" class="panel-last">69.8%</text>
+  <rect x="734" y="428" width="10" height="10" fill="#7c2f2a" rx="2"/>
+  <text x="750" y="437" class="legend">Imports</text>
+  <rect x="54" y="506" width="992" height="206" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="76" y="540" class="panel-title">Domestic vs foreign-invested trade structure, 2025</text>
+  <text x="76" y="578" class="label">Goods exports</text>
+  <rect x="206" y="558" width="190.88" height="28" rx="6" fill="#b8873a"/>
+  <rect x="396.88" y="558" width="649.12" height="28" rx="6" fill="#176b63"/>
+  <text x="206" y="608" class="small">Domestic sector USD 107.95 bn</text>
+  <text x="480" y="608" class="small">FDI sector USD 367.09 bn</text>
+  <text x="76" y="648" class="label">Goods imports</text>
+  <rect x="206" y="628" width="253.62" height="28" rx="6" fill="#b8873a"/>
+  <rect x="459.62" y="628" width="586.38" height="28" rx="6" fill="#7c2f2a"/>
+  <text x="206" y="680" class="small">Domestic sector USD 137.38 bn</text>
+  <text x="480" y="680" class="small">FDI sector USD 317.63 bn</text>
+  <text x="764" y="608" class="value">+USD 49.46 bn</text>
+  <text x="764" y="632" class="small">FDI-sector goods trade surplus</text>
+  <text x="764" y="668" class="value">USD -29.43 bn</text>
+  <text x="764" y="692" class="small">domestic-sector goods balance</text>
+  <text x="54" y="752" class="source">Sources: MPI/FIA FDI reports for 2021-2024; National Statistics Office of Viet Nam, Socio-economic situation in Q4 and 2025. Units are current US$ billions.</text>
+</svg>

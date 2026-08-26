@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>8.1 Population Scale and Age Structure | VNM Country Report</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+  <script src="../assets/chart.umd.min.js"></script>
+  <style>
+    body{margin:0;background:#f4f6f4;color:#17201b;font-family:Arial,Helvetica,sans-serif;line-height:1.65}
+    .layout{display:grid;grid-template-columns:320px minmax(0,1fr);min-height:100vh}
+    aside{position:sticky;top:0;height:100vh;overflow:auto;background:#fff;border-right:1px solid #d9ded8;padding:18px}
+    aside a{display:block;color:#25312a;text-decoration:none;border-radius:6px;padding:6px 8px;font-size:13px}
+    aside a:hover,aside a.active{background:#e8f0ea;color:#0d5a6a} summary{cursor:pointer;font-weight:700;margin:10px 0 4px}
+    .home{font-weight:800;margin-bottom:8px}
+    main{max-width:1050px;padding:36px min(6vw,72px) 90px}
+    .crumb{font-size:13px;color:#607067;margin:0 0 8px} h1{font-size:36px;line-height:1.15;margin:0 0 8px}
+    .chapter-title{color:#56645c;margin:0 0 26px}
+    .section-body,.chart-card{background:#fff;border:1px solid #d9ded8;border-radius:8px;padding:18px;margin:0 0 22px}
+    .section-body h2{font-size:26px;margin:0 0 14px} .section-body p{font-family:Georgia,'Times New Roman',serif;font-size:18px;margin:0 0 14px}
+    table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px} th,td{border:1px solid #d9ded8;padding:8px;vertical-align:top} th{background:#edf2ea;text-align:left}
+    code{background:#eef2ee;border:1px solid #d8ded8;border-radius:4px;padding:1px 4px} .source-note,figcaption{font-size:12px;color:#607067}
+    .chart-frame{height:340px} .chart-frame canvas{width:100%;height:100%}
+    .figure-card,.map-card,.symbol-figure{background:#fff;border:1px solid #d9ded8;border-radius:8px;padding:14px;margin:18px 0 24px}
+    .source{color:#607067;font-size:12px;margin:10px 0 0} .map-grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(280px,.7fr);gap:16px;align-items:start}
+    .adm-map{width:100%;height:auto;border:1px solid #d9ded8;background:#f7fbfc} .adm-path{stroke:#fff;stroke-width:.7} .map-label{font-size:6px;fill:#32424f;text-anchor:middle;pointer-events:none} .neighbor-label{font-size:12px;fill:#6c7b88}
+    .capital-marker circle{fill:#c23b22;stroke:#fff;stroke-width:1.4} .capital-marker text{font-size:12px;fill:#17212b;font-weight:700} .map-table-wrap{max-height:420px;overflow:auto}
+    .symbol-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px} .symbol-card{min-height:260px;border:1px solid #d9ded8;border-radius:8px;background:#fbfdfe;padding:14px;display:flex;flex-direction:column;gap:10px}
+    .symbol-card h3{font-size:18px;margin:2px 0 0} .symbol-card p{font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:1.48;color:#34424e;margin:0} .symbol-kicker{color:#607067;font-size:11px;text-transform:uppercase;letter-spacing:.06em}
+    .flag-indonesia{height:92px;border:1px solid #b9c6cd;border-radius:4px;overflow:hidden} .flag-indonesia span{display:block;height:50%} .flag-indonesia span:first-child{background:#c9182b} .flag-indonesia span:last-child{background:#fff}
+    .garuda-mark{height:92px;display:grid;grid-template-columns:1fr 56px 1fr;align-items:center;gap:4px} .garuda-mark .wing{height:60px;background:#c59a35;border:1px solid #9d761e} .garuda-mark .left{border-radius:60px 10px 18px 60px} .garuda-mark .right{border-radius:10px 60px 60px 18px}
+    .garuda-mark .body{height:82px;background:#d6ad46;border:1px solid #9d761e;border-radius:36px 36px 18px 18px} .garuda-mark .shield{grid-column:2;justify-self:center;margin-top:-58px;width:36px;height:42px;border-radius:8px 8px 14px 14px;background:#1f3f68;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;border:2px solid #f1d47b}
+    .motto-line{height:92px;display:flex;align-items:center;justify-content:center;text-align:center;border:1px solid #cfd9de;border-radius:6px;background:linear-gradient(180deg,#fff,#eef5f7);font-weight:800;color:#15384a;padding:12px} .anthem-bars{height:92px;display:flex;align-items:end;gap:8px;justify-content:center;border:1px solid #cfd9de;border-radius:6px;background:#f8fbfc;padding:16px}
+    .anthem-bars span{width:22px;background:#0f6f87;border-radius:4px 4px 0 0} .anthem-bars span:nth-child(1){height:38px} .anthem-bars span:nth-child(2){height:62px} .anthem-bars span:nth-child(3){height:48px} .anthem-bars span:nth-child(4){height:72px}
+    @media(max-width:860px){.layout{grid-template-columns:1fr}aside{position:relative;height:auto}main{padding:24px 18px}}
+  
+    .md-toolbar{display:flex;justify-content:flex-end;gap:8px;margin:0 0 14px}
+    .md-toolbar button{border:1px solid #0d5a6a;background:#0d5a6a;color:#fff;border-radius:5px;padding:7px 11px;font:700 12px Arial,Helvetica,sans-serif;cursor:pointer}
+    .md-toolbar button[data-md-action='cancel']{background:#fff;color:#25312a;border-color:#cfd8d3}
+    .md-editor{width:100%;min-height:520px;border:1px solid #cfd8d3;border-radius:6px;padding:14px;font:14px Consolas,monospace;line-height:1.45}
+
+  </style>
+  <script src="../assets/marked.min.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <aside><a class='home' href='../index.html'>VNM cover</a>
+<details ><summary>1. Country Overview</summary><a class='section-link ' href='01-01-national-profile.html'>1.1 National Profile</a><a class='section-link ' href='01-02-state-symbols.html'>1.2 State Symbols</a><a class='section-link ' href='01-03-geography-and-administrative-divisions.html'>1.3 Geography and Administrative Divisions</a><a class='section-link ' href='01-04-core-institutional-diagnosis.html'>1.4 Core Institutional Diagnosis</a><a class='section-link ' href='01-05-evidence-base.html'>1.5 Evidence Base and Reading Direction</a></details>
+<details ><summary>2. Historical Background</summary><a class='section-link ' href='02-01-civilizational-layers-and-frontier-statecraft.html'>2.1 Civilizational Layers and Frontier Statecraft</a><a class='section-link ' href='02-02-colonial-rule-revolution-and-war.html'>2.2 Colonial Rule, Revolution, and War</a><a class='section-link ' href='02-03-reunification-and-doi-moi.html'>2.3 Reunification and Doi Moi</a><a class='section-link ' href='02-04-historical-legacies-in-present-institutions.html'>2.4 Historical Legacies in Present Institutions</a></details>
+<details ><summary>3. Constitution and Basic State Order</summary><a class='section-link ' href='03-01-constitutional-order-and-amendments.html'>3.1 Constitutional Order, Ownership, and the Architecture of State Power</a><a class='section-link ' href='03-02-sovereignty-party-leadership-and-territorial-integrity.html'>3.2 Sovereignty, Party Leadership, and Territorial Integrity</a><a class='section-link ' href='03-03-rights-duties-and-socialist-rule-of-law.html'>3.3 Rights, Duties, and Socialist Rule of Law</a><a class='section-link ' href='03-04-state-power-review-audit-and-emergency-authority.html'>3.4 State Power, Review, Audit, and Emergency Authority</a></details>
+<details ><summary>4. Political System and Power Structure</summary><a class='section-link ' href='04-01-party-leadership-and-state-institutions.html'>4.1 Party Leadership and State Institutions</a><a class='section-link ' href='04-02-national-assembly-elections-and-representation.html'>4.2 National Assembly, Elections, and Representation</a><a class='section-link ' href='04-03-executive-coordination-and-government-formation.html'>4.3 Executive Coordination and Government Formation</a><a class='section-link ' href='04-04-judiciary-rule-of-law-corruption-and-accountability.html'>4.4 Courts, Procuracy, Inspection, and Anti-Corruption</a><a class='section-link ' href='04-05-local-politics-and-real-power-relations.html'>4.5 Local Politics and Real Power Relations</a><a class='section-link ' href='04-06-political-system-diagnostics-and-democratic-trajectory.html'>4.6 Political System Diagnostics and Democratic Trajectory</a></details>
+<details ><summary>5. Administrative System and Government Organization</summary><a class='section-link ' href='05-01-central-government-and-ministerial-system.html'>5.1 Central Government and Ministerial System</a><a class='section-link ' href='05-02-organizational-management-and-bureaucratic-reform.html'>5.2 Organizational Management and Bureaucratic Reform</a><a class='section-link ' href='05-03-human-resource-management-and-civil-service.html'>5.3 Human Resource Management and Civil Service</a><a class='section-link ' href='05-04-financial-administration-procurement-audit-and-inspection.html'>5.4 Financial Administration, Procurement, Audit, and Inspection</a><a class='section-link ' href='05-05-local-administration-and-service-delivery.html'>5.5 Local Administration and Service Delivery</a><a class='section-link ' href='05-06-digital-government-and-administrative-accountability.html'>5.6 Digital Government and Administrative Accountability</a><a class='section-link ' href='05-07-implementation-capacity-and-administrative-performance.html'>5.7 Implementation Capacity and Administrative Performance</a></details>
+<details ><summary>6. Governance and Institutional Capacity</summary><a class='section-link ' href='06-01-government-effectiveness-and-regulatory-quality.html'>6.1 Government Effectiveness and Regulatory Quality</a><a class='section-link ' href='06-02-rule-of-law-and-corruption-control.html'>6.2 Rule of Law and Corruption Control</a><a class='section-link ' href='06-03-voice-accountability-and-stability.html'>6.3 Voice, Accountability, and Stability</a><a class='section-link ' href='06-04-what-governance-indicators-reveal.html'>6.4 What Governance Indicators Reveal</a></details>
+<details ><summary>7. Fiscal System and Public Sector</summary><a class='section-link ' href='07-01-revenue-taxation-and-expenditure.html'>7.1 Revenue, Taxation, and Expenditure</a><a class='section-link ' href='07-02-deficit-debt-and-fiscal-space.html'>7.2 Fiscal Balance, Debt, and Fiscal Space</a><a class='section-link ' href='07-03-public-investment-soes-and-quasi-fiscal-risk.html'>7.3 Public Investment, Procurement, SOEs, and Quasi-Fiscal Risk</a><a class='section-link ' href='07-04-budget-decentralization-and-audit.html'>7.4 Budget Decentralization, Procurement Oversight, and Audit</a><a class='section-link ' href='07-05-fiscal-capacity-and-public-sector-risks.html'>7.5 Fiscal Capacity and Public Sector Risks</a></details>
+<details open><summary>8. Population and Social Structure</summary><a class='section-link active' href='08-01-population-scale-and-age-structure.html'>8.1 Population Scale and Age Structure</a><a class='section-link ' href='08-02-urbanization-and-regional-distribution.html'>8.2 Urbanization and Regional Distribution</a><a class='section-link ' href='08-03-ethnicity-language-religion-and-social-cohesion.html'>8.3 Ethnicity, Language, Religion, and Social Cohesion</a><a class='section-link ' href='08-04-migration-remittances-and-inclusion.html'>8.4 Migration, Remittances, and Inclusion</a></details>
+<details ><summary>9. Macroeconomic Structure</summary><a class='section-link ' href='09-01-gdp-scale-growth-and-income.html'>9.1 GDP Scale, Growth, and Income Level</a><a class='section-link ' href='09-02-inflation-exchange-rate-and-macro-stability.html'>9.2 Inflation, Exchange-Rate Management, and Macro Stability</a><a class='section-link ' href='09-03-industrial-structure-and-productivity.html'>9.3 Industrial Structure, Sectoral Transformation, and Productivity</a><a class='section-link ' href='09-04-growth-model-and-structural-vulnerabilities.html'>9.4 External Position, Trade Balance, and Structural Constraints</a><a class='section-link ' href='09-05-growth-driver-model-and-interpretation.html'>9.5 Growth Driver Model and Interpretation</a></details>
+<details ><summary>10. Trade, Investment, and External Economy</summary><a class='section-link ' href='10-01-exports-imports-and-current-account.html'>10.1 Export-Import Trends, Trade Dependence, and Export Transformation</a><a class='section-link ' href='10-02-fdi-and-export-manufacturing.html'>10.2 FDI and Export Manufacturing</a><a class='section-link ' href='10-03-trading-partners-supply-chains-and-technology-upgrading.html'>10.3 Trading Partners, Supply Chains, and Technology Upgrading</a><a class='section-link ' href='10-04-investment-rules-zones-and-industrial-policy.html'>10.4 Investment Rules, Zones, and Industrial Policy</a></details>
+<details ><summary>11. Infrastructure, Energy, and Digital Connectivity</summary><a class='section-link ' href='11-01-energy-access-and-power-system-reform.html'>11.1 Energy Access and Power System Reform</a><a class='section-link ' href='11-02-transport-logistics-and-corridors.html'>11.2 Transport, Logistics, and Corridors</a><a class='section-link ' href='11-03-digital-connectivity.html'>11.3 Digital Connectivity, AI Infrastructure, and the Digital Economy</a><a class='section-link ' href='11-04-infrastructure-governance-and-climate-resilience.html'>11.4 Infrastructure Governance and Climate Resilience</a></details>
+<details ><summary>12. Labor Market and Human Capital</summary><a class='section-link ' href='12-01-labor-force-and-participation.html'>12.1 Labor Force and Participation</a><a class='section-link ' href='12-02-women-youth-and-informality.html'>12.2 Women, Youth, and Informality</a><a class='section-link ' href='12-03-agricultural-employment-and-productivity.html'>12.3 Agricultural Employment and Productivity</a><a class='section-link ' href='12-04-skills-education-and-human-capital.html'>12.4 Skills, Education, and Human Capital</a></details>
+<details ><summary>13. Education, Health, and Welfare</summary><a class='section-link ' href='13-01-education-system-and-public-spending.html'>13.1 Education System, Skills Policy, and Public Spending</a><a class='section-link ' href='13-02-health-outcomes-and-service-capacity.html'>13.2 Health Care, Population Ageing, and Financial Protection</a><a class='section-link ' href='13-03-water-sanitation-nutrition-and-welfare.html'>13.3 Water, Sanitation, Nutrition, and Welfare</a><a class='section-link ' href='13-04-human-development-and-territorial-equity.html'>13.4 Human Development and Territorial Equity</a></details>
+<details ><summary>14. Financial Sector and Economic Institutions</summary><a class='section-link ' href='14-01-banks-credit-and-capital-markets.html'>14.1 Banks, Credit, and Capital Markets</a><a class='section-link ' href='14-02-state-bank-of-vietnam-and-financial-supervision.html'>14.2 State Bank of Vietnam and Financial Supervision</a><a class='section-link ' href='14-03-fintech-payments-and-inclusion.html'>14.3 Fintech, Payments, and Inclusion</a><a class='section-link ' href='14-04-financial-stability-and-reform-priorities.html'>14.4 Financial Stability and Reform Priorities</a></details>
+<details ><summary>15. Foreign Relations, Security, and Geopolitics</summary><a class='section-link ' href='15-01-bamboo-diplomacy-and-asean.html'>15.1 Bamboo Diplomacy, ASEAN, and the Evolution of Vietnam’s Foreign Policy Principles</a><a class='section-link ' href='15-02-china-the-united-states-and-the-east-sea.html'>15.2 China, the United States, and the East Sea</a><a class='section-link ' href='15-03-defense-police-border-and-transnational-risks.html'>15.3 Defense, Police, Border, and Transnational Risks</a><a class='section-link ' href='15-04-mekong-energy-security-and-strategic-corridors.html'>15.4 Mekong, Energy Security, and Strategic Corridors</a></details>
+<details ><summary>16. Major Policies and National Development Strategy</summary><a class='section-link ' href='16-01-evolution-of-national-development-strategy.html'>16.1 Evolution of National Development Strategy</a><a class='section-link ' href='16-02-socio-economic-development-strategy-2021-2030.html'>16.2 Socio-Economic Development Strategy 2021-2030</a><a class='section-link ' href='16-03-administrative-restructuring-and-public-administration-reform.html'>16.3 Administrative Restructuring and Public Administration Reform</a><a class='section-link ' href='16-04-digital-green-and-industrial-transformation.html'>16.4 Digital, Green, and Industrial Transformation</a><a class='section-link ' href='16-05-implementation-matrix-and-risks.html'>16.5 Implementation Matrix and Risks</a><a class='section-link ' href='16-06-green-growth-climate-governance-and-sdg-implementation.html'>16.6 Green Growth, Climate Governance, and SDG Implementation</a></details>
+<details ><summary>17. Integrated Assessment</summary><a class='section-link ' href='17-01-national-operating-model.html'>17.1 National Operating Model</a><a class='section-link ' href='17-02-institutional-strengths-risks-and-bottlenecks.html'>17.2 Institutional Strengths, Risks, and Bottlenecks</a><a class='section-link ' href='17-03-implications-for-korea-and-international-cooperation.html'>17.3 Implications for Korea and International Cooperation</a><a class='section-link ' href='17-04-vietnam-and-comparative-administration-theory.html'>17.4 Vietnam and Comparative Administration Theory</a><a class='section-link ' href='17-05-strategic-outlook.html'>17.5 Strategic Outlook</a></details>
+<details ><summary>18. Appendix, Sources, and Method</summary><a class='section-link ' href='18-01-timeline.html'>18.1 Timeline</a><a class='section-link ' href='18-02-government-organization-chart.html'>18.2 Government Organization Chart</a><a class='section-link ' href='18-03-major-laws-and-policy-documents.html'>18.3 Major Laws and Policy Documents</a><a class='section-link ' href='18-04-indicator-codebook.html'>18.4 Indicator Codebook</a><a class='section-link ' href='18-05-update-workflow-and-evidence-archive.html'>18.5 Update Workflow and Evidence Archive</a></details>
+<details ><summary>19. References</summary><a class='section-link ' href='19-01-references.html'>19.1 References</a><a class='section-link ' href='19-02-citation-and-source-integrity-notes.html'>19.2 Citation and Source Integrity Notes</a></details></aside>
+    <main>
+      <p class="crumb"><a href="../08-society.html">Chapter 8</a> / Section 1</p>
+      <h1>8.1 Population Scale and Age Structure</h1>
+      <p class="chapter-title">8. Population and Social Structure</p>
+      <article class="section-body editable-section" data-md-panel="08-01-population-scale-and-age-structure" data-md-source="sections/08-01-population-scale-and-age-structure.md">
+  <div class="md-toolbar">
+    <button type="button" data-md-action="edit">Edit Markdown</button>
+    <button type="button" data-md-action="save" hidden>Save</button>
+    <button type="button" data-md-action="cancel" hidden>Cancel</button>
+  </div>
+  <div class="md-preview"><h2 id='8-1-population-scale-and-age-structure'>8.1 Population Scale and Age Structure</h2>
+<p><strong>ASEAN comparative lens (2026).</strong> Vietnam should be read in ASEAN comparison as ASEAN&#x27;s most prominent party-led, export-manufacturing upgrading case. Unlike the Philippines&#x27; service-remittance profile, Thailand&#x27;s older industrial-tourism base, Malaysia&#x27;s resource-industrial federal structure, or Indonesia&#x27;s archipelagic domestic-market scale, Vietnam&#x27;s comparative issue is how a socialist party-state manages very open global production networks. For this section, the regional comparison should compare demographic pressure, urbanization, migration, ethnicity, language, religion, and territorial inequality across maritime, mainland, city-state, and landlocked ASEAN settings. Local comparable indicators show: population 100.99 million (2024), rank 3 among the nine ASEAN reports in this workspace; GDP US$476.39 billion (2024), rank 4 among the nine ASEAN reports in this workspace; GDP per capita US$4,717 (2024), rank 5 among the nine ASEAN reports in this workspace; real GDP growth 7.09% (2024), rank 1 among the nine ASEAN reports in this workspace; government effectiveness 0.09 (2023), rank 6 among the nine ASEAN reports in this workspace; internet use 84.15% (2024), rank 4 among the nine ASEAN reports in this workspace. Use `sources/documents/regional/asean_comparative_lens_2026.md` together with ASEANstats, ASEAN Secretariat materials, and the country processed-indicator files before making cross-ASEAN claims.</p>
+<p>Viet Nam&#x27;s population structure is not only a demographic background variable. It defines the scale of the state itself: how many children must be educated, how many workers must be employed and protected, how many older citizens will need health care and pensions, how large urban-service systems must become, and how far public administration must reach across territory. The latest processed World Bank WDI evidence in this project places the population at 100.99 million in 2024. The 2025 population pyramid below uses the UN World Population Prospects 2024 medium-variant estimate/projection as visualized by PopulationPyramids.org, which places the 2025 population at about 101.60 million and the median age at 34.4 years. The two sources are used for different purposes: WDI is retained for the annual indicator series, while the UN WPP age-sex structure is used for the pyramid visualization.</p>
+<p>The main demographic story is a transition from labor abundance to aging under conditions of continued development pressure. In 2024, the working-age population share remained high at 67.7 percent, while the youth share stood at 23.2 percent and the 65-and-over share at 9.0 percent. This means Viet Nam still has a substantial working-age base, but the demographic dividend is narrowing. Fertility was 1.895 births per woman in 2024, below replacement level. Population growth was about 0.63 percent. The result is a state that must simultaneously support industrial upgrading, youth opportunity, and preparation for old-age welfare.</p>
+<figure class="institution-figure">
+<img alt="Viet Nam population pyramids in 1990, 2000, 2010, and 2025" class="institution-diagram" src="../assets/vnm_population_pyramids_1990_2025.svg"/>
+<figcaption>Viet Nam's age-sex structure shifted from a youth-heavy pyramid in 1990 to a thicker working-age profile in 2010 and a more stationary, aging structure by 2025. Source: PopulationPyramids.org, based on the United Nations World Population Prospects 2024 Revision.</figcaption>
+</figure>
+<p>The 1990 pyramid shows a classic post-war and early reform-period structure: a broad base, a very large child population, and relatively small elderly cohorts. Administratively, this was the age structure of school expansion, basic health provision, rural employment absorption, and rapid labor-force entry. The state had to build human capital for a very young population while still operating with limited fiscal capacity and incomplete service infrastructure.</p>
+<p>By 2000 the base had narrowed, but the lower and middle age bands were still large. This was the beginning of a more favorable dependency structure. Fewer births reduced pressure on the youngest cohorts, while large cohorts entered working age. The administrative challenge therefore shifted from simply absorbing population growth toward expanding lower-secondary education, vocational training, urban employment, and labor-intensive industrial zones.</p>
+<p>The 2010 pyramid captures the demographic dividend more clearly. The largest cohorts were concentrated in working ages, while the child share had fallen and the elderly share remained limited. This structure supported export manufacturing, domestic migration, and rapid urban growth. But it also created a policy deadline: if a country does not raise productivity, skills, and social insurance coverage while the working-age share is high, the dividend can be consumed before it is institutionalized.</p>
+<p>The 2025 pyramid is no longer expansive in the old sense. The base is narrower, the 30-49 age bands are thick, and the upper age bands are visibly wider. This does not mean Viet Nam is already an old society in the same way as Japan, Korea, or some European countries, but it does mean that aging has become a national administrative problem. Health finance, pensions, community care, elderly-friendly local services, and labor productivity now belong at the center of population policy.</p>
+<figure class="institution-figure">
+<img alt="Viet Nam population growth and fertility trends from 1990 to latest available data" class="institution-diagram" src="../assets/vnm_population_growth_fertility_trends.svg"/>
+<figcaption>Population growth fell from about 2.09 percent in 1990 to 0.63 percent in 2024. Fertility fell from 3.60 births per woman in 1990 to below replacement level in the 2020s. Source: World Bank WDI for 1990-2024 series; PopulationPyramids.org/UN WPP 2024 for the 2025 fertility marker.</figcaption>
+</figure>
+<p>The trend chart makes the same point in time-series form. In 1990 Viet Nam still had high demographic momentum: annual population growth exceeded 2 percent and fertility was 3.60 births per woman. By 2000 fertility had fallen to about replacement level, and by 2010 it was already below replacement. Population growth did not collapse immediately because large earlier cohorts continued to move through childbearing and working ages, but the long-term direction was clear. By 2024 the WDI series shows population growth at only 0.63 percent and fertility at 1.895 births per woman. The 2025 WPP/PopulationPyramids fertility marker is close, at 1.91 births per woman.</p>
+<p>This combination is politically and administratively important because the timing of demands changes. When fertility falls, pressure on primary-school expansion gradually eases, but demand for tertiary education, skills training, housing, urban transport, employment services, and social insurance rises. When growth slows and aging advances, the state loses the easy option of solving economic problems by simply mobilizing ever-larger young cohorts. Policy success depends increasingly on productivity, formalization, labor mobility, health-system capacity, and pension sustainability.</p>
+<table><thead><tr><th>Indicator</th><th>2024 value</th><th>Administrative meaning</th></tr></thead><tbody><tr><td>Total population</td><td>100.99 million</td><td>Large service-delivery, infrastructure, housing, education, and health-care task.</td></tr><tr><td>Annual population growth</td><td>0.63 percent</td><td>Continued growth, but no longer the high-growth demographic environment of earlier development decades.</td></tr><tr><td>Fertility rate</td><td>1.895 births per woman</td><td>Long-term pressure on labor supply, school networks, family policy, and pension sustainability.</td></tr><tr><td>Ages 0-14</td><td>23.2 percent</td><td>Education and child-health demand remain large, but the youth share is declining.</td></tr><tr><td>Ages 15-64</td><td>67.7 percent</td><td>Labor force remains the core development asset, but productivity now matters more than simple labor abundance.</td></tr><tr><td>Ages 65+</td><td>9.0 percent</td><td>Aging is becoming a national policy problem for pensions, health care, elderly care, and local services.</td></tr><tr><td>Young dependency ratio</td><td>34.3 per 100 working-age people</td><td>Schools, child welfare, and family services remain major expenditure areas.</td></tr><tr><td>Old-age dependency ratio</td><td>13.4 per 100 working-age people</td><td>Still moderate, but rising pressure on social insurance and health finance is already visible.</td></tr></tbody></table>
+<p>The first implication is fiscal. A young population requires schools, maternal and child health, vocational training, and job creation. An aging population requires pensions, chronic-disease management, long-term care, community health systems, and age-friendly local services. Viet Nam must finance both agendas while also investing in infrastructure, climate adaptation, digital government, industrial policy, and defense. Demography therefore turns into a public-finance problem: if revenue mobilization and expenditure efficiency do not improve, the state may face a squeeze between development investment and social protection.</p>
+<p>The second implication is labor-market strategy. Viet Nam&#x27;s export manufacturing success benefited from a large and relatively young labor force. That advantage is no longer enough. A lower fertility path means the future labor market cannot rely on endless rural-to-urban labor transfer. Industrial upgrading requires productivity growth, better technical education, management capability, automation readiness, higher female labor-force participation, and stronger adult reskilling. Demography therefore changes the meaning of industrial policy. The central question becomes whether the state can move workers from low-productivity agriculture, informal services, and low-wage assembly into higher-value production and services.</p>
+<p>The third implication is administrative targeting. National averages conceal very different local problems. Some industrial and metropolitan areas face labor inflows, housing pressure, school crowding, public transport demand, and environmental stress. Some rural and upland areas face outmigration, aging villages, weaker tax bases, and service-maintenance problems. The same demographic trend can therefore produce opposite local tasks: expanding urban infrastructure in one place and sustaining basic services in a shrinking locality elsewhere. A capable administrative system must see both.</p>
+<p>The fourth implication is political. Population aging changes the social contract. A developmental state often builds legitimacy by delivering growth, jobs, infrastructure, and poverty reduction. As the population ages, citizens also judge the state by health security, pensions, elderly care, and the fairness of social insurance. If formal workers receive better protection than informal or migrant workers, demographic aging can sharpen social inequality. If rural elderly people depend heavily on family support while young workers migrate, the burden of care becomes both a household problem and a local-government problem.</p>
+<p>Viet Nam&#x27;s demographic challenge cannot be captured by the labels &quot;too many people&quot; or &quot;too few births.&quot; It is the interaction of scale, aging, labor mobility, regional imbalance, welfare demand, and state capacity. The country still has a working-age advantage, but that advantage must be converted into productivity before aging accelerates. For this book, population is therefore treated as a test of administrative conversion: can the party-state translate a favorable but narrowing demographic window into skills, social protection, urban management, and territorial equity?</p></div>
+  <textarea class="md-editor" hidden>## 8.1 Population Scale and Age Structure
+
+&lt;!-- asean-comparative-lens-2026:start --&gt;
+**ASEAN comparative lens (2026).** Vietnam should be read in ASEAN comparison as ASEAN&#x27;s most prominent party-led, export-manufacturing upgrading case. Unlike the Philippines&#x27; service-remittance profile, Thailand&#x27;s older industrial-tourism base, Malaysia&#x27;s resource-industrial federal structure, or Indonesia&#x27;s archipelagic domestic-market scale, Vietnam&#x27;s comparative issue is how a socialist party-state manages very open global production networks. For this section, the regional comparison should compare demographic pressure, urbanization, migration, ethnicity, language, religion, and territorial inequality across maritime, mainland, city-state, and landlocked ASEAN settings. Local comparable indicators show: population 100.99 million (2024), rank 3 among the nine ASEAN reports in this workspace; GDP US$476.39 billion (2024), rank 4 among the nine ASEAN reports in this workspace; GDP per capita US$4,717 (2024), rank 5 among the nine ASEAN reports in this workspace; real GDP growth 7.09% (2024), rank 1 among the nine ASEAN reports in this workspace; government effectiveness 0.09 (2023), rank 6 among the nine ASEAN reports in this workspace; internet use 84.15% (2024), rank 4 among the nine ASEAN reports in this workspace. Use `sources/documents/regional/asean_comparative_lens_2026.md` together with ASEANstats, ASEAN Secretariat materials, and the country processed-indicator files before making cross-ASEAN claims.
+&lt;!-- asean-comparative-lens-2026:end --&gt;
+
+Viet Nam&#x27;s population structure is not only a demographic background variable. It defines the scale of the state itself: how many children must be educated, how many workers must be employed and protected, how many older citizens will need health care and pensions, how large urban-service systems must become, and how far public administration must reach across territory. The latest processed World Bank WDI evidence in this project places the population at 100.99 million in 2024. The 2025 population pyramid below uses the UN World Population Prospects 2024 medium-variant estimate/projection as visualized by PopulationPyramids.org, which places the 2025 population at about 101.60 million and the median age at 34.4 years. The two sources are used for different purposes: WDI is retained for the annual indicator series, while the UN WPP age-sex structure is used for the pyramid visualization.
+
+The main demographic story is a transition from labor abundance to aging under conditions of continued development pressure. In 2024, the working-age population share remained high at 67.7 percent, while the youth share stood at 23.2 percent and the 65-and-over share at 9.0 percent. This means Viet Nam still has a substantial working-age base, but the demographic dividend is narrowing. Fertility was 1.895 births per woman in 2024, below replacement level. Population growth was about 0.63 percent. The result is a state that must simultaneously support industrial upgrading, youth opportunity, and preparation for old-age welfare.
+
+&lt;figure class=&quot;institution-figure&quot;&gt;
+&lt;img alt=&quot;Viet Nam population pyramids in 1990, 2000, 2010, and 2025&quot; class=&quot;institution-diagram&quot; src=&quot;../assets/vnm_population_pyramids_1990_2025.svg&quot;/&gt;
+&lt;figcaption&gt;Viet Nam&#x27;s age-sex structure shifted from a youth-heavy pyramid in 1990 to a thicker working-age profile in 2010 and a more stationary, aging structure by 2025. Source: PopulationPyramids.org, based on the United Nations World Population Prospects 2024 Revision.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+The 1990 pyramid shows a classic post-war and early reform-period structure: a broad base, a very large child population, and relatively small elderly cohorts. Administratively, this was the age structure of school expansion, basic health provision, rural employment absorption, and rapid labor-force entry. The state had to build human capital for a very young population while still operating with limited fiscal capacity and incomplete service infrastructure.
+
+By 2000 the base had narrowed, but the lower and middle age bands were still large. This was the beginning of a more favorable dependency structure. Fewer births reduced pressure on the youngest cohorts, while large cohorts entered working age. The administrative challenge therefore shifted from simply absorbing population growth toward expanding lower-secondary education, vocational training, urban employment, and labor-intensive industrial zones.
+
+The 2010 pyramid captures the demographic dividend more clearly. The largest cohorts were concentrated in working ages, while the child share had fallen and the elderly share remained limited. This structure supported export manufacturing, domestic migration, and rapid urban growth. But it also created a policy deadline: if a country does not raise productivity, skills, and social insurance coverage while the working-age share is high, the dividend can be consumed before it is institutionalized.
+
+The 2025 pyramid is no longer expansive in the old sense. The base is narrower, the 30-49 age bands are thick, and the upper age bands are visibly wider. This does not mean Viet Nam is already an old society in the same way as Japan, Korea, or some European countries, but it does mean that aging has become a national administrative problem. Health finance, pensions, community care, elderly-friendly local services, and labor productivity now belong at the center of population policy.
+
+&lt;figure class=&quot;institution-figure&quot;&gt;
+&lt;img alt=&quot;Viet Nam population growth and fertility trends from 1990 to latest available data&quot; class=&quot;institution-diagram&quot; src=&quot;../assets/vnm_population_growth_fertility_trends.svg&quot;/&gt;
+&lt;figcaption&gt;Population growth fell from about 2.09 percent in 1990 to 0.63 percent in 2024. Fertility fell from 3.60 births per woman in 1990 to below replacement level in the 2020s. Source: World Bank WDI for 1990-2024 series; PopulationPyramids.org/UN WPP 2024 for the 2025 fertility marker.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+The trend chart makes the same point in time-series form. In 1990 Viet Nam still had high demographic momentum: annual population growth exceeded 2 percent and fertility was 3.60 births per woman. By 2000 fertility had fallen to about replacement level, and by 2010 it was already below replacement. Population growth did not collapse immediately because large earlier cohorts continued to move through childbearing and working ages, but the long-term direction was clear. By 2024 the WDI series shows population growth at only 0.63 percent and fertility at 1.895 births per woman. The 2025 WPP/PopulationPyramids fertility marker is close, at 1.91 births per woman.
+
+This combination is politically and administratively important because the timing of demands changes. When fertility falls, pressure on primary-school expansion gradually eases, but demand for tertiary education, skills training, housing, urban transport, employment services, and social insurance rises. When growth slows and aging advances, the state loses the easy option of solving economic problems by simply mobilizing ever-larger young cohorts. Policy success depends increasingly on productivity, formalization, labor mobility, health-system capacity, and pension sustainability.
+
+| Indicator | 2024 value | Administrative meaning |
+| --- | ---: | --- |
+| Total population | 100.99 million | Large service-delivery, infrastructure, housing, education, and health-care task. |
+| Annual population growth | 0.63 percent | Continued growth, but no longer the high-growth demographic environment of earlier development decades. |
+| Fertility rate | 1.895 births per woman | Long-term pressure on labor supply, school networks, family policy, and pension sustainability. |
+| Ages 0-14 | 23.2 percent | Education and child-health demand remain large, but the youth share is declining. |
+| Ages 15-64 | 67.7 percent | Labor force remains the core development asset, but productivity now matters more than simple labor abundance. |
+| Ages 65+ | 9.0 percent | Aging is becoming a national policy problem for pensions, health care, elderly care, and local services. |
+| Young dependency ratio | 34.3 per 100 working-age people | Schools, child welfare, and family services remain major expenditure areas. |
+| Old-age dependency ratio | 13.4 per 100 working-age people | Still moderate, but rising pressure on social insurance and health finance is already visible. |
+
+The first implication is fiscal. A young population requires schools, maternal and child health, vocational training, and job creation. An aging population requires pensions, chronic-disease management, long-term care, community health systems, and age-friendly local services. Viet Nam must finance both agendas while also investing in infrastructure, climate adaptation, digital government, industrial policy, and defense. Demography therefore turns into a public-finance problem: if revenue mobilization and expenditure efficiency do not improve, the state may face a squeeze between development investment and social protection.
+
+The second implication is labor-market strategy. Viet Nam&#x27;s export manufacturing success benefited from a large and relatively young labor force. That advantage is no longer enough. A lower fertility path means the future labor market cannot rely on endless rural-to-urban labor transfer. Industrial upgrading requires productivity growth, better technical education, management capability, automation readiness, higher female labor-force participation, and stronger adult reskilling. Demography therefore changes the meaning of industrial policy. The central question becomes whether the state can move workers from low-productivity agriculture, informal services, and low-wage assembly into higher-value production and services.
+
+The third implication is administrative targeting. National averages conceal very different local problems. Some industrial and metropolitan areas face labor inflows, housing pressure, school crowding, public transport demand, and environmental stress. Some rural and upland areas face outmigration, aging villages, weaker tax bases, and service-maintenance problems. The same demographic trend can therefore produce opposite local tasks: expanding urban infrastructure in one place and sustaining basic services in a shrinking locality elsewhere. A capable administrative system must see both.
+
+The fourth implication is political. Population aging changes the social contract. A developmental state often builds legitimacy by delivering growth, jobs, infrastructure, and poverty reduction. As the population ages, citizens also judge the state by health security, pensions, elderly care, and the fairness of social insurance. If formal workers receive better protection than informal or migrant workers, demographic aging can sharpen social inequality. If rural elderly people depend heavily on family support while young workers migrate, the burden of care becomes both a household problem and a local-government problem.
+
+Viet Nam&#x27;s demographic challenge cannot be captured by the labels &quot;too many people&quot; or &quot;too few births.&quot; It is the interaction of scale, aging, labor mobility, regional imbalance, welfare demand, and state capacity. The country still has a working-age advantage, but that advantage must be converted into productivity before aging accelerates. For this book, population is therefore treated as a test of administrative conversion: can the party-state translate a favorable but narrowing demographic window into skills, social protection, urban management, and territorial equity?</textarea>
+</article>
+      
+<figure class="chart-card">
+  <h2>population-total</h2>
+  <div class="chart-frame"><canvas id="chart-population-total"></canvas></div>
+  <figcaption>Source:  Unit: </figcaption>
+  <p>The figure is included as chapter-level evidence. Interpret it by identifying direction, turning points, divergence among series, and the policy or institutional mechanism that could plausibly explain the pattern.</p>
+</figure>
+
+
+<figure class="chart-card">
+  <h2>age-urban</h2>
+  <div class="chart-frame"><canvas id="chart-age-urban"></canvas></div>
+  <figcaption>Source:  Unit: </figcaption>
+  <p>The figure is included as chapter-level evidence. Interpret it by identifying direction, turning points, divergence among series, and the policy or institutional mechanism that could plausibly explain the pattern.</p>
+</figure>
+
+    </main>
+  </div>
+  <script>
+    window.REPORT_CHARTS = [];
+    document.addEventListener('DOMContentLoaded', () => {
+      if (!window.Chart || !window.REPORT_CHARTS) return;
+      window.REPORT_CHARTS.forEach((entry) => {
+        const cfg = entry.data || {};
+        const el = document.getElementById('chart-' + entry.id);
+        if (!el || !cfg.datasets) return;
+        const colors = ['#197278', '#246b46', '#b7860b', '#7b2d26', '#3f4e9a', '#6a4c93'];
+        const dashes = [[], [8, 4], [2, 3], [10, 4, 2, 4], [1, 4], [12, 3, 3, 3]];
+        const pointStyles = ['circle', 'rect', 'triangle', 'rectRot', 'crossRot', 'star'];
+        const datasets = (cfg.datasets || []).map((dataset, i) => ({
+          ...dataset,
+          borderColor: dataset.borderColor || colors[i % colors.length],
+          backgroundColor: dataset.backgroundColor || 'transparent',
+          borderDash: dataset.borderDash || dashes[i % dashes.length],
+          borderWidth: dataset.borderWidth || 2.4,
+          pointStyle: dataset.pointStyle || pointStyles[i % pointStyles.length],
+          pointRadius: dataset.pointRadius ?? 1.8,
+          tension: dataset.tension ?? 0.25,
+          spanGaps: dataset.spanGaps ?? true
+        }));
+        new Chart(el, {
+          type: 'line',
+          data: { labels: cfg.labels || [], datasets },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            interaction: { mode: 'index', intersect: false },
+            plugins: { legend: { position: 'bottom', labels: { boxWidth: 28 } } },
+            scales: { x: { title: { display: true, text: 'Year' } }, y: { title: { display: true, text: cfg.unit || 'Value' } } }
+          }
+        });
+      });
+    });
+  </script>
+  <script src="../assets/report.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  function fallbackMarkdown(text) {
+    const escaped = text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    return escaped.split(/\n{2,}/).map((block) => `<p>${block.replace(/\n/g, "<br>")}</p>`).join("");
+  }
+  function renderMarkdown(text) {
+    return window.marked ? marked.parse(text) : fallbackMarkdown(text);
+  }
+  document.querySelectorAll('[data-md-panel]').forEach((panel) => {
+    const id = panel.getAttribute('data-md-panel');
+    const source = panel.getAttribute('data-md-source');
+    const preview = panel.querySelector('.md-preview');
+    const editor = panel.querySelector('.md-editor');
+    const edit = panel.querySelector('[data-md-action="edit"]');
+    const save = panel.querySelector('[data-md-action="save"]');
+    const cancel = panel.querySelector('[data-md-action="cancel"]');
+    if (!preview || !editor || !edit || !save || !cancel) return;
+    const storageKey = `country-report-markdown:v1:${source || id}`;
+    const original = editor.value;
+    const stored = localStorage.getItem(storageKey);
+    const hasStoredDraft = stored !== null && (!source || window.location.protocol === 'file:');
+    if (hasStoredDraft) editor.value = stored;
+    const showPreview = () => { preview.innerHTML = renderMarkdown(editor.value); };
+    const setEditing = (editing) => {
+      editor.hidden = !editing;
+      preview.hidden = editing;
+      edit.hidden = editing;
+      save.hidden = !editing;
+      cancel.hidden = !editing;
+    };
+    async function saveMarkdown() {
+      if (source && window.location.protocol.startsWith('http')) {
+        const response = await fetch('/api/save-section', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ source, markdown: editor.value })
+        });
+        if (!response.ok) throw new Error(await response.text());
+        localStorage.removeItem(storageKey);
+        return true;
+      } else {
+        localStorage.setItem(storageKey, editor.value);
+        if (source) window.alert('This edit was saved only as a browser draft. Open the report through code/serve_report.py to save it permanently to the Markdown source file.');
+        return false;
+      }
+    }
+    if (hasStoredDraft) showPreview();
+    setEditing(false);
+    edit.addEventListener('click', () => setEditing(true));
+    save.addEventListener('click', async () => {
+      save.disabled = true;
+      try {
+        const savedToServer = await saveMarkdown();
+        if (savedToServer) {
+          window.location.reload();
+          return;
+        }
+        showPreview();
+        setEditing(false);
+      } catch (error) {
+        window.alert(error.message || 'Could not save the Markdown source.');
+      } finally {
+        save.disabled = false;
+      }
+    });
+    cancel.addEventListener('click', () => {
+      editor.value = localStorage.getItem(storageKey) ?? original;
+      if (hasStoredDraft || window.location.protocol === 'file:') showPreview();
+      setEditing(false);
+    });
+  });
+});
+</script>
+
+</body>
+</html>

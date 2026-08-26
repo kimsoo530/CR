@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 760" role="img" aria-label="Vietnam GDP scale, growth, and income trends from 1990 to 2025">
+  
+  <style>
+    .title{font:700 28px Arial,sans-serif;fill:#172026}
+    .subtitle{font:15px Arial,sans-serif;fill:#526069}
+    .panel-title{font:700 16px Arial,sans-serif;fill:#172026}
+    .panel-y{font:11px Arial,sans-serif;fill:#526069;text-anchor:end}
+    .panel-x{font:11px Arial,sans-serif;fill:#526069;text-anchor:middle}
+    .panel-last{font:700 11px Arial,sans-serif;fill:#172026}
+    .legend{font:11px Arial,sans-serif;fill:#526069}
+    .bar-label{font:700 13px Arial,sans-serif;fill:#172026}
+    .bar-value{font:12px Arial,sans-serif;fill:#526069}
+    .source{font:12px Arial,sans-serif;fill:#65717a}
+  </style>
+  <rect width="1100" height="760" fill="#f6f4ee"/>
+  <text x="54" y="44" class="title">Viet Nam GDP Scale, Growth, and Income, 1990-2025</text>
+  <text x="54" y="68" class="subtitle">WDI annual series show long-run catch-up; 2025 markers use official NSO year-end estimates.</text>
+  <rect x="54" y="104" width="496" height="266" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="76" y="136" class="panel-title">GDP, current US$ billion</text>
+  <line x1="108" y1="324.00" x2="520" y2="324.00" stroke="#edf2ef"/>
+  <text x="98" y="328.00" class="panel-y">0</text>
+  <line x1="108" y1="294.55" x2="520" y2="294.55" stroke="#edf2ef"/>
+  <text x="98" y="298.55" class="panel-y">100</text>
+  <line x1="108" y1="265.09" x2="520" y2="265.09" stroke="#edf2ef"/>
+  <text x="98" y="269.09" class="panel-y">200</text>
+  <line x1="108" y1="235.64" x2="520" y2="235.64" stroke="#edf2ef"/>
+  <text x="98" y="239.64" class="panel-y">300</text>
+  <line x1="108" y1="206.18" x2="520" y2="206.18" stroke="#edf2ef"/>
+  <text x="98" y="210.18" class="panel-y">400</text>
+  <line x1="108" y1="176.73" x2="520" y2="176.73" stroke="#edf2ef"/>
+  <text x="98" y="180.73" class="panel-y">500</text>
+  <line x1="108.00" y1="162" x2="108.00" y2="324" stroke="#f1f4f5"/>
+  <text x="108.00" y="348" class="panel-x">1990</text>
+  <line x1="225.71" y1="162" x2="225.71" y2="324" stroke="#f1f4f5"/>
+  <text x="225.71" y="348" class="panel-x">2000</text>
+  <line x1="343.43" y1="162" x2="343.43" y2="324" stroke="#f1f4f5"/>
+  <text x="343.43" y="348" class="panel-x">2010</text>
+  <line x1="461.14" y1="162" x2="461.14" y2="324" stroke="#f1f4f5"/>
+  <text x="461.14" y="348" class="panel-x">2020</text>
+  <line x1="520.00" y1="162" x2="520.00" y2="324" stroke="#f1f4f5"/>
+  <text x="520.00" y="348" class="panel-x">2025</text>
+  <path d="M108.00,322.09 L119.77,321.17 L131.54,321.09 L143.31,320.12 L155.09,319.20 L166.86,317.89 L178.63,316.74 L190.40,316.09 L202.17,315.99 L213.94,315.55 L225.71,314.82 L237.49,314.37 L249.26,313.67 L261.03,312.35 L272.80,310.62 L284.57,307.02 L296.34,304.45 L308.11,301.20 L319.89,294.80 L331.66,292.77 L343.43,280.64 L355.20,273.16 L366.97,266.39 L378.74,261.05 L390.51,255.24 L402.29,253.53 L414.06,248.27 L425.83,241.13 L437.60,232.66 L449.37,225.51 L461.14,221.91 L472.91,216.06 L484.69,202.22 L496.46,196.21 L508.23,183.68 L520.00,172.60" fill="none" stroke="#176b63" stroke-width="3"/>
+  <circle cx="520.00" cy="172.60" r="4" fill="#176b63" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="468.00" y="164.60" class="panel-last">514</text>
+  <rect x="76" y="340" width="10" height="10" fill="#176b63" rx="2"/>
+  <text x="92" y="349" class="legend">GDP scale</text>
+  <rect x="590" y="104" width="460" height="266" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="612" y="136" class="panel-title">GDP per capita, current US$</text>
+  <line x1="644" y1="324.00" x2="1020" y2="324.00" stroke="#edf2ef"/>
+  <text x="634" y="328.00" class="panel-y">0</text>
+  <line x1="644" y1="294.55" x2="1020" y2="294.55" stroke="#edf2ef"/>
+  <text x="634" y="298.55" class="panel-y">1000</text>
+  <line x1="644" y1="265.09" x2="1020" y2="265.09" stroke="#edf2ef"/>
+  <text x="634" y="269.09" class="panel-y">2000</text>
+  <line x1="644" y1="235.64" x2="1020" y2="235.64" stroke="#edf2ef"/>
+  <text x="634" y="239.64" class="panel-y">3000</text>
+  <line x1="644" y1="206.18" x2="1020" y2="206.18" stroke="#edf2ef"/>
+  <text x="634" y="210.18" class="panel-y">4000</text>
+  <line x1="644" y1="176.73" x2="1020" y2="176.73" stroke="#edf2ef"/>
+  <text x="634" y="180.73" class="panel-y">5000</text>
+  <line x1="644.00" y1="162" x2="644.00" y2="324" stroke="#f1f4f5"/>
+  <text x="644.00" y="348" class="panel-x">1990</text>
+  <line x1="751.43" y1="162" x2="751.43" y2="324" stroke="#f1f4f5"/>
+  <text x="751.43" y="348" class="panel-x">2000</text>
+  <line x1="858.86" y1="162" x2="858.86" y2="324" stroke="#f1f4f5"/>
+  <text x="858.86" y="348" class="panel-x">2010</text>
+  <line x1="966.29" y1="162" x2="966.29" y2="324" stroke="#f1f4f5"/>
+  <text x="966.29" y="348" class="panel-x">2020</text>
+  <line x1="1020.00" y1="162" x2="1020.00" y2="324" stroke="#f1f4f5"/>
+  <text x="1020.00" y="348" class="panel-x">2025</text>
+  <path d="M644.00,321.09 L654.74,319.77 L665.49,319.74 L676.23,318.42 L686.97,317.23 L697.71,315.52 L708.46,314.07 L719.20,313.35 L729.94,313.36 L740.69,312.93 L751.43,312.10 L762.17,311.65 L772.91,310.89 L783.66,309.36 L794.40,307.34 L805.14,303.07 L815.89,300.21 L826.63,296.74 L837.37,289.72 L848.11,287.88 L858.86,274.42 L869.60,266.54 L880.34,259.64 L891.09,254.50 L901.83,249.00 L912.57,248.08 L923.31,243.44 L934.06,236.93 L944.80,229.09 L955.54,222.65 L966.29,219.91 L977.03,214.89 L987.77,201.83 L998.51,196.66 L1009.26,185.05 L1020.00,175.96" fill="none" stroke="#7c2f2a" stroke-width="3"/>
+  <circle cx="1020.00" cy="175.96" r="4" fill="#7c2f2a" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="968.00" y="167.96" class="panel-last">5026</text>
+  <rect x="612" y="340" width="10" height="10" fill="#7c2f2a" rx="2"/>
+  <text x="628" y="349" class="legend">Income per person</text>
+  <rect x="54" y="420" width="496" height="266" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="76" y="452" class="panel-title">Real GDP growth, annual %</text>
+  <line x1="108" y1="640.00" x2="520" y2="640.00" stroke="#edf2ef"/>
+  <text x="98" y="644.00" class="panel-y">0%</text>
+  <line x1="108" y1="607.60" x2="520" y2="607.60" stroke="#edf2ef"/>
+  <text x="98" y="611.60" class="panel-y">2%</text>
+  <line x1="108" y1="575.20" x2="520" y2="575.20" stroke="#edf2ef"/>
+  <text x="98" y="579.20" class="panel-y">4%</text>
+  <line x1="108" y1="542.80" x2="520" y2="542.80" stroke="#edf2ef"/>
+  <text x="98" y="546.80" class="panel-y">6%</text>
+  <line x1="108" y1="510.40" x2="520" y2="510.40" stroke="#edf2ef"/>
+  <text x="98" y="514.40" class="panel-y">8%</text>
+  <line x1="108" y1="478.00" x2="520" y2="478.00" stroke="#edf2ef"/>
+  <text x="98" y="482.00" class="panel-y">10%</text>
+  <line x1="108.00" y1="478" x2="108.00" y2="640" stroke="#f1f4f5"/>
+  <text x="108.00" y="664" class="panel-x">1990</text>
+  <line x1="225.71" y1="478" x2="225.71" y2="640" stroke="#f1f4f5"/>
+  <text x="225.71" y="664" class="panel-x">2000</text>
+  <line x1="343.43" y1="478" x2="343.43" y2="640" stroke="#f1f4f5"/>
+  <text x="343.43" y="664" class="panel-x">2010</text>
+  <line x1="461.14" y1="478" x2="461.14" y2="640" stroke="#f1f4f5"/>
+  <text x="461.14" y="664" class="panel-x">2020</text>
+  <line x1="520.00" y1="478" x2="520.00" y2="640" stroke="#f1f4f5"/>
+  <text x="520.00" y="664" class="panel-x">2025</text>
+  <path d="M108.00,557.37 L119.77,543.43 L131.54,499.93 L143.31,509.22 L155.09,496.81 L166.86,485.44 L178.63,488.69 L190.40,507.94 L202.17,546.62 L213.94,562.67 L225.71,530.05 L237.49,539.68 L249.26,537.60 L261.03,528.24 L272.80,517.91 L284.57,517.73 L296.34,526.96 L308.11,524.50 L319.89,548.28 L331.66,552.55 L343.43,535.94 L355.20,536.11 L366.97,550.83 L378.74,550.03 L390.51,535.96 L402.29,526.81 L414.06,531.62 L425.83,527.57 L437.60,519.07 L449.37,520.78 L461.14,593.58 L472.91,598.63 L484.69,501.69 L496.46,557.95 L508.23,525.12 L520.00,510.08" fill="none" stroke="#345995" stroke-width="3"/>
+  <circle cx="520.00" cy="510.08" r="4" fill="#345995" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="468.00" y="502.08" class="panel-last">8.0%</text>
+  <rect x="76" y="656" width="10" height="10" fill="#345995" rx="2"/>
+  <text x="92" y="665" class="legend">Real growth</text>
+  <rect x="590" y="442" width="460" height="244" rx="10" fill="#ffffff" stroke="#d7dee2"/><text x="612" y="474" class="panel-title">2025 value-added growth contribution</text><text x="612" y="496" class="bar-value">Share of total value-added growth reported by NSO Viet Nam</text><text x="612" y="520" class="bar-label">Agriculture, forestry, and fishing</text><rect x="612" y="528" width="31.80" height="22" rx="5" fill="#b8873a"/><text x="653.80" y="544" class="bar-value">5.30%</text><text x="612" y="568" class="bar-label">Industry and construction</text><rect x="612" y="576" width="261.72" height="22" rx="5" fill="#176b63"/><text x="883.72" y="592" class="bar-value">43.62%</text><text x="612" y="616" class="bar-label">Services</text><rect x="612" y="624" width="306.48" height="22" rx="5" fill="#7c2f2a"/><text x="928.48" y="640" class="bar-value">51.08%</text><text x="612" y="666" class="bar-value">GDP growth: 8.02%; Q4 growth: 8.46% year-on-year.</text>
+  <text x="54" y="724" class="source">Source: World Bank World Development Indicators, table IDs NY.GDP.MKTP.CD, NY.GDP.PCAP.CD, NY.GDP.MKTP.KD.ZG, 1990-2024; NSO Viet Nam, Socio-economic situation in Q4 and 2025, for 2025 GDP, per-capita GDP, and growth markers.</text>
+</svg>

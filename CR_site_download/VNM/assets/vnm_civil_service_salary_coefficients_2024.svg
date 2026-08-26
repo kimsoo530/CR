@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 780" role="img" aria-label="Vietnam civil service salary coefficients by rank">
+  
+  <style>
+    .title{font:700 28px Arial,sans-serif;fill:#172026}
+    .subtitle{font:15px Arial,sans-serif;fill:#526069}
+    .axis{font:11px Arial,sans-serif;fill:#526069;text-anchor:middle}
+    .rank{font:700 13px Arial,sans-serif;fill:#172026}
+    .label{font:12px Arial,sans-serif;fill:#526069}
+    .value{font:700 22px Arial,sans-serif;fill:#172026}
+    .mini{font:11px Arial,sans-serif;fill:#526069}
+    .source{font:12px Arial,sans-serif;fill:#65717a}
+  </style>
+  <rect width="1100" height="780" fill="#f6f4ee"/>
+  <text x="54" y="44" class="title">Civil Service Salary Coefficients by Rank</text>
+  <text x="54" y="68" class="subtitle">Monthly base salary = rank coefficient x VND 2.34 million statutory base salary. Allowances and bonuses are excluded.</text>
+  <rect x="54" y="96" width="992" height="520" rx="12" fill="#ffffff" stroke="#d7dee2"/>
+  <line x1="330.0" y1="118" x2="330.0" y2="572" stroke="#d7dee2"/><text x="330.0" y="602" class="axis">0</text><line x1="492.5" y1="118" x2="492.5" y2="572" stroke="#d7dee2"/><text x="492.5" y="602" class="axis">5</text><line x1="655.0" y1="118" x2="655.0" y2="572" stroke="#d7dee2"/><text x="655.0" y="602" class="axis">10</text><line x1="817.5" y1="118" x2="817.5" y2="572" stroke="#d7dee2"/><text x="817.5" y="602" class="axis">15</text><line x1="980.0" y1="118" x2="980.0" y2="572" stroke="#d7dee2"/><text x="980.0" y="602" class="axis">20</text>
+  <line x1="330" y1="580" x2="980" y2="580" stroke="#9aa6ad"/>
+  <text x="655.0" y="626" class="axis">monthly base salary, VND million</text>
+  <text x="62" y="127" class="rank">A3.1: Senior specialist and equivalent</text><text x="62" y="146" class="label">coefficient 6.20-8.00; 6 steps</text><line x1="801.6" y1="132" x2="938.4" y2="132" stroke="#7c2f2a" stroke-width="12" stroke-linecap="round"/><circle cx="801.6" cy="132" r="5" fill="#ffffff" stroke="#7c2f2a" stroke-width="3"/><circle cx="938.4" cy="132" r="5" fill="#ffffff" stroke="#7c2f2a" stroke-width="3"/><text x="797.6" y="115" class="mini" text-anchor="end">14.51</text><text x="942.4" y="115" class="mini">18.72</text><text x="62" y="181" class="rank">A2.1: Principal specialist and equivalent</text><text x="62" y="200" class="label">coefficient 4.40-6.78; 8 steps</text><line x1="664.8" y1="186" x2="845.8" y2="186" stroke="#7c2f2a" stroke-width="12" stroke-linecap="round"/><circle cx="664.8" cy="186" r="5" fill="#ffffff" stroke="#7c2f2a" stroke-width="3"/><circle cx="845.8" cy="186" r="5" fill="#ffffff" stroke="#7c2f2a" stroke-width="3"/><text x="660.8" y="169" class="mini" text-anchor="end">10.30</text><text x="849.8" y="169" class="mini">15.87</text><text x="62" y="235" class="rank">A1: Specialist and equivalent</text><text x="62" y="254" class="label">coefficient 2.34-4.98; 9 steps</text><line x1="508.1" y1="240" x2="708.6" y2="240" stroke="#176b63" stroke-width="12" stroke-linecap="round"/><circle cx="508.1" cy="240" r="5" fill="#ffffff" stroke="#176b63" stroke-width="3"/><circle cx="708.6" cy="240" r="5" fill="#ffffff" stroke="#176b63" stroke-width="3"/><text x="504.1" y="223" class="mini" text-anchor="end">5.48</text><text x="712.6" y="223" class="mini">11.65</text><text x="62" y="289" class="rank">A0: College-level official and equivalent</text><text x="62" y="308" class="label">coefficient 2.10-4.89; 10 steps</text><line x1="489.6" y1="294" x2="701.8" y2="294" stroke="#176b63" stroke-width="12" stroke-linecap="round"/><circle cx="489.6" cy="294" r="5" fill="#ffffff" stroke="#176b63" stroke-width="3"/><circle cx="701.8" cy="294" r="5" fill="#ffffff" stroke="#176b63" stroke-width="3"/><text x="485.6" y="277" class="mini" text-anchor="end">4.91</text><text x="705.8" y="277" class="mini">11.44</text><text x="62" y="343" class="rank">B: Staff and equivalent</text><text x="62" y="362" class="label">coefficient 1.86-4.06; 12 steps</text><line x1="471.4" y1="348" x2="638.8" y2="348" stroke="#b8873a" stroke-width="12" stroke-linecap="round"/><circle cx="471.4" cy="348" r="5" fill="#ffffff" stroke="#b8873a" stroke-width="3"/><circle cx="638.8" cy="348" r="5" fill="#ffffff" stroke="#b8873a" stroke-width="3"/><text x="467.4" y="331" class="mini" text-anchor="end">4.35</text><text x="642.8" y="331" class="mini">9.50</text><text x="62" y="397" class="rank">C1: Employee and equivalent</text><text x="62" y="416" class="label">coefficient 1.65-3.63; 12 steps</text><line x1="455.4" y1="402" x2="605.9" y2="402" stroke="#b8873a" stroke-width="12" stroke-linecap="round"/><circle cx="455.4" cy="402" r="5" fill="#ffffff" stroke="#b8873a" stroke-width="3"/><circle cx="605.9" cy="402" r="5" fill="#ffffff" stroke="#b8873a" stroke-width="3"/><text x="451.4" y="385" class="mini" text-anchor="end">3.86</text><text x="609.9" y="385" class="mini">8.49</text><text x="62" y="451" class="rank">C2: Messenger and equivalent</text><text x="62" y="470" class="label">coefficient 1.50-3.48; 12 steps</text><line x1="444.1" y1="456" x2="594.5" y2="456" stroke="#b8873a" stroke-width="12" stroke-linecap="round"/><circle cx="444.1" cy="456" r="5" fill="#ffffff" stroke="#b8873a" stroke-width="3"/><circle cx="594.5" cy="456" r="5" fill="#ffffff" stroke="#b8873a" stroke-width="3"/><text x="440.1" y="439" class="mini" text-anchor="end">3.51</text><text x="598.5" y="439" class="mini">8.14</text><text x="62" y="505" class="rank">C3: Support staff and equivalent</text><text x="62" y="524" class="label">coefficient 1.35-3.33; 12 steps</text><line x1="432.7" y1="510" x2="583.2" y2="510" stroke="#b8873a" stroke-width="12" stroke-linecap="round"/><circle cx="432.7" cy="510" r="5" fill="#ffffff" stroke="#b8873a" stroke-width="3"/><circle cx="583.2" cy="510" r="5" fill="#ffffff" stroke="#b8873a" stroke-width="3"/><text x="428.7" y="493" class="mini" text-anchor="end">3.16</text><text x="587.2" y="493" class="mini">7.79</text>
+  
+  <rect x="54" y="632" width="238" height="82" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="76" y="660" class="label">Statutory base salary</text>
+  <text x="76" y="692" class="value">VND 2.34m</text>
+  <rect x="306" y="632" width="238" height="82" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="328" y="660" class="label">Lowest base-pay point</text>
+  <text x="328" y="692" class="value">3.16m/month</text>
+  <rect x="558" y="632" width="238" height="82" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="580" y="660" class="label">A1 specialist range</text>
+  <text x="580" y="692" class="value">5.48-11.65m</text>
+  <rect x="810" y="632" width="238" height="82" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="832" y="660" class="label">Senior specialist ceiling</text>
+  <text x="832" y="692" class="value">18.72m/month</text>
+
+  <text x="54" y="752" class="source">Sources: Decree No. 204/2004/ND-CP salary coefficient table; Viet Nam Government Portal summary of the VND 2.34 million base salary under Decree No. 73/2024/ND-CP. Processed by the author.</text>
+</svg>

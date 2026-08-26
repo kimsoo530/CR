@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 780" role="img" aria-label="Vietnam fiscal capacity and public investment control chain">
+  
+  <style>
+    .title{font:700 28px Arial,sans-serif;fill:#172026}
+    .subtitle{font:15px Arial,sans-serif;fill:#526069}
+    .panel-title{font:700 16px Arial,sans-serif;fill:#172026}
+    .panel-y{font:11px Arial,sans-serif;fill:#526069;text-anchor:end}
+    .panel-x{font:11px Arial,sans-serif;fill:#526069;text-anchor:middle}
+    .panel-last{font:700 11px Arial,sans-serif;fill:#172026}
+    .legend{font:11px Arial,sans-serif;fill:#526069}
+    .label{font:12px Arial,sans-serif;fill:#526069}
+    .stage{font:700 12px Arial,sans-serif;fill:#172026;text-anchor:middle}
+    .value{font:700 23px Arial,sans-serif;fill:#172026}
+    .source{font:12px Arial,sans-serif;fill:#65717a}
+  </style>
+  <rect width="1100" height="780" fill="#f6f4ee"/>
+  <text x="54" y="44" class="title">Fiscal Capacity and Public Investment Control Chain</text>
+  <text x="54" y="68" class="subtitle">Vietnam's fiscal risk is not only debt size; it is whether revenue, budgeting, procurement, execution, and audit create public value.</text>
+  <rect x="54" y="104" width="496" height="210" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="76" y="136" class="panel-title">Revenue and expenditure</text>
+  <line x1="108" y1="259.17" x2="520" y2="259.17" stroke="#edf2ef"/>
+  <text x="98" y="263.17" class="panel-y">15%</text>
+  <line x1="108" y1="215.00" x2="520" y2="215.00" stroke="#edf2ef"/>
+  <text x="98" y="219.00" class="panel-y">20%</text>
+  <line x1="108" y1="170.83" x2="520" y2="170.83" stroke="#edf2ef"/>
+  <text x="98" y="174.83" class="panel-y">25%</text>
+  <line x1="108.00" y1="162" x2="108.00" y2="268" stroke="#f1f4f5"/>
+  <text x="108.00" y="292" class="panel-x">1998</text>
+  <line x1="218.92" y1="162" x2="218.92" y2="268" stroke="#f1f4f5"/>
+  <text x="218.92" y="292" class="panel-x">2005</text>
+  <line x1="377.38" y1="162" x2="377.38" y2="268" stroke="#f1f4f5"/>
+  <text x="377.38" y="292" class="panel-x">2015</text>
+  <line x1="520.00" y1="162" x2="520.00" y2="268" stroke="#f1f4f5"/>
+  <text x="520.00" y="292" class="panel-x">2024</text>
+  <path d="M108.00,251.06 L123.85,255.14 L139.69,248.72 L155.54,241.50 L171.38,233.62 L187.23,218.20 L203.08,221.26 L218.92,217.90 L234.77,208.51 L250.62,210.07 L266.46,206.76 L282.31,213.67 L298.15,202.02 L314.00,212.15 L329.85,232.63 L345.69,228.31 L361.54,234.98 L377.38,222.15 L393.23,223.24 L409.08,218.84 L424.92,219.78 L440.77,220.17 L456.62,229.22 L472.46,226.55 L488.31,225.00 L504.15,240.94 L520.00,236.38" fill="none" stroke="#176b63" stroke-width="3"/>
+  <circle cx="520.00" cy="236.38" r="4" fill="#176b63" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="468.00" y="228.38" class="panel-last">17.6%</text>
+  <rect x="76" y="284" width="10" height="10" fill="#176b63" rx="2"/>
+  <text x="92" y="293" class="legend">Revenue</text>
+  <path d="M108.00,250.19 L123.85,244.13 L139.69,234.54 L155.54,222.14 L171.38,217.23 L187.23,195.60 L203.08,219.94 L218.92,209.48 L234.77,210.28 L250.62,194.71 L266.46,202.81 L282.31,171.06 L298.15,182.13 L314.00,204.19 L329.85,184.38 L345.69,175.63 L361.54,190.66 L377.38,178.13 L393.23,195.30 L409.08,201.49 L424.92,210.76 L440.77,216.67 L456.62,203.95 L472.46,213.90 L488.31,230.93 L504.15,225.76 L520.00,222.81" fill="none" stroke="#7c2f2a" stroke-width="3"/>
+  <circle cx="520.00" cy="222.81" r="4" fill="#7c2f2a" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="468.00" y="214.81" class="panel-last">19.1%</text>
+  <rect x="218" y="284" width="10" height="10" fill="#7c2f2a" rx="2"/>
+  <text x="234" y="293" class="legend">Expenditure</text>
+  <rect x="590" y="104" width="456" height="210" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="612" y="136" class="panel-title">Fiscal balance</text>
+  <line x1="644" y1="254.75" x2="1016" y2="254.75" stroke="#edf2ef"/>
+  <text x="634" y="258.75" class="panel-y">-6%</text>
+  <line x1="644" y1="228.25" x2="1016" y2="228.25" stroke="#edf2ef"/>
+  <text x="634" y="232.25" class="panel-y">-4%</text>
+  <line x1="644" y1="201.75" x2="1016" y2="201.75" stroke="#edf2ef"/>
+  <text x="634" y="205.75" class="panel-y">-2%</text>
+  <line x1="644" y1="175.25" x2="1016" y2="175.25" stroke="#edf2ef"/>
+  <text x="634" y="179.25" class="panel-y">0%</text>
+  <line x1="644.00" y1="162" x2="644.00" y2="268" stroke="#f1f4f5"/>
+  <text x="644.00" y="292" class="panel-x">1998</text>
+  <line x1="737.00" y1="162" x2="737.00" y2="268" stroke="#f1f4f5"/>
+  <text x="737.00" y="292" class="panel-x">2005</text>
+  <line x1="869.86" y1="162" x2="869.86" y2="268" stroke="#f1f4f5"/>
+  <text x="869.86" y="292" class="panel-x">2015</text>
+  <line x1="1016.00" y1="162" x2="1016.00" y2="268" stroke="#f1f4f5"/>
+  <text x="1016.00" y="292" class="panel-x">2026</text>
+  <path d="M644.00,176.57 L657.29,191.15 L670.57,196.45 L683.86,204.40 L697.14,200.43 L710.43,209.70 L723.71,176.57 L737.00,188.50 L750.29,172.60 L763.57,197.78 L776.86,180.55 L790.14,238.85 L803.43,205.72 L816.71,187.18 L830.00,248.12 L843.29,254.75 L856.57,241.50 L869.86,241.50 L883.14,217.65 L896.43,201.75 L909.71,188.50 L923.00,180.55 L936.29,213.68 L949.57,193.80 L962.86,165.97 L976.14,197.78 L989.43,195.12 L1002.71,204.40 L1016.00,201.75" fill="none" stroke="#b8873a" stroke-width="3"/>
+  <circle cx="1016.00" cy="201.75" r="4" fill="#b8873a" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="964.00" y="193.75" class="panel-last">-2%</text>
+  <rect x="612" y="284" width="10" height="10" fill="#b8873a" rx="2"/>
+  <text x="628" y="293" class="legend">Net lending/borrowing</text>
+  <rect x="54" y="354" width="496" height="150" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="76" y="386" class="panel-title">General government gross debt</text>
+  <line x1="108" y1="458.00" x2="520" y2="458.00" stroke="#edf2ef"/>
+  <text x="98" y="462.00" class="panel-y">20%</text>
+  <line x1="108" y1="435.00" x2="520" y2="435.00" stroke="#edf2ef"/>
+  <text x="98" y="439.00" class="panel-y">40%</text>
+  <line x1="108" y1="412.00" x2="520" y2="412.00" stroke="#edf2ef"/>
+  <text x="98" y="416.00" class="panel-y">60%</text>
+  <line x1="108.00" y1="412" x2="108.00" y2="458" stroke="#f1f4f5"/>
+  <text x="108.00" y="482" class="panel-x">1998</text>
+  <line x1="211.00" y1="412" x2="211.00" y2="458" stroke="#f1f4f5"/>
+  <text x="211.00" y="482" class="panel-x">2005</text>
+  <line x1="358.14" y1="412" x2="358.14" y2="458" stroke="#f1f4f5"/>
+  <text x="358.14" y="482" class="panel-x">2015</text>
+  <line x1="520.00" y1="412" x2="520.00" y2="458" stroke="#f1f4f5"/>
+  <text x="520.00" y="482" class="panel-x">2026</text>
+  <path d="M137.43,452.48 L152.14,451.79 L166.86,449.14 L181.57,446.73 L196.29,447.19 L211.00,448.00 L225.71,446.27 L240.43,443.97 L255.14,445.35 L269.86,439.37 L284.57,438.11 L299.29,439.37 L314.00,436.95 L328.71,433.39 L343.43,430.86 L358.14,427.99 L372.86,425.92 L387.57,427.41 L402.29,430.63 L417.00,433.85 L431.71,433.50 L446.43,435.92 L461.14,440.87 L475.86,441.56 L490.57,445.12 L505.29,446.15 L520.00,446.73" fill="none" stroke="#345995" stroke-width="3"/>
+  <circle cx="520.00" cy="446.73" r="4" fill="#345995" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="468.00" y="438.73" class="panel-last">29.8%</text>
+  <rect x="76" y="474" width="10" height="10" fill="#345995" rx="2"/>
+  <text x="92" y="483" class="legend">Gross debt</text>
+  <rect x="590" y="354" width="456" height="150" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="612" y="386" class="panel-title">Governance reading</text>
+  <text x="612" y="420" class="label">Fiscal discipline is strongest when four controls work together:</text>
+  <text x="632" y="448" class="label">1. credible medium-term public investment planning</text>
+  <text x="632" y="472" class="label">2. transparent bidding and contract management</text>
+  <text x="632" y="496" class="label">3. timely disbursement without land or permit blockage</text>
+  <text x="632" y="520" class="label">4. audit follow-up that fixes systems, not only sanctions individuals</text>
+  <rect x="96" y="548" width="120" height="58" rx="10" fill="#ffffff" stroke="#d7dee2"/><text x="156" y="572" class="stage">Plan</text><text x="156" y="592" class="label" text-anchor="middle">Public investment law</text><line x1="220" y1="577" x2="250" y2="577" stroke="#7c2f2a" stroke-width="2.5"/><path d="M250,577 l-7,-5 v10 z" fill="#7c2f2a"/><rect x="256" y="548" width="120" height="58" rx="10" fill="#ffffff" stroke="#d7dee2"/><text x="316" y="572" class="stage">Appraise</text><text x="316" y="592" class="label" text-anchor="middle">Feasibility and priority</text><line x1="380" y1="577" x2="410" y2="577" stroke="#7c2f2a" stroke-width="2.5"/><path d="M410,577 l-7,-5 v10 z" fill="#7c2f2a"/><rect x="416" y="548" width="120" height="58" rx="10" fill="#ffffff" stroke="#d7dee2"/><text x="476" y="572" class="stage">Budget</text><text x="476" y="592" class="label" text-anchor="middle">State budget ceiling</text><line x1="540" y1="577" x2="570" y2="577" stroke="#7c2f2a" stroke-width="2.5"/><path d="M570,577 l-7,-5 v10 z" fill="#7c2f2a"/><rect x="576" y="548" width="120" height="58" rx="10" fill="#ffffff" stroke="#d7dee2"/><text x="636" y="572" class="stage">Procure</text><text x="636" y="592" class="label" text-anchor="middle">Bidding and e-procurement</text><line x1="700" y1="577" x2="730" y2="577" stroke="#7c2f2a" stroke-width="2.5"/><path d="M730,577 l-7,-5 v10 z" fill="#7c2f2a"/><rect x="736" y="548" width="120" height="58" rx="10" fill="#ffffff" stroke="#d7dee2"/><text x="796" y="572" class="stage">Execute</text><text x="796" y="592" class="label" text-anchor="middle">Land, contract, payment</text><line x1="860" y1="577" x2="890" y2="577" stroke="#7c2f2a" stroke-width="2.5"/><path d="M890,577 l-7,-5 v10 z" fill="#7c2f2a"/><rect x="896" y="548" width="120" height="58" rx="10" fill="#ffffff" stroke="#d7dee2"/><text x="956" y="572" class="stage">Audit</text><text x="956" y="592" class="label" text-anchor="middle">State Audit and inspection</text>
+  
+  <rect x="54" y="636" width="238" height="82" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="76" y="664" class="label">Revenue</text>
+  <text x="76" y="696" class="value">17.6%</text>
+  <text x="154" y="696" class="label">of GDP, 2024</text>
+  <rect x="306" y="636" width="238" height="82" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="328" y="664" class="label">Expenditure</text>
+  <text x="328" y="696" class="value">19.1%</text>
+  <text x="406" y="696" class="label">of GDP, 2024</text>
+  <rect x="558" y="636" width="238" height="82" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="580" y="664" class="label">Fiscal balance</text>
+  <text x="580" y="696" class="value">-2.0%</text>
+  <text x="658" y="696" class="label">of GDP, 2026</text>
+  <rect x="810" y="636" width="238" height="82" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="832" y="664" class="label">Gross debt</text>
+  <text x="832" y="696" class="value">29.8%</text>
+  <text x="910" y="696" class="label">of GDP, 2026</text>
+
+  <text x="54" y="752" class="source">Sources: IMF DataMapper fiscal series in the local processed archive; Law on Public Investment No. 58/2024/QH15; Law on Bidding No. 22/2023/QH15; State Budget Law No. 83/2015/QH13; Law on State Audit No. 81/2015/QH13.</text>
+</svg>

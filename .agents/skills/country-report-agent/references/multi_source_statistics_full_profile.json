@@ -1,0 +1,631 @@
+{
+  "report_country": "NGA",
+  "purpose": "Multi-source example. Verify definitions, vintages, filters, and peer logic before publication.",
+  "indicators": [
+    {
+      "source": "world_bank", "source_id": 2,
+      "indicator_code": "NE.EXP.GNFS.ZS", "indicator_name": "Exports of goods and services",
+      "unit": "percent of GDP", "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2000, "end_year": 2025, "frequency": "annual",
+      "value_type": "international estimate", "limitations": "Gross exports do not measure domestic value added."
+    },
+    {
+      "source": "world_bank", "source_id": 2,
+      "indicator_code": "NE.IMP.GNFS.ZS", "indicator_name": "Imports of goods and services",
+      "unit": "percent of GDP", "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2000, "end_year": 2025, "frequency": "annual",
+      "value_type": "international estimate", "limitations": "A high import share can reflect investment inputs as well as dependence."
+    },
+    {
+      "source": "world_bank", "source_id": 2,
+      "indicator_code": "NE.TRD.GNFS.ZS", "indicator_name": "Trade in goods and services",
+      "unit": "percent of GDP", "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2000, "end_year": 2025, "frequency": "annual",
+      "value_type": "international estimate", "limitations": "Small economies can have mechanically higher trade shares."
+    },
+    {
+      "source": "world_bank", "source_id": 2,
+      "indicator_code": "BN.CAB.XOKA.GD.ZS", "indicator_name": "Current account balance",
+      "unit": "percent of GDP", "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2000, "end_year": 2025, "frequency": "annual",
+      "value_type": "balance-of-payments estimate", "limitations": "Revisions and exceptional commodity-price years can materially affect the series."
+    },
+    {
+      "source": "world_bank", "source_id": 2,
+      "indicator_code": "ST.INT.ARVL", "indicator_name": "International tourism arrivals",
+      "unit": "arrivals", "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2000, "end_year": 2025, "frequency": "annual when reported",
+      "value_type": "international estimate", "limitations": "Countries differ in whether visitors, tourists, or border entries are counted."
+    },
+    {
+      "source": "world_bank", "source_id": 2,
+      "indicator_code": "NV.MNF.TECH.ZS.UN", "indicator_name": "Medium- and high-tech manufacturing value added",
+      "unit": "percent of manufacturing value added", "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2000, "end_year": 2025, "frequency": "annual when reported",
+      "value_type": "UNIDO estimate", "limitations": "Industry classifications and missing years require caution."
+    },
+    {
+      "source": "world_bank", "source_id": 2,
+      "indicator_code": "TX.VAL.TECH.MF.ZS", "indicator_name": "High-technology exports",
+      "unit": "percent of manufactured exports", "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2000, "end_year": 2025, "frequency": "annual when reported",
+      "value_type": "international trade estimate", "limitations": "Re-exports and classification changes can affect the share."
+    },
+    {
+      "source": "world_bank", "source_id": 2,
+      "indicator_code": "TX.VAL.MRCH.CD.WT", "indicator_name": "Merchandise exports",
+      "unit": "current US dollars", "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2000, "end_year": 2025, "frequency": "annual",
+      "value_type": "WTO international trade estimate", "limitations": "Current-dollar values combine price, quantity, and exchange-rate movements."
+    },
+    {
+      "source": "world_bank", "source_id": 2,
+      "indicator_code": "TM.VAL.FUEL.ZS.UN", "indicator_name": "Fuel imports",
+      "unit": "percent of merchandise imports", "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2000, "end_year": 2025, "frequency": "annual when reported",
+      "value_type": "UN Comtrade estimate", "limitations": "Product classifications and reporting gaps vary."
+    },
+    {
+      "source": "world_bank", "source_id": 2,
+      "indicator_code": "EG.ELC.ACCS.ZS", "indicator_name": "Access to electricity",
+      "unit": "percent of population", "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2000, "end_year": 2025, "frequency": "annual",
+      "value_type": "international estimate", "limitations": "Connection access does not measure reliability, affordability, or hours of service."
+    },
+    {
+      "source": "world_bank", "source_id": 2,
+      "indicator_code": "EG.ELC.LOSS.ZS", "indicator_name": "Electric power transmission and distribution losses",
+      "unit": "percent of output", "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2000, "end_year": 2025, "frequency": "annual when reported",
+      "value_type": "international estimate", "limitations": "Technical and commercial losses are not separated consistently."
+    },
+    {
+      "source": "world_bank", "source_id": 2,
+      "indicator_code": "EG.USE.ELEC.KH.PC", "indicator_name": "Electric power consumption",
+      "unit": "kWh per capita", "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2000, "end_year": 2025, "frequency": "annual when reported",
+      "value_type": "international estimate", "limitations": "The series may lag and does not measure reliability or distributional access."
+    },
+    {
+      "source": "world_bank", "source_id": 2,
+      "indicator_code": "EG.ELC.FOSL.ZS", "indicator_name": "Electricity production from oil, gas, and coal",
+      "unit": "percent of total electricity production", "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2000, "end_year": 2025, "frequency": "annual when reported",
+      "value_type": "international estimate", "limitations": "Generation shares can lag and do not measure installed capacity."
+    },
+    {
+      "source": "world_bank", "source_id": 2,
+      "indicator_code": "EG.ELC.HYRO.ZS", "indicator_name": "Hydroelectricity production",
+      "unit": "percent of total electricity production", "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2000, "end_year": 2025, "frequency": "annual when reported",
+      "value_type": "international estimate", "limitations": "Hydrological variation can shift annual generation shares."
+    },
+    {
+      "source": "world_bank", "source_id": 2,
+      "indicator_code": "EG.ELC.RNEW.ZS", "indicator_name": "Renewable electricity output excluding hydro",
+      "unit": "percent of total electricity production", "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2000, "end_year": 2025, "frequency": "annual when reported",
+      "value_type": "international estimate", "limitations": "This indicator excludes hydroelectricity."
+    },
+    {
+      "source": "world_bank", "source_id": 2,
+      "indicator_code": "EG.IMP.CONS.ZS", "indicator_name": "Energy imports, net",
+      "unit": "percent of energy use", "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2000, "end_year": 2025, "frequency": "annual when reported",
+      "value_type": "international estimate", "limitations": "Negative values indicate net exports."
+    },
+    {
+      "source": "world_bank", "source_id": 2,
+      "indicator_code": "IS.AIR.PSGR", "indicator_name": "Air transport passengers carried",
+      "unit": "passengers", "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2000, "end_year": 2025, "frequency": "annual",
+      "value_type": "international aviation estimate", "limitations": "Passengers are attributed to carriers registered in the country, not necessarily domestic airports."
+    },
+    {
+      "source": "world_bank", "source_id": 2,
+      "indicator_code": "IT.CEL.SETS.P2", "indicator_name": "Mobile cellular subscriptions",
+      "unit": "per 100 people", "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2000, "end_year": 2025, "frequency": "annual",
+      "value_type": "ITU estimate", "limitations": "Subscriptions are not unique users and can exceed 100 per 100 people."
+    },
+    {
+      "source": "world_bank", "source_id": 2,
+      "indicator_code": "IT.NET.SECR.P6", "indicator_name": "Secure Internet servers",
+      "unit": "per 1 million people", "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2000, "end_year": 2025, "frequency": "annual",
+      "value_type": "Netcraft and World Bank estimate", "limitations": "Server location and certificate practices affect cross-country interpretation."
+    },
+    {
+      "source": "world_bank", "source_id": 2,
+      "indicator_code": "NV.IND.MANF.ZS", "indicator_name": "Manufacturing value added",
+      "unit": "percent of GDP", "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2000, "end_year": 2025, "frequency": "annual",
+      "value_type": "international estimate", "limitations": "Rebasing and sector-classification revisions can create breaks."
+    },
+    {
+      "source": "world_bank", "source_id": 2,
+      "indicator_code": "LP.LPI.OVRL.XQ", "indicator_name": "Logistics Performance Index",
+      "unit": "score 1 to 5", "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2007, "end_year": 2025, "frequency": "survey waves",
+      "value_type": "survey-based international index", "limitations": "LPI is perception-based and available only in selected survey years."
+    },
+    {
+      "source": "world_bank",
+      "source_id": 2,
+      "indicator_code": "SI.POV.DDAY",
+      "indicator_name": "Poverty headcount at 3 dollars a day (2021 PPP)",
+      "unit": "percent of population",
+      "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2000,
+      "end_year": 2025,
+      "frequency": "annual when surveyed",
+      "value_type": "household-survey estimate",
+      "limitations": "Survey years are sparse; income and consumption welfare concepts differ across countries."
+    },
+    {
+      "source": "world_bank",
+      "source_id": 2,
+      "indicator_code": "SH.XPD.CHEX.GD.ZS",
+      "indicator_name": "Current health expenditure",
+      "unit": "percent of GDP",
+      "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2000,
+      "end_year": 2025,
+      "frequency": "annual",
+      "value_type": "WHO Global Health Expenditure Database estimate"
+    },
+    {
+      "source": "world_bank",
+      "source_id": 2,
+      "indicator_code": "SH.MED.PHYS.ZS",
+      "indicator_name": "Physicians",
+      "unit": "per 1,000 people",
+      "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2000,
+      "end_year": 2025,
+      "frequency": "annual when reported",
+      "value_type": "WHO health-workforce observation",
+      "limitations": "Observation years and definitions of practicing physicians vary."
+    },
+    {
+      "source": "world_bank",
+      "source_id": 2,
+      "indicator_code": "SH.MED.BEDS.ZS",
+      "indicator_name": "Hospital beds",
+      "unit": "per 1,000 people",
+      "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2000,
+      "end_year": 2025,
+      "frequency": "annual when reported",
+      "value_type": "WHO health-facility observation",
+      "limitations": "Observation years and facility coverage vary."
+    },
+    {
+      "source": "world_bank",
+      "source_id": 2,
+      "indicator_code": "SH.PRV.SMOK",
+      "indicator_name": "Smoking prevalence among people ages 15 and older",
+      "unit": "percent of adults",
+      "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2000,
+      "end_year": 2025,
+      "frequency": "periodic estimate",
+      "value_type": "WHO modeled estimate",
+      "limitations": "Modeled estimates and underlying survey definitions vary."
+    },
+    {
+      "source": "world_bank",
+      "source_id": 2,
+      "indicator_code": "SE.PRE.ENRR",
+      "indicator_name": "School enrollment, preprimary, gross",
+      "unit": "percent",
+      "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2000,
+      "end_year": 2025,
+      "frequency": "annual when reported",
+      "value_type": "UNESCO Institute for Statistics estimate",
+      "limitations": "Pre-primary enrollment is not identical to childcare participation and gross rates can exceed 100."
+    },
+    {
+      "source": "world_bank",
+      "source_id": 2,
+      "indicator_code": "IT.NET.USER.ZS",
+      "indicator_name": "Individuals using the Internet",
+      "unit": "percent of population",
+      "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2015,
+      "end_year": 2025,
+      "frequency": "annual",
+      "value_type": "internationally harmonized estimate"
+    },
+    {
+      "source": "world_bank",
+      "source_id": 2,
+      "indicator_code": "SP.DYN.LE00.IN",
+      "indicator_name": "Life expectancy at birth",
+      "unit": "years",
+      "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2015,
+      "end_year": 2025,
+      "frequency": "annual",
+      "value_type": "internationally harmonized estimate"
+    },
+    {
+      "source": "world_bank",
+      "source_id": 3,
+      "indicator_code": "GOV_WGI_GE.EST",
+      "indicator_name": "Government effectiveness",
+      "unit": "estimate (-2.5 to 2.5)",
+      "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2015,
+      "end_year": 2024,
+      "frequency": "annual",
+      "value_type": "perception-based composite estimate",
+      "limitations": "Use as a diagnostic signal with its uncertainty, not as a direct measure of administrative performance."
+    },
+    {
+      "source": "world_bank", "source_id": 2,
+      "indicator_code": "SP.POP.TOTL", "indicator_name": "Population total",
+      "unit": "persons", "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2000, "end_year": 2025, "frequency": "annual",
+      "value_type": "international estimate", "limitations": "Population estimates are revised after censuses and demographic updates."
+    },
+    {
+      "source": "world_bank", "source_id": 2,
+      "indicator_code": "SP.POP.GROW", "indicator_name": "Population growth",
+      "unit": "annual percent", "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2000, "end_year": 2025, "frequency": "annual",
+      "value_type": "international estimate", "limitations": "This is a growth rate rather than a population level."
+    },
+    {
+      "source": "world_bank", "source_id": 2,
+      "indicator_code": "SP.URB.TOTL.IN.ZS", "indicator_name": "Urban population",
+      "unit": "percent of population", "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2000, "end_year": 2025, "frequency": "annual",
+      "value_type": "international estimate", "limitations": "National definitions of urban areas differ."
+    },
+    {
+      "source": "world_bank", "source_id": 2,
+      "indicator_code": "SP.POP.0014.TO.ZS", "indicator_name": "Population ages 0 to 14",
+      "unit": "percent of population", "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2000, "end_year": 2025, "frequency": "annual",
+      "value_type": "international estimate", "limitations": "Age shares are model-based demographic estimates."
+    },
+    {
+      "source": "world_bank", "source_id": 2,
+      "indicator_code": "NY.GDP.PCAP.PP.KD", "indicator_name": "GDP per capita, PPP",
+      "unit": "constant 2021 international dollars", "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2000, "end_year": 2025, "frequency": "annual",
+      "value_type": "international estimate", "limitations": "PPP benchmark revisions can change levels and historical comparisons."
+    },
+    {
+      "source": "world_bank", "source_id": 2,
+      "indicator_code": "FP.CPI.TOTL.ZG", "indicator_name": "Inflation, consumer prices",
+      "unit": "annual percent", "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2000, "end_year": 2025, "frequency": "annual",
+      "value_type": "international estimate", "limitations": "National consumption baskets and rebasing schedules differ."
+    },
+    {
+      "source": "world_bank", "source_id": 2,
+      "indicator_code": "BX.KLT.DINV.WD.GD.ZS", "indicator_name": "Foreign direct investment, net inflows",
+      "unit": "percent of GDP", "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2000, "end_year": 2025, "frequency": "annual",
+      "value_type": "balance-of-payments estimate", "limitations": "FDI flows are volatile and can include exceptional intracompany transactions."
+    },
+    {
+      "source": "world_bank", "source_id": 2,
+      "indicator_code": "NV.AGR.TOTL.ZS", "indicator_name": "Agriculture value added",
+      "unit": "percent of GDP", "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2000, "end_year": 2025, "frequency": "annual",
+      "value_type": "international estimate", "limitations": "National-accounts rebasing and sector classifications can create breaks."
+    },
+    {
+      "source": "world_bank", "source_id": 2,
+      "indicator_code": "NV.IND.TOTL.ZS", "indicator_name": "Industry value added",
+      "unit": "percent of GDP", "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2000, "end_year": 2025, "frequency": "annual",
+      "value_type": "international estimate", "limitations": "Industry includes construction; national-accounts rebasing can create breaks."
+    },
+    {
+      "source": "world_bank", "source_id": 2,
+      "indicator_code": "NV.SRV.TOTL.ZS", "indicator_name": "Services value added",
+      "unit": "percent of GDP", "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2000, "end_year": 2025, "frequency": "annual",
+      "value_type": "international estimate", "limitations": "Service-sector classifications and residual components differ across revisions."
+    },
+    {
+      "source": "world_bank", "source_id": 2,
+      "indicator_code": "SI.POV.GINI", "indicator_name": "Gini index",
+      "unit": "index 0 to 100", "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2000, "end_year": 2025, "frequency": "survey years",
+      "value_type": "household-survey estimate", "limitations": "Income and consumption concepts, survey years, and coverage differ across countries."
+    },
+    {
+      "source": "world_bank", "source_id": 2,
+      "indicator_code": "SL.UEM.1524.ZS", "indicator_name": "Youth unemployment",
+      "unit": "percent of youth labor force", "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2000, "end_year": 2025, "frequency": "annual",
+      "value_type": "ILO modeled estimate", "limitations": "The denominator is the youth labor force, not all young people; informality limits interpretation."
+    },
+    {
+      "source": "world_bank", "source_id": 2,
+      "indicator_code": "SL.TLF.CACT.FE.ZS", "indicator_name": "Female labor force participation",
+      "unit": "percent of female population ages 15 and older", "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2000, "end_year": 2025, "frequency": "annual",
+      "value_type": "ILO modeled estimate", "limitations": "Participation does not measure hours, earnings, formality, or job quality."
+    },
+    {
+      "source": "world_bank", "source_id": 2,
+      "indicator_code": "SL.EMP.VULN.ZS", "indicator_name": "Vulnerable employment",
+      "unit": "percent of total employment", "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2000, "end_year": 2025, "frequency": "annual",
+      "value_type": "ILO modeled estimate", "limitations": "Employment-status categories are a proxy, not a direct legal or multidimensional measure of job quality."
+    },
+    {
+      "source": "world_bank", "source_id": 2,
+      "indicator_code": "SE.ADT.LITR.ZS", "indicator_name": "Adult literacy rate",
+      "unit": "percent of people ages 15 and older", "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2000, "end_year": 2025, "frequency": "survey or census years",
+      "value_type": "UNESCO Institute for Statistics estimate", "limitations": "Assessment methods and observation years differ; literacy is not a direct measure of learning quality."
+    },
+    {
+      "source": "world_bank", "source_id": 2,
+      "indicator_code": "SE.SEC.ENRR", "indicator_name": "Secondary school enrollment, gross",
+      "unit": "percent", "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2000, "end_year": 2025, "frequency": "annual when reported",
+      "value_type": "UNESCO Institute for Statistics estimate", "limitations": "Gross enrollment can exceed 100 and does not measure completion or learning."
+    },
+    {
+      "source": "world_bank", "source_id": 2,
+      "indicator_code": "SE.XPD.TOTL.GD.ZS", "indicator_name": "Government education expenditure",
+      "unit": "percent of GDP", "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2000, "end_year": 2025, "frequency": "annual when reported",
+      "value_type": "UNESCO Institute for Statistics estimate", "limitations": "Coverage across government levels and off-budget spending can differ."
+    },
+    {
+      "source": "world_bank", "source_id": 2,
+      "indicator_code": "SH.XPD.GHED.GD.ZS", "indicator_name": "Domestic general government health expenditure",
+      "unit": "percent of GDP", "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2000, "end_year": 2025, "frequency": "annual",
+      "value_type": "WHO Global Health Expenditure Database estimate", "limitations": "A GDP share does not measure efficiency, incidence, or service quality."
+    },
+    {
+      "source": "world_bank", "source_id": 2,
+      "indicator_code": "SH.DYN.MORT", "indicator_name": "Under-five mortality rate",
+      "unit": "per 1,000 live births", "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2000, "end_year": 2025, "frequency": "annual",
+      "value_type": "UN Inter-agency Group for Child Mortality Estimation estimate", "limitations": "Modeled estimates combine surveys, censuses, and registration sources."
+    },
+    {
+      "source": "world_bank", "source_id": 2,
+      "indicator_code": "SH.STA.MMRT", "indicator_name": "Maternal mortality ratio",
+      "unit": "per 100,000 live births", "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2000, "end_year": 2025, "frequency": "periodic modeled estimate",
+      "value_type": "UN inter-agency modeled estimate", "limitations": "Uncertainty is substantial where civil-registration and cause-of-death systems are incomplete."
+    },
+    {
+      "source": "world_bank", "source_id": 2,
+      "indicator_code": "FX.OWN.TOTL.ZS", "indicator_name": "Account ownership at a financial institution or mobile-money provider",
+      "unit": "percent of population ages 15 and older", "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2011, "end_year": 2025, "frequency": "survey waves",
+      "value_type": "Global Findex survey estimate", "limitations": "Survey waves are intermittent and account ownership does not measure active use or financial health."
+    },
+    {
+      "source": "world_bank", "source_id": 2,
+      "indicator_code": "SH.H2O.SMDW.ZS", "indicator_name": "People using safely managed drinking water services",
+      "unit": "percent of population", "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2000, "end_year": 2025, "frequency": "annual estimate",
+      "value_type": "WHO UNICEF Joint Monitoring Programme estimate", "limitations": "Safely managed service requires accessibility, availability, and quality; missing values must not be replaced by basic-service estimates."
+    },
+    {
+      "source": "world_bank", "source_id": 2,
+      "indicator_code": "SH.STA.SMSS.ZS", "indicator_name": "People using safely managed sanitation services",
+      "unit": "percent of population", "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2000, "end_year": 2025, "frequency": "annual estimate",
+      "value_type": "WHO UNICEF Joint Monitoring Programme estimate", "limitations": "Safely managed sanitation is stricter than basic sanitation; country coverage may be incomplete."
+    },
+    {
+      "source": "world_bank", "source_id": 2,
+      "indicator_code": "EN.GHG.CO2.PC.CE.AR5", "indicator_name": "Carbon dioxide emissions excluding LULUCF per capita",
+      "unit": "metric tons CO2 equivalent per capita", "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2000, "end_year": 2025, "frequency": "annual",
+      "value_type": "international emissions estimate", "limitations": "This excludes land-use change and does not measure climate vulnerability or local pollution."
+    },
+    {
+      "source": "world_bank", "source_id": 3,
+      "indicator_code": "GOV_WGI_RL.EST", "indicator_name": "Rule of law",
+      "unit": "estimate (-2.5 to 2.5)", "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2015, "end_year": 2024, "frequency": "annual",
+      "value_type": "perception-based composite estimate", "limitations": "Use with its standard error and as a diagnostic signal rather than direct proof of legal performance."
+    },
+    {
+      "source": "world_bank", "source_id": 3,
+      "indicator_code": "GOV_WGI_CC.EST", "indicator_name": "Control of corruption",
+      "unit": "estimate (-2.5 to 2.5)", "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2015, "end_year": 2024, "frequency": "annual",
+      "value_type": "perception-based composite estimate", "limitations": "Perceptions and source composition change; the estimate is not a direct count of corruption."
+    },
+    {
+      "source": "world_bank", "source_id": 3,
+      "indicator_code": "GOV_WGI_VA.EST", "indicator_name": "Voice and accountability",
+      "unit": "estimate (-2.5 to 2.5)", "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2015, "end_year": 2024, "frequency": "annual",
+      "value_type": "perception-based composite estimate", "limitations": "This broad composite does not identify which accountability institution drives change."
+    },
+    {
+      "source": "world_bank", "source_id": 3,
+      "indicator_code": "GOV_WGI_PV.EST", "indicator_name": "Political stability and absence of violence",
+      "unit": "estimate (-2.5 to 2.5)", "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2015, "end_year": 2024, "frequency": "annual",
+      "value_type": "perception-based composite estimate", "limitations": "The composite does not replace event-level conflict or security data."
+    },
+    {
+      "source": "world_bank", "source_id": 3,
+      "indicator_code": "GOV_WGI_RQ.EST", "indicator_name": "Regulatory quality",
+      "unit": "estimate (-2.5 to 2.5)", "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2015, "end_year": 2024, "frequency": "annual",
+      "value_type": "perception-based composite estimate", "limitations": "A broad perception-based composite cannot identify sector-specific regulatory implementation."
+    },
+    {
+      "source": "imf_weo",
+      "indicator_code": "NGDP_RPCH",
+      "indicator_name": "Real GDP growth",
+      "unit": "percent change",
+      "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2015,
+      "end_year": 2030,
+      "frequency": "annual",
+      "value_type": "WEO actual, estimate, and projection",
+      "dataset_version": "record the downloaded WEO vintage"
+    },
+    {
+      "source": "imf_weo",
+      "indicator_code": "GGR_NGDP",
+      "indicator_name": "General government revenue",
+      "unit": "percent of GDP",
+      "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2015,
+      "end_year": 2030,
+      "frequency": "annual",
+      "value_type": "WEO actual, estimate, and projection",
+      "dataset_version": "record the downloaded WEO vintage",
+      "limitations": "General-government coverage and the historical-estimate-projection boundary must be checked before interpretation."
+    },
+    {
+      "source": "imf_weo",
+      "indicator_code": "GGXWDG_NGDP",
+      "indicator_name": "General government gross debt",
+      "unit": "percent of GDP",
+      "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2015,
+      "end_year": 2030,
+      "frequency": "annual",
+      "value_type": "WEO actual, estimate, and projection",
+      "dataset_version": "record the downloaded WEO vintage",
+      "limitations": "Debt definitions and public-sector coverage vary; projections are not observed outcomes."
+    },
+    {
+      "source": "ilostat",
+      "indicator_code": "UNE_2EAP_SEX_AGE_RT_A",
+      "indicator_name": "Unemployment rate",
+      "unit": "percent of labor force",
+      "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2015,
+      "end_year": 2025,
+      "frequency": "annual",
+      "value_type": "ILO harmonized observation; inspect source and model status",
+      "filters": {"sex": "SEX_T", "classif1": "AGE_YTHADULT_YGE15"}
+    },
+    {
+      "source": "undesa_wpp",
+      "indicator_code": "TFR",
+      "value_column": "TFR",
+      "indicator_name": "Total fertility rate",
+      "unit": "births per woman",
+      "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2015,
+      "end_year": 2030,
+      "frequency": "annual",
+      "value_type": "WPP 2024 estimate and Medium-variant projection",
+      "variant": "Medium"
+    },
+    {
+      "source": "unctad",
+      "endpoint": "https://unctadstat-api.unctad.org/bulkdownload/US.ConcentDiversIndices/US_ConcentDiversIndices",
+      "indicator_code": "EXPORT_CONCENTRATION",
+      "indicator_name": "Merchandise export concentration index",
+      "value_column": "Concentration Index",
+      "unit": "index",
+      "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2015,
+      "end_year": 2024,
+      "frequency": "annual",
+      "value_type": "UNCTAD calculated index",
+      "filters": {"Flow": [2]}
+    },
+    {
+      "source": "whogov",
+      "dataset_version": "4.0",
+      "indicator_code": "leaderexperience_total",
+      "indicator_name": "Leader total observed experience",
+      "unit": "years",
+      "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2015,
+      "end_year": 2025,
+      "frequency": "annual snapshot",
+      "value_type": "research-dataset observation"
+    },
+    {
+      "source": "whogov",
+      "dataset_version": "4.0",
+      "indicator_code": "n_minister",
+      "indicator_name": "Number of cabinet ministers",
+      "unit": "persons",
+      "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2015,
+      "end_year": 2025,
+      "frequency": "annual snapshot",
+      "value_type": "research-dataset observation"
+    },
+    {
+      "source": "whogov",
+      "dataset_version": "4.0",
+      "indicator_code": "n_female_minister",
+      "indicator_name": "Number of female cabinet ministers",
+      "unit": "persons",
+      "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2015,
+      "end_year": 2025,
+      "frequency": "annual snapshot",
+      "value_type": "research-dataset observation"
+    },
+    {
+      "source": "whogov",
+      "dataset_version": "4.0",
+      "indicator_code": "average_minister",
+      "indicator_name": "Average cabinet tenure of ministers",
+      "unit": "years",
+      "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2015,
+      "end_year": 2025,
+      "frequency": "annual snapshot",
+      "value_type": "research-dataset estimate"
+    }
+  ],
+  "derived_indicators": [
+    {
+      "operation": "percent_change",
+      "input_indicator": "TFR",
+      "indicator_code": "TFR_ANNUAL_CHANGE",
+      "indicator_name": "Annual change in total fertility rate",
+      "unit": "percent",
+      "value_type": "GDI calculation from WPP series"
+    },
+    {
+      "operation": "ratio",
+      "numerator": "n_female_minister",
+      "denominator": "n_minister",
+      "scale": 100,
+      "indicator_code": "female_minister_share",
+      "indicator_name": "Women among cabinet ministers",
+      "unit": "percent",
+      "value_type": "GDI calculation from WhoGov counts"
+    }
+  ],
+  "benchmarks": [
+    {
+      "input_indicator": "NGDP_RPCH",
+      "target_country": "NGA",
+      "peer_countries": ["GHA", "KEN", "ZAF"],
+      "statistic": "median",
+      "min_peers": 2,
+      "indicator_code": "NGDP_RPCH_TARGET_PEERS",
+      "indicator_name": "Real GDP growth: Nigeria and peer median",
+      "benchmark_code": "PEER_MEDIAN",
+      "benchmark_name": "Peer-country median",
+      "gap_indicator_code": "NGDP_RPCH_GAP",
+      "gap_indicator_name": "Nigeria minus peer-median real GDP growth",
+      "limitations": "The peer set must be justified by region, income, structure, or the causal comparison being made."
+    }
+  ]
+}

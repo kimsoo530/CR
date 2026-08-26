@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>7.3 State-Owned Enterprises, Mining SOEs, and Quasi-Public Sector | Mongolia Country Report</title>
+  <script src="../assets/marked.min.js"></script>
+  <script src="../assets/chart.umd.min.js"></script>
+  <style>
+    :root { --ink: #162029; --muted: #62707c; --line: #d8e0e6; --panel: #f5f7f8; --accent: #0f6f78; --accent2: #7a5b1e; --paper: #ffffff; --soft: #edf5f2; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: var(--ink); background: var(--paper); line-height: 1.62; }
+    .layout { display: grid; grid-template-columns: 310px minmax(0, 1fr); min-height: 100vh; }
+    .toc { position: sticky; top: 0; height: 100vh; overflow: auto; border-right: 1px solid var(--line); background: var(--panel); padding: 22px 18px; }
+    .toc h1 { font-size: 20px; margin: 0 0 6px; }
+    .toc h1 a { color: var(--ink); text-decoration: none; }
+    .toc p { color: var(--muted); font-size: 13px; margin: 0 0 18px; }
+    nav a { display: block; color: var(--ink); text-decoration: none; padding: 8px 10px; border-radius: 6px; font-size: 14px; }
+    nav a:hover, nav a.active { background: #e3f0ef; color: var(--accent); }
+    .chapter-link { font-weight: 700; }
+    .toc-group { margin: 1px 0; border-radius: 6px; }
+    .toc-group summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 4px; }
+    .toc-group summary::-webkit-details-marker { display: none; }
+    .toc-group summary::before { content: ">"; color: var(--muted); font-size: 12px; transition: transform .12s ease; }
+    .toc-group[open] summary::before { transform: rotate(90deg); }
+    .toc-group summary a { flex: 1; }
+    .section-nav { margin: 2px 0 8px 8px; padding-left: 10px; border-left: 2px solid #cdd9df; }
+    .section-link { padding: 5px 8px; font-size: 12px; color: var(--muted); line-height: 1.35; }
+    main { padding: 34px min(6vw, 82px); max-width: 1120px; }
+    .hero { border-bottom: 1px solid var(--line); padding-bottom: 20px; margin-bottom: 24px; }
+    .hero h2 { font-size: 34px; margin: 0 0 8px; letter-spacing: 0; }
+    .hero p, .chapter-landing-note { color: var(--muted); max-width: 860px; }
+    .chapter-thesis { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 16px; border: 1px solid var(--line); border-radius: 8px; padding: 14px; background: var(--soft); margin: 18px 0; }
+    .chapter-thesis b { color: var(--accent); }
+    .chapter-section-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 12px; margin: 18px 0 28px; }
+    .chapter-section-card { border: 1px solid var(--line); border-radius: 8px; background: #fff; padding: 14px; }
+    .chapter-section-card a { display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: 10px; align-items: start; text-decoration: none; color: var(--ink); }
+    .chapter-section-card span { font-weight: 800; color: var(--accent); font-size: 15px; }
+    .chapter-section-card strong { font-size: 16px; line-height: 1.35; }
+    .chapter-section-card p { color: var(--muted); font-size: 13px; margin: 10px 0 0; }
+    .section-reading { max-width: 940px; }
+    .editable-prose { border: 1px solid var(--line); border-radius: 8px; background: #fff; overflow: hidden; }
+    .prose-toolbar { display: flex; justify-content: space-between; gap: 10px; align-items: center; border-bottom: 1px solid var(--line); background: #f8fafb; padding: 10px 12px; color: var(--muted); font-size: 13px; }
+    .prose-toolbar button, .primary-link, .secondary-link { border: 1px solid var(--accent); border-radius: 6px; background: var(--accent); color: #fff; padding: 7px 10px; text-decoration: none; cursor: pointer; font-weight: 700; font-size: 13px; }
+    .prose-toolbar button[data-md-action='cancel'], .secondary-link { background: #fff; color: var(--accent); }
+    .prose-body { padding: 18px 22px; }
+    .prose-body h2 { font-size: 25px; margin: 0 0 14px; }
+    .prose-body h3 { font-size: 18px; margin: 24px 0 8px; }
+    .prose-body img { display: block; max-width: 100%; height: auto; margin: 14px auto; border: 1px solid var(--line); border-radius: 8px; background: #f8fafb; padding: 8px; }
+    .prose-body figure { margin: 18px 0; }
+    .prose-body figcaption { color: var(--muted); font-size: 13px; line-height: 1.45; }
+    .prose-body table, .index-table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+    .prose-body th, .prose-body td, .index-table th, .index-table td { border: 1px solid var(--line); padding: 8px 10px; vertical-align: top; }
+    .prose-body th, .index-table th { background: #f4f8f7; }
+    .visual-analysis { margin-top: 20px; }
+    .visual-analysis > p { color: #34444f; margin: 0 0 12px; max-width: 880px; }
+    .map-figure, .image-figure { margin: 20px 0 18px; }
+    .map-figure img, .image-figure img { display: block; width: min(100%, 900px); height: auto; border: 1px solid var(--line); border-radius: 8px; background: #fff; padding: 8px; }
+    .image-figure img { width: min(100%, 760px); }
+    .map-figure figcaption, .image-figure figcaption { color: var(--muted); font-size: 13px; line-height: 1.45; margin-top: 8px; }
+    .paired-images { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; align-items: start; }
+    .paired-images img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+    .paired-images span { display: block; margin-top: 6px; color: var(--muted); font-size: 12px; font-weight: 700; }
+    .figure-card, .chart-empty { border: 1px solid var(--line); border-radius: 8px; background: #fff; margin: 16px 0; padding: 16px; }
+    .figure-card figcaption { font-weight: 800; font-size: 16px; margin-bottom: 12px; color: var(--ink); }
+    .chart-frame { height: 360px; position: relative; }
+    .chart-panel-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+    .chart-panel { min-width: 0; padding: 12px; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+    .chart-panel h3 { margin: 0 0 8px; font-size: 0.92rem; line-height: 1.25; color: var(--ink); }
+    .chart-panel-frame { height: 220px; position: relative; }
+    .figure-interpretation { margin: -4px 0 18px; color: #34444f; }
+    .figure-interpretation p { margin: 0 0 8px; }
+    .figure-interpretation ul { margin: 8px 0 0 18px; padding: 0; }
+    .chart-empty { display: grid; gap: 6px; color: var(--muted); }
+    [hidden] { display: none !important; }
+    .markdown-editor { display: block; width: 100%; min-height: 560px; border: 0; padding: 16px; font-family: Consolas, monospace; font-size: 14px; line-height: 1.55; resize: vertical; }
+    .source { color: var(--muted); font-size: 13px; }
+    .cover-body { background: #e9eef0; }
+    .cover-page { min-height: 100vh; display: grid; place-items: center; padding: 36px; }
+    .book-cover { width: min(980px, 100%); min-height: 760px; background: #fff; border: 1px solid #cfd8de; border-radius: 8px; padding: 58px; box-shadow: 0 24px 70px rgba(22, 32, 41, .14); }
+    .cover-kicker { color: var(--accent); font-weight: 800; text-transform: uppercase; font-size: 13px; letter-spacing: .08em; }
+    .cover-rule { height: 7px; width: 150px; background: linear-gradient(90deg, var(--accent), var(--accent2)); margin: 22px 0 42px; border-radius: 999px; }
+    .book-cover h1 { font-size: clamp(52px, 8vw, 92px); line-height: .96; margin: 0 0 24px; letter-spacing: 0; }
+    .cover-subtitle { font-size: 22px; max-width: 760px; color: #33414c; }
+    .cover-purpose { max-width: 820px; color: var(--muted); font-size: 16px; }
+    .cover-editor { margin: 36px 0; display: grid; gap: 3px; }
+    .cover-editor span { color: var(--muted); font-size: 12px; text-transform: uppercase; }
+    .cover-editor strong { font-size: 20px; }
+    .cover-editor em { color: var(--muted); font-style: normal; }
+    .cover-actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 22px 0; }
+    .cover-method { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 30px; }
+    .cover-method div { border-top: 1px solid var(--line); padding-top: 12px; }
+    .cover-method b { display: block; color: var(--accent); }
+    .cover-method span { color: var(--muted); font-size: 13px; }
+    @media (max-width: 1040px) { .layout { grid-template-columns: 1fr; } .toc { position: static; height: auto; } .cover-method { grid-template-columns: 1fr; } main { padding: 24px 18px; } .book-cover { padding: 32px; min-height: auto; } .chart-frame { height: 300px; } .chart-panel-grid { grid-template-columns: 1fr; } .paired-images { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+  <div class="layout">
+    <aside class="toc">
+      <h1><a href="../index.html">Mongolia</a></h1>
+      <p>Official-source country report with section-level Markdown editing and separated analysis visuals.</p>
+      <nav><details class="toc-group"><summary><a class="chapter-link" href="../01-overview.html">1. Country Overview</a></summary><div class="section-nav"><a class="section-link" href="../sections/01-01-official-name-capital-location-area-population-language-religion-and-currency.html">1.1 Official Name, Capital, Location, Area, Population, Language, Religion, and Currency</a><a class="section-link" href="../sections/01-02-state-symbols.html">1.2 State Symbols</a><a class="section-link" href="../sections/01-03-country-profile-and-strategic-setting.html">1.3 Country Profile and Strategic Setting</a><a class="section-link" href="../sections/01-04-territory-climate-settlement-and-administrative-divisions.html">1.4 Territory, Climate, Settlement, and Administrative Divisions</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../02-history.html">2. Historical Background</a></summary><div class="section-nav"><a class="section-link" href="../sections/02-01-steppe-polities-empire-and-civilizational-zones.html">2.1 Steppe Polities, Empire, and Civilizational Zones</a><a class="section-link" href="../sections/02-02-qing-rule-autonomy-socialism-and-state-formation.html">2.2 Qing Rule, Autonomy, Socialism, and State Formation</a><a class="section-link" href="../sections/02-03-democratic-transition-and-constitutional-turning-points.html">2.3 Democratic Transition and Constitutional Turning Points</a><a class="section-link" href="../sections/02-04-historical-legacies-in-present-institutions.html">2.4 Historical Legacies in Present Institutions</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../03-constitution.html">3. Constitution and Basic State Order</a></summary><div class="section-nav"><a class="section-link" href="../sections/03-01-constitutional-order-and-amendments.html">3.1 Constitutional Order and Amendments</a><a class="section-link" href="../sections/03-02-fundamental-rights-system.html">3.2 Fundamental Rights System</a><a class="section-link" href="../sections/03-03-separation-of-powers-constitutional-review-judicial-review-and-emergency-powers.html">3.3 Separation of Powers, Constitutional Review, Judicial Review, and Emergency Powers</a><a class="section-link" href="../sections/03-04-constitutional-implications-for-state-authority.html">3.4 Constitutional Implications for State Authority</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../04-politics.html">4. Political System and Power Structure</a></summary><div class="section-nav"><a class="section-link" href="../sections/04-01-form-of-government.html">4.1 Form of Government</a><a class="section-link" href="../sections/04-02-president-prime-minister-cabinet-and-parliament.html">4.2 President, Prime Minister, Cabinet, and Parliament</a><a class="section-link" href="../sections/04-03-party-system-elections-representation-and-coalition-politics.html">4.3 Party System, Elections, Representation, and Coalition Politics</a><a class="section-link" href="../sections/04-04-local-politics-governors-and-real-power-relations.html">4.4 Local Politics, Governors, and Real Power Relations</a><a class="section-link" href="../sections/04-05-political-dynamics-and-institutional-accountability.html">4.5 Political Dynamics and Institutional Accountability</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../05-administration.html">5. Administrative System and Government Organization</a></summary><div class="section-nav"><a class="section-link" href="../sections/05-01-central-executive-administration-and-policy-coordination.html">5.1 Central Executive Administration and Policy Coordination</a><a class="section-link" href="../sections/05-02-organizational-management-and-administrative-reform.html">5.2 Organizational Management and Administrative Reform</a><a class="section-link" href="../sections/05-03-human-resource-management-and-civil-service.html">5.3 Human Resource Management and Civil Service</a><a class="section-link" href="../sections/05-04-budget-execution-procurement-audit-and-anti-corruption-administration.html">5.4 Budget Execution, Procurement, Audit, and Anti-Corruption Administration</a><a class="section-link" href="../sections/05-05-aimags-soums-districts-khoroos-and-service-delivery.html">5.5 Aimags, Soums, Districts, Khoroos, and Service Delivery</a><a class="section-link" href="../sections/05-06-digital-government-e-mongolia-and-administrative-accountability.html">5.6 Digital Government, E-Mongolia, and Administrative Accountability</a><a class="section-link" href="../sections/05-07-implementation-capacity-in-a-low-density-territory.html">5.7 Implementation Capacity in a Low-Density Territory</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../06-governance.html">6. Governance and Institutional Capacity</a></summary><div class="section-nav"><a class="section-link" href="../sections/06-01-government-effectiveness-and-regulatory-quality.html">6.1 Government Effectiveness and Regulatory Quality</a><a class="section-link" href="../sections/06-02-rule-of-law-and-control-of-corruption.html">6.2 Rule of Law and Control of Corruption</a><a class="section-link" href="../sections/06-03-voice-accountability-political-stability-and-citizen-participation.html">6.3 Voice, Accountability, Political Stability, and Citizen Participation</a><a class="section-link" href="../sections/06-04-institutional-performance-and-reform-credibility.html">6.4 Institutional Performance and Reform Credibility</a></div></details>
+<details class="toc-group active" open><summary><a class="chapter-link active" href="../07-fiscal.html">7. Fiscal System and Public Sector</a></summary><div class="section-nav"><a class="section-link" href="../sections/07-01-government-revenue-mineral-revenue-and-expenditure-structure.html">7.1 Government Revenue, Mineral Revenue, and Expenditure Structure</a><a class="section-link" href="../sections/07-02-fiscal-balance-debt-stabilization-funds-and-interest-burden.html">7.2 Fiscal Balance, Debt, Stabilization Funds, and Interest Burden</a><a class="section-link" href="../sections/07-03-state-owned-enterprises-mining-soes-and-quasi-public-sector.html">7.3 State-Owned Enterprises, Mining SOEs, and Quasi-Public Sector</a><a class="section-link" href="../sections/07-04-public-investment-roads-urban-infrastructure-and-investment-decision-making.html">7.4 Public Investment, Roads, Urban Infrastructure, and Investment Decision-Making</a><a class="section-link" href="../sections/07-05-fiscal-capacity-commodity-cycles-and-public-sector-risks.html">7.5 Fiscal Capacity, Commodity Cycles, and Public Sector Risks</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../08-society.html">8. Population and Social Structure</a></summary><div class="section-nav"><a class="section-link" href="../sections/08-01-population-size-growth-age-structure-and-dependency.html">8.1 Population Size, Growth, Age Structure, and Dependency</a><a class="section-link" href="../sections/08-02-urbanization-ulaanbaatar-concentration-and-regional-distribution.html">8.2 Urbanization, Ulaanbaatar Concentration, and Regional Distribution</a><a class="section-link" href="../sections/08-03-ethnicity-language-religion-migration-remittances-and-diaspora.html">8.3 Ethnicity, Language, Religion, Migration, Remittances, and Diaspora</a><a class="section-link" href="../sections/08-04-nomadic-livelihoods-social-integration-and-conflict-factors.html">8.4 Nomadic Livelihoods, Social Integration, and Conflict Factors</a><a class="section-link" href="../sections/08-05-demographic-pressures-and-social-cohesion.html">8.5 Demographic Pressures and Social Cohesion</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../09-macro.html">9. Macroeconomic Structure</a></summary><div class="section-nav"><a class="section-link" href="../sections/09-01-gdp-scale-growth-and-gdp-per-capita.html">9.1 GDP Scale, Growth, and GDP Per Capita</a><a class="section-link" href="../sections/09-02-prices-exchange-rate-and-macroeconomic-stability.html">9.2 Prices, Exchange Rate, and Macroeconomic Stability</a><a class="section-link" href="../sections/09-03-sectoral-structure-mineral-dependence-growth-model-and-vulnerabilities.html">9.3 Sectoral Structure, Mineral Dependence, Growth Model, and Vulnerabilities</a><a class="section-link" href="../sections/09-04-growth-sustainability-and-structural-constraints.html">9.4 Growth Sustainability and Structural Constraints</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../10-trade.html">10. Trade, Investment, and External Economy</a></summary><div class="section-nav"><a class="section-link" href="../sections/10-01-exports-imports-trading-partners-and-current-account.html">10.1 Exports, Imports, Trading Partners, and Current Account</a><a class="section-link" href="../sections/10-02-copper-coal-gold-cashmere-tourism-and-services.html">10.2 Copper, Coal, Gold, Cashmere, Tourism, and Services</a><a class="section-link" href="../sections/10-03-fdi-absolute-amount-and-share-of-gdp.html">10.3 FDI Absolute Amount and Share of GDP</a><a class="section-link" href="../sections/10-04-investment-regime-economic-zones-and-industrial-policy.html">10.4 Investment Regime, Economic Zones, and Industrial Policy</a><a class="section-link" href="../sections/10-05-external-integration-and-competitiveness.html">10.5 External Integration and Competitiveness</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../11-infrastructure.html">11. Infrastructure, Energy, and Digital Connectivity</a></summary><div class="section-nav"><a class="section-link" href="../sections/11-01-electricity-access-heating-energy-dependence-and-transition.html">11.1 Electricity Access, Heating, Energy Dependence, and Transition</a><a class="section-link" href="../sections/11-02-transport-logistics-rail-road-air-and-border-corridors.html">11.2 Transport, Logistics, Rail, Road, Air, and Border Corridors</a><a class="section-link" href="../sections/11-03-internet-mobile-connectivity-secure-servers-and-logistics-performance.html">11.3 Internet, Mobile Connectivity, Secure Servers, and Logistics Performance</a><a class="section-link" href="../sections/11-04-connectivity-service-delivery-and-bottlenecks.html">11.4 Connectivity, Service Delivery, and Bottlenecks</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../12-labor.html">12. Labor Market and Human Capital</a></summary><div class="section-nav"><a class="section-link" href="../sections/12-01-labor-force-size-and-participation.html">12.1 Labor Force Size and Participation</a><a class="section-link" href="../sections/12-02-female-participation-unemployment-youth-unemployment-and-vulnerable-employment.html">12.2 Female Participation, Unemployment, Youth Unemployment, and Vulnerable Employment</a><a class="section-link" href="../sections/12-03-herding-mining-education-productivity-hdi-and-r-d.html">12.3 Herding, Mining, Education, Productivity, HDI, and R&amp;D</a><a class="section-link" href="../sections/12-04-employment-absorption-and-human-capital-use.html">12.4 Employment Absorption and Human Capital Use</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../13-education-health.html">13. Education, Health, and Welfare</a></summary><div class="section-nav"><a class="section-link" href="../sections/13-01-education-system-and-public-expenditure.html">13.1 Education System and Public Expenditure</a><a class="section-link" href="../sections/13-02-life-expectancy-infant-mortality-hospital-beds-doctors-and-health-expenditure.html">13.2 Life Expectancy, Infant Mortality, Hospital Beds, Doctors, and Health Expenditure</a><a class="section-link" href="../sections/13-03-air-pollution-sanitation-public-health-risks-and-welfare.html">13.3 Air Pollution, Sanitation, Public Health Risks, and Welfare</a><a class="section-link" href="../sections/13-04-human-development-outcomes-and-welfare-capacity.html">13.4 Human Development Outcomes and Welfare Capacity</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../14-environment.html">14. Environment, Climate Risk, and Sustainable Development</a></summary><div class="section-nav"><a class="section-link" href="../sections/14-01-climate-change-dzud-desertification-and-rural-livelihood-risk.html">14.1 Climate Change, Dzud, Desertification, and Rural Livelihood Risk</a><a class="section-link" href="../sections/14-02-ger-district-and-urban-public-health.html">14.2 Ger District and Urban Public Health</a><a class="section-link" href="../sections/14-03-mining-water-land-restoration-and-environmental-governance.html">14.3 Mining, Water, Land Restoration, and Environmental Governance</a><a class="section-link" href="../sections/14-04-sdg-performance-green-development-and-policy-implementation.html">14.4 SDG Performance, Green Development, and Policy Implementation</a><a class="section-link" href="../sections/14-05-environmental-sustainability-sdg-implementation-and-future-policy-direction.html">14.5 Environmental Sustainability, SDG Implementation, and Future Policy Direction</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../15-finance.html">15. Financial Sector and Economic Institutions</a></summary><div class="section-nav"><a class="section-link" href="../sections/15-01-domestic-credit-private-credit-capital-markets-and-fintech.html">15.1 Domestic Credit, Private Credit, Capital Markets, and Fintech</a><a class="section-link" href="../sections/15-02-central-bank-monetary-policy-supervision-and-exchange-rate.html">15.2 Central Bank, Monetary Policy, Supervision, and Exchange Rate</a><a class="section-link" href="../sections/15-03-foreign-investment-protection-and-capital-market-openness.html">15.3 Foreign Investment Protection and Capital Market Openness</a><a class="section-link" href="../sections/15-04-financial-deepening-and-market-institutions.html">15.4 Financial Deepening and Market Institutions</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../16-security.html">16. Foreign Relations, Security, and Geopolitics</a></summary><div class="section-nav"><a class="section-link" href="../sections/16-01-foreign-policy-orientation-and-international-organizations.html">16.1 Foreign Policy Orientation and International Organizations</a><a class="section-link" href="../sections/16-02-china-russia-third-neighbor-policy-and-strategic-balancing.html">16.2 China, Russia, Third Neighbor Policy, and Strategic Balancing</a><a class="section-link" href="../sections/16-03-borders-security-organizations-military-capacity-and-transnational-issues.html">16.3 Borders, Security Organizations, Military Capacity, and Transnational Issues</a><a class="section-link" href="../sections/16-04-strategic-resources-corridors-and-climate-security-risks.html">16.4 Strategic Resources, Corridors, and Climate-Security Risks</a><a class="section-link" href="../sections/16-05-strategic-environment-and-transnational-risks.html">16.5 Strategic Environment and Transnational Risks</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../17-policy.html">17. Major Policies and National Development Strategy</a></summary><div class="section-nav"><a class="section-link" href="../sections/17-01-evolution-of-national-development-strategy.html">17.1 Evolution of National Development Strategy</a><a class="section-link" href="../sections/17-02-vision-2050-new-recovery-policy-and-industrial-policy.html">17.2 Vision 2050, New Recovery Policy, and Industrial Policy</a><a class="section-link" href="../sections/17-03-digital-transformation-energy-transition-climate-policy-and-administrative-reform.html">17.3 Digital Transformation, Energy Transition, Climate Policy, and Administrative Reform</a><a class="section-link" href="../sections/17-04-welfare-education-health-and-recent-five-year-policy-changes.html">17.4 Welfare, Education, Health, and Recent Five-Year Policy Changes</a><a class="section-link" href="../sections/17-05-policy-implementation-and-reform-sequencing.html">17.5 Policy Implementation and Reform Sequencing</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../18-assessment.html">18. Integrated Assessment</a></summary><div class="section-nav"><a class="section-link" href="../sections/18-01-national-operating-model.html">18.1 National Operating Model</a><a class="section-link" href="../sections/18-02-political-stability-institutional-risk-growth-drivers-and-bottlenecks.html">18.2 Political Stability, Institutional Risk, Growth Drivers, and Bottlenecks</a><a class="section-link" href="../sections/18-03-administrative-capacity-and-international-cooperation-implications.html">18.3 Administrative Capacity and International Cooperation Implications</a><a class="section-link" href="../sections/18-04-mongolia-and-comparative-administration-theory.html">18.4 Mongolia and Comparative Administration Theory</a><a class="section-link" href="../sections/18-05-evidence-limits-and-source-triangulation.html">18.5 Evidence Limits and Source Triangulation</a><a class="section-link" href="../sections/18-06-strategic-diagnosis-and-outlook.html">18.6 Strategic Diagnosis and Outlook</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../19-appendix.html">19. Appendix and Update Workflow</a></summary><div class="section-nav"><a class="section-link" href="../sections/19-01-annual-revision-method.html">19.1 Annual Revision Method</a><a class="section-link" href="../sections/19-02-editorial-revision-method.html">19.2 Editorial Revision Method</a><a class="section-link" href="../sections/19-03-data-integrity.html">19.3 Data Integrity</a><a class="section-link" href="../sections/19-04-evidence-archive-and-review-trail.html">19.4 Evidence Archive and Review Trail</a><a class="section-link" href="../sections/19-05-data-limits-and-source-triangulation.html">19.5 Data Limits and Source Triangulation</a><a class="section-link" href="../sections/19-06-external-review-checklist.html">19.6 External Review Checklist</a><a class="section-link" href="../sections/19-07-comparative-administration-benchmark.html">19.7 Comparative Administration Benchmark</a><a class="section-link" href="../sections/19-08-timeline.html">19.8 Timeline</a><a class="section-link" href="../sections/19-09-government-organization-chart.html">19.9 Government Organization Chart</a><a class="section-link" href="../sections/19-10-constitution-and-major-laws.html">19.10 Constitution and Major Laws</a><a class="section-link" href="../sections/19-11-key-indicator-table-source-list-and-data-codebook.html">19.11 Key Indicator Table, Source List, and Data Codebook</a><a class="section-link" href="../sections/19-12-methodological-notes-and-update-standards.html">19.12 Methodological Notes and Update Standards</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../20-references.html">20. References</a></summary><div class="section-nav"><a class="section-link" href="../sections/20-01-references.html">20.1 References</a><a class="section-link" href="../sections/20-02-source-integrity-and-citation-notes.html">20.2 Source Integrity and Citation Notes</a></div></details></nav>
+    </aside>
+    <main>
+      <header class="hero"><h2>7.3 State-Owned Enterprises, Mining SOEs, and Quasi-Public Sector</h2></header>
+      
+    <section class="section-reading">
+      
+    <article class="editable-prose" data-md-panel="fiscal-state-owned-enterprises-mining-soes-and-quasi-public-sector-text" data-md-source="sections/07-03-state-owned-enterprises-mining-soes-and-quasi-public-sector.md">
+      <div class="prose-toolbar">
+        <span>Editable section manuscript</span>
+        <div>
+          <button type="button" data-md-action="edit">Edit Markdown</button>
+          <button type="button" data-md-action="save" hidden>Save</button>
+          <button type="button" data-md-action="cancel" hidden>Cancel</button>
+        </div>
+      </div>
+      <div class="markdown-preview prose-body"></div>
+      <textarea class="markdown-editor" hidden>Mongolia’s state-owned enterprises should be understood as a historically layered institution. They are not only commercial firms. They are also remnants of socialist economic organization, instruments of post-socialist restructuring, vehicles of national resource ownership, and sources of quasi-fiscal risk. The role of SOEs has changed substantially over time: under socialism, they formed the core of the planned economy; during the 1990s transition, many were privatized or restructured; during the mining boom, the state re-entered strategic sectors through large mining SOEs and holding companies; and in the current period, SOEs have become central to fiscal policy, sovereign wealth governance, infrastructure investment, and public trust in the management of mineral wealth.
+
+During the socialist period, SOEs were the basic organizational units of the economy. Production, employment, investment, prices, and distribution were largely coordinated through the state plan, and enterprises functioned less as autonomous profit-seeking firms than as administrative units within a centrally directed system. Their role was economic, fiscal, and social at the same time. They produced goods and services, provided employment, supported social welfare functions, and transferred resources to the state budget. This explains why the early transition was so disruptive. The collapse of the socialist system did not simply require the sale of state assets; it required the reconstruction of the entire relationship among enterprises, taxation, employment, banking, and the budget.
+
+Before the transition, Mongolia’s fiscal system depended heavily on SOEs. One study of Mongolia’s early market transition notes that the pre-reform fiscal system relied on two major revenue sources: remitted profits from state-owned enterprises and import price differentials. Tax reforms introduced in 1991 sought to broaden the tax base, replace the turnover tax on SOEs with a sales tax, introduce excises, remove export duties, establish import duties, and create corporate and individual income taxes. This shows that privatization and fiscal reform were deeply connected: the state could no longer rely on administratively collected profits from SOEs and had to build a modern tax system suitable for a market economy. ([spaef.org][1])
+
+The privatization effort in the 1990s was therefore relatively active by post-socialist standards. Mongolia pursued rapid liberalization, price reform, enterprise restructuring, and privatization after 1990. Small-scale privatization was implemented first, while large-scale privatization relied heavily on voucher-based methods. The policy objective was to dismantle socialist state ownership and create private property, private enterprise, and competitive markets. However, the process was institutionally difficult. Privatization transferred ownership more quickly than it created effective corporate governance, financial discipline, competition policy, or regulatory capacity. In many cases, citizens received vouchers or shares, but the real economic value of those claims depended on the quality of enterprise management, asset markets, and legal enforcement. As in many transition economies, privatization created new opportunities but also contributed to inequality, asset concentration, and public suspicion that valuable assets could be captured by politically connected actors.
+
+The early transition also revealed that privatization did not automatically eliminate fiscal risk. Some SOEs continued to rely on subsidies, below-market credit, or non-repayment of bank debt. The same transition study notes that SOEs increasingly relied on subsidies through the financial system, including credit at below-market rates and non-repayment of bank debt, meaning that the fiscal impact of SOEs was understated by the official deficit. ([spaef.org][1]) This pattern is important because it foreshadows a continuing feature of Mongolian public finance: fiscal risk can move outside the formal state budget into SOEs, public banks, special funds, or quasi-fiscal programs.
+
+By the 2000s and 2010s, the role of SOEs changed again. Rather than being the universal organizational form of the economy, SOEs became concentrated in strategic sectors, especially mining, energy, transport, and infrastructure. This was not a simple reversal of privatization. It reflected the rise of mineral wealth as the center of Mongolia’s development model. As coal, copper, gold, and other minerals became increasingly important, the state sought to preserve ownership stakes, capture resource rents, and influence strategic projects. The result was a hybrid structure: Mongolia formally adopted a market economy, but the state retained or rebuilt strong positions in sectors viewed as nationally strategic.
+
+{{figure:soe-performance-trend}}
+
+The recent financial trend shows that this hybrid public sector is not small. According to the 2025 *Investor&#x27;s Guide to Mongolia: State-Owned Enterprises*, total SOE revenue increased from MNT 7.6 trillion in 2019 to MNT 26.0 trillion in 2024, while payments to the state budget rose from MNT 0.8 trillion to MNT 5.7 trillion over the same period. Employment fell from 48,149 workers in 2019 to 44,822 in 2024, suggesting that the rise in SOE scale was driven less by headcount expansion than by the revenue, commodity, and asset channels of large enterprises. This matters for public administration because SOEs can expand the state&#x27;s fiscal capacity in boom years while also creating contingent liabilities, off-budget investment commitments, and governance risks that are not fully visible in ordinary ministry budgets. ([Capital Markets Mongolia][7])
+
+Mining SOEs are now the most important part of this quasi-public sector. EITI reports that mining represented about 25 percent of GDP, 57 percent of total industrial production, 42 percent of total investment, and more than 30 percent of national budget revenue in 2022. It also notes that the government participates directly in extractive activity through shares in mining companies, especially wholly owned Erdenes Mongol LLC and its subsidiaries. ([EITI][2]) This means that mining SOEs are not peripheral enterprises. They are central to the state’s fiscal capacity, national development strategy, and political legitimacy.
+
+The concentration of extractive revenue in a small number of firms intensifies this dependence. Mongolia EITI’s 2024 reconciliation data show that the top 20 taxpayers contributed 96.9 percent of total extractive payments. Erdenes Tavan Tolgoi JSC alone paid MNT 3.38 trillion, followed by Erdenet Mining Corporation SOE with MNT 1.46 trillion and Oyu Tolgoi LLC with MNT 0.83 trillion. The same report notes that mining accounted for 27.3 percent of GDP in 2024, while coal export revenue declined despite rising coal and copper export volumes because prices fell. ([www.eitimongolia.mn][3]) These figures indicate that Mongolia’s fiscal position is highly sensitive not only to mining as a sector, but to the performance of a very small number of large mining companies.
+
+{{figure:soe-portfolio-2024}}
+
+The sectoral pattern clarifies why SOE reform is not merely a generic corporate-governance agenda. By count, SOEs are concentrated in energy and utilities, centrally held commercial or public-service companies, strategic mining holdings under Erdenes Mongol, mining and industrial-policy bodies, and transport/logistics. By revenue, however, the picture is even more concentrated: geology and mining generated MNT 16.5 trillion of the MNT 26.0 trillion total SOE revenue in 2024. This means that Mongolia&#x27;s SOE system has two overlapping faces. One face is the service-delivery and infrastructure portfolio, especially energy and transport. The other is the fiscal-resource portfolio, where mining SOEs dominate revenue, dividends, sovereign-wealth arrangements, and public expectations about who benefits from mineral wealth. ([Capital Markets Mongolia][7])
+
+Erdenes Mongol is especially important because it functions as a state holding company for strategic mineral assets. Its role goes beyond ordinary corporate ownership. It connects state participation in major deposits, dividend flows, public investment expectations, and now sovereign wealth governance. Reuters reported that the Chinggis Khaan Sovereign Wealth Fund is fully owned by Erdenes Mongol, which holds shares in the country’s mineral deposits, while financial oversight is expected to sit with the Ministry of Finance. The fund structure includes a future heritage fund financed by mineral royalties, a savings fund financed by dividends from state-owned mining companies, and a development fund financed by windfall commodity revenues. ([Reuters][4]) This arrangement shows how Mongolia’s mining SOEs are being repositioned as channels through which mineral wealth is converted into savings, infrastructure finance, and citizen-facing benefits.
+
+This institutional evolution creates both opportunities and risks. On the positive side, mining SOEs can help Mongolia retain national ownership over strategic resources, bargain with foreign investors, capture resource rents, and finance long-term development. In a small economy located between Russia and China, state ownership of strategic mineral assets can also be viewed as part of economic sovereignty. If properly governed, SOEs can provide dividends to the budget, support infrastructure, anchor industrial policy, and contribute to intergenerational savings. This is particularly relevant for projects such as coal, copper, and strategic mineral development, where private investment, foreign ownership, local community interests, and national revenue claims are politically sensitive.
+
+However, the same structure creates substantial governance problems. SOEs can become vehicles for political patronage, inefficient employment, non-commercial mandates, opaque procurement, off-budget spending, and hidden liabilities. When SOEs are asked to perform public policy functions without transparent budget compensation, their balance sheets may weaken while the state’s true fiscal position becomes unclear. The World Bank’s 2025 *Public Finance Review* warns that Mongolia’s debt sustainability risks are compounded by fiscal risks from quasi-fiscal activities and contingent liabilities linked to SOEs, public-private partnerships, and the Bank of Mongolia. It also emphasizes that public investment by SOEs should be more transparent and brought under the broader public investment management framework, including publication of investment plans and proper asset records. ([World Bank][5])
+
+This quasi-fiscal role is a central issue for public administration. A project financed by an SOE may appear outside the central government budget, but it can still create public risk if the enterprise borrows with implicit state backing, undertakes politically mandated projects, or expects future budget support. Similarly, subsidized schemes, below-market credit, or off-budget transfers may support short-term social or political goals but weaken fiscal transparency. The IMF’s 2025 Article IV assessment emphasizes that Mongolia’s recent expansionary fiscal policy, combined with policy-rate cuts in 2024, contributed to rapid credit growth, import growth, current-account pressure, and inflation above the Bank of Mongolia’s target band. It also stresses the need for stronger public-sector, SOE, and central-bank governance, including the reduction of quasi-fiscal operations. ([IMF][6])
+
+Historically, this means that Mongolia’s SOE problem has changed rather than disappeared. In the socialist period, SOEs were instruments of central planning. In the early transition, they became objects of privatization, restructuring, and fiscal reform. In the mining era, they became instruments of resource nationalism, public wealth management, and strategic development. In the current period, they are also sources of fiscal risk and public distrust if transparency and accountability are weak. Thus, Mongolia’s SOE trajectory cannot be described simply as a movement from public ownership to private ownership. It is better understood as a shift from universal socialist state ownership to selective strategic state ownership.
+
+The privatization experience remains politically important because it shaped public attitudes toward state assets. The rapid market reforms of the 1990s created a private sector, but they also generated social dislocation, poverty, and perceptions of unfair asset distribution. This historical memory helps explain why full privatization of strategic mining assets remains politically difficult. Many citizens are skeptical of selling national mineral wealth to private or foreign interests, especially when past privatization is remembered as unequal or opaque. Consequently, contemporary reform is more likely to focus on mixed ownership, listing SOEs on capital markets, professionalizing boards, improving disclosure, and separating commercial from policy functions, rather than simply privatizing all remaining state enterprises.
+
+A key governance challenge is therefore to distinguish among different types of SOEs. Some SOEs operate in natural monopolies or infrastructure sectors where state ownership may be justified by public-interest objectives. Some operate in strategic mining sectors where the state seeks to capture resource rents and preserve sovereignty. Others may operate in competitive sectors where public ownership is harder to justify. A coherent SOE policy should not treat all state ownership as either good or bad. It should ask whether each enterprise has a clear public purpose, whether it operates under a commercial mandate, whether subsidies are transparently budgeted, whether the state receives adequate returns, and whether citizens can observe its financial performance.
+
+For mining SOEs, three policy tensions are especially important. First, there is a tension between revenue maximization and political distribution. Mining SOEs may be pressured to transfer dividends, fund social programs, support local development, or finance infrastructure even when reinvestment is needed. Second, there is a tension between national ownership and professional management. State ownership can protect national interests, but only if boards and managers are selected on professional rather than political grounds. Third, there is a tension between development finance and fiscal discipline. SOEs can accelerate investment, but if their projects bypass public investment appraisal, they can create hidden debt and low-return capital spending.
+
+The relationship between SOEs and sovereign wealth governance is particularly important for the next stage of reform. The Chinggis Khaan Sovereign Wealth Fund and related fund architecture are intended to create a more rules-based framework for converting mineral income into long-term public value. Reuters reports that the fund aims to appoint independent board members, hire external advisers, adopt a transparent investment strategy, and create a citizen-accessible app showing allocations, revenue sources, company contributions, and citizen benefits. ([Reuters][4]) If implemented credibly, this could help reduce public distrust and make SOE-linked mineral revenue more transparent. However, if the fund remains closely tied to political bargaining or opaque SOE transfers, it may reproduce rather than solve the governance problems associated with mineral wealth.
+
+### Policy Implications
+
+The policy implications are clear. First, Mongolia needs a differentiated SOE strategy. Strategic mining SOEs, infrastructure monopolies, and ordinary commercial enterprises should not be governed under the same logic. Enterprises with no clear public rationale should be considered for privatization, restructuring, or liquidation. Enterprises that remain under state ownership should have explicit mandates, transparent accounts, and measurable performance objectives.
+
+Second, mining SOEs should be governed as custodians of public wealth, not as political instruments. This requires professional boards, merit-based management, audited financial statements, public disclosure of contracts and dividends, and clear rules on how profits are transferred to the budget or sovereign wealth funds. EITI disclosure is important, but it should be complemented by stronger domestic audit, parliamentary oversight, and citizen-facing reporting.
+
+Third, quasi-fiscal activities should be brought into the budget or explicitly reported as fiscal risks. If an SOE is required to provide subsidies, finance infrastructure, support households, or undertake non-commercial projects, the cost should be transparently recorded. Otherwise, fiscal risks will be hidden in SOE balance sheets and may later appear as public debt or emergency budget support.
+
+Fourth, public investment by SOEs should be integrated into the national public investment management system. Large SOE projects should be subject to appraisal, prioritization, procurement rules, environmental assessment, debt-sustainability analysis, and ex post evaluation. This is essential because SOE-led infrastructure can affect the state’s fiscal position even when it does not appear as ordinary budget expenditure.
+
+Fifth, Mongolia should approach privatization pragmatically rather than ideologically. The 1990s experience shows that rapid privatization without strong institutions can produce inequality, asset concentration, and public distrust. Future privatization or partial listing should therefore be transparent, competitive, and linked to governance improvement. Partial privatization through capital markets may improve disclosure and discipline, but only if minority shareholders are protected and political interference is reduced.
+
+Finally, SOE reform should be connected to democratic legitimacy. In Mongolia, mineral wealth is widely understood as national wealth. Citizens therefore expect the state to manage SOEs in the public interest. If SOEs are opaque, inefficient, or politically captured, public trust in both the market economy and democratic institutions may weaken. If they are transparent, professionally governed, fiscally disciplined, and linked to long-term savings and development, they can become instruments for transforming mineral wealth into durable public value.
+
+### Sources
+
+* World Bank. 2025. *Mongolia Public Finance Review: Making This Time Different: Fiscal Reforms for Stable, Sustainable, and Inclusive Development*.
+* IMF. 2025. *Mongolia: 2025 Article IV Consultation—Press Release; Staff Report; and Statement by the Alternate Executive Director for Mongolia*.
+* Extractive Industries Transparency Initiative. “Mongolia Country Profile.”
+* Mongolia EITI. 2025. “Mongolia EITI Reconciliation Reports.”
+* Reuters. 2025. “Mongolia Targets Development, Transparency with Sovereign Wealth Chinggis Fund.”
+* Capital Markets Mongolia. 2025. *Investor&#x27;s Guide to Mongolia: State-Owned Enterprises*.
+* Nixson, F., &amp; Walters, B. 2006. “The Transition to a Market Economy: Mongolia 1990–1998.”
+
+[1]: https://spaef.org/file.php?id=1031 &quot;v2n1_nixson&quot;
+[2]: https://eiti.org/countries/mongolia &quot;Mongolia | EITI&quot;
+[3]: https://www.eitimongolia.mn/p/68 &quot;RECONCILATION REPORTS&quot;
+[4]: https://www.reuters.com/markets/asia/mongolia-targets-development-transparency-with-sovereign-wealth-chinggis-fund-2025-10-02/ &quot;Mongolia targets development, transparency with sovereign wealth Chinggis Fund | Reuters&quot;
+[5]: https://documents1.worldbank.org/curated/en/099073125084530156/txt/P179947-828df1bc-20c3-4ed2-a2e9-33228bf3c824.txt &quot;documents1.worldbank.org&quot;
+[6]: https://www.imf.org/en/publications/cr/issues/2025/09/15/mongolia-2025-article-iv-consultation-press-release-staff-report-and-statement-by-the-570413 &quot;Mongolia: 2025 Article IV Consultation-Press Release; Staff Report; and Statement by the Alternate Executive Director for Mongolia&quot;
+[7]: https://capitalmarkets.mn/api/file/file/Investor%25E2%2580%2599s-Guide-to-Mongolia_-State-Owned-Enterprises-2.pdf &quot;Investor&#x27;s Guide to Mongolia: State-Owned Enterprises&quot;</textarea>
+      <template data-figure-template="soe-performance-trend">
+    <figure class="figure-card" id="soe-performance-trend">
+      <figcaption>Mongolia: SOE Financial Scale, 2019-2024</figcaption>
+      <div class="chart-frame">
+        <canvas id="chart-soe-performance-trend" aria-label="Mongolia: SOE Financial Scale, 2019-2024" role="img"></canvas>
+      </div>
+      <p class="source">Source: Investor&#x27;s Guide to Mongolia: State-Owned Enterprises, 2025, pp. 6-7. Indicator IDs: SOE revenue, SOE expenses, SOE net profit, SOE budget payments. Unit: MNT trillion.</p>
+      <script type="application/json" id="chart-soe-performance-trend-config">{"type": "line", "data": {"labels": [2019, 2020, 2021, 2022, 2023, 2024], "datasets": [{"label": "Revenue", "data": [7.6, 7.6, 11.6, 18.5, 25.6, 26.0], "borderColor": "#0f6f78", "backgroundColor": "#0f6f78", "borderWidth": 2, "pointRadius": 3, "tension": 0.25}, {"label": "Expenses", "data": [7.4, 7.6, 10.3, 13.9, 19.1, 20.7], "borderColor": "#a6502a", "backgroundColor": "#a6502a", "borderWidth": 2, "pointRadius": 3, "tension": 0.25}, {"label": "Net profit", "data": [0.2, 0.0501, 1.2, 4.7, 5.9, 5.4], "borderColor": "#2f7d4f", "backgroundColor": "#2f7d4f", "borderWidth": 2, "pointRadius": 3, "tension": 0.25}, {"label": "Budget payments", "data": [0.8, 0.8, 1.1, 4.0, 5.5, 5.7], "borderColor": "#6f4aa8", "backgroundColor": "#6f4aa8", "borderWidth": 2, "pointRadius": 3, "tension": 0.25}]}, "options": {"responsive": true, "maintainAspectRatio": false, "interaction": {"mode": "index", "intersect": false}, "plugins": {"legend": {"position": "bottom", "labels": {"boxWidth": 14, "boxHeight": 3}}}, "scales": {"x": {"grid": {"display": false}}, "y": {"title": {"display": true, "text": "MNT trillion"}, "grid": {"color": "#e8eef3"}}}}}</script>
+    </figure>
+    
+    <div class="figure-interpretation">
+      <p>SOE revenue rose from MNT 7.6 trillion in 2019 to MNT 26.0 trillion in 2024, while payments to the state budget increased from MNT 0.8 trillion to MNT 5.7 trillion. The trend shows why SOEs are not a marginal governance issue: they are a large fiscal channel whose profits, dividends, investment decisions, and liabilities can materially change Mongolia's public-finance position.</p>
+    </div>
+    </template>
+<template data-figure-template="soe-portfolio-2024">
+    <figure class="figure-card" id="soe-portfolio-2024">
+      <figcaption>Mongolia: SOE Portfolio by Main Oversight Area, 2024</figcaption>
+      <div class="chart-frame">
+        <canvas id="chart-soe-portfolio-2024" aria-label="Mongolia: SOE Portfolio by Main Oversight Area, 2024" role="img"></canvas>
+      </div>
+      <p class="source">Source: Investor&#x27;s Guide to Mongolia: State-Owned Enterprises, 2025, pp. 6-7. Indicator IDs: SOE ownership structure, Geology and mining revenue concentration. Unit: SOE count.</p>
+      <script type="application/json" id="chart-soe-portfolio-2024-config">{"type": "bar", "data": {"labels": ["Energy and utilities", "Central commercial and public-service SOEs", "Strategic mining holding companies", "Mining and industrial policy", "Transport and logistics", "Other"], "datasets": [{"label": "Number of SOEs", "data": [27.0, 20.0, 10.0, 4.0, 4.0, 2.0], "backgroundColor": ["#0f6f78", "#a6502a", "#6f4aa8", "#2f7d4f", "#9a6a1a", "#435b68"], "borderColor": "#ffffff", "borderWidth": 1}]}, "options": {"indexAxis": "y", "responsive": true, "maintainAspectRatio": false, "plugins": {"legend": {"display": false}}, "scales": {"x": {"title": {"display": true, "text": "SOE count"}, "grid": {"color": "#e8eef3"}}, "y": {"grid": {"display": false}}}}}</script>
+    </figure>
+    
+    <div class="figure-interpretation">
+      <p>The portfolio count shows that state ownership is concentrated in energy, centrally held commercial/public-service SOEs, strategic mining holdings, transport, and industrial-mining policy bodies. In financial terms the concentration is even sharper: geology and mining generated MNT 16.5 trillion of 2024 SOE revenue, about 63.5 percent of the total. This explains why SOE reform in Mongolia is inseparable from mining governance, energy tariffs, transport logistics, and fiscal-risk reporting.</p>
+    </div>
+    </template>
+    </article>
+    
+    </section>
+    
+    </main>
+  </div>
+  <script>
+    function fallbackMarkdown(text) {
+      const escaped = text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+      return escaped.split(/\n{2,}/).map((block) => `<p>${block.replace(/\n/g, "<br>")}</p>`).join("");
+    }
+    function renderMarkdown(text) {
+      return window.marked ? marked.parse(text) : fallbackMarkdown(text);
+    }
+    function replaceFigurePlaceholders(preview, panel) {
+      const pattern = /^\{\{(figure|map|image):([a-z0-9-]+)\}\}$/;
+      preview.querySelectorAll("p").forEach((paragraph) => {
+        const match = (paragraph.textContent || "").trim().match(pattern);
+        if (!match) return;
+        const key = match[1] === "figure" ? match[2] : `${match[1]}:${match[2]}`;
+        const template = panel.querySelector(`template[data-figure-template="${key}"]`);
+        if (!template) {
+          const note = document.createElement("p");
+          note.className = "source";
+          note.textContent = `Figure not available: ${key}`;
+          paragraph.replaceWith(note);
+          return;
+        }
+        paragraph.replaceWith(template.content.cloneNode(true));
+      });
+    }
+    function setupMarkdownPanels() {
+      document.querySelectorAll("[data-md-panel]").forEach((panel) => {
+        const id = panel.getAttribute("data-md-panel");
+        const preview = panel.querySelector(".markdown-preview");
+        const editor = panel.querySelector(".markdown-editor");
+        const edit = panel.querySelector("[data-md-action='edit']");
+        const save = panel.querySelector("[data-md-action='save']");
+        const cancel = panel.querySelector("[data-md-action='cancel']");
+        const source = panel.getAttribute("data-md-source");
+        const original = editor.value;
+        let hash = 0;
+        for (let i = 0; i < original.length; i += 1) {
+          hash = ((hash << 5) - hash + original.charCodeAt(i)) | 0;
+        }
+        const storageKey = `mng-report-markdown:v2:${id}:${hash}`;
+        const stored = localStorage.getItem(storageKey);
+        const isPermanentMode = source && window.location.protocol.startsWith("http");
+        if (stored !== null && (!source || window.location.protocol === "file:")) {
+          editor.value = stored;
+        } else if (stored !== null && isPermanentMode && stored !== editor.value) {
+          const useDraft = window.confirm("A browser draft exists for this section. Load it into the editor so you can save it permanently?");
+          if (useDraft) editor.value = stored;
+        }
+        const showPreview = () => {
+          preview.innerHTML = renderMarkdown(editor.value);
+          replaceFigurePlaceholders(preview, panel);
+          setupCharts();
+        };
+        const setEditing = (editing) => {
+          editor.hidden = !editing;
+          preview.hidden = editing;
+          edit.hidden = editing;
+          save.hidden = !editing;
+          cancel.hidden = !editing;
+        };
+        const saveMarkdown = async () => {
+          if (isPermanentMode) {
+            const response = await fetch("/api/save-section", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ source, markdown: editor.value })
+            });
+            if (!response.ok) {
+              const message = await response.text();
+              throw new Error(message || `Save failed with ${response.status}`);
+            }
+            localStorage.removeItem(storageKey);
+            window.alert("Saved permanently to the Markdown source file.");
+          } else {
+            localStorage.setItem(storageKey, editor.value);
+            if (source) {
+              window.alert("This edit was saved only as a browser draft. Open the report through MNG/code/serve_report.py to save it permanently to the Markdown source file.");
+            }
+          }
+        };
+        showPreview();
+        setEditing(false);
+        edit.addEventListener("click", () => setEditing(true));
+        save.addEventListener("click", async () => {
+          save.disabled = true;
+          try {
+            await saveMarkdown();
+            showPreview();
+            setEditing(false);
+          } catch (error) {
+            window.alert(error.message || "Could not save the Markdown source.");
+          } finally {
+            save.disabled = false;
+          }
+        });
+        cancel.addEventListener("click", () => {
+          editor.value = localStorage.getItem(storageKey) ?? original;
+          showPreview();
+          setEditing(false);
+        });
+      });
+    }
+    function setupCharts() {
+      if (!window.Chart) {
+        document.querySelectorAll(".figure-card").forEach((card) => {
+          const note = document.createElement("p");
+          note.className = "source";
+          note.textContent = "Chart.js could not be loaded from local assets/chart.umd.min.js.";
+          card.appendChild(note);
+        });
+        return;
+      }
+      document.querySelectorAll("script[type='application/json'][id$='-config']").forEach((script) => {
+        const canvasId = script.id.replace("-config", "");
+        const canvas = document.getElementById(canvasId);
+        if (!canvas) return;
+        if (canvas.dataset.chartReady === "1") return;
+        canvas.dataset.chartReady = "1";
+        new Chart(canvas, JSON.parse(script.textContent));
+      });
+    }
+    window.addEventListener("DOMContentLoaded", () => {
+      setupMarkdownPanels();
+      setupCharts();
+    });
+    </script>
+</body>
+</html>

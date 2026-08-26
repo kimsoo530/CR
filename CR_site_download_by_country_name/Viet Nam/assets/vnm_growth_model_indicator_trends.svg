@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 800" role="img" aria-label="Vietnam growth model indicator trends for trade, FDI, sector structure, and agricultural employment">
+  
+  <style>
+    .title{font:700 28px Arial,sans-serif;fill:#172026}
+    .subtitle{font:15px Arial,sans-serif;fill:#526069}
+    .panel-title{font:700 16px Arial,sans-serif;fill:#172026}
+    .panel-y{font:11px Arial,sans-serif;fill:#526069;text-anchor:end}
+    .panel-x{font:11px Arial,sans-serif;fill:#526069;text-anchor:middle}
+    .panel-last{font:700 11px Arial,sans-serif;fill:#172026}
+    .legend{font:11px Arial,sans-serif;fill:#526069}
+    .bar-label{font:700 13px Arial,sans-serif;fill:#172026}
+    .bar-value{font:12px Arial,sans-serif;fill:#526069}
+    .source{font:12px Arial,sans-serif;fill:#65717a}
+  </style>
+  <rect width="1100" height="800" fill="#f6f4ee"/>
+  <text x="54" y="44" class="title">Growth Model Indicators Behind Viet Nam's Catch-Up</text>
+  <text x="54" y="68" class="subtitle">The trends distinguish external integration, investment dependence, sectoral transformation, and labor reallocation.</text>
+  <rect x="54" y="104" width="496" height="266" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="76" y="136" class="panel-title">Trade openness, exports plus imports (% of GDP)</text>
+  <line x1="108" y1="324.00" x2="520" y2="324.00" stroke="#edf2ef"/>
+  <text x="98" y="328.00" class="panel-y">0%</text>
+  <line x1="108" y1="283.50" x2="520" y2="283.50" stroke="#edf2ef"/>
+  <text x="98" y="287.50" class="panel-y">50%</text>
+  <line x1="108" y1="243.00" x2="520" y2="243.00" stroke="#edf2ef"/>
+  <text x="98" y="247.00" class="panel-y">100%</text>
+  <line x1="108" y1="202.50" x2="520" y2="202.50" stroke="#edf2ef"/>
+  <text x="98" y="206.50" class="panel-y">150%</text>
+  <line x1="108" y1="162.00" x2="520" y2="162.00" stroke="#edf2ef"/>
+  <text x="98" y="166.00" class="panel-y">200%</text>
+  <line x1="108.00" y1="162" x2="108.00" y2="324" stroke="#f1f4f5"/>
+  <text x="108.00" y="348" class="panel-x">1990</text>
+  <line x1="229.18" y1="162" x2="229.18" y2="324" stroke="#f1f4f5"/>
+  <text x="229.18" y="348" class="panel-x">2000</text>
+  <line x1="350.35" y1="162" x2="350.35" y2="324" stroke="#f1f4f5"/>
+  <text x="350.35" y="348" class="panel-x">2010</text>
+  <line x1="471.53" y1="162" x2="471.53" y2="324" stroke="#f1f4f5"/>
+  <text x="471.53" y="348" class="panel-x">2020</text>
+  <line x1="520.00" y1="162" x2="520.00" y2="324" stroke="#f1f4f5"/>
+  <text x="520.00" y="348" class="panel-x">2024</text>
+  <path d="M108.00,258.13 L120.12,269.77 L132.24,264.40 L144.35,270.37 L156.47,261.25 L168.59,263.48 L180.71,248.91 L192.82,247.58 L204.94,245.43 L217.06,240.74 L229.18,233.75 L241.29,233.32 L253.41,229.48 L265.53,223.29 L277.65,216.26 L289.76,218.12 L301.88,211.97 L314.00,198.77 L326.12,199.00 L338.24,214.89 L350.35,231.68 L362.47,222.54 L374.59,224.19 L386.71,218.01 L398.82,214.32 L410.94,206.62 L423.06,206.22 L435.18,193.61 L447.29,190.62 L459.41,190.59 L471.53,191.77 L483.65,172.79 L495.76,175.65 L507.88,190.50 L520.00,183.17" fill="none" stroke="#176b63" stroke-width="3"/>
+  <circle cx="520.00" cy="183.17" r="4" fill="#176b63" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="468.00" y="175.17" class="panel-last">174%</text>
+  <rect x="76" y="340" width="10" height="10" fill="#176b63" rx="2"/>
+  <text x="92" y="349" class="legend">Trade openness</text>
+  <rect x="590" y="104" width="460" height="266" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="612" y="136" class="panel-title">FDI net inflows (% of GDP)</text>
+  <line x1="644" y1="324.00" x2="1020" y2="324.00" stroke="#edf2ef"/>
+  <text x="634" y="328.00" class="panel-y">0%</text>
+  <line x1="644" y1="283.50" x2="1020" y2="283.50" stroke="#edf2ef"/>
+  <text x="634" y="287.50" class="panel-y">3%</text>
+  <line x1="644" y1="243.00" x2="1020" y2="243.00" stroke="#edf2ef"/>
+  <text x="634" y="247.00" class="panel-y">6%</text>
+  <line x1="644" y1="202.50" x2="1020" y2="202.50" stroke="#edf2ef"/>
+  <text x="634" y="206.50" class="panel-y">9%</text>
+  <line x1="644" y1="162.00" x2="1020" y2="162.00" stroke="#edf2ef"/>
+  <text x="634" y="166.00" class="panel-y">12%</text>
+  <line x1="644.00" y1="162" x2="644.00" y2="324" stroke="#f1f4f5"/>
+  <text x="644.00" y="348" class="panel-x">1990</text>
+  <line x1="754.59" y1="162" x2="754.59" y2="324" stroke="#f1f4f5"/>
+  <text x="754.59" y="348" class="panel-x">2000</text>
+  <line x1="865.18" y1="162" x2="865.18" y2="324" stroke="#f1f4f5"/>
+  <text x="865.18" y="348" class="panel-x">2010</text>
+  <line x1="975.76" y1="162" x2="975.76" y2="324" stroke="#f1f4f5"/>
+  <text x="975.76" y="348" class="panel-x">2020</text>
+  <line x1="1020.00" y1="162" x2="1020.00" y2="324" stroke="#f1f4f5"/>
+  <text x="1020.00" y="348" class="panel-x">2024</text>
+  <path d="M655.06,271.31 L666.12,259.15 L677.18,229.13 L688.24,162.82 L699.29,208.09 L710.35,192.87 L721.41,212.35 L732.47,241.09 L743.53,257.54 L754.59,267.79 L765.65,270.31 L776.71,270.10 L787.76,274.51 L798.82,276.15 L809.88,278.23 L820.94,275.18 L832.00,207.16 L843.06,193.55 L854.12,227.22 L865.18,250.63 L876.24,265.88 L887.29,266.24 L898.35,267.78 L909.41,270.80 L920.47,257.42 L931.53,257.84 L942.59,256.34 L953.65,256.52 L964.71,258.92 L975.76,262.46 L986.82,266.31 L997.88,265.55 L1008.94,266.44 L1020.00,266.84" fill="none" stroke="#b8873a" stroke-width="3"/>
+  <circle cx="1020.00" cy="266.84" r="4" fill="#b8873a" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="968.00" y="258.84" class="panel-last">4.2%</text>
+  <rect x="612" y="340" width="10" height="10" fill="#b8873a" rx="2"/>
+  <text x="628" y="349" class="legend">FDI inflows</text>
+  <rect x="54" y="420" width="496" height="266" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="76" y="452" class="panel-title">Value added by sector (% of GDP)</text>
+  <line x1="108" y1="640.00" x2="520" y2="640.00" stroke="#edf2ef"/>
+  <text x="98" y="644.00" class="panel-y">0%</text>
+  <line x1="108" y1="607.60" x2="520" y2="607.60" stroke="#edf2ef"/>
+  <text x="98" y="611.60" class="panel-y">10%</text>
+  <line x1="108" y1="575.20" x2="520" y2="575.20" stroke="#edf2ef"/>
+  <text x="98" y="579.20" class="panel-y">20%</text>
+  <line x1="108" y1="542.80" x2="520" y2="542.80" stroke="#edf2ef"/>
+  <text x="98" y="546.80" class="panel-y">30%</text>
+  <line x1="108" y1="510.40" x2="520" y2="510.40" stroke="#edf2ef"/>
+  <text x="98" y="514.40" class="panel-y">40%</text>
+  <line x1="108" y1="478.00" x2="520" y2="478.00" stroke="#edf2ef"/>
+  <text x="98" y="482.00" class="panel-y">50%</text>
+  <line x1="108.00" y1="478" x2="108.00" y2="640" stroke="#f1f4f5"/>
+  <text x="108.00" y="664" class="panel-x">1990</text>
+  <line x1="229.18" y1="478" x2="229.18" y2="640" stroke="#f1f4f5"/>
+  <text x="229.18" y="664" class="panel-x">2000</text>
+  <line x1="350.35" y1="478" x2="350.35" y2="640" stroke="#f1f4f5"/>
+  <text x="350.35" y="664" class="panel-x">2010</text>
+  <line x1="471.53" y1="478" x2="471.53" y2="640" stroke="#f1f4f5"/>
+  <text x="471.53" y="664" class="panel-x">2020</text>
+  <line x1="520.00" y1="478" x2="520.00" y2="640" stroke="#f1f4f5"/>
+  <text x="520.00" y="664" class="panel-x">2024</text>
+  <path d="M108.00,514.49 L120.12,508.82 L132.24,530.04 L144.35,543.22 L156.47,551.13 L168.59,551.93 L180.71,550.06 L192.82,556.50 L204.94,556.47 L217.06,557.59 L229.18,560.51 L241.29,564.70 L253.41,565.38 L265.53,566.96 L277.65,569.34 L289.76,577.47 L301.88,579.33 L314.00,579.56 L326.12,573.86 L338.24,577.89 L350.35,590.18 L362.47,587.32 L374.59,587.51 L386.71,590.70 L398.82,591.79 L410.94,593.10 L423.06,595.23 L435.18,598.11 L447.29,600.13 L459.41,601.82 L471.53,599.00 L483.65,599.17 L495.76,601.51 L507.88,601.57 L520.00,601.56" fill="none" stroke="#b8873a" stroke-width="3"/>
+  <circle cx="520.00" cy="601.56" r="4" fill="#b8873a" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="468.00" y="593.56" class="panel-last">11.9%</text>
+  <rect x="76" y="656" width="10" height="10" fill="#b8873a" rx="2"/>
+  <text x="92" y="665" class="legend">Agriculture</text>
+  <path d="M108.00,566.54 L120.12,562.91 L132.24,551.67 L144.35,546.36 L156.47,546.47 L168.59,546.83 L180.71,543.68 L192.82,536.08 L204.94,534.73 L217.06,528.24 L229.18,520.99 L241.29,516.46 L253.41,515.30 L265.53,512.12 L277.65,509.72 L289.76,516.46 L301.88,514.99 L314.00,515.22 L326.12,519.87 L338.24,518.86 L350.35,533.01 L362.47,527.96 L374.59,523.81 L386.71,524.74 L398.82,525.63 L410.94,528.98 L423.06,529.47 L435.18,525.34 L447.29,521.60 L459.41,520.76 L471.53,520.95 L483.65,518.85 L495.76,515.32 L507.88,518.24 L520.00,518.04" fill="none" stroke="#176b63" stroke-width="3"/>
+  <circle cx="520.00" cy="518.04" r="4" fill="#176b63" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="468.00" y="510.04" class="panel-last">37.6%</text>
+  <rect x="226" y="656" width="10" height="10" fill="#176b63" rx="2"/>
+  <text x="242" y="665" class="legend">Industry</text>
+  <path d="M108.00,514.97 L120.12,524.28 L132.24,514.30 L144.35,506.42 L156.47,498.40 L168.59,497.24 L180.71,502.26 L192.82,503.42 L204.94,504.80 L217.06,510.17 L229.18,514.50 L241.29,514.84 L253.41,515.31 L265.53,516.92 L277.65,516.93 L289.76,502.08 L301.88,501.69 L314.00,501.22 L326.12,502.27 L338.24,499.24 L350.35,508.37 L362.47,513.94 L374.59,513.25 L386.71,508.64 L398.82,507.41 L410.94,503.29 L423.06,501.15 L435.18,502.04 L447.29,503.37 L459.41,502.40 L471.53,504.47 L483.65,506.33 L495.76,506.72 L507.88,502.97 L520.00,502.75" fill="none" stroke="#7c2f2a" stroke-width="3"/>
+  <circle cx="520.00" cy="502.75" r="4" fill="#7c2f2a" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="468.00" y="494.75" class="panel-last">42.4%</text>
+  <rect x="370" y="656" width="10" height="10" fill="#7c2f2a" rx="2"/>
+  <text x="386" y="665" class="legend">Services</text>
+  <rect x="590" y="420" width="460" height="266" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="612" y="452" class="panel-title">Agricultural employment (% of employment)</text>
+  <line x1="644" y1="640.00" x2="1020" y2="640.00" stroke="#edf2ef"/>
+  <text x="634" y="644.00" class="panel-y">0%</text>
+  <line x1="644" y1="599.50" x2="1020" y2="599.50" stroke="#edf2ef"/>
+  <text x="634" y="603.50" class="panel-y">20%</text>
+  <line x1="644" y1="559.00" x2="1020" y2="559.00" stroke="#edf2ef"/>
+  <text x="634" y="563.00" class="panel-y">40%</text>
+  <line x1="644" y1="518.50" x2="1020" y2="518.50" stroke="#edf2ef"/>
+  <text x="634" y="522.50" class="panel-y">60%</text>
+  <line x1="644" y1="478.00" x2="1020" y2="478.00" stroke="#edf2ef"/>
+  <text x="634" y="482.00" class="panel-y">80%</text>
+  <line x1="644.00" y1="478" x2="644.00" y2="640" stroke="#f1f4f5"/>
+  <text x="644.00" y="664" class="panel-x">1990</text>
+  <line x1="751.43" y1="478" x2="751.43" y2="640" stroke="#f1f4f5"/>
+  <text x="751.43" y="664" class="panel-x">2000</text>
+  <line x1="858.86" y1="478" x2="858.86" y2="640" stroke="#f1f4f5"/>
+  <text x="858.86" y="664" class="panel-x">2010</text>
+  <line x1="966.29" y1="478" x2="966.29" y2="640" stroke="#f1f4f5"/>
+  <text x="966.29" y="664" class="panel-x">2020</text>
+  <line x1="1020.00" y1="478" x2="1020.00" y2="640" stroke="#f1f4f5"/>
+  <text x="1020.00" y="664" class="panel-x">2025</text>
+  <path d="M654.74,490.16 L665.49,492.10 L676.23,494.06 L686.97,496.27 L697.71,498.49 L708.46,500.65 L719.20,509.89 L729.94,511.13 L740.69,510.61 L751.43,509.98 L762.17,512.50 L772.91,516.50 L783.66,521.31 L794.40,524.95 L805.14,531.25 L815.89,537.68 L826.63,540.20 L837.37,541.76 L848.11,543.71 L858.86,541.37 L869.60,542.16 L880.34,544.08 L891.09,545.20 L901.83,546.17 L912.57,550.86 L923.31,555.22 L934.06,558.69 L944.80,563.61 L955.54,570.07 L966.29,573.96 L977.03,581.22 L987.77,572.24 L998.51,585.36 L1009.26,587.60 L1020.00,589.29" fill="none" stroke="#345995" stroke-width="3"/>
+  <circle cx="1020.00" cy="589.29" r="4" fill="#345995" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="968.00" y="581.29" class="panel-last">25%</text>
+  <rect x="612" y="656" width="10" height="10" fill="#345995" rx="2"/>
+  <text x="628" y="665" class="legend">Agricultural employment</text>
+  <text x="54" y="750" class="source">Source: World Bank WDI, table IDs NE.TRD.GNFS.ZS, BX.KLT.DINV.WD.GD.ZS, NV.AGR.TOTL.ZS, NV.IND.TOTL.ZS, NV.SRV.TOTL.ZS, and SL.AGR.EMPL.ZS. Sector and trade series shown to 2024 where WDI data are available; agricultural employment includes the latest available 2025 modeled ILO/WDI point.</text>
+</svg>

@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 780" role="img" aria-label="Vietnam women, youth, informality, and social insurance gap">
+  
+  <style>
+    .title{font:700 28px Arial,sans-serif;fill:#172026}
+    .subtitle{font:15px Arial,sans-serif;fill:#526069}
+    .panel-title{font:700 16px Arial,sans-serif;fill:#172026}
+    .panel-y{font:11px Arial,sans-serif;fill:#526069;text-anchor:end}
+    .panel-x{font:11px Arial,sans-serif;fill:#526069;text-anchor:middle}
+    .panel-last{font:700 11px Arial,sans-serif;fill:#172026}
+    .legend{font:11px Arial,sans-serif;fill:#526069}
+    .label{font:12px Arial,sans-serif;fill:#526069}
+    .small{font:11px Arial,sans-serif;fill:#65717a}
+    .value{font:700 22px Arial,sans-serif;fill:#172026}
+    .source{font:12px Arial,sans-serif;fill:#65717a}
+    .box-title{font:700 14px Arial,sans-serif;fill:#172026}
+    .box-text{font:12px Arial,sans-serif;fill:#526069}
+  </style>
+  <rect width="1100" height="780" fill="#f6f4ee"/>
+  <text x="54" y="44" class="title">Women, Youth, Informality, and the Social-Protection Gap</text>
+  <text x="54" y="68" class="subtitle">The headline labor market is stable, but exclusion appears through informal jobs, youth transition, care burdens, and limited social insurance coverage.</text>
+  <rect x="54" y="104" width="496" height="300" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="76" y="136" class="panel-title">Female participation and youth unemployment</text>
+  <line x1="108" y1="358.00" x2="520" y2="358.00" stroke="#edf2ef"/>
+  <text x="98" y="362.00" class="panel-y">0%</text>
+  <line x1="108" y1="309.00" x2="520" y2="309.00" stroke="#edf2ef"/>
+  <text x="98" y="313.00" class="panel-y">20%</text>
+  <line x1="108" y1="260.00" x2="520" y2="260.00" stroke="#edf2ef"/>
+  <text x="98" y="264.00" class="panel-y">40%</text>
+  <line x1="108" y1="211.00" x2="520" y2="211.00" stroke="#edf2ef"/>
+  <text x="98" y="215.00" class="panel-y">60%</text>
+  <line x1="108" y1="162.00" x2="520" y2="162.00" stroke="#edf2ef"/>
+  <text x="98" y="166.00" class="panel-y">80%</text>
+  <line x1="108.00" y1="162" x2="108.00" y2="358" stroke="#f1f4f5"/>
+  <text x="108.00" y="382" class="panel-x">2000</text>
+  <line x1="190.40" y1="162" x2="190.40" y2="358" stroke="#f1f4f5"/>
+  <text x="190.40" y="382" class="panel-x">2005</text>
+  <line x1="272.80" y1="162" x2="272.80" y2="358" stroke="#f1f4f5"/>
+  <text x="272.80" y="382" class="panel-x">2010</text>
+  <line x1="355.20" y1="162" x2="355.20" y2="358" stroke="#f1f4f5"/>
+  <text x="355.20" y="382" class="panel-x">2015</text>
+  <line x1="437.60" y1="162" x2="437.60" y2="358" stroke="#f1f4f5"/>
+  <text x="437.60" y="382" class="panel-x">2020</text>
+  <line x1="520.00" y1="162" x2="520.00" y2="358" stroke="#f1f4f5"/>
+  <text x="520.00" y="382" class="panel-x">2025</text>
+  <path d="M108.00,186.56 L124.48,182.84 L140.96,184.46 L157.44,185.64 L173.92,186.26 L190.40,185.57 L206.88,184.72 L223.36,183.71 L239.84,182.70 L256.32,181.83 L272.80,182.26 L289.28,182.30 L305.76,181.64 L322.24,179.38 L338.72,179.01 L355.20,179.49 L371.68,180.30 L388.16,180.19 L404.64,179.40 L421.12,182.80 L437.60,188.72 L454.08,188.69 L470.56,186.80 L487.04,188.42 L503.52,189.18 L520.00,190.05" fill="none" stroke="#7c2f2a" stroke-width="3"/>
+  <circle cx="520.00" cy="190.05" r="4" fill="#7c2f2a" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="468.00" y="182.05" class="panel-last">68.6%</text>
+  <rect x="76" y="374" width="10" height="10" fill="#7c2f2a" rx="2"/>
+  <text x="92" y="383" class="legend">Female participation</text>
+  <path d="M108.00,346.41 L124.48,344.30 L140.96,347.18 L157.44,346.44 L173.92,346.80 L190.40,345.84 L206.88,344.77 L223.36,343.58 L239.84,345.30 L256.32,347.14 L272.80,349.59 L289.28,350.10 L305.76,349.11 L322.24,346.83 L338.72,346.57 L355.20,342.65 L371.68,341.43 L388.16,340.55 L404.64,346.61 L421.12,344.22 L437.60,341.96 L454.08,341.09 L470.56,343.06 L487.04,342.22 L503.52,342.47 L520.00,338.57" fill="none" stroke="#b8873a" stroke-width="3"/>
+  <circle cx="520.00" cy="338.57" r="4" fill="#b8873a" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="468.00" y="330.57" class="panel-last">7.9%</text>
+  <rect x="244" y="374" width="10" height="10" fill="#b8873a" rx="2"/>
+  <text x="260" y="383" class="legend">Youth unemployment</text>
+  <rect x="590" y="104" width="456" height="300" rx="10" fill="#ffffff" stroke="#d7dee2"/><text x="612" y="138" class="panel-title">Where informality concentrates</text><text x="612" y="162" class="small">Million informal workers, OECD/GSO 2021 estimates</text><text x="612" y="198" class="label">Agriculture</text><rect x="724" y="182" width="274.00" height="24" rx="6" fill="#b8873a"/><text x="1000.00" y="199" class="small">13.7m</text><text x="612" y="244" class="label">Retail trade</text><rect x="724" y="228" width="80.00" height="24" rx="6" fill="#176b63"/><text x="814.00" y="245" class="small">4.0m</text><text x="612" y="290" class="label">Construction</text><rect x="724" y="274" width="78.00" height="24" rx="6" fill="#7c2f2a"/><text x="812.00" y="291" class="small">3.9m</text><text x="612" y="336" class="label">Transport</text><rect x="724" y="320" width="20.00" height="24" rx="6" fill="#345995"/><text x="754.00" y="337" class="small">1.0m</text>
+  <rect x="54" y="468" width="496" height="210" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="76" y="500" class="panel-title">Employment quality (% of employment)</text>
+  <line x1="108" y1="632.00" x2="520" y2="632.00" stroke="#edf2ef"/>
+  <text x="98" y="636.00" class="panel-y">0%</text>
+  <line x1="108" y1="605.50" x2="520" y2="605.50" stroke="#edf2ef"/>
+  <text x="98" y="609.50" class="panel-y">20%</text>
+  <line x1="108" y1="579.00" x2="520" y2="579.00" stroke="#edf2ef"/>
+  <text x="98" y="583.00" class="panel-y">40%</text>
+  <line x1="108" y1="552.50" x2="520" y2="552.50" stroke="#edf2ef"/>
+  <text x="98" y="556.50" class="panel-y">60%</text>
+  <line x1="108" y1="526.00" x2="520" y2="526.00" stroke="#edf2ef"/>
+  <text x="98" y="530.00" class="panel-y">80%</text>
+  <line x1="108.00" y1="526" x2="108.00" y2="632" stroke="#f1f4f5"/>
+  <text x="108.00" y="656" class="panel-x">2000</text>
+  <line x1="190.40" y1="526" x2="190.40" y2="632" stroke="#f1f4f5"/>
+  <text x="190.40" y="656" class="panel-x">2005</text>
+  <line x1="272.80" y1="526" x2="272.80" y2="632" stroke="#f1f4f5"/>
+  <text x="272.80" y="656" class="panel-x">2010</text>
+  <line x1="355.20" y1="526" x2="355.20" y2="632" stroke="#f1f4f5"/>
+  <text x="355.20" y="656" class="panel-x">2015</text>
+  <line x1="437.60" y1="526" x2="437.60" y2="632" stroke="#f1f4f5"/>
+  <text x="437.60" y="656" class="panel-x">2020</text>
+  <line x1="520.00" y1="526" x2="520.00" y2="632" stroke="#f1f4f5"/>
+  <text x="520.00" y="656" class="panel-x">2025</text>
+  <path d="M108.00,534.34 L124.48,537.69 L140.96,537.17 L157.44,539.10 L173.92,544.06 L190.40,544.78 L206.88,545.48 L223.36,546.17 L239.84,548.29 L256.32,550.35 L272.80,548.89 L289.28,549.27 L305.76,549.14 L322.24,548.98 L338.72,549.52 L355.20,555.46 L371.68,557.90 L388.16,558.97 L404.64,560.56 L421.12,561.47 L437.60,561.60 L454.08,561.57 L470.56,562.04 L487.04,562.65 L503.52,563.28 L520.00,563.90" fill="none" stroke="#7c2f2a" stroke-width="3"/>
+  <circle cx="520.00" cy="563.90" r="4" fill="#7c2f2a" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="468.00" y="555.90" class="panel-last">51.4%</text>
+  <rect x="76" y="648" width="10" height="10" fill="#7c2f2a" rx="2"/>
+  <text x="92" y="657" class="legend">Vulnerable</text>
+  <path d="M108.00,601.26 L124.48,598.05 L140.96,598.65 L157.44,596.67 L173.92,591.89 L190.40,591.21 L206.88,590.53 L223.36,589.86 L239.84,588.65 L256.32,587.49 L272.80,587.17 L289.28,586.07 L305.76,585.93 L322.24,585.82 L338.72,584.75 L355.20,579.88 L371.68,577.35 L388.16,575.23 L404.64,573.77 L421.12,573.24 L437.60,573.50 L454.08,572.67 L470.56,571.91 L487.04,571.43 L503.52,570.80 L520.00,570.18" fill="none" stroke="#176b63" stroke-width="3"/>
+  <circle cx="520.00" cy="570.18" r="4" fill="#176b63" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="468.00" y="562.18" class="panel-last">46.7%</text>
+  <rect x="224" y="648" width="10" height="10" fill="#176b63" rx="2"/>
+  <text x="240" y="657" class="legend">Wage/salaried</text>
+  <rect x="590" y="468" width="456" height="210" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="612" y="502" class="panel-title">Protection gap</text>
+  <text x="612" y="538" class="value">68.5%</text>
+  <text x="746" y="538" class="small">informal employment, 2021 OECD/GSO estimate</text>
+  <text x="612" y="576" class="value">38.1%</text>
+  <text x="746" y="576" class="small">social insurance participants vs 2025 labor force</text>
+  <text x="612" y="614" class="value">40%</text>
+  <text x="746" y="614" class="small">age 15-60 paying social insurance contributions, OECD signal</text>
+  <text x="612" y="650" class="box-text">Law 41/2024/QH15 expands coverage, but enforcement and affordability remain the hard part.</text>
+  <text x="54" y="738" class="source">Sources: OECD Economic Surveys: Viet Nam 2025; ILO/ILSSA informal employment gender report; VnEconomy/Vietnam Social Insurance 2025; World Bank WDI/ILO modeled labor indicators.</text>
+</svg>

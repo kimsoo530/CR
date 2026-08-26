@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>10.3 FDI Absolute Amount and Share of GDP | Mongolia Country Report</title>
+  <script src="../assets/marked.min.js"></script>
+  <script src="../assets/chart.umd.min.js"></script>
+  <style>
+    :root { --ink: #162029; --muted: #62707c; --line: #d8e0e6; --panel: #f5f7f8; --accent: #0f6f78; --accent2: #7a5b1e; --paper: #ffffff; --soft: #edf5f2; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: var(--ink); background: var(--paper); line-height: 1.62; }
+    .layout { display: grid; grid-template-columns: 310px minmax(0, 1fr); min-height: 100vh; }
+    .toc { position: sticky; top: 0; height: 100vh; overflow: auto; border-right: 1px solid var(--line); background: var(--panel); padding: 22px 18px; }
+    .toc h1 { font-size: 20px; margin: 0 0 6px; }
+    .toc h1 a { color: var(--ink); text-decoration: none; }
+    .toc p { color: var(--muted); font-size: 13px; margin: 0 0 18px; }
+    nav a { display: block; color: var(--ink); text-decoration: none; padding: 8px 10px; border-radius: 6px; font-size: 14px; }
+    nav a:hover, nav a.active { background: #e3f0ef; color: var(--accent); }
+    .chapter-link { font-weight: 700; }
+    .toc-group { margin: 1px 0; border-radius: 6px; }
+    .toc-group summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 4px; }
+    .toc-group summary::-webkit-details-marker { display: none; }
+    .toc-group summary::before { content: ">"; color: var(--muted); font-size: 12px; transition: transform .12s ease; }
+    .toc-group[open] summary::before { transform: rotate(90deg); }
+    .toc-group summary a { flex: 1; }
+    .section-nav { margin: 2px 0 8px 8px; padding-left: 10px; border-left: 2px solid #cdd9df; }
+    .section-link { padding: 5px 8px; font-size: 12px; color: var(--muted); line-height: 1.35; }
+    main { padding: 34px min(6vw, 82px); max-width: 1120px; }
+    .hero { border-bottom: 1px solid var(--line); padding-bottom: 20px; margin-bottom: 24px; }
+    .hero h2 { font-size: 34px; margin: 0 0 8px; letter-spacing: 0; }
+    .hero p, .chapter-landing-note { color: var(--muted); max-width: 860px; }
+    .chapter-thesis { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 16px; border: 1px solid var(--line); border-radius: 8px; padding: 14px; background: var(--soft); margin: 18px 0; }
+    .chapter-thesis b { color: var(--accent); }
+    .chapter-section-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 12px; margin: 18px 0 28px; }
+    .chapter-section-card { border: 1px solid var(--line); border-radius: 8px; background: #fff; padding: 14px; }
+    .chapter-section-card a { display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: 10px; align-items: start; text-decoration: none; color: var(--ink); }
+    .chapter-section-card span { font-weight: 800; color: var(--accent); font-size: 15px; }
+    .chapter-section-card strong { font-size: 16px; line-height: 1.35; }
+    .chapter-section-card p { color: var(--muted); font-size: 13px; margin: 10px 0 0; }
+    .section-reading { max-width: 940px; }
+    .editable-prose { border: 1px solid var(--line); border-radius: 8px; background: #fff; overflow: hidden; }
+    .prose-toolbar { display: flex; justify-content: space-between; gap: 10px; align-items: center; border-bottom: 1px solid var(--line); background: #f8fafb; padding: 10px 12px; color: var(--muted); font-size: 13px; }
+    .prose-toolbar button, .primary-link, .secondary-link { border: 1px solid var(--accent); border-radius: 6px; background: var(--accent); color: #fff; padding: 7px 10px; text-decoration: none; cursor: pointer; font-weight: 700; font-size: 13px; }
+    .prose-toolbar button[data-md-action='cancel'], .secondary-link { background: #fff; color: var(--accent); }
+    .prose-body { padding: 18px 22px; }
+    .prose-body h2 { font-size: 25px; margin: 0 0 14px; }
+    .prose-body h3 { font-size: 18px; margin: 24px 0 8px; }
+    .prose-body img { display: block; max-width: 100%; height: auto; margin: 14px auto; border: 1px solid var(--line); border-radius: 8px; background: #f8fafb; padding: 8px; }
+    .prose-body figure { margin: 18px 0; }
+    .prose-body figcaption { color: var(--muted); font-size: 13px; line-height: 1.45; }
+    .prose-body table, .index-table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+    .prose-body th, .prose-body td, .index-table th, .index-table td { border: 1px solid var(--line); padding: 8px 10px; vertical-align: top; }
+    .prose-body th, .index-table th { background: #f4f8f7; }
+    .visual-analysis { margin-top: 20px; }
+    .visual-analysis > p { color: #34444f; margin: 0 0 12px; max-width: 880px; }
+    .map-figure, .image-figure { margin: 20px 0 18px; }
+    .map-figure img, .image-figure img { display: block; width: min(100%, 900px); height: auto; border: 1px solid var(--line); border-radius: 8px; background: #fff; padding: 8px; }
+    .image-figure img { width: min(100%, 760px); }
+    .map-figure figcaption, .image-figure figcaption { color: var(--muted); font-size: 13px; line-height: 1.45; margin-top: 8px; }
+    .paired-images { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; align-items: start; }
+    .paired-images img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+    .paired-images span { display: block; margin-top: 6px; color: var(--muted); font-size: 12px; font-weight: 700; }
+    .figure-card, .chart-empty { border: 1px solid var(--line); border-radius: 8px; background: #fff; margin: 16px 0; padding: 16px; }
+    .figure-card figcaption { font-weight: 800; font-size: 16px; margin-bottom: 12px; color: var(--ink); }
+    .chart-frame { height: 360px; position: relative; }
+    .chart-panel-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+    .chart-panel { min-width: 0; padding: 12px; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+    .chart-panel h3 { margin: 0 0 8px; font-size: 0.92rem; line-height: 1.25; color: var(--ink); }
+    .chart-panel-frame { height: 220px; position: relative; }
+    .figure-interpretation { margin: -4px 0 18px; color: #34444f; }
+    .figure-interpretation p { margin: 0 0 8px; }
+    .figure-interpretation ul { margin: 8px 0 0 18px; padding: 0; }
+    .chart-empty { display: grid; gap: 6px; color: var(--muted); }
+    [hidden] { display: none !important; }
+    .markdown-editor { display: block; width: 100%; min-height: 560px; border: 0; padding: 16px; font-family: Consolas, monospace; font-size: 14px; line-height: 1.55; resize: vertical; }
+    .source { color: var(--muted); font-size: 13px; }
+    .cover-body { background: #e9eef0; }
+    .cover-page { min-height: 100vh; display: grid; place-items: center; padding: 36px; }
+    .book-cover { width: min(980px, 100%); min-height: 760px; background: #fff; border: 1px solid #cfd8de; border-radius: 8px; padding: 58px; box-shadow: 0 24px 70px rgba(22, 32, 41, .14); }
+    .cover-kicker { color: var(--accent); font-weight: 800; text-transform: uppercase; font-size: 13px; letter-spacing: .08em; }
+    .cover-rule { height: 7px; width: 150px; background: linear-gradient(90deg, var(--accent), var(--accent2)); margin: 22px 0 42px; border-radius: 999px; }
+    .book-cover h1 { font-size: clamp(52px, 8vw, 92px); line-height: .96; margin: 0 0 24px; letter-spacing: 0; }
+    .cover-subtitle { font-size: 22px; max-width: 760px; color: #33414c; }
+    .cover-purpose { max-width: 820px; color: var(--muted); font-size: 16px; }
+    .cover-editor { margin: 36px 0; display: grid; gap: 3px; }
+    .cover-editor span { color: var(--muted); font-size: 12px; text-transform: uppercase; }
+    .cover-editor strong { font-size: 20px; }
+    .cover-editor em { color: var(--muted); font-style: normal; }
+    .cover-actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 22px 0; }
+    .cover-method { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 30px; }
+    .cover-method div { border-top: 1px solid var(--line); padding-top: 12px; }
+    .cover-method b { display: block; color: var(--accent); }
+    .cover-method span { color: var(--muted); font-size: 13px; }
+    @media (max-width: 1040px) { .layout { grid-template-columns: 1fr; } .toc { position: static; height: auto; } .cover-method { grid-template-columns: 1fr; } main { padding: 24px 18px; } .book-cover { padding: 32px; min-height: auto; } .chart-frame { height: 300px; } .chart-panel-grid { grid-template-columns: 1fr; } .paired-images { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+  <div class="layout">
+    <aside class="toc">
+      <h1><a href="../index.html">Mongolia</a></h1>
+      <p>Official-source country report with section-level Markdown editing and separated analysis visuals.</p>
+      <nav><details class="toc-group"><summary><a class="chapter-link" href="../01-overview.html">1. Country Overview</a></summary><div class="section-nav"><a class="section-link" href="../sections/01-01-official-name-capital-location-area-population-language-religion-and-currency.html">1.1 Official Name, Capital, Location, Area, Population, Language, Religion, and Currency</a><a class="section-link" href="../sections/01-02-state-symbols.html">1.2 State Symbols</a><a class="section-link" href="../sections/01-03-country-profile-and-strategic-setting.html">1.3 Country Profile and Strategic Setting</a><a class="section-link" href="../sections/01-04-territory-climate-settlement-and-administrative-divisions.html">1.4 Territory, Climate, Settlement, and Administrative Divisions</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../02-history.html">2. Historical Background</a></summary><div class="section-nav"><a class="section-link" href="../sections/02-01-steppe-polities-empire-and-civilizational-zones.html">2.1 Steppe Polities, Empire, and Civilizational Zones</a><a class="section-link" href="../sections/02-02-qing-rule-autonomy-socialism-and-state-formation.html">2.2 Qing Rule, Autonomy, Socialism, and State Formation</a><a class="section-link" href="../sections/02-03-democratic-transition-and-constitutional-turning-points.html">2.3 Democratic Transition and Constitutional Turning Points</a><a class="section-link" href="../sections/02-04-historical-legacies-in-present-institutions.html">2.4 Historical Legacies in Present Institutions</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../03-constitution.html">3. Constitution and Basic State Order</a></summary><div class="section-nav"><a class="section-link" href="../sections/03-01-constitutional-order-and-amendments.html">3.1 Constitutional Order and Amendments</a><a class="section-link" href="../sections/03-02-fundamental-rights-system.html">3.2 Fundamental Rights System</a><a class="section-link" href="../sections/03-03-separation-of-powers-constitutional-review-judicial-review-and-emergency-powers.html">3.3 Separation of Powers, Constitutional Review, Judicial Review, and Emergency Powers</a><a class="section-link" href="../sections/03-04-constitutional-implications-for-state-authority.html">3.4 Constitutional Implications for State Authority</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../04-politics.html">4. Political System and Power Structure</a></summary><div class="section-nav"><a class="section-link" href="../sections/04-01-form-of-government.html">4.1 Form of Government</a><a class="section-link" href="../sections/04-02-president-prime-minister-cabinet-and-parliament.html">4.2 President, Prime Minister, Cabinet, and Parliament</a><a class="section-link" href="../sections/04-03-party-system-elections-representation-and-coalition-politics.html">4.3 Party System, Elections, Representation, and Coalition Politics</a><a class="section-link" href="../sections/04-04-local-politics-governors-and-real-power-relations.html">4.4 Local Politics, Governors, and Real Power Relations</a><a class="section-link" href="../sections/04-05-political-dynamics-and-institutional-accountability.html">4.5 Political Dynamics and Institutional Accountability</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../05-administration.html">5. Administrative System and Government Organization</a></summary><div class="section-nav"><a class="section-link" href="../sections/05-01-central-executive-administration-and-policy-coordination.html">5.1 Central Executive Administration and Policy Coordination</a><a class="section-link" href="../sections/05-02-organizational-management-and-administrative-reform.html">5.2 Organizational Management and Administrative Reform</a><a class="section-link" href="../sections/05-03-human-resource-management-and-civil-service.html">5.3 Human Resource Management and Civil Service</a><a class="section-link" href="../sections/05-04-budget-execution-procurement-audit-and-anti-corruption-administration.html">5.4 Budget Execution, Procurement, Audit, and Anti-Corruption Administration</a><a class="section-link" href="../sections/05-05-aimags-soums-districts-khoroos-and-service-delivery.html">5.5 Aimags, Soums, Districts, Khoroos, and Service Delivery</a><a class="section-link" href="../sections/05-06-digital-government-e-mongolia-and-administrative-accountability.html">5.6 Digital Government, E-Mongolia, and Administrative Accountability</a><a class="section-link" href="../sections/05-07-implementation-capacity-in-a-low-density-territory.html">5.7 Implementation Capacity in a Low-Density Territory</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../06-governance.html">6. Governance and Institutional Capacity</a></summary><div class="section-nav"><a class="section-link" href="../sections/06-01-government-effectiveness-and-regulatory-quality.html">6.1 Government Effectiveness and Regulatory Quality</a><a class="section-link" href="../sections/06-02-rule-of-law-and-control-of-corruption.html">6.2 Rule of Law and Control of Corruption</a><a class="section-link" href="../sections/06-03-voice-accountability-political-stability-and-citizen-participation.html">6.3 Voice, Accountability, Political Stability, and Citizen Participation</a><a class="section-link" href="../sections/06-04-institutional-performance-and-reform-credibility.html">6.4 Institutional Performance and Reform Credibility</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../07-fiscal.html">7. Fiscal System and Public Sector</a></summary><div class="section-nav"><a class="section-link" href="../sections/07-01-government-revenue-mineral-revenue-and-expenditure-structure.html">7.1 Government Revenue, Mineral Revenue, and Expenditure Structure</a><a class="section-link" href="../sections/07-02-fiscal-balance-debt-stabilization-funds-and-interest-burden.html">7.2 Fiscal Balance, Debt, Stabilization Funds, and Interest Burden</a><a class="section-link" href="../sections/07-03-state-owned-enterprises-mining-soes-and-quasi-public-sector.html">7.3 State-Owned Enterprises, Mining SOEs, and Quasi-Public Sector</a><a class="section-link" href="../sections/07-04-public-investment-roads-urban-infrastructure-and-investment-decision-making.html">7.4 Public Investment, Roads, Urban Infrastructure, and Investment Decision-Making</a><a class="section-link" href="../sections/07-05-fiscal-capacity-commodity-cycles-and-public-sector-risks.html">7.5 Fiscal Capacity, Commodity Cycles, and Public Sector Risks</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../08-society.html">8. Population and Social Structure</a></summary><div class="section-nav"><a class="section-link" href="../sections/08-01-population-size-growth-age-structure-and-dependency.html">8.1 Population Size, Growth, Age Structure, and Dependency</a><a class="section-link" href="../sections/08-02-urbanization-ulaanbaatar-concentration-and-regional-distribution.html">8.2 Urbanization, Ulaanbaatar Concentration, and Regional Distribution</a><a class="section-link" href="../sections/08-03-ethnicity-language-religion-migration-remittances-and-diaspora.html">8.3 Ethnicity, Language, Religion, Migration, Remittances, and Diaspora</a><a class="section-link" href="../sections/08-04-nomadic-livelihoods-social-integration-and-conflict-factors.html">8.4 Nomadic Livelihoods, Social Integration, and Conflict Factors</a><a class="section-link" href="../sections/08-05-demographic-pressures-and-social-cohesion.html">8.5 Demographic Pressures and Social Cohesion</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../09-macro.html">9. Macroeconomic Structure</a></summary><div class="section-nav"><a class="section-link" href="../sections/09-01-gdp-scale-growth-and-gdp-per-capita.html">9.1 GDP Scale, Growth, and GDP Per Capita</a><a class="section-link" href="../sections/09-02-prices-exchange-rate-and-macroeconomic-stability.html">9.2 Prices, Exchange Rate, and Macroeconomic Stability</a><a class="section-link" href="../sections/09-03-sectoral-structure-mineral-dependence-growth-model-and-vulnerabilities.html">9.3 Sectoral Structure, Mineral Dependence, Growth Model, and Vulnerabilities</a><a class="section-link" href="../sections/09-04-growth-sustainability-and-structural-constraints.html">9.4 Growth Sustainability and Structural Constraints</a></div></details>
+<details class="toc-group active" open><summary><a class="chapter-link active" href="../10-trade.html">10. Trade, Investment, and External Economy</a></summary><div class="section-nav"><a class="section-link" href="../sections/10-01-exports-imports-trading-partners-and-current-account.html">10.1 Exports, Imports, Trading Partners, and Current Account</a><a class="section-link" href="../sections/10-02-copper-coal-gold-cashmere-tourism-and-services.html">10.2 Copper, Coal, Gold, Cashmere, Tourism, and Services</a><a class="section-link" href="../sections/10-03-fdi-absolute-amount-and-share-of-gdp.html">10.3 FDI Absolute Amount and Share of GDP</a><a class="section-link" href="../sections/10-04-investment-regime-economic-zones-and-industrial-policy.html">10.4 Investment Regime, Economic Zones, and Industrial Policy</a><a class="section-link" href="../sections/10-05-external-integration-and-competitiveness.html">10.5 External Integration and Competitiveness</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../11-infrastructure.html">11. Infrastructure, Energy, and Digital Connectivity</a></summary><div class="section-nav"><a class="section-link" href="../sections/11-01-electricity-access-heating-energy-dependence-and-transition.html">11.1 Electricity Access, Heating, Energy Dependence, and Transition</a><a class="section-link" href="../sections/11-02-transport-logistics-rail-road-air-and-border-corridors.html">11.2 Transport, Logistics, Rail, Road, Air, and Border Corridors</a><a class="section-link" href="../sections/11-03-internet-mobile-connectivity-secure-servers-and-logistics-performance.html">11.3 Internet, Mobile Connectivity, Secure Servers, and Logistics Performance</a><a class="section-link" href="../sections/11-04-connectivity-service-delivery-and-bottlenecks.html">11.4 Connectivity, Service Delivery, and Bottlenecks</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../12-labor.html">12. Labor Market and Human Capital</a></summary><div class="section-nav"><a class="section-link" href="../sections/12-01-labor-force-size-and-participation.html">12.1 Labor Force Size and Participation</a><a class="section-link" href="../sections/12-02-female-participation-unemployment-youth-unemployment-and-vulnerable-employment.html">12.2 Female Participation, Unemployment, Youth Unemployment, and Vulnerable Employment</a><a class="section-link" href="../sections/12-03-herding-mining-education-productivity-hdi-and-r-d.html">12.3 Herding, Mining, Education, Productivity, HDI, and R&amp;D</a><a class="section-link" href="../sections/12-04-employment-absorption-and-human-capital-use.html">12.4 Employment Absorption and Human Capital Use</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../13-education-health.html">13. Education, Health, and Welfare</a></summary><div class="section-nav"><a class="section-link" href="../sections/13-01-education-system-and-public-expenditure.html">13.1 Education System and Public Expenditure</a><a class="section-link" href="../sections/13-02-life-expectancy-infant-mortality-hospital-beds-doctors-and-health-expenditure.html">13.2 Life Expectancy, Infant Mortality, Hospital Beds, Doctors, and Health Expenditure</a><a class="section-link" href="../sections/13-03-air-pollution-sanitation-public-health-risks-and-welfare.html">13.3 Air Pollution, Sanitation, Public Health Risks, and Welfare</a><a class="section-link" href="../sections/13-04-human-development-outcomes-and-welfare-capacity.html">13.4 Human Development Outcomes and Welfare Capacity</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../14-environment.html">14. Environment, Climate Risk, and Sustainable Development</a></summary><div class="section-nav"><a class="section-link" href="../sections/14-01-climate-change-dzud-desertification-and-rural-livelihood-risk.html">14.1 Climate Change, Dzud, Desertification, and Rural Livelihood Risk</a><a class="section-link" href="../sections/14-02-ger-district-and-urban-public-health.html">14.2 Ger District and Urban Public Health</a><a class="section-link" href="../sections/14-03-mining-water-land-restoration-and-environmental-governance.html">14.3 Mining, Water, Land Restoration, and Environmental Governance</a><a class="section-link" href="../sections/14-04-sdg-performance-green-development-and-policy-implementation.html">14.4 SDG Performance, Green Development, and Policy Implementation</a><a class="section-link" href="../sections/14-05-environmental-sustainability-sdg-implementation-and-future-policy-direction.html">14.5 Environmental Sustainability, SDG Implementation, and Future Policy Direction</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../15-finance.html">15. Financial Sector and Economic Institutions</a></summary><div class="section-nav"><a class="section-link" href="../sections/15-01-domestic-credit-private-credit-capital-markets-and-fintech.html">15.1 Domestic Credit, Private Credit, Capital Markets, and Fintech</a><a class="section-link" href="../sections/15-02-central-bank-monetary-policy-supervision-and-exchange-rate.html">15.2 Central Bank, Monetary Policy, Supervision, and Exchange Rate</a><a class="section-link" href="../sections/15-03-foreign-investment-protection-and-capital-market-openness.html">15.3 Foreign Investment Protection and Capital Market Openness</a><a class="section-link" href="../sections/15-04-financial-deepening-and-market-institutions.html">15.4 Financial Deepening and Market Institutions</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../16-security.html">16. Foreign Relations, Security, and Geopolitics</a></summary><div class="section-nav"><a class="section-link" href="../sections/16-01-foreign-policy-orientation-and-international-organizations.html">16.1 Foreign Policy Orientation and International Organizations</a><a class="section-link" href="../sections/16-02-china-russia-third-neighbor-policy-and-strategic-balancing.html">16.2 China, Russia, Third Neighbor Policy, and Strategic Balancing</a><a class="section-link" href="../sections/16-03-borders-security-organizations-military-capacity-and-transnational-issues.html">16.3 Borders, Security Organizations, Military Capacity, and Transnational Issues</a><a class="section-link" href="../sections/16-04-strategic-resources-corridors-and-climate-security-risks.html">16.4 Strategic Resources, Corridors, and Climate-Security Risks</a><a class="section-link" href="../sections/16-05-strategic-environment-and-transnational-risks.html">16.5 Strategic Environment and Transnational Risks</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../17-policy.html">17. Major Policies and National Development Strategy</a></summary><div class="section-nav"><a class="section-link" href="../sections/17-01-evolution-of-national-development-strategy.html">17.1 Evolution of National Development Strategy</a><a class="section-link" href="../sections/17-02-vision-2050-new-recovery-policy-and-industrial-policy.html">17.2 Vision 2050, New Recovery Policy, and Industrial Policy</a><a class="section-link" href="../sections/17-03-digital-transformation-energy-transition-climate-policy-and-administrative-reform.html">17.3 Digital Transformation, Energy Transition, Climate Policy, and Administrative Reform</a><a class="section-link" href="../sections/17-04-welfare-education-health-and-recent-five-year-policy-changes.html">17.4 Welfare, Education, Health, and Recent Five-Year Policy Changes</a><a class="section-link" href="../sections/17-05-policy-implementation-and-reform-sequencing.html">17.5 Policy Implementation and Reform Sequencing</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../18-assessment.html">18. Integrated Assessment</a></summary><div class="section-nav"><a class="section-link" href="../sections/18-01-national-operating-model.html">18.1 National Operating Model</a><a class="section-link" href="../sections/18-02-political-stability-institutional-risk-growth-drivers-and-bottlenecks.html">18.2 Political Stability, Institutional Risk, Growth Drivers, and Bottlenecks</a><a class="section-link" href="../sections/18-03-administrative-capacity-and-international-cooperation-implications.html">18.3 Administrative Capacity and International Cooperation Implications</a><a class="section-link" href="../sections/18-04-mongolia-and-comparative-administration-theory.html">18.4 Mongolia and Comparative Administration Theory</a><a class="section-link" href="../sections/18-05-evidence-limits-and-source-triangulation.html">18.5 Evidence Limits and Source Triangulation</a><a class="section-link" href="../sections/18-06-strategic-diagnosis-and-outlook.html">18.6 Strategic Diagnosis and Outlook</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../19-appendix.html">19. Appendix and Update Workflow</a></summary><div class="section-nav"><a class="section-link" href="../sections/19-01-annual-revision-method.html">19.1 Annual Revision Method</a><a class="section-link" href="../sections/19-02-editorial-revision-method.html">19.2 Editorial Revision Method</a><a class="section-link" href="../sections/19-03-data-integrity.html">19.3 Data Integrity</a><a class="section-link" href="../sections/19-04-evidence-archive-and-review-trail.html">19.4 Evidence Archive and Review Trail</a><a class="section-link" href="../sections/19-05-data-limits-and-source-triangulation.html">19.5 Data Limits and Source Triangulation</a><a class="section-link" href="../sections/19-06-external-review-checklist.html">19.6 External Review Checklist</a><a class="section-link" href="../sections/19-07-comparative-administration-benchmark.html">19.7 Comparative Administration Benchmark</a><a class="section-link" href="../sections/19-08-timeline.html">19.8 Timeline</a><a class="section-link" href="../sections/19-09-government-organization-chart.html">19.9 Government Organization Chart</a><a class="section-link" href="../sections/19-10-constitution-and-major-laws.html">19.10 Constitution and Major Laws</a><a class="section-link" href="../sections/19-11-key-indicator-table-source-list-and-data-codebook.html">19.11 Key Indicator Table, Source List, and Data Codebook</a><a class="section-link" href="../sections/19-12-methodological-notes-and-update-standards.html">19.12 Methodological Notes and Update Standards</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../20-references.html">20. References</a></summary><div class="section-nav"><a class="section-link" href="../sections/20-01-references.html">20.1 References</a><a class="section-link" href="../sections/20-02-source-integrity-and-citation-notes.html">20.2 Source Integrity and Citation Notes</a></div></details></nav>
+    </aside>
+    <main>
+      <header class="hero"><h2>10.3 FDI Absolute Amount and Share of GDP</h2></header>
+      
+    <section class="section-reading">
+      
+    <article class="editable-prose" data-md-panel="trade-fdi-absolute-amount-and-share-of-gdp-text" data-md-source="sections/10-03-fdi-absolute-amount-and-share-of-gdp.md">
+      <div class="prose-toolbar">
+        <span>Editable section manuscript</span>
+        <div>
+          <button type="button" data-md-action="edit">Edit Markdown</button>
+          <button type="button" data-md-action="save" hidden>Save</button>
+          <button type="button" data-md-action="cancel" hidden>Cancel</button>
+        </div>
+      </div>
+      <div class="markdown-preview prose-body"></div>
+      <textarea class="markdown-editor" hidden>## 10.3 FDI Absolute Amount and Share of GDP
+
+Foreign direct investment is one of the main channels through which Mongolia turns mineral potential into actual production capacity. Domestic savings, the public budget, and the local banking system are too small to finance large mining projects, railways, power systems, processing facilities, renewable energy, logistics platforms, tourism infrastructure, and digital transformation on their own. FDI therefore supplies capital, technology, project-management capacity, export networks, and access to global firms.
+
+At the same time, Mongolia&#x27;s FDI model is a source of vulnerability. Inflows are large relative to GDP, but they are concentrated in mining and linked to a small number of strategic projects. They move with commodity prices, investor confidence, contract credibility, domestic politics, global financing conditions, and the pace of large project cycles. FDI should therefore be read not only as an investment indicator, but also as a measure of administrative credibility and external-sector resilience.
+
+The basic trend makes this dual character visible. World Bank WDI data show that Mongolia&#x27;s FDI net inflows are large in absolute terms and unusually high as a share of GDP. The negative outlier in 2016 also shows that the series can swing sharply when project finance, balance-of-payments recording, or investor sentiment changes. Since 2017, inflows have generally remained substantial, confirming that foreign investment is not a marginal supplement to Mongolia&#x27;s economy. It is one of the operating pillars of the development model.
+
+{{figure:fdi-absolute-share}}
+
+### 10.3.1 Absolute FDI: Financing Projects Beyond Domestic Capacity
+
+The absolute amount of FDI matters because Mongolia&#x27;s major growth sectors are capital-intensive. Oyu Tolgoi and other mining projects require underground development, heavy equipment, power, water systems, transport links, technical services, and long-term financing. Logistics corridors require railways, roads, terminals, warehouses, border facilities, and customs systems. Renewable energy requires generation, storage, transmission, and grid integration. Tourism and urban infrastructure require airports, roads, accommodation, sanitation, payment systems, and service quality.
+
+This is why FDI can accelerate development. It allows a small economy to undertake projects that would otherwise exceed domestic financing capacity. It can also transfer technology, management systems, environmental practices, and procurement networks. In successful cases, foreign investment creates supplier opportunities for domestic firms, skilled employment, tax revenue, and export capacity.
+
+However, absolute FDI also creates concentration risk. When one or two large mining projects dominate inflows, macroeconomic indicators can improve without broad diversification. Construction phases raise imports of machinery and services. Production phases raise exports and tax revenue, but also generate income outflows, debt-service payments, and profit repatriation. If the next large investment wave does not arrive, the economy can face a decline in inflows even while external payment obligations continue.
+
+### 10.3.2 FDI as a Share of GDP: Strength and Fragility
+
+FDI as a share of GDP is especially revealing for Mongolia. A high ratio means that foreign capital is large relative to domestic economic capacity. This can be a strength because it finances projects, foreign exchange, and productivity gains. It can also be a fragility because a change in investor confidence can quickly affect the exchange rate, reserves, imports, construction activity, tax expectations, and employment in supplier sectors.
+
+Mongolia&#x27;s high FDI-to-GDP ratio reflects three structural facts. First, the domestic market is small, so a single large project can be macroeconomically significant. Second, mining is capital-intensive and requires foreign finance and technology. Third, domestic capital markets remain too shallow to provide long-maturity project finance at the required scale. The country therefore needs FDI, but that need increases the importance of policy credibility.
+
+The administrative lesson is direct. FDI depends on more than investment-promotion messaging. It depends on tax administration, licensing, environmental permits, customs procedures, courts, arbitration credibility, land access, local government behavior, SOE governance, parliamentary politics, and cabinet stability. Investors may accept geological and market risk, but they price policy uncertainty heavily. A state that applies rules inconsistently raises the cost of capital and narrows the pool of potential investors.
+
+### 10.3.3 FDI, Current Account, and External Resilience
+
+FDI and the current account must be interpreted together. FDI inflows can finance external deficits and provide foreign currency during investment phases. But mining investment also creates import demand for machinery, fuel, technical services, and construction inputs. Later, successful projects generate exports, but they also generate dividends, interest payments, management fees, and other income outflows. As a result, high FDI does not automatically eliminate external vulnerability.
+
+{{figure:fdi-current-account-cycle}}
+
+This chart shows why Mongolia&#x27;s external-sector management cannot treat FDI as a simple solution. A high FDI-to-GDP ratio can coexist with a weak current account if investment is import-intensive or if income outflows are large. Conversely, a current-account improvement during a mineral boom may not be durable if it depends on high coal or copper prices rather than diversified export capacity. The policy challenge is to use FDI to expand productive capacity, not merely to finance external gaps.
+
+Fiscal policy matters here. When foreign investment and mineral exports rise, budget revenue and political expectations rise with them. If the state expands spending too quickly, import demand increases and current-account pressure can return. If public investment is poorly selected, FDI-led growth may be accompanied by higher debt and weak domestic spillovers. FDI strategy therefore has to be linked to fiscal rules, public investment appraisal, and current-account monitoring.
+
+### 10.3.4 Mining Concentration and Domestic Spillovers
+
+The dominant problem is not the absence of FDI, but its concentration. Mining FDI brings capital, exports, and fiscal revenue, yet it does not automatically create broad employment or industrial diversification. Mining is capital-intensive. It can raise GDP and exports while generating fewer direct jobs than manufacturing, tourism, agribusiness, or services. Without supplier development and skills transfer, mining investment can remain an enclave: large in macroeconomic terms but weakly connected to the rest of the economy.
+
+Mongolia should therefore evaluate FDI by domestic value creation, not only by inflow volume. Important indicators include local procurement, supplier upgrading, skilled employment, training, technology transfer, environmental compliance, water efficiency, rehabilitation finance, tax contribution, and regional infrastructure benefits. Large mining projects should be assessed as national development platforms, not merely as export sites.
+
+This is particularly important for Oyu Tolgoi. The project is central to Mongolia&#x27;s copper future and to the country&#x27;s credibility with international investors. It is also politically sensitive because citizens expect strategic mineral assets to deliver visible national benefits. The appropriate policy stance is neither constant renegotiation nor passive contract acceptance. Mongolia needs technically competent, transparent, and rule-based contract management that protects investment credibility while ensuring fair taxation, environmental safeguards, and public reporting.
+
+### 10.3.5 Investment Climate: Formal Openness Versus Practical Predictability
+
+Mongolia is formally open to foreign investors in most sectors, but practical predictability is the real constraint. Investment decisions depend on whether rules are applied consistently over time. Licensing delays, tax disputes, customs uncertainty, judicial weakness, local resistance, corruption concerns, environmental permitting problems, and sudden changes in strategic-sector policy can all reduce investor confidence.
+
+This matters because Mongolia competes for capital. Investors compare Mongolian opportunities with projects in other mineral-rich economies, renewable-energy markets, logistics corridors, and emerging service sectors. If Mongolia&#x27;s geological potential is strong but administrative risk is high, investors will require higher returns, delay decisions, or concentrate only in projects where commodity upside compensates for political risk. That pattern would reinforce mining dependence rather than diversify the economy.
+
+Investment promotion should therefore be reorganized around credibility. A useful FDI strategy would identify priority sectors, map specific regulatory bottlenecks, create costed project pipelines, standardize permitting, publish timelines, strengthen dispute resolution, and monitor aftercare. This is especially important outside mining, where investors may have lower tolerance for political and administrative uncertainty.
+
+### 10.3.6 Diversifying FDI: Energy, Logistics, Tourism, Agribusiness, and Digital Services
+
+Mongolia&#x27;s long-term development strategy requires more diversified FDI. Renewable energy can support energy security, reduce fuel dependence, and improve the competitiveness of processing industries. Logistics investment can strengthen border ports, warehouses, multimodal transport, and customs systems. Tourism investment can create regional employment if it is linked to roads, airports, sanitation, digital booking, safety, and protected-area management. Agribusiness and meat processing require veterinary certification, cold chains, disease control, and export standards. Digital services require broadband, cybersecurity, data regulation, payment systems, and human capital.
+
+Each sector requires different public capabilities. Renewable energy needs credible tariffs, grid access, storage policy, and bankable power-purchase arrangements. Logistics needs customs reform and cross-border coordination. Tourism needs land-use clarity, environmental protection, and local service quality. Agribusiness needs sanitary and phytosanitary systems. Digital services need data protection and skilled labor. Diversifying FDI is therefore not mainly about advertising opportunities. It is about making sector-specific investment conditions bankable.
+
+The New Recovery Policy and Vision 2050 provide an appropriate strategic frame, but strategy must become implementation. Priority sectors need project pipelines, responsible agencies, budget alignment, regulatory reform, environmental safeguards, and monitoring indicators. Otherwise, Mongolia may continue to attract large mining investment while non-mining investment remains too small to change the structure of the economy.
+
+### 10.3.7 Policy Risks in the Current FDI Model
+
+The current FDI model contains several risks.
+
+First, inflows are too concentrated in mining. This makes the investment cycle sensitive to commodity prices, project negotiations, and investor confidence in strategic-resource governance.
+
+Second, FDI volatility can create macroeconomic instability. A decline in inflows can pressure reserves, imports, exchange rates, supplier employment, and public revenue expectations.
+
+Third, domestic linkages are insufficient. Mining investment does not automatically create a diversified supplier base, skilled labor force, or regional industrial ecosystem.
+
+Fourth, external-account effects are complex. FDI brings foreign currency, but it can also raise imports, service payments, interest costs, and profit repatriation.
+
+Fifth, policy credibility remains fragile. Formal openness is less important than predictable taxation, licensing, dispute resolution, environmental regulation, and local implementation.
+
+Finally, environmental and social legitimacy are central. Water governance, land rehabilitation, community consultation, and transparent benefit sharing are not side issues. They determine whether foreign investment remains politically sustainable in a democratic mineral economy.
+
+### Policy Implications
+
+Mongolia should move from a quantity-oriented FDI strategy to a quality-oriented investment strategy.
+
+First, investment predictability should be protected. Tax rules, licensing, environmental approvals, customs procedures, land access, and dispute-resolution systems should be transparent, consistent, and professionally administered.
+
+Second, the state should strengthen contract-management capacity. Large mining and infrastructure projects require expertise in finance, taxation, engineering, environmental assessment, arbitration, and public communication.
+
+Third, FDI should be measured by domestic value creation. Local procurement, skills transfer, supplier development, environmental compliance, tax contribution, and regional infrastructure benefits should be tracked more systematically.
+
+Fourth, Mongolia should diversify FDI through sector-specific reforms. Renewable energy, logistics, tourism, agribusiness, cashmere processing, digital services, and urban infrastructure each require tailored regulatory and infrastructure solutions.
+
+Fifth, FDI should be integrated into macroeconomic risk management. Policymakers should monitor not only inflows, but also import intensity, service payments, profit repatriation, foreign-currency liabilities, and current-account sustainability.
+
+Finally, environmental and social governance should be treated as investment policy. Strong standards reduce conflict and increase investor certainty. Weak standards create ecological damage, local resistance, litigation, and political pressure for unpredictable intervention.
+
+In conclusion, FDI is indispensable for Mongolia, but it is not automatically developmental. It becomes developmental when foreign capital builds domestic capability, diversifies production, strengthens infrastructure, respects environmental and social standards, and operates within predictable institutions. Mongolia&#x27;s challenge is to make foreign investment compatible with democratic legitimacy and long-term national capacity.
+
+### Sources
+
+* World Bank WDI. Mongolia indicators on FDI net inflows in current US dollars, FDI net inflows as a share of GDP, and current-account balance.
+* IMF. 2025. *Mongolia: 2025 Article IV Consultation*, IMF Country Report No. 25/265.
+* U.S. Department of State. 2025. *Investment Climate Statements: Mongolia.*
+* Government of Mongolia. *Vision 2050: Long-Term Development Policy of Mongolia.*
+* New Recovery Policy Accelerator. *New Recovery Policy.*</textarea>
+      <template data-figure-template="fdi-absolute-share">
+    <figure class="figure-card" id="fdi-absolute-share">
+      <figcaption>Mongolia: FDI Net Inflows, Absolute Amount and Share of GDP</figcaption>
+      <div class="chart-frame">
+        <canvas id="chart-fdi-absolute-share" aria-label="Mongolia: FDI Net Inflows, Absolute Amount and Share of GDP" role="img"></canvas>
+      </div>
+      <p class="source">Source: World Bank WDI, Mongolia country code MNG. Indicator IDs: BX.KLT.DINV.CD.WD, BX.KLT.DINV.WD.GD.ZS. Unit: US$ billions and percent of GDP.</p>
+      <script type="application/json" id="chart-fdi-absolute-share-config">{"type": "line", "data": {"labels": [1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], "datasets": [{"label": "FDI net inflows (current US$ billions)", "data": [0.0, 0.0, 0.0, 0.0, 0.0, 0.00014, 0.0, 0.0, 0.01112, 0.002, 0.0077, 0.0069, 0.0098, 0.0159, 0.025, 0.0189, 0.0304, 0.053697, 0.063, 0.077751, 0.13154, 0.09292, 0.18762, 0.24546, 0.3727599, 0.844697949479072, 0.6236092182476799, 1.6914217315840498, 4.5711619628089, 4.27247322293624, 2.05970297291977, 0.337768268083171, 0.09431976747415631, -4.15640470377687, 1.49435036346922, 1.95152819581852, 2.44334309541814, 1.7191159415200201, 2.17338530977255, 2.5042947496508496, 2.2475736698871898, 2.78217622049007], "borderColor": "#0f6f78", "backgroundColor": "#0f6f78", "borderWidth": 2, "pointRadius": 2, "tension": 0.25, "spanGaps": true, "yAxisID": "y"}, {"label": "FDI net inflows (% of GDP)", "data": [0.0, 0.0, 0.0, 0.0, 0.0, 0.00483395558234744, 0.0, 0.0, 0.467419686388912, 0.151789768661953, 1.00208011770717, 0.745287601406598, 0.674854439037465, 1.18152410859671, 2.11696806984845, 1.68083637693881, 2.87495300542926, 4.72312279765318, 4.9684623527528, 5.56733962619427, 8.24548473819777, 4.66450219552693, 7.43499550055971, 7.18968945819168, 8.80188727419921, 15.02161500005, 13.6044846187851, 23.5263365544641, 43.9121127615061, 34.7559826095308, 16.3700755246398, 2.7625883357052, 0.811709460633853, -37.1726532341221, 13.0160280600797, 14.8088797144773, 17.1989395200126, 12.9130799939653, 14.217731942267, 14.6053065112102, 11.0581069914836, 11.6924984371367], "borderColor": "#a6502a", "backgroundColor": "#a6502a", "borderWidth": 2, "pointRadius": 2, "tension": 0.25, "spanGaps": true, "yAxisID": "y1"}]}, "options": {"responsive": true, "maintainAspectRatio": false, "interaction": {"mode": "index", "intersect": false}, "plugins": {"legend": {"position": "bottom", "labels": {"boxWidth": 14, "boxHeight": 3}}}, "scales": {"x": {"grid": {"display": false}, "ticks": {"maxTicksLimit": 8}}, "y": {"type": "linear", "position": "left", "title": {"display": true, "text": "Current US$ billions"}}, "y1": {"type": "linear", "position": "right", "title": {"display": true, "text": "Percent of GDP"}, "grid": {"drawOnChartArea": false}}}}}</script>
+    </figure>
+    
+    <div class="figure-interpretation">
+      <p>The dual-axis trend shows why FDI is simultaneously a strength and a vulnerability. Absolute inflows finance projects that Mongolia could not easily fund domestically, while the GDP-share line shows how large those inflows are relative to the national economy. Large swings therefore signal not only investor sentiment, but also possible pressure on imports, reserves, exchange rates, public revenue expectations, and the political management of strategic mining projects.</p>
+    </div>
+    </template>
+<template data-figure-template="fdi-current-account-cycle">
+    <figure class="figure-card" id="fdi-current-account-cycle">
+      <figcaption>Mongolia: FDI Inflows and Current-Account Balance</figcaption>
+      <div class="chart-frame">
+        <canvas id="chart-fdi-current-account-cycle" aria-label="Mongolia: FDI Inflows and Current-Account Balance" role="img"></canvas>
+      </div>
+      <p class="source">Source: World Bank WDI, Mongolia country code MNG. Indicator IDs: BX.KLT.DINV.WD.GD.ZS, BN.CAB.XOKA.GD.ZS. Unit: Percent of GDP (%).</p>
+      <script type="application/json" id="chart-fdi-current-account-cycle-config">{"type": "line", "data": {"labels": [1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], "datasets": [{"label": "Foreign direct investment, net inflows (% of GDP)", "data": [0.0, 0.0, 0.0, 0.0, 0.0, 0.00483395558234744, 0.0, 0.0, null, null, 0.467419686388912, 0.151789768661953, 1.00208011770717, 0.745287601406598, 0.674854439037465, 1.18152410859671, 2.11696806984845, 1.68083637693881, 2.87495300542926, 4.72312279765318, 4.9684623527528, 5.56733962619427, 8.24548473819777, 4.66450219552693, 7.43499550055971, 7.18968945819168, 8.80188727419921, 15.02161500005, 13.6044846187851, 23.5263365544641, 43.9121127615061, 34.7559826095308, 16.3700755246398, 2.7625883357052, 0.811709460633853, -37.1726532341221, 13.0160280600797, 14.8088797144773, 17.1989395200126, 12.9130799939653, 14.217731942267, 14.6053065112102, 11.0581069914836, 11.6924984371367], "borderColor": "#0f6f78", "backgroundColor": "#0f6f78", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}, {"label": "Current account balance (% of GDP)", "data": [-34.9552103630533, -33.1256605379471, -30.2340288464406, -35.2593415098793, -37.2054865309679, -36.6206663616978, -32.7946830370379, -32.2456668149356, -33.280152334654, -24.1738310890104, -3.97012494419359, -3.6611692201263, 5.00389357478453, 4.99450705638277, 2.67875894679157, -2.74202764825275, 5.7564595755319, -6.72334550775523, -5.46521084754003, -6.14547875845517, -4.86593852642614, -7.52987540545573, -6.1849966690847, 3.16276343681136, 3.46785355038079, 10.900689191107, 4.05637184446513, -12.2837567825614, -7.45624740801022, -12.3162160595433, -43.34551932851, -43.7712346792978, -37.6076656283991, -15.8208781709903, -8.16234225533352, -6.25748206242188, -10.0640976839598, -14.4368935873351, -15.2163324376399, -5.06732429872456, -13.7928750935516, -13.4342448059604, 0.596631968292985, -10.4453984769033], "borderColor": "#a6502a", "backgroundColor": "#a6502a", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}]}, "options": {"responsive": true, "maintainAspectRatio": false, "interaction": {"mode": "index", "intersect": false}, "plugins": {"legend": {"position": "bottom", "labels": {"boxWidth": 14, "boxHeight": 3}}, "tooltip": {"enabled": true}}, "scales": {"x": {"grid": {"display": false}, "ticks": {"maxTicksLimit": 8}}, "y": {"title": {"display": true, "text": "Percent of GDP (%)"}, "grid": {"color": "#e8eef3"}, "ticks": {"precision": 1}}}}}</script>
+    </figure>
+    
+
+    <div class="figure-interpretation">
+      <p>FDI inflows and the current account should be read together. Foreign investment can finance imports and large projects, but mining investment also creates imported-service demand and later income outflows. Mongolia&#x27;s policy problem is to convert FDI into productive capacity rather than using it only to finance external gaps.</p>
+      <ul><li>Foreign direct investment, net inflows (% of GDP) rose from 0.00 in 1981 to 11.69 in 2024.</li>
+<li>Current account balance (% of GDP) rose from -34.96 in 1981 to -10.45 in 2024.</li></ul>
+    </div>
+    </template>
+    </article>
+    
+    </section>
+    
+    </main>
+  </div>
+  <script>
+    function fallbackMarkdown(text) {
+      const escaped = text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+      return escaped.split(/\n{2,}/).map((block) => `<p>${block.replace(/\n/g, "<br>")}</p>`).join("");
+    }
+    function renderMarkdown(text) {
+      return window.marked ? marked.parse(text) : fallbackMarkdown(text);
+    }
+    function replaceFigurePlaceholders(preview, panel) {
+      const pattern = /^\{\{(figure|map|image):([a-z0-9-]+)\}\}$/;
+      preview.querySelectorAll("p").forEach((paragraph) => {
+        const match = (paragraph.textContent || "").trim().match(pattern);
+        if (!match) return;
+        const key = match[1] === "figure" ? match[2] : `${match[1]}:${match[2]}`;
+        const template = panel.querySelector(`template[data-figure-template="${key}"]`);
+        if (!template) {
+          const note = document.createElement("p");
+          note.className = "source";
+          note.textContent = `Figure not available: ${key}`;
+          paragraph.replaceWith(note);
+          return;
+        }
+        paragraph.replaceWith(template.content.cloneNode(true));
+      });
+    }
+    function setupMarkdownPanels() {
+      document.querySelectorAll("[data-md-panel]").forEach((panel) => {
+        const id = panel.getAttribute("data-md-panel");
+        const preview = panel.querySelector(".markdown-preview");
+        const editor = panel.querySelector(".markdown-editor");
+        const edit = panel.querySelector("[data-md-action='edit']");
+        const save = panel.querySelector("[data-md-action='save']");
+        const cancel = panel.querySelector("[data-md-action='cancel']");
+        const source = panel.getAttribute("data-md-source");
+        const original = editor.value;
+        let hash = 0;
+        for (let i = 0; i < original.length; i += 1) {
+          hash = ((hash << 5) - hash + original.charCodeAt(i)) | 0;
+        }
+        const storageKey = `mng-report-markdown:v2:${id}:${hash}`;
+        const stored = localStorage.getItem(storageKey);
+        const isPermanentMode = source && window.location.protocol.startsWith("http");
+        if (stored !== null && (!source || window.location.protocol === "file:")) {
+          editor.value = stored;
+        } else if (stored !== null && isPermanentMode && stored !== editor.value) {
+          const useDraft = window.confirm("A browser draft exists for this section. Load it into the editor so you can save it permanently?");
+          if (useDraft) editor.value = stored;
+        }
+        const showPreview = () => {
+          preview.innerHTML = renderMarkdown(editor.value);
+          replaceFigurePlaceholders(preview, panel);
+          setupCharts();
+        };
+        const setEditing = (editing) => {
+          editor.hidden = !editing;
+          preview.hidden = editing;
+          edit.hidden = editing;
+          save.hidden = !editing;
+          cancel.hidden = !editing;
+        };
+        const saveMarkdown = async () => {
+          if (isPermanentMode) {
+            const response = await fetch("/api/save-section", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ source, markdown: editor.value })
+            });
+            if (!response.ok) {
+              const message = await response.text();
+              throw new Error(message || `Save failed with ${response.status}`);
+            }
+            localStorage.removeItem(storageKey);
+            window.alert("Saved permanently to the Markdown source file.");
+          } else {
+            localStorage.setItem(storageKey, editor.value);
+            if (source) {
+              window.alert("This edit was saved only as a browser draft. Open the report through MNG/code/serve_report.py to save it permanently to the Markdown source file.");
+            }
+          }
+        };
+        showPreview();
+        setEditing(false);
+        edit.addEventListener("click", () => setEditing(true));
+        save.addEventListener("click", async () => {
+          save.disabled = true;
+          try {
+            await saveMarkdown();
+            showPreview();
+            setEditing(false);
+          } catch (error) {
+            window.alert(error.message || "Could not save the Markdown source.");
+          } finally {
+            save.disabled = false;
+          }
+        });
+        cancel.addEventListener("click", () => {
+          editor.value = localStorage.getItem(storageKey) ?? original;
+          showPreview();
+          setEditing(false);
+        });
+      });
+    }
+    function setupCharts() {
+      if (!window.Chart) {
+        document.querySelectorAll(".figure-card").forEach((card) => {
+          const note = document.createElement("p");
+          note.className = "source";
+          note.textContent = "Chart.js could not be loaded from local assets/chart.umd.min.js.";
+          card.appendChild(note);
+        });
+        return;
+      }
+      document.querySelectorAll("script[type='application/json'][id$='-config']").forEach((script) => {
+        const canvasId = script.id.replace("-config", "");
+        const canvas = document.getElementById(canvasId);
+        if (!canvas) return;
+        if (canvas.dataset.chartReady === "1") return;
+        canvas.dataset.chartReady = "1";
+        new Chart(canvas, JSON.parse(script.textContent));
+      });
+    }
+    window.addEventListener("DOMContentLoaded", () => {
+      setupMarkdownPanels();
+      setupCharts();
+    });
+    </script>
+</body>
+</html>

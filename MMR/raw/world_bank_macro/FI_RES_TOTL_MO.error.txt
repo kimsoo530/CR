@@ -1,0 +1,2 @@
+https://api.worldbank.org/v2/country/MMR/indicator/FI.RES.TOTL.MO?format=json&per_page=20000
+Failed to fetch https://api.worldbank.org/v2/country/MMR/indicator/FI.RES.TOTL.MO?format=json&per_page=20000

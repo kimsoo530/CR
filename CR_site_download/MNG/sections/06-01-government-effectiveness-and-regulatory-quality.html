@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>6.1 Government Effectiveness and Regulatory Quality | Mongolia Country Report</title>
+  <script src="../assets/marked.min.js"></script>
+  <script src="../assets/chart.umd.min.js"></script>
+  <style>
+    :root { --ink: #162029; --muted: #62707c; --line: #d8e0e6; --panel: #f5f7f8; --accent: #0f6f78; --accent2: #7a5b1e; --paper: #ffffff; --soft: #edf5f2; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: var(--ink); background: var(--paper); line-height: 1.62; }
+    .layout { display: grid; grid-template-columns: 310px minmax(0, 1fr); min-height: 100vh; }
+    .toc { position: sticky; top: 0; height: 100vh; overflow: auto; border-right: 1px solid var(--line); background: var(--panel); padding: 22px 18px; }
+    .toc h1 { font-size: 20px; margin: 0 0 6px; }
+    .toc h1 a { color: var(--ink); text-decoration: none; }
+    .toc p { color: var(--muted); font-size: 13px; margin: 0 0 18px; }
+    nav a { display: block; color: var(--ink); text-decoration: none; padding: 8px 10px; border-radius: 6px; font-size: 14px; }
+    nav a:hover, nav a.active { background: #e3f0ef; color: var(--accent); }
+    .chapter-link { font-weight: 700; }
+    .toc-group { margin: 1px 0; border-radius: 6px; }
+    .toc-group summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 4px; }
+    .toc-group summary::-webkit-details-marker { display: none; }
+    .toc-group summary::before { content: ">"; color: var(--muted); font-size: 12px; transition: transform .12s ease; }
+    .toc-group[open] summary::before { transform: rotate(90deg); }
+    .toc-group summary a { flex: 1; }
+    .section-nav { margin: 2px 0 8px 8px; padding-left: 10px; border-left: 2px solid #cdd9df; }
+    .section-link { padding: 5px 8px; font-size: 12px; color: var(--muted); line-height: 1.35; }
+    main { padding: 34px min(6vw, 82px); max-width: 1120px; }
+    .hero { border-bottom: 1px solid var(--line); padding-bottom: 20px; margin-bottom: 24px; }
+    .hero h2 { font-size: 34px; margin: 0 0 8px; letter-spacing: 0; }
+    .hero p, .chapter-landing-note { color: var(--muted); max-width: 860px; }
+    .chapter-thesis { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 16px; border: 1px solid var(--line); border-radius: 8px; padding: 14px; background: var(--soft); margin: 18px 0; }
+    .chapter-thesis b { color: var(--accent); }
+    .chapter-section-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 12px; margin: 18px 0 28px; }
+    .chapter-section-card { border: 1px solid var(--line); border-radius: 8px; background: #fff; padding: 14px; }
+    .chapter-section-card a { display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: 10px; align-items: start; text-decoration: none; color: var(--ink); }
+    .chapter-section-card span { font-weight: 800; color: var(--accent); font-size: 15px; }
+    .chapter-section-card strong { font-size: 16px; line-height: 1.35; }
+    .chapter-section-card p { color: var(--muted); font-size: 13px; margin: 10px 0 0; }
+    .section-reading { max-width: 940px; }
+    .editable-prose { border: 1px solid var(--line); border-radius: 8px; background: #fff; overflow: hidden; }
+    .prose-toolbar { display: flex; justify-content: space-between; gap: 10px; align-items: center; border-bottom: 1px solid var(--line); background: #f8fafb; padding: 10px 12px; color: var(--muted); font-size: 13px; }
+    .prose-toolbar button, .primary-link, .secondary-link { border: 1px solid var(--accent); border-radius: 6px; background: var(--accent); color: #fff; padding: 7px 10px; text-decoration: none; cursor: pointer; font-weight: 700; font-size: 13px; }
+    .prose-toolbar button[data-md-action='cancel'], .secondary-link { background: #fff; color: var(--accent); }
+    .prose-body { padding: 18px 22px; }
+    .prose-body h2 { font-size: 25px; margin: 0 0 14px; }
+    .prose-body h3 { font-size: 18px; margin: 24px 0 8px; }
+    .prose-body img { display: block; max-width: 100%; height: auto; margin: 14px auto; border: 1px solid var(--line); border-radius: 8px; background: #f8fafb; padding: 8px; }
+    .prose-body figure { margin: 18px 0; }
+    .prose-body figcaption { color: var(--muted); font-size: 13px; line-height: 1.45; }
+    .prose-body table, .index-table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+    .prose-body th, .prose-body td, .index-table th, .index-table td { border: 1px solid var(--line); padding: 8px 10px; vertical-align: top; }
+    .prose-body th, .index-table th { background: #f4f8f7; }
+    .visual-analysis { margin-top: 20px; }
+    .visual-analysis > p { color: #34444f; margin: 0 0 12px; max-width: 880px; }
+    .map-figure, .image-figure { margin: 20px 0 18px; }
+    .map-figure img, .image-figure img { display: block; width: min(100%, 900px); height: auto; border: 1px solid var(--line); border-radius: 8px; background: #fff; padding: 8px; }
+    .image-figure img { width: min(100%, 760px); }
+    .map-figure figcaption, .image-figure figcaption { color: var(--muted); font-size: 13px; line-height: 1.45; margin-top: 8px; }
+    .paired-images { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; align-items: start; }
+    .paired-images img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+    .paired-images span { display: block; margin-top: 6px; color: var(--muted); font-size: 12px; font-weight: 700; }
+    .figure-card, .chart-empty { border: 1px solid var(--line); border-radius: 8px; background: #fff; margin: 16px 0; padding: 16px; }
+    .figure-card figcaption { font-weight: 800; font-size: 16px; margin-bottom: 12px; color: var(--ink); }
+    .chart-frame { height: 360px; position: relative; }
+    .chart-panel-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+    .chart-panel { min-width: 0; padding: 12px; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+    .chart-panel h3 { margin: 0 0 8px; font-size: 0.92rem; line-height: 1.25; color: var(--ink); }
+    .chart-panel-frame { height: 220px; position: relative; }
+    .figure-interpretation { margin: -4px 0 18px; color: #34444f; }
+    .figure-interpretation p { margin: 0 0 8px; }
+    .figure-interpretation ul { margin: 8px 0 0 18px; padding: 0; }
+    .chart-empty { display: grid; gap: 6px; color: var(--muted); }
+    [hidden] { display: none !important; }
+    .markdown-editor { display: block; width: 100%; min-height: 560px; border: 0; padding: 16px; font-family: Consolas, monospace; font-size: 14px; line-height: 1.55; resize: vertical; }
+    .source { color: var(--muted); font-size: 13px; }
+    .cover-body { background: #e9eef0; }
+    .cover-page { min-height: 100vh; display: grid; place-items: center; padding: 36px; }
+    .book-cover { width: min(980px, 100%); min-height: 760px; background: #fff; border: 1px solid #cfd8de; border-radius: 8px; padding: 58px; box-shadow: 0 24px 70px rgba(22, 32, 41, .14); }
+    .cover-kicker { color: var(--accent); font-weight: 800; text-transform: uppercase; font-size: 13px; letter-spacing: .08em; }
+    .cover-rule { height: 7px; width: 150px; background: linear-gradient(90deg, var(--accent), var(--accent2)); margin: 22px 0 42px; border-radius: 999px; }
+    .book-cover h1 { font-size: clamp(52px, 8vw, 92px); line-height: .96; margin: 0 0 24px; letter-spacing: 0; }
+    .cover-subtitle { font-size: 22px; max-width: 760px; color: #33414c; }
+    .cover-purpose { max-width: 820px; color: var(--muted); font-size: 16px; }
+    .cover-editor { margin: 36px 0; display: grid; gap: 3px; }
+    .cover-editor span { color: var(--muted); font-size: 12px; text-transform: uppercase; }
+    .cover-editor strong { font-size: 20px; }
+    .cover-editor em { color: var(--muted); font-style: normal; }
+    .cover-actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 22px 0; }
+    .cover-method { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 30px; }
+    .cover-method div { border-top: 1px solid var(--line); padding-top: 12px; }
+    .cover-method b { display: block; color: var(--accent); }
+    .cover-method span { color: var(--muted); font-size: 13px; }
+    @media (max-width: 1040px) { .layout { grid-template-columns: 1fr; } .toc { position: static; height: auto; } .cover-method { grid-template-columns: 1fr; } main { padding: 24px 18px; } .book-cover { padding: 32px; min-height: auto; } .chart-frame { height: 300px; } .chart-panel-grid { grid-template-columns: 1fr; } .paired-images { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+  <div class="layout">
+    <aside class="toc">
+      <h1><a href="../index.html">Mongolia</a></h1>
+      <p>Official-source country report with section-level Markdown editing and separated analysis visuals.</p>
+      <nav><details class="toc-group"><summary><a class="chapter-link" href="../01-overview.html">1. Country Overview</a></summary><div class="section-nav"><a class="section-link" href="../sections/01-01-official-name-capital-location-area-population-language-religion-and-currency.html">1.1 Official Name, Capital, Location, Area, Population, Language, Religion, and Currency</a><a class="section-link" href="../sections/01-02-state-symbols.html">1.2 State Symbols</a><a class="section-link" href="../sections/01-03-country-profile-and-strategic-setting.html">1.3 Country Profile and Strategic Setting</a><a class="section-link" href="../sections/01-04-territory-climate-settlement-and-administrative-divisions.html">1.4 Territory, Climate, Settlement, and Administrative Divisions</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../02-history.html">2. Historical Background</a></summary><div class="section-nav"><a class="section-link" href="../sections/02-01-steppe-polities-empire-and-civilizational-zones.html">2.1 Steppe Polities, Empire, and Civilizational Zones</a><a class="section-link" href="../sections/02-02-qing-rule-autonomy-socialism-and-state-formation.html">2.2 Qing Rule, Autonomy, Socialism, and State Formation</a><a class="section-link" href="../sections/02-03-democratic-transition-and-constitutional-turning-points.html">2.3 Democratic Transition and Constitutional Turning Points</a><a class="section-link" href="../sections/02-04-historical-legacies-in-present-institutions.html">2.4 Historical Legacies in Present Institutions</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../03-constitution.html">3. Constitution and Basic State Order</a></summary><div class="section-nav"><a class="section-link" href="../sections/03-01-constitutional-order-and-amendments.html">3.1 Constitutional Order and Amendments</a><a class="section-link" href="../sections/03-02-fundamental-rights-system.html">3.2 Fundamental Rights System</a><a class="section-link" href="../sections/03-03-separation-of-powers-constitutional-review-judicial-review-and-emergency-powers.html">3.3 Separation of Powers, Constitutional Review, Judicial Review, and Emergency Powers</a><a class="section-link" href="../sections/03-04-constitutional-implications-for-state-authority.html">3.4 Constitutional Implications for State Authority</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../04-politics.html">4. Political System and Power Structure</a></summary><div class="section-nav"><a class="section-link" href="../sections/04-01-form-of-government.html">4.1 Form of Government</a><a class="section-link" href="../sections/04-02-president-prime-minister-cabinet-and-parliament.html">4.2 President, Prime Minister, Cabinet, and Parliament</a><a class="section-link" href="../sections/04-03-party-system-elections-representation-and-coalition-politics.html">4.3 Party System, Elections, Representation, and Coalition Politics</a><a class="section-link" href="../sections/04-04-local-politics-governors-and-real-power-relations.html">4.4 Local Politics, Governors, and Real Power Relations</a><a class="section-link" href="../sections/04-05-political-dynamics-and-institutional-accountability.html">4.5 Political Dynamics and Institutional Accountability</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../05-administration.html">5. Administrative System and Government Organization</a></summary><div class="section-nav"><a class="section-link" href="../sections/05-01-central-executive-administration-and-policy-coordination.html">5.1 Central Executive Administration and Policy Coordination</a><a class="section-link" href="../sections/05-02-organizational-management-and-administrative-reform.html">5.2 Organizational Management and Administrative Reform</a><a class="section-link" href="../sections/05-03-human-resource-management-and-civil-service.html">5.3 Human Resource Management and Civil Service</a><a class="section-link" href="../sections/05-04-budget-execution-procurement-audit-and-anti-corruption-administration.html">5.4 Budget Execution, Procurement, Audit, and Anti-Corruption Administration</a><a class="section-link" href="../sections/05-05-aimags-soums-districts-khoroos-and-service-delivery.html">5.5 Aimags, Soums, Districts, Khoroos, and Service Delivery</a><a class="section-link" href="../sections/05-06-digital-government-e-mongolia-and-administrative-accountability.html">5.6 Digital Government, E-Mongolia, and Administrative Accountability</a><a class="section-link" href="../sections/05-07-implementation-capacity-in-a-low-density-territory.html">5.7 Implementation Capacity in a Low-Density Territory</a></div></details>
+<details class="toc-group active" open><summary><a class="chapter-link active" href="../06-governance.html">6. Governance and Institutional Capacity</a></summary><div class="section-nav"><a class="section-link" href="../sections/06-01-government-effectiveness-and-regulatory-quality.html">6.1 Government Effectiveness and Regulatory Quality</a><a class="section-link" href="../sections/06-02-rule-of-law-and-control-of-corruption.html">6.2 Rule of Law and Control of Corruption</a><a class="section-link" href="../sections/06-03-voice-accountability-political-stability-and-citizen-participation.html">6.3 Voice, Accountability, Political Stability, and Citizen Participation</a><a class="section-link" href="../sections/06-04-institutional-performance-and-reform-credibility.html">6.4 Institutional Performance and Reform Credibility</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../07-fiscal.html">7. Fiscal System and Public Sector</a></summary><div class="section-nav"><a class="section-link" href="../sections/07-01-government-revenue-mineral-revenue-and-expenditure-structure.html">7.1 Government Revenue, Mineral Revenue, and Expenditure Structure</a><a class="section-link" href="../sections/07-02-fiscal-balance-debt-stabilization-funds-and-interest-burden.html">7.2 Fiscal Balance, Debt, Stabilization Funds, and Interest Burden</a><a class="section-link" href="../sections/07-03-state-owned-enterprises-mining-soes-and-quasi-public-sector.html">7.3 State-Owned Enterprises, Mining SOEs, and Quasi-Public Sector</a><a class="section-link" href="../sections/07-04-public-investment-roads-urban-infrastructure-and-investment-decision-making.html">7.4 Public Investment, Roads, Urban Infrastructure, and Investment Decision-Making</a><a class="section-link" href="../sections/07-05-fiscal-capacity-commodity-cycles-and-public-sector-risks.html">7.5 Fiscal Capacity, Commodity Cycles, and Public Sector Risks</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../08-society.html">8. Population and Social Structure</a></summary><div class="section-nav"><a class="section-link" href="../sections/08-01-population-size-growth-age-structure-and-dependency.html">8.1 Population Size, Growth, Age Structure, and Dependency</a><a class="section-link" href="../sections/08-02-urbanization-ulaanbaatar-concentration-and-regional-distribution.html">8.2 Urbanization, Ulaanbaatar Concentration, and Regional Distribution</a><a class="section-link" href="../sections/08-03-ethnicity-language-religion-migration-remittances-and-diaspora.html">8.3 Ethnicity, Language, Religion, Migration, Remittances, and Diaspora</a><a class="section-link" href="../sections/08-04-nomadic-livelihoods-social-integration-and-conflict-factors.html">8.4 Nomadic Livelihoods, Social Integration, and Conflict Factors</a><a class="section-link" href="../sections/08-05-demographic-pressures-and-social-cohesion.html">8.5 Demographic Pressures and Social Cohesion</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../09-macro.html">9. Macroeconomic Structure</a></summary><div class="section-nav"><a class="section-link" href="../sections/09-01-gdp-scale-growth-and-gdp-per-capita.html">9.1 GDP Scale, Growth, and GDP Per Capita</a><a class="section-link" href="../sections/09-02-prices-exchange-rate-and-macroeconomic-stability.html">9.2 Prices, Exchange Rate, and Macroeconomic Stability</a><a class="section-link" href="../sections/09-03-sectoral-structure-mineral-dependence-growth-model-and-vulnerabilities.html">9.3 Sectoral Structure, Mineral Dependence, Growth Model, and Vulnerabilities</a><a class="section-link" href="../sections/09-04-growth-sustainability-and-structural-constraints.html">9.4 Growth Sustainability and Structural Constraints</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../10-trade.html">10. Trade, Investment, and External Economy</a></summary><div class="section-nav"><a class="section-link" href="../sections/10-01-exports-imports-trading-partners-and-current-account.html">10.1 Exports, Imports, Trading Partners, and Current Account</a><a class="section-link" href="../sections/10-02-copper-coal-gold-cashmere-tourism-and-services.html">10.2 Copper, Coal, Gold, Cashmere, Tourism, and Services</a><a class="section-link" href="../sections/10-03-fdi-absolute-amount-and-share-of-gdp.html">10.3 FDI Absolute Amount and Share of GDP</a><a class="section-link" href="../sections/10-04-investment-regime-economic-zones-and-industrial-policy.html">10.4 Investment Regime, Economic Zones, and Industrial Policy</a><a class="section-link" href="../sections/10-05-external-integration-and-competitiveness.html">10.5 External Integration and Competitiveness</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../11-infrastructure.html">11. Infrastructure, Energy, and Digital Connectivity</a></summary><div class="section-nav"><a class="section-link" href="../sections/11-01-electricity-access-heating-energy-dependence-and-transition.html">11.1 Electricity Access, Heating, Energy Dependence, and Transition</a><a class="section-link" href="../sections/11-02-transport-logistics-rail-road-air-and-border-corridors.html">11.2 Transport, Logistics, Rail, Road, Air, and Border Corridors</a><a class="section-link" href="../sections/11-03-internet-mobile-connectivity-secure-servers-and-logistics-performance.html">11.3 Internet, Mobile Connectivity, Secure Servers, and Logistics Performance</a><a class="section-link" href="../sections/11-04-connectivity-service-delivery-and-bottlenecks.html">11.4 Connectivity, Service Delivery, and Bottlenecks</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../12-labor.html">12. Labor Market and Human Capital</a></summary><div class="section-nav"><a class="section-link" href="../sections/12-01-labor-force-size-and-participation.html">12.1 Labor Force Size and Participation</a><a class="section-link" href="../sections/12-02-female-participation-unemployment-youth-unemployment-and-vulnerable-employment.html">12.2 Female Participation, Unemployment, Youth Unemployment, and Vulnerable Employment</a><a class="section-link" href="../sections/12-03-herding-mining-education-productivity-hdi-and-r-d.html">12.3 Herding, Mining, Education, Productivity, HDI, and R&amp;D</a><a class="section-link" href="../sections/12-04-employment-absorption-and-human-capital-use.html">12.4 Employment Absorption and Human Capital Use</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../13-education-health.html">13. Education, Health, and Welfare</a></summary><div class="section-nav"><a class="section-link" href="../sections/13-01-education-system-and-public-expenditure.html">13.1 Education System and Public Expenditure</a><a class="section-link" href="../sections/13-02-life-expectancy-infant-mortality-hospital-beds-doctors-and-health-expenditure.html">13.2 Life Expectancy, Infant Mortality, Hospital Beds, Doctors, and Health Expenditure</a><a class="section-link" href="../sections/13-03-air-pollution-sanitation-public-health-risks-and-welfare.html">13.3 Air Pollution, Sanitation, Public Health Risks, and Welfare</a><a class="section-link" href="../sections/13-04-human-development-outcomes-and-welfare-capacity.html">13.4 Human Development Outcomes and Welfare Capacity</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../14-environment.html">14. Environment, Climate Risk, and Sustainable Development</a></summary><div class="section-nav"><a class="section-link" href="../sections/14-01-climate-change-dzud-desertification-and-rural-livelihood-risk.html">14.1 Climate Change, Dzud, Desertification, and Rural Livelihood Risk</a><a class="section-link" href="../sections/14-02-ger-district-and-urban-public-health.html">14.2 Ger District and Urban Public Health</a><a class="section-link" href="../sections/14-03-mining-water-land-restoration-and-environmental-governance.html">14.3 Mining, Water, Land Restoration, and Environmental Governance</a><a class="section-link" href="../sections/14-04-sdg-performance-green-development-and-policy-implementation.html">14.4 SDG Performance, Green Development, and Policy Implementation</a><a class="section-link" href="../sections/14-05-environmental-sustainability-sdg-implementation-and-future-policy-direction.html">14.5 Environmental Sustainability, SDG Implementation, and Future Policy Direction</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../15-finance.html">15. Financial Sector and Economic Institutions</a></summary><div class="section-nav"><a class="section-link" href="../sections/15-01-domestic-credit-private-credit-capital-markets-and-fintech.html">15.1 Domestic Credit, Private Credit, Capital Markets, and Fintech</a><a class="section-link" href="../sections/15-02-central-bank-monetary-policy-supervision-and-exchange-rate.html">15.2 Central Bank, Monetary Policy, Supervision, and Exchange Rate</a><a class="section-link" href="../sections/15-03-foreign-investment-protection-and-capital-market-openness.html">15.3 Foreign Investment Protection and Capital Market Openness</a><a class="section-link" href="../sections/15-04-financial-deepening-and-market-institutions.html">15.4 Financial Deepening and Market Institutions</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../16-security.html">16. Foreign Relations, Security, and Geopolitics</a></summary><div class="section-nav"><a class="section-link" href="../sections/16-01-foreign-policy-orientation-and-international-organizations.html">16.1 Foreign Policy Orientation and International Organizations</a><a class="section-link" href="../sections/16-02-china-russia-third-neighbor-policy-and-strategic-balancing.html">16.2 China, Russia, Third Neighbor Policy, and Strategic Balancing</a><a class="section-link" href="../sections/16-03-borders-security-organizations-military-capacity-and-transnational-issues.html">16.3 Borders, Security Organizations, Military Capacity, and Transnational Issues</a><a class="section-link" href="../sections/16-04-strategic-resources-corridors-and-climate-security-risks.html">16.4 Strategic Resources, Corridors, and Climate-Security Risks</a><a class="section-link" href="../sections/16-05-strategic-environment-and-transnational-risks.html">16.5 Strategic Environment and Transnational Risks</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../17-policy.html">17. Major Policies and National Development Strategy</a></summary><div class="section-nav"><a class="section-link" href="../sections/17-01-evolution-of-national-development-strategy.html">17.1 Evolution of National Development Strategy</a><a class="section-link" href="../sections/17-02-vision-2050-new-recovery-policy-and-industrial-policy.html">17.2 Vision 2050, New Recovery Policy, and Industrial Policy</a><a class="section-link" href="../sections/17-03-digital-transformation-energy-transition-climate-policy-and-administrative-reform.html">17.3 Digital Transformation, Energy Transition, Climate Policy, and Administrative Reform</a><a class="section-link" href="../sections/17-04-welfare-education-health-and-recent-five-year-policy-changes.html">17.4 Welfare, Education, Health, and Recent Five-Year Policy Changes</a><a class="section-link" href="../sections/17-05-policy-implementation-and-reform-sequencing.html">17.5 Policy Implementation and Reform Sequencing</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../18-assessment.html">18. Integrated Assessment</a></summary><div class="section-nav"><a class="section-link" href="../sections/18-01-national-operating-model.html">18.1 National Operating Model</a><a class="section-link" href="../sections/18-02-political-stability-institutional-risk-growth-drivers-and-bottlenecks.html">18.2 Political Stability, Institutional Risk, Growth Drivers, and Bottlenecks</a><a class="section-link" href="../sections/18-03-administrative-capacity-and-international-cooperation-implications.html">18.3 Administrative Capacity and International Cooperation Implications</a><a class="section-link" href="../sections/18-04-mongolia-and-comparative-administration-theory.html">18.4 Mongolia and Comparative Administration Theory</a><a class="section-link" href="../sections/18-05-evidence-limits-and-source-triangulation.html">18.5 Evidence Limits and Source Triangulation</a><a class="section-link" href="../sections/18-06-strategic-diagnosis-and-outlook.html">18.6 Strategic Diagnosis and Outlook</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../19-appendix.html">19. Appendix and Update Workflow</a></summary><div class="section-nav"><a class="section-link" href="../sections/19-01-annual-revision-method.html">19.1 Annual Revision Method</a><a class="section-link" href="../sections/19-02-editorial-revision-method.html">19.2 Editorial Revision Method</a><a class="section-link" href="../sections/19-03-data-integrity.html">19.3 Data Integrity</a><a class="section-link" href="../sections/19-04-evidence-archive-and-review-trail.html">19.4 Evidence Archive and Review Trail</a><a class="section-link" href="../sections/19-05-data-limits-and-source-triangulation.html">19.5 Data Limits and Source Triangulation</a><a class="section-link" href="../sections/19-06-external-review-checklist.html">19.6 External Review Checklist</a><a class="section-link" href="../sections/19-07-comparative-administration-benchmark.html">19.7 Comparative Administration Benchmark</a><a class="section-link" href="../sections/19-08-timeline.html">19.8 Timeline</a><a class="section-link" href="../sections/19-09-government-organization-chart.html">19.9 Government Organization Chart</a><a class="section-link" href="../sections/19-10-constitution-and-major-laws.html">19.10 Constitution and Major Laws</a><a class="section-link" href="../sections/19-11-key-indicator-table-source-list-and-data-codebook.html">19.11 Key Indicator Table, Source List, and Data Codebook</a><a class="section-link" href="../sections/19-12-methodological-notes-and-update-standards.html">19.12 Methodological Notes and Update Standards</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../20-references.html">20. References</a></summary><div class="section-nav"><a class="section-link" href="../sections/20-01-references.html">20.1 References</a><a class="section-link" href="../sections/20-02-source-integrity-and-citation-notes.html">20.2 Source Integrity and Citation Notes</a></div></details></nav>
+    </aside>
+    <main>
+      <header class="hero"><h2>6.1 Government Effectiveness and Regulatory Quality</h2></header>
+      
+    <section class="section-reading">
+      
+    <article class="editable-prose" data-md-panel="governance-government-effectiveness-and-regulatory-quality-text" data-md-source="sections/06-01-government-effectiveness-and-regulatory-quality.md">
+      <div class="prose-toolbar">
+        <span>Editable section manuscript</span>
+        <div>
+          <button type="button" data-md-action="edit">Edit Markdown</button>
+          <button type="button" data-md-action="save" hidden>Save</button>
+          <button type="button" data-md-action="cancel" hidden>Cancel</button>
+        </div>
+      </div>
+      <div class="markdown-preview prose-body"></div>
+      <textarea class="markdown-editor" hidden>## 6.1 Government Effectiveness and Regulatory Quality
+
+Mongolia&#x27;s governance problem is not the absence of democracy. It is the difficulty of converting democratic mandates into predictable administration, coherent regulation, and reliable implementation. The country has competitive elections, an active parliament, a vocal public sphere, and a tradition of peaceful political change. Yet government effectiveness and regulatory quality remain constrained by cabinet turnover, party patronage, mineral-cycle politics, uneven local capacity, SOE influence, and the complexity of governing a vast low-density territory.
+
+Government effectiveness should be understood as the state&#x27;s ability to do ordinary things well: design policy, coordinate ministries, execute budgets, regulate firms, maintain services, implement infrastructure, supervise SOEs, enforce standards, and respond to shocks. Regulatory quality is the capacity to create rules that are clear, stable, fair, and economically credible. In Mongolia these two dimensions are inseparable because the most important sectors, including mining, energy, transport, finance, land, environment, and digital services, require both technical regulation and political legitimacy.
+
+{{figure:governance-wgi}}
+
+### The Democratic-Administrative Gap
+
+The World Bank Worldwide Governance Indicators show Mongolia&#x27;s central governance tension: the country performs better on democratic voice than on several administrative-capacity dimensions. This does not mean democracy is the problem. Rather, it means electoral competition has not automatically produced a consistently effective state. Citizens can criticize government, vote out leaders, and mobilize around scandals, but public administration still struggles with regulatory predictability, policy continuity, and implementation discipline.
+
+This gap is common in resource democracies. Mineral revenue raises the stakes of politics because control over licenses, SOEs, infrastructure, budget spending, and local benefits becomes politically valuable. When political parties rely on patronage networks, regulatory agencies can be pulled toward short-term bargaining rather than long-term rule enforcement. This weakens investor confidence and citizen trust at the same time.
+
+### Regulatory Quality
+
+Regulatory quality is especially important in Mongolia because the state is no longer regulating a simple post-socialist transition economy. It is regulating a more complex mineral economy that now includes large mining projects, foreign investors, SOEs, urban land and housing pressures, environmental risks, digital platforms, public procurement, financial-sector vulnerabilities, border logistics, energy transition, and public-private partnerships. As economic development proceeds, regulation naturally increases. The policy challenge is therefore not to eliminate regulation, but to prevent regulatory expansion from becoming fragmented, unpredictable, discretionary, or politically captured.
+
+Mining remains the most visible regulatory field, but it should not be treated as the only one. In Mongolia, a mining license is also a fiscal, environmental, social, and geopolitical instrument. Mining affects tax revenue, exports, water use, land access, local employment, environmental restoration, SOE governance, foreign investment, and relations with China and third-neighbor partners. EITI reports that Mongolia’s extractive sector represented about 25 percent of GDP, 57 percent of industrial production, 42 percent of total investment, and more than 30 percent of national budget revenue in 2022, which explains why mining regulation has national significance beyond the sector itself. ([State Department][1])
+
+However, Mongolia’s broader regulatory problem is that economic development has increased the number of regulatory domains faster than administrative capacity has improved. As the economy becomes more diversified and urbanized, the state must regulate not only extraction, but also construction safety, urban land use, environmental standards, financial stability, data protection, renewable energy, competition, procurement, public-private partnerships, consumer protection, food safety, veterinary certification, tourism quality, and digital services. Each of these areas requires rules, inspectors, licensing systems, dispute-resolution mechanisms, data, and professional regulators. If these systems are weak, regulation becomes either excessive paperwork or ineffective enforcement.
+
+### Regulatory Expansion and the Risk of Administrative Overload
+
+Regulatory expansion is a normal feature of development. A low-income or early transition economy may rely on relatively simple rules, but a more complex economy requires regulation to manage risks, protect consumers, enforce contracts, protect the environment, regulate infrastructure, and sustain competition. Mongolia’s problem is that regulatory expansion often occurs through new laws, permits, strategies, and agencies without sufficient attention to implementation capacity. This can create overlapping mandates, uncertain licensing procedures, unclear standards, inconsistent inspections, and opportunities for rent-seeking.
+
+The 2022 Law on Permits illustrates both the need for regulatory simplification and the persistence of regulatory complexity. The law establishes the list of activities requiring ordinary or special permits and identifies the authorized bodies responsible for issuing them. It also recognizes that individuals and legal entities may freely conduct activities that are not prohibited or subject to permits. This is a useful legal principle because it limits arbitrary administrative control. Yet the existence of a permit law also shows the breadth of state regulation across economic activity. The key question is whether permit requirements are necessary, proportionate, transparent, and consistently applied. ([Эрх зүйн мэдээллийн нэгдсэн систем][2])
+
+In practice, businesses often experience regulation not through statutory principles, but through specific encounters with tax authorities, licensing offices, customs, inspectors, local governments, and courts. The U.S. Department of State’s 2025 Investment Climate Statement notes that Mongolia imposes relatively few market-access barriers and few investment restrictions, but it also emphasizes continuing concerns about regulatory transparency, corruption, dispute resolution, and the practical investment climate. This distinction is important. Mongolia may be formally open to investment, while still facing problems of regulatory predictability in implementation. ([State Department][1])
+
+### Mining Regulation as a Cross-Sectoral Governance Problem
+
+Mining regulation remains the central regulatory challenge because of the sector’s national importance. Weak regulatory quality in mining produces several risks. Investors may fear unpredictable taxation, contract revision, or licensing uncertainty. Citizens may suspect that mining benefits are captured by political or business networks. Local communities may distrust environmental monitoring. SOEs may blur commercial and political functions. Public agencies may lack technical capacity to evaluate complex contracts, water impacts, rehabilitation plans, and fiscal terms.
+
+The appropriate reform direction is not deregulation. Mongolia needs better regulation: transparent licenses, predictable taxes, credible environmental monitoring, clear local consultation, enforceable rehabilitation obligations, and professional regulators insulated from short-term political pressure. This is particularly important because large projects such as Oyu Tolgoi and Tavan Tolgoi are not only commercial ventures. They are national development projects with fiscal, environmental, diplomatic, and political consequences.
+
+Mining also illustrates the problem of fragmented regulation. One ministry may issue or supervise licenses, another may handle environmental requirements, another may collect taxes, another may oversee SOEs, another may manage local development funds, while local governments respond to citizen complaints. If these institutions do not share data or coordinate enforcement, regulatory gaps emerge. A company may comply with one agency but face conflict with another. Local communities may not know which institution is responsible for water monitoring, land restoration, dust pollution, or grievance handling. Regulatory quality therefore depends on coordination, not only on legal text.
+
+### Investment Regulation and Predictability
+
+Mongolia’s investment regime faces a delicate balance between openness and sovereignty. The country needs foreign investment for mining, energy, infrastructure, logistics, tourism, digital services, and industrial processing. At the same time, strategic sectors raise legitimate concerns about national control, resource ownership, tax fairness, and public benefit. Regulatory quality is therefore central to investor confidence and democratic legitimacy.
+
+The risk is regulatory unpredictability. Investors may perceive sudden tax disputes, contract renegotiations, licensing delays, or politically driven enforcement as indirect expropriation or regulatory risk. Citizens, however, may perceive stable contracts as unfair if they believe foreign investors receive excessive benefits. This creates a political economy dilemma: the state must be predictable enough for investors and accountable enough for citizens.
+
+The solution is rules-based investment governance. Strategic-sector screening should be transparent, time-bound, and legally defined. Contract renegotiation, when necessary, should be technically justified and publicly explained. Tax rules should be stable and administered consistently. Dispute-resolution mechanisms should be credible. Without this, Mongolia may continue to attract investment only in high-rent mining projects while failing to attract diversified investment in manufacturing, services, renewable energy, and logistics.
+
+### Environmental, Water, and Land-Use Regulation
+
+As Mongolia develops, environmental regulation becomes more important, not less. Mining, urban expansion, road construction, energy projects, tourism, and pasture pressure all create environmental costs. Climate change, desertification, water scarcity, and air pollution make regulatory enforcement more urgent. In this context, weak regulation does not produce development; it transfers costs to local communities, future generations, and the public budget.
+
+Water regulation is especially important. Mining projects in arid and semi-arid regions can compete with herder livelihoods and fragile ecosystems. Urban growth increases demand for water, sanitation, and wastewater treatment. Climate change alters precipitation and groundwater pressure. Mongolia therefore needs stronger rules for groundwater monitoring, ecological flows, water-use permits, cumulative impact assessment, wastewater treatment, and public disclosure of water data.
+
+Land regulation is also critical. Urban land in Ulaanbaatar, pasture use in rural areas, mining licenses, infrastructure corridors, and protected areas all require clear rules. Weak land-use regulation can produce ger-district expansion without infrastructure, pasture degradation, mining-community conflict, or speculative land capture. Regulatory quality in land administration is therefore directly connected to urban health, rural livelihoods, and environmental sustainability.
+
+### Urban and Construction Regulation
+
+Mongolia’s rapid urbanization has increased the importance of urban regulation. Ulaanbaatar’s growth has produced congestion, air pollution, land-use disputes, school and hospital pressure, sanitation problems, and infrastructure deficits. These problems cannot be solved only through public investment. They also require better urban regulation: land-use planning, building standards, construction permits, zoning, road access, heating connections, wastewater requirements, parking rules, public transport integration, and environmental standards.
+
+The challenge is that urban regulation must be both strict and realistic. If rules are too weak, the city expands without infrastructure. If rules are too rigid or poorly administered, they create informality, delays, and opportunities for bribery. Ulaanbaatar therefore needs a regulatory system that links land rights, construction approval, infrastructure capacity, environmental health, and social inclusion. Ger-district upgrading is a regulatory as well as an infrastructure problem: serviced land, building safety, heating standards, sanitation rules, and land tenure must be coordinated.
+
+### SOEs, Procurement, and Quasi-Public Regulation
+
+Regulatory quality also depends on how the state regulates itself. SOEs, public procurement, special funds, and public-private partnerships create large fiscal and governance risks. Mining SOEs and infrastructure SOEs may operate commercially, implement public policy, borrow with implicit state backing, or deliver politically directed projects. If their roles are not clearly regulated, they can become channels of quasi-fiscal spending and blurred accountability.
+
+Public procurement is another regulatory domain where development increases complexity. Roads, schools, hospitals, digital platforms, energy projects, and border facilities require increasingly sophisticated procurement rules. Weak procurement regulation can generate inflated costs, favoritism, poor construction quality, and corruption. Good procurement regulation requires open tenders, beneficial ownership disclosure, e-procurement, contract monitoring, complaint mechanisms, and audit follow-up.
+
+The new sovereign wealth fund framework also illustrates the need for self-regulation of the state. Reuters reported that Mongolia’s Chinggis Khaan Sovereign Wealth Fund, established by law in April 2024, had about USD 1.4 billion in assets and was preparing transparent governance arrangements, independent board members, external advisers, and a citizen-facing app to show allocations and benefits. This is a positive direction, but it also shows that resource governance now requires sophisticated regulation of public assets, investment mandates, SOE dividends, fund withdrawals, and public reporting. ([Reuters][3])
+
+### Digital and AI Regulation
+
+Mongolia’s digital transformation creates new regulatory needs. E-Mongolia, digital identity, online permits, AI strategy, big data, cloud infrastructure, cybersecurity, and public data repositories can improve service delivery and accountability. But they also create risks: personal-data misuse, cyberattacks, exclusion of citizens without digital access, opaque automated decisions, vendor lock-in, and concentration of administrative data.
+
+Digital regulation should therefore address data protection, cybersecurity standards, interoperability, public data ownership, algorithmic accountability, digital procurement, and appeal rights. If AI is used for social protection targeting, tax compliance, procurement-risk detection, or public-service prioritization, citizens should have rights to explanation, correction, and appeal. A digital state without accountable regulation can become faster but less transparent.
+
+### Regulatory Quality and Anti-Corruption
+
+Poor regulatory quality often creates corruption opportunities. When licensing rules are unclear, officials have discretion. When inspections are unpredictable, firms may seek informal arrangements. When procurement data are not transparent, connected firms can dominate. When environmental monitoring is weak, companies may avoid compliance costs. When SOE responsibilities are blurred, public assets may be used for political or private purposes.
+
+Regulatory reform is therefore an anti-corruption strategy. Simplifying unnecessary permits can reduce opportunities for petty corruption. Clarifying standards can reduce discretionary enforcement. Publishing licenses, contracts, procurement data, and inspection results can increase accountability. Digitizing procedures can reduce face-to-face discretion, but only if digital systems are auditable and inclusive. The aim is not a smaller state in all respects. It is a cleaner, more predictable, and more enforceable state.
+
+Mongolia should approach regulatory reform as a state-capacity agenda rather than a deregulation agenda.
+
+First, it should distinguish between unnecessary administrative burden and necessary public-interest regulation. Some permits and procedures should be simplified or eliminated, but environmental, financial, construction, data, procurement, and mining regulations need stronger enforcement.
+
+Second, regulatory impact assessment should be strengthened. New laws, permits, and inspection requirements should be evaluated for cost, administrative burden, corruption risk, and implementation feasibility before adoption.
+
+Third, Mongolia should build professional regulatory agencies. Mining, water, energy, finance, construction, digital services, procurement, and competition policy require technical expertise, data systems, and protection from short-term political pressure.
+
+Fourth, licensing and permits should be transparent and digital. Permit criteria, timelines, fees, reasons for denial, appeal rights, and responsible officials should be visible to firms and citizens.
+
+Fifth, inspection systems should become risk-based. Regulators should focus on high-risk activities such as mining water use, construction safety, food safety, environmental pollution, financial instability, and procurement fraud rather than imposing uniform burdens on all firms.
+
+Sixth, regulatory coordination should be strengthened. Cross-sector problems such as mining, ger-district upgrading, border logistics, energy transition, and digital government require joint rules and shared data across ministries.
+
+Seventh, SOEs and public funds should be regulated with the same discipline expected of private firms. Their mandates, procurement, borrowing, dividends, public-service obligations, and performance should be disclosed.
+
+Eighth, regulatory transparency should be linked to anti-corruption policy. Licenses, procurement contracts, beneficial ownership, environmental monitoring data, audit findings, and enforcement actions should be open to public scrutiny.
+
+Finally, regulatory reform should support economic diversification. Mongolia will not attract diversified investment if firms face uncertain rules, unpredictable inspections, weak courts, or opaque permits. Good regulation is therefore a competitiveness asset.
+
+In conclusion, regulatory quality in Mongolia is not only a mining issue. It is a general problem of governing development. As the economy becomes more complex, the number of regulatory tasks will inevitably increase. The choice is not between regulation and no regulation. The real choice is between fragmented, discretionary, and politically vulnerable regulation, or transparent, predictable, enforceable, and professionally administered regulation. Mongolia’s economic development will depend heavily on whether the state can build the second type of regulatory system.
+
+[1]: https://www.state.gov/reports/2025-investment-climate-statements/mongolia?utm_source=chatgpt.com &quot;2025 Investment Climate Statements: Mongolia&quot;
+[2]: https://legalinfo.mn/en/edtl/16759788313071?utm_source=chatgpt.com &quot;ЗӨВШӨӨРЛИЙН ТУХАЙ&quot;
+[3]: https://www.reuters.com/markets/asia/mongolia-targets-development-transparency-with-sovereign-wealth-chinggis-fund-2025-10-02/?utm_source=chatgpt.com &quot;Mongolia targets development, transparency with sovereign wealth Chinggis Fund&quot;
+
+
+### Public Investment as a Test of Effectiveness
+
+Public investment is one of the clearest tests of government effectiveness. Mongolia needs roads, railways, border ports, heating systems, schools, hospitals, digital systems, water infrastructure, and energy transition investment. But investment only improves state capacity if projects are selected, appraised, procured, implemented, and maintained well.
+
+{{figure:public-investment-efficiency}}
+
+The policy issue is not simply whether Mongolia spends enough. It is whether public investment removes binding constraints. A road that improves border throughput, a heating project that reduces air pollution, or a digital system that cuts service costs can strengthen the state. A politically selected project without maintenance finance can do the opposite by creating liabilities and public cynicism.
+
+### Logistics and Regulatory Performance
+
+Logistics performance also reveals regulatory quality. For a landlocked country, customs, inspection, infrastructure, and timeliness are not just trade services. They are state-capacity indicators. Border procedures that are slow or unpredictable reduce competitiveness and create opportunities for discretion.
+
+{{figure:logistics-performance}}
+
+The same logic applies across the economy. Firms and citizens need predictable interaction with the state. If permits, taxes, customs, procurement, land decisions, and inspections vary by relationship or political context, formal rules lose credibility.
+
+### Policy Implications
+
+Mongolia should focus governance reform on implementation quality.
+
+First, regulatory agencies in mining, environment, energy, finance, customs, and procurement should be professionalized and protected from short-term political interference.
+
+Second, major public investment should pass transparent appraisal and maintenance tests before approval.
+
+Third, regulatory reform should emphasize predictability, not only speed. Faster permits are useful only if standards remain credible.
+
+Fourth, the center of government should monitor cross-sector delivery problems such as border-port reform, ger-district heating, energy transition, and SOE governance.
+
+Finally, citizens should see performance data. Government effectiveness becomes credible when people can observe service access, project completion, procurement outcomes, and regulatory enforcement.
+
+In conclusion, Mongolia&#x27;s governance challenge is to close the gap between democratic legitimacy and administrative reliability. The state is politically open, but it must become more predictable, coordinated, and technically capable if it is to convert mineral wealth into durable development.
+
+### Sources
+
+* World Bank Worldwide Governance Indicators.
+* World Bank Logistics Performance Index.
+* World Bank and IMF diagnostics on Mongolia public finance, public investment, and governance.
+* Government of Mongolia. *Vision 2050* and *New Recovery Policy*.</textarea>
+      <template data-figure-template="governance-wgi">
+    <figure class="figure-card" id="governance-wgi">
+      <figcaption>Mongolia: Worldwide Governance Indicators</figcaption>
+      <div class="chart-frame">
+        <canvas id="chart-governance-wgi" aria-label="Mongolia: Worldwide Governance Indicators" role="img"></canvas>
+      </div>
+      <p class="source">Source: World Bank Worldwide Governance Indicators, Mongolia country code MNG. Indicator IDs: GE.EST, RQ.EST, RL.EST, CC.EST, VA.EST, PV.EST. Unit: WGI estimate score.</p>
+      <script type="application/json" id="chart-governance-wgi-config">{"type": "line", "data": {"labels": [1996, 1998, 2000, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023], "datasets": [{"label": "Government effectiveness: Estimate", "data": [-6.43841606378555, -4.95863714814186, -5.53837659955024, -1.95698314905167, -3.66324083507062, -6.42302694916725, -6.35645189881325, -8.33967024087906, -9.15898305177689, -8.92816203832627, -11.2943930625916, -9.56005758047104, -9.80086207389832, -10.664576292038, -9.17063009738922, -7.25129595398903, -7.50413265824318, -1.57699842005968, -4.65704956650733, -4.11104425787926, -3.85810202360153, -6.98448851704597, -8.6248454451561, -5.94883525371552, -3.30075040459633], "borderColor": "#0f6f78", "backgroundColor": "#0f6f78", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}, {"label": "Regulatory quality: Estimate", "data": [-2.95340672135353, -2.7399154305458, -2.94386593997478, -1.75490847229957, -9.53513234853744, -8.42019921541214, -8.35885632038117, -5.46407791972161, -4.82496386766434, -5.96868172287941, -5.20476868748665, -4.38669994473458, -4.04704554378986, -3.67892003059387, -5.6544791162014, -4.7194668352604, -6.20539677143097, -1.64104990661144, -2.11065953969955, 0.237797720357776, 0.086795134935528, -1.70774227380752, -4.17852041125298, -3.79246705770492, -1.22874276340007], "borderColor": "#a6502a", "backgroundColor": "#a6502a", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}, {"label": "Rule of law: Estimate", "data": [3.42397625744344, 4.1309921592474, 0.00864426500629634, 4.095691293478, 5.07587605714797, 3.04011629521847, -3.70606932044029, -5.38422140479087, -5.79157778620719, -5.69243350625038, -4.47738334536552, -6.20230028033256, -4.45857739448548, -6.24261510372162, -6.15718382596969, -5.62652310729027, -6.57427990436554, -3.79488755762577, -5.32254314422607, -4.67660450935364, -4.32181940972805, -4.49056044220924, -4.17735080420971, -2.6264349669218, -1.29136498272419], "borderColor": "#2f7d4f", "backgroundColor": "#2f7d4f", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}, {"label": "Control of corruption: Estimate", "data": [1.8998941257596, 1.87690827250481, -4.53144583106042, 0.439970633015036, -3.77136425673962, -4.5799899995327, -10.2818885445595, -9.98997300863266, -10.4337618350983, -11.3009735941887, -12.9454574584961, -12.4632947444916, -11.8485667705536, -9.09662878513336, -8.12680298089981, -8.02512431144715, -8.69992542266846, -8.58075839281082, -8.0085377395153, -7.55496528744697, -7.67297717928886, -8.33564859628677, -9.33224165439606, -7.85393393039703, -3.44823083281517], "borderColor": "#6f4aa8", "backgroundColor": "#6f4aa8", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}, {"label": "Voice and accountability: Estimate", "data": [7.204255849123, 9.51102036237716, 6.51444643735885, 6.43112349510192, 5.53416389226914, 4.63338422775269, 1.18219129741192, 4.31729438900948, 5.34223619103432, 4.56785902380943, 2.13570377230645, 1.50439158827066, 0.885023936629295, 1.11307490617037, 1.85200957208872, 4.10476337373257, 4.59345865249633, 5.65213164687156, 4.9836810529232, 4.12976601719857, 5.48441675305366, 6.39560237526894, 5.32178300619125, 3.69252943992615, 1.75239470601082], "borderColor": "#9a6a1a", "backgroundColor": "#9a6a1a", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}, {"label": "Political stability and absence of violence/terrorism: Estimate", "data": [12.7026798725128, 5.99570739269256, 13.9717580676079, 19.9066352844239, 16.3760005235672, 13.1799839138985, 14.9381100535393, 10.9974185228348, 11.3624218702316, 9.17634242773056, 10.3697864413261, 10.1497184634209, 10.3111611604691, 8.00929179787636, 8.35245341062546, 13.4623199105263, 12.1148008704185, 13.4197799563408, 13.3341597318649, 14.1374148130417, 10.8170105218887, 12.2144202589989, 11.8449287414551, 7.44767421483994, 4.14868849515915], "borderColor": "#435b68", "backgroundColor": "#435b68", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}]}, "options": {"responsive": true, "maintainAspectRatio": false, "interaction": {"mode": "index", "intersect": false}, "plugins": {"legend": {"position": "bottom", "labels": {"boxWidth": 14, "boxHeight": 3}}, "tooltip": {"enabled": true}}, "scales": {"x": {"grid": {"display": false}, "ticks": {"maxTicksLimit": 8}}, "y": {"title": {"display": true, "text": "WGI estimate score"}, "grid": {"color": "#e8eef3"}, "ticks": {"precision": 1}}}}}</script>
+    </figure>
+    
+
+    <div class="figure-interpretation">
+      <p>This figure should be read as an institutional profile. Mongolia&#x27;s democratic voice is an asset, but policy credibility depends on whether rule of law, regulatory quality, government effectiveness, and control of corruption move with it. A divergence between political openness and administrative integrity is the main reform risk.</p>
+      <ul><li>Government effectiveness: Estimate rose from -6.44 in 1996 to -3.30 in 2023.</li>
+<li>Regulatory quality: Estimate rose from -2.95 in 1996 to -1.23 in 2023.</li>
+<li>Rule of law: Estimate fell from 3.42 in 1996 to -1.29 in 2023.</li>
+<li>Control of corruption: Estimate fell from 1.90 in 1996 to -3.45 in 2023.</li>
+<li>Voice and accountability: Estimate fell from 7.20 in 1996 to 1.75 in 2023.</li>
+<li>Political stability and absence of violence/terrorism: Estimate fell from 12.70 in 1996 to 4.15 in 2023.</li></ul>
+    </div>
+    </template>
+<template data-figure-template="public-investment-efficiency">
+    <figure class="figure-card" id="public-investment-efficiency">
+      <figcaption>Mongolia: Public Investment Efficiency Challenge</figcaption>
+      <div class="chart-frame">
+        <canvas id="chart-public-investment-efficiency" aria-label="Mongolia: Public Investment Efficiency Challenge" role="img"></canvas>
+      </div>
+      <p class="source">Source: World Bank, Mongolia Public Finance Review, 2025. The reference value is an interpretive benchmark for reading the efficiency gap. Indicator IDs: public investment efficiency estimate. Unit: USD per USD invested.</p>
+      <script type="application/json" id="chart-public-investment-efficiency-config">{"type": "bar", "data": {"labels": ["Mongolia public capital created per 1 USD public investment", "Reference value if investment fully became public capital"], "datasets": [{"label": "Public capital created per 1 USD investment", "data": [0.22, 1.0], "backgroundColor": ["#a6502a", "#0f6f78"], "borderColor": "#ffffff", "borderWidth": 1}]}, "options": {"indexAxis": "y", "responsive": true, "maintainAspectRatio": false, "plugins": {"legend": {"display": false}}, "scales": {"x": {"min": 0, "max": 1, "title": {"display": true, "text": "USD of public capital per USD invested"}, "grid": {"color": "#e8eef3"}}, "y": {"grid": {"display": false}}}}}</script>
+    </figure>
+    
+    <div class="figure-interpretation">
+      <p>The World Bank estimates that each dollar of public investment in Mongolia has translated into only about 0.22 dollars of additional public capital stock. The issue is therefore not only how much Mongolia spends on infrastructure, but whether project appraisal, procurement, land and environmental clearance, SOE investment, maintenance planning, and audit convert capital spending into durable assets.</p>
+    </div>
+    </template>
+<template data-figure-template="logistics-performance">
+    <figure class="figure-card" id="logistics-performance">
+      <figcaption>Mongolia: Logistics Performance Index Components</figcaption>
+      <div class="chart-frame">
+        <canvas id="chart-logistics-performance" aria-label="Mongolia: Logistics Performance Index Components" role="img"></canvas>
+      </div>
+      <p class="source">Source: World Bank Logistics Performance Index through WDI, Mongolia country code MNG. Indicator IDs: LP.LPI.OVRL.XQ, LP.LPI.INFR.XQ, LP.LPI.CUST.XQ, LP.LPI.LOGS.XQ, LP.LPI.TIME.XQ. Unit: LPI score, 1 low to 5 high.</p>
+      <script type="application/json" id="chart-logistics-performance-config">{"type": "line", "data": {"labels": [2007, 2010, 2012, 2014, 2016, 2018, 2022], "datasets": [{"label": "Logistics performance index: Overall (1=low to 5=high)", "data": [2.08, 2.25, 2.25, 2.355608, 2.506056, 2.37, 2.5], "borderColor": "#0f6f78", "backgroundColor": "#0f6f78", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}, {"label": "Logistics performance index: Quality of trade and transport-related infrastructure (1=low to 5=high)", "data": [1.92, 1.94, 2.22, 2.287051, 2.051282, 2.1, 2.3], "borderColor": "#a6502a", "backgroundColor": "#a6502a", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}, {"label": "Logistics performance index: Efficiency of customs clearance process (1=low to 5=high)", "data": [2.0, 1.81, 1.98, 2.2, 2.392385, 2.22, 2.5], "borderColor": "#2f7d4f", "backgroundColor": "#2f7d4f", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}, {"label": "Logistics performance index: Competence and quality of logistics services (1=low to 5=high)", "data": [1.8, 2.24, 1.88, 2.334969, 2.307304, 2.21, 2.3], "borderColor": "#6f4aa8", "backgroundColor": "#6f4aa8", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}, {"label": "Logistics performance index: Frequency with which shipments reach consignee within scheduled or expected time (1=low to 5=high)", "data": [2.25, 2.55, 2.99, 2.514131, 3.398213, 3.06, 2.7], "borderColor": "#9a6a1a", "backgroundColor": "#9a6a1a", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}]}, "options": {"responsive": true, "maintainAspectRatio": false, "interaction": {"mode": "index", "intersect": false}, "plugins": {"legend": {"position": "bottom", "labels": {"boxWidth": 14, "boxHeight": 3}}, "tooltip": {"enabled": true}}, "scales": {"x": {"grid": {"display": false}, "ticks": {"maxTicksLimit": 8}}, "y": {"title": {"display": true, "text": "LPI score, 1 low to 5 high"}, "grid": {"color": "#e8eef3"}, "ticks": {"precision": 1}}}}}</script>
+    </figure>
+    
+
+    <div class="figure-interpretation">
+      <p>The Logistics Performance Index translates landlocked geography into measurable competitiveness constraints. Customs, infrastructure, logistics services, timeliness, and the overall score show whether Mongolia&#x27;s corridors function as reliable trade systems rather than only physical routes.</p>
+      <ul><li>Logistics performance index: Overall (1=low to 5=high) rose from 2.08 in 2007 to 2.50 in 2022.</li>
+<li>Logistics performance index: Quality of trade and transport-related infrastructure (1=low to 5=high) rose from 1.92 in 2007 to 2.30 in 2022.</li>
+<li>Logistics performance index: Efficiency of customs clearance process (1=low to 5=high) rose from 2.00 in 2007 to 2.50 in 2022.</li>
+<li>Logistics performance index: Competence and quality of logistics services (1=low to 5=high) rose from 1.80 in 2007 to 2.30 in 2022.</li>
+<li>Logistics performance index: Frequency with which shipments reach consignee within scheduled or expected time (1=low to 5=high) rose from 2.25 in 2007 to 2.70 in 2022.</li></ul>
+    </div>
+    </template>
+    </article>
+    
+    </section>
+    
+    </main>
+  </div>
+  <script>
+    function fallbackMarkdown(text) {
+      const escaped = text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+      return escaped.split(/\n{2,}/).map((block) => `<p>${block.replace(/\n/g, "<br>")}</p>`).join("");
+    }
+    function renderMarkdown(text) {
+      return window.marked ? marked.parse(text) : fallbackMarkdown(text);
+    }
+    function replaceFigurePlaceholders(preview, panel) {
+      const pattern = /^\{\{(figure|map|image):([a-z0-9-]+)\}\}$/;
+      preview.querySelectorAll("p").forEach((paragraph) => {
+        const match = (paragraph.textContent || "").trim().match(pattern);
+        if (!match) return;
+        const key = match[1] === "figure" ? match[2] : `${match[1]}:${match[2]}`;
+        const template = panel.querySelector(`template[data-figure-template="${key}"]`);
+        if (!template) {
+          const note = document.createElement("p");
+          note.className = "source";
+          note.textContent = `Figure not available: ${key}`;
+          paragraph.replaceWith(note);
+          return;
+        }
+        paragraph.replaceWith(template.content.cloneNode(true));
+      });
+    }
+    function setupMarkdownPanels() {
+      document.querySelectorAll("[data-md-panel]").forEach((panel) => {
+        const id = panel.getAttribute("data-md-panel");
+        const preview = panel.querySelector(".markdown-preview");
+        const editor = panel.querySelector(".markdown-editor");
+        const edit = panel.querySelector("[data-md-action='edit']");
+        const save = panel.querySelector("[data-md-action='save']");
+        const cancel = panel.querySelector("[data-md-action='cancel']");
+        const source = panel.getAttribute("data-md-source");
+        const original = editor.value;
+        let hash = 0;
+        for (let i = 0; i < original.length; i += 1) {
+          hash = ((hash << 5) - hash + original.charCodeAt(i)) | 0;
+        }
+        const storageKey = `mng-report-markdown:v2:${id}:${hash}`;
+        const stored = localStorage.getItem(storageKey);
+        const isPermanentMode = source && window.location.protocol.startsWith("http");
+        if (stored !== null && (!source || window.location.protocol === "file:")) {
+          editor.value = stored;
+        } else if (stored !== null && isPermanentMode && stored !== editor.value) {
+          const useDraft = window.confirm("A browser draft exists for this section. Load it into the editor so you can save it permanently?");
+          if (useDraft) editor.value = stored;
+        }
+        const showPreview = () => {
+          preview.innerHTML = renderMarkdown(editor.value);
+          replaceFigurePlaceholders(preview, panel);
+          setupCharts();
+        };
+        const setEditing = (editing) => {
+          editor.hidden = !editing;
+          preview.hidden = editing;
+          edit.hidden = editing;
+          save.hidden = !editing;
+          cancel.hidden = !editing;
+        };
+        const saveMarkdown = async () => {
+          if (isPermanentMode) {
+            const response = await fetch("/api/save-section", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ source, markdown: editor.value })
+            });
+            if (!response.ok) {
+              const message = await response.text();
+              throw new Error(message || `Save failed with ${response.status}`);
+            }
+            localStorage.removeItem(storageKey);
+            window.alert("Saved permanently to the Markdown source file.");
+          } else {
+            localStorage.setItem(storageKey, editor.value);
+            if (source) {
+              window.alert("This edit was saved only as a browser draft. Open the report through MNG/code/serve_report.py to save it permanently to the Markdown source file.");
+            }
+          }
+        };
+        showPreview();
+        setEditing(false);
+        edit.addEventListener("click", () => setEditing(true));
+        save.addEventListener("click", async () => {
+          save.disabled = true;
+          try {
+            await saveMarkdown();
+            showPreview();
+            setEditing(false);
+          } catch (error) {
+            window.alert(error.message || "Could not save the Markdown source.");
+          } finally {
+            save.disabled = false;
+          }
+        });
+        cancel.addEventListener("click", () => {
+          editor.value = localStorage.getItem(storageKey) ?? original;
+          showPreview();
+          setEditing(false);
+        });
+      });
+    }
+    function setupCharts() {
+      if (!window.Chart) {
+        document.querySelectorAll(".figure-card").forEach((card) => {
+          const note = document.createElement("p");
+          note.className = "source";
+          note.textContent = "Chart.js could not be loaded from local assets/chart.umd.min.js.";
+          card.appendChild(note);
+        });
+        return;
+      }
+      document.querySelectorAll("script[type='application/json'][id$='-config']").forEach((script) => {
+        const canvasId = script.id.replace("-config", "");
+        const canvas = document.getElementById(canvasId);
+        if (!canvas) return;
+        if (canvas.dataset.chartReady === "1") return;
+        canvas.dataset.chartReady = "1";
+        new Chart(canvas, JSON.parse(script.textContent));
+      });
+    }
+    window.addEventListener("DOMContentLoaded", () => {
+      setupMarkdownPanels();
+      setupCharts();
+    });
+    </script>
+</body>
+</html>

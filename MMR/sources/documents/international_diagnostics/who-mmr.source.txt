@@ -1,0 +1,3 @@
+Source ID: WHO-MMR
+URL: https://www.who.int/data/gho
+Citation: World Health Organization. (2025). Global Health Observatory for Myanmar.

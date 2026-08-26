@@ -1,0 +1,3 @@
+Source ID: ILO-MMR
+URL: https://ilostat.ilo.org/
+Citation: International Labour Organization. (2025). ILOSTAT indicators for Myanmar.

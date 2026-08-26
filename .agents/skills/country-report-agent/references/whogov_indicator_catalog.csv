@@ -1,0 +1,16 @@
+domain,indicator_code,indicator_name,unit,value_type,analytical_use,caution
+leadership,leaderexperience_total,Leader total observed experience,years,research-dataset observation,Accumulated executive experience,Left-censored at dataset start
+leadership,leaderexperience_continuous,Leader continuous tenure,years,research-dataset observation,Incumbent continuity,Restarts after interruption
+cabinet size,n_minister,Number of cabinet ministers,persons,research-dataset observation,Formal cabinet scale,Excludes deputy and junior ministers
+cabinet size,n_core,Number of core cabinet members,persons,research-dataset observation,Core executive scale,Core is manually coded
+cabinet size,n_total,Number of all cabinet entries,persons,research-dataset observation,Broad executive roster,Check codebook definition
+gender,n_female_minister,Female cabinet ministers,persons,research-dataset observation,Input to women's minister share,Use n_minister as denominator
+gender,n_female_core,Female core cabinet members,persons,research-dataset observation,Input to women's core share,Use n_core as denominator
+age,age_minister,Average age of cabinet ministers,years,research-dataset estimate,Cabinet composition,Inspect age_share coverage
+age,age_core,Average age of core cabinet members,years,research-dataset estimate,Core composition,Inspect age_share coverage
+tenure,average_minister,Average cabinet tenure of ministers,years,research-dataset estimate,Ministerial experience,Verify exact codebook definition
+tenure,average_core,Average cabinet tenure of core members,years,research-dataset estimate,Core-team experience,Verify exact codebook definition
+continuity,retention_rate_minister,Minister retention rate,share 0-1,research-dataset calculation,Personnel continuity,Affected by cabinet expansion
+continuity,retention_rateadj_minister,Adjusted minister retention rate,share 0-1,research-dataset calculation,Expansion-adjusted continuity,Not policy continuity
+continuity,retention_rate_core,Core retention rate,share 0-1,research-dataset calculation,Core personnel continuity,Affected by core-size change
+continuity,retention_rateadj_core,Adjusted core retention rate,share 0-1,research-dataset calculation,Expansion-adjusted core continuity,Not administrative performance

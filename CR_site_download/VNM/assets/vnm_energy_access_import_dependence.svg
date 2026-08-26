@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 680" role="img" aria-label="Vietnam electricity access and rising net energy import dependence">
+  
+  <style>
+    .title{font:700 28px Arial,sans-serif;fill:#172026}
+    .subtitle{font:15px Arial,sans-serif;fill:#526069}
+    .panel-title{font:700 16px Arial,sans-serif;fill:#172026}
+    .panel-y{font:11px Arial,sans-serif;fill:#526069;text-anchor:end}
+    .panel-x{font:11px Arial,sans-serif;fill:#526069;text-anchor:middle}
+    .panel-last{font:700 11px Arial,sans-serif;fill:#172026}
+    .legend{font:11px Arial,sans-serif;fill:#526069}
+    .label{font:12px Arial,sans-serif;fill:#526069}
+    .value{font:700 24px Arial,sans-serif;fill:#172026}
+    .source{font:12px Arial,sans-serif;fill:#65717a}
+  </style>
+  <rect width="1100" height="680" fill="#f6f4ee"/>
+  <text x="54" y="44" class="title">Energy Access Success and Rising Import Dependence</text>
+  <text x="54" y="68" class="subtitle">Viet Nam solved the household access problem, but its industrial energy system has moved from near balance to net import dependence.</text>
+  <rect x="54" y="112" width="496" height="320" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="76" y="144" class="panel-title">Electricity access (% of population)</text>
+  <line x1="108" y1="344.46" x2="520" y2="344.46" stroke="#edf2ef"/>
+  <text x="98" y="348.46" class="panel-y">80%</text>
+  <line x1="108" y1="302.92" x2="520" y2="302.92" stroke="#edf2ef"/>
+  <text x="98" y="306.92" class="panel-y">85%</text>
+  <line x1="108" y1="261.38" x2="520" y2="261.38" stroke="#edf2ef"/>
+  <text x="98" y="265.38" class="panel-y">90%</text>
+  <line x1="108" y1="219.85" x2="520" y2="219.85" stroke="#edf2ef"/>
+  <text x="98" y="223.85" class="panel-y">95%</text>
+  <line x1="108" y1="178.31" x2="520" y2="178.31" stroke="#edf2ef"/>
+  <text x="98" y="182.31" class="panel-y">100%</text>
+  <line x1="108.00" y1="170" x2="108.00" y2="386" stroke="#f1f4f5"/>
+  <text x="108.00" y="410" class="panel-x">1997</text>
+  <line x1="155.54" y1="170" x2="155.54" y2="386" stroke="#f1f4f5"/>
+  <text x="155.54" y="410" class="panel-x">2000</text>
+  <line x1="314.00" y1="170" x2="314.00" y2="386" stroke="#f1f4f5"/>
+  <text x="314.00" y="410" class="panel-x">2010</text>
+  <line x1="472.46" y1="170" x2="472.46" y2="386" stroke="#f1f4f5"/>
+  <text x="472.46" y="410" class="panel-x">2020</text>
+  <line x1="520.00" y1="170" x2="520.00" y2="386" stroke="#f1f4f5"/>
+  <text x="520.00" y="410" class="panel-x">2023</text>
+  <path d="M108.00,357.75 L123.85,293.15 L139.69,286.35 L155.54,276.34 L171.38,270.52 L187.23,268.86 L203.08,258.89 L218.92,253.08 L234.77,210.71 L250.62,211.54 L266.46,235.63 L282.31,229.82 L298.15,210.71 L314.00,199.91 L329.85,186.62 L345.69,195.75 L361.54,190.77 L377.38,184.95 L393.23,184.12 L409.08,184.95 L424.92,178.31 L440.77,178.31 L456.62,183.29 L472.46,179.97 L488.31,178.31 L504.15,178.31 L520.00,179.97" fill="none" stroke="#176b63" stroke-width="3"/>
+  <circle cx="520.00" cy="179.97" r="4" fill="#176b63" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="468.00" y="171.97" class="panel-last">99.8%</text>
+  <rect x="76" y="402" width="10" height="10" fill="#176b63" rx="2"/>
+  <text x="92" y="411" class="legend">Access</text>
+  <rect x="590" y="112" width="456" height="320" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="612" y="144" class="panel-title">Energy imports, net (% of energy use)</text>
+  <line x1="644" y1="386.00" x2="1016" y2="386.00" stroke="#edf2ef"/>
+  <text x="634" y="390.00" class="panel-y">-50%</text>
+  <line x1="644" y1="334.57" x2="1016" y2="334.57" stroke="#edf2ef"/>
+  <text x="634" y="338.57" class="panel-y">-25%</text>
+  <line x1="644" y1="283.14" x2="1016" y2="283.14" stroke="#edf2ef"/>
+  <text x="634" y="287.14" class="panel-y">0%</text>
+  <line x1="644" y1="231.71" x2="1016" y2="231.71" stroke="#edf2ef"/>
+  <text x="634" y="235.71" class="panel-y">25%</text>
+  <line x1="644" y1="180.29" x2="1016" y2="180.29" stroke="#edf2ef"/>
+  <text x="634" y="184.29" class="panel-y">50%</text>
+  <line x1="644.00" y1="170" x2="644.00" y2="386" stroke="#f1f4f5"/>
+  <text x="644.00" y="410" class="panel-x">1990</text>
+  <line x1="760.25" y1="170" x2="760.25" y2="386" stroke="#f1f4f5"/>
+  <text x="760.25" y="410" class="panel-x">2000</text>
+  <line x1="876.50" y1="170" x2="876.50" y2="386" stroke="#f1f4f5"/>
+  <text x="876.50" y="410" class="panel-x">2010</text>
+  <line x1="934.62" y1="170" x2="934.62" y2="386" stroke="#f1f4f5"/>
+  <text x="934.62" y="410" class="panel-x">2015</text>
+  <line x1="992.75" y1="170" x2="992.75" y2="386" stroke="#f1f4f5"/>
+  <text x="992.75" y="410" class="panel-x">2020</text>
+  <line x1="1016.00" y1="170" x2="1016.00" y2="386" stroke="#f1f4f5"/>
+  <text x="1016.00" y="410" class="panel-x">2022</text>
+  <path d="M644.00,285.08 L655.62,306.01 L667.25,318.69 L678.88,312.08 L690.50,319.20 L702.12,327.43 L713.75,332.02 L725.38,333.80 L737.00,343.52 L748.62,358.79 L760.25,353.06 L771.88,356.95 L783.50,349.54 L795.12,343.31 L806.75,367.74 L818.38,368.64 L830.00,389.13 L841.62,370.18 L853.25,328.00 L864.88,336.73 L876.50,309.12 L888.12,303.06 L899.75,306.86 L911.38,299.53 L923.00,284.01 L934.62,266.17 L946.25,250.20 L957.88,244.21 L969.50,227.90 L981.12,202.49 L992.75,187.64 L1004.38,213.25 L1016.00,213.20" fill="none" stroke="#7c2f2a" stroke-width="3"/>
+  <circle cx="1016.00" cy="213.20" r="4" fill="#7c2f2a" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="964.00" y="205.20" class="panel-last">34%</text>
+  <rect x="612" y="402" width="10" height="10" fill="#7c2f2a" rx="2"/>
+  <text x="628" y="411" class="legend">Net energy imports</text>
+  <line x1="644" y1="283.14" x2="1016" y2="283.14" stroke="#172026" stroke-width="1.2" stroke-dasharray="4 5" opacity="0.45"/>
+  <text x="940" y="271.14" class="label">0 = import/export balance</text>
+  
+  <rect x="54" y="500" width="238" height="106" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="76" y="530" class="label">Electricity access</text>
+  <text x="76" y="568" class="value">99.8%</text>
+  <text x="76" y="590" class="label">latest WDI point, 2023</text>
+  <rect x="306" y="500" width="238" height="106" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="328" y="530" class="label">Net energy imports</text>
+  <text x="328" y="568" class="value">34.0%</text>
+  <text x="328" y="590" class="label">of energy use, 2022</text>
+  <rect x="558" y="500" width="238" height="106" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="580" y="530" class="label">Importer transition</text>
+  <text x="580" y="568" class="value">2015</text>
+  <text x="580" y="590" class="label">first positive WDI value</text>
+  <rect x="810" y="500" width="238" height="106" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="832" y="530" class="label">Recent peak</text>
+  <text x="832" y="568" class="value">46.4%</text>
+  <text x="832" y="590" class="label">net import share in 2020</text>
+
+  <text x="54" y="650" class="source">Source: World Bank WDI table IDs EG.ELC.ACCS.ZS and EG.IMP.CONS.ZS. Positive net energy import values indicate net imports; negative values indicate net exports.</text>
+</svg>

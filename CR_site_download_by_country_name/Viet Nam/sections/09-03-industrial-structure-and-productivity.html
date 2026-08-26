@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>9.3 Industrial Structure, Sectoral Transformation, and Productivity | VNM Country Report</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+  <script src="../assets/chart.umd.min.js"></script>
+  <style>
+    body{margin:0;background:#f4f6f4;color:#17201b;font-family:Arial,Helvetica,sans-serif;line-height:1.65}
+    .layout{display:grid;grid-template-columns:320px minmax(0,1fr);min-height:100vh}
+    aside{position:sticky;top:0;height:100vh;overflow:auto;background:#fff;border-right:1px solid #d9ded8;padding:18px}
+    aside a{display:block;color:#25312a;text-decoration:none;border-radius:6px;padding:6px 8px;font-size:13px}
+    aside a:hover,aside a.active{background:#e8f0ea;color:#0d5a6a} summary{cursor:pointer;font-weight:700;margin:10px 0 4px}
+    .home{font-weight:800;margin-bottom:8px}
+    main{max-width:1050px;padding:36px min(6vw,72px) 90px}
+    .crumb{font-size:13px;color:#607067;margin:0 0 8px} h1{font-size:36px;line-height:1.15;margin:0 0 8px}
+    .chapter-title{color:#56645c;margin:0 0 26px}
+    .section-body,.chart-card{background:#fff;border:1px solid #d9ded8;border-radius:8px;padding:18px;margin:0 0 22px}
+    .section-body h2{font-size:26px;margin:0 0 14px} .section-body p{font-family:Georgia,'Times New Roman',serif;font-size:18px;margin:0 0 14px}
+    table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px} th,td{border:1px solid #d9ded8;padding:8px;vertical-align:top} th{background:#edf2ea;text-align:left}
+    code{background:#eef2ee;border:1px solid #d8ded8;border-radius:4px;padding:1px 4px} .source-note,figcaption{font-size:12px;color:#607067}
+    .chart-frame{height:340px} .chart-frame canvas{width:100%;height:100%}
+    .figure-card,.map-card,.symbol-figure{background:#fff;border:1px solid #d9ded8;border-radius:8px;padding:14px;margin:18px 0 24px}
+    .source{color:#607067;font-size:12px;margin:10px 0 0} .map-grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(280px,.7fr);gap:16px;align-items:start}
+    .adm-map{width:100%;height:auto;border:1px solid #d9ded8;background:#f7fbfc} .adm-path{stroke:#fff;stroke-width:.7} .map-label{font-size:6px;fill:#32424f;text-anchor:middle;pointer-events:none} .neighbor-label{font-size:12px;fill:#6c7b88}
+    .capital-marker circle{fill:#c23b22;stroke:#fff;stroke-width:1.4} .capital-marker text{font-size:12px;fill:#17212b;font-weight:700} .map-table-wrap{max-height:420px;overflow:auto}
+    .symbol-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px} .symbol-card{min-height:260px;border:1px solid #d9ded8;border-radius:8px;background:#fbfdfe;padding:14px;display:flex;flex-direction:column;gap:10px}
+    .symbol-card h3{font-size:18px;margin:2px 0 0} .symbol-card p{font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:1.48;color:#34424e;margin:0} .symbol-kicker{color:#607067;font-size:11px;text-transform:uppercase;letter-spacing:.06em}
+    .flag-indonesia{height:92px;border:1px solid #b9c6cd;border-radius:4px;overflow:hidden} .flag-indonesia span{display:block;height:50%} .flag-indonesia span:first-child{background:#c9182b} .flag-indonesia span:last-child{background:#fff}
+    .garuda-mark{height:92px;display:grid;grid-template-columns:1fr 56px 1fr;align-items:center;gap:4px} .garuda-mark .wing{height:60px;background:#c59a35;border:1px solid #9d761e} .garuda-mark .left{border-radius:60px 10px 18px 60px} .garuda-mark .right{border-radius:10px 60px 60px 18px}
+    .garuda-mark .body{height:82px;background:#d6ad46;border:1px solid #9d761e;border-radius:36px 36px 18px 18px} .garuda-mark .shield{grid-column:2;justify-self:center;margin-top:-58px;width:36px;height:42px;border-radius:8px 8px 14px 14px;background:#1f3f68;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;border:2px solid #f1d47b}
+    .motto-line{height:92px;display:flex;align-items:center;justify-content:center;text-align:center;border:1px solid #cfd9de;border-radius:6px;background:linear-gradient(180deg,#fff,#eef5f7);font-weight:800;color:#15384a;padding:12px} .anthem-bars{height:92px;display:flex;align-items:end;gap:8px;justify-content:center;border:1px solid #cfd9de;border-radius:6px;background:#f8fbfc;padding:16px}
+    .anthem-bars span{width:22px;background:#0f6f87;border-radius:4px 4px 0 0} .anthem-bars span:nth-child(1){height:38px} .anthem-bars span:nth-child(2){height:62px} .anthem-bars span:nth-child(3){height:48px} .anthem-bars span:nth-child(4){height:72px}
+    @media(max-width:860px){.layout{grid-template-columns:1fr}aside{position:relative;height:auto}main{padding:24px 18px}}
+  
+    .md-toolbar{display:flex;justify-content:flex-end;gap:8px;margin:0 0 14px}
+    .md-toolbar button{border:1px solid #0d5a6a;background:#0d5a6a;color:#fff;border-radius:5px;padding:7px 11px;font:700 12px Arial,Helvetica,sans-serif;cursor:pointer}
+    .md-toolbar button[data-md-action='cancel']{background:#fff;color:#25312a;border-color:#cfd8d3}
+    .md-editor{width:100%;min-height:520px;border:1px solid #cfd8d3;border-radius:6px;padding:14px;font:14px Consolas,monospace;line-height:1.45}
+
+  </style>
+  <script src="../assets/marked.min.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <aside><a class='home' href='../index.html'>VNM cover</a>
+<details ><summary>1. Country Overview</summary><a class='section-link ' href='01-01-national-profile.html'>1.1 National Profile</a><a class='section-link ' href='01-02-state-symbols.html'>1.2 State Symbols</a><a class='section-link ' href='01-03-geography-and-administrative-divisions.html'>1.3 Geography and Administrative Divisions</a><a class='section-link ' href='01-04-core-institutional-diagnosis.html'>1.4 Core Institutional Diagnosis</a><a class='section-link ' href='01-05-evidence-base.html'>1.5 Evidence Base and Reading Direction</a></details>
+<details ><summary>2. Historical Background</summary><a class='section-link ' href='02-01-civilizational-layers-and-frontier-statecraft.html'>2.1 Civilizational Layers and Frontier Statecraft</a><a class='section-link ' href='02-02-colonial-rule-revolution-and-war.html'>2.2 Colonial Rule, Revolution, and War</a><a class='section-link ' href='02-03-reunification-and-doi-moi.html'>2.3 Reunification and Doi Moi</a><a class='section-link ' href='02-04-historical-legacies-in-present-institutions.html'>2.4 Historical Legacies in Present Institutions</a></details>
+<details ><summary>3. Constitution and Basic State Order</summary><a class='section-link ' href='03-01-constitutional-order-and-amendments.html'>3.1 Constitutional Order, Ownership, and the Architecture of State Power</a><a class='section-link ' href='03-02-sovereignty-party-leadership-and-territorial-integrity.html'>3.2 Sovereignty, Party Leadership, and Territorial Integrity</a><a class='section-link ' href='03-03-rights-duties-and-socialist-rule-of-law.html'>3.3 Rights, Duties, and Socialist Rule of Law</a><a class='section-link ' href='03-04-state-power-review-audit-and-emergency-authority.html'>3.4 State Power, Review, Audit, and Emergency Authority</a></details>
+<details ><summary>4. Political System and Power Structure</summary><a class='section-link ' href='04-01-party-leadership-and-state-institutions.html'>4.1 Party Leadership and State Institutions</a><a class='section-link ' href='04-02-national-assembly-elections-and-representation.html'>4.2 National Assembly, Elections, and Representation</a><a class='section-link ' href='04-03-executive-coordination-and-government-formation.html'>4.3 Executive Coordination and Government Formation</a><a class='section-link ' href='04-04-judiciary-rule-of-law-corruption-and-accountability.html'>4.4 Courts, Procuracy, Inspection, and Anti-Corruption</a><a class='section-link ' href='04-05-local-politics-and-real-power-relations.html'>4.5 Local Politics and Real Power Relations</a><a class='section-link ' href='04-06-political-system-diagnostics-and-democratic-trajectory.html'>4.6 Political System Diagnostics and Democratic Trajectory</a></details>
+<details ><summary>5. Administrative System and Government Organization</summary><a class='section-link ' href='05-01-central-government-and-ministerial-system.html'>5.1 Central Government and Ministerial System</a><a class='section-link ' href='05-02-organizational-management-and-bureaucratic-reform.html'>5.2 Organizational Management and Bureaucratic Reform</a><a class='section-link ' href='05-03-human-resource-management-and-civil-service.html'>5.3 Human Resource Management and Civil Service</a><a class='section-link ' href='05-04-financial-administration-procurement-audit-and-inspection.html'>5.4 Financial Administration, Procurement, Audit, and Inspection</a><a class='section-link ' href='05-05-local-administration-and-service-delivery.html'>5.5 Local Administration and Service Delivery</a><a class='section-link ' href='05-06-digital-government-and-administrative-accountability.html'>5.6 Digital Government and Administrative Accountability</a><a class='section-link ' href='05-07-implementation-capacity-and-administrative-performance.html'>5.7 Implementation Capacity and Administrative Performance</a></details>
+<details ><summary>6. Governance and Institutional Capacity</summary><a class='section-link ' href='06-01-government-effectiveness-and-regulatory-quality.html'>6.1 Government Effectiveness and Regulatory Quality</a><a class='section-link ' href='06-02-rule-of-law-and-corruption-control.html'>6.2 Rule of Law and Corruption Control</a><a class='section-link ' href='06-03-voice-accountability-and-stability.html'>6.3 Voice, Accountability, and Stability</a><a class='section-link ' href='06-04-what-governance-indicators-reveal.html'>6.4 What Governance Indicators Reveal</a></details>
+<details ><summary>7. Fiscal System and Public Sector</summary><a class='section-link ' href='07-01-revenue-taxation-and-expenditure.html'>7.1 Revenue, Taxation, and Expenditure</a><a class='section-link ' href='07-02-deficit-debt-and-fiscal-space.html'>7.2 Fiscal Balance, Debt, and Fiscal Space</a><a class='section-link ' href='07-03-public-investment-soes-and-quasi-fiscal-risk.html'>7.3 Public Investment, Procurement, SOEs, and Quasi-Fiscal Risk</a><a class='section-link ' href='07-04-budget-decentralization-and-audit.html'>7.4 Budget Decentralization, Procurement Oversight, and Audit</a><a class='section-link ' href='07-05-fiscal-capacity-and-public-sector-risks.html'>7.5 Fiscal Capacity and Public Sector Risks</a></details>
+<details ><summary>8. Population and Social Structure</summary><a class='section-link ' href='08-01-population-scale-and-age-structure.html'>8.1 Population Scale and Age Structure</a><a class='section-link ' href='08-02-urbanization-and-regional-distribution.html'>8.2 Urbanization and Regional Distribution</a><a class='section-link ' href='08-03-ethnicity-language-religion-and-social-cohesion.html'>8.3 Ethnicity, Language, Religion, and Social Cohesion</a><a class='section-link ' href='08-04-migration-remittances-and-inclusion.html'>8.4 Migration, Remittances, and Inclusion</a></details>
+<details open><summary>9. Macroeconomic Structure</summary><a class='section-link ' href='09-01-gdp-scale-growth-and-income.html'>9.1 GDP Scale, Growth, and Income Level</a><a class='section-link ' href='09-02-inflation-exchange-rate-and-macro-stability.html'>9.2 Inflation, Exchange-Rate Management, and Macro Stability</a><a class='section-link active' href='09-03-industrial-structure-and-productivity.html'>9.3 Industrial Structure, Sectoral Transformation, and Productivity</a><a class='section-link ' href='09-04-growth-model-and-structural-vulnerabilities.html'>9.4 External Position, Trade Balance, and Structural Constraints</a><a class='section-link ' href='09-05-growth-driver-model-and-interpretation.html'>9.5 Growth Driver Model and Interpretation</a></details>
+<details ><summary>10. Trade, Investment, and External Economy</summary><a class='section-link ' href='10-01-exports-imports-and-current-account.html'>10.1 Export-Import Trends, Trade Dependence, and Export Transformation</a><a class='section-link ' href='10-02-fdi-and-export-manufacturing.html'>10.2 FDI and Export Manufacturing</a><a class='section-link ' href='10-03-trading-partners-supply-chains-and-technology-upgrading.html'>10.3 Trading Partners, Supply Chains, and Technology Upgrading</a><a class='section-link ' href='10-04-investment-rules-zones-and-industrial-policy.html'>10.4 Investment Rules, Zones, and Industrial Policy</a></details>
+<details ><summary>11. Infrastructure, Energy, and Digital Connectivity</summary><a class='section-link ' href='11-01-energy-access-and-power-system-reform.html'>11.1 Energy Access and Power System Reform</a><a class='section-link ' href='11-02-transport-logistics-and-corridors.html'>11.2 Transport, Logistics, and Corridors</a><a class='section-link ' href='11-03-digital-connectivity.html'>11.3 Digital Connectivity, AI Infrastructure, and the Digital Economy</a><a class='section-link ' href='11-04-infrastructure-governance-and-climate-resilience.html'>11.4 Infrastructure Governance and Climate Resilience</a></details>
+<details ><summary>12. Labor Market and Human Capital</summary><a class='section-link ' href='12-01-labor-force-and-participation.html'>12.1 Labor Force and Participation</a><a class='section-link ' href='12-02-women-youth-and-informality.html'>12.2 Women, Youth, and Informality</a><a class='section-link ' href='12-03-agricultural-employment-and-productivity.html'>12.3 Agricultural Employment and Productivity</a><a class='section-link ' href='12-04-skills-education-and-human-capital.html'>12.4 Skills, Education, and Human Capital</a></details>
+<details ><summary>13. Education, Health, and Welfare</summary><a class='section-link ' href='13-01-education-system-and-public-spending.html'>13.1 Education System, Skills Policy, and Public Spending</a><a class='section-link ' href='13-02-health-outcomes-and-service-capacity.html'>13.2 Health Care, Population Ageing, and Financial Protection</a><a class='section-link ' href='13-03-water-sanitation-nutrition-and-welfare.html'>13.3 Water, Sanitation, Nutrition, and Welfare</a><a class='section-link ' href='13-04-human-development-and-territorial-equity.html'>13.4 Human Development and Territorial Equity</a></details>
+<details ><summary>14. Financial Sector and Economic Institutions</summary><a class='section-link ' href='14-01-banks-credit-and-capital-markets.html'>14.1 Banks, Credit, and Capital Markets</a><a class='section-link ' href='14-02-state-bank-of-vietnam-and-financial-supervision.html'>14.2 State Bank of Vietnam and Financial Supervision</a><a class='section-link ' href='14-03-fintech-payments-and-inclusion.html'>14.3 Fintech, Payments, and Inclusion</a><a class='section-link ' href='14-04-financial-stability-and-reform-priorities.html'>14.4 Financial Stability and Reform Priorities</a></details>
+<details ><summary>15. Foreign Relations, Security, and Geopolitics</summary><a class='section-link ' href='15-01-bamboo-diplomacy-and-asean.html'>15.1 Bamboo Diplomacy, ASEAN, and the Evolution of Vietnam’s Foreign Policy Principles</a><a class='section-link ' href='15-02-china-the-united-states-and-the-east-sea.html'>15.2 China, the United States, and the East Sea</a><a class='section-link ' href='15-03-defense-police-border-and-transnational-risks.html'>15.3 Defense, Police, Border, and Transnational Risks</a><a class='section-link ' href='15-04-mekong-energy-security-and-strategic-corridors.html'>15.4 Mekong, Energy Security, and Strategic Corridors</a></details>
+<details ><summary>16. Major Policies and National Development Strategy</summary><a class='section-link ' href='16-01-evolution-of-national-development-strategy.html'>16.1 Evolution of National Development Strategy</a><a class='section-link ' href='16-02-socio-economic-development-strategy-2021-2030.html'>16.2 Socio-Economic Development Strategy 2021-2030</a><a class='section-link ' href='16-03-administrative-restructuring-and-public-administration-reform.html'>16.3 Administrative Restructuring and Public Administration Reform</a><a class='section-link ' href='16-04-digital-green-and-industrial-transformation.html'>16.4 Digital, Green, and Industrial Transformation</a><a class='section-link ' href='16-05-implementation-matrix-and-risks.html'>16.5 Implementation Matrix and Risks</a><a class='section-link ' href='16-06-green-growth-climate-governance-and-sdg-implementation.html'>16.6 Green Growth, Climate Governance, and SDG Implementation</a></details>
+<details ><summary>17. Integrated Assessment</summary><a class='section-link ' href='17-01-national-operating-model.html'>17.1 National Operating Model</a><a class='section-link ' href='17-02-institutional-strengths-risks-and-bottlenecks.html'>17.2 Institutional Strengths, Risks, and Bottlenecks</a><a class='section-link ' href='17-03-implications-for-korea-and-international-cooperation.html'>17.3 Implications for Korea and International Cooperation</a><a class='section-link ' href='17-04-vietnam-and-comparative-administration-theory.html'>17.4 Vietnam and Comparative Administration Theory</a><a class='section-link ' href='17-05-strategic-outlook.html'>17.5 Strategic Outlook</a></details>
+<details ><summary>18. Appendix, Sources, and Method</summary><a class='section-link ' href='18-01-timeline.html'>18.1 Timeline</a><a class='section-link ' href='18-02-government-organization-chart.html'>18.2 Government Organization Chart</a><a class='section-link ' href='18-03-major-laws-and-policy-documents.html'>18.3 Major Laws and Policy Documents</a><a class='section-link ' href='18-04-indicator-codebook.html'>18.4 Indicator Codebook</a><a class='section-link ' href='18-05-update-workflow-and-evidence-archive.html'>18.5 Update Workflow and Evidence Archive</a></details>
+<details ><summary>19. References</summary><a class='section-link ' href='19-01-references.html'>19.1 References</a><a class='section-link ' href='19-02-citation-and-source-integrity-notes.html'>19.2 Citation and Source Integrity Notes</a></details></aside>
+    <main>
+      <p class="crumb"><a href="../09-macro.html">Chapter 9</a> / Section 3</p>
+      <h1>9.3 Industrial Structure, Sectoral Transformation, and Productivity</h1>
+      <p class="chapter-title">9. Macroeconomic Structure</p>
+      <article class="section-body editable-section" data-md-panel="09-03-industrial-structure-and-productivity" data-md-source="sections/09-03-industrial-structure-and-productivity.md">
+  <div class="md-toolbar">
+    <button type="button" data-md-action="edit">Edit Markdown</button>
+    <button type="button" data-md-action="save" hidden>Save</button>
+    <button type="button" data-md-action="cancel" hidden>Cancel</button>
+  </div>
+  <div class="md-preview"><h2 id='9-3-industrial-structure-sectoral-transformation-and-productivity'>9.3 Industrial Structure, Sectoral Transformation, and Productivity</h2>
+<p><strong>ASEAN comparative lens (2026).</strong> Vietnam should be read in ASEAN comparison as ASEAN&#x27;s most prominent party-led, export-manufacturing upgrading case. Unlike the Philippines&#x27; service-remittance profile, Thailand&#x27;s older industrial-tourism base, Malaysia&#x27;s resource-industrial federal structure, or Indonesia&#x27;s archipelagic domestic-market scale, Vietnam&#x27;s comparative issue is how a socialist party-state manages very open global production networks. For this section, the regional comparison should compare growth, inflation, exchange-rate exposure, productivity, and sectoral structure with ASEAN&#x27;s manufacturing, services, tourism, resource, and corridor-based models. Local comparable indicators show: population 100.99 million (2024), rank 3 among the nine ASEAN reports in this workspace; GDP US$476.39 billion (2024), rank 4 among the nine ASEAN reports in this workspace; GDP per capita US$4,717 (2024), rank 5 among the nine ASEAN reports in this workspace; real GDP growth 7.09% (2024), rank 1 among the nine ASEAN reports in this workspace; government effectiveness 0.09 (2023), rank 6 among the nine ASEAN reports in this workspace; internet use 84.15% (2024), rank 4 among the nine ASEAN reports in this workspace. Use `sources/documents/regional/asean_comparative_lens_2026.md` together with ASEANstats, ASEAN Secretariat materials, and the country processed-indicator files before making cross-ASEAN claims.</p>
+<p>Vietnam&#x27;s sectoral structure shows the core achievement of Doi Moi-era development: the economy moved away from agriculture-dominated production toward industry, construction, and services. But the same data also show the next constraint. Structural transformation is not complete simply because agriculture&#x27;s GDP share has fallen. The key question is whether workers, firms, technology, logistics, skills, and public administration are moving into higher-productivity activities quickly enough.</p>
+<p>This section uses three kinds of evidence. First, World Bank WDI indicators show long-run sector shares, agricultural employment, vulnerable employment, wage employment, high-technology export shares, and electricity access. Second, NSO Viet Nam&#x27;s 2025 release shows which sectors carried the latest growth acceleration and how labor productivity changed. Third, international diagnostic indicators help interpret whether Vietnam&#x27;s industrial structure is upgrading or only expanding in scale.</p>
+<figure class="institution-figure">
+  <img class="institution-diagram" src="../assets/vnm_sector_structure_growth_contribution.svg" alt="Vietnam sectoral value-added shares and 2025 sector growth contribution">
+  <figcaption>Figure 9.3a. Sectoral value-added structure and 2025 growth contribution. Sources: World Bank WDI table IDs NV.AGR.TOTL.ZS, NV.IND.TOTL.ZS, and NV.SRV.TOTL.ZS; National Statistics Office of Viet Nam, Socio-economic situation in the fourth quarter and 2025.</figcaption>
+</figure>
+<h3>9.3.1 Sectoral Transformation: From Agriculture to Industry and Services</h3>
+<p>The long-run WDI series show a clear transformation. Agriculture, forestry, and fishing accounted for about 38.7 percent of GDP in 1990, 24.5 percent in 2000, 15.4 percent in 2010, and 11.9 percent in 2024. Industry&#x27;s share rose from about 22.7 percent in 1990 to 36.7 percent in 2000 and 37.6 percent in 2024. Services remained the largest sector, moving from about 38.6 percent in 1990 to 42.4 percent in 2024.</p>
+<p>This is more than a statistical shift. It represents the administrative conversion of a rural economy into an industrial and urban economy. Land conversion, industrial-zone licensing, export-processing rules, customs modernization, electricity supply, vocational training, environmental permitting, urban housing, and transport corridors all became core state functions. Vietnam&#x27;s macroeconomic structure is therefore inseparable from public administration.</p>
+<p>The transformation also shows why growth has been resilient. Agriculture is no longer the largest driver of GDP, but it still provides food security, rural employment, export commodities, and climate-sensitive livelihoods. Industry creates export capacity, jobs, FDI demand, energy demand, and provincial fiscal incentives. Services absorb urban labor, support logistics and finance, and increasingly determine productivity in trade, tourism, telecommunications, retail, professional services, education, and health.</p>
+<h3>9.3.2 What the 2025 Government Statistics Show</h3>
+<p>NSO&#x27;s 2025 figures show that the latest growth acceleration was broad-based but not evenly distributed. Agriculture, forestry, and fisheries grew by 3.78 percent and contributed 5.30 percent to total value-added growth. Industry and construction grew by 8.95 percent and contributed 43.62 percent. Services grew by 8.62 percent and contributed 51.08 percent.</p>
+<p>The interpretation is important. Services contributed more than half of value-added growth, so Vietnam is no longer only a manufacturing story. Industry and construction still carried a very large share of the increase, especially through manufacturing, infrastructure, construction, energy, and export production. Agriculture remained positive despite natural disasters and disease risks, but its growth contribution was much smaller because the sector&#x27;s GDP weight has fallen.</p>
+<p>This sector pattern should guide policy priorities. If services are the largest contributor to growth, Vietnam needs better regulation of finance, logistics, digital platforms, retail, tourism, health, education, and professional services. If industry remains the most visible export engine, Vietnam needs reliable power, faster infrastructure delivery, cleaner industrial zones, supplier upgrading, and stronger technology absorption. If agriculture&#x27;s share is lower but its social role remains high, rural development and climate adaptation remain central.</p>
+<h3>9.3.3 Agriculture: Lower GDP Share, Persistent Governance Importance</h3>
+<p>Agriculture&#x27;s GDP share has fallen sharply, but agriculture remains politically and administratively important. The NSO 2025 release notes that agricultural, forestry, and fishing production was affected by storms, floods, and animal disease, yet still produced positive growth. Rice production reached 43.54 million tons, the highest in the previous four years, while aquaculture increased by 5.1 percent. These details matter because agriculture is more than a declining sector. It is a food-security system, export base, land-use system, climate-risk zone, and rural welfare system.</p>
+<p>The policy challenge is that agricultural productivity must rise while rural households become less dependent on low-productivity farming. This requires irrigation, seed quality, mechanization, cold chains, food safety, cooperative upgrading, digital extension services, land-market clarity, and climate adaptation. In the Mekong Delta, salinity intrusion, subsidence, water stress, and export-crop exposure make the agricultural question also an environmental and state-capacity concern.</p>
+<p>The decline in agriculture&#x27;s GDP share therefore has two meanings. It is a sign of successful structural transformation, but it also means the rural state must become more sophisticated. Vietnam cannot move people out of agriculture and then ignore rural resilience. It must raise rural productivity, reduce climate exposure, and provide realistic pathways into nonfarm work.</p>
+<h3>9.3.4 Industry and Construction: Manufacturing Power with Upgrading Pressure</h3>
+<p>Industry and construction are the visible symbols of Vietnam&#x27;s catch-up growth. Electronics, garments, footwear, furniture, machinery, food processing, construction materials, and assembly industries have turned Vietnam into a major production platform. WDI data show industry at roughly 37.6 percent of GDP in 2024, far above the early reform-period level. NSO data show industry and construction contributing 43.62 percent of value-added growth in 2025.</p>
+<p>The industrial model has several strengths. It uses Vietnam&#x27;s location near China and ASEAN supply chains, strong trade-agreement network, competitive labor costs, FDI inflows, improving infrastructure, and political stability. It also gives provincial governments a clear development instrument: industrial zones, land allocation, worker housing, logistics, and investment promotion.</p>
+<p>The weakness is value capture. Manufacturing expansion can raise exports without producing equivalent domestic technological capability if Vietnamese firms remain weak suppliers. Imported components, foreign management systems, and multinational buyer networks can dominate higher-value stages. The policy problem is therefore not measured by how much manufacturing Vietnam has, but where Vietnamese firms and workers sit inside value chains.</p>
+<h3>9.3.5 Services: The Largest Growth Contributor and the Next Productivity Frontier</h3>
+<p>Services are often treated as a residual category, but in Vietnam they are now a central development sector. Services accounted for about 42.4 percent of GDP in 2024 and contributed 51.08 percent of value-added growth in 2025. This includes retail, logistics, transport, finance, tourism, telecommunications, professional services, public services, education, health, real estate, and digital platforms.</p>
+<p>The service sector&#x27;s productivity matters because middle-income upgrading depends increasingly on service quality. A factory cannot export efficiently without customs brokerage, ports, shipping, insurance, finance, warehousing, digital systems, standards certification, and legal services. Urban households cannot enjoy higher living standards without better transport, health care, schools, housing services, sanitation, telecommunications, and consumer protection.</p>
+<p>The administrative implication is that Vietnam&#x27;s next growth stage requires better service regulation. The state must improve competition, licensing, data systems, quality standards, consumer protection, professional certification, digital payment regulation, tourism management, and urban service delivery. Services are not outside the development state; they are the infrastructure of a higher-productivity economy.</p>
+<figure class="institution-figure">
+  <img class="institution-diagram" src="../assets/vnm_productivity_upgrading_indicators.svg" alt="Vietnam productivity upgrading indicators: agricultural employment, employment quality, high-tech exports, and electricity access">
+  <figcaption>Figure 9.3b. Productivity upgrading indicators. Sources: World Bank WDI and ILO modeled estimates for agricultural employment, vulnerable employment, wage and salaried employment, high-technology exports, and electricity access; NSO 2025 release for labor productivity and trained-worker statistics.</figcaption>
+</figure>
+<h3>9.3.6 Labor Reallocation: The Main Productivity Engine So Far</h3>
+<p>Labor reallocation has been one of Vietnam&#x27;s most important productivity mechanisms. WDI/ILO modeled data show agricultural employment falling from about 74.0 percent of total employment in 1991 to 64.2 percent in 2000, 48.7 percent in 2010, 25.9 percent in 2024, and 25.0 percent in 2025. This is a very large movement of labor out of low-productivity agriculture into industry, construction, and services.</p>
+<p>This shift raises average productivity because workers move from subsistence or smallholder activities into wage work, factories, logistics, construction, retail, and services. But this mechanism has a natural limit. Once agricultural employment has already fallen to around one quarter of employment, Vietnam cannot rely indefinitely on the same easy gains from labor movement. The next gains must come from productivity within sectors.</p>
+<p>That means better factories rather than factory counts alone; higher-value services rather than service employment alone; mechanized and climate-resilient agriculture rather than fewer farmers alone; and stronger vocational and tertiary skills rather than longer schooling alone. The policy focus has to shift from absorbing labor to upgrading labor.</p>
+<h3>9.3.7 Employment Quality: Vulnerable Work Remains High</h3>
+<p>Employment quality indicators show why structural change is not complete. WDI/ILO data show vulnerable employment falling from about 77.8 percent of employment in 1991 to 73.7 percent in 2000, 62.7 percent in 2010, 51.9 percent in 2024, and 51.4 percent in 2025. Over the same period, wage and salaried workers rose from about 18.7 percent in 1991 to 23.2 percent in 2000, 33.8 percent in 2010, 46.2 percent in 2024, and 46.7 percent in 2025.</p>
+<p>The direction is positive, but the level is still demanding. More than half of employment remains classified as vulnerable in 2025. This suggests that many workers are still in own-account work or contributing family work rather than stable wage employment with clearer social insurance, labor protection, training pathways, and predictable income.</p>
+<p>This is a central inclusion problem. Vietnam can grow rapidly while many workers remain outside secure employment relationships. Policy must therefore connect industrial strategy to labor inspection, social insurance portability, skills recognition, occupational safety, migrant housing, and worker representation through official channels. Productivity upgrading will be weaker if workers remain informal, underprotected, and hard to train.</p>
+<h3>9.3.8 High-Technology Exports: Upgrading Signal with Interpretation Limits</h3>
+<p>High-technology exports as a share of manufactured exports are a useful but tricky indicator. WDI data show Vietnam&#x27;s high-technology export share rising from about 8.8 percent in 2008 to 13.1 percent in 2010, 36.4 percent in 2015, 40.4 percent in 2019, 42.7 percent in 2022, and 44.3 percent in 2023. This is a remarkable increase and reflects the rise of electronics, phones, computers, components, and related manufacturing.</p>
+<p>However, the indicator should not be read as proof that Vietnam controls high technology domestically. A high high-tech export share can result from foreign-invested firms assembling sophisticated products with imported components and foreign-owned technology. The export product may be high-tech even if the local value added, research and development, supplier base, and domestic intellectual property remain limited.</p>
+<p>The correct interpretation is therefore balanced. The high-tech export trend shows that Vietnam has successfully inserted itself into high-technology production networks. But upgrading requires more than export classification. It requires domestic suppliers, engineers, testing labs, standards institutions, design capacity, management upgrading, research links, and stronger Vietnamese firms.</p>
+<h3>9.3.9 Infrastructure and Logistics as Productivity Conditions</h3>
+<p>Infrastructure is a productivity variable. Near-universal electricity access is one of Vietnam&#x27;s achievements: WDI data show access rising from 88.2 percent of the population in 2000 to 97.4 percent in 2010 and 99.8 percent in 2023. The policy frontier has therefore moved from connection to reliability, generation mix, grid capacity, power-market reform, and industrial power security.</p>
+<p>Logistics performance is also central. The World Bank Logistics Performance Index for Vietnam improved from 2.89 in 2007 to 3.30 in 2022 in the project data. This matters because Vietnam&#x27;s export model depends on ports, roads, customs, industrial zones, warehousing, border procedures, and multimodal corridors. A small improvement in logistics can raise competitiveness across many sectors at once.</p>
+<p>The infrastructure issue is also administrative. Power plants, transmission lines, expressways, ports, land clearance, environmental approvals, provincial coordination, procurement, and public-private partnerships all require capable public institutions. If administrative procedures delay infrastructure, the productivity cost appears later as congestion, power shortages, higher logistics costs, and lower investor confidence.</p>
+<h3>9.3.10 Productivity: The Central Constraint of the Next Stage</h3>
+<p>NSO estimated economy-wide labor productivity in 2025 at VND 245.0 million per worker, equivalent to USD 9,809, with real labor-productivity growth of 6.83 percent. It also reported that trained workers with degrees or certificates reached 29.2 percent of workers, 0.8 percentage points higher than in 2024. These figures show progress, but also the constraint: most workers still do not hold formal degrees or certificates.</p>
+<p>Productivity is where sectoral structure, human capital, firm capability, and administrative quality meet. If workers move from agriculture to factories but remain in low-skill assembly, productivity gains slow. If FDI firms export high-tech goods but domestic suppliers remain shallow, value capture stays limited. If services expand but remain low-productivity retail and informal work, services may absorb labor without lifting income enough. If public investment is delayed or poorly selected, infrastructure does not raise potential growth.</p>
+<p>Vietnam&#x27;s policy problem is therefore not a matter of whether agriculture, industry, or services should be larger. It is whether each sector becomes more productive. Agriculture needs climate-resilient and higher-value production. Industry needs domestic supplier upgrading and technology absorption. Services need regulation, professionalization, digitalization, and competition. The state must coordinate these transitions without freezing private initiative.</p>
+<h3>9.3.11 Indicator-by-Indicator Interpretation</h3>
+<table><thead><tr><th>Indicator</th><th>Main trend</th><th>Interpretation</th><th>Policy warning</th></tr></thead><tbody><tr><td>Agriculture value added</td><td>38.7% of GDP in 1990; 11.9% in 2024</td><td>Classic structural transformation away from agriculture.</td><td>Rural livelihoods, land, water, and climate risk remain major governance issues.</td></tr><tr><td>Industry value added</td><td>22.7% of GDP in 1990; 37.6% in 2024</td><td>Manufacturing and construction are core growth sectors.</td><td>Domestic value added and technology transfer are not automatic.</td></tr><tr><td>Services value added</td><td>42.4% of GDP in 2024; 51.08% of 2025 value-added growth contribution</td><td>Services are now central to growth and productivity.</td><td>Service regulation, competition, urban governance, and digital systems must improve.</td></tr><tr><td>Agricultural employment</td><td>74.0% in 1991; 25.0% in 2025</td><td>Labor reallocation has been a major productivity source.</td><td>Future gains must come from within-sector productivity, not only movement out of farming.</td></tr><tr><td>Vulnerable employment</td><td>77.8% in 1991; 51.4% in 2025</td><td>Employment quality has improved but remains fragile.</td><td>Informality, social insurance gaps, and weak worker protection can constrain upgrading.</td></tr><tr><td>Wage and salaried employment</td><td>18.7% in 1991; 46.7% in 2025</td><td>Formal employment relationships have expanded.</td><td>Stable wage work still does not cover the whole workforce.</td></tr><tr><td>High-tech exports</td><td>8.8% of manufactured exports in 2008; 44.3% in 2023</td><td>Vietnam is deeply integrated into high-tech production networks.</td><td>Export sophistication can overstate domestic technological capability.</td></tr><tr><td>Electricity access</td><td>88.2% in 2000; 99.8% in 2023</td><td>Basic energy access is largely solved.</td><td>Reliability, grid investment, generation mix, and industrial power security are now the binding constraints.</td></tr><tr><td>Labor productivity</td><td>USD 9,809 per worker in 2025; real growth 6.83%</td><td>Productivity is improving and must become the main growth driver.</td><td>Skills, firm capability, public investment quality, and administrative predictability decide the next stage.</td></tr></tbody></table>
+<h3>9.3.12 Policy Implications</h3>
+<p>Vietnam&#x27;s sectoral transformation is real, but the next stage is more difficult. The country has moved labor and output away from agriculture, built a large industrial base, and expanded services. It has also entered high-tech export networks and achieved near-universal electricity access. These are major accomplishments.</p>
+<p>The unresolved issue is upgrading. Vietnam must convert sectoral change into productivity growth. That requires stronger domestic firms, deeper supplier networks, higher-quality skills, reliable power, better logistics, more predictable regulation, and stronger service-sector institutions. It also requires social inclusion: workers must be able to move into higher-productivity jobs with training, social insurance, occupational safety, and affordable urban services.</p>
+<p>The most important policy conclusion is that industrial policy and public administration are inseparable. Industrial upgrading depends on customs, land, infrastructure, skills, standards, finance, digital systems, environmental regulation, and local implementation. Vietnam&#x27;s next productivity gains will come not only from market expansion, but from whether the state can make the whole production system work better.</p></div>
+  <textarea class="md-editor" hidden>## 9.3 Industrial Structure, Sectoral Transformation, and Productivity
+
+&lt;!-- asean-comparative-lens-2026:start --&gt;
+**ASEAN comparative lens (2026).** Vietnam should be read in ASEAN comparison as ASEAN&#x27;s most prominent party-led, export-manufacturing upgrading case. Unlike the Philippines&#x27; service-remittance profile, Thailand&#x27;s older industrial-tourism base, Malaysia&#x27;s resource-industrial federal structure, or Indonesia&#x27;s archipelagic domestic-market scale, Vietnam&#x27;s comparative issue is how a socialist party-state manages very open global production networks. For this section, the regional comparison should compare growth, inflation, exchange-rate exposure, productivity, and sectoral structure with ASEAN&#x27;s manufacturing, services, tourism, resource, and corridor-based models. Local comparable indicators show: population 100.99 million (2024), rank 3 among the nine ASEAN reports in this workspace; GDP US$476.39 billion (2024), rank 4 among the nine ASEAN reports in this workspace; GDP per capita US$4,717 (2024), rank 5 among the nine ASEAN reports in this workspace; real GDP growth 7.09% (2024), rank 1 among the nine ASEAN reports in this workspace; government effectiveness 0.09 (2023), rank 6 among the nine ASEAN reports in this workspace; internet use 84.15% (2024), rank 4 among the nine ASEAN reports in this workspace. Use `sources/documents/regional/asean_comparative_lens_2026.md` together with ASEANstats, ASEAN Secretariat materials, and the country processed-indicator files before making cross-ASEAN claims.
+&lt;!-- asean-comparative-lens-2026:end --&gt;
+
+Vietnam&#x27;s sectoral structure shows the core achievement of Doi Moi-era development: the economy moved away from agriculture-dominated production toward industry, construction, and services. But the same data also show the next constraint. Structural transformation is not complete simply because agriculture&#x27;s GDP share has fallen. The key question is whether workers, firms, technology, logistics, skills, and public administration are moving into higher-productivity activities quickly enough.
+
+This section uses three kinds of evidence. First, World Bank WDI indicators show long-run sector shares, agricultural employment, vulnerable employment, wage employment, high-technology export shares, and electricity access. Second, NSO Viet Nam&#x27;s 2025 release shows which sectors carried the latest growth acceleration and how labor productivity changed. Third, international diagnostic indicators help interpret whether Vietnam&#x27;s industrial structure is upgrading or only expanding in scale.
+
+&lt;figure class=&quot;institution-figure&quot;&gt;
+  &lt;img class=&quot;institution-diagram&quot; src=&quot;../assets/vnm_sector_structure_growth_contribution.svg&quot; alt=&quot;Vietnam sectoral value-added shares and 2025 sector growth contribution&quot;&gt;
+  &lt;figcaption&gt;Figure 9.3a. Sectoral value-added structure and 2025 growth contribution. Sources: World Bank WDI table IDs NV.AGR.TOTL.ZS, NV.IND.TOTL.ZS, and NV.SRV.TOTL.ZS; National Statistics Office of Viet Nam, Socio-economic situation in the fourth quarter and 2025.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+### 9.3.1 Sectoral Transformation: From Agriculture to Industry and Services
+
+The long-run WDI series show a clear transformation. Agriculture, forestry, and fishing accounted for about 38.7 percent of GDP in 1990, 24.5 percent in 2000, 15.4 percent in 2010, and 11.9 percent in 2024. Industry&#x27;s share rose from about 22.7 percent in 1990 to 36.7 percent in 2000 and 37.6 percent in 2024. Services remained the largest sector, moving from about 38.6 percent in 1990 to 42.4 percent in 2024.
+
+This is more than a statistical shift. It represents the administrative conversion of a rural economy into an industrial and urban economy. Land conversion, industrial-zone licensing, export-processing rules, customs modernization, electricity supply, vocational training, environmental permitting, urban housing, and transport corridors all became core state functions. Vietnam&#x27;s macroeconomic structure is therefore inseparable from public administration.
+
+The transformation also shows why growth has been resilient. Agriculture is no longer the largest driver of GDP, but it still provides food security, rural employment, export commodities, and climate-sensitive livelihoods. Industry creates export capacity, jobs, FDI demand, energy demand, and provincial fiscal incentives. Services absorb urban labor, support logistics and finance, and increasingly determine productivity in trade, tourism, telecommunications, retail, professional services, education, and health.
+
+### 9.3.2 What the 2025 Government Statistics Show
+
+NSO&#x27;s 2025 figures show that the latest growth acceleration was broad-based but not evenly distributed. Agriculture, forestry, and fisheries grew by 3.78 percent and contributed 5.30 percent to total value-added growth. Industry and construction grew by 8.95 percent and contributed 43.62 percent. Services grew by 8.62 percent and contributed 51.08 percent.
+
+The interpretation is important. Services contributed more than half of value-added growth, so Vietnam is no longer only a manufacturing story. Industry and construction still carried a very large share of the increase, especially through manufacturing, infrastructure, construction, energy, and export production. Agriculture remained positive despite natural disasters and disease risks, but its growth contribution was much smaller because the sector&#x27;s GDP weight has fallen.
+
+This sector pattern should guide policy priorities. If services are the largest contributor to growth, Vietnam needs better regulation of finance, logistics, digital platforms, retail, tourism, health, education, and professional services. If industry remains the most visible export engine, Vietnam needs reliable power, faster infrastructure delivery, cleaner industrial zones, supplier upgrading, and stronger technology absorption. If agriculture&#x27;s share is lower but its social role remains high, rural development and climate adaptation remain central.
+
+### 9.3.3 Agriculture: Lower GDP Share, Persistent Governance Importance
+
+Agriculture&#x27;s GDP share has fallen sharply, but agriculture remains politically and administratively important. The NSO 2025 release notes that agricultural, forestry, and fishing production was affected by storms, floods, and animal disease, yet still produced positive growth. Rice production reached 43.54 million tons, the highest in the previous four years, while aquaculture increased by 5.1 percent. These details matter because agriculture is more than a declining sector. It is a food-security system, export base, land-use system, climate-risk zone, and rural welfare system.
+
+The policy challenge is that agricultural productivity must rise while rural households become less dependent on low-productivity farming. This requires irrigation, seed quality, mechanization, cold chains, food safety, cooperative upgrading, digital extension services, land-market clarity, and climate adaptation. In the Mekong Delta, salinity intrusion, subsidence, water stress, and export-crop exposure make the agricultural question also an environmental and state-capacity concern.
+
+The decline in agriculture&#x27;s GDP share therefore has two meanings. It is a sign of successful structural transformation, but it also means the rural state must become more sophisticated. Vietnam cannot move people out of agriculture and then ignore rural resilience. It must raise rural productivity, reduce climate exposure, and provide realistic pathways into nonfarm work.
+
+### 9.3.4 Industry and Construction: Manufacturing Power with Upgrading Pressure
+
+Industry and construction are the visible symbols of Vietnam&#x27;s catch-up growth. Electronics, garments, footwear, furniture, machinery, food processing, construction materials, and assembly industries have turned Vietnam into a major production platform. WDI data show industry at roughly 37.6 percent of GDP in 2024, far above the early reform-period level. NSO data show industry and construction contributing 43.62 percent of value-added growth in 2025.
+
+The industrial model has several strengths. It uses Vietnam&#x27;s location near China and ASEAN supply chains, strong trade-agreement network, competitive labor costs, FDI inflows, improving infrastructure, and political stability. It also gives provincial governments a clear development instrument: industrial zones, land allocation, worker housing, logistics, and investment promotion.
+
+The weakness is value capture. Manufacturing expansion can raise exports without producing equivalent domestic technological capability if Vietnamese firms remain weak suppliers. Imported components, foreign management systems, and multinational buyer networks can dominate higher-value stages. The policy problem is therefore not measured by how much manufacturing Vietnam has, but where Vietnamese firms and workers sit inside value chains.
+
+### 9.3.5 Services: The Largest Growth Contributor and the Next Productivity Frontier
+
+Services are often treated as a residual category, but in Vietnam they are now a central development sector. Services accounted for about 42.4 percent of GDP in 2024 and contributed 51.08 percent of value-added growth in 2025. This includes retail, logistics, transport, finance, tourism, telecommunications, professional services, public services, education, health, real estate, and digital platforms.
+
+The service sector&#x27;s productivity matters because middle-income upgrading depends increasingly on service quality. A factory cannot export efficiently without customs brokerage, ports, shipping, insurance, finance, warehousing, digital systems, standards certification, and legal services. Urban households cannot enjoy higher living standards without better transport, health care, schools, housing services, sanitation, telecommunications, and consumer protection.
+
+The administrative implication is that Vietnam&#x27;s next growth stage requires better service regulation. The state must improve competition, licensing, data systems, quality standards, consumer protection, professional certification, digital payment regulation, tourism management, and urban service delivery. Services are not outside the development state; they are the infrastructure of a higher-productivity economy.
+
+&lt;figure class=&quot;institution-figure&quot;&gt;
+  &lt;img class=&quot;institution-diagram&quot; src=&quot;../assets/vnm_productivity_upgrading_indicators.svg&quot; alt=&quot;Vietnam productivity upgrading indicators: agricultural employment, employment quality, high-tech exports, and electricity access&quot;&gt;
+  &lt;figcaption&gt;Figure 9.3b. Productivity upgrading indicators. Sources: World Bank WDI and ILO modeled estimates for agricultural employment, vulnerable employment, wage and salaried employment, high-technology exports, and electricity access; NSO 2025 release for labor productivity and trained-worker statistics.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+### 9.3.6 Labor Reallocation: The Main Productivity Engine So Far
+
+Labor reallocation has been one of Vietnam&#x27;s most important productivity mechanisms. WDI/ILO modeled data show agricultural employment falling from about 74.0 percent of total employment in 1991 to 64.2 percent in 2000, 48.7 percent in 2010, 25.9 percent in 2024, and 25.0 percent in 2025. This is a very large movement of labor out of low-productivity agriculture into industry, construction, and services.
+
+This shift raises average productivity because workers move from subsistence or smallholder activities into wage work, factories, logistics, construction, retail, and services. But this mechanism has a natural limit. Once agricultural employment has already fallen to around one quarter of employment, Vietnam cannot rely indefinitely on the same easy gains from labor movement. The next gains must come from productivity within sectors.
+
+That means better factories rather than factory counts alone; higher-value services rather than service employment alone; mechanized and climate-resilient agriculture rather than fewer farmers alone; and stronger vocational and tertiary skills rather than longer schooling alone. The policy focus has to shift from absorbing labor to upgrading labor.
+
+### 9.3.7 Employment Quality: Vulnerable Work Remains High
+
+Employment quality indicators show why structural change is not complete. WDI/ILO data show vulnerable employment falling from about 77.8 percent of employment in 1991 to 73.7 percent in 2000, 62.7 percent in 2010, 51.9 percent in 2024, and 51.4 percent in 2025. Over the same period, wage and salaried workers rose from about 18.7 percent in 1991 to 23.2 percent in 2000, 33.8 percent in 2010, 46.2 percent in 2024, and 46.7 percent in 2025.
+
+The direction is positive, but the level is still demanding. More than half of employment remains classified as vulnerable in 2025. This suggests that many workers are still in own-account work or contributing family work rather than stable wage employment with clearer social insurance, labor protection, training pathways, and predictable income.
+
+This is a central inclusion problem. Vietnam can grow rapidly while many workers remain outside secure employment relationships. Policy must therefore connect industrial strategy to labor inspection, social insurance portability, skills recognition, occupational safety, migrant housing, and worker representation through official channels. Productivity upgrading will be weaker if workers remain informal, underprotected, and hard to train.
+
+### 9.3.8 High-Technology Exports: Upgrading Signal with Interpretation Limits
+
+High-technology exports as a share of manufactured exports are a useful but tricky indicator. WDI data show Vietnam&#x27;s high-technology export share rising from about 8.8 percent in 2008 to 13.1 percent in 2010, 36.4 percent in 2015, 40.4 percent in 2019, 42.7 percent in 2022, and 44.3 percent in 2023. This is a remarkable increase and reflects the rise of electronics, phones, computers, components, and related manufacturing.
+
+However, the indicator should not be read as proof that Vietnam controls high technology domestically. A high high-tech export share can result from foreign-invested firms assembling sophisticated products with imported components and foreign-owned technology. The export product may be high-tech even if the local value added, research and development, supplier base, and domestic intellectual property remain limited.
+
+The correct interpretation is therefore balanced. The high-tech export trend shows that Vietnam has successfully inserted itself into high-technology production networks. But upgrading requires more than export classification. It requires domestic suppliers, engineers, testing labs, standards institutions, design capacity, management upgrading, research links, and stronger Vietnamese firms.
+
+### 9.3.9 Infrastructure and Logistics as Productivity Conditions
+
+Infrastructure is a productivity variable. Near-universal electricity access is one of Vietnam&#x27;s achievements: WDI data show access rising from 88.2 percent of the population in 2000 to 97.4 percent in 2010 and 99.8 percent in 2023. The policy frontier has therefore moved from connection to reliability, generation mix, grid capacity, power-market reform, and industrial power security.
+
+Logistics performance is also central. The World Bank Logistics Performance Index for Vietnam improved from 2.89 in 2007 to 3.30 in 2022 in the project data. This matters because Vietnam&#x27;s export model depends on ports, roads, customs, industrial zones, warehousing, border procedures, and multimodal corridors. A small improvement in logistics can raise competitiveness across many sectors at once.
+
+The infrastructure issue is also administrative. Power plants, transmission lines, expressways, ports, land clearance, environmental approvals, provincial coordination, procurement, and public-private partnerships all require capable public institutions. If administrative procedures delay infrastructure, the productivity cost appears later as congestion, power shortages, higher logistics costs, and lower investor confidence.
+
+### 9.3.10 Productivity: The Central Constraint of the Next Stage
+
+NSO estimated economy-wide labor productivity in 2025 at VND 245.0 million per worker, equivalent to USD 9,809, with real labor-productivity growth of 6.83 percent. It also reported that trained workers with degrees or certificates reached 29.2 percent of workers, 0.8 percentage points higher than in 2024. These figures show progress, but also the constraint: most workers still do not hold formal degrees or certificates.
+
+Productivity is where sectoral structure, human capital, firm capability, and administrative quality meet. If workers move from agriculture to factories but remain in low-skill assembly, productivity gains slow. If FDI firms export high-tech goods but domestic suppliers remain shallow, value capture stays limited. If services expand but remain low-productivity retail and informal work, services may absorb labor without lifting income enough. If public investment is delayed or poorly selected, infrastructure does not raise potential growth.
+
+Vietnam&#x27;s policy problem is therefore not a matter of whether agriculture, industry, or services should be larger. It is whether each sector becomes more productive. Agriculture needs climate-resilient and higher-value production. Industry needs domestic supplier upgrading and technology absorption. Services need regulation, professionalization, digitalization, and competition. The state must coordinate these transitions without freezing private initiative.
+
+### 9.3.11 Indicator-by-Indicator Interpretation
+
+| Indicator | Main trend | Interpretation | Policy warning |
+|---|---:|---|---|
+| Agriculture value added | 38.7% of GDP in 1990; 11.9% in 2024 | Classic structural transformation away from agriculture. | Rural livelihoods, land, water, and climate risk remain major governance issues. |
+| Industry value added | 22.7% of GDP in 1990; 37.6% in 2024 | Manufacturing and construction are core growth sectors. | Domestic value added and technology transfer are not automatic. |
+| Services value added | 42.4% of GDP in 2024; 51.08% of 2025 value-added growth contribution | Services are now central to growth and productivity. | Service regulation, competition, urban governance, and digital systems must improve. |
+| Agricultural employment | 74.0% in 1991; 25.0% in 2025 | Labor reallocation has been a major productivity source. | Future gains must come from within-sector productivity, not only movement out of farming. |
+| Vulnerable employment | 77.8% in 1991; 51.4% in 2025 | Employment quality has improved but remains fragile. | Informality, social insurance gaps, and weak worker protection can constrain upgrading. |
+| Wage and salaried employment | 18.7% in 1991; 46.7% in 2025 | Formal employment relationships have expanded. | Stable wage work still does not cover the whole workforce. |
+| High-tech exports | 8.8% of manufactured exports in 2008; 44.3% in 2023 | Vietnam is deeply integrated into high-tech production networks. | Export sophistication can overstate domestic technological capability. |
+| Electricity access | 88.2% in 2000; 99.8% in 2023 | Basic energy access is largely solved. | Reliability, grid investment, generation mix, and industrial power security are now the binding constraints. |
+| Labor productivity | USD 9,809 per worker in 2025; real growth 6.83% | Productivity is improving and must become the main growth driver. | Skills, firm capability, public investment quality, and administrative predictability decide the next stage. |
+
+### 9.3.12 Policy Implications
+
+Vietnam&#x27;s sectoral transformation is real, but the next stage is more difficult. The country has moved labor and output away from agriculture, built a large industrial base, and expanded services. It has also entered high-tech export networks and achieved near-universal electricity access. These are major accomplishments.
+
+The unresolved issue is upgrading. Vietnam must convert sectoral change into productivity growth. That requires stronger domestic firms, deeper supplier networks, higher-quality skills, reliable power, better logistics, more predictable regulation, and stronger service-sector institutions. It also requires social inclusion: workers must be able to move into higher-productivity jobs with training, social insurance, occupational safety, and affordable urban services.
+
+The most important policy conclusion is that industrial policy and public administration are inseparable. Industrial upgrading depends on customs, land, infrastructure, skills, standards, finance, digital systems, environmental regulation, and local implementation. Vietnam&#x27;s next productivity gains will come not only from market expansion, but from whether the state can make the whole production system work better.</textarea>
+</article>
+      
+<figure class="chart-card">
+  <h2>growth-inflation</h2>
+  <div class="chart-frame"><canvas id="chart-growth-inflation"></canvas></div>
+  <figcaption>Source:  Unit: </figcaption>
+  <p>The figure is included as chapter-level evidence. Interpret it by identifying direction, turning points, divergence among series, and the policy or institutional mechanism that could plausibly explain the pattern.</p>
+</figure>
+
+
+<figure class="chart-card">
+  <h2>gdp-capita</h2>
+  <div class="chart-frame"><canvas id="chart-gdp-capita"></canvas></div>
+  <figcaption>Source:  Unit: </figcaption>
+  <p>The figure is included as chapter-level evidence. Interpret it by identifying direction, turning points, divergence among series, and the policy or institutional mechanism that could plausibly explain the pattern.</p>
+</figure>
+
+    </main>
+  </div>
+  <script>
+    window.REPORT_CHARTS = [];
+    document.addEventListener('DOMContentLoaded', () => {
+      if (!window.Chart || !window.REPORT_CHARTS) return;
+      window.REPORT_CHARTS.forEach((entry) => {
+        const cfg = entry.data || {};
+        const el = document.getElementById('chart-' + entry.id);
+        if (!el || !cfg.datasets) return;
+        const colors = ['#197278', '#246b46', '#b7860b', '#7b2d26', '#3f4e9a', '#6a4c93'];
+        const dashes = [[], [8, 4], [2, 3], [10, 4, 2, 4], [1, 4], [12, 3, 3, 3]];
+        const pointStyles = ['circle', 'rect', 'triangle', 'rectRot', 'crossRot', 'star'];
+        const datasets = (cfg.datasets || []).map((dataset, i) => ({
+          ...dataset,
+          borderColor: dataset.borderColor || colors[i % colors.length],
+          backgroundColor: dataset.backgroundColor || 'transparent',
+          borderDash: dataset.borderDash || dashes[i % dashes.length],
+          borderWidth: dataset.borderWidth || 2.4,
+          pointStyle: dataset.pointStyle || pointStyles[i % pointStyles.length],
+          pointRadius: dataset.pointRadius ?? 1.8,
+          tension: dataset.tension ?? 0.25,
+          spanGaps: dataset.spanGaps ?? true
+        }));
+        new Chart(el, {
+          type: 'line',
+          data: { labels: cfg.labels || [], datasets },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            interaction: { mode: 'index', intersect: false },
+            plugins: { legend: { position: 'bottom', labels: { boxWidth: 28 } } },
+            scales: { x: { title: { display: true, text: 'Year' } }, y: { title: { display: true, text: cfg.unit || 'Value' } } }
+          }
+        });
+      });
+    });
+  </script>
+  <script src="../assets/report.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  function fallbackMarkdown(text) {
+    const escaped = text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    return escaped.split(/\n{2,}/).map((block) => `<p>${block.replace(/\n/g, "<br>")}</p>`).join("");
+  }
+  function renderMarkdown(text) {
+    return window.marked ? marked.parse(text) : fallbackMarkdown(text);
+  }
+  document.querySelectorAll('[data-md-panel]').forEach((panel) => {
+    const id = panel.getAttribute('data-md-panel');
+    const source = panel.getAttribute('data-md-source');
+    const preview = panel.querySelector('.md-preview');
+    const editor = panel.querySelector('.md-editor');
+    const edit = panel.querySelector('[data-md-action="edit"]');
+    const save = panel.querySelector('[data-md-action="save"]');
+    const cancel = panel.querySelector('[data-md-action="cancel"]');
+    if (!preview || !editor || !edit || !save || !cancel) return;
+    const storageKey = `country-report-markdown:v1:${source || id}`;
+    const original = editor.value;
+    const stored = localStorage.getItem(storageKey);
+    const hasStoredDraft = stored !== null && (!source || window.location.protocol === 'file:');
+    if (hasStoredDraft) editor.value = stored;
+    const showPreview = () => { preview.innerHTML = renderMarkdown(editor.value); };
+    const setEditing = (editing) => {
+      editor.hidden = !editing;
+      preview.hidden = editing;
+      edit.hidden = editing;
+      save.hidden = !editing;
+      cancel.hidden = !editing;
+    };
+    async function saveMarkdown() {
+      if (source && window.location.protocol.startsWith('http')) {
+        const response = await fetch('/api/save-section', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ source, markdown: editor.value })
+        });
+        if (!response.ok) throw new Error(await response.text());
+        localStorage.removeItem(storageKey);
+        return true;
+      } else {
+        localStorage.setItem(storageKey, editor.value);
+        if (source) window.alert('This edit was saved only as a browser draft. Open the report through code/serve_report.py to save it permanently to the Markdown source file.');
+        return false;
+      }
+    }
+    if (hasStoredDraft) showPreview();
+    setEditing(false);
+    edit.addEventListener('click', () => setEditing(true));
+    save.addEventListener('click', async () => {
+      save.disabled = true;
+      try {
+        const savedToServer = await saveMarkdown();
+        if (savedToServer) {
+          window.location.reload();
+          return;
+        }
+        showPreview();
+        setEditing(false);
+      } catch (error) {
+        window.alert(error.message || 'Could not save the Markdown source.');
+      } finally {
+        save.disabled = false;
+      }
+    });
+    cancel.addEventListener('click', () => {
+      editor.value = localStorage.getItem(storageKey) ?? original;
+      if (hasStoredDraft || window.location.protocol === 'file:') showPreview();
+      setEditing(false);
+    });
+  });
+});
+</script>
+
+</body>
+</html>

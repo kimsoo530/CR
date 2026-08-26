@@ -1,0 +1,172 @@
+{
+  "country_code": "NGA",
+  "country_name": "Nigeria",
+  "title": "Appendix: Nigeria in Comparative Statistics",
+  "book_home_href": "../18-appendix.html#18-6-statistical-country-profile",
+  "book_home_label": "Back to GDI Country Studies: Nigeria",
+  "introduction": "This appendix organizes comparable international statistics by analytical domain. It reports levels, trends, and a fixed peer comparison for Ghana, Kenya, and South Africa. The figures are descriptive evidence, not causal estimates, and international series do not replace Nigeria's official statistics for current or subnational claims.",
+  "auto_include_unlisted": true,
+  "coverage_catalog": "colab_statistical_visualization_catalog.csv",
+  "required_coverage": [
+    {
+      "domain": "Demographic scale and transition",
+      "indicator_codes": ["SP.POP.TOTL", "SP.POP.GROW", "SP.URB.TOTL.IN.ZS", "SP.POP.0014.TO.ZS", "TFR"],
+      "minimum_available": 4,
+      "rationale": "Country scale, growth, urbanization, age structure, and fertility jointly determine service and employment pressure."
+    },
+    {
+      "domain": "Macroeconomic performance and living standards",
+      "indicator_codes": ["NGDP_RPCH", "NY.GDP.PCAP.PP.KD", "FP.CPI.TOTL.ZG"],
+      "minimum_available": 3,
+      "rationale": "Aggregate growth must be read with real living-standard levels and price stability."
+    },
+    {
+      "domain": "Fiscal capacity",
+      "indicator_codes": ["GGR_NGDP", "GGXWDG_NGDP"],
+      "minimum_available": 2,
+      "rationale": "Revenue mobilization and debt burden constrain implementation choices."
+    },
+    {
+      "domain": "Economic structure",
+      "indicator_codes": ["NV.AGR.TOTL.ZS", "NV.IND.TOTL.ZS", "NV.SRV.TOTL.ZS"],
+      "minimum_available": 3,
+      "rationale": "Sector shares show the production structure behind growth and employment."
+    },
+    {
+      "domain": "Poverty and inequality",
+      "indicator_codes": ["SI.POV.DDAY", "SI.POV.GINI"],
+      "minimum_available": 1,
+      "rationale": "At least one harmonized distributional outcome is required, with survey-year caveats."
+    },
+    {
+      "domain": "Labor-market absorption and job quality",
+      "indicator_codes": ["UNE_2EAP_SEX_AGE_RT_A", "SL.UEM.1524.ZS", "SL.TLF.CACT.FE.ZS", "SL.EMP.VULN.ZS"],
+      "minimum_available": 3,
+      "rationale": "Unemployment alone is insufficient in a highly informal labor market."
+    },
+    {
+      "domain": "Education access and public effort",
+      "indicator_codes": ["SE.ADT.LITR.ZS", "SE.SEC.ENRR", "SE.XPD.TOTL.GD.ZS"],
+      "minimum_available": 2,
+      "rationale": "Human-capital analysis needs both outcomes or access and fiscal effort."
+    },
+    {
+      "domain": "Health outcomes and public financing",
+      "indicator_codes": ["SP.DYN.LE00.IN", "SH.DYN.MORT", "SH.STA.MMRT", "SH.XPD.GHED.GD.ZS"],
+      "minimum_available": 3,
+      "rationale": "Spending inputs must be paired with mortality and longevity outcomes."
+    },
+    {
+      "domain": "Basic services, infrastructure, and digital access",
+      "indicator_codes": ["EG.ELC.ACCS.ZS", "SH.H2O.SMDW.ZS", "SH.STA.SMSS.ZS", "IT.NET.USER.ZS", "LP.LPI.OVRL.XQ"],
+      "minimum_available": 4,
+      "rationale": "Electricity, water, sanitation, connectivity, and logistics are distinct implementation constraints."
+    },
+    {
+      "domain": "Financial inclusion and external integration",
+      "indicator_codes": ["FX.OWN.TOTL.ZS", "BX.KLT.DINV.WD.GD.ZS", "BN.CAB.XOKA.GD.ZS", "EXPORT_CONCENTRATION"],
+      "minimum_available": 3,
+      "rationale": "Domestic access to finance and external exposure capture different development channels."
+    },
+    {
+      "domain": "Governance dimensions",
+      "indicator_codes": ["GOV_WGI_GE.EST", "GOV_WGI_RL.EST", "GOV_WGI_CC.EST", "GOV_WGI_VA.EST", "GOV_WGI_PV.EST", "GOV_WGI_RQ.EST"],
+      "minimum_available": 5,
+      "rationale": "Government effectiveness cannot stand in for rule of law, accountability, stability, corruption control, or regulatory quality."
+    }
+  ],
+  "categories": [
+    {
+      "id": "demography",
+      "title": "Demography and Population Transition",
+      "introduction": "Population dynamics shape the scale and timing of education, employment, urban-service, and social-protection demands.",
+      "indicators": [
+        {"indicator_code": "TFR", "title": "Total fertility rate", "question": "How quickly is the demographic transition proceeding?", "chart_type": "change_bar"}
+      ]
+    },
+    {
+      "id": "macro",
+      "title": "Macroeconomic Performance",
+      "introduction": "Growth rates indicate macroeconomic movement but should be interpreted with per-capita outcomes, volatility, inflation, and the actual-versus-projection boundary.",
+      "indicators": [
+        {"indicator_code": "NGDP_RPCH", "title": "Real GDP growth", "question": "How volatile is growth relative to peers?", "chart_type": "trend", "subtitle_note": "WEO series include estimates and projections; country boundaries differ"},
+        {"indicator_code": "NGDP_RPCH_GAP", "title": "Nigeria minus peer-median growth", "question": "When does Nigeria outperform or underperform the fixed peer median?", "chart_type": "trend"}
+      ]
+    },
+    {
+      "id": "fiscal",
+      "title": "Fiscal Capacity and Constraints",
+      "introduction": "Revenue mobilization and public debt describe implementation capacity and fiscal exposure; WEO estimates and projections must be separated from historical observations.",
+      "indicators": [
+        {"indicator_code": "GGR_NGDP", "title": "General government revenue", "question": "How much revenue does general government mobilize relative to GDP?", "chart_type": "trend", "subtitle_note": "WEO series include estimates and projections; country boundaries differ"},
+        {"indicator_code": "GGXWDG_NGDP", "title": "General government gross debt", "question": "How has the general-government debt burden changed?", "chart_type": "trend", "subtitle_note": "WEO series include estimates and projections; country boundaries differ"}
+      ]
+    },
+    {
+      "id": "structure",
+      "title": "Economic Structure and Transformation",
+      "introduction": "Sectoral value-added shares reveal the production structure behind aggregate growth and the challenge of diversification.",
+      "indicators": []
+    },
+    {
+      "id": "labor",
+      "title": "Labor-Market Conditions",
+      "introduction": "Harmonized unemployment estimates permit comparison, but informality and source/model status remain central to interpretation.",
+      "indicators": [
+        {"indicator_code": "UNE_2EAP_SEX_AGE_RT_A", "title": "Unemployment rate", "question": "How does measured labor-market slack compare with peers?", "chart_type": "latest_bar"}
+      ]
+    },
+    {
+      "id": "social-digital",
+      "title": "Human Development and Digital Access",
+      "introduction": "Outcome and access indicators reveal constraints that aggregate growth alone cannot identify.",
+      "indicators": [
+        {"indicator_code": "SP.DYN.LE00.IN", "title": "Life expectancy at birth", "question": "How does a core population-health outcome compare?", "chart_type": "latest_bar"},
+        {"indicator_code": "IT.NET.USER.ZS", "title": "Internet use: ten-year country trends", "question": "How has Internet use changed in each country over the last ten years?", "chart_type": "trend", "distinguish_peers": true}
+      ]
+    },
+    {
+      "id": "education",
+      "title": "Education and Human Capital",
+      "introduction": "Literacy, secondary access, and public education effort capture different stages of human-capital formation and should not be treated as interchangeable.",
+      "indicators": []
+    },
+    {
+      "id": "health",
+      "title": "Health Outcomes, Capacity, and Financing",
+      "introduction": "Health spending and service capacity are inputs; mortality and longevity are outcomes affected by access, quality, poverty, and demographic conditions.",
+      "indicators": []
+    },
+    {
+      "id": "basic-services",
+      "title": "Water, Sanitation, and Financial Inclusion",
+      "introduction": "Basic household services and access to formal finance identify constraints that national averages of output or connectivity can conceal.",
+      "indicators": []
+    },
+    {
+      "id": "environment",
+      "title": "Environmental Pressure",
+      "introduction": "Per-capita emissions provide context for the scale and composition of environmental pressure, not a complete measure of climate vulnerability.",
+      "indicators": []
+    },
+    {
+      "id": "external",
+      "title": "Trade and External-Economy Structure",
+      "introduction": "Trade intensity, external balances, export scale and composition, and technology content reveal both international integration and exposure to commodity, demand, and financing shocks.",
+      "indicators": [
+        {"indicator_code": "EXPORT_CONCENTRATION", "title": "Merchandise export concentration", "question": "How concentrated is the export basket relative to peers?", "chart_type": "trend"}
+      ]
+    },
+    {
+      "id": "governance",
+      "title": "Governance and Executive Organization",
+      "introduction": "Perception-based governance estimates and coded cabinet data are diagnostic measures. They do not directly establish administrative performance, policy quality, or causal effects.",
+      "indicators": [
+        {"indicator_code": "GOV_WGI_GE.EST", "title": "Government effectiveness estimate", "question": "How is broad state capability perceived relative to peers?", "chart_type": "latest_bar"},
+        {"indicator_code": "leaderexperience_total", "title": "Leader's total observed experience", "question": "How much leadership experience is observed in the dataset?", "chart_type": "trend"},
+        {"indicator_code": "average_minister", "title": "Average cabinet tenure", "question": "How much personnel experience is retained in the cabinet?", "chart_type": "latest_bar"},
+        {"indicator_code": "female_minister_share", "title": "Women among cabinet ministers", "question": "How has women's cabinet representation changed?", "chart_type": "change_bar"}
+      ]
+    }
+  ]
+}

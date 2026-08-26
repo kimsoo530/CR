@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 760" role="img" aria-labelledby="title desc">
+  <title id="title">Vietnam national operating strategy map, 2021-2030</title>
+  <desc id="desc">A diagram linking the Socio-Economic Development Strategy 2021-2030 to institutions, territorial reorganization, digital transformation, green transition, industrial upgrading, anti-corruption discipline, and social equity.</desc>
+  <style>
+    .bg{fill:#f6f4ee}.panel{fill:#fff;stroke:#d7dee2;stroke-width:1.4}.hub{fill:#17343a}.hubText{fill:#fff;font:700 24px Arial,sans-serif}.hubSub{fill:#d9ece7;font:14px Arial,sans-serif}.pillarTitle{font:700 17px Arial,sans-serif;fill:#172026}.pillarText{font:13px Arial,sans-serif;fill:#364349}.small{font:12px Arial,sans-serif;fill:#66727a}.outcome{fill:#eef5f2;stroke:#176b63;stroke-width:1.4}.risk{fill:#fff8ea;stroke:#b8873a;stroke-width:1.2}.arrow{stroke:#7c2f2a;stroke-width:2.2;fill:none;marker-end:url(#arrow)}.mutedArrow{stroke:#9ba8ad;stroke-width:1.5;fill:none}.source{font:12px Arial,sans-serif;fill:#65717a}
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#7c2f2a"/>
+    </marker>
+  </defs>
+  <rect class="bg" width="1180" height="760"/>
+  <text x="48" y="54" style="font:700 28px Arial,sans-serif;fill:#172026">Vietnam's National Operating Strategy, 2021-2030</text>
+  <text x="48" y="80" class="small">How strategy becomes state operation: planning, law, budgets, data, cadres, local governments, inspection, and delivery.</text>
+
+  <rect x="368" y="112" width="444" height="126" rx="8" class="hub"/>
+  <text x="590" y="154" text-anchor="middle" class="hubText">Socio-Economic Development Strategy</text>
+  <text x="590" y="184" text-anchor="middle" class="hubSub">2021-2030: institutions, human resources, infrastructure</text>
+  <text x="590" y="210" text-anchor="middle" class="hubSub">Productivity, modernization, resilience, and socialist-oriented governance</text>
+
+  <path d="M590 238 L590 285" class="arrow"/>
+  <rect x="364" y="286" width="452" height="54" rx="8" class="risk"/>
+  <text x="590" y="309" text-anchor="middle" class="pillarTitle">Operating Doctrine</text>
+  <text x="590" y="329" text-anchor="middle" class="small">Use reform discipline to convert national targets into execution capacity.</text>
+
+  <path d="M590 340 C590 374 172 370 172 416" class="arrow"/>
+  <path d="M590 340 C590 374 384 370 384 416" class="arrow"/>
+  <path d="M590 340 C590 374 590 370 590 416" class="arrow"/>
+  <path d="M590 340 C590 374 798 370 798 416" class="arrow"/>
+  <path d="M590 340 C590 374 1008 370 1008 416" class="arrow"/>
+
+  <rect x="44" y="416" width="214" height="126" rx="7" class="panel"/>
+  <text x="151" y="444" text-anchor="middle" class="pillarTitle">Institutional Discipline</text>
+  <text x="64" y="474" class="pillarText">PAR 2021-2030</text>
+  <text x="64" y="494" class="pillarText">Anti-corruption, inspection</text>
+  <text x="64" y="514" class="pillarText">Clear delegation and legal bases</text>
+
+  <rect x="276" y="416" width="214" height="126" rx="7" class="panel"/>
+  <text x="383" y="444" text-anchor="middle" class="pillarTitle">Territorial Execution</text>
+  <text x="296" y="474" class="pillarText">34 provincial-level units</text>
+  <text x="296" y="494" class="pillarText">Two-tier local government</text>
+  <text x="296" y="514" class="pillarText">Regional planning scale</text>
+
+  <rect x="508" y="416" width="214" height="126" rx="7" class="panel"/>
+  <text x="615" y="444" text-anchor="middle" class="pillarTitle">Digital Operating Layer</text>
+  <text x="528" y="474" class="pillarText">Digital ID and population data</text>
+  <text x="528" y="494" class="pillarText">Online public services</text>
+  <text x="528" y="514" class="pillarText">Interoperable administrative data</text>
+
+  <rect x="740" y="416" width="214" height="126" rx="7" class="panel"/>
+  <text x="847" y="444" text-anchor="middle" class="pillarTitle">Green Transition</text>
+  <text x="760" y="474" class="pillarText">Green growth strategy</text>
+  <text x="760" y="494" class="pillarText">Energy and climate resilience</text>
+  <text x="760" y="514" class="pillarText">Mekong, cities, transport</text>
+
+  <rect x="972" y="416" width="164" height="126" rx="7" class="panel"/>
+  <text x="1054" y="444" text-anchor="middle" class="pillarTitle">Industrial Upgrading</text>
+  <text x="992" y="474" class="pillarText">FDI quality</text>
+  <text x="992" y="494" class="pillarText">Domestic suppliers</text>
+  <text x="992" y="514" class="pillarText">Skills and innovation</text>
+
+  <path d="M151 542 L151 586" class="mutedArrow"/>
+  <path d="M383 542 L383 586" class="mutedArrow"/>
+  <path d="M615 542 L615 586" class="mutedArrow"/>
+  <path d="M847 542 L847 586" class="mutedArrow"/>
+  <path d="M1054 542 L1054 586" class="mutedArrow"/>
+
+  <rect x="76" y="586" width="204" height="62" rx="7" class="outcome"/>
+  <text x="178" y="612" text-anchor="middle" class="pillarTitle">Administrative Trust</text>
+  <text x="178" y="634" text-anchor="middle" class="small">lawful, predictable delivery</text>
+  <rect x="318" y="586" width="204" height="62" rx="7" class="outcome"/>
+  <text x="420" y="612" text-anchor="middle" class="pillarTitle">Territorial Equity</text>
+  <text x="420" y="634" text-anchor="middle" class="small">services across regions</text>
+  <rect x="560" y="586" width="204" height="62" rx="7" class="outcome"/>
+  <text x="662" y="612" text-anchor="middle" class="pillarTitle">Productivity</text>
+  <text x="662" y="634" text-anchor="middle" class="small">firms, workers, data</text>
+  <rect x="802" y="586" width="204" height="62" rx="7" class="outcome"/>
+  <text x="904" y="612" text-anchor="middle" class="pillarTitle">Resilience</text>
+  <text x="904" y="634" text-anchor="middle" class="small">energy, climate, finance</text>
+
+  <text x="48" y="700" class="source">Sources: Communist Party of Viet Nam, Socio-Economic Development Strategy 2021-2030; Resolution 76/NQ-CP; Decision 749/QD-TTg; Decision 06/QD-TTg; Decision 1658/QD-TTg; Resolution 202/2025/QH15.</text>
+</svg>

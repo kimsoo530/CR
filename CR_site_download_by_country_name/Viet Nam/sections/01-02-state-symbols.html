@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>1.2 State Symbols | VNM Country Report</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+  <script src="../assets/chart.umd.min.js"></script>
+  <style>
+    body{margin:0;background:#f4f6f4;color:#17201b;font-family:Arial,Helvetica,sans-serif;line-height:1.65}
+    .layout{display:grid;grid-template-columns:320px minmax(0,1fr);min-height:100vh}
+    aside{position:sticky;top:0;height:100vh;overflow:auto;background:#fff;border-right:1px solid #d9ded8;padding:18px}
+    aside a{display:block;color:#25312a;text-decoration:none;border-radius:6px;padding:6px 8px;font-size:13px}
+    aside a:hover,aside a.active{background:#e8f0ea;color:#0d5a6a} summary{cursor:pointer;font-weight:700;margin:10px 0 4px}
+    .home{font-weight:800;margin-bottom:8px}
+    main{max-width:1050px;padding:36px min(6vw,72px) 90px}
+    .crumb{font-size:13px;color:#607067;margin:0 0 8px} h1{font-size:36px;line-height:1.15;margin:0 0 8px}
+    .chapter-title{color:#56645c;margin:0 0 26px}
+    .section-body,.chart-card{background:#fff;border:1px solid #d9ded8;border-radius:8px;padding:18px;margin:0 0 22px}
+    .section-body h2{font-size:26px;margin:0 0 14px} .section-body p{font-family:Georgia,'Times New Roman',serif;font-size:18px;margin:0 0 14px}
+    table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px} th,td{border:1px solid #d9ded8;padding:8px;vertical-align:top} th{background:#edf2ea;text-align:left}
+    code{background:#eef2ee;border:1px solid #d8ded8;border-radius:4px;padding:1px 4px} .source-note,figcaption{font-size:12px;color:#607067}
+    .chart-frame{height:340px} .chart-frame canvas{width:100%;height:100%}
+    .figure-card,.map-card,.symbol-figure{background:#fff;border:1px solid #d9ded8;border-radius:8px;padding:14px;margin:18px 0 24px}
+    .source{color:#607067;font-size:12px;margin:10px 0 0} .map-grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(280px,.7fr);gap:16px;align-items:start}
+    .adm-map{width:100%;height:auto;border:1px solid #d9ded8;background:#f7fbfc} .adm-path{stroke:#fff;stroke-width:.7} .map-label{font-size:6px;fill:#32424f;text-anchor:middle;pointer-events:none} .neighbor-label{font-size:12px;fill:#6c7b88}
+    .capital-marker circle{fill:#c23b22;stroke:#fff;stroke-width:1.4} .capital-marker text{font-size:12px;fill:#17212b;font-weight:700} .map-table-wrap{max-height:420px;overflow:auto}
+    .symbol-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px} .symbol-card{min-height:260px;border:1px solid #d9ded8;border-radius:8px;background:#fbfdfe;padding:14px;display:flex;flex-direction:column;gap:10px}
+    .symbol-card h3{font-size:18px;margin:2px 0 0} .symbol-card p{font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:1.48;color:#34424e;margin:0} .symbol-kicker{color:#607067;font-size:11px;text-transform:uppercase;letter-spacing:.06em}
+    .flag-indonesia{height:92px;border:1px solid #b9c6cd;border-radius:4px;overflow:hidden} .flag-indonesia span{display:block;height:50%} .flag-indonesia span:first-child{background:#c9182b} .flag-indonesia span:last-child{background:#fff}
+    .garuda-mark{height:92px;display:grid;grid-template-columns:1fr 56px 1fr;align-items:center;gap:4px} .garuda-mark .wing{height:60px;background:#c59a35;border:1px solid #9d761e} .garuda-mark .left{border-radius:60px 10px 18px 60px} .garuda-mark .right{border-radius:10px 60px 60px 18px}
+    .garuda-mark .body{height:82px;background:#d6ad46;border:1px solid #9d761e;border-radius:36px 36px 18px 18px} .garuda-mark .shield{grid-column:2;justify-self:center;margin-top:-58px;width:36px;height:42px;border-radius:8px 8px 14px 14px;background:#1f3f68;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;border:2px solid #f1d47b}
+    .motto-line{height:92px;display:flex;align-items:center;justify-content:center;text-align:center;border:1px solid #cfd9de;border-radius:6px;background:linear-gradient(180deg,#fff,#eef5f7);font-weight:800;color:#15384a;padding:12px} .anthem-bars{height:92px;display:flex;align-items:end;gap:8px;justify-content:center;border:1px solid #cfd9de;border-radius:6px;background:#f8fbfc;padding:16px}
+    .anthem-bars span{width:22px;background:#0f6f87;border-radius:4px 4px 0 0} .anthem-bars span:nth-child(1){height:38px} .anthem-bars span:nth-child(2){height:62px} .anthem-bars span:nth-child(3){height:48px} .anthem-bars span:nth-child(4){height:72px}
+    @media(max-width:860px){.layout{grid-template-columns:1fr}aside{position:relative;height:auto}main{padding:24px 18px}}
+  
+    .md-toolbar{display:flex;justify-content:flex-end;gap:8px;margin:0 0 14px}
+    .md-toolbar button{border:1px solid #0d5a6a;background:#0d5a6a;color:#fff;border-radius:5px;padding:7px 11px;font:700 12px Arial,Helvetica,sans-serif;cursor:pointer}
+    .md-toolbar button[data-md-action='cancel']{background:#fff;color:#25312a;border-color:#cfd8d3}
+    .md-editor{width:100%;min-height:520px;border:1px solid #cfd8d3;border-radius:6px;padding:14px;font:14px Consolas,monospace;line-height:1.45}
+
+  </style>
+  <script src="../assets/marked.min.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <aside><a class='home' href='../index.html'>VNM cover</a>
+<details open><summary>1. Country Overview</summary><a class='section-link ' href='01-01-national-profile.html'>1.1 National Profile</a><a class='section-link active' href='01-02-state-symbols.html'>1.2 State Symbols</a><a class='section-link ' href='01-03-geography-and-administrative-divisions.html'>1.3 Geography and Administrative Divisions</a><a class='section-link ' href='01-04-core-institutional-diagnosis.html'>1.4 Core Institutional Diagnosis</a><a class='section-link ' href='01-05-evidence-base.html'>1.5 Evidence Base and Reading Direction</a></details>
+<details ><summary>2. Historical Background</summary><a class='section-link ' href='02-01-civilizational-layers-and-frontier-statecraft.html'>2.1 Civilizational Layers and Frontier Statecraft</a><a class='section-link ' href='02-02-colonial-rule-revolution-and-war.html'>2.2 Colonial Rule, Revolution, and War</a><a class='section-link ' href='02-03-reunification-and-doi-moi.html'>2.3 Reunification and Doi Moi</a><a class='section-link ' href='02-04-historical-legacies-in-present-institutions.html'>2.4 Historical Legacies in Present Institutions</a></details>
+<details ><summary>3. Constitution and Basic State Order</summary><a class='section-link ' href='03-01-constitutional-order-and-amendments.html'>3.1 Constitutional Order, Ownership, and the Architecture of State Power</a><a class='section-link ' href='03-02-sovereignty-party-leadership-and-territorial-integrity.html'>3.2 Sovereignty, Party Leadership, and Territorial Integrity</a><a class='section-link ' href='03-03-rights-duties-and-socialist-rule-of-law.html'>3.3 Rights, Duties, and Socialist Rule of Law</a><a class='section-link ' href='03-04-state-power-review-audit-and-emergency-authority.html'>3.4 State Power, Review, Audit, and Emergency Authority</a></details>
+<details ><summary>4. Political System and Power Structure</summary><a class='section-link ' href='04-01-party-leadership-and-state-institutions.html'>4.1 Party Leadership and State Institutions</a><a class='section-link ' href='04-02-national-assembly-elections-and-representation.html'>4.2 National Assembly, Elections, and Representation</a><a class='section-link ' href='04-03-executive-coordination-and-government-formation.html'>4.3 Executive Coordination and Government Formation</a><a class='section-link ' href='04-04-judiciary-rule-of-law-corruption-and-accountability.html'>4.4 Courts, Procuracy, Inspection, and Anti-Corruption</a><a class='section-link ' href='04-05-local-politics-and-real-power-relations.html'>4.5 Local Politics and Real Power Relations</a><a class='section-link ' href='04-06-political-system-diagnostics-and-democratic-trajectory.html'>4.6 Political System Diagnostics and Democratic Trajectory</a></details>
+<details ><summary>5. Administrative System and Government Organization</summary><a class='section-link ' href='05-01-central-government-and-ministerial-system.html'>5.1 Central Government and Ministerial System</a><a class='section-link ' href='05-02-organizational-management-and-bureaucratic-reform.html'>5.2 Organizational Management and Bureaucratic Reform</a><a class='section-link ' href='05-03-human-resource-management-and-civil-service.html'>5.3 Human Resource Management and Civil Service</a><a class='section-link ' href='05-04-financial-administration-procurement-audit-and-inspection.html'>5.4 Financial Administration, Procurement, Audit, and Inspection</a><a class='section-link ' href='05-05-local-administration-and-service-delivery.html'>5.5 Local Administration and Service Delivery</a><a class='section-link ' href='05-06-digital-government-and-administrative-accountability.html'>5.6 Digital Government and Administrative Accountability</a><a class='section-link ' href='05-07-implementation-capacity-and-administrative-performance.html'>5.7 Implementation Capacity and Administrative Performance</a></details>
+<details ><summary>6. Governance and Institutional Capacity</summary><a class='section-link ' href='06-01-government-effectiveness-and-regulatory-quality.html'>6.1 Government Effectiveness and Regulatory Quality</a><a class='section-link ' href='06-02-rule-of-law-and-corruption-control.html'>6.2 Rule of Law and Corruption Control</a><a class='section-link ' href='06-03-voice-accountability-and-stability.html'>6.3 Voice, Accountability, and Stability</a><a class='section-link ' href='06-04-what-governance-indicators-reveal.html'>6.4 What Governance Indicators Reveal</a></details>
+<details ><summary>7. Fiscal System and Public Sector</summary><a class='section-link ' href='07-01-revenue-taxation-and-expenditure.html'>7.1 Revenue, Taxation, and Expenditure</a><a class='section-link ' href='07-02-deficit-debt-and-fiscal-space.html'>7.2 Fiscal Balance, Debt, and Fiscal Space</a><a class='section-link ' href='07-03-public-investment-soes-and-quasi-fiscal-risk.html'>7.3 Public Investment, Procurement, SOEs, and Quasi-Fiscal Risk</a><a class='section-link ' href='07-04-budget-decentralization-and-audit.html'>7.4 Budget Decentralization, Procurement Oversight, and Audit</a><a class='section-link ' href='07-05-fiscal-capacity-and-public-sector-risks.html'>7.5 Fiscal Capacity and Public Sector Risks</a></details>
+<details ><summary>8. Population and Social Structure</summary><a class='section-link ' href='08-01-population-scale-and-age-structure.html'>8.1 Population Scale and Age Structure</a><a class='section-link ' href='08-02-urbanization-and-regional-distribution.html'>8.2 Urbanization and Regional Distribution</a><a class='section-link ' href='08-03-ethnicity-language-religion-and-social-cohesion.html'>8.3 Ethnicity, Language, Religion, and Social Cohesion</a><a class='section-link ' href='08-04-migration-remittances-and-inclusion.html'>8.4 Migration, Remittances, and Inclusion</a></details>
+<details ><summary>9. Macroeconomic Structure</summary><a class='section-link ' href='09-01-gdp-scale-growth-and-income.html'>9.1 GDP Scale, Growth, and Income Level</a><a class='section-link ' href='09-02-inflation-exchange-rate-and-macro-stability.html'>9.2 Inflation, Exchange-Rate Management, and Macro Stability</a><a class='section-link ' href='09-03-industrial-structure-and-productivity.html'>9.3 Industrial Structure, Sectoral Transformation, and Productivity</a><a class='section-link ' href='09-04-growth-model-and-structural-vulnerabilities.html'>9.4 External Position, Trade Balance, and Structural Constraints</a><a class='section-link ' href='09-05-growth-driver-model-and-interpretation.html'>9.5 Growth Driver Model and Interpretation</a></details>
+<details ><summary>10. Trade, Investment, and External Economy</summary><a class='section-link ' href='10-01-exports-imports-and-current-account.html'>10.1 Export-Import Trends, Trade Dependence, and Export Transformation</a><a class='section-link ' href='10-02-fdi-and-export-manufacturing.html'>10.2 FDI and Export Manufacturing</a><a class='section-link ' href='10-03-trading-partners-supply-chains-and-technology-upgrading.html'>10.3 Trading Partners, Supply Chains, and Technology Upgrading</a><a class='section-link ' href='10-04-investment-rules-zones-and-industrial-policy.html'>10.4 Investment Rules, Zones, and Industrial Policy</a></details>
+<details ><summary>11. Infrastructure, Energy, and Digital Connectivity</summary><a class='section-link ' href='11-01-energy-access-and-power-system-reform.html'>11.1 Energy Access and Power System Reform</a><a class='section-link ' href='11-02-transport-logistics-and-corridors.html'>11.2 Transport, Logistics, and Corridors</a><a class='section-link ' href='11-03-digital-connectivity.html'>11.3 Digital Connectivity, AI Infrastructure, and the Digital Economy</a><a class='section-link ' href='11-04-infrastructure-governance-and-climate-resilience.html'>11.4 Infrastructure Governance and Climate Resilience</a></details>
+<details ><summary>12. Labor Market and Human Capital</summary><a class='section-link ' href='12-01-labor-force-and-participation.html'>12.1 Labor Force and Participation</a><a class='section-link ' href='12-02-women-youth-and-informality.html'>12.2 Women, Youth, and Informality</a><a class='section-link ' href='12-03-agricultural-employment-and-productivity.html'>12.3 Agricultural Employment and Productivity</a><a class='section-link ' href='12-04-skills-education-and-human-capital.html'>12.4 Skills, Education, and Human Capital</a></details>
+<details ><summary>13. Education, Health, and Welfare</summary><a class='section-link ' href='13-01-education-system-and-public-spending.html'>13.1 Education System, Skills Policy, and Public Spending</a><a class='section-link ' href='13-02-health-outcomes-and-service-capacity.html'>13.2 Health Care, Population Ageing, and Financial Protection</a><a class='section-link ' href='13-03-water-sanitation-nutrition-and-welfare.html'>13.3 Water, Sanitation, Nutrition, and Welfare</a><a class='section-link ' href='13-04-human-development-and-territorial-equity.html'>13.4 Human Development and Territorial Equity</a></details>
+<details ><summary>14. Financial Sector and Economic Institutions</summary><a class='section-link ' href='14-01-banks-credit-and-capital-markets.html'>14.1 Banks, Credit, and Capital Markets</a><a class='section-link ' href='14-02-state-bank-of-vietnam-and-financial-supervision.html'>14.2 State Bank of Vietnam and Financial Supervision</a><a class='section-link ' href='14-03-fintech-payments-and-inclusion.html'>14.3 Fintech, Payments, and Inclusion</a><a class='section-link ' href='14-04-financial-stability-and-reform-priorities.html'>14.4 Financial Stability and Reform Priorities</a></details>
+<details ><summary>15. Foreign Relations, Security, and Geopolitics</summary><a class='section-link ' href='15-01-bamboo-diplomacy-and-asean.html'>15.1 Bamboo Diplomacy, ASEAN, and the Evolution of Vietnam’s Foreign Policy Principles</a><a class='section-link ' href='15-02-china-the-united-states-and-the-east-sea.html'>15.2 China, the United States, and the East Sea</a><a class='section-link ' href='15-03-defense-police-border-and-transnational-risks.html'>15.3 Defense, Police, Border, and Transnational Risks</a><a class='section-link ' href='15-04-mekong-energy-security-and-strategic-corridors.html'>15.4 Mekong, Energy Security, and Strategic Corridors</a></details>
+<details ><summary>16. Major Policies and National Development Strategy</summary><a class='section-link ' href='16-01-evolution-of-national-development-strategy.html'>16.1 Evolution of National Development Strategy</a><a class='section-link ' href='16-02-socio-economic-development-strategy-2021-2030.html'>16.2 Socio-Economic Development Strategy 2021-2030</a><a class='section-link ' href='16-03-administrative-restructuring-and-public-administration-reform.html'>16.3 Administrative Restructuring and Public Administration Reform</a><a class='section-link ' href='16-04-digital-green-and-industrial-transformation.html'>16.4 Digital, Green, and Industrial Transformation</a><a class='section-link ' href='16-05-implementation-matrix-and-risks.html'>16.5 Implementation Matrix and Risks</a><a class='section-link ' href='16-06-green-growth-climate-governance-and-sdg-implementation.html'>16.6 Green Growth, Climate Governance, and SDG Implementation</a></details>
+<details ><summary>17. Integrated Assessment</summary><a class='section-link ' href='17-01-national-operating-model.html'>17.1 National Operating Model</a><a class='section-link ' href='17-02-institutional-strengths-risks-and-bottlenecks.html'>17.2 Institutional Strengths, Risks, and Bottlenecks</a><a class='section-link ' href='17-03-implications-for-korea-and-international-cooperation.html'>17.3 Implications for Korea and International Cooperation</a><a class='section-link ' href='17-04-vietnam-and-comparative-administration-theory.html'>17.4 Vietnam and Comparative Administration Theory</a><a class='section-link ' href='17-05-strategic-outlook.html'>17.5 Strategic Outlook</a></details>
+<details ><summary>18. Appendix, Sources, and Method</summary><a class='section-link ' href='18-01-timeline.html'>18.1 Timeline</a><a class='section-link ' href='18-02-government-organization-chart.html'>18.2 Government Organization Chart</a><a class='section-link ' href='18-03-major-laws-and-policy-documents.html'>18.3 Major Laws and Policy Documents</a><a class='section-link ' href='18-04-indicator-codebook.html'>18.4 Indicator Codebook</a><a class='section-link ' href='18-05-update-workflow-and-evidence-archive.html'>18.5 Update Workflow and Evidence Archive</a></details>
+<details ><summary>19. References</summary><a class='section-link ' href='19-01-references.html'>19.1 References</a><a class='section-link ' href='19-02-citation-and-source-integrity-notes.html'>19.2 Citation and Source Integrity Notes</a></details></aside>
+    <main>
+      <p class="crumb"><a href="../01-overview.html">Chapter 1</a> / Section 2</p>
+      <h1>1.2 State Symbols</h1>
+      <p class="chapter-title">1. Country Overview</p>
+      <article class="section-body editable-section" data-md-panel="01-02-state-symbols" data-md-source="sections/01-02-state-symbols.md">
+  <div class="md-toolbar">
+    <button type="button" data-md-action="edit">Edit Markdown</button>
+    <button type="button" data-md-action="save" hidden>Save</button>
+    <button type="button" data-md-action="cancel" hidden>Cancel</button>
+  </div>
+  <div class="md-preview"><h2 id='1-2-state-symbols'>1.2 State Symbols</h2>
+<p><strong>ASEAN comparative lens (2026).</strong> Vietnam should be read in ASEAN comparison as ASEAN&#x27;s most prominent party-led, export-manufacturing upgrading case. Unlike the Philippines&#x27; service-remittance profile, Thailand&#x27;s older industrial-tourism base, Malaysia&#x27;s resource-industrial federal structure, or Indonesia&#x27;s archipelagic domestic-market scale, Vietnam&#x27;s comparative issue is how a socialist party-state manages very open global production networks. For this section, the regional comparison should locate the country inside ASEAN by scale, geography, income level, regime type, and core development model before moving into national details. Local comparable indicators show: population 100.99 million (2024), rank 3 among the nine ASEAN reports in this workspace; GDP US$476.39 billion (2024), rank 4 among the nine ASEAN reports in this workspace; GDP per capita US$4,717 (2024), rank 5 among the nine ASEAN reports in this workspace; real GDP growth 7.09% (2024), rank 1 among the nine ASEAN reports in this workspace; government effectiveness 0.09 (2023), rank 6 among the nine ASEAN reports in this workspace; internet use 84.15% (2024), rank 4 among the nine ASEAN reports in this workspace. Use `sources/documents/regional/asean_comparative_lens_2026.md` together with ASEANstats, ASEAN Secretariat materials, and the country processed-indicator files before making cross-ASEAN claims.</p>
+<p>Vietnam&#x27;s state symbols are not decorative additions to the country profile. They are a compact public language through which the republic links national independence, revolutionary sacrifice, socialist legitimacy, and territorial unity. Article 13 of the 2013 Constitution identifies the national flag, national emblem, national anthem, National Day, and capital. That placement matters. The symbols sit inside the constitutional vocabulary of sovereignty and state identity, and they help explain why administration in Vietnam is often presented as more than service delivery: participation in a national project.</p>
+<figure class="symbol-figure">
+<div class="vnm-symbol-grid">
+<div class="vnm-symbol-card">
+<span class="vnm-symbol-kicker">National Flag</span>
+<svg aria-label="Vietnam national flag: red field with a yellow five-pointed star" role="img" viewbox="0 0 300 200">
+<rect fill="#da251d" height="200" width="300"></rect>
+<polygon fill="#ffcd00" points="150,39 164,82 209,82 173,108 187,151 150,125 113,151 127,108 91,82 136,82"></polygon>
+</svg>
+<h3>Red flag with a yellow star</h3>
+<p>The red field and central five-pointed star connect independence, revolutionary sacrifice, and political unity.</p>
+</div>
+<div class="vnm-symbol-card">
+<span class="vnm-symbol-kicker">National Emblem</span>
+<svg aria-label="Stylized Vietnam national emblem" role="img" viewbox="0 0 220 220">
+<circle cx="110" cy="110" fill="#da251d" r="94" stroke="#ffcd00" stroke-width="7"></circle>
+<polygon fill="#ffcd00" points="110,34 123,74 165,74 131,98 144,138 110,114 76,138 89,98 55,74 97,74"></polygon>
+<g fill="none" stroke="#ffcd00" stroke-linecap="round" stroke-width="6">
+<path d="M45 111 C52 154, 74 179, 104 190"></path>
+<path d="M175 111 C168 154, 146 179, 116 190"></path>
+<path d="M57 118 C70 121, 82 122, 94 122"></path>
+<path d="M163 118 C150 121, 138 122, 126 122"></path>
+</g>
+<path d="M64 176 L156 176 L144 196 L76 196 Z" fill="#ffcd00"></path>
+<g stroke="#da251d" stroke-width="3">
+<line x1="82" x2="82" y1="176" y2="196"></line>
+<line x1="98" x2="98" y1="176" y2="196"></line>
+<line x1="114" x2="114" y1="176" y2="196"></line>
+<line x1="130" x2="130" y1="176" y2="196"></line>
+</g>
+</svg>
+<h3>Emblem of the republic</h3>
+<p>The emblem joins sovereignty, labor, production, and socialist republican identity.</p>
+</div>
+<div class="vnm-symbol-card">
+<span class="vnm-symbol-kicker">National Anthem</span>
+<svg aria-label="Stylized musical staff for Vietnam national anthem" role="img" viewbox="0 0 300 200">
+<rect fill="#fff8e8" height="200" rx="8" stroke="#d9ded8" width="300"></rect>
+<g stroke="#25312a" stroke-width="2">
+<line x1="30" x2="270" y1="62" y2="62"></line>
+<line x1="30" x2="270" y1="78" y2="78"></line>
+<line x1="30" x2="270" y1="94" y2="94"></line>
+<line x1="30" x2="270" y1="110" y2="110"></line>
+<line x1="30" x2="270" y1="126" y2="126"></line>
+</g>
+<g fill="#da251d">
+<circle cx="88" cy="110" r="9"></circle><rect height="55" width="4" x="96" y="55"></rect>
+<circle cx="142" cy="94" r="9"></circle><rect height="51" width="4" x="150" y="43"></rect>
+<circle cx="198" cy="78" r="9"></circle><rect height="43" width="4" x="206" y="35"></rect>
+</g>
+<text fill="#25312a" font-family="Georgia, serif" font-size="18" text-anchor="middle" x="150" y="164">Tien Quan Ca</text>
+</svg>
+<h3>Tien Quan Ca</h3>
+<p>The anthem expresses the martial and revolutionary origins of the modern state.</p>
+</div>
+</div>
+<figcaption>Source: National Assembly of Viet Nam, Constitution of the Socialist Republic of Viet Nam, 2013, Article 13; local source note: <code>VNM/sources/documents/legal/state_symbols_access_note.md</code>. The flag and emblem are simplified vector renderings for explanatory use.</figcaption>
+</figure>
+<p>The flag is the most direct symbol of statehood. Its red field and yellow star condense the official narrative that national independence, social unity, and revolutionary legitimacy belong together. It appears in schools, local government offices, diplomatic ceremonies, public holidays, and party-state events. For a country that has opened its economy to global capital, this symbolism performs an important administrative function: it keeps market integration framed as national modernization rather than as political liberalization.</p>
+<p>The emblem adds the language of production. Agrarian and industrial motifs present the republic as a developmental state that organizes labor, production, and social order. This is crucial for understanding Vietnam&#x27;s public administration. Ministries, provinces, and state-owned enterprises do not present themselves only as neutral regulators. They are expected to help build national capacity, direct modernization, protect sovereignty, and maintain social stability.</p>
+<p>The anthem, <em>Tien Quan Ca</em>, carries the memory of mobilization and struggle into civic ritual. In the context of Vietnam&#x27;s foreign relations, this matters because national identity is shaped by both anti-colonial struggle and long historical tension with China. The symbols therefore do more than honor the past. They help sustain a political vocabulary in which external openness, defense of sovereignty, socialist continuity, and administrative discipline can be narrated as parts of the same national mission.</p></div>
+  <textarea class="md-editor" hidden>## 1.2 State Symbols
+
+&lt;!-- asean-comparative-lens-2026:start --&gt;
+**ASEAN comparative lens (2026).** Vietnam should be read in ASEAN comparison as ASEAN&#x27;s most prominent party-led, export-manufacturing upgrading case. Unlike the Philippines&#x27; service-remittance profile, Thailand&#x27;s older industrial-tourism base, Malaysia&#x27;s resource-industrial federal structure, or Indonesia&#x27;s archipelagic domestic-market scale, Vietnam&#x27;s comparative issue is how a socialist party-state manages very open global production networks. For this section, the regional comparison should locate the country inside ASEAN by scale, geography, income level, regime type, and core development model before moving into national details. Local comparable indicators show: population 100.99 million (2024), rank 3 among the nine ASEAN reports in this workspace; GDP US$476.39 billion (2024), rank 4 among the nine ASEAN reports in this workspace; GDP per capita US$4,717 (2024), rank 5 among the nine ASEAN reports in this workspace; real GDP growth 7.09% (2024), rank 1 among the nine ASEAN reports in this workspace; government effectiveness 0.09 (2023), rank 6 among the nine ASEAN reports in this workspace; internet use 84.15% (2024), rank 4 among the nine ASEAN reports in this workspace. Use `sources/documents/regional/asean_comparative_lens_2026.md` together with ASEANstats, ASEAN Secretariat materials, and the country processed-indicator files before making cross-ASEAN claims.
+&lt;!-- asean-comparative-lens-2026:end --&gt;
+
+Vietnam&#x27;s state symbols are not decorative additions to the country profile. They are a compact public language through which the republic links national independence, revolutionary sacrifice, socialist legitimacy, and territorial unity. Article 13 of the 2013 Constitution identifies the national flag, national emblem, national anthem, National Day, and capital. That placement matters. The symbols sit inside the constitutional vocabulary of sovereignty and state identity, and they help explain why administration in Vietnam is often presented as more than service delivery: participation in a national project.
+
+&lt;figure class=&quot;symbol-figure&quot;&gt;
+&lt;div class=&quot;vnm-symbol-grid&quot;&gt;
+&lt;div class=&quot;vnm-symbol-card&quot;&gt;
+&lt;span class=&quot;vnm-symbol-kicker&quot;&gt;National Flag&lt;/span&gt;
+&lt;svg aria-label=&quot;Vietnam national flag: red field with a yellow five-pointed star&quot; role=&quot;img&quot; viewbox=&quot;0 0 300 200&quot;&gt;
+&lt;rect fill=&quot;#da251d&quot; height=&quot;200&quot; width=&quot;300&quot;&gt;&lt;/rect&gt;
+&lt;polygon fill=&quot;#ffcd00&quot; points=&quot;150,39 164,82 209,82 173,108 187,151 150,125 113,151 127,108 91,82 136,82&quot;&gt;&lt;/polygon&gt;
+&lt;/svg&gt;
+&lt;h3&gt;Red flag with a yellow star&lt;/h3&gt;
+&lt;p&gt;The red field and central five-pointed star connect independence, revolutionary sacrifice, and political unity.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;vnm-symbol-card&quot;&gt;
+&lt;span class=&quot;vnm-symbol-kicker&quot;&gt;National Emblem&lt;/span&gt;
+&lt;svg aria-label=&quot;Stylized Vietnam national emblem&quot; role=&quot;img&quot; viewbox=&quot;0 0 220 220&quot;&gt;
+&lt;circle cx=&quot;110&quot; cy=&quot;110&quot; fill=&quot;#da251d&quot; r=&quot;94&quot; stroke=&quot;#ffcd00&quot; stroke-width=&quot;7&quot;&gt;&lt;/circle&gt;
+&lt;polygon fill=&quot;#ffcd00&quot; points=&quot;110,34 123,74 165,74 131,98 144,138 110,114 76,138 89,98 55,74 97,74&quot;&gt;&lt;/polygon&gt;
+&lt;g fill=&quot;none&quot; stroke=&quot;#ffcd00&quot; stroke-linecap=&quot;round&quot; stroke-width=&quot;6&quot;&gt;
+&lt;path d=&quot;M45 111 C52 154, 74 179, 104 190&quot;&gt;&lt;/path&gt;
+&lt;path d=&quot;M175 111 C168 154, 146 179, 116 190&quot;&gt;&lt;/path&gt;
+&lt;path d=&quot;M57 118 C70 121, 82 122, 94 122&quot;&gt;&lt;/path&gt;
+&lt;path d=&quot;M163 118 C150 121, 138 122, 126 122&quot;&gt;&lt;/path&gt;
+&lt;/g&gt;
+&lt;path d=&quot;M64 176 L156 176 L144 196 L76 196 Z&quot; fill=&quot;#ffcd00&quot;&gt;&lt;/path&gt;
+&lt;g stroke=&quot;#da251d&quot; stroke-width=&quot;3&quot;&gt;
+&lt;line x1=&quot;82&quot; x2=&quot;82&quot; y1=&quot;176&quot; y2=&quot;196&quot;&gt;&lt;/line&gt;
+&lt;line x1=&quot;98&quot; x2=&quot;98&quot; y1=&quot;176&quot; y2=&quot;196&quot;&gt;&lt;/line&gt;
+&lt;line x1=&quot;114&quot; x2=&quot;114&quot; y1=&quot;176&quot; y2=&quot;196&quot;&gt;&lt;/line&gt;
+&lt;line x1=&quot;130&quot; x2=&quot;130&quot; y1=&quot;176&quot; y2=&quot;196&quot;&gt;&lt;/line&gt;
+&lt;/g&gt;
+&lt;/svg&gt;
+&lt;h3&gt;Emblem of the republic&lt;/h3&gt;
+&lt;p&gt;The emblem joins sovereignty, labor, production, and socialist republican identity.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;vnm-symbol-card&quot;&gt;
+&lt;span class=&quot;vnm-symbol-kicker&quot;&gt;National Anthem&lt;/span&gt;
+&lt;svg aria-label=&quot;Stylized musical staff for Vietnam national anthem&quot; role=&quot;img&quot; viewbox=&quot;0 0 300 200&quot;&gt;
+&lt;rect fill=&quot;#fff8e8&quot; height=&quot;200&quot; rx=&quot;8&quot; stroke=&quot;#d9ded8&quot; width=&quot;300&quot;&gt;&lt;/rect&gt;
+&lt;g stroke=&quot;#25312a&quot; stroke-width=&quot;2&quot;&gt;
+&lt;line x1=&quot;30&quot; x2=&quot;270&quot; y1=&quot;62&quot; y2=&quot;62&quot;&gt;&lt;/line&gt;
+&lt;line x1=&quot;30&quot; x2=&quot;270&quot; y1=&quot;78&quot; y2=&quot;78&quot;&gt;&lt;/line&gt;
+&lt;line x1=&quot;30&quot; x2=&quot;270&quot; y1=&quot;94&quot; y2=&quot;94&quot;&gt;&lt;/line&gt;
+&lt;line x1=&quot;30&quot; x2=&quot;270&quot; y1=&quot;110&quot; y2=&quot;110&quot;&gt;&lt;/line&gt;
+&lt;line x1=&quot;30&quot; x2=&quot;270&quot; y1=&quot;126&quot; y2=&quot;126&quot;&gt;&lt;/line&gt;
+&lt;/g&gt;
+&lt;g fill=&quot;#da251d&quot;&gt;
+&lt;circle cx=&quot;88&quot; cy=&quot;110&quot; r=&quot;9&quot;&gt;&lt;/circle&gt;&lt;rect height=&quot;55&quot; width=&quot;4&quot; x=&quot;96&quot; y=&quot;55&quot;&gt;&lt;/rect&gt;
+&lt;circle cx=&quot;142&quot; cy=&quot;94&quot; r=&quot;9&quot;&gt;&lt;/circle&gt;&lt;rect height=&quot;51&quot; width=&quot;4&quot; x=&quot;150&quot; y=&quot;43&quot;&gt;&lt;/rect&gt;
+&lt;circle cx=&quot;198&quot; cy=&quot;78&quot; r=&quot;9&quot;&gt;&lt;/circle&gt;&lt;rect height=&quot;43&quot; width=&quot;4&quot; x=&quot;206&quot; y=&quot;35&quot;&gt;&lt;/rect&gt;
+&lt;/g&gt;
+&lt;text fill=&quot;#25312a&quot; font-family=&quot;Georgia, serif&quot; font-size=&quot;18&quot; text-anchor=&quot;middle&quot; x=&quot;150&quot; y=&quot;164&quot;&gt;Tien Quan Ca&lt;/text&gt;
+&lt;/svg&gt;
+&lt;h3&gt;Tien Quan Ca&lt;/h3&gt;
+&lt;p&gt;The anthem expresses the martial and revolutionary origins of the modern state.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;figcaption&gt;Source: National Assembly of Viet Nam, Constitution of the Socialist Republic of Viet Nam, 2013, Article 13; local source note: &lt;code&gt;VNM/sources/documents/legal/state_symbols_access_note.md&lt;/code&gt;. The flag and emblem are simplified vector renderings for explanatory use.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+The flag is the most direct symbol of statehood. Its red field and yellow star condense the official narrative that national independence, social unity, and revolutionary legitimacy belong together. It appears in schools, local government offices, diplomatic ceremonies, public holidays, and party-state events. For a country that has opened its economy to global capital, this symbolism performs an important administrative function: it keeps market integration framed as national modernization rather than as political liberalization.
+
+The emblem adds the language of production. Agrarian and industrial motifs present the republic as a developmental state that organizes labor, production, and social order. This is crucial for understanding Vietnam&#x27;s public administration. Ministries, provinces, and state-owned enterprises do not present themselves only as neutral regulators. They are expected to help build national capacity, direct modernization, protect sovereignty, and maintain social stability.
+
+The anthem, *Tien Quan Ca*, carries the memory of mobilization and struggle into civic ritual. In the context of Vietnam&#x27;s foreign relations, this matters because national identity is shaped by both anti-colonial struggle and long historical tension with China. The symbols therefore do more than honor the past. They help sustain a political vocabulary in which external openness, defense of sovereignty, socialist continuity, and administrative discipline can be narrated as parts of the same national mission.</textarea>
+</article>
+      
+    </main>
+  </div>
+  <script>
+    window.REPORT_CHARTS = [];
+    document.addEventListener('DOMContentLoaded', () => {
+      if (!window.Chart || !window.REPORT_CHARTS) return;
+      window.REPORT_CHARTS.forEach((entry) => {
+        const cfg = entry.data || {};
+        const el = document.getElementById('chart-' + entry.id);
+        if (!el || !cfg.datasets) return;
+        const colors = ['#197278', '#246b46', '#b7860b', '#7b2d26', '#3f4e9a', '#6a4c93'];
+        const dashes = [[], [8, 4], [2, 3], [10, 4, 2, 4], [1, 4], [12, 3, 3, 3]];
+        const pointStyles = ['circle', 'rect', 'triangle', 'rectRot', 'crossRot', 'star'];
+        const datasets = (cfg.datasets || []).map((dataset, i) => ({
+          ...dataset,
+          borderColor: dataset.borderColor || colors[i % colors.length],
+          backgroundColor: dataset.backgroundColor || 'transparent',
+          borderDash: dataset.borderDash || dashes[i % dashes.length],
+          borderWidth: dataset.borderWidth || 2.4,
+          pointStyle: dataset.pointStyle || pointStyles[i % pointStyles.length],
+          pointRadius: dataset.pointRadius ?? 1.8,
+          tension: dataset.tension ?? 0.25,
+          spanGaps: dataset.spanGaps ?? true
+        }));
+        new Chart(el, {
+          type: 'line',
+          data: { labels: cfg.labels || [], datasets },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            interaction: { mode: 'index', intersect: false },
+            plugins: { legend: { position: 'bottom', labels: { boxWidth: 28 } } },
+            scales: { x: { title: { display: true, text: 'Year' } }, y: { title: { display: true, text: cfg.unit || 'Value' } } }
+          }
+        });
+      });
+    });
+  </script>
+  <script src="../assets/report.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  function fallbackMarkdown(text) {
+    const escaped = text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    return escaped.split(/\n{2,}/).map((block) => `<p>${block.replace(/\n/g, "<br>")}</p>`).join("");
+  }
+  function renderMarkdown(text) {
+    return window.marked ? marked.parse(text) : fallbackMarkdown(text);
+  }
+  document.querySelectorAll('[data-md-panel]').forEach((panel) => {
+    const id = panel.getAttribute('data-md-panel');
+    const source = panel.getAttribute('data-md-source');
+    const preview = panel.querySelector('.md-preview');
+    const editor = panel.querySelector('.md-editor');
+    const edit = panel.querySelector('[data-md-action="edit"]');
+    const save = panel.querySelector('[data-md-action="save"]');
+    const cancel = panel.querySelector('[data-md-action="cancel"]');
+    if (!preview || !editor || !edit || !save || !cancel) return;
+    const storageKey = `country-report-markdown:v1:${source || id}`;
+    const original = editor.value;
+    const stored = localStorage.getItem(storageKey);
+    const hasStoredDraft = stored !== null && (!source || window.location.protocol === 'file:');
+    if (hasStoredDraft) editor.value = stored;
+    const showPreview = () => { preview.innerHTML = renderMarkdown(editor.value); };
+    const setEditing = (editing) => {
+      editor.hidden = !editing;
+      preview.hidden = editing;
+      edit.hidden = editing;
+      save.hidden = !editing;
+      cancel.hidden = !editing;
+    };
+    async function saveMarkdown() {
+      if (source && window.location.protocol.startsWith('http')) {
+        const response = await fetch('/api/save-section', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ source, markdown: editor.value })
+        });
+        if (!response.ok) throw new Error(await response.text());
+        localStorage.removeItem(storageKey);
+        return true;
+      } else {
+        localStorage.setItem(storageKey, editor.value);
+        if (source) window.alert('This edit was saved only as a browser draft. Open the report through code/serve_report.py to save it permanently to the Markdown source file.');
+        return false;
+      }
+    }
+    if (hasStoredDraft) showPreview();
+    setEditing(false);
+    edit.addEventListener('click', () => setEditing(true));
+    save.addEventListener('click', async () => {
+      save.disabled = true;
+      try {
+        const savedToServer = await saveMarkdown();
+        if (savedToServer) {
+          window.location.reload();
+          return;
+        }
+        showPreview();
+        setEditing(false);
+      } catch (error) {
+        window.alert(error.message || 'Could not save the Markdown source.');
+      } finally {
+        save.disabled = false;
+      }
+    });
+    cancel.addEventListener('click', () => {
+      editor.value = localStorage.getItem(storageKey) ?? original;
+      if (hasStoredDraft || window.location.protocol === 'file:') showPreview();
+      setEditing(false);
+    });
+  });
+});
+</script>
+
+</body>
+</html>

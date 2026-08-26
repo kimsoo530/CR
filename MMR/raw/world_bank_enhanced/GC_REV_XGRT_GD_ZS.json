@@ -1,0 +1,1068 @@
+[
+  {
+    "page": 1,
+    "pages": 1,
+    "per_page": 20000,
+    "total": 66,
+    "sourceid": "2",
+    "lastupdated": "2026-04-08"
+  },
+  [
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2025",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2024",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2023",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2022",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2021",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2020",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2019",
+      "value": 14.3891961645863,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2018",
+      "value": 7.01300899608592,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2017",
+      "value": 15.9852528823652,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2016",
+      "value": 16.789835742121,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2015",
+      "value": 18.5063974234776,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2014",
+      "value": 22.0275608393637,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2013",
+      "value": 20.0136948721279,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2012",
+      "value": 19.7007501337319,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2011",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2010",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2009",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2008",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2007",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2006",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2005",
+      "value": 6.66748304643303,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2004",
+      "value": 6.46875895101498,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2003",
+      "value": 4.9777128995997,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2002",
+      "value": 4.96011318385281,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2001",
+      "value": 4.57227761288365,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2000",
+      "value": 5.25127485939087,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1999",
+      "value": 5.60119069359728,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1998",
+      "value": 7.20516394827603,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1997",
+      "value": 7.67184542509261,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1996",
+      "value": 6.84802646531478,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1995",
+      "value": 6.37938646898032,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1994",
+      "value": 6.64799531107986,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1993",
+      "value": 7.25215065357055,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1992",
+      "value": 7.78725450059684,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1991",
+      "value": 9.28414195963221,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1990",
+      "value": 10.4632443823737,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1989",
+      "value": 7.8160843585557,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1988",
+      "value": 8.45192240214495,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1987",
+      "value": 10.4748316593676,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1986",
+      "value": 12.3907296552046,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1985",
+      "value": 13.6044584802099,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1984",
+      "value": 14.4392410831161,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1983",
+      "value": 15.3302696143429,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1982",
+      "value": 15.9001086770185,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1981",
+      "value": 17.0242537313433,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1980",
+      "value": 15.9833206136733,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1979",
+      "value": 16.0954343159505,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1978",
+      "value": 14.9465406454946,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1977",
+      "value": 14.3966507340018,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1976",
+      "value": 11.9371421015371,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1975",
+      "value": 9.23456992601636,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1974",
+      "value": 9.87647930253264,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1973",
+      "value": 12.3647208149576,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1972",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1971",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1970",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1969",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1968",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1967",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1966",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1965",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1964",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1963",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1962",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1961",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "GC.REV.XGRT.GD.ZS",
+        "value": "Revenue, excluding grants (% of GDP)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1960",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    }
+  ]
+]

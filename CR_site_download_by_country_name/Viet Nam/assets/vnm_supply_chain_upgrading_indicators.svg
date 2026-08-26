@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 800" role="img" aria-label="Vietnam supply chain upgrading indicators">
+  
+  <style>
+    .title{font:700 28px Arial,sans-serif;fill:#172026}
+    .subtitle{font:15px Arial,sans-serif;fill:#526069}
+    .panel-title{font:700 17px Arial,sans-serif;fill:#172026}
+    .panel-y{font:11px Arial,sans-serif;fill:#526069;text-anchor:end}
+    .panel-x{font:11px Arial,sans-serif;fill:#526069;text-anchor:middle}
+    .panel-last{font:700 11px Arial,sans-serif;fill:#172026}
+    .legend{font:11px Arial,sans-serif;fill:#526069}
+    .label{font:12px Arial,sans-serif;fill:#526069}
+    .small{font:11px Arial,sans-serif;fill:#65717a}
+    .value{font:700 22px Arial,sans-serif;fill:#172026}
+    .source{font:12px Arial,sans-serif;fill:#65717a}
+  </style>
+  <rect width="1100" height="800" fill="#f6f4ee"/>
+  <text x="54" y="44" class="title">Supply-Chain Upgrading: Opportunity and Constraint</text>
+  <text x="54" y="68" class="subtitle">High export sophistication coexists with U.S. exposure, foreign-invested production dominance, and domestic capability gaps.</text>
+  
+  <rect x="54" y="102" width="238" height="96" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="72" y="130" class="label">U.S. goods imports from Viet Nam</text>
+  <text x="72" y="162" class="value">USD 193.8 bn</text>
+  <text x="72" y="184" class="small">USTR 2025, U.S. perspective</text>
+  
+  <rect x="306" y="102" width="238" height="96" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="324" y="130" class="label">U.S. goods trade deficit</text>
+  <text x="324" y="162" class="value">USD 178.2 bn</text>
+  <text x="324" y="184" class="small">USTR 2025, tariff-scrutiny risk</text>
+  
+  <rect x="558" y="102" width="238" height="96" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="576" y="130" class="label">FDI-sector export share</text>
+  <text x="576" y="162" class="value">71.7%</text>
+  <text x="576" y="184" class="small">Vietnamese official 2024 data</text>
+  
+  <rect x="810" y="102" width="238" height="96" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="828" y="130" class="label">High-tech export share</text>
+  <text x="828" y="162" class="value">44.3%</text>
+  <text x="828" y="184" class="small">WDI 2023, of manufactures</text>
+  <rect x="54" y="236" width="476" height="166" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="76" y="270" class="panel-title">Who exports? Domestic vs foreign-invested sector, 2024</text>
+  <rect x="76" y="306" width="141.28" height="34" rx="7" fill="#b8873a"/>
+  <rect x="217.28" y="306" width="358.72" height="34" rx="7" fill="#176b63"/>
+  <text x="76" y="366" class="small">Domestic sector: USD 114.59 bn</text>
+  <text x="306" y="366" class="small">Foreign-invested sector: USD 290.94 bn</text>
+  <text x="76" y="388" class="label">Interpretation: export volume is high, but domestic firms capture a smaller share of the export platform.</text>
+  <rect x="570" y="236" width="476" height="166" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="592" y="270" class="panel-title">Technology-upgrading signals</text>
+  <text x="592" y="308" class="label">Manufactures: 85.0% of merchandise exports in 2023.</text>
+  <text x="592" y="332" class="label">FPT AI factory plan: USD 200 million using NVIDIA chips/software.</text>
+  <text x="592" y="356" class="label">NVIDIA reported investment in Viet Nam: over USD 250 million.</text>
+  <text x="592" y="380" class="label">U.S. semiconductor workforce seed funding: USD 2 million.</text>
+  <rect x="54" y="438" width="992" height="250" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="76" y="470" class="panel-title">Technology content in exports</text>
+  <line x1="108" y1="642.00" x2="1016" y2="642.00" stroke="#edf2ef"/>
+  <text x="98" y="646.00" class="panel-y">0%</text>
+  <line x1="108" y1="605.50" x2="1016" y2="605.50" stroke="#edf2ef"/>
+  <text x="98" y="609.50" class="panel-y">25%</text>
+  <line x1="108" y1="569.00" x2="1016" y2="569.00" stroke="#edf2ef"/>
+  <text x="98" y="573.00" class="panel-y">50%</text>
+  <line x1="108" y1="532.50" x2="1016" y2="532.50" stroke="#edf2ef"/>
+  <text x="98" y="536.50" class="panel-y">75%</text>
+  <line x1="108" y1="496.00" x2="1016" y2="496.00" stroke="#edf2ef"/>
+  <text x="98" y="500.00" class="panel-y">100%</text>
+  <line x1="108.00" y1="496" x2="108.00" y2="642" stroke="#f1f4f5"/>
+  <text x="108.00" y="666" class="panel-x">2008</text>
+  <line x1="229.07" y1="496" x2="229.07" y2="642" stroke="#f1f4f5"/>
+  <text x="229.07" y="666" class="panel-x">2010</text>
+  <line x1="531.73" y1="496" x2="531.73" y2="642" stroke="#f1f4f5"/>
+  <text x="531.73" y="666" class="panel-x">2015</text>
+  <line x1="834.40" y1="496" x2="834.40" y2="642" stroke="#f1f4f5"/>
+  <text x="834.40" y="666" class="panel-x">2020</text>
+  <line x1="1016.00" y1="496" x2="1016.00" y2="642" stroke="#f1f4f5"/>
+  <text x="1016.00" y="666" class="panel-x">2023</text>
+  <path d="M108.00,562.52 L168.53,556.14 L229.07,548.57 L289.60,548.24 L350.13,541.82 L410.67,534.17 L471.20,531.71 L531.73,524.24 L592.27,522.04 L652.80,521.48 L713.33,520.55 L773.87,518.60 L834.40,515.81 L894.93,515.91 L955.47,516.68 L1016.00,517.94" fill="none" stroke="#176b63" stroke-width="3"/>
+  <circle cx="1016.00" cy="517.94" r="4" fill="#176b63" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="964.00" y="509.94" class="panel-last">85%</text>
+  <rect x="76" y="658" width="10" height="10" fill="#176b63" rx="2"/>
+  <text x="92" y="667" class="legend">Manufactures</text>
+  <path d="M108.00,629.09 L168.53,626.63 L229.07,622.83 L289.60,614.53 L350.13,602.34 L410.67,592.95 L471.20,595.20 L531.73,588.90 L592.27,586.44 L652.80,581.06 L713.33,582.50 L773.87,582.97 L834.40,581.06 L894.93,581.35 L955.47,579.67 L1016.00,577.38" fill="none" stroke="#345995" stroke-width="3"/>
+  <circle cx="1016.00" cy="577.38" r="4" fill="#345995" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="964.00" y="569.38" class="panel-last">44.3%</text>
+  <rect x="228" y="658" width="10" height="10" fill="#345995" rx="2"/>
+  <text x="244" y="667" class="legend">High-tech within manufactures</text>
+  <text x="54" y="752" class="source">Sources: Viet Nam Government Portal / GDC 2024 trade data; USTR 2025 Viet Nam country page; WDI export-technology indicators; Reuters FPT-NVIDIA report; White House U.S.-Viet Nam CSP fact sheet.</text>
+  <text x="54" y="772" class="source">Reading caution: high-tech exports produced in Viet Nam are not the same as high-tech capability owned by Vietnamese domestic firms.</text>
+</svg>

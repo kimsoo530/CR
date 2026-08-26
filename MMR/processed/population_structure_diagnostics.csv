@@ -1,0 +1,585 @@
+source,indicator_code,indicator_name,unit,country,year,value
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,1960,5.901
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,1961,5.9
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,1962,5.904
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,1963,5.905
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,1964,5.907
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,1965,5.912
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,1966,5.876
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,1967,5.842
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,1968,5.797
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,1969,5.747
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,1970,5.682
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,1971,5.615
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,1972,5.527
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,1973,5.435
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,1974,5.341
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,1975,5.249
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,1976,5.159
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,1977,5.069
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,1978,4.985
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,1979,4.897
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,1980,4.789
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,1981,4.688
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,1982,4.662
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,1983,4.633
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,1984,4.517
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,1985,4.316
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,1986,4.081
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,1987,3.861
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,1988,3.67
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,1989,3.593
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,1990,3.504
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,1991,3.432
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,1992,3.354
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,1993,3.281
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,1994,3.204
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,1995,3.127
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,1996,3.058
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,1997,2.985
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,1998,2.912
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,1999,2.851
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,2000,2.813
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,2001,2.793
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,2002,2.765
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,2003,2.68
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,2004,2.588
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,2005,2.515
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,2006,2.471
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,2007,2.447
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,2008,2.404
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,2009,2.369
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,2010,2.335
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,2011,2.306
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,2012,2.276
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,2013,2.264
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,2014,2.252
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,2015,2.266
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,2016,2.27
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,2017,2.252
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,2018,2.228
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,2019,2.206
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,2020,2.179
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,2021,2.158
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,2022,2.131
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,2023,2.115
+World Bank World Development Indicators API,SP.DYN.TFRT.IN,"Fertility rate, total",births per woman,MMR,2024,2.098
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,1960,39.8951033673129
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,1961,40.2320236519707
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,1962,40.5509136668901
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,1963,40.8551674285647
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,1964,41.0324756612111
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,1965,41.0655834562186
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,1966,41.0523912068756
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,1967,41.0064326829723
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,1968,40.9323899454254
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,1969,40.8367841211881
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,1970,40.7228973792388
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,1971,40.598406467788
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,1972,40.4607471678466
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,1973,40.3409621676139
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,1974,40.2380029101464
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,1975,40.1165490505629
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,1976,39.9829850382873
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,1977,39.8256236149765
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,1978,39.6426422739003
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,1979,39.4484330312323
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,1980,39.2343674292552
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,1981,39.0080440871132
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,1982,38.8036231976626
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,1983,38.5864279619254
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,1984,38.3360548106303
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,1985,38.0651002438302
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,1986,37.7524468926309
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,1987,37.3934929174491
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,1988,36.9927864685737
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,1989,36.583563047841
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,1990,36.1889581956705
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,1991,35.8105622884262
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,1992,35.4394866836521
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,1993,35.0572179763262
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,1994,34.655170886652
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,1995,34.2357656479074
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,1996,33.8029714382111
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,1997,33.3370126078507
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,1998,32.8258667668524
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,1999,32.2961733889402
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,2000,31.7967047686308
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,2001,31.3660069871323
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,2002,31.0127141092249
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,2003,30.7099967650721
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,2004,30.4029077877482
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,2005,30.0707781560347
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,2006,29.7249790157025
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,2007,29.3745077796606
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,2008,28.9959029086803
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,2009,28.6103384269351
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,2010,28.2447976600705
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,2011,27.8730729897438
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,2012,27.5018186124546
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,2013,27.145420036734
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,2014,26.8121872985803
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,2015,26.5026567187174
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,2016,26.2057454277344
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,2017,25.9085442977117
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,2018,25.6259533440944
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,2019,25.3740911526027
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,2020,25.145748198512
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,2021,24.9363048400717
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,2022,24.7280913131202
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,2023,24.5157260581987
+World Bank World Development Indicators API,SP.POP.0014.TO.ZS,Population ages 0-14,percent of total population (%),MMR,2024,24.3005300670048
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,1960,56.6090232880207
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,1961,56.2432440700953
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,1962,55.8973797473556
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,1963,55.5657220940097
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,1964,55.3579880454045
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,1965,55.2913842997391
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,1966,55.2674217812368
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,1967,55.2721981367826
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,1968,55.3038501365687
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,1969,55.3595945851273
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,1970,55.4379716468376
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,1971,55.530077359946
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,1972,55.637955377919
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,1973,55.7292480850399
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,1974,55.8044074856999
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,1975,55.8988224802922
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,1976,56.0066421942213
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,1977,56.1414596507727
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,1978,56.3025772139572
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,1979,56.4698757455908
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,1980,56.6509966253706
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,1981,56.8379244463689
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,1982,56.996027502333
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,1983,57.1683067870087
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,1984,57.381154377785
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,1985,57.6187311042546
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,1986,57.8994576908439
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,1987,58.2280657189679
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,1988,58.5979580231324
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,1989,58.971556219163
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,1990,59.32461837553
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,1991,59.6561641030552
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,1992,59.9753281669784
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,1993,60.3026319254712
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,1994,60.6494425741156
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,1995,61.0146017503089
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,1996,61.3923808349743
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,1997,61.8027851051864
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,1998,62.2605544549019
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,1999,62.742730575012
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,2000,63.2024342405123
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,2001,63.5989882576331
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,2002,63.9221298851269
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,2003,64.1982183564657
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,2004,64.4825760008932
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,2005,64.7949860835212
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,2006,65.1224186651098
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,2007,65.454090087774
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,2008,65.8184247381684
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,2009,66.1825672462317
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,2010,66.5104681992728
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,2011,66.8368460265537
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,2012,67.1575927064962
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,2013,67.4581949830249
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,2014,67.6970652494853
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,2015,67.8674858258047
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,2016,68.0094410220225
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,2017,68.1401536697086
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,2018,68.2443282784871
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,2019,68.3076557112743
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,2020,68.3464361199178
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,2021,68.3772458748557
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,2022,68.3947473609728
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,2023,68.3951241366357
+World Bank World Development Indicators API,SP.POP.1564.TO.ZS,Population ages 15-64,percent of total population (%),MMR,2024,68.3950435972666
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,1960,3.49587334466638
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,1961,3.52473227793393
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,1962,3.55170658575427
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,1963,3.5791104774256
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,1964,3.60953629338449
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,1965,3.64303224404229
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,1966,3.68018701188767
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,1967,3.72136918024507
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,1968,3.76375991800586
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,1969,3.80362129368458
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,1970,3.8391309739236
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,1971,3.87151617226598
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,1972,3.90129745423442
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,1973,3.92978974734627
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,1974,3.9575896041537
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,1975,3.98462846914485
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,1976,4.01037276749136
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,1977,4.03291673425083
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,1978,4.0547805121425
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,1979,4.08169122317686
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,1980,4.11463594537422
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,1981,4.15403146651786
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,1982,4.20034930000438
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,1983,4.24526525106587
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,1984,4.28279081158474
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,1985,4.31616865191526
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,1986,4.34809541652528
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,1987,4.37844136358298
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,1988,4.40925550829388
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,1989,4.44488073299605
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,1990,4.48642342879945
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,1991,4.53327360851862
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,1992,4.58518514936945
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,1993,4.64015009820269
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,1994,4.69538653923239
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,1995,4.74963260178376
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,1996,4.80464772681455
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,1997,4.86020228696291
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,1998,4.91357877824566
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,1999,4.96109603604773
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,2000,5.00086099085685
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,2001,5.03500475523457
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,2002,5.06515600564822
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,2003,5.09178487846221
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,2004,5.1145162113586
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,2005,5.13423576044411
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,2006,5.15260231918773
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,2007,5.17140213256537
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,2008,5.18567235315122
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,2009,5.20709432683321
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,2010,5.24473414065679
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,2011,5.29008098370249
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,2012,5.34058868104918
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,2013,5.39638498024105
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,2014,5.49074745193444
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,2015,5.62985745547791
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,2016,5.78481355024311
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,2017,5.95130203257975
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,2018,6.1297183774185
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,2019,6.31825313612298
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,2020,6.50781568157013
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,2021,6.68644928507264
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,2022,6.87716132590698
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,2023,7.08914980516562
+World Bank World Development Indicators API,SP.POP.65UP.TO.ZS,Population ages 65 and above,percent of total population (%),MMR,2024,7.3044263357285
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,1960,6.17547016644281
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,1961,6.26694741277804
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,1962,6.35397688014578
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,1963,6.44122375762267
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,1964,6.5203531068072
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,1965,6.58878479262402
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,1966,6.65887589187943
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,1967,6.73280450785362
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,1968,6.80559849787982
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,1969,6.87075375354767
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,1970,6.92509587067073
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,1971,6.97192671375662
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,1972,7.01193239804063
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,1973,7.05157482096524
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,1974,7.09189431886334
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,1975,7.12828716322124
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,1976,7.16053083486441
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,1977,7.18349105872477
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,1978,7.20176695306697
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,1979,7.22808878749878
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,1980,7.26312826778297
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,1981,7.30855346704787
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,1982,7.36954765258025
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,1983,7.4259092249306
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,1984,7.46375629628767
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,1985,7.49091254088314
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,1986,7.50973658456387
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,1987,7.51946902154556
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,1988,7.52458679745731
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,1989,7.53732972617077
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,1990,7.56249663441234
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,1991,7.5990047640838
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,1992,7.64511890056483
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,1993,7.69477210204939
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,1994,7.74184796565229
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,1995,7.78441957422055
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,1996,7.82613031367796
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,1997,7.86405044486494
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,1998,7.89196297882207
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,1999,7.90704515181484
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,2000,7.91244997277546
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,2001,7.91680008310552
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,2002,7.92394735446748
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,2003,7.93134906830573
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,2004,7.93162514364774
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,2005,7.92381806799875
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,2006,7.91217897738849
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,2007,7.90080981125949
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,2008,7.87875488327211
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,2009,7.86777325735984
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,2010,7.88557846990889
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,2011,7.91491562881492
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,2012,7.95232298511585
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,2013,7.9996001920824
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,2014,8.11076276088656
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,2015,8.29536751772813
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,2016,8.50589780376213
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,2017,8.73391472047782
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,2018,8.9820200486398
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,2019,9.2496984715653
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,2020,9.52180829627169
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,2021,9.77876504980327
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,2022,10.0551015849372
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,2023,10.3649929650005
+World Bank World Development Indicators API,SP.POP.DPND.OL,"Age dependency ratio, old",per 100 working-age population,MMR,2024,10.6797597480008
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,1960,70.4748171775917
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,1961,71.5321890071455
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,1962,72.5452853965101
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,1963,73.52584733746
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,1964,74.1220501502987
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,1965,74.2712187546394
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,1966,74.2795518534198
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,1967,74.1899772493764
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,1968,74.013635297264
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,1969,73.7664099865398
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,1970,73.4566846853755
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,1971,73.1106631082605
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,1972,72.721483766327
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,1973,72.3874129059331
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,1974,72.1054178940324
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,1975,71.7663571480401
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,1976,71.389722062089
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,1977,70.9379910367691
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,1978,70.409991106351
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,1979,69.8574815516793
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,1980,69.2562696223697
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,1981,68.6303123848218
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,1982,68.0812784421632
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,1983,67.4961890473297
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,1984,66.8094860831168
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,1985,66.0637615863208
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,1986,65.2034574039699
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,1987,64.21901730542
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,1988,63.129823993655
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,1989,62.0359472894628
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,1990,61.0015853399574
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,1991,60.0282692017127
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,1992,59.0901088277239
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,1993,58.1354691444543
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,1994,57.1401317561488
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,1995,56.1107765016199
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,1996,55.060531907168
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,1997,53.9409523213696
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,1998,52.7233768703901
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,1999,51.4739685266464
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,2000,50.3093039860312
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,2001,49.3184073187818
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,2002,48.5163941795622
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,2003,47.8362126531726
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,2004,47.1490263122424
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,2005,46.4091143893024
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,2006,45.6447696179896
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,2007,44.878034022365
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,2008,44.0543844535542
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,2009,43.2294176810799
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,2010,42.4666965136173
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,2011,41.7031557569456
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,2012,40.9511679977092
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,2013,40.2403601786831
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,2014,39.6061303331022
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,2015,39.0505939833399
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,2016,38.5325111248136
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,2017,38.0224324954652
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,2018,37.5503057732094
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,2019,37.1467735769177
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,2020,36.7916011807731
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,2021,36.4687191734309
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,2022,36.1549553688613
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,2023,35.8442612559047
+World Bank World Development Indicators API,SP.POP.DPND.YG,"Age dependency ratio, young",per 100 working-age population,MMR,2024,35.5296652928459
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,1961,2.18634979176609
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,1962,2.20039913928751
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,1963,2.2157254424199
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,1964,2.23182397635455
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,1965,2.25812484583624
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,1966,2.26846533222225
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,1967,2.26880679206669
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,1968,2.26965913331896
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,1969,2.26525162825306
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,1970,2.26088157769285
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,1971,2.23354876191716
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,1972,2.20903088681752
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,1973,2.08193751709596
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,1974,1.95070864521903
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,1975,1.93531960277648
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,1976,1.91108600294956
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,1977,1.92280622097824
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,1978,1.94864940048061
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,1979,1.93154085428877
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,1980,1.91624834382687
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,1981,1.88294959545959
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,1982,1.82670000332865
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,1983,1.95208542880678
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,1984,2.07318705550566
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,1985,1.99535756981766
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,1986,1.87203865962695
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,1987,1.74462327581601
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,1988,1.64379378529744
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,1989,1.57732937202558
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,1990,1.52506751457934
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,1991,1.43848109338153
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,1992,1.36750903862328
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,1993,1.33917937317586
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,1994,1.32297300734248
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,1995,1.2997864871869
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,1996,1.28154909567186
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,1997,1.27543675227322
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,1998,1.24820598731574
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,1999,1.1902615071828
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,2000,1.11707426022512
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,2001,1.05489130356671
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,2002,1.00325836797547
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,2003,0.93550676889734
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,2004,0.856837524813252
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,2005,0.78215232398828
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,2006,0.728331835978341
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,2007,0.708807824555326
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,2008,0.550688224031359
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,2009,0.555720175554536
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,2010,0.745099607969388
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,2011,0.803379211413432
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,2012,0.841507088171189
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,2013,0.849578652965248
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,2014,0.830118073348831
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,2015,0.800670952631538
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,2016,0.792792538685626
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,2017,0.772302033467657
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,2018,0.72443284342539
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,2019,0.702425162747352
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,2020,0.711376906349628
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,2021,0.696558038955431
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,2022,0.690074759264932
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,2023,0.698879396261223
+World Bank World Development Indicators API,SP.POP.GROW,Population growth,annual percent (%),MMR,2024,0.674364862610485
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,1960,21730250.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,1961,22210581.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,1962,22704719.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,1963,23213408.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,1964,23737315.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,1965,24279431.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,1966,24836496.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,1967,25406429.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,1968,25989662.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,1969,26585112.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,1970,27193016.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,1971,27807219.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,1972,28428324.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,1973,29026388.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,1974,29598167.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,1975,30176565.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,1976,30758811.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,1977,31355966.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,1978,31972976.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,1979,32596550.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,1980,33227204.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,1981,33858783.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,1982,34482965.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,1983,35162715.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,1984,35899313.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,1985,36622827.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,1986,37314878.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,1987,37971594.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,1988,38600927.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,1989,39214618.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,1990,39817251.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,1991,40394154.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,1992,40950342.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,1993,41502429.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,1994,42055143.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,1995,42605338.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,1996,43154860.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,1997,43708798.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,1998,44257793.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,1999,44787724.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,2000,45290841.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,2001,45771139.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,2002,46232653.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,2003,46667192.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,2004,47068772.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,2005,47438365.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,2006,47785135.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,2007,48125043.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,2008,48390793.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,2009,48660459.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,2010,49024382.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,2011,49419820.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,2012,49837446.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,2013,50262658.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,2014,50681634.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,2015,51089056.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,2016,51495696.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,2017,51894938.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,2018,52272247.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,2019,52640713.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,2020,53016522.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,2021,53387102.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,2022,53756787.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,2023,54133798.0
+World Bank World Development Indicators API,SP.POP.TOTL,"Population, total",persons,MMR,2024,54500091.0
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,1960,50.0333912403217
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,1961,50.0380606882819
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,1962,50.0427972723555
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,1963,50.0482135152236
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,1964,50.0544459196651
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,1965,50.0615582769811
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,1966,50.0699253227992
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,1967,50.0773583756048
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,1968,50.0838544924572
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,1969,50.0903080607557
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,1970,50.0957856237793
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,1971,50.1012560803006
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,1972,50.107602189014
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,1973,50.1140841262814
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,1974,50.1201527067486
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,1975,50.1250887899269
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,1976,50.12985221926
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,1977,50.1344688280374
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,1978,50.1378195135792
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,1979,50.1411729198695
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,1980,50.1453221840356
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,1981,50.1494619535067
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,1982,50.1532582783047
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,1983,50.156274906531
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,1984,50.1588957983681
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,1985,50.1603398841837
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,1986,50.1600380416626
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,1987,50.1584605587008
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,1988,50.1554794266987
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,1989,50.1522646478413
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,1990,50.1490899007568
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,1991,50.144934338766
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,1992,50.1388437732706
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,1993,50.1316971110293
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,1994,50.1237494335413
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,1995,50.1139023967819
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,1996,50.1018564305388
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,1997,50.0875796218418
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,1998,50.072662910974
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,1999,50.0584289570062
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,2000,50.0443411947241
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,2001,50.0301620197828
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,2002,50.0164732052804
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,2003,50.0033363910132
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,2004,49.9908431857963
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,2005,49.9790127678512
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,2006,49.9676384723484
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,2007,49.9572083499229
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,2008,49.9669265597693
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,2009,49.9763308850005
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,2010,49.9662219090538
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,2011,49.9553276398012
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,2012,49.9441644742389
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,2013,49.9338266180397
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,2014,49.9232937122746
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,2015,49.9120388897387
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,2016,49.900974248411
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,2017,49.8903659908095
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,2018,49.8798568961461
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,2019,49.8688201683587
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,2020,49.8546462526276
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,2021,49.8364792305078
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,2022,49.8157125756844
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,2023,49.7955741031799
+World Bank World Development Indicators API,SP.POP.TOTL.MA.ZS,"Population, male",percent of total population (%),MMR,2024,49.7776067933538

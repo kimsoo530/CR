@@ -1,0 +1,1068 @@
+[
+  {
+    "page": 1,
+    "pages": 1,
+    "per_page": 20000,
+    "total": 66,
+    "sourceid": "2",
+    "lastupdated": "2026-04-08"
+  },
+  [
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2025",
+      "value": 34.5271985106049,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2024",
+      "value": 34.5370004234963,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2023",
+      "value": 34.6023441637733,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2022",
+      "value": 34.6799457556151,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2021",
+      "value": 34.7824761493515,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2020",
+      "value": 34.27603722848,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2019",
+      "value": 34.4600297054035,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2018",
+      "value": 33.8969466602328,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2017",
+      "value": 34.1292484456968,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2016",
+      "value": 33.9135996809304,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2015",
+      "value": 33.680310493222,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2014",
+      "value": 33.3700065570199,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2013",
+      "value": 33.0247275363595,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2012",
+      "value": 32.6769406795912,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2011",
+      "value": 32.3020027717975,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2010",
+      "value": 31.8520115259101,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2009",
+      "value": 31.3515462964876,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2008",
+      "value": 30.8102053600215,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2007",
+      "value": 30.2303169836512,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2006",
+      "value": 29.6160395659627,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2005",
+      "value": 28.9958861253138,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2004",
+      "value": 28.3605791824149,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2003",
+      "value": 27.7374206894191,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2002",
+      "value": 27.1298796284529,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2001",
+      "value": 26.5519470560992,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "2000",
+      "value": 26.0107837136552,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1999",
+      "value": 25.5092862420661,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1998",
+      "value": 25.088789288963,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1997",
+      "value": 24.7204278194092,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1996",
+      "value": 24.3541242596331,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1995",
+      "value": 23.9927948127397,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1994",
+      "value": 23.6593828292337,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1993",
+      "value": 23.3908064854737,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1992",
+      "value": 23.2048983814905,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1991",
+      "value": 23.0931034537764,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1990",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1989",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1988",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1987",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1986",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1985",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1984",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1983",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1982",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1981",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1980",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1979",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1978",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1977",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1976",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1975",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1974",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1973",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1972",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1971",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1970",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1969",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1968",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1967",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1966",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1965",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1964",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1963",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1962",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1961",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    },
+    {
+      "indicator": {
+        "id": "SL.EMP.WORK.ZS",
+        "value": "Wage and salaried workers, total (% of total employment) (modeled ILO estimate)"
+      },
+      "country": {
+        "id": "MM",
+        "value": "Myanmar"
+      },
+      "countryiso3code": "MMR",
+      "date": "1960",
+      "value": null,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 1
+    }
+  ]
+]

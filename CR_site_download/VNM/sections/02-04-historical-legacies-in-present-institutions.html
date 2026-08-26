@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2.4 Historical Legacies in Present Institutions | VNM Country Report</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+  <script src="../assets/chart.umd.min.js"></script>
+  <style>
+    body{margin:0;background:#f4f6f4;color:#17201b;font-family:Arial,Helvetica,sans-serif;line-height:1.65}
+    .layout{display:grid;grid-template-columns:320px minmax(0,1fr);min-height:100vh}
+    aside{position:sticky;top:0;height:100vh;overflow:auto;background:#fff;border-right:1px solid #d9ded8;padding:18px}
+    aside a{display:block;color:#25312a;text-decoration:none;border-radius:6px;padding:6px 8px;font-size:13px}
+    aside a:hover,aside a.active{background:#e8f0ea;color:#0d5a6a} summary{cursor:pointer;font-weight:700;margin:10px 0 4px}
+    .home{font-weight:800;margin-bottom:8px}
+    main{max-width:1050px;padding:36px min(6vw,72px) 90px}
+    .crumb{font-size:13px;color:#607067;margin:0 0 8px} h1{font-size:36px;line-height:1.15;margin:0 0 8px}
+    .chapter-title{color:#56645c;margin:0 0 26px}
+    .section-body,.chart-card{background:#fff;border:1px solid #d9ded8;border-radius:8px;padding:18px;margin:0 0 22px}
+    .section-body h2{font-size:26px;margin:0 0 14px} .section-body p{font-family:Georgia,'Times New Roman',serif;font-size:18px;margin:0 0 14px}
+    table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px} th,td{border:1px solid #d9ded8;padding:8px;vertical-align:top} th{background:#edf2ea;text-align:left}
+    code{background:#eef2ee;border:1px solid #d8ded8;border-radius:4px;padding:1px 4px} .source-note,figcaption{font-size:12px;color:#607067}
+    .chart-frame{height:340px} .chart-frame canvas{width:100%;height:100%}
+    .figure-card,.map-card,.symbol-figure{background:#fff;border:1px solid #d9ded8;border-radius:8px;padding:14px;margin:18px 0 24px}
+    .source{color:#607067;font-size:12px;margin:10px 0 0} .map-grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(280px,.7fr);gap:16px;align-items:start}
+    .adm-map{width:100%;height:auto;border:1px solid #d9ded8;background:#f7fbfc} .adm-path{stroke:#fff;stroke-width:.7} .map-label{font-size:6px;fill:#32424f;text-anchor:middle;pointer-events:none} .neighbor-label{font-size:12px;fill:#6c7b88}
+    .capital-marker circle{fill:#c23b22;stroke:#fff;stroke-width:1.4} .capital-marker text{font-size:12px;fill:#17212b;font-weight:700} .map-table-wrap{max-height:420px;overflow:auto}
+    .symbol-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px} .symbol-card{min-height:260px;border:1px solid #d9ded8;border-radius:8px;background:#fbfdfe;padding:14px;display:flex;flex-direction:column;gap:10px}
+    .symbol-card h3{font-size:18px;margin:2px 0 0} .symbol-card p{font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:1.48;color:#34424e;margin:0} .symbol-kicker{color:#607067;font-size:11px;text-transform:uppercase;letter-spacing:.06em}
+    .flag-indonesia{height:92px;border:1px solid #b9c6cd;border-radius:4px;overflow:hidden} .flag-indonesia span{display:block;height:50%} .flag-indonesia span:first-child{background:#c9182b} .flag-indonesia span:last-child{background:#fff}
+    .garuda-mark{height:92px;display:grid;grid-template-columns:1fr 56px 1fr;align-items:center;gap:4px} .garuda-mark .wing{height:60px;background:#c59a35;border:1px solid #9d761e} .garuda-mark .left{border-radius:60px 10px 18px 60px} .garuda-mark .right{border-radius:10px 60px 60px 18px}
+    .garuda-mark .body{height:82px;background:#d6ad46;border:1px solid #9d761e;border-radius:36px 36px 18px 18px} .garuda-mark .shield{grid-column:2;justify-self:center;margin-top:-58px;width:36px;height:42px;border-radius:8px 8px 14px 14px;background:#1f3f68;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;border:2px solid #f1d47b}
+    .motto-line{height:92px;display:flex;align-items:center;justify-content:center;text-align:center;border:1px solid #cfd9de;border-radius:6px;background:linear-gradient(180deg,#fff,#eef5f7);font-weight:800;color:#15384a;padding:12px} .anthem-bars{height:92px;display:flex;align-items:end;gap:8px;justify-content:center;border:1px solid #cfd9de;border-radius:6px;background:#f8fbfc;padding:16px}
+    .anthem-bars span{width:22px;background:#0f6f87;border-radius:4px 4px 0 0} .anthem-bars span:nth-child(1){height:38px} .anthem-bars span:nth-child(2){height:62px} .anthem-bars span:nth-child(3){height:48px} .anthem-bars span:nth-child(4){height:72px}
+    @media(max-width:860px){.layout{grid-template-columns:1fr}aside{position:relative;height:auto}main{padding:24px 18px}}
+  
+    .md-toolbar{display:flex;justify-content:flex-end;gap:8px;margin:0 0 14px}
+    .md-toolbar button{border:1px solid #0d5a6a;background:#0d5a6a;color:#fff;border-radius:5px;padding:7px 11px;font:700 12px Arial,Helvetica,sans-serif;cursor:pointer}
+    .md-toolbar button[data-md-action='cancel']{background:#fff;color:#25312a;border-color:#cfd8d3}
+    .md-editor{width:100%;min-height:520px;border:1px solid #cfd8d3;border-radius:6px;padding:14px;font:14px Consolas,monospace;line-height:1.45}
+
+  </style>
+  <script src="../assets/marked.min.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <aside><a class='home' href='../index.html'>VNM cover</a>
+<details ><summary>1. Country Overview</summary><a class='section-link ' href='01-01-national-profile.html'>1.1 National Profile</a><a class='section-link ' href='01-02-state-symbols.html'>1.2 State Symbols</a><a class='section-link ' href='01-03-geography-and-administrative-divisions.html'>1.3 Geography and Administrative Divisions</a><a class='section-link ' href='01-04-core-institutional-diagnosis.html'>1.4 Core Institutional Diagnosis</a><a class='section-link ' href='01-05-evidence-base.html'>1.5 Evidence Base and Reading Direction</a></details>
+<details open><summary>2. Historical Background</summary><a class='section-link ' href='02-01-civilizational-layers-and-frontier-statecraft.html'>2.1 Civilizational Layers and Frontier Statecraft</a><a class='section-link ' href='02-02-colonial-rule-revolution-and-war.html'>2.2 Colonial Rule, Revolution, and War</a><a class='section-link ' href='02-03-reunification-and-doi-moi.html'>2.3 Reunification and Doi Moi</a><a class='section-link active' href='02-04-historical-legacies-in-present-institutions.html'>2.4 Historical Legacies in Present Institutions</a></details>
+<details ><summary>3. Constitution and Basic State Order</summary><a class='section-link ' href='03-01-constitutional-order-and-amendments.html'>3.1 Constitutional Order, Ownership, and the Architecture of State Power</a><a class='section-link ' href='03-02-sovereignty-party-leadership-and-territorial-integrity.html'>3.2 Sovereignty, Party Leadership, and Territorial Integrity</a><a class='section-link ' href='03-03-rights-duties-and-socialist-rule-of-law.html'>3.3 Rights, Duties, and Socialist Rule of Law</a><a class='section-link ' href='03-04-state-power-review-audit-and-emergency-authority.html'>3.4 State Power, Review, Audit, and Emergency Authority</a></details>
+<details ><summary>4. Political System and Power Structure</summary><a class='section-link ' href='04-01-party-leadership-and-state-institutions.html'>4.1 Party Leadership and State Institutions</a><a class='section-link ' href='04-02-national-assembly-elections-and-representation.html'>4.2 National Assembly, Elections, and Representation</a><a class='section-link ' href='04-03-executive-coordination-and-government-formation.html'>4.3 Executive Coordination and Government Formation</a><a class='section-link ' href='04-04-judiciary-rule-of-law-corruption-and-accountability.html'>4.4 Courts, Procuracy, Inspection, and Anti-Corruption</a><a class='section-link ' href='04-05-local-politics-and-real-power-relations.html'>4.5 Local Politics and Real Power Relations</a><a class='section-link ' href='04-06-political-system-diagnostics-and-democratic-trajectory.html'>4.6 Political System Diagnostics and Democratic Trajectory</a></details>
+<details ><summary>5. Administrative System and Government Organization</summary><a class='section-link ' href='05-01-central-government-and-ministerial-system.html'>5.1 Central Government and Ministerial System</a><a class='section-link ' href='05-02-organizational-management-and-bureaucratic-reform.html'>5.2 Organizational Management and Bureaucratic Reform</a><a class='section-link ' href='05-03-human-resource-management-and-civil-service.html'>5.3 Human Resource Management and Civil Service</a><a class='section-link ' href='05-04-financial-administration-procurement-audit-and-inspection.html'>5.4 Financial Administration, Procurement, Audit, and Inspection</a><a class='section-link ' href='05-05-local-administration-and-service-delivery.html'>5.5 Local Administration and Service Delivery</a><a class='section-link ' href='05-06-digital-government-and-administrative-accountability.html'>5.6 Digital Government and Administrative Accountability</a><a class='section-link ' href='05-07-implementation-capacity-and-administrative-performance.html'>5.7 Implementation Capacity and Administrative Performance</a></details>
+<details ><summary>6. Governance and Institutional Capacity</summary><a class='section-link ' href='06-01-government-effectiveness-and-regulatory-quality.html'>6.1 Government Effectiveness and Regulatory Quality</a><a class='section-link ' href='06-02-rule-of-law-and-corruption-control.html'>6.2 Rule of Law and Corruption Control</a><a class='section-link ' href='06-03-voice-accountability-and-stability.html'>6.3 Voice, Accountability, and Stability</a><a class='section-link ' href='06-04-what-governance-indicators-reveal.html'>6.4 What Governance Indicators Reveal</a></details>
+<details ><summary>7. Fiscal System and Public Sector</summary><a class='section-link ' href='07-01-revenue-taxation-and-expenditure.html'>7.1 Revenue, Taxation, and Expenditure</a><a class='section-link ' href='07-02-deficit-debt-and-fiscal-space.html'>7.2 Fiscal Balance, Debt, and Fiscal Space</a><a class='section-link ' href='07-03-public-investment-soes-and-quasi-fiscal-risk.html'>7.3 Public Investment, Procurement, SOEs, and Quasi-Fiscal Risk</a><a class='section-link ' href='07-04-budget-decentralization-and-audit.html'>7.4 Budget Decentralization, Procurement Oversight, and Audit</a><a class='section-link ' href='07-05-fiscal-capacity-and-public-sector-risks.html'>7.5 Fiscal Capacity and Public Sector Risks</a></details>
+<details ><summary>8. Population and Social Structure</summary><a class='section-link ' href='08-01-population-scale-and-age-structure.html'>8.1 Population Scale and Age Structure</a><a class='section-link ' href='08-02-urbanization-and-regional-distribution.html'>8.2 Urbanization and Regional Distribution</a><a class='section-link ' href='08-03-ethnicity-language-religion-and-social-cohesion.html'>8.3 Ethnicity, Language, Religion, and Social Cohesion</a><a class='section-link ' href='08-04-migration-remittances-and-inclusion.html'>8.4 Migration, Remittances, and Inclusion</a></details>
+<details ><summary>9. Macroeconomic Structure</summary><a class='section-link ' href='09-01-gdp-scale-growth-and-income.html'>9.1 GDP Scale, Growth, and Income Level</a><a class='section-link ' href='09-02-inflation-exchange-rate-and-macro-stability.html'>9.2 Inflation, Exchange-Rate Management, and Macro Stability</a><a class='section-link ' href='09-03-industrial-structure-and-productivity.html'>9.3 Industrial Structure, Sectoral Transformation, and Productivity</a><a class='section-link ' href='09-04-growth-model-and-structural-vulnerabilities.html'>9.4 External Position, Trade Balance, and Structural Constraints</a><a class='section-link ' href='09-05-growth-driver-model-and-interpretation.html'>9.5 Growth Driver Model and Interpretation</a></details>
+<details ><summary>10. Trade, Investment, and External Economy</summary><a class='section-link ' href='10-01-exports-imports-and-current-account.html'>10.1 Export-Import Trends, Trade Dependence, and Export Transformation</a><a class='section-link ' href='10-02-fdi-and-export-manufacturing.html'>10.2 FDI and Export Manufacturing</a><a class='section-link ' href='10-03-trading-partners-supply-chains-and-technology-upgrading.html'>10.3 Trading Partners, Supply Chains, and Technology Upgrading</a><a class='section-link ' href='10-04-investment-rules-zones-and-industrial-policy.html'>10.4 Investment Rules, Zones, and Industrial Policy</a></details>
+<details ><summary>11. Infrastructure, Energy, and Digital Connectivity</summary><a class='section-link ' href='11-01-energy-access-and-power-system-reform.html'>11.1 Energy Access and Power System Reform</a><a class='section-link ' href='11-02-transport-logistics-and-corridors.html'>11.2 Transport, Logistics, and Corridors</a><a class='section-link ' href='11-03-digital-connectivity.html'>11.3 Digital Connectivity, AI Infrastructure, and the Digital Economy</a><a class='section-link ' href='11-04-infrastructure-governance-and-climate-resilience.html'>11.4 Infrastructure Governance and Climate Resilience</a></details>
+<details ><summary>12. Labor Market and Human Capital</summary><a class='section-link ' href='12-01-labor-force-and-participation.html'>12.1 Labor Force and Participation</a><a class='section-link ' href='12-02-women-youth-and-informality.html'>12.2 Women, Youth, and Informality</a><a class='section-link ' href='12-03-agricultural-employment-and-productivity.html'>12.3 Agricultural Employment and Productivity</a><a class='section-link ' href='12-04-skills-education-and-human-capital.html'>12.4 Skills, Education, and Human Capital</a></details>
+<details ><summary>13. Education, Health, and Welfare</summary><a class='section-link ' href='13-01-education-system-and-public-spending.html'>13.1 Education System, Skills Policy, and Public Spending</a><a class='section-link ' href='13-02-health-outcomes-and-service-capacity.html'>13.2 Health Care, Population Ageing, and Financial Protection</a><a class='section-link ' href='13-03-water-sanitation-nutrition-and-welfare.html'>13.3 Water, Sanitation, Nutrition, and Welfare</a><a class='section-link ' href='13-04-human-development-and-territorial-equity.html'>13.4 Human Development and Territorial Equity</a></details>
+<details ><summary>14. Financial Sector and Economic Institutions</summary><a class='section-link ' href='14-01-banks-credit-and-capital-markets.html'>14.1 Banks, Credit, and Capital Markets</a><a class='section-link ' href='14-02-state-bank-of-vietnam-and-financial-supervision.html'>14.2 State Bank of Vietnam and Financial Supervision</a><a class='section-link ' href='14-03-fintech-payments-and-inclusion.html'>14.3 Fintech, Payments, and Inclusion</a><a class='section-link ' href='14-04-financial-stability-and-reform-priorities.html'>14.4 Financial Stability and Reform Priorities</a></details>
+<details ><summary>15. Foreign Relations, Security, and Geopolitics</summary><a class='section-link ' href='15-01-bamboo-diplomacy-and-asean.html'>15.1 Bamboo Diplomacy, ASEAN, and the Evolution of Vietnam’s Foreign Policy Principles</a><a class='section-link ' href='15-02-china-the-united-states-and-the-east-sea.html'>15.2 China, the United States, and the East Sea</a><a class='section-link ' href='15-03-defense-police-border-and-transnational-risks.html'>15.3 Defense, Police, Border, and Transnational Risks</a><a class='section-link ' href='15-04-mekong-energy-security-and-strategic-corridors.html'>15.4 Mekong, Energy Security, and Strategic Corridors</a></details>
+<details ><summary>16. Major Policies and National Development Strategy</summary><a class='section-link ' href='16-01-evolution-of-national-development-strategy.html'>16.1 Evolution of National Development Strategy</a><a class='section-link ' href='16-02-socio-economic-development-strategy-2021-2030.html'>16.2 Socio-Economic Development Strategy 2021-2030</a><a class='section-link ' href='16-03-administrative-restructuring-and-public-administration-reform.html'>16.3 Administrative Restructuring and Public Administration Reform</a><a class='section-link ' href='16-04-digital-green-and-industrial-transformation.html'>16.4 Digital, Green, and Industrial Transformation</a><a class='section-link ' href='16-05-implementation-matrix-and-risks.html'>16.5 Implementation Matrix and Risks</a><a class='section-link ' href='16-06-green-growth-climate-governance-and-sdg-implementation.html'>16.6 Green Growth, Climate Governance, and SDG Implementation</a></details>
+<details ><summary>17. Integrated Assessment</summary><a class='section-link ' href='17-01-national-operating-model.html'>17.1 National Operating Model</a><a class='section-link ' href='17-02-institutional-strengths-risks-and-bottlenecks.html'>17.2 Institutional Strengths, Risks, and Bottlenecks</a><a class='section-link ' href='17-03-implications-for-korea-and-international-cooperation.html'>17.3 Implications for Korea and International Cooperation</a><a class='section-link ' href='17-04-vietnam-and-comparative-administration-theory.html'>17.4 Vietnam and Comparative Administration Theory</a><a class='section-link ' href='17-05-strategic-outlook.html'>17.5 Strategic Outlook</a></details>
+<details ><summary>18. Appendix, Sources, and Method</summary><a class='section-link ' href='18-01-timeline.html'>18.1 Timeline</a><a class='section-link ' href='18-02-government-organization-chart.html'>18.2 Government Organization Chart</a><a class='section-link ' href='18-03-major-laws-and-policy-documents.html'>18.3 Major Laws and Policy Documents</a><a class='section-link ' href='18-04-indicator-codebook.html'>18.4 Indicator Codebook</a><a class='section-link ' href='18-05-update-workflow-and-evidence-archive.html'>18.5 Update Workflow and Evidence Archive</a></details>
+<details ><summary>19. References</summary><a class='section-link ' href='19-01-references.html'>19.1 References</a><a class='section-link ' href='19-02-citation-and-source-integrity-notes.html'>19.2 Citation and Source Integrity Notes</a></details></aside>
+    <main>
+      <p class="crumb"><a href="../02-history.html">Chapter 2</a> / Section 4</p>
+      <h1>2.4 Historical Legacies in Present Institutions</h1>
+      <p class="chapter-title">2. Historical Background</p>
+      <article class="section-body editable-section" data-md-panel="02-04-historical-legacies-in-present-institutions" data-md-source="sections/02-04-historical-legacies-in-present-institutions.md">
+  <div class="md-toolbar">
+    <button type="button" data-md-action="edit">Edit Markdown</button>
+    <button type="button" data-md-action="save" hidden>Save</button>
+    <button type="button" data-md-action="cancel" hidden>Cancel</button>
+  </div>
+  <div class="md-preview"><h2 id='2-4-historical-legacies-in-present-institutions'>2.4 Historical Legacies in Present Institutions</h2>
+<p><strong>ASEAN comparative lens (2026).</strong> Vietnam should be read in ASEAN comparison as ASEAN&#x27;s most prominent party-led, export-manufacturing upgrading case. Unlike the Philippines&#x27; service-remittance profile, Thailand&#x27;s older industrial-tourism base, Malaysia&#x27;s resource-industrial federal structure, or Indonesia&#x27;s archipelagic domestic-market scale, Vietnam&#x27;s comparative issue is how a socialist party-state manages very open global production networks. For this section, the regional comparison should compare historical state formation with the region&#x27;s colonial, revolutionary, monarchical, socialist, military, and post-conflict legacies. Local comparable indicators show: population 100.99 million (2024), rank 3 among the nine ASEAN reports in this workspace; GDP US$476.39 billion (2024), rank 4 among the nine ASEAN reports in this workspace; GDP per capita US$4,717 (2024), rank 5 among the nine ASEAN reports in this workspace; real GDP growth 7.09% (2024), rank 1 among the nine ASEAN reports in this workspace; government effectiveness 0.09 (2023), rank 6 among the nine ASEAN reports in this workspace; internet use 84.15% (2024), rank 4 among the nine ASEAN reports in this workspace. Use `sources/documents/regional/asean_comparative_lens_2026.md` together with ASEANstats, ASEAN Secretariat materials, and the country processed-indicator files before making cross-ASEAN claims.</p>
+<p>Vietnam&#x27;s contemporary institutions are best understood as a layered administrative order. They contain elements of imperial statecraft, village mediation, colonial legal-bureaucratic practice, revolutionary mobilization, socialist planning, and Doi Moi pragmatism. These layers do not sit quietly in the background. They shape how authority is justified, how officials are recruited and disciplined, how policy is coordinated, how provinces negotiate with the center, how citizens approach the state, and how the government manages openness to the world economy while defending political control.</p>
+<p>The first legacy is the centrality of national unity. Vietnamese history has repeatedly linked state legitimacy to the defense of territorial integrity: resisting northern imperial pressure, governing a long north-south frontier, overcoming French colonial division, fighting wars of reunification, and managing contemporary disputes in the South China Sea. This helps explain why the Vietnamese state treats constitutional order, territorial administration, border management, party discipline, and public security as parts of the same governing problem. Administrative reform is therefore rarely presented only as a technical matter. It is connected to the wider project of building a capable, unified, and resilient state.</p>
+<p>The second legacy is central-local duality. Vietnam has long combined a strong symbolic center with reliance on local institutions. Imperial rulers needed village notables, tax intermediaries, and local moral authority. Colonial officials depended on provincial and district intermediaries. Revolutionary organizations built power through local committees, mass organizations, and village-level cadres. Doi Moi then made provinces central to investment attraction, land conversion, industrial zones, infrastructure delivery, and administrative experimentation. The result is a system in which the center sets strategic direction, personnel rules, fiscal norms, and legal frameworks, while local governments determine much of the practical meaning of policy. This gives Vietnam flexibility, but it also produces uneven implementation, local protectionism, land conflict, and accountability challenges.</p>
+<p>The third legacy is party-state fusion. Revolutionary state-building treated political organization and administrative implementation as mutually dependent. The Communist Party did more than sit above the bureaucracy; it built the networks through which policy, discipline, mobilization, and legitimacy could reach local society. Today, formal state institutions such as the National Assembly, Government, ministries, courts, provinces, and communes operate within a wider party-led order. Personnel evaluation, anti-corruption discipline, strategic planning, and major policy direction are shaped by party organs as well as state law. This fusion can support coordination and long-term planning, but it also means that accountability often flows through internal party discipline, inspection, audit, and administrative supervision rather than through alternation of governing parties.</p>
+<p>The fourth legacy is pragmatic legalism. Since Doi Moi, law has become more important in Vietnam. The constitution, administrative procedure, enterprise law, investment law, budget law, land law, procurement rules, and public investment regulations all matter for governance. International integration has reinforced this legal modernization. Yet legality operates within a political framework that does not treat courts as the supreme arbiters of political power. Law is used to stabilize markets, professionalize administration, clarify state authority, discipline officials, and manage social conflict, but it remains embedded in party leadership. This combination is central to Vietnam&#x27;s governance: the state is more legalistic than a simple command system, but less judicialized than liberal constitutionalism.</p>
+<p>The fifth legacy is mobilizational governance. Vietnam&#x27;s mass organizations, neighborhood structures, party cells, security networks, and administrative campaigns reflect the revolutionary experience of governing through organized society. This can be effective in vaccination campaigns, disaster response, poverty reduction, social monitoring, and national programs. It also creates a style of implementation in which persuasion, discipline, reporting, and campaign targets supplement routine service delivery. The same legacy can become a weakness when complex policy problems require independent feedback, professional autonomy, citizen contestation, or transparent evaluation rather than target compliance.</p>
+<p>The sixth legacy is the developmental role of land and public investment. Imperial and colonial governance made land a core object of political authority; socialist transformation and Doi Moi kept land at the center of state power. Vietnam&#x27;s constitution recognizes public ownership of land, while households, firms, and investors operate through land-use rights. This arrangement has enabled the state to mobilize land for infrastructure, industrial zones, urban development, and fiscal resources. It has also made land one of the most politically sensitive arenas of governance. Disputes over compensation, resettlement, local discretion, corruption, and environmental effects reveal how historical state authority over land continues to shape modern development.</p>
+<p>The seventh legacy is external balancing. Vietnam has never been able to understand domestic administration separately from its international environment. China is simultaneously a historical reference point, a security concern, a major trading partner, and a powerful neighbor whose economic weight cannot be ignored. ASEAN offers regional embedding and diplomatic space. The United States, Japan, Korea, the European Union, and multilateral institutions provide markets, investment, technology, development finance, and strategic options. Vietnam&#x27;s administrative system therefore faces a double task: it must be open enough to benefit from global production networks, yet coherent enough to manage dependency, strategic risk, and domestic adjustment.</p>
+<p>These legacies produce a distinctive governing model. Vietnam is not adequately described by one label such as authoritarian state, developmental state, socialist state, or export-led economy. It is a historically layered implementation state: a party-led system that uses law, planning, public investment, market incentives, provincial competition, mass mobilization, and international integration to convert national goals into administrative action. Its strengths are coherence, long-term strategic orientation, local experimentation, and the ability to mobilize society. Its weaknesses are uneven implementation, limited public contestation, corruption risks, land conflict, bureaucratic caution, and the difficulty of coordinating complex reforms across ministries and provinces.</p>
+<table><thead><tr><th>Historical layer</th><th>Present institutional expression</th><th>Policy strength</th><th>Policy risk</th></tr></thead><tbody><tr><td>Imperial and village governance</td><td>Central authority implemented through local mediation</td><td>Local embeddedness and administrative reach</td><td>Uneven enforcement and dependence on local discretion</td></tr><tr><td>French colonial administration</td><td>Legal records, territorial classification, infrastructure, courts, police</td><td>Administrative documentation and territorial management</td><td>Public suspicion of coercive bureaucracy and sensitivity to sovereignty</td></tr><tr><td>Revolutionary mobilization</td><td>Party networks, mass organizations, cadre discipline, security institutions</td><td>Campaign capacity and political coordination</td><td>Weak independent feedback and constrained pluralism</td></tr><tr><td>Socialist planning</td><td>State ownership, planning agencies, public investment, personnel control</td><td>Strategic direction and national development programs</td><td>State enterprise inefficiency, administrative allocation bias, and rent-seeking</td></tr><tr><td>Doi Moi pragmatism</td><td>Market regulation, foreign investment, provincial competition, pilot reforms</td><td>Flexible adaptation and growth-oriented governance</td><td>Coordination problems, regional inequality, land disputes, and corruption risks</td></tr><tr><td>Global integration</td><td>Trade agreements, FDI, supply-chain participation, donor and multilateral standards</td><td>External discipline and technology transfer</td><td>Exposure to geopolitical and market shocks</td></tr></tbody></table>
+<p>This history changes the interpretation of every later chapter. The constitution is not only a legal text; it is a statement of party-led national order. The bureaucracy is not only an administrative workforce; it is a cadre system embedded in political discipline. Local government is not only a delivery apparatus; it is where national strategy meets land, investment, social conflict, and citizen experience. Fiscal administration is not only budget management; it is a test of whether the state can align planning, public investment, audit, procurement, and local incentives. Digital government is not only a technology agenda; it is a new attempt to make the state more legible, coordinated, and accountable without abandoning the party-led structure that shaped modern Vietnam.</p></div>
+  <textarea class="md-editor" hidden>## 2.4 Historical Legacies in Present Institutions
+
+&lt;!-- asean-comparative-lens-2026:start --&gt;
+**ASEAN comparative lens (2026).** Vietnam should be read in ASEAN comparison as ASEAN&#x27;s most prominent party-led, export-manufacturing upgrading case. Unlike the Philippines&#x27; service-remittance profile, Thailand&#x27;s older industrial-tourism base, Malaysia&#x27;s resource-industrial federal structure, or Indonesia&#x27;s archipelagic domestic-market scale, Vietnam&#x27;s comparative issue is how a socialist party-state manages very open global production networks. For this section, the regional comparison should compare historical state formation with the region&#x27;s colonial, revolutionary, monarchical, socialist, military, and post-conflict legacies. Local comparable indicators show: population 100.99 million (2024), rank 3 among the nine ASEAN reports in this workspace; GDP US$476.39 billion (2024), rank 4 among the nine ASEAN reports in this workspace; GDP per capita US$4,717 (2024), rank 5 among the nine ASEAN reports in this workspace; real GDP growth 7.09% (2024), rank 1 among the nine ASEAN reports in this workspace; government effectiveness 0.09 (2023), rank 6 among the nine ASEAN reports in this workspace; internet use 84.15% (2024), rank 4 among the nine ASEAN reports in this workspace. Use `sources/documents/regional/asean_comparative_lens_2026.md` together with ASEANstats, ASEAN Secretariat materials, and the country processed-indicator files before making cross-ASEAN claims.
+&lt;!-- asean-comparative-lens-2026:end --&gt;
+
+Vietnam&#x27;s contemporary institutions are best understood as a layered administrative order. They contain elements of imperial statecraft, village mediation, colonial legal-bureaucratic practice, revolutionary mobilization, socialist planning, and Doi Moi pragmatism. These layers do not sit quietly in the background. They shape how authority is justified, how officials are recruited and disciplined, how policy is coordinated, how provinces negotiate with the center, how citizens approach the state, and how the government manages openness to the world economy while defending political control.
+
+The first legacy is the centrality of national unity. Vietnamese history has repeatedly linked state legitimacy to the defense of territorial integrity: resisting northern imperial pressure, governing a long north-south frontier, overcoming French colonial division, fighting wars of reunification, and managing contemporary disputes in the South China Sea. This helps explain why the Vietnamese state treats constitutional order, territorial administration, border management, party discipline, and public security as parts of the same governing problem. Administrative reform is therefore rarely presented only as a technical matter. It is connected to the wider project of building a capable, unified, and resilient state.
+
+The second legacy is central-local duality. Vietnam has long combined a strong symbolic center with reliance on local institutions. Imperial rulers needed village notables, tax intermediaries, and local moral authority. Colonial officials depended on provincial and district intermediaries. Revolutionary organizations built power through local committees, mass organizations, and village-level cadres. Doi Moi then made provinces central to investment attraction, land conversion, industrial zones, infrastructure delivery, and administrative experimentation. The result is a system in which the center sets strategic direction, personnel rules, fiscal norms, and legal frameworks, while local governments determine much of the practical meaning of policy. This gives Vietnam flexibility, but it also produces uneven implementation, local protectionism, land conflict, and accountability challenges.
+
+The third legacy is party-state fusion. Revolutionary state-building treated political organization and administrative implementation as mutually dependent. The Communist Party did more than sit above the bureaucracy; it built the networks through which policy, discipline, mobilization, and legitimacy could reach local society. Today, formal state institutions such as the National Assembly, Government, ministries, courts, provinces, and communes operate within a wider party-led order. Personnel evaluation, anti-corruption discipline, strategic planning, and major policy direction are shaped by party organs as well as state law. This fusion can support coordination and long-term planning, but it also means that accountability often flows through internal party discipline, inspection, audit, and administrative supervision rather than through alternation of governing parties.
+
+The fourth legacy is pragmatic legalism. Since Doi Moi, law has become more important in Vietnam. The constitution, administrative procedure, enterprise law, investment law, budget law, land law, procurement rules, and public investment regulations all matter for governance. International integration has reinforced this legal modernization. Yet legality operates within a political framework that does not treat courts as the supreme arbiters of political power. Law is used to stabilize markets, professionalize administration, clarify state authority, discipline officials, and manage social conflict, but it remains embedded in party leadership. This combination is central to Vietnam&#x27;s governance: the state is more legalistic than a simple command system, but less judicialized than liberal constitutionalism.
+
+The fifth legacy is mobilizational governance. Vietnam&#x27;s mass organizations, neighborhood structures, party cells, security networks, and administrative campaigns reflect the revolutionary experience of governing through organized society. This can be effective in vaccination campaigns, disaster response, poverty reduction, social monitoring, and national programs. It also creates a style of implementation in which persuasion, discipline, reporting, and campaign targets supplement routine service delivery. The same legacy can become a weakness when complex policy problems require independent feedback, professional autonomy, citizen contestation, or transparent evaluation rather than target compliance.
+
+The sixth legacy is the developmental role of land and public investment. Imperial and colonial governance made land a core object of political authority; socialist transformation and Doi Moi kept land at the center of state power. Vietnam&#x27;s constitution recognizes public ownership of land, while households, firms, and investors operate through land-use rights. This arrangement has enabled the state to mobilize land for infrastructure, industrial zones, urban development, and fiscal resources. It has also made land one of the most politically sensitive arenas of governance. Disputes over compensation, resettlement, local discretion, corruption, and environmental effects reveal how historical state authority over land continues to shape modern development.
+
+The seventh legacy is external balancing. Vietnam has never been able to understand domestic administration separately from its international environment. China is simultaneously a historical reference point, a security concern, a major trading partner, and a powerful neighbor whose economic weight cannot be ignored. ASEAN offers regional embedding and diplomatic space. The United States, Japan, Korea, the European Union, and multilateral institutions provide markets, investment, technology, development finance, and strategic options. Vietnam&#x27;s administrative system therefore faces a double task: it must be open enough to benefit from global production networks, yet coherent enough to manage dependency, strategic risk, and domestic adjustment.
+
+These legacies produce a distinctive governing model. Vietnam is not adequately described by one label such as authoritarian state, developmental state, socialist state, or export-led economy. It is a historically layered implementation state: a party-led system that uses law, planning, public investment, market incentives, provincial competition, mass mobilization, and international integration to convert national goals into administrative action. Its strengths are coherence, long-term strategic orientation, local experimentation, and the ability to mobilize society. Its weaknesses are uneven implementation, limited public contestation, corruption risks, land conflict, bureaucratic caution, and the difficulty of coordinating complex reforms across ministries and provinces.
+
+| Historical layer | Present institutional expression | Policy strength | Policy risk |
+|---|---|---|---|
+| Imperial and village governance | Central authority implemented through local mediation | Local embeddedness and administrative reach | Uneven enforcement and dependence on local discretion |
+| French colonial administration | Legal records, territorial classification, infrastructure, courts, police | Administrative documentation and territorial management | Public suspicion of coercive bureaucracy and sensitivity to sovereignty |
+| Revolutionary mobilization | Party networks, mass organizations, cadre discipline, security institutions | Campaign capacity and political coordination | Weak independent feedback and constrained pluralism |
+| Socialist planning | State ownership, planning agencies, public investment, personnel control | Strategic direction and national development programs | State enterprise inefficiency, administrative allocation bias, and rent-seeking |
+| Doi Moi pragmatism | Market regulation, foreign investment, provincial competition, pilot reforms | Flexible adaptation and growth-oriented governance | Coordination problems, regional inequality, land disputes, and corruption risks |
+| Global integration | Trade agreements, FDI, supply-chain participation, donor and multilateral standards | External discipline and technology transfer | Exposure to geopolitical and market shocks |
+
+This history changes the interpretation of every later chapter. The constitution is not only a legal text; it is a statement of party-led national order. The bureaucracy is not only an administrative workforce; it is a cadre system embedded in political discipline. Local government is not only a delivery apparatus; it is where national strategy meets land, investment, social conflict, and citizen experience. Fiscal administration is not only budget management; it is a test of whether the state can align planning, public investment, audit, procurement, and local incentives. Digital government is not only a technology agenda; it is a new attempt to make the state more legible, coordinated, and accountable without abandoning the party-led structure that shaped modern Vietnam.</textarea>
+</article>
+      
+    </main>
+  </div>
+  <script>
+    window.REPORT_CHARTS = [];
+    document.addEventListener('DOMContentLoaded', () => {
+      if (!window.Chart || !window.REPORT_CHARTS) return;
+      window.REPORT_CHARTS.forEach((entry) => {
+        const cfg = entry.data || {};
+        const el = document.getElementById('chart-' + entry.id);
+        if (!el || !cfg.datasets) return;
+        const colors = ['#197278', '#246b46', '#b7860b', '#7b2d26', '#3f4e9a', '#6a4c93'];
+        const dashes = [[], [8, 4], [2, 3], [10, 4, 2, 4], [1, 4], [12, 3, 3, 3]];
+        const pointStyles = ['circle', 'rect', 'triangle', 'rectRot', 'crossRot', 'star'];
+        const datasets = (cfg.datasets || []).map((dataset, i) => ({
+          ...dataset,
+          borderColor: dataset.borderColor || colors[i % colors.length],
+          backgroundColor: dataset.backgroundColor || 'transparent',
+          borderDash: dataset.borderDash || dashes[i % dashes.length],
+          borderWidth: dataset.borderWidth || 2.4,
+          pointStyle: dataset.pointStyle || pointStyles[i % pointStyles.length],
+          pointRadius: dataset.pointRadius ?? 1.8,
+          tension: dataset.tension ?? 0.25,
+          spanGaps: dataset.spanGaps ?? true
+        }));
+        new Chart(el, {
+          type: 'line',
+          data: { labels: cfg.labels || [], datasets },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            interaction: { mode: 'index', intersect: false },
+            plugins: { legend: { position: 'bottom', labels: { boxWidth: 28 } } },
+            scales: { x: { title: { display: true, text: 'Year' } }, y: { title: { display: true, text: cfg.unit || 'Value' } } }
+          }
+        });
+      });
+    });
+  </script>
+  <script src="../assets/report.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  function fallbackMarkdown(text) {
+    const escaped = text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    return escaped.split(/\n{2,}/).map((block) => `<p>${block.replace(/\n/g, "<br>")}</p>`).join("");
+  }
+  function renderMarkdown(text) {
+    return window.marked ? marked.parse(text) : fallbackMarkdown(text);
+  }
+  document.querySelectorAll('[data-md-panel]').forEach((panel) => {
+    const id = panel.getAttribute('data-md-panel');
+    const source = panel.getAttribute('data-md-source');
+    const preview = panel.querySelector('.md-preview');
+    const editor = panel.querySelector('.md-editor');
+    const edit = panel.querySelector('[data-md-action="edit"]');
+    const save = panel.querySelector('[data-md-action="save"]');
+    const cancel = panel.querySelector('[data-md-action="cancel"]');
+    if (!preview || !editor || !edit || !save || !cancel) return;
+    const storageKey = `country-report-markdown:v1:${source || id}`;
+    const original = editor.value;
+    const stored = localStorage.getItem(storageKey);
+    const hasStoredDraft = stored !== null && (!source || window.location.protocol === 'file:');
+    if (hasStoredDraft) editor.value = stored;
+    const showPreview = () => { preview.innerHTML = renderMarkdown(editor.value); };
+    const setEditing = (editing) => {
+      editor.hidden = !editing;
+      preview.hidden = editing;
+      edit.hidden = editing;
+      save.hidden = !editing;
+      cancel.hidden = !editing;
+    };
+    async function saveMarkdown() {
+      if (source && window.location.protocol.startsWith('http')) {
+        const response = await fetch('/api/save-section', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ source, markdown: editor.value })
+        });
+        if (!response.ok) throw new Error(await response.text());
+        localStorage.removeItem(storageKey);
+        return true;
+      } else {
+        localStorage.setItem(storageKey, editor.value);
+        if (source) window.alert('This edit was saved only as a browser draft. Open the report through code/serve_report.py to save it permanently to the Markdown source file.');
+        return false;
+      }
+    }
+    if (hasStoredDraft) showPreview();
+    setEditing(false);
+    edit.addEventListener('click', () => setEditing(true));
+    save.addEventListener('click', async () => {
+      save.disabled = true;
+      try {
+        const savedToServer = await saveMarkdown();
+        if (savedToServer) {
+          window.location.reload();
+          return;
+        }
+        showPreview();
+        setEditing(false);
+      } catch (error) {
+        window.alert(error.message || 'Could not save the Markdown source.');
+      } finally {
+        save.disabled = false;
+      }
+    });
+    cancel.addEventListener('click', () => {
+      editor.value = localStorage.getItem(storageKey) ?? original;
+      if (hasStoredDraft || window.location.protocol === 'file:') showPreview();
+      setEditing(false);
+    });
+  });
+});
+</script>
+
+</body>
+</html>

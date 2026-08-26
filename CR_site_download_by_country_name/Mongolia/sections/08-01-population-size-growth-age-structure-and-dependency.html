@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>8.1 Population Size, Growth, Age Structure, and Dependency | Mongolia Country Report</title>
+  <script src="../assets/marked.min.js"></script>
+  <script src="../assets/chart.umd.min.js"></script>
+  <style>
+    :root { --ink: #162029; --muted: #62707c; --line: #d8e0e6; --panel: #f5f7f8; --accent: #0f6f78; --accent2: #7a5b1e; --paper: #ffffff; --soft: #edf5f2; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: var(--ink); background: var(--paper); line-height: 1.62; }
+    .layout { display: grid; grid-template-columns: 310px minmax(0, 1fr); min-height: 100vh; }
+    .toc { position: sticky; top: 0; height: 100vh; overflow: auto; border-right: 1px solid var(--line); background: var(--panel); padding: 22px 18px; }
+    .toc h1 { font-size: 20px; margin: 0 0 6px; }
+    .toc h1 a { color: var(--ink); text-decoration: none; }
+    .toc p { color: var(--muted); font-size: 13px; margin: 0 0 18px; }
+    nav a { display: block; color: var(--ink); text-decoration: none; padding: 8px 10px; border-radius: 6px; font-size: 14px; }
+    nav a:hover, nav a.active { background: #e3f0ef; color: var(--accent); }
+    .chapter-link { font-weight: 700; }
+    .toc-group { margin: 1px 0; border-radius: 6px; }
+    .toc-group summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 4px; }
+    .toc-group summary::-webkit-details-marker { display: none; }
+    .toc-group summary::before { content: ">"; color: var(--muted); font-size: 12px; transition: transform .12s ease; }
+    .toc-group[open] summary::before { transform: rotate(90deg); }
+    .toc-group summary a { flex: 1; }
+    .section-nav { margin: 2px 0 8px 8px; padding-left: 10px; border-left: 2px solid #cdd9df; }
+    .section-link { padding: 5px 8px; font-size: 12px; color: var(--muted); line-height: 1.35; }
+    main { padding: 34px min(6vw, 82px); max-width: 1120px; }
+    .hero { border-bottom: 1px solid var(--line); padding-bottom: 20px; margin-bottom: 24px; }
+    .hero h2 { font-size: 34px; margin: 0 0 8px; letter-spacing: 0; }
+    .hero p, .chapter-landing-note { color: var(--muted); max-width: 860px; }
+    .chapter-thesis { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 16px; border: 1px solid var(--line); border-radius: 8px; padding: 14px; background: var(--soft); margin: 18px 0; }
+    .chapter-thesis b { color: var(--accent); }
+    .chapter-section-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 12px; margin: 18px 0 28px; }
+    .chapter-section-card { border: 1px solid var(--line); border-radius: 8px; background: #fff; padding: 14px; }
+    .chapter-section-card a { display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: 10px; align-items: start; text-decoration: none; color: var(--ink); }
+    .chapter-section-card span { font-weight: 800; color: var(--accent); font-size: 15px; }
+    .chapter-section-card strong { font-size: 16px; line-height: 1.35; }
+    .chapter-section-card p { color: var(--muted); font-size: 13px; margin: 10px 0 0; }
+    .section-reading { max-width: 940px; }
+    .editable-prose { border: 1px solid var(--line); border-radius: 8px; background: #fff; overflow: hidden; }
+    .prose-toolbar { display: flex; justify-content: space-between; gap: 10px; align-items: center; border-bottom: 1px solid var(--line); background: #f8fafb; padding: 10px 12px; color: var(--muted); font-size: 13px; }
+    .prose-toolbar button, .primary-link, .secondary-link { border: 1px solid var(--accent); border-radius: 6px; background: var(--accent); color: #fff; padding: 7px 10px; text-decoration: none; cursor: pointer; font-weight: 700; font-size: 13px; }
+    .prose-toolbar button[data-md-action='cancel'], .secondary-link { background: #fff; color: var(--accent); }
+    .prose-body { padding: 18px 22px; }
+    .prose-body h2 { font-size: 25px; margin: 0 0 14px; }
+    .prose-body h3 { font-size: 18px; margin: 24px 0 8px; }
+    .prose-body img { display: block; max-width: 100%; height: auto; margin: 14px auto; border: 1px solid var(--line); border-radius: 8px; background: #f8fafb; padding: 8px; }
+    .prose-body figure { margin: 18px 0; }
+    .prose-body figcaption { color: var(--muted); font-size: 13px; line-height: 1.45; }
+    .prose-body table, .index-table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+    .prose-body th, .prose-body td, .index-table th, .index-table td { border: 1px solid var(--line); padding: 8px 10px; vertical-align: top; }
+    .prose-body th, .index-table th { background: #f4f8f7; }
+    .visual-analysis { margin-top: 20px; }
+    .visual-analysis > p { color: #34444f; margin: 0 0 12px; max-width: 880px; }
+    .map-figure, .image-figure { margin: 20px 0 18px; }
+    .map-figure img, .image-figure img { display: block; width: min(100%, 900px); height: auto; border: 1px solid var(--line); border-radius: 8px; background: #fff; padding: 8px; }
+    .image-figure img { width: min(100%, 760px); }
+    .map-figure figcaption, .image-figure figcaption { color: var(--muted); font-size: 13px; line-height: 1.45; margin-top: 8px; }
+    .paired-images { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; align-items: start; }
+    .paired-images img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+    .paired-images span { display: block; margin-top: 6px; color: var(--muted); font-size: 12px; font-weight: 700; }
+    .figure-card, .chart-empty { border: 1px solid var(--line); border-radius: 8px; background: #fff; margin: 16px 0; padding: 16px; }
+    .figure-card figcaption { font-weight: 800; font-size: 16px; margin-bottom: 12px; color: var(--ink); }
+    .chart-frame { height: 360px; position: relative; }
+    .chart-panel-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+    .chart-panel { min-width: 0; padding: 12px; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+    .chart-panel h3 { margin: 0 0 8px; font-size: 0.92rem; line-height: 1.25; color: var(--ink); }
+    .chart-panel-frame { height: 220px; position: relative; }
+    .figure-interpretation { margin: -4px 0 18px; color: #34444f; }
+    .figure-interpretation p { margin: 0 0 8px; }
+    .figure-interpretation ul { margin: 8px 0 0 18px; padding: 0; }
+    .chart-empty { display: grid; gap: 6px; color: var(--muted); }
+    [hidden] { display: none !important; }
+    .markdown-editor { display: block; width: 100%; min-height: 560px; border: 0; padding: 16px; font-family: Consolas, monospace; font-size: 14px; line-height: 1.55; resize: vertical; }
+    .source { color: var(--muted); font-size: 13px; }
+    .cover-body { background: #e9eef0; }
+    .cover-page { min-height: 100vh; display: grid; place-items: center; padding: 36px; }
+    .book-cover { width: min(980px, 100%); min-height: 760px; background: #fff; border: 1px solid #cfd8de; border-radius: 8px; padding: 58px; box-shadow: 0 24px 70px rgba(22, 32, 41, .14); }
+    .cover-kicker { color: var(--accent); font-weight: 800; text-transform: uppercase; font-size: 13px; letter-spacing: .08em; }
+    .cover-rule { height: 7px; width: 150px; background: linear-gradient(90deg, var(--accent), var(--accent2)); margin: 22px 0 42px; border-radius: 999px; }
+    .book-cover h1 { font-size: clamp(52px, 8vw, 92px); line-height: .96; margin: 0 0 24px; letter-spacing: 0; }
+    .cover-subtitle { font-size: 22px; max-width: 760px; color: #33414c; }
+    .cover-purpose { max-width: 820px; color: var(--muted); font-size: 16px; }
+    .cover-editor { margin: 36px 0; display: grid; gap: 3px; }
+    .cover-editor span { color: var(--muted); font-size: 12px; text-transform: uppercase; }
+    .cover-editor strong { font-size: 20px; }
+    .cover-editor em { color: var(--muted); font-style: normal; }
+    .cover-actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 22px 0; }
+    .cover-method { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 30px; }
+    .cover-method div { border-top: 1px solid var(--line); padding-top: 12px; }
+    .cover-method b { display: block; color: var(--accent); }
+    .cover-method span { color: var(--muted); font-size: 13px; }
+    @media (max-width: 1040px) { .layout { grid-template-columns: 1fr; } .toc { position: static; height: auto; } .cover-method { grid-template-columns: 1fr; } main { padding: 24px 18px; } .book-cover { padding: 32px; min-height: auto; } .chart-frame { height: 300px; } .chart-panel-grid { grid-template-columns: 1fr; } .paired-images { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+  <div class="layout">
+    <aside class="toc">
+      <h1><a href="../index.html">Mongolia</a></h1>
+      <p>Official-source country report with section-level Markdown editing and separated analysis visuals.</p>
+      <nav><details class="toc-group"><summary><a class="chapter-link" href="../01-overview.html">1. Country Overview</a></summary><div class="section-nav"><a class="section-link" href="../sections/01-01-official-name-capital-location-area-population-language-religion-and-currency.html">1.1 Official Name, Capital, Location, Area, Population, Language, Religion, and Currency</a><a class="section-link" href="../sections/01-02-state-symbols.html">1.2 State Symbols</a><a class="section-link" href="../sections/01-03-country-profile-and-strategic-setting.html">1.3 Country Profile and Strategic Setting</a><a class="section-link" href="../sections/01-04-territory-climate-settlement-and-administrative-divisions.html">1.4 Territory, Climate, Settlement, and Administrative Divisions</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../02-history.html">2. Historical Background</a></summary><div class="section-nav"><a class="section-link" href="../sections/02-01-steppe-polities-empire-and-civilizational-zones.html">2.1 Steppe Polities, Empire, and Civilizational Zones</a><a class="section-link" href="../sections/02-02-qing-rule-autonomy-socialism-and-state-formation.html">2.2 Qing Rule, Autonomy, Socialism, and State Formation</a><a class="section-link" href="../sections/02-03-democratic-transition-and-constitutional-turning-points.html">2.3 Democratic Transition and Constitutional Turning Points</a><a class="section-link" href="../sections/02-04-historical-legacies-in-present-institutions.html">2.4 Historical Legacies in Present Institutions</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../03-constitution.html">3. Constitution and Basic State Order</a></summary><div class="section-nav"><a class="section-link" href="../sections/03-01-constitutional-order-and-amendments.html">3.1 Constitutional Order and Amendments</a><a class="section-link" href="../sections/03-02-fundamental-rights-system.html">3.2 Fundamental Rights System</a><a class="section-link" href="../sections/03-03-separation-of-powers-constitutional-review-judicial-review-and-emergency-powers.html">3.3 Separation of Powers, Constitutional Review, Judicial Review, and Emergency Powers</a><a class="section-link" href="../sections/03-04-constitutional-implications-for-state-authority.html">3.4 Constitutional Implications for State Authority</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../04-politics.html">4. Political System and Power Structure</a></summary><div class="section-nav"><a class="section-link" href="../sections/04-01-form-of-government.html">4.1 Form of Government</a><a class="section-link" href="../sections/04-02-president-prime-minister-cabinet-and-parliament.html">4.2 President, Prime Minister, Cabinet, and Parliament</a><a class="section-link" href="../sections/04-03-party-system-elections-representation-and-coalition-politics.html">4.3 Party System, Elections, Representation, and Coalition Politics</a><a class="section-link" href="../sections/04-04-local-politics-governors-and-real-power-relations.html">4.4 Local Politics, Governors, and Real Power Relations</a><a class="section-link" href="../sections/04-05-political-dynamics-and-institutional-accountability.html">4.5 Political Dynamics and Institutional Accountability</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../05-administration.html">5. Administrative System and Government Organization</a></summary><div class="section-nav"><a class="section-link" href="../sections/05-01-central-executive-administration-and-policy-coordination.html">5.1 Central Executive Administration and Policy Coordination</a><a class="section-link" href="../sections/05-02-organizational-management-and-administrative-reform.html">5.2 Organizational Management and Administrative Reform</a><a class="section-link" href="../sections/05-03-human-resource-management-and-civil-service.html">5.3 Human Resource Management and Civil Service</a><a class="section-link" href="../sections/05-04-budget-execution-procurement-audit-and-anti-corruption-administration.html">5.4 Budget Execution, Procurement, Audit, and Anti-Corruption Administration</a><a class="section-link" href="../sections/05-05-aimags-soums-districts-khoroos-and-service-delivery.html">5.5 Aimags, Soums, Districts, Khoroos, and Service Delivery</a><a class="section-link" href="../sections/05-06-digital-government-e-mongolia-and-administrative-accountability.html">5.6 Digital Government, E-Mongolia, and Administrative Accountability</a><a class="section-link" href="../sections/05-07-implementation-capacity-in-a-low-density-territory.html">5.7 Implementation Capacity in a Low-Density Territory</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../06-governance.html">6. Governance and Institutional Capacity</a></summary><div class="section-nav"><a class="section-link" href="../sections/06-01-government-effectiveness-and-regulatory-quality.html">6.1 Government Effectiveness and Regulatory Quality</a><a class="section-link" href="../sections/06-02-rule-of-law-and-control-of-corruption.html">6.2 Rule of Law and Control of Corruption</a><a class="section-link" href="../sections/06-03-voice-accountability-political-stability-and-citizen-participation.html">6.3 Voice, Accountability, Political Stability, and Citizen Participation</a><a class="section-link" href="../sections/06-04-institutional-performance-and-reform-credibility.html">6.4 Institutional Performance and Reform Credibility</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../07-fiscal.html">7. Fiscal System and Public Sector</a></summary><div class="section-nav"><a class="section-link" href="../sections/07-01-government-revenue-mineral-revenue-and-expenditure-structure.html">7.1 Government Revenue, Mineral Revenue, and Expenditure Structure</a><a class="section-link" href="../sections/07-02-fiscal-balance-debt-stabilization-funds-and-interest-burden.html">7.2 Fiscal Balance, Debt, Stabilization Funds, and Interest Burden</a><a class="section-link" href="../sections/07-03-state-owned-enterprises-mining-soes-and-quasi-public-sector.html">7.3 State-Owned Enterprises, Mining SOEs, and Quasi-Public Sector</a><a class="section-link" href="../sections/07-04-public-investment-roads-urban-infrastructure-and-investment-decision-making.html">7.4 Public Investment, Roads, Urban Infrastructure, and Investment Decision-Making</a><a class="section-link" href="../sections/07-05-fiscal-capacity-commodity-cycles-and-public-sector-risks.html">7.5 Fiscal Capacity, Commodity Cycles, and Public Sector Risks</a></div></details>
+<details class="toc-group active" open><summary><a class="chapter-link active" href="../08-society.html">8. Population and Social Structure</a></summary><div class="section-nav"><a class="section-link" href="../sections/08-01-population-size-growth-age-structure-and-dependency.html">8.1 Population Size, Growth, Age Structure, and Dependency</a><a class="section-link" href="../sections/08-02-urbanization-ulaanbaatar-concentration-and-regional-distribution.html">8.2 Urbanization, Ulaanbaatar Concentration, and Regional Distribution</a><a class="section-link" href="../sections/08-03-ethnicity-language-religion-migration-remittances-and-diaspora.html">8.3 Ethnicity, Language, Religion, Migration, Remittances, and Diaspora</a><a class="section-link" href="../sections/08-04-nomadic-livelihoods-social-integration-and-conflict-factors.html">8.4 Nomadic Livelihoods, Social Integration, and Conflict Factors</a><a class="section-link" href="../sections/08-05-demographic-pressures-and-social-cohesion.html">8.5 Demographic Pressures and Social Cohesion</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../09-macro.html">9. Macroeconomic Structure</a></summary><div class="section-nav"><a class="section-link" href="../sections/09-01-gdp-scale-growth-and-gdp-per-capita.html">9.1 GDP Scale, Growth, and GDP Per Capita</a><a class="section-link" href="../sections/09-02-prices-exchange-rate-and-macroeconomic-stability.html">9.2 Prices, Exchange Rate, and Macroeconomic Stability</a><a class="section-link" href="../sections/09-03-sectoral-structure-mineral-dependence-growth-model-and-vulnerabilities.html">9.3 Sectoral Structure, Mineral Dependence, Growth Model, and Vulnerabilities</a><a class="section-link" href="../sections/09-04-growth-sustainability-and-structural-constraints.html">9.4 Growth Sustainability and Structural Constraints</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../10-trade.html">10. Trade, Investment, and External Economy</a></summary><div class="section-nav"><a class="section-link" href="../sections/10-01-exports-imports-trading-partners-and-current-account.html">10.1 Exports, Imports, Trading Partners, and Current Account</a><a class="section-link" href="../sections/10-02-copper-coal-gold-cashmere-tourism-and-services.html">10.2 Copper, Coal, Gold, Cashmere, Tourism, and Services</a><a class="section-link" href="../sections/10-03-fdi-absolute-amount-and-share-of-gdp.html">10.3 FDI Absolute Amount and Share of GDP</a><a class="section-link" href="../sections/10-04-investment-regime-economic-zones-and-industrial-policy.html">10.4 Investment Regime, Economic Zones, and Industrial Policy</a><a class="section-link" href="../sections/10-05-external-integration-and-competitiveness.html">10.5 External Integration and Competitiveness</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../11-infrastructure.html">11. Infrastructure, Energy, and Digital Connectivity</a></summary><div class="section-nav"><a class="section-link" href="../sections/11-01-electricity-access-heating-energy-dependence-and-transition.html">11.1 Electricity Access, Heating, Energy Dependence, and Transition</a><a class="section-link" href="../sections/11-02-transport-logistics-rail-road-air-and-border-corridors.html">11.2 Transport, Logistics, Rail, Road, Air, and Border Corridors</a><a class="section-link" href="../sections/11-03-internet-mobile-connectivity-secure-servers-and-logistics-performance.html">11.3 Internet, Mobile Connectivity, Secure Servers, and Logistics Performance</a><a class="section-link" href="../sections/11-04-connectivity-service-delivery-and-bottlenecks.html">11.4 Connectivity, Service Delivery, and Bottlenecks</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../12-labor.html">12. Labor Market and Human Capital</a></summary><div class="section-nav"><a class="section-link" href="../sections/12-01-labor-force-size-and-participation.html">12.1 Labor Force Size and Participation</a><a class="section-link" href="../sections/12-02-female-participation-unemployment-youth-unemployment-and-vulnerable-employment.html">12.2 Female Participation, Unemployment, Youth Unemployment, and Vulnerable Employment</a><a class="section-link" href="../sections/12-03-herding-mining-education-productivity-hdi-and-r-d.html">12.3 Herding, Mining, Education, Productivity, HDI, and R&amp;D</a><a class="section-link" href="../sections/12-04-employment-absorption-and-human-capital-use.html">12.4 Employment Absorption and Human Capital Use</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../13-education-health.html">13. Education, Health, and Welfare</a></summary><div class="section-nav"><a class="section-link" href="../sections/13-01-education-system-and-public-expenditure.html">13.1 Education System and Public Expenditure</a><a class="section-link" href="../sections/13-02-life-expectancy-infant-mortality-hospital-beds-doctors-and-health-expenditure.html">13.2 Life Expectancy, Infant Mortality, Hospital Beds, Doctors, and Health Expenditure</a><a class="section-link" href="../sections/13-03-air-pollution-sanitation-public-health-risks-and-welfare.html">13.3 Air Pollution, Sanitation, Public Health Risks, and Welfare</a><a class="section-link" href="../sections/13-04-human-development-outcomes-and-welfare-capacity.html">13.4 Human Development Outcomes and Welfare Capacity</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../14-environment.html">14. Environment, Climate Risk, and Sustainable Development</a></summary><div class="section-nav"><a class="section-link" href="../sections/14-01-climate-change-dzud-desertification-and-rural-livelihood-risk.html">14.1 Climate Change, Dzud, Desertification, and Rural Livelihood Risk</a><a class="section-link" href="../sections/14-02-ger-district-and-urban-public-health.html">14.2 Ger District and Urban Public Health</a><a class="section-link" href="../sections/14-03-mining-water-land-restoration-and-environmental-governance.html">14.3 Mining, Water, Land Restoration, and Environmental Governance</a><a class="section-link" href="../sections/14-04-sdg-performance-green-development-and-policy-implementation.html">14.4 SDG Performance, Green Development, and Policy Implementation</a><a class="section-link" href="../sections/14-05-environmental-sustainability-sdg-implementation-and-future-policy-direction.html">14.5 Environmental Sustainability, SDG Implementation, and Future Policy Direction</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../15-finance.html">15. Financial Sector and Economic Institutions</a></summary><div class="section-nav"><a class="section-link" href="../sections/15-01-domestic-credit-private-credit-capital-markets-and-fintech.html">15.1 Domestic Credit, Private Credit, Capital Markets, and Fintech</a><a class="section-link" href="../sections/15-02-central-bank-monetary-policy-supervision-and-exchange-rate.html">15.2 Central Bank, Monetary Policy, Supervision, and Exchange Rate</a><a class="section-link" href="../sections/15-03-foreign-investment-protection-and-capital-market-openness.html">15.3 Foreign Investment Protection and Capital Market Openness</a><a class="section-link" href="../sections/15-04-financial-deepening-and-market-institutions.html">15.4 Financial Deepening and Market Institutions</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../16-security.html">16. Foreign Relations, Security, and Geopolitics</a></summary><div class="section-nav"><a class="section-link" href="../sections/16-01-foreign-policy-orientation-and-international-organizations.html">16.1 Foreign Policy Orientation and International Organizations</a><a class="section-link" href="../sections/16-02-china-russia-third-neighbor-policy-and-strategic-balancing.html">16.2 China, Russia, Third Neighbor Policy, and Strategic Balancing</a><a class="section-link" href="../sections/16-03-borders-security-organizations-military-capacity-and-transnational-issues.html">16.3 Borders, Security Organizations, Military Capacity, and Transnational Issues</a><a class="section-link" href="../sections/16-04-strategic-resources-corridors-and-climate-security-risks.html">16.4 Strategic Resources, Corridors, and Climate-Security Risks</a><a class="section-link" href="../sections/16-05-strategic-environment-and-transnational-risks.html">16.5 Strategic Environment and Transnational Risks</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../17-policy.html">17. Major Policies and National Development Strategy</a></summary><div class="section-nav"><a class="section-link" href="../sections/17-01-evolution-of-national-development-strategy.html">17.1 Evolution of National Development Strategy</a><a class="section-link" href="../sections/17-02-vision-2050-new-recovery-policy-and-industrial-policy.html">17.2 Vision 2050, New Recovery Policy, and Industrial Policy</a><a class="section-link" href="../sections/17-03-digital-transformation-energy-transition-climate-policy-and-administrative-reform.html">17.3 Digital Transformation, Energy Transition, Climate Policy, and Administrative Reform</a><a class="section-link" href="../sections/17-04-welfare-education-health-and-recent-five-year-policy-changes.html">17.4 Welfare, Education, Health, and Recent Five-Year Policy Changes</a><a class="section-link" href="../sections/17-05-policy-implementation-and-reform-sequencing.html">17.5 Policy Implementation and Reform Sequencing</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../18-assessment.html">18. Integrated Assessment</a></summary><div class="section-nav"><a class="section-link" href="../sections/18-01-national-operating-model.html">18.1 National Operating Model</a><a class="section-link" href="../sections/18-02-political-stability-institutional-risk-growth-drivers-and-bottlenecks.html">18.2 Political Stability, Institutional Risk, Growth Drivers, and Bottlenecks</a><a class="section-link" href="../sections/18-03-administrative-capacity-and-international-cooperation-implications.html">18.3 Administrative Capacity and International Cooperation Implications</a><a class="section-link" href="../sections/18-04-mongolia-and-comparative-administration-theory.html">18.4 Mongolia and Comparative Administration Theory</a><a class="section-link" href="../sections/18-05-evidence-limits-and-source-triangulation.html">18.5 Evidence Limits and Source Triangulation</a><a class="section-link" href="../sections/18-06-strategic-diagnosis-and-outlook.html">18.6 Strategic Diagnosis and Outlook</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../19-appendix.html">19. Appendix and Update Workflow</a></summary><div class="section-nav"><a class="section-link" href="../sections/19-01-annual-revision-method.html">19.1 Annual Revision Method</a><a class="section-link" href="../sections/19-02-editorial-revision-method.html">19.2 Editorial Revision Method</a><a class="section-link" href="../sections/19-03-data-integrity.html">19.3 Data Integrity</a><a class="section-link" href="../sections/19-04-evidence-archive-and-review-trail.html">19.4 Evidence Archive and Review Trail</a><a class="section-link" href="../sections/19-05-data-limits-and-source-triangulation.html">19.5 Data Limits and Source Triangulation</a><a class="section-link" href="../sections/19-06-external-review-checklist.html">19.6 External Review Checklist</a><a class="section-link" href="../sections/19-07-comparative-administration-benchmark.html">19.7 Comparative Administration Benchmark</a><a class="section-link" href="../sections/19-08-timeline.html">19.8 Timeline</a><a class="section-link" href="../sections/19-09-government-organization-chart.html">19.9 Government Organization Chart</a><a class="section-link" href="../sections/19-10-constitution-and-major-laws.html">19.10 Constitution and Major Laws</a><a class="section-link" href="../sections/19-11-key-indicator-table-source-list-and-data-codebook.html">19.11 Key Indicator Table, Source List, and Data Codebook</a><a class="section-link" href="../sections/19-12-methodological-notes-and-update-standards.html">19.12 Methodological Notes and Update Standards</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../20-references.html">20. References</a></summary><div class="section-nav"><a class="section-link" href="../sections/20-01-references.html">20.1 References</a><a class="section-link" href="../sections/20-02-source-integrity-and-citation-notes.html">20.2 Source Integrity and Citation Notes</a></div></details></nav>
+    </aside>
+    <main>
+      <header class="hero"><h2>8.1 Population Size, Growth, Age Structure, and Dependency</h2></header>
+      
+    <section class="section-reading">
+      
+    <article class="editable-prose" data-md-panel="society-population-size-growth-age-structure-and-dependency-text" data-md-source="sections/08-01-population-size-growth-age-structure-and-dependency.md">
+      <div class="prose-toolbar">
+        <span>Editable section manuscript</span>
+        <div>
+          <button type="button" data-md-action="edit">Edit Markdown</button>
+          <button type="button" data-md-action="save" hidden>Save</button>
+          <button type="button" data-md-action="cancel" hidden>Cancel</button>
+        </div>
+      </div>
+      <div class="markdown-preview prose-body"></div>
+      <textarea class="markdown-editor" hidden>## 8.1 Population Size, Growth, Age Structure, and Dependency
+
+Mongolia&#x27;s population structure is one of the deepest determinants of its politics and administration. The country has a small but still growing population, one of the world&#x27;s lowest population densities, a large youth cohort, a rising but still modest elderly share, and a working-age population that is large enough to create a demographic opportunity. These features create a distinctive state-capacity problem. Mongolia must deliver education, health, welfare, policing, courts, civil registration, elections, disaster response, and local administration across a vast territory, but the tax base and population scale are small. The result is a permanent tension between equal citizenship and the cost of territorial service delivery.
+
+The first point is scale. Mongolia&#x27;s total population has grown from a small socialist-era base to more than 3.5 million people by the mid-2020s. This is still a very small population for a country with an area of about 1.56 million square kilometers. National population density remains a little above two people per square kilometer in World Bank data. That figure is not just descriptive geography. It explains why schools, clinics, roads, emergency services, local government offices, digital networks, and police presence are expensive to provide outside dense settlements.
+
+{{figure:population-total}}
+
+{{figure:population-growth-density}}
+
+The population growth rate has gradually slowed, but it remains positive. This matters politically because Mongolia is not yet facing the kind of demographic contraction seen in some East Asian societies. Instead, it faces a sequencing problem: it must educate, employ, and house a still-growing young population while preparing for an aging society that will arrive later. The state cannot postpone youth policy, but it also cannot ignore the fiscal implications of old-age security.
+
+### Age Structure and the Demographic Dividend
+
+Mongolia&#x27;s age structure gives it a potential demographic dividend. The working-age population remains the majority of the population, while the elderly share is still relatively low. At the same time, the child population remains large. This means that Mongolia&#x27;s immediate demographic burden is not primarily old-age care; it is the cost and quality of education, childcare, youth employment, housing, and the transition from school to work.
+
+{{figure:age-structure}}
+
+The age-structure chart should be read as a policy calendar. A large 0-14 cohort creates pressure on schools, teachers, health services, nutrition, family policy, and local budgets. As this cohort ages into the labor market, the pressure shifts toward job creation, vocational training, higher education quality, housing affordability, and urban transport. If the economy remains narrowly mineral-dependent, the labor market may not absorb young people into productive work. That would turn a demographic dividend into frustration, migration pressure, and political dissatisfaction.
+
+The political implications are substantial. Young voters and first-time labor-market entrants will increasingly judge the state not only by democratic rights, but by whether public institutions can create credible pathways to education, jobs, housing, and mobility. In a mineral economy, this is difficult because mining can raise GDP without creating broad employment. The mismatch between national wealth narratives and household opportunity can become a source of political volatility.
+
+### Dependency Ratios and Public Finance
+
+Dependency ratios translate age structure into fiscal and administrative pressure. Mongolia&#x27;s youth dependency remains much more important than old-age dependency, but the elderly share is gradually rising. This creates a dual obligation. In the short term, the state must finance children and young people. In the medium term, it must prepare pension, health, disability, and long-term care systems for a society that will age over time.
+
+{{figure:dependency-structure}}
+
+The administrative issue is that these obligations are geographically uneven. A school in a dense urban district and a school serving dispersed rural households have very different cost structures. Health services for Ulaanbaatar residents and mobile herder households also require different delivery models. Therefore, the dependency ratio is not only a national social indicator. It becomes a local-government finance issue. The same child or elderly person costs the state more to serve when households are dispersed, roads are poor, winter risk is high, and professional staff are hard to retain.
+
+### Fertility, Longevity, and the Transition Ahead
+
+Mongolia&#x27;s fertility has declined from historically high levels but remains above the very low levels seen in many advanced East Asian economies. Life expectancy has improved over the long run. Population growth has slowed but remains positive. Together these indicators show a country in demographic transition rather than demographic crisis.
+
+{{figure:fertility-life-expectancy}}
+
+This transition has three policy implications. First, Mongolia still has time to use its demographic dividend, but the window is not automatic. Human capital must be converted into productive work. Second, the state should avoid building welfare institutions only around today&#x27;s youthful structure. Pension and health obligations will grow as longevity rises. Third, demographic policy should not be separated from spatial policy. Fertility, child services, housing, migration, and employment are all shaped by whether families see a future in aimags and soums, or whether Ulaanbaatar becomes the only credible path to opportunity.
+
+### Political and Administrative Implications
+
+Mongolia&#x27;s population structure affects politics in several ways.
+
+First, it increases the importance of youth policy. Education quality, employment absorption, housing, digital access, and migration choices will shape political trust. A young population is an asset only if young people believe that democratic institutions can deliver opportunity.
+
+Second, it raises the cost of territorial equality. Low density means that equal access cannot be achieved through the same service model everywhere. Mongolia needs differentiated delivery: digital public services, mobile health teams, boarding-school arrangements where appropriate, telemedicine, rural transport support, and local fiscal transfers that reflect distance and dispersion.
+
+Third, it makes public investment choices politically sensitive. Urban schools, ger-district infrastructure, rural roads, soum hospitals, and regional universities compete for limited fiscal space. Demographic evidence should guide these choices, not only political bargaining.
+
+Fourth, it links demographic policy to mineral revenue management. If mining revenue is spent procyclically, the state may fail to finance the human-capital investments needed for the demographic dividend. Stabilization funds, education investment, health infrastructure, and local service capacity are therefore demographic policies as much as fiscal policies.
+
+### Policy Implications
+
+Mongolia should treat demographic structure as a core state-capacity issue.
+
+First, education and youth employment should be the center of demographic policy. The working-age dividend will matter only if young people acquire usable skills and enter productive employment outside a narrow mining enclave.
+
+Second, fiscal transfers should reflect service-delivery geography. Low-density areas require different formulas from dense urban areas.
+
+Third, the state should prepare early for aging. Pension sustainability, primary health care, chronic disease management, and rural elderly services should be planned before old-age dependency becomes fiscally heavy.
+
+Fourth, population policy should be linked to urban and regional policy. Families will remain drawn to Ulaanbaatar unless secondary cities and aimag centers offer credible schools, jobs, health services, housing, and digital connectivity.
+
+In conclusion, Mongolia&#x27;s demographic profile is not a simple story of population growth. It is a question of timing, geography, and institutional capacity. The country still has a potential demographic dividend, but that dividend will be realized only if the state can convert young population growth into human capital, employment, and territorially credible public services.
+
+### Sources
+
+* World Bank WDI. Mongolia indicators on total population, population growth, population density, age structure, dependency ratios, fertility, and life expectancy.
+* Government of Mongolia. *Vision 2050: Long-Term Development Policy of Mongolia.*
+* National Statistics Office of Mongolia and Mongolia Center for Health Development. *Health Indicators 2024.*</textarea>
+      <template data-figure-template="population-total">
+    <figure class="figure-card" id="population-total">
+      <figcaption>Mongolia: Population Scale</figcaption>
+      <div class="chart-frame">
+        <canvas id="chart-population-total" aria-label="Mongolia: Population Scale" role="img"></canvas>
+      </div>
+      <p class="source">Source: World Bank API, Mongolia country code MNG. Indicator IDs: SP.POP.TOTL. Unit: Persons.</p>
+      <script type="application/json" id="chart-population-total-config">{"type": "line", "data": {"labels": [1960, 1961, 1962, 1963, 1964, 1965, 1966, 1967, 1968, 1969, 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 1979, 1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], "datasets": [{"label": "Population, total", "data": [977595.0, 1009284.0, 1041444.0, 1071362.0, 1100234.0, 1131177.0, 1163754.0, 1196996.0, 1229930.0, 1262284.0, 1295272.0, 1330071.0, 1366821.0, 1405502.0, 1446050.0, 1488296.0, 1531945.0, 1576245.0, 1619468.0, 1660659.0, 1701335.0, 1742857.0, 1785364.0, 1829092.0, 1874349.0, 1921514.0, 1970965.0, 2022800.0, 2076322.0, 2124185.0, 2098710.0, 2165342.0, 2167790.0, 2165130.0, 2189395.0, 2224945.0, 2259507.0, 2291750.0, 2323809.0, 2356813.0, 2388299.0, 2417751.0, 2449027.0, 2480374.0, 2508412.0, 2536407.0, 2567168.0, 2601850.0, 2643201.0, 2691115.0, 2738622.0, 2786317.0, 2839705.0, 2899011.0, 2963113.0, 3026864.0, 3088856.0, 3148917.0, 3208189.0, 3267673.0, 3327204.0, 3383741.0, 3433748.0, 3481145.0, 3524788.0], "borderColor": "#0f6f78", "backgroundColor": "#0f6f78", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}]}, "options": {"responsive": true, "maintainAspectRatio": false, "interaction": {"mode": "index", "intersect": false}, "plugins": {"legend": {"position": "bottom", "labels": {"boxWidth": 14, "boxHeight": 3}}, "tooltip": {"enabled": true}}, "scales": {"x": {"grid": {"display": false}, "ticks": {"maxTicksLimit": 8}}, "y": {"title": {"display": true, "text": "Persons"}, "grid": {"color": "#e8eef3"}, "ticks": {"precision": 1}}}}}</script>
+    </figure>
+    
+
+    <div class="figure-interpretation">
+      <p>The population and urbanization figures turn geography into an administrative problem. Mongolia has a small population spread across a vast territory, while Ulaanbaatar concentrates demand for housing, heating, transport, education, health, and employment. Equal citizenship therefore depends on spatial finance, digital services, and capable local administration.</p>
+      <ul><li>Population, total rose from 977595.00 in 1960 to 3524788.00 in 2024.</li></ul>
+    </div>
+    </template>
+<template data-figure-template="population-growth-density">
+    <figure class="figure-card" id="population-growth-density">
+      <figcaption>Mongolia: Population Growth and Density</figcaption>
+      <div class="chart-frame">
+        <canvas id="chart-population-growth-density" aria-label="Mongolia: Population Growth and Density" role="img"></canvas>
+      </div>
+      <p class="source">Source: World Bank WDI, Mongolia country code MNG. Indicator IDs: SP.POP.GROW, EN.POP.DNST. Unit: Annual percent and people per sq. km.</p>
+      <script type="application/json" id="chart-population-growth-density-config">{"type": "line", "data": {"labels": [1961, 1962, 1963, 1964, 1965, 1966, 1967, 1968, 1969, 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 1979, 1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], "datasets": [{"label": "Population growth (annual %)", "data": [3.19009737101048, 3.13670431043954, 2.83225245529327, 2.65921482305515, 2.77357991092692, 2.83923032044886, 2.81640981151285, 2.71421723130521, 2.59655212253032, 2.57979332854632, 2.65116125609439, 2.72552812282035, 2.79069288489164, 2.84411669407914, 2.87961400738083, 2.8906328531479, 2.85072663156536, 2.70522640427833, 2.5116811292293, 2.41987254563328, 2.41124837189573, 2.4096595294372, 2.41973528434082, 2.44417302800377, 2.48520178362189, 2.54098535586882, 2.59594196942848, 2.61153690252887, 2.27901401494206, -1.20653291340797, 3.12554463819911, 0.112989877088484, -0.122780957606697, 1.11448441138802, 1.61069462565483, 1.54144516833781, 1.41690699648118, 1.38919318660692, 1.41026329390347, 1.32711144076984, 1.22563721499933, 1.28530335948394, 1.27185524409713, 1.12405283429406, 1.10986290557005, 1.20548331364776, 1.34193846720281, 1.57679522082476, 1.79649232006396, 1.74992683110286, 1.7265777901103, 1.89795214519602, 2.06694708057063, 2.18707605433318, 2.12866951701474, 2.02736957640078, 1.92577883760149, 1.86480192831175, 1.8371507310985, 1.80542008661223, 1.684959051396, 1.46704738017187, 1.3708886685104, 1.24590299529718], "borderColor": "#0f6f78", "backgroundColor": "#0f6f78", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}, {"label": "Population density (people per sq. km of land area)", "data": [0.652228726479694, 0.67301145546736, 0.692345338733932, 0.711003266325098, 0.730999534455239, 0.752051740992278, 0.773533689904217, 0.794816600242519, 0.815724697682411, 0.837042504394013, 0.859530632069441, 0.883279552787622, 0.908276341965852, 0.93447964093948, 0.961780236984657, 0.989987492506505, 1.01861544319536, 1.04654740510562, 1.07316622941317, 1.0994522457161, 1.1262849718674, 1.15375423371687, 1.18201254134039, 1.21125893331162, 1.24173833047279, 1.27369500743701, 1.30719229465951, 1.34177977043307, 1.3727102355306, 1.35624754831167, 1.39930708804756, 1.4008890569705, 1.3991700874709, 1.41485083743625, 1.43782428319221, 1.4601592545626, 1.48099562056848, 1.50171308041349, 1.52304122679126, 1.54338839734181, 1.56242113783138, 1.58263236912359, 1.59541792198924, 1.6137036582467, 1.63171323734666, 1.64830525022335, 1.6705735718479, 1.69711733640935, 1.72788137676538, 1.75857916493112, 1.78925253897917, 1.82353600871754, 1.8616184405066, 1.90278211075515, 1.94371713207737, 1.98352563105577, 2.02209412791248, 2.06015649331677, 2.09835043390369, 2.13623721809195, 2.17253662423347, 2.2046394565685, 2.23365125312889, null], "borderColor": "#a6502a", "backgroundColor": "#a6502a", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}]}, "options": {"responsive": true, "maintainAspectRatio": false, "interaction": {"mode": "index", "intersect": false}, "plugins": {"legend": {"position": "bottom", "labels": {"boxWidth": 14, "boxHeight": 3}}, "tooltip": {"enabled": true}}, "scales": {"x": {"grid": {"display": false}, "ticks": {"maxTicksLimit": 8}}, "y": {"title": {"display": true, "text": "Annual percent and people per sq. km"}, "grid": {"color": "#e8eef3"}, "ticks": {"precision": 1}}}}}</script>
+    </figure>
+    
+
+    <div class="figure-interpretation">
+      <p>Population growth and density show why Mongolia&#x27;s demographic problem is unusual. The population is still growing, but the national density remains extremely low, so the state must finance schools, health posts, local administration, roads, emergency response, and digital access across vast distances.</p>
+      <ul><li>Population growth (annual %) fell from 3.19 in 1961 to 1.25 in 2024.</li>
+<li>Population density (people per sq. km of land area) rose from 0.65 in 1961 to 2.23 in 2023.</li></ul>
+    </div>
+    </template>
+<template data-figure-template="age-structure">
+    <figure class="figure-card" id="age-structure">
+      <figcaption>Mongolia: Age Structure</figcaption>
+      <div class="chart-frame">
+        <canvas id="chart-age-structure" aria-label="Mongolia: Age Structure" role="img"></canvas>
+      </div>
+      <p class="source">Source: World Bank WDI, Mongolia country code MNG. Indicator IDs: SP.POP.0014.TO.ZS, SP.POP.1564.TO.ZS, SP.POP.65UP.TO.ZS. Unit: Percent of total population (%).</p>
+      <script type="application/json" id="chart-age-structure-config">{"type": "line", "data": {"labels": [1960, 1961, 1962, 1963, 1964, 1965, 1966, 1967, 1968, 1969, 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 1979, 1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], "datasets": [{"label": "Population ages 0-14 (% of total population)", "data": [38.0622855067794, 38.849947660942, 39.5939866156925, 40.4108320013068, 41.3720626703047, 42.3575366001681, 43.3129767975019, 44.1791600894405, 44.9068239655915, 45.3700413813209, 45.604801773219, 45.750377235501, 45.8081928796821, 45.7728626497863, 45.6403463366918, 45.4239796975939, 45.1514577873227, 44.8385069702067, 44.4670890480426, 44.0659834637886, 43.6917351104471, 43.3488643499909, 43.0307368607363, 42.7372980692059, 42.47454515529, 42.2523703320325, 42.0800724518193, 41.9553939972795, 41.8491789445902, 41.6628259779633, 41.3524881460482, 40.9617127178169, 40.5123121865123, 40.020540903118, 39.4998750945465, 38.9567220315835, 38.3825100821273, 37.7546117244451, 37.0402406514632, 36.1905925950272, 35.1783289385471, 34.0705359951842, 32.9465581925659, 31.8416768941294, 30.7982464160957, 29.8654046228907, 29.0868323909167, 28.4898324000068, 28.0921749877772, 27.9121390779214, 27.9387444794672, 28.0129849385131, 28.1337161446474, 28.4503155023501, 28.933894969119, 29.5319492475371, 30.2067178109005, 30.904816574345, 31.6053636290742, 32.3050691134454, 32.7657940634538, 32.9207581338777, 32.8847775334722, 32.6374717451465, 32.1932994585014], "borderColor": "#0f6f78", "backgroundColor": "#0f6f78", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}, {"label": "Population ages 15-64 (% of total population)", "data": [56.2503899876738, 55.2084174482022, 54.2078374871032, 53.3199547305417, 52.4697018997777, 51.5849206556183, 50.7089127083559, 49.8980573460323, 49.204101046401, 48.7794550277691, 48.6118933366479, 48.5568815499323, 48.6027797348738, 48.7464976926394, 48.9858058109352, 49.3064721982481, 49.684453423589, 50.10590044882, 50.5869363930203, 51.0734446606572, 51.5175872131041, 51.943232274143, 52.3512145559072, 52.7365763996562, 53.0905538644494, 53.4041264867512, 53.6723381693739, 53.9015112471602, 54.1221819453298, 54.4131278584492, 54.8137312038607, 55.2926363557124, 55.8239096289038, 56.3860326257278, 56.9609635761819, 57.542251516131, 58.1423372341747, 58.7889807494617, 59.5196669076055, 60.3867643917109, 61.395020817194, 62.4782989220444, 63.5780853730559, 64.6521043458951, 65.6534498980943, 66.5329607120998, 67.2532469705549, 67.7956821131261, 68.1495082036908, 68.3012884727797, 68.2617854028453, 68.1901609019881, 68.0762622524602, 67.7570641546867, 67.2583455385159, 66.6300187920446, 65.9081521646192, 65.1412012251141, 64.3450654827184, 63.5207736361981, 62.9278480776094, 62.6443179783416, 62.4988814284639, 62.498927353612, 62.6690528666049], "borderColor": "#a6502a", "backgroundColor": "#a6502a", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}, {"label": "Population ages 65 and above (% of total population)", "data": [5.68732450554678, 5.94163489085585, 6.19817589720422, 6.26921326815154, 6.15823542991764, 6.05754274421366, 5.97811049414223, 5.92278256452713, 5.88907498800745, 5.85050359090997, 5.78330489013307, 5.69274121456674, 5.58902738544403, 5.4806396575743, 5.37384785237296, 5.26954810415801, 5.16408878908838, 5.05559258097332, 4.94597455893708, 4.86057187555418, 4.79067767644888, 4.707903375866, 4.61804858335651, 4.52612553113785, 4.43490098026061, 4.34350318121627, 4.24758937880683, 4.1430947555603, 4.02863911008001, 3.92404616358745, 3.83378065009112, 3.74565092647069, 3.66377818458387, 3.59342647115422, 3.53916132927159, 3.50102645228549, 3.47515268369802, 3.4564075260932, 3.44009244093131, 3.4226430132619, 3.42665024425888, 3.45116508277134, 3.47535643437826, 3.50621875997549, 3.54830368580999, 3.60163466500953, 3.65992063852848, 3.71448548686706, 3.75831680853196, 3.78657244929888, 3.79947011768747, 3.7968541594988, 3.79002160289241, 3.79262034296318, 3.8077594923651, 3.83803196041828, 3.8851300244803, 3.95398220054092, 4.04957088820743, 4.17415725035646, 4.30635785893672, 4.43492388778066, 4.61634103806392, 4.8636009012415, 5.13764767489369], "borderColor": "#2f7d4f", "backgroundColor": "#2f7d4f", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}]}, "options": {"responsive": true, "maintainAspectRatio": false, "interaction": {"mode": "index", "intersect": false}, "plugins": {"legend": {"position": "bottom", "labels": {"boxWidth": 14, "boxHeight": 3}}, "tooltip": {"enabled": true}}, "scales": {"x": {"grid": {"display": false}, "ticks": {"maxTicksLimit": 8}}, "y": {"title": {"display": true, "text": "Percent of total population (%)"}, "grid": {"color": "#e8eef3"}, "ticks": {"precision": 1}}}}}</script>
+    </figure>
+    
+
+    <div class="figure-interpretation">
+      <p>The age-structure chart shows the balance between young dependents, the working-age population, and older citizens. For Mongolia, this is a timing problem: the country still has a potential demographic dividend, but education, jobs, housing, and regional services must absorb young people before aging costs rise.</p>
+      <ul><li>Population ages 0-14 (% of total population) fell from 38.06 in 1960 to 32.19 in 2024.</li>
+<li>Population ages 15-64 (% of total population) rose from 56.25 in 1960 to 62.67 in 2024.</li>
+<li>Population ages 65 and above (% of total population) fell from 5.69 in 1960 to 5.14 in 2024.</li></ul>
+    </div>
+    </template>
+<template data-figure-template="dependency-structure">
+    <figure class="figure-card" id="dependency-structure">
+      <figcaption>Mongolia: Age Dependency Structure</figcaption>
+      <div class="chart-frame">
+        <canvas id="chart-dependency-structure" aria-label="Mongolia: Age Dependency Structure" role="img"></canvas>
+      </div>
+      <p class="source">Source: World Bank WDI, Mongolia country code MNG. Indicator IDs: SP.POP.DPND, SP.POP.DPND.YG, SP.POP.DPND.OL. Unit: Percent of working-age population (%).</p>
+      <script type="application/json" id="chart-dependency-structure-config">{"type": "line", "data": {"labels": [1960, 1961, 1962, 1963, 1964, 1965, 1966, 1967, 1968, 1969, 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 1979, 1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], "datasets": [{"label": "Age dependency ratio (% of working-age population)", "data": [77.7765452326873, 81.13170976831, 84.4752579072668, 87.5469584245077, 90.5861871849504, 93.8551918795853, 97.2039916831462, 100.408519985668, 103.235091940196, 105.004425605171, 105.711054925229, 105.944032664386, 105.749548781975, 105.142797091951, 104.140838190804, 102.813064677458, 101.270201632028, 99.5773570762935, 97.6794317653334, 95.7965279972081, 94.1084123324134, 92.5179167918559, 91.0174822930263, 89.621708480199, 88.3574749121196, 87.2514052279939, 86.315808379724, 85.523607748184, 84.7671770703652, 83.779172632772, 82.4360798726683, 80.8558601824978, 79.1347317883394, 77.3488713835084, 75.5588164541737, 73.7854052580562, 71.9917334612135, 70.0998889627817, 68.011666352161, 65.5992152911426, 62.8796894489998, 60.0556081479177, 57.2868846352447, 54.6740050910007, 52.3149219210631, 50.301413827289, 48.6916914180332, 47.5020153723875, 46.7362412620023, 46.4101397882339, 46.4948711694247, 46.6487262591356, 46.8940830192974, 47.5860682131157, 48.6804175336851, 50.0825069416898, 51.7262924597998, 53.5127010854887, 55.4120963362594, 57.4288259442459, 58.9121466009596, 59.6313854511985, 60.0028703844358, 60.0027669535657, 59.5684105260823], "borderColor": "#0f6f78", "backgroundColor": "#0f6f78", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}, {"label": "Age dependency ratio, young (% of working-age population)", "data": [67.6658162105543, 70.3695195707184, 73.0410738578393, 75.7892341356674, 78.8494517486878, 82.1122606539312, 85.4150038889934, 88.5388378610965, 91.2663423532989, 93.010629572787, 93.8140826101872, 94.2202492563959, 94.2501501551227, 93.8997245790233, 93.170553349361, 92.1257900374203, 90.8764364984582, 89.4874853125886, 87.9023093383005, 86.2796466687732, 84.809358267721, 83.4543618882664, 82.1961996875869, 81.0391872278665, 80.0039593931074, 79.1181366014142, 78.4018346421039, 77.8371487269792, 77.3235351959642, 76.5675896646148, 75.4418753439078, 74.0816437326429, 72.5716339777465, 70.9759991350154, 69.3455216101355, 67.7011254542941, 66.0147823373144, 64.2205573237061, 62.2319200823065, 59.9313660805943, 57.2983508798013, 54.531799254586, 51.8206293463769, 49.250817216612, 46.910330514027, 44.8881127458969, 43.2497115558377, 42.0230937298392, 41.2214210848885, 40.8662148149196, 40.9288489765875, 41.0807086759221, 41.3267879358461, 41.9887134504413, 43.0190356864553, 44.3222927409758, 45.8315322466559, 47.4428175710131, 49.1185678902065, 50.8574900115674, 52.0688357378048, 52.5518688544389, 52.6165697601272, 52.220870919318, 51.3703563365598], "borderColor": "#a6502a", "backgroundColor": "#a6502a", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}, {"label": "Age dependency ratio, old (% of working-age population)", "data": [10.1107290221331, 10.7621901975916, 11.4341840494275, 11.7577242888403, 11.7367354362625, 11.7429312256541, 11.7889877941528, 11.8696821245718, 11.968749586897, 11.9937960323841, 11.8969723150419, 11.7237834079905, 11.4993986268521, 11.2430725129281, 10.9702848414434, 10.6872746400373, 10.3937651335696, 10.0898717637049, 9.77712242703289, 9.51688132843486, 9.29905406469235, 9.06355490358954, 8.82128260543941, 8.58252125233257, 8.35351551901212, 8.13326862657966, 7.91397373762009, 7.68645902120478, 7.443641874401, 7.21158296815722, 6.99420452876047, 6.77421644985488, 6.56309781059295, 6.37287224849304, 6.21329484403817, 6.08427980376214, 5.97695112389913, 5.8793316390756, 5.77974626985452, 5.66784921054832, 5.58133856919846, 5.52380889333166, 5.46625528886788, 5.42318787438872, 5.40459140703606, 5.4133010813921, 5.44197986219551, 5.47892164254834, 5.51482017711377, 5.54392497331434, 5.56602219283718, 5.56801758321342, 5.56729508345123, 5.59735476267446, 5.6613818472298, 5.760214200714, 5.89476021314387, 6.06988351447562, 6.29352844605294, 6.57133593267847, 6.8433108631548, 7.07951659675967, 7.38630062430861, 7.78189603424772, 8.19805418952254], "borderColor": "#2f7d4f", "backgroundColor": "#2f7d4f", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}]}, "options": {"responsive": true, "maintainAspectRatio": false, "interaction": {"mode": "index", "intersect": false}, "plugins": {"legend": {"position": "bottom", "labels": {"boxWidth": 14, "boxHeight": 3}}, "tooltip": {"enabled": true}}, "scales": {"x": {"grid": {"display": false}, "ticks": {"maxTicksLimit": 8}}, "y": {"title": {"display": true, "text": "Percent of working-age population (%)"}, "grid": {"color": "#e8eef3"}, "ticks": {"precision": 1}}}}}</script>
+    </figure>
+    
+
+    <div class="figure-interpretation">
+      <p>Dependency ratios translate demographic structure into fiscal and administrative pressure. A high youth dependency ratio requires schools, childcare, family services, and employment pathways, while a rising old-age ratio gradually increases pension, health, and long-term care obligations.</p>
+      <ul><li>Age dependency ratio (% of working-age population) fell from 77.78 in 1960 to 59.57 in 2024.</li>
+<li>Age dependency ratio, young (% of working-age population) fell from 67.67 in 1960 to 51.37 in 2024.</li>
+<li>Age dependency ratio, old (% of working-age population) fell from 10.11 in 1960 to 8.20 in 2024.</li></ul>
+    </div>
+    </template>
+<template data-figure-template="fertility-life-expectancy">
+    <figure class="figure-card" id="fertility-life-expectancy">
+      <figcaption>Mongolia: Fertility, Life Expectancy, and Population Growth</figcaption>
+      <div class="chart-frame">
+        <canvas id="chart-fertility-life-expectancy" aria-label="Mongolia: Fertility, Life Expectancy, and Population Growth" role="img"></canvas>
+      </div>
+      <p class="source">Source: World Bank WDI, Mongolia country code MNG. Indicator IDs: SP.DYN.TFRT.IN, SP.DYN.LE00.IN, SP.POP.GROW. Unit: Births per woman, years, and annual percent.</p>
+      <script type="application/json" id="chart-fertility-life-expectancy-config">{"type": "line", "data": {"labels": [1960, 1961, 1962, 1963, 1964, 1965, 1966, 1967, 1968, 1969, 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 1979, 1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], "datasets": [{"label": "Fertility rate, total (births per woman)", "data": [6.817, 6.963, 7.098, 7.238, 7.329, 7.377, 7.409, 7.389, 7.371, 7.337, 7.314, 7.297, 7.279, 7.24, 7.173, 7.066, 6.931, 6.79, 6.62, 6.424, 6.211, 5.982, 5.801, 5.628, 5.451, 5.262, 5.029, 4.829, 4.647, 4.42, 4.5, 4.0, 3.5, 2.5, 2.7, 2.77, 2.5, 2.4, 2.3, 2.3, 2.2, 2.2, 2.1, 2.0, 2.0, 2.0, 2.1, 2.3, 2.6, 2.8, 2.4, 2.6, 2.7, 3.0, 3.1, 3.0, 3.0, 2.8, 2.9, 3.0, 2.9, 2.8, 2.7, 2.7, 2.5], "borderColor": "#0f6f78", "backgroundColor": "#0f6f78", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}, {"label": "Life expectancy at birth, total (years)", "data": [44.5310487804878, 45.3926829268293, 46.2474146341463, 47.106243902439, 47.9171951219512, 48.6831463414634, 49.3344878048781, 50.09, 50.7391951219512, 51.3599756097561, 51.9505853658537, 52.5202195121951, 53.0728292682927, 53.5671463414634, 53.9876341463415, 54.3009756097561, 54.5484146341463, 54.7357804878049, 54.8861707317073, 55.0270487804878, 55.1848780487805, 55.3730487804878, 55.5940243902439, 55.8454146341464, 56.1206097560976, 56.416756097561, 56.7378048780488, 57.0928536585366, 57.4803414634146, 58.1020243902439, 58.8011951219512, 59.8047317073171, 60.4307073170732, 60.8242195121951, 60.859, 60.892512195122, 60.994, 61.414512195122, 62.0830731707317, 62.7895365853659, 63.2104878048781, 63.3917073170732, 63.540243902439, 63.5753658536585, 64.630243902439, 65.2807317073171, 65.9021951219512, 66.5934146341464, 67.2460975609756, 67.9690243902439, 68.5056097560976, 69.109268292683, 69.500243902439, 70.0980487804878, 70.5831707317073, 70.810243902439, 70.2239024390244, 70.5434146341463, 70.8270731707317, 71.0531707317073, 71.3490243902439, 71.6451219512195, 71.9007317073171, 72.1224390243902, 72.3980487804878], "borderColor": "#a6502a", "backgroundColor": "#a6502a", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}, {"label": "Population growth (annual %)", "data": [null, 3.19009737101048, 3.13670431043954, 2.83225245529327, 2.65921482305515, 2.77357991092692, 2.83923032044886, 2.81640981151285, 2.71421723130521, 2.59655212253032, 2.57979332854632, 2.65116125609439, 2.72552812282035, 2.79069288489164, 2.84411669407914, 2.87961400738083, 2.8906328531479, 2.85072663156536, 2.70522640427833, 2.5116811292293, 2.41987254563328, 2.41124837189573, 2.4096595294372, 2.41973528434082, 2.44417302800377, 2.48520178362189, 2.54098535586882, 2.59594196942848, 2.61153690252887, 2.27901401494206, -1.20653291340797, 3.12554463819911, 0.112989877088484, -0.122780957606697, 1.11448441138802, 1.61069462565483, 1.54144516833781, 1.41690699648118, 1.38919318660692, 1.41026329390347, 1.32711144076984, 1.22563721499933, 1.28530335948394, 1.27185524409713, 1.12405283429406, 1.10986290557005, 1.20548331364776, 1.34193846720281, 1.57679522082476, 1.79649232006396, 1.74992683110286, 1.7265777901103, 1.89795214519602, 2.06694708057063, 2.18707605433318, 2.12866951701474, 2.02736957640078, 1.92577883760149, 1.86480192831175, 1.8371507310985, 1.80542008661223, 1.684959051396, 1.46704738017187, 1.3708886685104, 1.24590299529718], "borderColor": "#2f7d4f", "backgroundColor": "#2f7d4f", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}]}, "options": {"responsive": true, "maintainAspectRatio": false, "interaction": {"mode": "index", "intersect": false}, "plugins": {"legend": {"position": "bottom", "labels": {"boxWidth": 14, "boxHeight": 3}}, "tooltip": {"enabled": true}}, "scales": {"x": {"grid": {"display": false}, "ticks": {"maxTicksLimit": 8}}, "y": {"title": {"display": true, "text": "Births per woman, years, and annual percent"}, "grid": {"color": "#e8eef3"}, "ticks": {"precision": 1}}}}}</script>
+    </figure>
+    
+
+    <div class="figure-interpretation">
+      <p>Fertility, life expectancy, and population growth show the demographic transition in motion. Mongolia is not yet an old society, but lower fertility and longer lives mean that the state must plan for both youth inclusion today and aging-related public finance tomorrow.</p>
+      <ul><li>Fertility rate, total (births per woman) fell from 6.82 in 1960 to 2.50 in 2024.</li>
+<li>Life expectancy at birth, total (years) rose from 44.53 in 1960 to 72.40 in 2024.</li>
+<li>Population growth (annual %) fell from 3.19 in 1961 to 1.25 in 2024.</li></ul>
+    </div>
+    </template>
+    </article>
+    
+    </section>
+    
+    </main>
+  </div>
+  <script>
+    function fallbackMarkdown(text) {
+      const escaped = text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+      return escaped.split(/\n{2,}/).map((block) => `<p>${block.replace(/\n/g, "<br>")}</p>`).join("");
+    }
+    function renderMarkdown(text) {
+      return window.marked ? marked.parse(text) : fallbackMarkdown(text);
+    }
+    function replaceFigurePlaceholders(preview, panel) {
+      const pattern = /^\{\{(figure|map|image):([a-z0-9-]+)\}\}$/;
+      preview.querySelectorAll("p").forEach((paragraph) => {
+        const match = (paragraph.textContent || "").trim().match(pattern);
+        if (!match) return;
+        const key = match[1] === "figure" ? match[2] : `${match[1]}:${match[2]}`;
+        const template = panel.querySelector(`template[data-figure-template="${key}"]`);
+        if (!template) {
+          const note = document.createElement("p");
+          note.className = "source";
+          note.textContent = `Figure not available: ${key}`;
+          paragraph.replaceWith(note);
+          return;
+        }
+        paragraph.replaceWith(template.content.cloneNode(true));
+      });
+    }
+    function setupMarkdownPanels() {
+      document.querySelectorAll("[data-md-panel]").forEach((panel) => {
+        const id = panel.getAttribute("data-md-panel");
+        const preview = panel.querySelector(".markdown-preview");
+        const editor = panel.querySelector(".markdown-editor");
+        const edit = panel.querySelector("[data-md-action='edit']");
+        const save = panel.querySelector("[data-md-action='save']");
+        const cancel = panel.querySelector("[data-md-action='cancel']");
+        const source = panel.getAttribute("data-md-source");
+        const original = editor.value;
+        let hash = 0;
+        for (let i = 0; i < original.length; i += 1) {
+          hash = ((hash << 5) - hash + original.charCodeAt(i)) | 0;
+        }
+        const storageKey = `mng-report-markdown:v2:${id}:${hash}`;
+        const stored = localStorage.getItem(storageKey);
+        const isPermanentMode = source && window.location.protocol.startsWith("http");
+        if (stored !== null && (!source || window.location.protocol === "file:")) {
+          editor.value = stored;
+        } else if (stored !== null && isPermanentMode && stored !== editor.value) {
+          const useDraft = window.confirm("A browser draft exists for this section. Load it into the editor so you can save it permanently?");
+          if (useDraft) editor.value = stored;
+        }
+        const showPreview = () => {
+          preview.innerHTML = renderMarkdown(editor.value);
+          replaceFigurePlaceholders(preview, panel);
+          setupCharts();
+        };
+        const setEditing = (editing) => {
+          editor.hidden = !editing;
+          preview.hidden = editing;
+          edit.hidden = editing;
+          save.hidden = !editing;
+          cancel.hidden = !editing;
+        };
+        const saveMarkdown = async () => {
+          if (isPermanentMode) {
+            const response = await fetch("/api/save-section", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ source, markdown: editor.value })
+            });
+            if (!response.ok) {
+              const message = await response.text();
+              throw new Error(message || `Save failed with ${response.status}`);
+            }
+            localStorage.removeItem(storageKey);
+            window.alert("Saved permanently to the Markdown source file.");
+          } else {
+            localStorage.setItem(storageKey, editor.value);
+            if (source) {
+              window.alert("This edit was saved only as a browser draft. Open the report through MNG/code/serve_report.py to save it permanently to the Markdown source file.");
+            }
+          }
+        };
+        showPreview();
+        setEditing(false);
+        edit.addEventListener("click", () => setEditing(true));
+        save.addEventListener("click", async () => {
+          save.disabled = true;
+          try {
+            await saveMarkdown();
+            showPreview();
+            setEditing(false);
+          } catch (error) {
+            window.alert(error.message || "Could not save the Markdown source.");
+          } finally {
+            save.disabled = false;
+          }
+        });
+        cancel.addEventListener("click", () => {
+          editor.value = localStorage.getItem(storageKey) ?? original;
+          showPreview();
+          setEditing(false);
+        });
+      });
+    }
+    function setupCharts() {
+      if (!window.Chart) {
+        document.querySelectorAll(".figure-card").forEach((card) => {
+          const note = document.createElement("p");
+          note.className = "source";
+          note.textContent = "Chart.js could not be loaded from local assets/chart.umd.min.js.";
+          card.appendChild(note);
+        });
+        return;
+      }
+      document.querySelectorAll("script[type='application/json'][id$='-config']").forEach((script) => {
+        const canvasId = script.id.replace("-config", "");
+        const canvas = document.getElementById(canvasId);
+        if (!canvas) return;
+        if (canvas.dataset.chartReady === "1") return;
+        canvas.dataset.chartReady = "1";
+        new Chart(canvas, JSON.parse(script.textContent));
+      });
+    }
+    window.addEventListener("DOMContentLoaded", () => {
+      setupMarkdownPanels();
+      setupCharts();
+    });
+    </script>
+</body>
+</html>

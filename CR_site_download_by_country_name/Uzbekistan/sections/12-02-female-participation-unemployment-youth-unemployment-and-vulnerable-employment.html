@@ -1,0 +1,938 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>12.2 Female Participation, Unemployment, Youth Unemployment, and Vulnerable Employment | Uzbekistan Country Report</title>
+  <script src="../assets/chart.umd.min.js"></script>
+  <script src="../assets/marked.min.js"></script>
+  <style>
+    :root {
+      --ink: #17212b;
+      --muted: #5b6773;
+      --line: #d9e1e8;
+      --panel: #f7f9fb;
+      --accent: #146c94;
+      --paper: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.62;
+    }
+    .layout {
+      display: grid;
+      grid-template-columns: 310px minmax(0, 1fr);
+      min-height: 100vh;
+    }
+    aside {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      overflow: auto;
+      border-right: 1px solid var(--line);
+      background: var(--panel);
+      padding: 22px 18px;
+    }
+    aside h1 { font-size: 20px; margin: 0 0 6px; }
+    aside h1 a { color: var(--ink); text-decoration: none; }
+    aside h1 a:hover { color: var(--accent); }
+    aside p { color: var(--muted); font-size: 13px; margin: 0 0 18px; }
+    nav a {
+      display: block;
+      color: var(--ink);
+      text-decoration: none;
+      padding: 8px 10px;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+    nav a:hover, nav a.active { background: #e9f1f6; color: var(--accent); }
+    .chapter-link { font-weight: 700; }
+    .toc-group {
+      margin: 1px 0;
+      border-radius: 6px;
+    }
+    .toc-group summary {
+      list-style: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .toc-group summary::-webkit-details-marker { display: none; }
+    .toc-group summary::before {
+      content: "›";
+      color: var(--muted);
+      font-size: 15px;
+      transform: rotate(0deg);
+      transition: transform 0.12s ease;
+    }
+    .toc-group[open] summary::before { transform: rotate(90deg); }
+    .toc-group summary a { flex: 1; }
+    .section-nav {
+      margin: 2px 0 8px 8px;
+      padding-left: 10px;
+      border-left: 2px solid #d2dde6;
+    }
+    .section-link {
+      padding: 5px 8px;
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.35;
+    }
+    .anchor-target {
+      display: block;
+      position: relative;
+      top: -18px;
+      visibility: hidden;
+    }
+    main { padding: 34px min(7vw, 86px); max-width: 980px; }
+    .hero { border-bottom: 1px solid var(--line); padding-bottom: 24px; margin-bottom: 24px; }
+    .hero h2 { font-size: 34px; margin: 0 0 8px; letter-spacing: 0; }
+    .hero p { color: var(--muted); max-width: 820px; }
+    .chapter h2 { font-size: 24px; margin: 0 0 12px; }
+    .chapter-landing-note {
+      color: var(--muted);
+      max-width: 760px;
+      margin: 0 0 18px;
+    }
+    .chapter-section-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 12px;
+      margin: 18px 0 28px;
+    }
+    .chapter-section-card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      padding: 14px;
+    }
+    .chapter-section-card a {
+      display: grid;
+      grid-template-columns: 48px minmax(0, 1fr);
+      gap: 10px;
+      align-items: start;
+      text-decoration: none;
+      color: var(--ink);
+    }
+    .chapter-section-card a:hover strong { color: var(--accent); }
+    .chapter-section-card span {
+      font-weight: 800;
+      color: var(--accent);
+      font-size: 15px;
+    }
+    .chapter-section-card strong {
+      font-size: 16px;
+      line-height: 1.35;
+      transition: color 0.12s ease;
+    }
+    .section-source {
+      margin: 10px 0 0 58px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.35;
+    }
+    .facts {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 10px;
+      margin: 18px 0;
+    }
+    .facts div { border: 1px solid var(--line); border-radius: 8px; padding: 12px; background: #fff; }
+    .facts b { display: block; font-size: 12px; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+    .facts span { font-weight: 700; }
+    .figure-card {
+      margin: 28px 0 34px;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+    .symbol-gallery {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin: 24px 0 30px;
+    }
+    .symbol-card {
+      margin: 0;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+    .symbol-card-wide { grid-column: 1 / -1; }
+    .symbol-card img {
+      display: block;
+      width: 100%;
+      max-height: 360px;
+      object-fit: contain;
+      background: #f7fbfc;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 10px;
+    }
+    .symbol-card-wide img {
+      max-height: 300px;
+      padding: 0;
+      object-fit: contain;
+    }
+    .symbol-card p {
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.55;
+    }
+    .heritage-photo {
+      margin: 24px 0 30px;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+    .heritage-photo img {
+      display: block;
+      width: 100%;
+      max-height: 520px;
+      object-fit: cover;
+      border-radius: 6px;
+      border: 1px solid var(--line);
+      background: #f7fbfc;
+    }
+    .heritage-photo figcaption {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+    .gov-org-chart {
+      margin: 24px 0 30px;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+    .gov-org-chart > figcaption {
+      font-weight: 800;
+      font-size: 18px;
+      margin: 0 0 14px;
+    }
+    .org-flow {
+      display: grid;
+      gap: 14px;
+    }
+    .org-branches,
+    .org-implementation {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      position: relative;
+    }
+    .org-node {
+      border: 1px solid #cfdce3;
+      border-radius: 8px;
+      padding: 13px;
+      background: #f8fbfc;
+      min-height: 146px;
+    }
+    .org-presidency {
+      background: #e9f4f7;
+      border-color: #9fc7d3;
+      max-width: 720px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .org-executive {
+      background: #f4f8ee;
+      border-color: #bfd4a5;
+    }
+    .org-node span {
+      display: block;
+      color: var(--accent);
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 6px;
+    }
+    .org-node strong {
+      display: block;
+      font-size: 16px;
+      line-height: 1.25;
+      margin-bottom: 8px;
+    }
+    .org-node p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+    .map-card {
+      margin: 24px 0 30px;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      width: min(1180px, calc(100vw - 380px));
+      max-width: none;
+    }
+    .map-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(250px, 0.85fr);
+      gap: 18px;
+      align-items: start;
+    }
+    .adm-map {
+      width: 100%;
+      height: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #f7fbfc;
+    }
+    .adm-path {
+      stroke: #415766;
+      stroke-width: 1;
+      vector-effect: non-scaling-stroke;
+    }
+    .adm-path:hover { fill: #98c6d2; }
+    .map-label {
+      font-size: 15px;
+      font-weight: 700;
+      text-anchor: middle;
+      fill: #253746;
+      paint-order: stroke;
+      stroke: #ffffff;
+      stroke-width: 3.8px;
+      stroke-linejoin: round;
+      pointer-events: none;
+    }
+    .neighbor-label {
+      font-size: 17px;
+      font-weight: 700;
+      text-anchor: middle;
+      fill: #6a7782;
+      letter-spacing: 0;
+    }
+    .capital-marker circle {
+      fill: #a12222;
+      stroke: #ffffff;
+      stroke-width: 2.2;
+    }
+    .capital-marker text {
+      font-size: 16px;
+      font-weight: 700;
+      fill: #17212b;
+      paint-order: stroke;
+      stroke: #ffffff;
+      stroke-width: 3.6px;
+    }
+    .map-table-wrap {
+      max-height: 660px;
+      overflow: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+    .compact-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12px;
+      line-height: 1.35;
+    }
+    .compact-table th, .compact-table td {
+      padding: 7px 8px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+    .compact-table th {
+      position: sticky;
+      top: 0;
+      background: #eef5f8;
+    }
+    .map-missing {
+      border: 1px dashed #aab7c2;
+      border-radius: 8px;
+      padding: 16px;
+      color: var(--muted);
+      background: #fbfcfd;
+    }
+    figcaption {
+      font-weight: 700;
+      margin-bottom: 8px;
+      text-align: center;
+    }
+    .chart-frame { height: 420px; width: 100%; }
+    .hdi-scatter-frame { width: 100%; overflow-x: auto; }
+    .hdi-scatter-svg {
+      display: block;
+      width: 100%;
+      min-width: 720px;
+      height: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+    canvas { display: block; width: 100%; height: 100%; }
+    .panel-figure { margin-top: -14px; }
+    .panel-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 14px;
+    }
+    .panel-chart {
+      min-height: 210px;
+      height: 230px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 10px;
+      background: #fbfcfd;
+    }
+    .source { color: var(--muted); font-size: 12px; }
+    .chart-empty { border: 1px dashed #aab7c2; border-radius: 8px; padding: 16px; background: #fbfcfd; }
+    .chart-empty strong, .chart-empty span, .chart-empty small { display: block; }
+    .editable-prose {
+      position: relative;
+      margin: 0 0 20px;
+    }
+    .prose-toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin: 0 0 12px;
+      padding: 8px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .prose-toolbar span {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .prose-toolbar div { display: flex; gap: 6px; flex-wrap: wrap; justify-content: flex-end; }
+    .prose-toolbar button {
+      border: 1px solid #b9c6d0;
+      background: #fff;
+      color: var(--ink);
+      border-radius: 6px;
+      padding: 6px 9px;
+      font-size: 12px;
+      cursor: pointer;
+    }
+    .prose-toolbar button:hover { border-color: var(--accent); color: var(--accent); }
+    .prose-body {
+      font-size: 17px;
+      line-height: 1.78;
+    }
+    .prose-body h1, .prose-body h2, .prose-body h3 {
+      margin: 24px 0 10px;
+      line-height: 1.25;
+      scroll-margin-top: 24px;
+    }
+    .prose-body p { margin: 0 0 16px; }
+    .prose-body ul, .prose-body ol { padding-left: 24px; margin: 0 0 16px; }
+    .prose-body blockquote { margin: 18px 0; padding-left: 14px; border-left: 3px solid var(--line); color: var(--muted); }
+    .prose-body table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0 22px;
+      font-size: 15px;
+      line-height: 1.55;
+      background: #fff;
+      border: 1px solid #b8c7d2;
+    }
+    .prose-body th,
+    .prose-body td {
+      border: 1px solid #b8c7d2;
+      padding: 9px 11px;
+      text-align: left;
+      vertical-align: top;
+    }
+    .prose-body th {
+      background: #eef5f8;
+      font-weight: 800;
+    }
+    .prose-body tr:nth-child(even) td {
+      background: #fbfcfd;
+    }
+    .equation-block {
+      margin: 18px 0 22px;
+      padding: 16px 18px;
+      border: 1px solid #b8c7d2;
+      border-left: 4px solid var(--accent);
+      border-radius: 8px;
+      background: #fbfcfd;
+      overflow-x: auto;
+    }
+    .equation-label {
+      margin-bottom: 8px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+    .equation-line {
+      min-width: 680px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 21px;
+      line-height: 1.8;
+      white-space: normal;
+    }
+    .equation-line sub {
+      font-size: 65%;
+    }
+    .markdown-editor {
+      display: block;
+      width: 100%;
+      min-height: 520px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 12px 14px;
+      resize: vertical;
+      font: 13px/1.55 Consolas, "Courier New", monospace;
+      color: var(--ink);
+      background: #fbfcfd;
+    }
+    .cover-body {
+      min-height: 100vh;
+      background:
+        linear-gradient(90deg, rgba(20, 108, 148, 0.08) 1px, transparent 1px),
+        linear-gradient(0deg, rgba(111, 122, 133, 0.08) 1px, transparent 1px),
+        #eef3f5;
+      background-size: 42px 42px;
+    }
+    .cover-page {
+      max-width: none;
+      min-height: 100vh;
+      padding: 42px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .book-cover {
+      width: min(980px, 100%);
+      min-height: min(780px, calc(100vh - 84px));
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 260px;
+      grid-template-rows: auto auto 1fr auto auto;
+      gap: 20px 34px;
+      border: 1px solid #c8d3dc;
+      background: linear-gradient(90deg, #ffffff 0%, #ffffff 66%, #f3f7f8 66%, #f3f7f8 100%);
+      box-shadow: 0 18px 50px rgba(23, 33, 43, 0.14);
+      padding: clamp(30px, 5vw, 64px);
+      position: relative;
+      overflow: hidden;
+    }
+    .book-cover::before {
+      content: "";
+      position: absolute;
+      inset: 24px auto 24px 24px;
+      width: 8px;
+      background: #b43a32;
+    }
+    .book-cover::after {
+      content: "UZB";
+      position: absolute;
+      right: 34px;
+      bottom: 16px;
+      color: rgba(20, 108, 148, 0.1);
+      font-size: clamp(82px, 18vw, 176px);
+      line-height: 1;
+      font-weight: 800;
+      letter-spacing: 0;
+      pointer-events: none;
+    }
+    .cover-kicker {
+      grid-column: 1 / 3;
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+    .cover-rule {
+      grid-column: 1 / 3;
+      height: 1px;
+      background: #c8d3dc;
+    }
+    .book-cover h1 {
+      grid-column: 1 / 2;
+      margin: 10px 0 0;
+      font-size: clamp(48px, 8vw, 92px);
+      line-height: 0.96;
+      letter-spacing: 0;
+      font-weight: 800;
+    }
+    .cover-subtitle {
+      grid-column: 1 / 2;
+      margin: 0;
+      max-width: 650px;
+      color: #344451;
+      font-size: clamp(18px, 2.4vw, 25px);
+      line-height: 1.32;
+      font-weight: 700;
+    }
+    .cover-purpose {
+      grid-column: 1 / 2;
+      max-width: 680px;
+      margin: 0;
+      color: #344451;
+      font-size: 16px;
+      line-height: 1.74;
+    }
+    .cover-editor {
+      grid-column: 2 / 3;
+      grid-row: 3 / 5;
+      align-self: start;
+      border-top: 4px solid var(--accent);
+      padding-top: 18px;
+      z-index: 1;
+    }
+    .cover-editor span {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+    .cover-editor strong {
+      display: block;
+      margin-top: 8px;
+      font-size: 24px;
+      line-height: 1.1;
+    }
+    .cover-editor em {
+      display: block;
+      margin-top: 6px;
+      color: #344451;
+      font-style: normal;
+      font-size: 14px;
+    }
+    .cover-actions {
+      grid-column: 1 / 2;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-self: end;
+      z-index: 1;
+    }
+    .primary-link, .secondary-link {
+      display: inline-flex;
+      align-items: center;
+      min-height: 42px;
+      padding: 9px 14px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 14px;
+    }
+    .primary-link { background: var(--accent); color: #fff; border: 1px solid var(--accent); }
+    .secondary-link { background: #fff; color: var(--ink); border: 1px solid #b9c6d0; }
+    .cover-method {
+      grid-column: 1 / 3;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      z-index: 1;
+    }
+    .cover-method div {
+      border-top: 1px solid #c8d3dc;
+      padding-top: 12px;
+    }
+    .cover-method b {
+      display: block;
+      font-size: 13px;
+      text-transform: uppercase;
+      color: var(--ink);
+    }
+    .cover-method span {
+      display: block;
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+    [hidden] { display: none !important; }
+    code, pre { background: #eef3f6; border-radius: 5px; }
+    code { padding: 1px 4px; }
+    pre { padding: 12px; overflow: auto; }
+    @media (max-width: 980px) {
+      .layout { grid-template-columns: 1fr; }
+      aside { position: relative; height: auto; }
+      main { padding: 24px 18px; }
+      .chart-frame { height: 320px; }
+      .symbol-gallery { grid-template-columns: 1fr; }
+      .symbol-card-wide { grid-column: auto; }
+      .map-card { width: 100%; }
+      .map-grid { grid-template-columns: 1fr; }
+      .cover-page { padding: 18px; align-items: stretch; }
+      .book-cover {
+        min-height: auto;
+        grid-template-columns: 1fr;
+        background: #fff;
+      }
+      .cover-kicker, .cover-rule, .book-cover h1, .cover-subtitle,
+      .cover-purpose, .cover-editor, .cover-actions, .cover-method {
+        grid-column: 1 / 2;
+        grid-row: auto;
+      }
+      .cover-method { grid-template-columns: 1fr; }
+    }
+    </style>
+</head>
+<body>
+  <div class="layout">
+    <aside>
+      <h1><a href="../index.html">Uzbekistan</a></h1>
+      <p>Official-source country report with reproducible indicators and editable Markdown notes.</p>
+      <nav><details class="toc-group"><summary><a class="chapter-link" href="../01-overview.html">1. Country Overview</a></summary><div class="section-nav"><a class="section-link" href="../sections/01-01-official-name-capital-location-area-population-language-religion-and-currency.html">1.1 Official Name, Capital, Location, Area, Population, Language, Religion, and Currency</a><a class="section-link" href="../sections/01-02-state-symbols.html">1.2 State Symbols</a><a class="section-link" href="../sections/01-03-country-profile-and-strategic-setting.html">1.3 Country Profile and Strategic Setting</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../02-history.html">2. Historical Background</a></summary><div class="section-nav"><a class="section-link" href="../sections/02-01-ancient-and-medieval-political-communities-and-civilizational-zones.html">2.1 Ancient and Medieval Political Communities and Civilizational Zones</a><a class="section-link" href="../sections/02-02-empire-colonial-rule-and-pre-independence-state-formation.html">2.2 Empire, Colonial Rule, and Pre-Independence State Formation</a><a class="section-link" href="../sections/02-03-independence-transition-and-constitutional-turning-points.html">2.3 Independence, Transition, and Constitutional Turning Points</a><a class="section-link" href="../sections/02-04-historical-legacies-in-present-institutions.html">2.4 Historical Legacies in Present Institutions</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../03-constitution.html">3. Constitution and Basic State Order</a></summary><div class="section-nav"><a class="section-link" href="../sections/03-01-enactment-and-amendment-history.html">3.1 Enactment and Amendment History</a><a class="section-link" href="../sections/03-02-state-identity-sovereignty-territory-and-people.html">3.2 State Identity, Sovereignty, Territory, and People</a><a class="section-link" href="../sections/03-03-fundamental-rights-system.html">3.3 Fundamental Rights System</a><a class="section-link" href="../sections/03-04-separation-of-powers-constitutional-review-judicial-review-and-emergency-powers.html">3.4 Separation of Powers, Constitutional Review, Judicial Review, and Emergency Powers</a><a class="section-link" href="../sections/03-05-constitutional-implications-for-state-authority.html">3.5 Constitutional Implications for State Authority</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../04-politics.html">4. Political System and Power Structure</a></summary><div class="section-nav"><a class="section-link" href="../sections/04-01-form-of-government.html">4.1 Form of Government</a><a class="section-link" href="../sections/04-02-head-of-state-and-head-of-government.html">4.2 Head of State and Head of Government</a><a class="section-link" href="../sections/04-03-parliament-legislative-process-parties-and-elections.html">4.3 Parliament, Legislative Process, Parties, and Elections</a><a class="section-link" href="../sections/04-04-local-politics-and-real-power-relations.html">4.4 Local Politics and Real Power Relations</a><a class="section-link" href="../sections/04-05-political-dynamics-and-institutional-accountability.html">4.5 Political Dynamics and Institutional Accountability</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../05-administration.html">5. Administrative System and Government Organization</a></summary><div class="section-nav"><a class="section-link" href="../sections/05-01-central-executive-administration-strategic-planning-and-policy-coordination.html">5.1 Central Executive Administration, Strategic Planning, and Policy Coordination</a><a class="section-link" href="../sections/05-02-organizational-management-and-administrative-reform.html">5.2 Organizational Management and Administrative Reform</a><a class="section-link" href="../sections/05-03-human-resource-management-and-civil-service.html">5.3 Human Resource Management and Civil Service</a><a class="section-link" href="../sections/05-04-financial-administration-budget-execution-procurement-and-audit.html">5.4 Financial Administration, Budget Execution, Procurement, and Audit</a><a class="section-link" href="../sections/05-05-local-administration-mahalla-and-service-delivery.html">5.5 Local Administration, Mahalla, and Service Delivery</a><a class="section-link" href="../sections/05-06-administrative-governance-accountability-and-digital-government.html">5.6 Administrative Governance, Accountability, and Digital Government</a><a class="section-link" href="../sections/05-07-implementation-capacity-and-administrative-performance.html">5.7 Implementation Capacity and Administrative Performance</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../06-governance.html">6. Governance and Institutional Capacity</a></summary><div class="section-nav"><a class="section-link" href="../sections/06-01-government-effectiveness-and-regulatory-quality.html">6.1 Government Effectiveness and Regulatory Quality</a><a class="section-link" href="../sections/06-02-rule-of-law-and-control-of-corruption.html">6.2 Rule of Law and Control of Corruption</a><a class="section-link" href="../sections/06-03-political-stability-citizen-participation-and-accountability.html">6.3 Political Stability, Citizen Participation, and Accountability</a><a class="section-link" href="../sections/06-04-institutional-performance-and-reform-credibility.html">6.4 Institutional Performance and Reform Credibility</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../07-fiscal.html">7. Fiscal System and Public Sector</a></summary><div class="section-nav"><a class="section-link" href="../sections/07-01-government-revenue-tax-revenue-and-expenditure-structure.html">7.1 Government Revenue, Tax Revenue, and Expenditure Structure</a><a class="section-link" href="../sections/07-02-fiscal-balance-debt-and-interest-burden.html">7.2 Fiscal Balance, Debt, and Interest Burden</a><a class="section-link" href="../sections/07-03-state-owned-enterprises-and-quasi-public-sector.html">7.3 State-Owned Enterprises and Quasi-Public Sector</a><a class="section-link" href="../sections/07-04-defense-and-public-security-spending.html">7.4 Defense and Public Security Spending</a><a class="section-link" href="../sections/07-05-fiscal-capacity-and-public-sector-risks.html">7.5 Fiscal Capacity and Public Sector Risks</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../08-society.html">8. Population and Social Structure</a></summary><div class="section-nav"><a class="section-link" href="../sections/08-01-population-size-growth-age-structure-and-dependency.html">8.1 Population Size, Growth, Age Structure, and Dependency</a><a class="section-link" href="../sections/08-02-urbanization-and-regional-distribution.html">8.2 Urbanization and Regional Distribution</a><a class="section-link" href="../sections/08-03-ethnicity-language-religion-migration-remittances-and-diaspora.html">8.3 Ethnicity, Language, Religion, Migration, Remittances, and Diaspora</a><a class="section-link" href="../sections/08-04-social-integration-and-conflict-factors.html">8.4 Social Integration and Conflict Factors</a><a class="section-link" href="../sections/08-05-demographic-pressures-and-social-cohesion.html">8.5 Demographic Pressures and Social Cohesion</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../09-macro.html">9. Macroeconomic Structure</a></summary><div class="section-nav"><a class="section-link" href="../sections/09-01-gdp-scale-growth-and-gdp-per-capita.html">9.1 GDP Scale, Growth, and GDP per Capita</a><a class="section-link" href="../sections/09-02-prices-exchange-rate-and-macroeconomic-stability.html">9.2 Prices, Exchange Rate, and Macroeconomic Stability</a><a class="section-link" href="../sections/09-03-sectoral-structure-resource-dependence-growth-model-and-vulnerabilities.html">9.3 Sectoral Structure, Resource Dependence, Growth Model, and Vulnerabilities</a><a class="section-link" href="../sections/09-04-growth-sustainability-and-structural-constraints.html">9.4 Growth Sustainability and Structural Constraints</a><a class="section-link" href="../sections/09-05-growth-driver-models-and-interpretation.html">9.5 Growth Driver Models and Interpretation</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../10-trade.html">10. Trade, Investment, and External Economy</a></summary><div class="section-nav"><a class="section-link" href="../sections/10-01-exports-imports-trading-partners-and-current-account.html">10.1 Exports, Imports, Trading Partners, and Current Account</a><a class="section-link" href="../sections/10-02-tourism-high-technology-exports-and-services.html">10.2 Tourism, High-Technology Exports, and Services</a><a class="section-link" href="../sections/10-03-fdi-absolute-amount-and-share-of-gdp.html">10.3 FDI: Absolute Amount and Share of GDP</a><a class="section-link" href="../sections/10-04-investment-regime-foreign-exchange-economic-zones-and-industrial-policy.html">10.4 Investment Regime, Foreign Exchange, Economic Zones, and Industrial Policy</a><a class="section-link" href="../sections/10-05-external-integration-and-competitiveness.html">10.5 External Integration and Competitiveness</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../11-infrastructure.html">11. Infrastructure, Energy, and Digital Connectivity</a></summary><div class="section-nav"><a class="section-link" href="../sections/11-01-electricity-access-and-energy-dependence.html">11.1 Electricity Access and Energy Dependence</a><a class="section-link" href="../sections/11-02-transport-logistics-air-rail-road-and-ports.html">11.2 Transport, Logistics, Air, Rail, Road, and Ports</a><a class="section-link" href="../sections/11-03-internet-mobile-connectivity-secure-servers-and-logistics-performance.html">11.3 Internet, Mobile Connectivity, Secure Servers, and Logistics Performance</a><a class="section-link" href="../sections/11-04-connectivity-service-delivery-and-bottlenecks.html">11.4 Connectivity, Service Delivery, and Bottlenecks</a></div></details>
+<details class="toc-group active" open><summary><a class="chapter-link active" href="../12-labor.html">12. Labor Market and Human Capital</a></summary><div class="section-nav"><a class="section-link" href="../sections/12-01-labor-force-size-and-participation.html">12.1 Labor Force Size and Participation</a><a class="section-link" href="../sections/12-02-female-participation-unemployment-youth-unemployment-and-vulnerable-employment.html">12.2 Female Participation, Unemployment, Youth Unemployment, and Vulnerable Employment</a><a class="section-link" href="../sections/12-03-agricultural-employment-education-literacy-productivity-hdi-and-r-d.html">12.3 Agricultural Employment, Education, Literacy, Productivity, HDI, and R&amp;D</a><a class="section-link" href="../sections/12-04-employment-absorption-and-human-capital-use.html">12.4 Employment Absorption and Human Capital Use</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../13-education-health.html">13. Education, Health, and Welfare</a></summary><div class="section-nav"><a class="section-link" href="../sections/13-01-education-system-and-public-expenditure.html">13.1 Education System and Public Expenditure</a><a class="section-link" href="../sections/13-02-life-expectancy-infant-mortality-hospital-beds-doctors-and-health-expenditure.html">13.2 Life Expectancy, Infant Mortality, Hospital Beds, Doctors, and Health Expenditure</a><a class="section-link" href="../sections/13-03-sanitation-public-health-risks-and-welfare.html">13.3 Sanitation, Public Health Risks, and Welfare</a><a class="section-link" href="../sections/13-04-human-development-outcomes-and-welfare-capacity.html">13.4 Human Development Outcomes and Welfare Capacity</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../14-finance.html">14. Financial Sector and Economic Institutions</a></summary><div class="section-nav"><a class="section-link" href="../sections/14-01-domestic-credit-private-credit-stock-market-and-fintech.html">14.1 Domestic Credit, Private Credit, Stock Market, and Fintech</a><a class="section-link" href="../sections/14-02-central-bank-monetary-policy-and-supervision.html">14.2 Central Bank, Monetary Policy, and Supervision</a><a class="section-link" href="../sections/14-03-foreign-investment-protection-and-capital-market-openness.html">14.3 Foreign Investment Protection and Capital-Market Openness</a><a class="section-link" href="../sections/14-04-financial-deepening-and-market-institutions.html">14.4 Financial Deepening and Market Institutions</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../15-security.html">15. Foreign Relations, Security, and Geopolitics</a></summary><div class="section-nav"><a class="section-link" href="../sections/15-01-foreign-policy-orientation-and-international-organizations.html">15.1 Foreign Policy Orientation and International Organizations</a><a class="section-link" href="../sections/15-02-borders-security-organizations-military-capacity-and-transnational-issues.html">15.2 Borders, Security Organizations, Military Capacity, and Transnational Issues</a><a class="section-link" href="../sections/15-03-strategic-resources-and-corridors.html">15.3 Strategic Resources and Corridors</a><a class="section-link" href="../sections/15-04-strategic-environment-and-transnational-risks.html">15.4 Strategic Environment and Transnational Risks</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../16-policy.html">16. Major Policies and National Development Strategy</a></summary><div class="section-nav"><a class="section-link" href="../sections/16-01-evolution-of-national-development-strategy.html">16.1 Evolution of National Development Strategy</a><a class="section-link" href="../sections/16-02-national-development-plan-and-industrial-policy.html">16.2 National Development Plan and Industrial Policy</a><a class="section-link" href="../sections/16-03-digital-transformation-energy-transition-climate-policy-and-administrative-reform.html">16.3 Digital Transformation, Energy Transition, Climate Policy, and Administrative Reform</a><a class="section-link" href="../sections/16-04-welfare-education-health-and-recent-five-year-policy-changes.html">16.4 Welfare, Education, Health, and Recent Five-Year Policy Changes</a><a class="section-link" href="../sections/16-05-policy-implementation-and-reform-sequencing.html">16.5 Policy Implementation and Reform Sequencing</a><a class="section-link" href="../sections/16-06-environmental-sustainability-sdgs-and-green-transition.html">16.6 Environmental Sustainability, SDGs, and Green Transition</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../17-assessment.html">17. Integrated Assessment</a></summary><div class="section-nav"><a class="section-link" href="../sections/17-01-national-operating-model.html">17.1 National Operating Model</a><a class="section-link" href="../sections/17-02-political-stability-institutional-risk-growth-drivers-and-bottlenecks.html">17.2 Political Stability, Institutional Risk, Growth Drivers, and Bottlenecks</a><a class="section-link" href="../sections/17-03-administrative-capacity-and-international-cooperation-implications.html">17.3 Administrative Capacity and International Cooperation Implications</a><a class="section-link" href="../sections/17-04-uzbekistan-and-comparative-administration-theory.html">17.4 Uzbekistan and Comparative Administration Theory</a><a class="section-link" href="../sections/17-05-evidence-limits-and-source-triangulation.html">17.5 Evidence Limits and Source Triangulation</a><a class="section-link" href="../sections/17-06-strategic-diagnosis-and-outlook.html">17.6 Strategic Diagnosis and Outlook</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../18-appendix.html">18. Appendix, Sources, and Method</a></summary><div class="section-nav"><a class="section-link" href="../sections/18-01-annual-data-revision-protocol.html">18.1 Annual Data Revision Protocol</a><a class="section-link" href="../sections/18-02-editorial-workflow-and-manuscript-preservation.html">18.2 Editorial Workflow and Manuscript Preservation</a><a class="section-link" href="../sections/18-03-data-integrity.html">18.3 Data Integrity</a><a class="section-link" href="../sections/18-04-evidence-archive-and-review-trail.html">18.4 Evidence Archive and Review Trail</a><a class="section-link" href="../sections/18-05-data-limits-and-source-triangulation.html">18.5 Data Limits and Source Triangulation</a><a class="section-link" href="../sections/18-06-external-review-checklist.html">18.6 External Review Checklist</a><a class="section-link" href="../sections/18-07-comparative-administration-benchmark.html">18.7 Comparative Administration Benchmark</a><a class="section-link" href="../sections/18-08-timeline.html">18.8 Timeline</a><a class="section-link" href="../sections/18-09-government-organization-chart.html">18.9 Government Organization Chart</a><a class="section-link" href="../sections/18-10-constitution-and-major-laws.html">18.10 Constitution and Major Laws</a><a class="section-link" href="../sections/18-11-key-indicator-table-source-list-and-data-codebook.html">18.11 Key Indicator Table, Source List, and Data Codebook</a><a class="section-link" href="../sections/18-12-methodological-notes-and-update-standards.html">18.12 Methodological Notes and Update Standards</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../19-references.html">19. References</a></summary><div class="section-nav"><a class="section-link" href="../sections/19-01-references.html">19.1 References</a><a class="section-link" href="../sections/19-02-source-integrity-and-citation-notes.html">19.2 Source Integrity and Citation Notes</a></div></details></nav>
+    </aside>
+    <main>
+      <header class="hero">
+        <h2>12.2 Female Participation, Unemployment, Youth Unemployment, and Vulnerable Employment</h2>
+      </header>
+      <section class="chapter">
+    <article class="editable-prose" data-md-panel="labor-female-participation-unemployment-youth-unemployment-and-vulnerable-employment-text" data-md-source="sections/12-02-female-participation-unemployment-youth-unemployment-and-vulnerable-employment.md">
+      <div class="prose-toolbar">
+        <span>Editable chapter text</span>
+        <div>
+          <button type="button" data-md-action="edit">Edit Markdown</button>
+          <button type="button" data-md-action="save" hidden>Save</button>
+          <button type="button" data-md-action="cancel" hidden>Cancel</button>
+        </div>
+      </div>
+      <div class="markdown-preview prose-body"></div>
+      <textarea class="markdown-editor" hidden>&lt;span id=&quot;12-2-female-participation-unemployment-youth-unemployment-and-vulnerable-employment&quot; class=&quot;anchor-target&quot;&gt;&lt;/span&gt;
+## 12.2 Female Participation, Unemployment, Youth Unemployment, and Vulnerable Employment
+
+﻿## 12.2 Female Participation, Unemployment, Youth Unemployment, and Vulnerable Employment
+
+The labor-market challenge is not evenly distributed. Women, young people, informal workers, rural workers, and potential migrants face different constraints. Uzbekistan&#x27;s growth model therefore needs to be judged not only by aggregate employment, but by whether it creates decent work for groups that are currently underused or pushed toward lower-quality jobs.
+
+Female labor-force participation is the clearest unused reserve. World Bank data show female participation rising from **39.0 percent in 1991** to **41.2 percent in 2025**. The increase is real but limited. Since 2022, the rate has stayed close to **41 percent**, which means the economy is not yet fully using women&#x27;s productive potential. World Bank gender analysis makes the constraint sharper: in 2021, female labor-force participation lagged behind male participation by **28 percentage points**, compared with **19 percentage points** in Europe and Central Asia excluding high-income countries. The issue is not only social inclusion. Low female participation reduces household income, tax capacity, firm talent pools, and the demographic dividend.
+
+&lt;span id=&quot;women-and-work&quot; class=&quot;anchor-target&quot;&gt;&lt;/span&gt;
+### Women And Work
+
+Uzbekistan&#x27;s Constitution prohibits discrimination in remuneration and protects women from employment discrimination related to pregnancy or having a child. The policy question is whether legal protection becomes practical opportunity. Women&#x27;s employment depends on childcare, safe transport, flexible work arrangements, anti-discrimination enforcement, vocational access, digital skills, and the availability of formal jobs outside traditionally gendered sectors.
+
+The strongest policy lever is care infrastructure. If childcare and eldercare are weak, women carry unpaid care burdens and labor supply remains constrained. Expanding preschool access, after-school care, safe commuting, and flexible formal work can raise participation without forcing women into informal or precarious work. This also matters for skilled labor: a country cannot afford to educate women and then lose their skills because workplaces and local services are not compatible with family responsibilities.
+
+The gender constraint also appears in earnings and youth transition data. The World Bank Country Gender Assessment reports that women earn **34 percent** less than men, above the global average gap of about **20 percent**. It estimates that if women participated in the economy on par with men, national income would rise by **29 percent**, and that matching men&#x27;s wages would lift more than **700 thousand** people out of poverty. These estimates show that women&#x27;s work is not a narrow labor-sector issue. It is a macroeconomic growth, poverty reduction, and household welfare issue.
+
+&lt;span id=&quot;youth-unemployment-and-migration-pressure&quot; class=&quot;anchor-target&quot;&gt;&lt;/span&gt;
+### Youth Unemployment And Migration Pressure
+
+Youth unemployment is the most politically sensitive labor indicator. The project dataset shows youth unemployment at **11.4 percent in 2014**, rising to **13.0 percent in 2021**, falling to **10.8 percent in 2023-2024**, and returning to **11.4 percent in 2025**. Gender-specific evidence shows a deeper divide: the World Bank reports young women&#x27;s unemployment at **15.5 percent**, compared with **10.0 percent** for young men, and a NEET rate of **42.0 percent** for young women compared with **8.8 percent** for young men. This is a major warning signal because young women outside employment, education, and training represent lost skills, lower lifetime earnings, and weaker household resilience.
+
+The issue is deeper than open unemployment. Many young people may be in informal work, low-paid services, seasonal employment, family agriculture, or jobs that do not match their education. Others may choose external migration because wages abroad are higher and because peer networks reduce the risk of leaving. This is why Uzbekistan&#x27;s youth issue is both a domestic job-creation problem and a migration-governance problem.
+
+Central Bank materials show the scale of the migration-remittance channel. In 2025, remittance inflows to Uzbekistan rose to **USD 18.9 billion**. A separate 2025 labor-migration report states that **2.36 million** citizens left for labor migration in January-September 2025, with **92 percent** of flows going to three main destination countries, while routes to Korea, Turkiye, Europe, the Baltic states, and other destinations have expanded. These numbers show that migration is not a marginal household strategy; it is a macroeconomic and labor-market institution.
+
+&lt;span id=&quot;gender-and-youth-risk-indicators&quot; class=&quot;anchor-target&quot;&gt;&lt;/span&gt;
+### Gender And Youth Risk Indicators
+
+| Issue | Statistic | Interpretation |
+| --- | ---: | --- |
+| Female participation gap | 28 percentage points below men in 2021 | Women&#x27;s labor-market exclusion is substantially larger than the regional comparator gap. |
+| Gender wage gap | Women earn 34% less than men | Equal access to work is not enough; wage quality and occupational segregation matter. |
+| Young women&#x27;s unemployment | 15.5% vs 10.0% for young men | Youth stress is gendered, not only generational. |
+| Young women&#x27;s NEET rate | 42.0% vs 8.8% for young men | Care burdens, norms, safety, and training access are blocking transition into work or study. |
+| Potential income gain from parity | National income +29% | Female employment is a growth strategy, not only an equity goal. |
+
+&lt;span id=&quot;vulnerable-employment-and-informality&quot; class=&quot;anchor-target&quot;&gt;&lt;/span&gt;
+### Vulnerable Employment And Informality
+
+Vulnerable employment is not only a statistical category; it describes people who work without strong contracts, social insurance, stable income, bargaining power, or protection against shocks. In Uzbekistan, vulnerable employment is linked to agriculture, informal services, construction, seasonal work, platform work, and migration. A young person may be &quot;employed&quot; but still lack a career path, pension contributions, occupational safety, or wage protection.
+
+The policy diagnosis is that unemployment alone understates labor-market stress. If the economy absorbs youth into low-quality jobs, the unemployment rate may look manageable while migration, informality, and low productivity remain high. The analysis therefore needs to read unemployment together with wage growth, job quality, social insurance coverage, labor inspection, migration flows, and sectoral productivity.
+
+{{figure:comparison-labor-absorption}}
+
+&lt;span id=&quot;policy-implications&quot; class=&quot;anchor-target&quot;&gt;&lt;/span&gt;
+### Policy Implications
+
+First, Uzbekistan needs a youth transition system, not only job announcements. This system would connect the final years of school, vocational training, apprenticeships, career counseling, employer placements, language training, and entrepreneurship support. Each region needs to know which occupations are growing and which credentials actually lead to jobs.
+
+Second, migration needs to be formal, safe, and skill-enhancing. Since many young people will continue to work abroad, the policy goal is not to block migration. It is to make migration safer and more productive: pre-departure training, legal recruitment channels, language and occupational certification, portable social protection, lower remittance costs, reintegration services, and recognition of skills acquired abroad.
+
+Third, women&#x27;s employment needs a practical package: care services, safe mobility, anti-discrimination enforcement, digital skills, wage transparency, and access to formal sectors with growth potential. Raising female participation is one of the fastest ways to increase domestic labor supply without relying only on population growth.
+
+Fourth, vulnerable employment requires formalization incentives. Simplified business registration, tax regimes that do not punish formality, social insurance for self-employed workers, and labor protections for platform and remote workers can improve job quality without suppressing entrepreneurship.</textarea>
+    </article>
+    
+<template data-figure-template="comparison-labor-absorption">
+    <figure class="figure-card" id="comparison-labor-absorption">
+      <figcaption>Labor Absorption Benchmark</figcaption>
+      <div class="chart-frame">
+        <canvas id="chart-comparison-labor-absorption" aria-label="Labor Absorption Benchmark" role="img"></canvas>
+      </div>
+      <p class="source">Source: World Bank WDI API. Indicator/Table IDs: SL.TLF.CACT.FE.ZS, SL.UEM.1524.ZS, SL.AGR.EMPL.ZS. Unit: Percent (%).</p>
+      <script type="application/json" id="chart-comparison-labor-absorption-config">{"type": "line", "data": {"labels": [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025], "datasets": [{"label": "UZB - Female participation", "data": [38.977, 39.363, 39.659, 39.963, 39.933, 39.698, 39.731, 39.691, 39.797, 39.638, 39.498, 39.431, 39.187, 39.056, 38.789, 38.555, 38.426, 38.415, 38.895, 38.961, 38.883, 39.101, 39.191, 39.275, 39.447, 39.57, 39.652, 39.739, 39.89, 39.097, 39.587, 41.1, 41.24, 41.273, 41.178], "borderColor": "#146C94", "backgroundColor": "#146C94", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}, {"label": "UZB - Youth unemployment", "data": [3.796, 5.795, 10.024, 14.779, 15.695, 21.528, 21.944, 26.786, 26.947, 24.819, 22.983, 20.986, 18.882, 16.775, 14.491, 12.355, 10.141, 10.154, 10.753, 11.586, 10.589, 10.68, 10.758, 11.372, 11.455, 11.464, 12.887, 12.073, 11.27, 12.838, 13.031, 10.853, 10.762, 10.809, 11.381], "borderColor": "#D94F30", "backgroundColor": "#D94F30", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}, {"label": "UZB - Agricultural employment", "data": [38.7673883094858, 39.0275801128894, 39.079919849079, 39.5347691393009, 39.3909225468746, 39.1551857867856, 38.9458386820337, 38.2168853127924, 37.4199904119504, 36.7892194210918, 36.024472133399, 35.2582905545618, 34.4227446011705, 33.4116704565652, 32.3936803534658, 31.3322878537804, 30.1376511720839, 28.9317165337553, 27.8584255886288, 26.9604574395174, 27.2340544475864, 26.7419149978203, 27.2993593375509, 27.6562830050207, 27.5816950924486, 27.4220937139458, 27.1539848581967, 26.6493914736113, 26.1766052839745, 27.1860834171962, 26.9945200455118, 26.5612109703802, 26.1279176228967, 25.6474629581127, 25.1978529929594], "borderColor": "#2E7D32", "backgroundColor": "#2E7D32", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}, {"label": "KAZ - Female participation", "data": [65.143, 65.371, 65.814, 66.528, 66.993, 66.838, 66.588, 66.567, 66.336, 65.834, 65.29, 64.993, 65.085, 64.826, 64.626, 65.019, 65.859, 66.716, 66.47, 66.333, 66.207, 66.037, 65.892, 65.71, 65.46, 65.205, 65.018, 64.818, 64.661, 63.607, 64.068, 64.743, 65.029, 65.291, 62.649], "borderColor": "#7B3FB2", "backgroundColor": "#7B3FB2", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}, {"label": "KAZ - Youth unemployment", "data": [1.61, 1.781, 1.963, 13.26, 19.241, 22.793, 23.011, 23.26, 23.872, 22.71, 18.715, 16.697, 14.349, 14.116, 12.714, 11.181, 9.349, 7.389, 6.675, 5.215, 4.576, 3.94, 3.923, 3.838, 3.761, 3.806, 3.79, 3.776, 3.766, 3.775, 4.216, 3.822, 3.814, 3.816, 3.806], "borderColor": "#A06A00", "backgroundColor": "#A06A00", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}, {"label": "KAZ - Agricultural employment", "data": [37.9980422570247, 38.114529354644, 38.4070999180885, 38.6727066777067, 38.7425862186133, 38.396852311834, 37.9799318797435, 37.8082234181529, 37.2479782311272, 36.5881878095628, 35.5177706536488, 35.4782401276311, 35.2540306549935, 33.5013479307042, 32.4052464964521, 31.5350852661228, 31.2245243364866, 30.1601585235058, 29.0166252437857, 28.2828628055327, 26.4539322900539, 25.5395338375296, 24.1943279939116, 21.8961884828685, 18.0128552002403, 16.3281046197709, 15.3632871855099, 14.3163639032135, 13.7617849437852, 13.457537388077, 12.8283435948531, 12.3601974435315, 12.0248423569605, 11.6472432672662, 11.3195866944431], "borderColor": "#3A7D7A", "backgroundColor": "#3A7D7A", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}, {"label": "KOR - Female participation", "data": [47.219, 47.199, 47.16, 47.906, 48.449, 48.948, 49.826, 47.124, 47.675, 49.35, 50.001, 50.369, 49.477, 50.637, 50.664, 50.833, 50.648, 50.353, 49.575, 49.767, 49.994, 50.29, 50.805, 51.839, 52.391, 52.568, 53.073, 53.224, 53.772, 53.137, 53.65, 55.03, 56.038, 56.826, 56.782], "borderColor": "#4B5563", "backgroundColor": "#4B5563", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}, {"label": "KOR - Youth unemployment", "data": [7.16, 7.485, 8.785, 7.123, 6.164, 6.007, 7.468, 15.718, 13.896, 10.002, 9.359, 7.902, 9.424, 9.798, 9.321, 8.916, 7.853, 8.65, 9.221, 8.54, 8.298, 7.738, 8.943, 8.594, 9.899, 10.145, 9.781, 10.12, 9.827, 10.143, 8.055, 6.638, 5.405, 6.434, 6.695], "borderColor": "#C2410C", "backgroundColor": "#C2410C", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}, {"label": "KOR - Agricultural employment", "data": [15.4803368403517, 13.3431069272822, 12.8222856461002, 11.9353072694233, 11.1846504607057, 10.5836495485045, 10.2365069470275, 11.4523536631557, 10.7991314875757, 10.4366396818462, 9.90462178578463, 9.23413538306625, 8.63674240634722, 7.90037907235702, 7.47811330387856, 7.18326311676262, 6.88414665878955, 6.72045523253848, 6.59016987083432, 6.19072327209956, 5.95989170057256, 5.75084815357284, 5.60311808222985, 5.22810861880708, 5.10890997480803, 4.81840662000926, 4.78443073470189, 4.99652179806757, 5.14298764562853, 5.37120678440121, 5.34699533496314, 5.43180170278522, 5.32432842202518, 5.19680870662354, 5.10382768921025], "borderColor": "#047857", "backgroundColor": "#047857", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}]}, "options": {"responsive": true, "maintainAspectRatio": false, "interaction": {"mode": "index", "intersect": false}, "plugins": {"legend": {"position": "bottom", "labels": {"boxWidth": 14, "boxHeight": 3}}, "tooltip": {"enabled": true}}, "scales": {"x": {"grid": {"display": false}, "ticks": {"maxTicksLimit": 8}}, "y": {"title": {"display": true, "text": "Percent (%)"}, "grid": {"color": "#e8eef3"}, "ticks": {"precision": 1}}}}}</script>
+    </figure>
+    </template></section>
+    </main>
+  </div>
+  <script>
+    function fallbackMarkdown(text) {
+      const escaped = text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+      return escaped.split(/\n{2,}/).map((block) => `<p>${block.replace(/\n/g, "<br>")}</p>`).join("");
+    }
+    function renderMarkdown(text) {
+      return window.marked ? marked.parse(text) : fallbackMarkdown(text);
+    }
+    function replaceFigurePlaceholders(preview, panel) {
+      const pattern = /^\{\{\s*(figure|map|image):([a-z0-9-]+)\s*\}\}$/i;
+      preview.querySelectorAll("p").forEach((paragraph) => {
+        const match = (paragraph.textContent || "").trim().match(pattern);
+        if (!match) return;
+        const key = match[1].toLowerCase() === "figure" ? match[2].toLowerCase() : `${match[1].toLowerCase()}:${match[2].toLowerCase()}`;
+        const template = panel.querySelector(`template[data-figure-template="${key}"]`) || document.querySelector(`template[data-figure-template="${key}"]`);
+        if (!template) {
+          const note = document.createElement("p");
+          note.className = "source";
+          note.textContent = `Figure not available: ${key}`;
+          paragraph.replaceWith(note);
+          return;
+        }
+        paragraph.replaceWith(template.content.cloneNode(true));
+      });
+    }
+    function slugifyHeading(text) {
+      return text.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "") || "section";
+    }
+    function enhancePreview(preview) {
+      preview.querySelectorAll("h2, h3").forEach((heading) => {
+        if (!heading.id) heading.id = slugifyHeading(heading.textContent || "");
+      });
+    }
+    function scrollToHashTarget() {
+      if (!window.location.hash) return;
+      const id = decodeURIComponent(window.location.hash.slice(1));
+      const target = document.getElementById(id);
+      if (target) target.scrollIntoView({ block: "start" });
+    }
+    function setupSectionNavigation() {
+      document.querySelectorAll("a.section-link").forEach((link) => {
+        link.addEventListener("click", () => {
+          window.setTimeout(scrollToHashTarget, 30);
+        });
+      });
+    }
+    function setupMarkdownPanels() {
+      document.querySelectorAll("[data-md-panel]").forEach((panel) => {
+        const id = panel.getAttribute("data-md-panel");
+        const preview = panel.querySelector(".markdown-preview");
+        const editor = panel.querySelector(".markdown-editor");
+        const edit = panel.querySelector("[data-md-action='edit']");
+        const save = panel.querySelector("[data-md-action='save']");
+        const cancel = panel.querySelector("[data-md-action='cancel']");
+        const source = panel.getAttribute("data-md-source");
+        const storageKey = `uzb-report-markdown:v5:${id}`;
+        const original = editor.value;
+        const stored = localStorage.getItem(storageKey);
+        if (stored !== null && (!source || window.location.protocol === "file:")) editor.value = stored;
+        const showPreview = () => {
+          preview.innerHTML = renderMarkdown(editor.value);
+          replaceFigurePlaceholders(preview, panel);
+          enhancePreview(preview);
+          setupCharts();
+        };
+        const saveMarkdown = async () => {
+          if (source && window.location.protocol.startsWith("http")) {
+            const response = await fetch("/api/save-section", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ source, markdown: editor.value })
+            });
+            if (!response.ok) {
+              const message = await response.text();
+              throw new Error(message || `Save failed with ${response.status}`);
+            }
+            localStorage.removeItem(storageKey);
+          } else {
+            localStorage.setItem(storageKey, editor.value);
+            if (source) {
+              window.alert("This edit was saved only as a browser draft. Open the report through UZB/code/serve_report.py to save it permanently to the Markdown source file.");
+            }
+          }
+        };
+        const setEditing = (editing) => {
+          editor.hidden = !editing;
+          preview.hidden = editing;
+          edit.hidden = editing;
+          save.hidden = !editing;
+          cancel.hidden = !editing;
+        };
+        showPreview();
+        setEditing(false);
+        edit.addEventListener("click", () => setEditing(true));
+        save.addEventListener("click", async () => {
+          save.disabled = true;
+          try {
+            await saveMarkdown();
+            showPreview();
+            setEditing(false);
+          } catch (error) {
+            window.alert(error.message || "Could not save the Markdown source.");
+          } finally {
+            save.disabled = false;
+          }
+        });
+        cancel.addEventListener("click", () => {
+          editor.value = localStorage.getItem(storageKey) ?? original;
+          showPreview();
+          setEditing(false);
+        });
+      });
+    }
+    function setupCharts() {
+      if (!window.Chart) {
+        document.querySelectorAll(".figure-card").forEach((card) => {
+          const note = document.createElement("p");
+          note.className = "source";
+          note.textContent = "Chart.js could not be loaded from local assets/chart.umd.min.js.";
+          card.appendChild(note);
+        });
+        return;
+      }
+      document.querySelectorAll("script[type='application/json'][id$='-config']").forEach((script) => {
+        const canvasId = script.id.replace("-config", "");
+        const canvas = document.getElementById(canvasId);
+        if (!canvas) return;
+        if (canvas.dataset.chartReady === "1") return;
+        canvas.dataset.chartReady = "1";
+        new Chart(canvas, JSON.parse(script.textContent));
+      });
+    }
+    window.addEventListener("DOMContentLoaded", () => {
+      setupMarkdownPanels();
+      setupSectionNavigation();
+      setupCharts();
+      window.setTimeout(scrollToHashTarget, 60);
+    });
+    </script>
+</body>
+</html>

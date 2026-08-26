@@ -1,0 +1,1203 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>12.3 Agricultural Employment, Education, Literacy, Productivity, HDI, and R&amp;D | Uzbekistan Country Report</title>
+  <script src="../assets/chart.umd.min.js"></script>
+  <script src="../assets/marked.min.js"></script>
+  <style>
+    :root {
+      --ink: #17212b;
+      --muted: #5b6773;
+      --line: #d9e1e8;
+      --panel: #f7f9fb;
+      --accent: #146c94;
+      --paper: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.62;
+    }
+    .layout {
+      display: grid;
+      grid-template-columns: 310px minmax(0, 1fr);
+      min-height: 100vh;
+    }
+    aside {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      overflow: auto;
+      border-right: 1px solid var(--line);
+      background: var(--panel);
+      padding: 22px 18px;
+    }
+    aside h1 { font-size: 20px; margin: 0 0 6px; }
+    aside h1 a { color: var(--ink); text-decoration: none; }
+    aside h1 a:hover { color: var(--accent); }
+    aside p { color: var(--muted); font-size: 13px; margin: 0 0 18px; }
+    nav a {
+      display: block;
+      color: var(--ink);
+      text-decoration: none;
+      padding: 8px 10px;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+    nav a:hover, nav a.active { background: #e9f1f6; color: var(--accent); }
+    .chapter-link { font-weight: 700; }
+    .toc-group {
+      margin: 1px 0;
+      border-radius: 6px;
+    }
+    .toc-group summary {
+      list-style: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .toc-group summary::-webkit-details-marker { display: none; }
+    .toc-group summary::before {
+      content: "›";
+      color: var(--muted);
+      font-size: 15px;
+      transform: rotate(0deg);
+      transition: transform 0.12s ease;
+    }
+    .toc-group[open] summary::before { transform: rotate(90deg); }
+    .toc-group summary a { flex: 1; }
+    .section-nav {
+      margin: 2px 0 8px 8px;
+      padding-left: 10px;
+      border-left: 2px solid #d2dde6;
+    }
+    .section-link {
+      padding: 5px 8px;
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.35;
+    }
+    .anchor-target {
+      display: block;
+      position: relative;
+      top: -18px;
+      visibility: hidden;
+    }
+    main { padding: 34px min(7vw, 86px); max-width: 980px; }
+    .hero { border-bottom: 1px solid var(--line); padding-bottom: 24px; margin-bottom: 24px; }
+    .hero h2 { font-size: 34px; margin: 0 0 8px; letter-spacing: 0; }
+    .hero p { color: var(--muted); max-width: 820px; }
+    .chapter h2 { font-size: 24px; margin: 0 0 12px; }
+    .chapter-landing-note {
+      color: var(--muted);
+      max-width: 760px;
+      margin: 0 0 18px;
+    }
+    .chapter-section-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 12px;
+      margin: 18px 0 28px;
+    }
+    .chapter-section-card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      padding: 14px;
+    }
+    .chapter-section-card a {
+      display: grid;
+      grid-template-columns: 48px minmax(0, 1fr);
+      gap: 10px;
+      align-items: start;
+      text-decoration: none;
+      color: var(--ink);
+    }
+    .chapter-section-card a:hover strong { color: var(--accent); }
+    .chapter-section-card span {
+      font-weight: 800;
+      color: var(--accent);
+      font-size: 15px;
+    }
+    .chapter-section-card strong {
+      font-size: 16px;
+      line-height: 1.35;
+      transition: color 0.12s ease;
+    }
+    .section-source {
+      margin: 10px 0 0 58px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.35;
+    }
+    .facts {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 10px;
+      margin: 18px 0;
+    }
+    .facts div { border: 1px solid var(--line); border-radius: 8px; padding: 12px; background: #fff; }
+    .facts b { display: block; font-size: 12px; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+    .facts span { font-weight: 700; }
+    .figure-card {
+      margin: 28px 0 34px;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+    .symbol-gallery {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin: 24px 0 30px;
+    }
+    .symbol-card {
+      margin: 0;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+    .symbol-card-wide { grid-column: 1 / -1; }
+    .symbol-card img {
+      display: block;
+      width: 100%;
+      max-height: 360px;
+      object-fit: contain;
+      background: #f7fbfc;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 10px;
+    }
+    .symbol-card-wide img {
+      max-height: 300px;
+      padding: 0;
+      object-fit: contain;
+    }
+    .symbol-card p {
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.55;
+    }
+    .heritage-photo {
+      margin: 24px 0 30px;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+    .heritage-photo img {
+      display: block;
+      width: 100%;
+      max-height: 520px;
+      object-fit: cover;
+      border-radius: 6px;
+      border: 1px solid var(--line);
+      background: #f7fbfc;
+    }
+    .heritage-photo figcaption {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+    .gov-org-chart {
+      margin: 24px 0 30px;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+    .gov-org-chart > figcaption {
+      font-weight: 800;
+      font-size: 18px;
+      margin: 0 0 14px;
+    }
+    .org-flow {
+      display: grid;
+      gap: 14px;
+    }
+    .org-branches,
+    .org-implementation {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      position: relative;
+    }
+    .org-node {
+      border: 1px solid #cfdce3;
+      border-radius: 8px;
+      padding: 13px;
+      background: #f8fbfc;
+      min-height: 146px;
+    }
+    .org-presidency {
+      background: #e9f4f7;
+      border-color: #9fc7d3;
+      max-width: 720px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .org-executive {
+      background: #f4f8ee;
+      border-color: #bfd4a5;
+    }
+    .org-node span {
+      display: block;
+      color: var(--accent);
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 6px;
+    }
+    .org-node strong {
+      display: block;
+      font-size: 16px;
+      line-height: 1.25;
+      margin-bottom: 8px;
+    }
+    .org-node p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+    .map-card {
+      margin: 24px 0 30px;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      width: min(1180px, calc(100vw - 380px));
+      max-width: none;
+    }
+    .map-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(250px, 0.85fr);
+      gap: 18px;
+      align-items: start;
+    }
+    .adm-map {
+      width: 100%;
+      height: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #f7fbfc;
+    }
+    .adm-path {
+      stroke: #415766;
+      stroke-width: 1;
+      vector-effect: non-scaling-stroke;
+    }
+    .adm-path:hover { fill: #98c6d2; }
+    .map-label {
+      font-size: 15px;
+      font-weight: 700;
+      text-anchor: middle;
+      fill: #253746;
+      paint-order: stroke;
+      stroke: #ffffff;
+      stroke-width: 3.8px;
+      stroke-linejoin: round;
+      pointer-events: none;
+    }
+    .neighbor-label {
+      font-size: 17px;
+      font-weight: 700;
+      text-anchor: middle;
+      fill: #6a7782;
+      letter-spacing: 0;
+    }
+    .capital-marker circle {
+      fill: #a12222;
+      stroke: #ffffff;
+      stroke-width: 2.2;
+    }
+    .capital-marker text {
+      font-size: 16px;
+      font-weight: 700;
+      fill: #17212b;
+      paint-order: stroke;
+      stroke: #ffffff;
+      stroke-width: 3.6px;
+    }
+    .map-table-wrap {
+      max-height: 660px;
+      overflow: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+    .compact-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12px;
+      line-height: 1.35;
+    }
+    .compact-table th, .compact-table td {
+      padding: 7px 8px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+    .compact-table th {
+      position: sticky;
+      top: 0;
+      background: #eef5f8;
+    }
+    .map-missing {
+      border: 1px dashed #aab7c2;
+      border-radius: 8px;
+      padding: 16px;
+      color: var(--muted);
+      background: #fbfcfd;
+    }
+    figcaption {
+      font-weight: 700;
+      margin-bottom: 8px;
+      text-align: center;
+    }
+    .chart-frame { height: 420px; width: 100%; }
+    .hdi-scatter-frame { width: 100%; overflow-x: auto; }
+    .hdi-scatter-svg {
+      display: block;
+      width: 100%;
+      min-width: 720px;
+      height: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+    canvas { display: block; width: 100%; height: 100%; }
+    .panel-figure { margin-top: -14px; }
+    .panel-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 14px;
+    }
+    .panel-chart {
+      min-height: 210px;
+      height: 230px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 10px;
+      background: #fbfcfd;
+    }
+    .source { color: var(--muted); font-size: 12px; }
+    .chart-empty { border: 1px dashed #aab7c2; border-radius: 8px; padding: 16px; background: #fbfcfd; }
+    .chart-empty strong, .chart-empty span, .chart-empty small { display: block; }
+    .editable-prose {
+      position: relative;
+      margin: 0 0 20px;
+    }
+    .prose-toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin: 0 0 12px;
+      padding: 8px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .prose-toolbar span {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .prose-toolbar div { display: flex; gap: 6px; flex-wrap: wrap; justify-content: flex-end; }
+    .prose-toolbar button {
+      border: 1px solid #b9c6d0;
+      background: #fff;
+      color: var(--ink);
+      border-radius: 6px;
+      padding: 6px 9px;
+      font-size: 12px;
+      cursor: pointer;
+    }
+    .prose-toolbar button:hover { border-color: var(--accent); color: var(--accent); }
+    .prose-body {
+      font-size: 17px;
+      line-height: 1.78;
+    }
+    .prose-body h1, .prose-body h2, .prose-body h3 {
+      margin: 24px 0 10px;
+      line-height: 1.25;
+      scroll-margin-top: 24px;
+    }
+    .prose-body p { margin: 0 0 16px; }
+    .prose-body ul, .prose-body ol { padding-left: 24px; margin: 0 0 16px; }
+    .prose-body blockquote { margin: 18px 0; padding-left: 14px; border-left: 3px solid var(--line); color: var(--muted); }
+    .prose-body table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0 22px;
+      font-size: 15px;
+      line-height: 1.55;
+      background: #fff;
+      border: 1px solid #b8c7d2;
+    }
+    .prose-body th,
+    .prose-body td {
+      border: 1px solid #b8c7d2;
+      padding: 9px 11px;
+      text-align: left;
+      vertical-align: top;
+    }
+    .prose-body th {
+      background: #eef5f8;
+      font-weight: 800;
+    }
+    .prose-body tr:nth-child(even) td {
+      background: #fbfcfd;
+    }
+    .equation-block {
+      margin: 18px 0 22px;
+      padding: 16px 18px;
+      border: 1px solid #b8c7d2;
+      border-left: 4px solid var(--accent);
+      border-radius: 8px;
+      background: #fbfcfd;
+      overflow-x: auto;
+    }
+    .equation-label {
+      margin-bottom: 8px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+    .equation-line {
+      min-width: 680px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 21px;
+      line-height: 1.8;
+      white-space: normal;
+    }
+    .equation-line sub {
+      font-size: 65%;
+    }
+    .markdown-editor {
+      display: block;
+      width: 100%;
+      min-height: 520px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 12px 14px;
+      resize: vertical;
+      font: 13px/1.55 Consolas, "Courier New", monospace;
+      color: var(--ink);
+      background: #fbfcfd;
+    }
+    .cover-body {
+      min-height: 100vh;
+      background:
+        linear-gradient(90deg, rgba(20, 108, 148, 0.08) 1px, transparent 1px),
+        linear-gradient(0deg, rgba(111, 122, 133, 0.08) 1px, transparent 1px),
+        #eef3f5;
+      background-size: 42px 42px;
+    }
+    .cover-page {
+      max-width: none;
+      min-height: 100vh;
+      padding: 42px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .book-cover {
+      width: min(980px, 100%);
+      min-height: min(780px, calc(100vh - 84px));
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 260px;
+      grid-template-rows: auto auto 1fr auto auto;
+      gap: 20px 34px;
+      border: 1px solid #c8d3dc;
+      background: linear-gradient(90deg, #ffffff 0%, #ffffff 66%, #f3f7f8 66%, #f3f7f8 100%);
+      box-shadow: 0 18px 50px rgba(23, 33, 43, 0.14);
+      padding: clamp(30px, 5vw, 64px);
+      position: relative;
+      overflow: hidden;
+    }
+    .book-cover::before {
+      content: "";
+      position: absolute;
+      inset: 24px auto 24px 24px;
+      width: 8px;
+      background: #b43a32;
+    }
+    .book-cover::after {
+      content: "UZB";
+      position: absolute;
+      right: 34px;
+      bottom: 16px;
+      color: rgba(20, 108, 148, 0.1);
+      font-size: clamp(82px, 18vw, 176px);
+      line-height: 1;
+      font-weight: 800;
+      letter-spacing: 0;
+      pointer-events: none;
+    }
+    .cover-kicker {
+      grid-column: 1 / 3;
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+    .cover-rule {
+      grid-column: 1 / 3;
+      height: 1px;
+      background: #c8d3dc;
+    }
+    .book-cover h1 {
+      grid-column: 1 / 2;
+      margin: 10px 0 0;
+      font-size: clamp(48px, 8vw, 92px);
+      line-height: 0.96;
+      letter-spacing: 0;
+      font-weight: 800;
+    }
+    .cover-subtitle {
+      grid-column: 1 / 2;
+      margin: 0;
+      max-width: 650px;
+      color: #344451;
+      font-size: clamp(18px, 2.4vw, 25px);
+      line-height: 1.32;
+      font-weight: 700;
+    }
+    .cover-purpose {
+      grid-column: 1 / 2;
+      max-width: 680px;
+      margin: 0;
+      color: #344451;
+      font-size: 16px;
+      line-height: 1.74;
+    }
+    .cover-editor {
+      grid-column: 2 / 3;
+      grid-row: 3 / 5;
+      align-self: start;
+      border-top: 4px solid var(--accent);
+      padding-top: 18px;
+      z-index: 1;
+    }
+    .cover-editor span {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+    .cover-editor strong {
+      display: block;
+      margin-top: 8px;
+      font-size: 24px;
+      line-height: 1.1;
+    }
+    .cover-editor em {
+      display: block;
+      margin-top: 6px;
+      color: #344451;
+      font-style: normal;
+      font-size: 14px;
+    }
+    .cover-actions {
+      grid-column: 1 / 2;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-self: end;
+      z-index: 1;
+    }
+    .primary-link, .secondary-link {
+      display: inline-flex;
+      align-items: center;
+      min-height: 42px;
+      padding: 9px 14px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 14px;
+    }
+    .primary-link { background: var(--accent); color: #fff; border: 1px solid var(--accent); }
+    .secondary-link { background: #fff; color: var(--ink); border: 1px solid #b9c6d0; }
+    .cover-method {
+      grid-column: 1 / 3;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      z-index: 1;
+    }
+    .cover-method div {
+      border-top: 1px solid #c8d3dc;
+      padding-top: 12px;
+    }
+    .cover-method b {
+      display: block;
+      font-size: 13px;
+      text-transform: uppercase;
+      color: var(--ink);
+    }
+    .cover-method span {
+      display: block;
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+    [hidden] { display: none !important; }
+    code, pre { background: #eef3f6; border-radius: 5px; }
+    code { padding: 1px 4px; }
+    pre { padding: 12px; overflow: auto; }
+    @media (max-width: 980px) {
+      .layout { grid-template-columns: 1fr; }
+      aside { position: relative; height: auto; }
+      main { padding: 24px 18px; }
+      .chart-frame { height: 320px; }
+      .symbol-gallery { grid-template-columns: 1fr; }
+      .symbol-card-wide { grid-column: auto; }
+      .map-card { width: 100%; }
+      .map-grid { grid-template-columns: 1fr; }
+      .cover-page { padding: 18px; align-items: stretch; }
+      .book-cover {
+        min-height: auto;
+        grid-template-columns: 1fr;
+        background: #fff;
+      }
+      .cover-kicker, .cover-rule, .book-cover h1, .cover-subtitle,
+      .cover-purpose, .cover-editor, .cover-actions, .cover-method {
+        grid-column: 1 / 2;
+        grid-row: auto;
+      }
+      .cover-method { grid-template-columns: 1fr; }
+    }
+    </style>
+</head>
+<body>
+  <div class="layout">
+    <aside>
+      <h1><a href="../index.html">Uzbekistan</a></h1>
+      <p>Official-source country report with reproducible indicators and editable Markdown notes.</p>
+      <nav><details class="toc-group"><summary><a class="chapter-link" href="../01-overview.html">1. Country Overview</a></summary><div class="section-nav"><a class="section-link" href="../sections/01-01-official-name-capital-location-area-population-language-religion-and-currency.html">1.1 Official Name, Capital, Location, Area, Population, Language, Religion, and Currency</a><a class="section-link" href="../sections/01-02-state-symbols.html">1.2 State Symbols</a><a class="section-link" href="../sections/01-03-country-profile-and-strategic-setting.html">1.3 Country Profile and Strategic Setting</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../02-history.html">2. Historical Background</a></summary><div class="section-nav"><a class="section-link" href="../sections/02-01-ancient-and-medieval-political-communities-and-civilizational-zones.html">2.1 Ancient and Medieval Political Communities and Civilizational Zones</a><a class="section-link" href="../sections/02-02-empire-colonial-rule-and-pre-independence-state-formation.html">2.2 Empire, Colonial Rule, and Pre-Independence State Formation</a><a class="section-link" href="../sections/02-03-independence-transition-and-constitutional-turning-points.html">2.3 Independence, Transition, and Constitutional Turning Points</a><a class="section-link" href="../sections/02-04-historical-legacies-in-present-institutions.html">2.4 Historical Legacies in Present Institutions</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../03-constitution.html">3. Constitution and Basic State Order</a></summary><div class="section-nav"><a class="section-link" href="../sections/03-01-enactment-and-amendment-history.html">3.1 Enactment and Amendment History</a><a class="section-link" href="../sections/03-02-state-identity-sovereignty-territory-and-people.html">3.2 State Identity, Sovereignty, Territory, and People</a><a class="section-link" href="../sections/03-03-fundamental-rights-system.html">3.3 Fundamental Rights System</a><a class="section-link" href="../sections/03-04-separation-of-powers-constitutional-review-judicial-review-and-emergency-powers.html">3.4 Separation of Powers, Constitutional Review, Judicial Review, and Emergency Powers</a><a class="section-link" href="../sections/03-05-constitutional-implications-for-state-authority.html">3.5 Constitutional Implications for State Authority</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../04-politics.html">4. Political System and Power Structure</a></summary><div class="section-nav"><a class="section-link" href="../sections/04-01-form-of-government.html">4.1 Form of Government</a><a class="section-link" href="../sections/04-02-head-of-state-and-head-of-government.html">4.2 Head of State and Head of Government</a><a class="section-link" href="../sections/04-03-parliament-legislative-process-parties-and-elections.html">4.3 Parliament, Legislative Process, Parties, and Elections</a><a class="section-link" href="../sections/04-04-local-politics-and-real-power-relations.html">4.4 Local Politics and Real Power Relations</a><a class="section-link" href="../sections/04-05-political-dynamics-and-institutional-accountability.html">4.5 Political Dynamics and Institutional Accountability</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../05-administration.html">5. Administrative System and Government Organization</a></summary><div class="section-nav"><a class="section-link" href="../sections/05-01-central-executive-administration-strategic-planning-and-policy-coordination.html">5.1 Central Executive Administration, Strategic Planning, and Policy Coordination</a><a class="section-link" href="../sections/05-02-organizational-management-and-administrative-reform.html">5.2 Organizational Management and Administrative Reform</a><a class="section-link" href="../sections/05-03-human-resource-management-and-civil-service.html">5.3 Human Resource Management and Civil Service</a><a class="section-link" href="../sections/05-04-financial-administration-budget-execution-procurement-and-audit.html">5.4 Financial Administration, Budget Execution, Procurement, and Audit</a><a class="section-link" href="../sections/05-05-local-administration-mahalla-and-service-delivery.html">5.5 Local Administration, Mahalla, and Service Delivery</a><a class="section-link" href="../sections/05-06-administrative-governance-accountability-and-digital-government.html">5.6 Administrative Governance, Accountability, and Digital Government</a><a class="section-link" href="../sections/05-07-implementation-capacity-and-administrative-performance.html">5.7 Implementation Capacity and Administrative Performance</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../06-governance.html">6. Governance and Institutional Capacity</a></summary><div class="section-nav"><a class="section-link" href="../sections/06-01-government-effectiveness-and-regulatory-quality.html">6.1 Government Effectiveness and Regulatory Quality</a><a class="section-link" href="../sections/06-02-rule-of-law-and-control-of-corruption.html">6.2 Rule of Law and Control of Corruption</a><a class="section-link" href="../sections/06-03-political-stability-citizen-participation-and-accountability.html">6.3 Political Stability, Citizen Participation, and Accountability</a><a class="section-link" href="../sections/06-04-institutional-performance-and-reform-credibility.html">6.4 Institutional Performance and Reform Credibility</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../07-fiscal.html">7. Fiscal System and Public Sector</a></summary><div class="section-nav"><a class="section-link" href="../sections/07-01-government-revenue-tax-revenue-and-expenditure-structure.html">7.1 Government Revenue, Tax Revenue, and Expenditure Structure</a><a class="section-link" href="../sections/07-02-fiscal-balance-debt-and-interest-burden.html">7.2 Fiscal Balance, Debt, and Interest Burden</a><a class="section-link" href="../sections/07-03-state-owned-enterprises-and-quasi-public-sector.html">7.3 State-Owned Enterprises and Quasi-Public Sector</a><a class="section-link" href="../sections/07-04-defense-and-public-security-spending.html">7.4 Defense and Public Security Spending</a><a class="section-link" href="../sections/07-05-fiscal-capacity-and-public-sector-risks.html">7.5 Fiscal Capacity and Public Sector Risks</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../08-society.html">8. Population and Social Structure</a></summary><div class="section-nav"><a class="section-link" href="../sections/08-01-population-size-growth-age-structure-and-dependency.html">8.1 Population Size, Growth, Age Structure, and Dependency</a><a class="section-link" href="../sections/08-02-urbanization-and-regional-distribution.html">8.2 Urbanization and Regional Distribution</a><a class="section-link" href="../sections/08-03-ethnicity-language-religion-migration-remittances-and-diaspora.html">8.3 Ethnicity, Language, Religion, Migration, Remittances, and Diaspora</a><a class="section-link" href="../sections/08-04-social-integration-and-conflict-factors.html">8.4 Social Integration and Conflict Factors</a><a class="section-link" href="../sections/08-05-demographic-pressures-and-social-cohesion.html">8.5 Demographic Pressures and Social Cohesion</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../09-macro.html">9. Macroeconomic Structure</a></summary><div class="section-nav"><a class="section-link" href="../sections/09-01-gdp-scale-growth-and-gdp-per-capita.html">9.1 GDP Scale, Growth, and GDP per Capita</a><a class="section-link" href="../sections/09-02-prices-exchange-rate-and-macroeconomic-stability.html">9.2 Prices, Exchange Rate, and Macroeconomic Stability</a><a class="section-link" href="../sections/09-03-sectoral-structure-resource-dependence-growth-model-and-vulnerabilities.html">9.3 Sectoral Structure, Resource Dependence, Growth Model, and Vulnerabilities</a><a class="section-link" href="../sections/09-04-growth-sustainability-and-structural-constraints.html">9.4 Growth Sustainability and Structural Constraints</a><a class="section-link" href="../sections/09-05-growth-driver-models-and-interpretation.html">9.5 Growth Driver Models and Interpretation</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../10-trade.html">10. Trade, Investment, and External Economy</a></summary><div class="section-nav"><a class="section-link" href="../sections/10-01-exports-imports-trading-partners-and-current-account.html">10.1 Exports, Imports, Trading Partners, and Current Account</a><a class="section-link" href="../sections/10-02-tourism-high-technology-exports-and-services.html">10.2 Tourism, High-Technology Exports, and Services</a><a class="section-link" href="../sections/10-03-fdi-absolute-amount-and-share-of-gdp.html">10.3 FDI: Absolute Amount and Share of GDP</a><a class="section-link" href="../sections/10-04-investment-regime-foreign-exchange-economic-zones-and-industrial-policy.html">10.4 Investment Regime, Foreign Exchange, Economic Zones, and Industrial Policy</a><a class="section-link" href="../sections/10-05-external-integration-and-competitiveness.html">10.5 External Integration and Competitiveness</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../11-infrastructure.html">11. Infrastructure, Energy, and Digital Connectivity</a></summary><div class="section-nav"><a class="section-link" href="../sections/11-01-electricity-access-and-energy-dependence.html">11.1 Electricity Access and Energy Dependence</a><a class="section-link" href="../sections/11-02-transport-logistics-air-rail-road-and-ports.html">11.2 Transport, Logistics, Air, Rail, Road, and Ports</a><a class="section-link" href="../sections/11-03-internet-mobile-connectivity-secure-servers-and-logistics-performance.html">11.3 Internet, Mobile Connectivity, Secure Servers, and Logistics Performance</a><a class="section-link" href="../sections/11-04-connectivity-service-delivery-and-bottlenecks.html">11.4 Connectivity, Service Delivery, and Bottlenecks</a></div></details>
+<details class="toc-group active" open><summary><a class="chapter-link active" href="../12-labor.html">12. Labor Market and Human Capital</a></summary><div class="section-nav"><a class="section-link" href="../sections/12-01-labor-force-size-and-participation.html">12.1 Labor Force Size and Participation</a><a class="section-link" href="../sections/12-02-female-participation-unemployment-youth-unemployment-and-vulnerable-employment.html">12.2 Female Participation, Unemployment, Youth Unemployment, and Vulnerable Employment</a><a class="section-link" href="../sections/12-03-agricultural-employment-education-literacy-productivity-hdi-and-r-d.html">12.3 Agricultural Employment, Education, Literacy, Productivity, HDI, and R&amp;D</a><a class="section-link" href="../sections/12-04-employment-absorption-and-human-capital-use.html">12.4 Employment Absorption and Human Capital Use</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../13-education-health.html">13. Education, Health, and Welfare</a></summary><div class="section-nav"><a class="section-link" href="../sections/13-01-education-system-and-public-expenditure.html">13.1 Education System and Public Expenditure</a><a class="section-link" href="../sections/13-02-life-expectancy-infant-mortality-hospital-beds-doctors-and-health-expenditure.html">13.2 Life Expectancy, Infant Mortality, Hospital Beds, Doctors, and Health Expenditure</a><a class="section-link" href="../sections/13-03-sanitation-public-health-risks-and-welfare.html">13.3 Sanitation, Public Health Risks, and Welfare</a><a class="section-link" href="../sections/13-04-human-development-outcomes-and-welfare-capacity.html">13.4 Human Development Outcomes and Welfare Capacity</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../14-finance.html">14. Financial Sector and Economic Institutions</a></summary><div class="section-nav"><a class="section-link" href="../sections/14-01-domestic-credit-private-credit-stock-market-and-fintech.html">14.1 Domestic Credit, Private Credit, Stock Market, and Fintech</a><a class="section-link" href="../sections/14-02-central-bank-monetary-policy-and-supervision.html">14.2 Central Bank, Monetary Policy, and Supervision</a><a class="section-link" href="../sections/14-03-foreign-investment-protection-and-capital-market-openness.html">14.3 Foreign Investment Protection and Capital-Market Openness</a><a class="section-link" href="../sections/14-04-financial-deepening-and-market-institutions.html">14.4 Financial Deepening and Market Institutions</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../15-security.html">15. Foreign Relations, Security, and Geopolitics</a></summary><div class="section-nav"><a class="section-link" href="../sections/15-01-foreign-policy-orientation-and-international-organizations.html">15.1 Foreign Policy Orientation and International Organizations</a><a class="section-link" href="../sections/15-02-borders-security-organizations-military-capacity-and-transnational-issues.html">15.2 Borders, Security Organizations, Military Capacity, and Transnational Issues</a><a class="section-link" href="../sections/15-03-strategic-resources-and-corridors.html">15.3 Strategic Resources and Corridors</a><a class="section-link" href="../sections/15-04-strategic-environment-and-transnational-risks.html">15.4 Strategic Environment and Transnational Risks</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../16-policy.html">16. Major Policies and National Development Strategy</a></summary><div class="section-nav"><a class="section-link" href="../sections/16-01-evolution-of-national-development-strategy.html">16.1 Evolution of National Development Strategy</a><a class="section-link" href="../sections/16-02-national-development-plan-and-industrial-policy.html">16.2 National Development Plan and Industrial Policy</a><a class="section-link" href="../sections/16-03-digital-transformation-energy-transition-climate-policy-and-administrative-reform.html">16.3 Digital Transformation, Energy Transition, Climate Policy, and Administrative Reform</a><a class="section-link" href="../sections/16-04-welfare-education-health-and-recent-five-year-policy-changes.html">16.4 Welfare, Education, Health, and Recent Five-Year Policy Changes</a><a class="section-link" href="../sections/16-05-policy-implementation-and-reform-sequencing.html">16.5 Policy Implementation and Reform Sequencing</a><a class="section-link" href="../sections/16-06-environmental-sustainability-sdgs-and-green-transition.html">16.6 Environmental Sustainability, SDGs, and Green Transition</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../17-assessment.html">17. Integrated Assessment</a></summary><div class="section-nav"><a class="section-link" href="../sections/17-01-national-operating-model.html">17.1 National Operating Model</a><a class="section-link" href="../sections/17-02-political-stability-institutional-risk-growth-drivers-and-bottlenecks.html">17.2 Political Stability, Institutional Risk, Growth Drivers, and Bottlenecks</a><a class="section-link" href="../sections/17-03-administrative-capacity-and-international-cooperation-implications.html">17.3 Administrative Capacity and International Cooperation Implications</a><a class="section-link" href="../sections/17-04-uzbekistan-and-comparative-administration-theory.html">17.4 Uzbekistan and Comparative Administration Theory</a><a class="section-link" href="../sections/17-05-evidence-limits-and-source-triangulation.html">17.5 Evidence Limits and Source Triangulation</a><a class="section-link" href="../sections/17-06-strategic-diagnosis-and-outlook.html">17.6 Strategic Diagnosis and Outlook</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../18-appendix.html">18. Appendix, Sources, and Method</a></summary><div class="section-nav"><a class="section-link" href="../sections/18-01-annual-data-revision-protocol.html">18.1 Annual Data Revision Protocol</a><a class="section-link" href="../sections/18-02-editorial-workflow-and-manuscript-preservation.html">18.2 Editorial Workflow and Manuscript Preservation</a><a class="section-link" href="../sections/18-03-data-integrity.html">18.3 Data Integrity</a><a class="section-link" href="../sections/18-04-evidence-archive-and-review-trail.html">18.4 Evidence Archive and Review Trail</a><a class="section-link" href="../sections/18-05-data-limits-and-source-triangulation.html">18.5 Data Limits and Source Triangulation</a><a class="section-link" href="../sections/18-06-external-review-checklist.html">18.6 External Review Checklist</a><a class="section-link" href="../sections/18-07-comparative-administration-benchmark.html">18.7 Comparative Administration Benchmark</a><a class="section-link" href="../sections/18-08-timeline.html">18.8 Timeline</a><a class="section-link" href="../sections/18-09-government-organization-chart.html">18.9 Government Organization Chart</a><a class="section-link" href="../sections/18-10-constitution-and-major-laws.html">18.10 Constitution and Major Laws</a><a class="section-link" href="../sections/18-11-key-indicator-table-source-list-and-data-codebook.html">18.11 Key Indicator Table, Source List, and Data Codebook</a><a class="section-link" href="../sections/18-12-methodological-notes-and-update-standards.html">18.12 Methodological Notes and Update Standards</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../19-references.html">19. References</a></summary><div class="section-nav"><a class="section-link" href="../sections/19-01-references.html">19.1 References</a><a class="section-link" href="../sections/19-02-source-integrity-and-citation-notes.html">19.2 Source Integrity and Citation Notes</a></div></details></nav>
+    </aside>
+    <main>
+      <header class="hero">
+        <h2>12.3 Agricultural Employment, Education, Literacy, Productivity, HDI, and R&amp;D</h2>
+      </header>
+      <section class="chapter">
+    <article class="editable-prose" data-md-panel="labor-agricultural-employment-education-literacy-productivity-hdi-and-r-d-text" data-md-source="sections/12-03-agricultural-employment-education-literacy-productivity-hdi-and-r-d.md">
+      <div class="prose-toolbar">
+        <span>Editable chapter text</span>
+        <div>
+          <button type="button" data-md-action="edit">Edit Markdown</button>
+          <button type="button" data-md-action="save" hidden>Save</button>
+          <button type="button" data-md-action="cancel" hidden>Cancel</button>
+        </div>
+      </div>
+      <div class="markdown-preview prose-body"></div>
+      <textarea class="markdown-editor" hidden>&lt;span id=&quot;12-3-agricultural-employment-education-literacy-productivity-hdi-and-r-d&quot; class=&quot;anchor-target&quot;&gt;&lt;/span&gt;
+## 12.3 Agricultural Employment, Education, Literacy, Productivity, HDI, and R&amp;D
+
+Uzbekistan&#x27;s labor-market transformation depends on whether workers move from lower-productivity activities into higher-productivity sectors without creating social exclusion. Agriculture remains central to rural livelihoods, food security, and regional employment, but development requires rising agricultural productivity and more non-farm jobs. The issue is not to abandon agriculture. It is to reduce disguised underemployment, raise rural incomes, and create pathways into agribusiness, logistics, manufacturing, services, and digital work.
+
+World Bank data show steady structural movement. Employment in agriculture declined from **38.8 percent of total employment in 1991** to **25.2 percent in 2025**. Recent decline has been gradual: **26.2 percent in 2019**, **27.2 percent in 2020**, **26.1 percent in 2023**, and **25.2 percent in 2025**. At the same time, agriculture&#x27;s share of GDP fell to **18.33 percent in 2024**, the lowest value in the World Bank series cited by Statbase, while agriculture still employed about one quarter of workers. This gap between employment share and GDP share is the clearest sign that agricultural productivity and rural non-farm employment remain central to the labor chapter.
+
+&lt;span id=&quot;education-expansion-and-the-skills-mismatch&quot; class=&quot;anchor-target&quot;&gt;&lt;/span&gt;
+### Education Expansion And The Skills Mismatch
+
+Education access has expanded sharply. Secondary gross enrollment reached **98.1 percent in 2025**, while tertiary gross enrollment rose from **13.0 percent in 2019** to **31.7 percent in 2022**, **45.8 percent in 2023**, **56.5 percent in 2024**, and **59.8 percent in 2025**. This is one of the most dramatic human-capital shifts in the dataset.
+
+The development risk is that education expansion can outpace labor-market absorption. If universities and vocational institutions produce graduates faster than firms create skilled jobs, the economy faces three problems: graduates work below their skill level, public-sector employment becomes overloaded, and migration becomes a release valve. This is especially important because employers often demand practical skills, discipline-specific experience, language ability, digital competence, and internationally recognizable certification rather than diplomas alone.
+
+&lt;span id=&quot;agriculture-rural-youth-and-non-farm-jobs&quot; class=&quot;anchor-target&quot;&gt;&lt;/span&gt;
+### Agriculture, Rural Youth, And Non-Farm Jobs
+
+Agricultural employment decline can be healthy if workers move into better jobs. It can be harmful if workers leave agriculture only to enter informal urban services or precarious migration. Rural youth need non-farm pathways: food processing, cold-chain logistics, machinery repair, water management, renewable-energy maintenance, rural tourism, construction trades, and digital services. These sectors connect directly to infrastructure and regional development policy.
+
+Agricultural modernization also needs skills. Water-efficient irrigation, greenhouse production, food safety, export certification, storage, packaging, and logistics all require trained workers. A skilled agricultural workforce can raise productivity without forcing all rural workers to leave their regions.
+
+The productivity evidence is encouraging but incomplete. A World Bank-based series reports agricultural value added per worker at **USD 9,379 in constant 2015 prices in 2024**, up **3.4 percent** from 2023 and above the 2015 value of **USD 7,759**. Uzbek analysis reported by UzDaily states that gross agricultural output reached **444.6 trillion soums in 2024**, up **18.5 percent** over five years, with average annual growth of **3.5 percent**. These figures indicate real productivity improvement, but they do not remove the rural employment problem. A productive agricultural sector still needs fewer disguised workers, better water management, higher-value crops, mechanization skills, storage, certification, and links to processing and export logistics.
+
+| Rural transformation indicator | Recent value | Interpretation |
+| --- | ---: | --- |
+| Agricultural employment share | 25.2% of employment in 2025 | Agriculture remains a major employer even after long-run decline. |
+| Agriculture value added | 18.33% of GDP in 2024 | Agriculture&#x27;s economic share is below its employment share, signaling productivity pressure. |
+| Agriculture value added per worker | USD 9,379 in 2024, constant 2015 prices | Productivity is rising, but rural labor still needs higher-value pathways. |
+| Gross agricultural output | 444.6 trillion soums in 2024 | Output growth supports food security and agribusiness potential. |
+| Five-year output growth | +18.5% over 2020-2024 | Agricultural modernization is visible, but labor reallocation remains unfinished. |
+
+&lt;span id=&quot;r-d-productivity-and-human-development&quot; class=&quot;anchor-target&quot;&gt;&lt;/span&gt;
+### R&amp;D, Productivity, And Human Development
+
+R&amp;D and innovation matter because Uzbekistan cannot rely forever on labor abundance. As wages rise and the population becomes more educated, growth needs productivity. The current innovation base is still thin: World Bank/UNESCO data report R&amp;D expenditure at only **0.125 percent of GDP in 2023**, down from **0.16 percent in 2022** and far below the level usually associated with technology-intensive upgrading. This means that Uzbekistan&#x27;s human-capital expansion is running ahead of its research and innovation system.
+
+Human development indicators show progress but also the next frontier. UNDP&#x27;s 2025 Human Development Report launch notes that Uzbekistan&#x27;s HDI has increased by **22.7 percent** since 2000, that life expectancy rose by nearly **7 years**, and that GNI per capita increased by more than **225 percent**. Uzbekistan is classified in the high human development category and ranked **107th out of 193** countries and territories. The HDI value reported for 2023 is **0.740**. The labor-market meaning is clear: Uzbekistan is building human capabilities, but the economy now needs to convert those capabilities into productivity, innovation, and higher wages.
+
+{{figure:hdi-income-scatter}}
+
+The scatter plot places Uzbekistan within the wider international distribution of countries and territories for which the UNDP reports both HDI and income-per-capita data. Because the latest UNDP HDI statistical annex reports **GNI per capita in 2021 PPP dollars** rather than GDP per capita, the figure uses that HDI-consistent income measure on the horizontal axis. Uzbekistan&#x27;s position is important for interpretation: it sits above Tajikistan, Kyrgyzstan, and India in HDI, but remains far below Kazakhstan, Turkiye, Korea, Germany, and Gulf economies in income per person. The message is not that Uzbekistan lacks human-development progress. Rather, the country has reached a stage where further gains require converting education expansion, health improvement, and demographic potential into higher-productivity employment.
+
+This comparison also shows why the labor chapter cannot be separated from macroeconomic and industrial policy. If Uzbekistan wants to move upward and to the right in the figure, it needs more than enrollment growth. It needs firms that can absorb skilled workers, rural non-farm jobs that raise household incomes, universities connected to employers, stronger R&amp;D, better health and social protection, and migration policies that turn overseas experience into domestic productivity. The country&#x27;s HDI level is therefore both an achievement and a warning: human capabilities have improved, but income generation and innovation capacity must now catch up.
+
+The policy implication is that Uzbekistan&#x27;s human-capital agenda must move from enrollment targets to competence and productivity targets. Annual tracking needs to ask whether graduates find jobs, whether employers report skill shortages, whether wages rise with productivity, whether women and rural youth gain access to technical fields, and whether R&amp;D links universities to firms.
+
+{{figure:education-enrollment}}
+
+&lt;span id=&quot;policy-implications&quot; class=&quot;anchor-target&quot;&gt;&lt;/span&gt;
+### Policy Implications
+
+First, education planning needs labor-market feedback. Universities and vocational institutions need graduate employment tracking by field, wage outcomes, employer satisfaction, and migration outcomes. Programs with weak labor-market returns need reform.
+
+Second, vocational education needs prestige and employer trust. Uzbekistan&#x27;s development requires technicians, not only university graduates. Apprenticeships, dual education, industry equipment, and employer certification can make vocational routes attractive.
+
+Third, rural transformation needs non-farm job clusters. Industrial zones, agribusiness hubs, logistics centers, and service centers need to be linked to training institutions and local transport.
+
+Fourth, green transformation needs practical skills. Water-saving irrigation, soil salinity management, renewable-energy maintenance, energy auditing, environmental monitoring, waste management, and climate-smart agriculture all require technicians, extension workers, engineers, data specialists, and local administrators. Uzbekistan&#x27;s SDG and green-economy agenda can become a source of employment only if education and vocational systems prepare workers for these tasks.
+
+Fifth, skill circulation needs active reintegration. Return migrants need recognition of foreign work experience, access to credit, entrepreneurship support, and placement into sectors that value their skills.</textarea>
+    </article>
+    
+<template data-figure-template="hdi-income-scatter">
+    <figure class="figure-card" id="hdi-income-scatter">
+      <figcaption>Income Per Capita and Human Development: Uzbekistan in Comparative Perspective</figcaption>
+      <div class="map-frame hdi-scatter-frame">
+        <svg class="hdi-scatter-svg" viewBox="0 0 920 560" role="img" aria-label="Scatter plot comparing income per capita and HDI, with Uzbekistan highlighted">
+<rect x="0" y="0" width="920" height="560" fill="#ffffff"/>
+<rect x="92" y="42" width="792" height="444" fill="#fbfcfe" stroke="#d5dde7"/>
+<line x1="118.1" y1="42" x2="118.1" y2="486" stroke="#e7edf4"/>
+<text x="118.1" y="514" text-anchor="middle" font-size="13" fill="#526070">$5k</text>
+<line x1="289.9" y1="42" x2="289.9" y2="486" stroke="#e7edf4"/>
+<text x="289.9" y="514" text-anchor="middle" font-size="13" fill="#526070">$10k</text>
+<line x1="461.6" y1="42" x2="461.6" y2="486" stroke="#e7edf4"/>
+<text x="461.6" y="514" text-anchor="middle" font-size="13" fill="#526070">$20k</text>
+<line x1="688.6" y1="42" x2="688.6" y2="486" stroke="#e7edf4"/>
+<text x="688.6" y="514" text-anchor="middle" font-size="13" fill="#526070">$50k</text>
+<line x1="860.4" y1="42" x2="860.4" y2="486" stroke="#e7edf4"/>
+<text x="860.4" y="514" text-anchor="middle" font-size="13" fill="#526070">$100k</text>
+<line x1="92" y1="486.0" x2="884" y2="486.0" stroke="#e7edf4"/>
+<text x="78" y="490.0" text-anchor="end" font-size="13" fill="#526070">0.65</text>
+<line x1="92" y1="418.7" x2="884" y2="418.7" stroke="#e7edf4"/>
+<text x="78" y="422.7" text-anchor="end" font-size="13" fill="#526070">0.70</text>
+<line x1="92" y1="351.5" x2="884" y2="351.5" stroke="#e7edf4"/>
+<text x="78" y="355.5" text-anchor="end" font-size="13" fill="#526070">0.75</text>
+<line x1="92" y1="284.2" x2="884" y2="284.2" stroke="#e7edf4"/>
+<text x="78" y="288.2" text-anchor="end" font-size="13" fill="#526070">0.80</text>
+<line x1="92" y1="216.9" x2="884" y2="216.9" stroke="#e7edf4"/>
+<text x="78" y="220.9" text-anchor="end" font-size="13" fill="#526070">0.85</text>
+<line x1="92" y1="149.6" x2="884" y2="149.6" stroke="#e7edf4"/>
+<text x="78" y="153.6" text-anchor="end" font-size="13" fill="#526070">0.90</text>
+<line x1="92" y1="82.4" x2="884" y2="82.4" stroke="#e7edf4"/>
+<text x="78" y="86.4" text-anchor="end" font-size="13" fill="#526070">0.95</text>
+<text x="488.0" y="542" text-anchor="middle" font-size="14" font-weight="700" fill="#29323d">Income per capita: GNI per capita, 2021 PPP $ (log scale)</text>
+<text x="22" y="264.0" text-anchor="middle" font-size="14" font-weight="700" fill="#29323d" transform="rotate(-90 22 264.0)">Human Development Index (HDI), 2023</text>
+<circle cx="768.9" cy="52.8" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Iceland: HDI 0.972; GNI per capita PPP $69,117</title></circle>
+<circle cx="890.0" cy="55.5" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Norway: HDI 0.970; GNI per capita PPP $112,710</title></circle>
+<circle cx="811.1" cy="55.5" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Switzerland: HDI 0.970; GNI per capita PPP $81,949</title></circle>
+<circle cx="792.4" cy="66.2" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Denmark: HDI 0.962; GNI per capita PPP $76,008</title></circle>
+<circle cx="750.0" cy="70.3" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Germany: HDI 0.959; GNI per capita PPP $64,053</title></circle>
+<text x="666.0" y="58.3" font-size="13" font-weight="650" fill="#2f3a46">Germany</text>
+<circle cx="757.8" cy="70.3" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Sweden: HDI 0.959; GNI per capita PPP $66,102</title></circle>
+<circle cx="726.6" cy="71.6" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Australia: HDI 0.958; GNI per capita PPP $58,277</title></circle>
+<circle cx="770.0" cy="75.6" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Hong Kong, China (SAR): HDI 0.955; GNI per capita PPP $69,436</title></circle>
+<circle cx="766.1" cy="75.6" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Netherlands: HDI 0.955; GNI per capita PPP $68,344</title></circle>
+<circle cx="748.2" cy="81.0" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Belgium: HDI 0.951; GNI per capita PPP $63,582</title></circle>
+<circle cx="836.7" cy="83.7" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Ireland: HDI 0.949; GNI per capita PPP $90,885</title></circle>
+<circle cx="721.4" cy="85.1" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Finland: HDI 0.948; GNI per capita PPP $57,068</title></circle>
+<circle cx="886.8" cy="87.7" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Singapore: HDI 0.946; GNI per capita PPP $111,239</title></circle>
+<circle cx="709.4" cy="87.7" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>United Kingdom: HDI 0.946; GNI per capita PPP $54,372</title></circle>
+<circle cx="776.0" cy="95.8" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>United Arab Emirates: HDI 0.940; GNI per capita PPP $71,142</title></circle>
+<circle cx="710.8" cy="97.2" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Canada: HDI 0.939; GNI per capita PPP $54,688</title></circle>
+<circle cx="987.2" cy="98.5" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Liechtenstein: HDI 0.938; GNI per capita PPP $166,812</title></circle>
+<circle cx="674.7" cy="98.5" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>New Zealand: HDI 0.938; GNI per capita PPP $47,260</title></circle>
+<circle cx="784.6" cy="98.5" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>United States: HDI 0.938; GNI per capita PPP $73,650</title></circle>
+<circle cx="687.3" cy="99.9" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Korea (Republic of): HDI 0.937; GNI per capita PPP $49,726</title></circle>
+<text x="697.3" y="87.9" font-size="13" font-weight="650" fill="#2f3a46">Korea (Republic of)</text>
+<circle cx="669.9" cy="107.9" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Slovenia: HDI 0.931; GNI per capita PPP $46,361</title></circle>
+<circle cx="747.8" cy="109.3" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Austria: HDI 0.930; GNI per capita PPP $63,479</title></circle>
+<circle cx="677.4" cy="116.0" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Japan: HDI 0.925; GNI per capita PPP $47,775</title></circle>
+<circle cx="699.1" cy="117.3" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Malta: HDI 0.924; GNI per capita PPP $52,155</title></circle>
+<circle cx="821.5" cy="120.0" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Luxembourg: HDI 0.922; GNI per capita PPP $85,461</title></circle>
+<circle cx="712.5" cy="122.7" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>France: HDI 0.920; GNI per capita PPP $55,060</title></circle>
+<circle cx="678.8" cy="124.1" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Israel: HDI 0.919; GNI per capita PPP $48,050</title></circle>
+<circle cx="668.0" cy="125.4" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Spain: HDI 0.918; GNI per capita PPP $46,008</title></circle>
+<circle cx="667.4" cy="129.5" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Czechia: HDI 0.915; GNI per capita PPP $45,889</title></circle>
+<circle cx="700.2" cy="129.5" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Italy: HDI 0.915; GNI per capita PPP $52,389</title></circle>
+<circle cx="752.5" cy="129.5" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>San Marino: HDI 0.915; GNI per capita PPP $64,706</title></circle>
+<circle cx="752.2" cy="132.1" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Andorra: HDI 0.913; GNI per capita PPP $64,631</title></circle>
+<circle cx="664.7" cy="132.1" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Cyprus: HDI 0.913; GNI per capita PPP $45,394</title></circle>
+<circle cx="605.6" cy="138.9" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Greece: HDI 0.908; GNI per capita PPP $35,761</title></circle>
+<circle cx="646.7" cy="141.6" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Poland: HDI 0.906; GNI per capita PPP $42,218</title></circle>
+<circle cx="638.7" cy="142.9" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Estonia: HDI 0.905; GNI per capita PPP $40,881</title></circle>
+<circle cx="690.1" cy="149.6" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Saudi Arabia: HDI 0.900; GNI per capita PPP $50,299</title></circle>
+<circle cx="702.2" cy="151.0" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Bahrain: HDI 0.899; GNI per capita PPP $52,819</title></circle>
+<circle cx="644.9" cy="156.4" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Lithuania: HDI 0.895; GNI per capita PPP $41,916</title></circle>
+<circle cx="639.9" cy="163.1" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Portugal: HDI 0.890; GNI per capita PPP $41,064</title></circle>
+<circle cx="641.8" cy="164.4" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Croatia: HDI 0.889; GNI per capita PPP $41,380</title></circle>
+<circle cx="620.6" cy="164.4" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Latvia: HDI 0.889; GNI per capita PPP $37,998</title></circle>
+<circle cx="873.3" cy="168.5" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Qatar: HDI 0.886; GNI per capita PPP $105,353</title></circle>
+<circle cx="612.6" cy="176.5" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Slovakia: HDI 0.880; GNI per capita PPP $36,793</title></circle>
+<circle cx="545.4" cy="179.2" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Chile: HDI 0.878; GNI per capita PPP $28,047</title></circle>
+<circle cx="615.6" cy="190.0" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Hungary: HDI 0.870; GNI per capita PPP $37,236</title></circle>
+<circle cx="525.4" cy="196.7" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Argentina: HDI 0.865; GNI per capita PPP $25,876</title></circle>
+<circle cx="545.2" cy="200.8" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Montenegro: HDI 0.862; GNI per capita PPP $28,026</title></circle>
+<circle cx="550.7" cy="200.8" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Uruguay: HDI 0.862; GNI per capita PPP $28,650</title></circle>
+<circle cx="607.9" cy="206.1" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Oman: HDI 0.858; GNI per capita PPP $36,096</title></circle>
+<circle cx="596.7" cy="212.9" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Türkiye: HDI 0.853; GNI per capita PPP $34,507</title></circle>
+<circle cx="719.4" cy="214.2" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Kuwait: HDI 0.852; GNI per capita PPP $56,612</title></circle>
+<circle cx="539.5" cy="215.6" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Antigua and Barbuda: HDI 0.851; GNI per capita PPP $27,387</title></circle>
+<circle cx="555.3" cy="219.6" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Seychelles: HDI 0.848; GNI per capita PPP $29,195</title></circle>
+<circle cx="579.4" cy="223.6" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Bulgaria: HDI 0.845; GNI per capita PPP $32,175</title></circle>
+<circle cx="629.4" cy="223.6" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Romania: HDI 0.845; GNI per capita PPP $39,374</title></circle>
+<circle cx="470.8" cy="225.0" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Georgia: HDI 0.844; GNI per capita PPP $20,753</title></circle>
+<circle cx="554.6" cy="230.4" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Saint Kitts and Nevis: HDI 0.840; GNI per capita PPP $29,105</title></circle>
+<circle cx="595.9" cy="231.7" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Panama: HDI 0.839; GNI per capita PPP $34,385</title></circle>
+<circle cx="791.8" cy="234.4" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Brunei Darussalam: HDI 0.837; GNI per capita PPP $75,827</title></circle>
+<circle cx="570.1" cy="234.4" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Kazakhstan: HDI 0.837; GNI per capita PPP $30,989</title></circle>
+<text x="582.1" y="224.4" font-size="13" font-weight="650" fill="#2f3a46">Kazakhstan</text>
+<circle cx="500.7" cy="239.8" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Costa Rica: HDI 0.833; GNI per capita PPP $23,417</title></circle>
+<circle cx="497.5" cy="239.8" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Serbia: HDI 0.833; GNI per capita PPP $23,115</title></circle>
+<circle cx="628.5" cy="241.1" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Russian Federation: HDI 0.832; GNI per capita PPP $39,222</title></circle>
+<circle cx="533.4" cy="251.9" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Belarus: HDI 0.824; GNI per capita PPP $26,725</title></circle>
+<circle cx="570.0" cy="257.3" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Bahamas: HDI 0.820; GNI per capita PPP $30,975</title></circle>
+<circle cx="582.3" cy="258.6" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Malaysia: HDI 0.819; GNI per capita PPP $32,553</title></circle>
+<circle cx="486.7" cy="264.0" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>North Macedonia: HDI 0.815; GNI per capita PPP $22,128</title></circle>
+<circle cx="464.3" cy="269.4" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Armenia: HDI 0.811; GNI per capita PPP $20,221</title></circle>
+<circle cx="426.1" cy="269.4" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Barbados: HDI 0.811; GNI per capita PPP $17,328</title></circle>
+<circle cx="430.3" cy="270.7" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Albania: HDI 0.810; GNI per capita PPP $17,627</title></circle>
+<circle cx="536.0" cy="274.8" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Trinidad and Tobago: HDI 0.807; GNI per capita PPP $27,000</title></circle>
+<circle cx="538.5" cy="276.1" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Mauritius: HDI 0.806; GNI per capita PPP $27,280</title></circle>
+<circle cx="459.5" cy="278.8" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Bosnia and Herzegovina: HDI 0.804; GNI per capita PPP $19,827</title></circle>
+<circle cx="407.8" cy="285.5" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Iran (Islamic Republic of): HDI 0.799; GNI per capita PPP $16,096</title></circle>
+<circle cx="424.9" cy="286.9" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Saint Vincent and the Grenadines: HDI 0.798; GNI per capita PPP $17,247</title></circle>
+<circle cx="468.6" cy="286.9" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Thailand: HDI 0.798; GNI per capita PPP $20,570</title></circle>
+<circle cx="485.5" cy="288.2" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>China: HDI 0.797; GNI per capita PPP $22,029</title></circle>
+<text x="495.5" y="296.2" font-size="13" font-weight="650" fill="#2f3a46">China</text>
+<circle cx="379.1" cy="292.3" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Peru: HDI 0.794; GNI per capita PPP $14,339</title></circle>
+<circle cx="379.3" cy="296.3" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Grenada: HDI 0.791; GNI per capita PPP $14,349</title></circle>
+<circle cx="469.7" cy="299.0" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Azerbaijan: HDI 0.789; GNI per capita PPP $20,668</title></circle>
+<circle cx="483.1" cy="299.0" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Mexico: HDI 0.789; GNI per capita PPP $21,813</title></circle>
+<circle cx="444.5" cy="300.3" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Colombia: HDI 0.788; GNI per capita PPP $18,666</title></circle>
+<circle cx="435.6" cy="303.0" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Brazil: HDI 0.786; GNI per capita PPP $18,011</title></circle>
+<circle cx="406.8" cy="303.0" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Palau: HDI 0.786; GNI per capita PPP $16,035</title></circle>
+<circle cx="404.2" cy="304.4" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Moldova (Republic of): HDI 0.785; GNI per capita PPP $15,867</title></circle>
+<circle cx="420.4" cy="312.4" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Ukraine: HDI 0.779; GNI per capita PPP $16,933</title></circle>
+<circle cx="373.0" cy="315.1" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Ecuador: HDI 0.777; GNI per capita PPP $13,986</title></circle>
+<circle cx="485.5" cy="316.5" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Dominican Republic: HDI 0.776; GNI per capita PPP $22,024</title></circle>
+<circle cx="673.1" cy="316.5" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Guyana: HDI 0.776; GNI per capita PPP $46,959</title></circle>
+<circle cx="347.4" cy="316.5" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Sri Lanka: HDI 0.776; GNI per capita PPP $12,616</title></circle>
+<circle cx="216.5" cy="325.9" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Tonga: HDI 0.769; GNI per capita PPP $7,438</title></circle>
+<circle cx="453.0" cy="329.9" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Maldives: HDI 0.766; GNI per capita PPP $19,317</title></circle>
+<circle cx="355.5" cy="329.9" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Viet Nam: HDI 0.766; GNI per capita PPP $13,033</title></circle>
+<circle cx="431.5" cy="332.6" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Turkmenistan: HDI 0.764; GNI per capita PPP $17,716</title></circle>
+<circle cx="392.2" cy="334.0" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Algeria: HDI 0.763; GNI per capita PPP $15,114</title></circle>
+<circle cx="247.1" cy="335.3" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Cuba: HDI 0.762; GNI per capita PPP $8,415</title></circle>
+<circle cx="406.3" cy="336.7" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Dominica: HDI 0.761; GNI per capita PPP $16,001</title></circle>
+<circle cx="394.5" cy="343.4" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Paraguay: HDI 0.756; GNI per capita PPP $15,252</title></circle>
+<circle cx="409.7" cy="346.1" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Egypt: HDI 0.754; GNI per capita PPP $16,218</title></circle>
+<circle cx="269.8" cy="346.1" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Jordan: HDI 0.754; GNI per capita PPP $9,222</title></circle>
+<circle cx="320.1" cy="348.8" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Lebanon: HDI 0.752; GNI per capita PPP $11,299</title></circle>
+<circle cx="472.5" cy="354.1" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Saint Lucia: HDI 0.748; GNI per capita PPP $20,900</title></circle>
+<circle cx="386.8" cy="355.5" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Mongolia: HDI 0.747; GNI per capita PPP $14,787</title></circle>
+<circle cx="335.3" cy="356.8" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Tunisia: HDI 0.746; GNI per capita PPP $12,011</title></circle>
+<circle cx="367.7" cy="363.6" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>South Africa: HDI 0.741; GNI per capita PPP $13,694</title></circle>
+<circle cx="258.9" cy="364.9" r="9" fill="#d94f30" stroke="#7f1d1d" stroke-width="1.8" opacity="1"><title>Uzbekistan: HDI 0.740; GNI per capita PPP $8,826</title></circle>
+<text x="272.9" y="348.9" font-size="13" font-weight="800" fill="#b3261e">Uzbekistan</text>
+<circle cx="275.7" cy="374.3" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Bolivia (Plurinational State of): HDI 0.733; GNI per capita PPP $9,445</title></circle>
+<circle cx="447.0" cy="374.3" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Gabon: HDI 0.733; GNI per capita PPP $18,854</title></circle>
+<circle cx="209.3" cy="374.3" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Marshall Islands: HDI 0.733; GNI per capita PPP $7,224</title></circle>
+<circle cx="421.1" cy="377.0" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Botswana: HDI 0.731; GNI per capita PPP $16,984</title></circle>
+<circle cx="351.9" cy="377.0" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Fiji: HDI 0.731; GNI per capita PPP $12,843</title></circle>
+<circle cx="367.9" cy="381.1" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Indonesia: HDI 0.728; GNI per capita PPP $13,700</title></circle>
+<circle cx="426.3" cy="389.1" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Suriname: HDI 0.722; GNI per capita PPP $17,344</title></circle>
+<circle cx="342.0" cy="390.5" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Belize: HDI 0.721; GNI per capita PPP $12,343</title></circle>
+<circle cx="459.5" cy="390.5" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Libya: HDI 0.721; GNI per capita PPP $19,831</title></circle>
+<circle cx="291.3" cy="391.8" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Jamaica: HDI 0.720; GNI per capita PPP $10,057</title></circle>
+<circle cx="166.5" cy="391.8" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Kyrgyzstan: HDI 0.720; GNI per capita PPP $6,078</title></circle>
+<circle cx="307.3" cy="391.8" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Philippines: HDI 0.720; GNI per capita PPP $10,731</title></circle>
+<circle cx="254.0" cy="405.3" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Morocco: HDI 0.710; GNI per capita PPP $8,653</title></circle>
+<circle cx="207.0" cy="406.6" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Venezuela (Bolivarian Republic of): HDI 0.709; GNI per capita PPP $7,157</title></circle>
+<circle cx="161.3" cy="408.0" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Samoa: HDI 0.708; GNI per capita PPP $5,952</title></circle>
+<circle cx="197.2" cy="410.7" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Nicaragua: HDI 0.706; GNI per capita PPP $6,881</title></circle>
+<circle cx="457.1" cy="414.7" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Nauru: HDI 0.703; GNI per capita PPP $19,642</title></circle>
+<circle cx="370.4" cy="421.4" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Bhutan: HDI 0.698; GNI per capita PPP $13,843</title></circle>
+<circle cx="287.8" cy="425.5" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Eswatini (Kingdom of): HDI 0.695; GNI per capita PPP $9,919</title></circle>
+<circle cx="348.2" cy="425.5" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Iraq: HDI 0.695; GNI per capita PPP $12,654</title></circle>
+<circle cx="152.6" cy="430.8" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Tajikistan: HDI 0.691; GNI per capita PPP $5,747</title></circle>
+<text x="162.6" y="438.8" font-size="13" font-weight="650" fill="#2f3a46">Tajikistan</text>
+<circle cx="201.7" cy="433.5" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Tuvalu: HDI 0.689; GNI per capita PPP $7,006</title></circle>
+<circle cx="249.5" cy="438.9" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Bangladesh: HDI 0.685; GNI per capita PPP $8,498</title></circle>
+<circle cx="265.0" cy="438.9" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>India: HDI 0.685; GNI per capita PPP $9,047</title></circle>
+<text x="275.0" y="456.9" font-size="13" font-weight="650" fill="#2f3a46">India</text>
+<circle cx="304.2" cy="448.3" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>El Salvador: HDI 0.678; GNI per capita PPP $10,595</title></circle>
+<circle cx="350.3" cy="453.7" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Equatorial Guinea: HDI 0.674; GNI per capita PPP $12,762</title></circle>
+<circle cx="184.9" cy="453.7" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Palestine, State of: HDI 0.674; GNI per capita PPP $6,547</title></circle>
+<circle cx="239.6" cy="461.8" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Cabo Verde: HDI 0.668; GNI per capita PPP $8,165</title></circle>
+<circle cx="311.6" cy="465.8" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Namibia: HDI 0.665; GNI per capita PPP $10,917</title></circle>
+<circle cx="344.3" cy="469.9" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Guatemala: HDI 0.662; GNI per capita PPP $12,459</title></circle>
+<circle cx="159.2" cy="487.3" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Congo: HDI 0.649; GNI per capita PPP $5,903</title></circle>
+<circle cx="165.9" cy="492.7" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Honduras: HDI 0.645; GNI per capita PPP $6,065</title></circle>
+<circle cx="115.5" cy="494.1" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Kiribati: HDI 0.644; GNI per capita PPP $4,947</title></circle>
+<circle cx="145.5" cy="503.5" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Sao Tome and Principe: HDI 0.637; GNI per capita PPP $5,583</title></circle>
+<circle cx="138.8" cy="507.5" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Timor-Leste: HDI 0.634; GNI per capita PPP $5,435</title></circle>
+<circle cx="196.0" cy="515.6" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Ghana: HDI 0.628; GNI per capita PPP $6,846</title></circle>
+<circle cx="146.6" cy="515.6" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Kenya: HDI 0.628; GNI per capita PPP $5,608</title></circle>
+<circle cx="104.1" cy="523.7" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Nepal: HDI 0.622; GNI per capita PPP $4,726</title></circle>
+<circle cx="22.8" cy="525.0" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Vanuatu: HDI 0.621; GNI per capita PPP $3,404</title></circle>
+<circle cx="237.8" cy="530.4" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Lao People&#x27;s Democratic Republic: HDI 0.617; GNI per capita PPP $8,106</title></circle>
+<circle cx="188.1" cy="531.7" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Angola: HDI 0.616; GNI per capita PPP $6,631</title></circle>
+<circle cx="77.6" cy="533.1" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Micronesia (Federated States of): HDI 0.615; GNI per capita PPP $4,246</title></circle>
+<circle cx="114.0" cy="541.2" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Myanmar: HDI 0.609; GNI per capita PPP $4,919</title></circle>
+<circle cx="114.7" cy="545.2" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Cambodia: HDI 0.606; GNI per capita PPP $4,931</title></circle>
+<circle cx="28.4" cy="549.2" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Comoros: HDI 0.603; GNI per capita PPP $3,481</title></circle>
+<circle cx="30.5" cy="556.0" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Zimbabwe: HDI 0.598; GNI per capita PPP $3,511</title></circle>
+<circle cx="25.9" cy="560.0" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Zambia: HDI 0.595; GNI per capita PPP $3,447</title></circle>
+<circle cx="105.2" cy="569.4" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Cameroon: HDI 0.588; GNI per capita PPP $4,746</title></circle>
+<circle cx="-27.6" cy="574.8" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Solomon Islands: HDI 0.584; GNI per capita PPP $2,777</title></circle>
+<circle cx="191.9" cy="577.5" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Côte d&#x27;Ivoire: HDI 0.582; GNI per capita PPP $6,735</title></circle>
+<circle cx="-31.3" cy="577.5" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Uganda: HDI 0.582; GNI per capita PPP $2,736</title></circle>
+<circle cx="-10.9" cy="582.9" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Rwanda: HDI 0.578; GNI per capita PPP $2,971</title></circle>
+<circle cx="61.0" cy="585.6" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Papua New Guinea: HDI 0.576; GNI per capita PPP $3,971</title></circle>
+<circle cx="-20.7" cy="592.3" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Togo: HDI 0.571; GNI per capita PPP $2,856</title></circle>
+<circle cx="57.7" cy="601.7" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Syrian Arab Republic: HDI 0.564; GNI per capita PPP $3,918</title></circle>
+<circle cx="174.1" cy="603.1" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Mauritania: HDI 0.563; GNI per capita PPP $6,267</title></circle>
+<circle cx="144.8" cy="607.1" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Nigeria: HDI 0.560; GNI per capita PPP $5,569</title></circle>
+<circle cx="30.8" cy="613.8" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Tanzania (United Republic of): HDI 0.555; GNI per capita PPP $3,515</title></circle>
+<circle cx="-13.9" cy="615.2" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Haiti: HDI 0.554; GNI per capita PPP $2,935</title></circle>
+<circle cx="-6.1" cy="620.5" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Lesotho: HDI 0.550; GNI per capita PPP $3,029</title></circle>
+<circle cx="141.8" cy="628.6" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Pakistan: HDI 0.544; GNI per capita PPP $5,501</title></circle>
+<circle cx="75.0" cy="647.5" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Senegal: HDI 0.530; GNI per capita PPP $4,202</title></circle>
+<circle cx="-24.5" cy="655.5" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Gambia: HDI 0.524; GNI per capita PPP $2,812</title></circle>
+<circle cx="-191.9" cy="658.2" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Congo (Democratic Republic of the): HDI 0.522; GNI per capita PPP $1,431</title></circle>
+<circle cx="-159.1" cy="664.9" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Malawi: HDI 0.517; GNI per capita PPP $1,634</title></circle>
+<circle cx="50.5" cy="667.6" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Benin: HDI 0.515; GNI per capita PPP $3,806</title></circle>
+<circle cx="-63.4" cy="669.0" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Guinea-Bissau: HDI 0.514; GNI per capita PPP $2,403</title></circle>
+<circle cx="178.0" cy="670.3" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Djibouti: HDI 0.513; GNI per capita PPP $6,368</title></circle>
+<circle cx="-24.6" cy="673.0" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Sudan: HDI 0.511; GNI per capita PPP $2,810</title></circle>
+<circle cx="-174.0" cy="674.4" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Liberia: HDI 0.510; GNI per capita PPP $1,538</title></circle>
+<circle cx="-105.4" cy="683.8" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Eritrea: HDI 0.503; GNI per capita PPP $2,029</title></circle>
+<circle cx="29.3" cy="687.8" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Guinea: HDI 0.500; GNI per capita PPP $3,494</title></circle>
+<circle cx="-26.0" cy="691.9" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Ethiopia: HDI 0.497; GNI per capita PPP $2,796</title></circle>
+<circle cx="-112.5" cy="693.2" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Afghanistan: HDI 0.496; GNI per capita PPP $1,972</title></circle>
+<circle cx="-205.3" cy="697.2" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Mozambique: HDI 0.493; GNI per capita PPP $1,356</title></circle>
+<circle cx="-155.7" cy="705.3" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Madagascar: HDI 0.487; GNI per capita PPP $1,656</title></circle>
+<circle cx="-276.2" cy="728.2" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Yemen: HDI 0.470; GNI per capita PPP $1,018</title></circle>
+<circle cx="-147.2" cy="732.2" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Sierra Leone: HDI 0.467; GNI per capita PPP $1,714</title></circle>
+<circle cx="-64.7" cy="743.0" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Burkina Faso: HDI 0.459; GNI per capita PPP $2,391</title></circle>
+<circle cx="-318.4" cy="769.9" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Burundi: HDI 0.439; GNI per capita PPP $859</title></circle>
+<circle cx="-69.9" cy="796.8" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Mali: HDI 0.419; GNI per capita PPP $2,342</title></circle>
+<circle cx="-165.7" cy="796.8" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Niger: HDI 0.419; GNI per capita PPP $1,590</title></circle>
+<circle cx="-142.3" cy="800.8" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Chad: HDI 0.416; GNI per capita PPP $1,748</title></circle>
+<circle cx="-257.1" cy="803.5" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Central African Republic: HDI 0.414; GNI per capita PPP $1,100</title></circle>
+<circle cx="-184.4" cy="817.0" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>Somalia: HDI 0.404; GNI per capita PPP $1,475</title></circle>
+<circle cx="-373.2" cy="838.5" r="4.2" fill="#6b7280" stroke="#ffffff" stroke-width="1.8" opacity="0.48"><title>South Sudan: HDI 0.388; GNI per capita PPP $688</title></circle>
+<rect x="700" y="54" width="174" height="58" rx="6" fill="#ffffff" stroke="#d5dde7"/>
+<circle cx="724" cy="76" r="6" fill="#6b7280" opacity="0.72"/>
+<text x="740" y="81" font-size="13" fill="#2f3a46">All available countries</text>
+<circle cx="724" cy="100" r="8" fill="#d94f30" stroke="#7f1d1d" stroke-width="1.6"/>
+<text x="740" y="105" font-size="13" fill="#2f3a46">Uzbekistan</text>
+</svg>
+      </div>
+      <p class="source">Source: UNDP Human Development Report 2025 Statistical Annex, Table 1. Income axis uses GNI per capita in 2021 PPP dollars because this is the income measure reported with HDI. The scatter includes 193 countries and territories with available HDI and income data.</p>
+    </figure>
+    </template>
+<template data-figure-template="education-enrollment">
+    <figure class="figure-card" id="education-enrollment">
+      <figcaption>Education Enrollment</figcaption>
+      <div class="chart-frame">
+        <canvas id="chart-education-enrollment" aria-label="Education Enrollment" role="img"></canvas>
+      </div>
+      <p class="source">Source: World Bank API. Indicator/Table IDs: SE.SEC.ENRR, SE.TER.ENRR. Unit: Gross enrollment ratio (%).</p>
+      <script type="application/json" id="chart-education-enrollment-config">{"type": "line", "data": {"labels": [1991, 1992, 1993, 1994, 1995, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025], "datasets": [{"label": "School enrollment, secondary, gross %", "data": [99.6036605834961, 98.4910202026367, 95.2726669311523, 93.3939819335938, 93.1175384521484, 85.7901000976562, 85.3468933105469, null, null, 95.4466171264648, 96.2950973510742, 87.8653335571289, 88.7272109985352, 89.7682189941406, 88.2303695678711, 89.0436019897461, 89.9835586547852, 89.7831726074219, 92.0473722973161, 92.0626676426806, 91.7418371921357, 92.2428124917835, 92.8148657883702, 93.8775736591193, 94.9465096520158, 96.2074737548828, 90.0642970154019, 97.2589036917117, 97.3779819618405, 97.3839945834102, 96.8399222342106, 98.1198414913864], "borderColor": "#146C94", "backgroundColor": "#146C94", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}, {"label": "School enrollment, tertiary, gross %", "data": [17.0046997070312, 16.4374408721924, null, null, null, 12.9796800613403, 13.0081100463867, 13.297869682312, 13.7379999160767, 13.8350601196289, 13.8527898788452, 9.84444999694824, 9.96053028106689, 9.83143043518066, 9.89933967590332, 9.8161096572876, 8.85653237012253, 8.58497947573208, 7.84954008903504, 7.97676963416095, 7.99231869405469, 8.05320814639575, 8.33958377998093, 8.64750307019382, 9.95855522351711, 13.0316667432446, 15.9720957084892, 22.0939011675309, 31.701936179599, 45.7591768686293, 56.517478700865, 59.8086982926392], "borderColor": "#D94F30", "backgroundColor": "#D94F30", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}]}, "options": {"responsive": true, "maintainAspectRatio": false, "interaction": {"mode": "index", "intersect": false}, "plugins": {"legend": {"position": "bottom", "labels": {"boxWidth": 14, "boxHeight": 3}}, "tooltip": {"enabled": true}}, "scales": {"x": {"grid": {"display": false}, "ticks": {"maxTicksLimit": 8}}, "y": {"title": {"display": true, "text": "Gross enrollment ratio (%)"}, "grid": {"color": "#e8eef3"}, "ticks": {"precision": 1}}}}}</script>
+    </figure>
+    
+
+    <article class="editable-prose" data-md-panel="education-enrollment-interpretation">
+      <div class="prose-toolbar">
+        <span>Editable chapter text</span>
+        <div>
+          <button type="button" data-md-action="edit">Edit Markdown</button>
+          <button type="button" data-md-action="save" hidden>Save</button>
+          <button type="button" data-md-action="cancel" hidden>Cancel</button>
+        </div>
+      </div>
+      <div class="markdown-preview prose-body"></div>
+      <textarea class="markdown-editor" hidden>The education enrollment figure indicates access to formal education, while leaving the question of quality open. Secondary and tertiary enrollment matter because they shape the skills base for industrial upgrading, services, digitalization, and public administration.
+
+- School enrollment, secondary, gross % declined from 99.60 in 1991 to 98.12 in 2025.
+- School enrollment, tertiary, gross % increased from 17.00 in 1991 to 59.81 in 2025.
+
+The interpretation connects enrollment trends to labor-market outcomes. Education expansion is most valuable when it improves employability, productivity, and innovation capacity.</textarea>
+    </article>
+    </template></section>
+    </main>
+  </div>
+  <script>
+    function fallbackMarkdown(text) {
+      const escaped = text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+      return escaped.split(/\n{2,}/).map((block) => `<p>${block.replace(/\n/g, "<br>")}</p>`).join("");
+    }
+    function renderMarkdown(text) {
+      return window.marked ? marked.parse(text) : fallbackMarkdown(text);
+    }
+    function replaceFigurePlaceholders(preview, panel) {
+      const pattern = /^\{\{\s*(figure|map|image):([a-z0-9-]+)\s*\}\}$/i;
+      preview.querySelectorAll("p").forEach((paragraph) => {
+        const match = (paragraph.textContent || "").trim().match(pattern);
+        if (!match) return;
+        const key = match[1].toLowerCase() === "figure" ? match[2].toLowerCase() : `${match[1].toLowerCase()}:${match[2].toLowerCase()}`;
+        const template = panel.querySelector(`template[data-figure-template="${key}"]`) || document.querySelector(`template[data-figure-template="${key}"]`);
+        if (!template) {
+          const note = document.createElement("p");
+          note.className = "source";
+          note.textContent = `Figure not available: ${key}`;
+          paragraph.replaceWith(note);
+          return;
+        }
+        paragraph.replaceWith(template.content.cloneNode(true));
+      });
+    }
+    function slugifyHeading(text) {
+      return text.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "") || "section";
+    }
+    function enhancePreview(preview) {
+      preview.querySelectorAll("h2, h3").forEach((heading) => {
+        if (!heading.id) heading.id = slugifyHeading(heading.textContent || "");
+      });
+    }
+    function scrollToHashTarget() {
+      if (!window.location.hash) return;
+      const id = decodeURIComponent(window.location.hash.slice(1));
+      const target = document.getElementById(id);
+      if (target) target.scrollIntoView({ block: "start" });
+    }
+    function setupSectionNavigation() {
+      document.querySelectorAll("a.section-link").forEach((link) => {
+        link.addEventListener("click", () => {
+          window.setTimeout(scrollToHashTarget, 30);
+        });
+      });
+    }
+    function setupMarkdownPanels() {
+      document.querySelectorAll("[data-md-panel]").forEach((panel) => {
+        const id = panel.getAttribute("data-md-panel");
+        const preview = panel.querySelector(".markdown-preview");
+        const editor = panel.querySelector(".markdown-editor");
+        const edit = panel.querySelector("[data-md-action='edit']");
+        const save = panel.querySelector("[data-md-action='save']");
+        const cancel = panel.querySelector("[data-md-action='cancel']");
+        const source = panel.getAttribute("data-md-source");
+        const storageKey = `uzb-report-markdown:v5:${id}`;
+        const original = editor.value;
+        const stored = localStorage.getItem(storageKey);
+        if (stored !== null && (!source || window.location.protocol === "file:")) editor.value = stored;
+        const showPreview = () => {
+          preview.innerHTML = renderMarkdown(editor.value);
+          replaceFigurePlaceholders(preview, panel);
+          enhancePreview(preview);
+          setupCharts();
+        };
+        const saveMarkdown = async () => {
+          if (source && window.location.protocol.startsWith("http")) {
+            const response = await fetch("/api/save-section", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ source, markdown: editor.value })
+            });
+            if (!response.ok) {
+              const message = await response.text();
+              throw new Error(message || `Save failed with ${response.status}`);
+            }
+            localStorage.removeItem(storageKey);
+          } else {
+            localStorage.setItem(storageKey, editor.value);
+            if (source) {
+              window.alert("This edit was saved only as a browser draft. Open the report through UZB/code/serve_report.py to save it permanently to the Markdown source file.");
+            }
+          }
+        };
+        const setEditing = (editing) => {
+          editor.hidden = !editing;
+          preview.hidden = editing;
+          edit.hidden = editing;
+          save.hidden = !editing;
+          cancel.hidden = !editing;
+        };
+        showPreview();
+        setEditing(false);
+        edit.addEventListener("click", () => setEditing(true));
+        save.addEventListener("click", async () => {
+          save.disabled = true;
+          try {
+            await saveMarkdown();
+            showPreview();
+            setEditing(false);
+          } catch (error) {
+            window.alert(error.message || "Could not save the Markdown source.");
+          } finally {
+            save.disabled = false;
+          }
+        });
+        cancel.addEventListener("click", () => {
+          editor.value = localStorage.getItem(storageKey) ?? original;
+          showPreview();
+          setEditing(false);
+        });
+      });
+    }
+    function setupCharts() {
+      if (!window.Chart) {
+        document.querySelectorAll(".figure-card").forEach((card) => {
+          const note = document.createElement("p");
+          note.className = "source";
+          note.textContent = "Chart.js could not be loaded from local assets/chart.umd.min.js.";
+          card.appendChild(note);
+        });
+        return;
+      }
+      document.querySelectorAll("script[type='application/json'][id$='-config']").forEach((script) => {
+        const canvasId = script.id.replace("-config", "");
+        const canvas = document.getElementById(canvasId);
+        if (!canvas) return;
+        if (canvas.dataset.chartReady === "1") return;
+        canvas.dataset.chartReady = "1";
+        new Chart(canvas, JSON.parse(script.textContent));
+      });
+    }
+    window.addEventListener("DOMContentLoaded", () => {
+      setupMarkdownPanels();
+      setupSectionNavigation();
+      setupCharts();
+      window.setTimeout(scrollToHashTarget, 60);
+    });
+    </script>
+</body>
+</html>

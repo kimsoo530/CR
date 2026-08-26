@@ -1,0 +1,178 @@
+{
+  "report_country": "NGA",
+  "purpose": "Multi-source example. Verify definitions, vintages, filters, and peer logic before publication.",
+  "indicators": [
+    {
+      "source": "world_bank",
+      "source_id": 2,
+      "indicator_code": "IT.NET.USER.ZS",
+      "indicator_name": "Individuals using the Internet",
+      "unit": "percent of population",
+      "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2015,
+      "end_year": 2025,
+      "frequency": "annual",
+      "value_type": "internationally harmonized estimate"
+    },
+    {
+      "source": "world_bank",
+      "source_id": 2,
+      "indicator_code": "SP.DYN.LE00.IN",
+      "indicator_name": "Life expectancy at birth",
+      "unit": "years",
+      "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2015,
+      "end_year": 2025,
+      "frequency": "annual",
+      "value_type": "internationally harmonized estimate"
+    },
+    {
+      "source": "world_bank",
+      "source_id": 3,
+      "indicator_code": "GOV_WGI_GE.EST",
+      "indicator_name": "Government effectiveness",
+      "unit": "estimate (-2.5 to 2.5)",
+      "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2015,
+      "end_year": 2024,
+      "frequency": "annual",
+      "value_type": "perception-based composite estimate",
+      "limitations": "Use as a diagnostic signal with its uncertainty, not as a direct measure of administrative performance."
+    },
+    {
+      "source": "imf_weo",
+      "indicator_code": "NGDP_RPCH",
+      "indicator_name": "Real GDP growth",
+      "unit": "percent change",
+      "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2015,
+      "end_year": 2030,
+      "frequency": "annual",
+      "value_type": "WEO actual, estimate, and projection",
+      "dataset_version": "record the downloaded WEO vintage"
+    },
+    {
+      "source": "ilostat",
+      "indicator_code": "UNE_2EAP_SEX_AGE_RT_A",
+      "indicator_name": "Unemployment rate",
+      "unit": "percent of labor force",
+      "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2015,
+      "end_year": 2025,
+      "frequency": "annual",
+      "value_type": "ILO harmonized observation; inspect source and model status",
+      "filters": {"sex": "SEX_T", "classif1": "AGE_YTHADULT_YGE15"}
+    },
+    {
+      "source": "undesa_wpp",
+      "indicator_code": "TFR",
+      "value_column": "TFR",
+      "indicator_name": "Total fertility rate",
+      "unit": "births per woman",
+      "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2015,
+      "end_year": 2030,
+      "frequency": "annual",
+      "value_type": "WPP 2024 estimate and Medium-variant projection",
+      "variant": "Medium"
+    },
+    {
+      "source": "unctad",
+      "endpoint": "https://unctadstat-api.unctad.org/bulkdownload/US.ConcentDiversIndices/US_ConcentDiversIndices",
+      "indicator_code": "EXPORT_CONCENTRATION",
+      "indicator_name": "Merchandise export concentration index",
+      "value_column": "Concentration Index",
+      "unit": "index",
+      "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2015,
+      "end_year": 2024,
+      "frequency": "annual",
+      "value_type": "UNCTAD calculated index",
+      "filters": {"Flow": [2]}
+    },
+    {
+      "source": "whogov",
+      "dataset_version": "4.0",
+      "indicator_code": "leaderexperience_total",
+      "indicator_name": "Leader total observed experience",
+      "unit": "years",
+      "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2015,
+      "end_year": 2025,
+      "frequency": "annual snapshot",
+      "value_type": "research-dataset observation"
+    },
+    {
+      "source": "whogov",
+      "dataset_version": "4.0",
+      "indicator_code": "n_minister",
+      "indicator_name": "Number of cabinet ministers",
+      "unit": "persons",
+      "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2015,
+      "end_year": 2025,
+      "frequency": "annual snapshot",
+      "value_type": "research-dataset observation"
+    },
+    {
+      "source": "whogov",
+      "dataset_version": "4.0",
+      "indicator_code": "n_female_minister",
+      "indicator_name": "Number of female cabinet ministers",
+      "unit": "persons",
+      "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2015,
+      "end_year": 2025,
+      "frequency": "annual snapshot",
+      "value_type": "research-dataset observation"
+    },
+    {
+      "source": "whogov",
+      "dataset_version": "4.0",
+      "indicator_code": "average_minister",
+      "indicator_name": "Average cabinet tenure of ministers",
+      "unit": "years",
+      "countries": ["NGA", "GHA", "KEN", "ZAF"],
+      "start_year": 2015,
+      "end_year": 2025,
+      "frequency": "annual snapshot",
+      "value_type": "research-dataset estimate"
+    }
+  ],
+  "derived_indicators": [
+    {
+      "operation": "percent_change",
+      "input_indicator": "TFR",
+      "indicator_code": "TFR_ANNUAL_CHANGE",
+      "indicator_name": "Annual change in total fertility rate",
+      "unit": "percent",
+      "value_type": "GDI calculation from WPP series"
+    },
+    {
+      "operation": "ratio",
+      "numerator": "n_female_minister",
+      "denominator": "n_minister",
+      "scale": 100,
+      "indicator_code": "female_minister_share",
+      "indicator_name": "Women among cabinet ministers",
+      "unit": "percent",
+      "value_type": "GDI calculation from WhoGov counts"
+    }
+  ],
+  "benchmarks": [
+    {
+      "input_indicator": "NGDP_RPCH",
+      "target_country": "NGA",
+      "peer_countries": ["GHA", "KEN", "ZAF"],
+      "statistic": "median",
+      "min_peers": 2,
+      "indicator_code": "NGDP_RPCH_TARGET_PEERS",
+      "indicator_name": "Real GDP growth: Nigeria and peer median",
+      "benchmark_code": "PEER_MEDIAN",
+      "benchmark_name": "Peer-country median",
+      "gap_indicator_code": "NGDP_RPCH_GAP",
+      "gap_indicator_name": "Nigeria minus peer-median real GDP growth",
+      "limitations": "The peer set must be justified by region, income, structure, or the causal comparison being made."
+    }
+  ]
+}

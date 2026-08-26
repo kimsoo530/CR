@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 780" role="img" aria-label="Vietnam agricultural employment, productivity gap, and industrial-zone labor governance">
+  
+  <style>
+    .title{font:700 28px Arial,sans-serif;fill:#172026}
+    .subtitle{font:15px Arial,sans-serif;fill:#526069}
+    .panel-title{font:700 16px Arial,sans-serif;fill:#172026}
+    .panel-y{font:11px Arial,sans-serif;fill:#526069;text-anchor:end}
+    .panel-x{font:11px Arial,sans-serif;fill:#526069;text-anchor:middle}
+    .panel-last{font:700 11px Arial,sans-serif;fill:#172026}
+    .legend{font:11px Arial,sans-serif;fill:#526069}
+    .label{font:12px Arial,sans-serif;fill:#526069}
+    .small{font:11px Arial,sans-serif;fill:#65717a}
+    .value{font:700 22px Arial,sans-serif;fill:#172026}
+    .source{font:12px Arial,sans-serif;fill:#65717a}
+    .box-title{font:700 14px Arial,sans-serif;fill:#172026}
+    .box-text{font:12px Arial,sans-serif;fill:#526069}
+  </style>
+  <rect width="1100" height="780" fill="#f6f4ee"/>
+  <text x="54" y="44" class="title">Agricultural Labor, Productivity Gap, and Industrial-Zone Governance</text>
+  <text x="54" y="68" class="subtitle">Structural change is visible, but rural livelihoods and migrant industrial labor remain central administrative problems.</text>
+  <rect x="54" y="104" width="496" height="292" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="76" y="136" class="panel-title">Agriculture: employment share vs value-added share</text>
+  <line x1="108" y1="350.00" x2="520" y2="350.00" stroke="#edf2ef"/>
+  <text x="98" y="354.00" class="panel-y">0%</text>
+  <line x1="108" y1="296.29" x2="520" y2="296.29" stroke="#edf2ef"/>
+  <text x="98" y="300.29" class="panel-y">20%</text>
+  <line x1="108" y1="242.57" x2="520" y2="242.57" stroke="#edf2ef"/>
+  <text x="98" y="246.57" class="panel-y">40%</text>
+  <line x1="108" y1="188.86" x2="520" y2="188.86" stroke="#edf2ef"/>
+  <text x="98" y="192.86" class="panel-y">60%</text>
+  <line x1="108.00" y1="162" x2="108.00" y2="350" stroke="#f1f4f5"/>
+  <text x="108.00" y="374" class="panel-x">2000</text>
+  <line x1="190.40" y1="162" x2="190.40" y2="350" stroke="#f1f4f5"/>
+  <text x="190.40" y="374" class="panel-x">2005</text>
+  <line x1="272.80" y1="162" x2="272.80" y2="350" stroke="#f1f4f5"/>
+  <text x="272.80" y="374" class="panel-x">2010</text>
+  <line x1="355.20" y1="162" x2="355.20" y2="350" stroke="#f1f4f5"/>
+  <text x="355.20" y="374" class="panel-x">2015</text>
+  <line x1="437.60" y1="162" x2="437.60" y2="350" stroke="#f1f4f5"/>
+  <text x="437.60" y="374" class="panel-x">2020</text>
+  <line x1="520.00" y1="162" x2="520.00" y2="350" stroke="#f1f4f5"/>
+  <text x="520.00" y="374" class="panel-x">2025</text>
+  <path d="M108.00,177.56 L124.48,180.91 L140.96,186.20 L157.44,192.59 L173.92,197.41 L190.40,205.76 L206.88,214.29 L223.36,217.64 L239.84,219.71 L256.32,222.29 L272.80,219.19 L289.28,220.24 L305.76,222.79 L322.24,224.27 L338.72,225.56 L355.20,231.78 L371.68,237.56 L388.16,242.15 L404.64,248.68 L421.12,257.25 L437.60,262.41 L454.08,272.04 L470.56,260.13 L487.04,277.53 L503.52,280.51 L520.00,282.74" fill="none" stroke="#b8873a" stroke-width="3"/>
+  <circle cx="520.00" cy="282.74" r="4" fill="#b8873a" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="468.00" y="274.74" class="panel-last">25%</text>
+  <rect x="76" y="366" width="10" height="10" fill="#b8873a" rx="2"/>
+  <text x="92" y="375" class="legend">Employment</text>
+  <path d="M108.00,284.11 L124.48,287.58 L140.96,288.15 L157.44,289.46 L173.92,291.43 L190.40,298.17 L206.88,299.71 L223.36,299.90 L239.84,295.18 L256.32,298.52 L272.80,308.71 L289.28,306.33 L305.76,306.49 L322.24,309.14 L338.72,310.04 L355.20,311.13 L371.68,312.89 L388.16,315.27 L404.64,316.95 L421.12,318.35 L437.60,316.01 L454.08,316.15 L470.56,318.09 L487.04,318.14 L503.52,318.14" fill="none" stroke="#176b63" stroke-width="3"/>
+  <circle cx="503.52" cy="318.14" r="4" fill="#176b63" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="468.00" y="310.14" class="panel-last">11.9%</text>
+  <rect x="224" y="366" width="10" height="10" fill="#176b63" rx="2"/>
+  <text x="240" y="375" class="legend">Value added</text>
+  <rect x="590" y="104" width="456" height="292" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="612" y="136" class="panel-title">Vulnerable and wage employment</text>
+  <line x1="644" y1="350.00" x2="1016" y2="350.00" stroke="#edf2ef"/>
+  <text x="634" y="354.00" class="panel-y">0%</text>
+  <line x1="644" y1="303.00" x2="1016" y2="303.00" stroke="#edf2ef"/>
+  <text x="634" y="307.00" class="panel-y">20%</text>
+  <line x1="644" y1="256.00" x2="1016" y2="256.00" stroke="#edf2ef"/>
+  <text x="634" y="260.00" class="panel-y">40%</text>
+  <line x1="644" y1="209.00" x2="1016" y2="209.00" stroke="#edf2ef"/>
+  <text x="634" y="213.00" class="panel-y">60%</text>
+  <line x1="644" y1="162.00" x2="1016" y2="162.00" stroke="#edf2ef"/>
+  <text x="634" y="166.00" class="panel-y">80%</text>
+  <line x1="644.00" y1="162" x2="644.00" y2="350" stroke="#f1f4f5"/>
+  <text x="644.00" y="374" class="panel-x">2000</text>
+  <line x1="718.40" y1="162" x2="718.40" y2="350" stroke="#f1f4f5"/>
+  <text x="718.40" y="374" class="panel-x">2005</text>
+  <line x1="792.80" y1="162" x2="792.80" y2="350" stroke="#f1f4f5"/>
+  <text x="792.80" y="374" class="panel-x">2010</text>
+  <line x1="867.20" y1="162" x2="867.20" y2="350" stroke="#f1f4f5"/>
+  <text x="867.20" y="374" class="panel-x">2015</text>
+  <line x1="941.60" y1="162" x2="941.60" y2="350" stroke="#f1f4f5"/>
+  <text x="941.60" y="374" class="panel-x">2020</text>
+  <line x1="1016.00" y1="162" x2="1016.00" y2="350" stroke="#f1f4f5"/>
+  <text x="1016.00" y="374" class="panel-x">2025</text>
+  <path d="M644.00,176.79 L658.88,182.73 L673.76,181.81 L688.64,185.23 L703.52,194.04 L718.40,195.30 L733.28,196.54 L748.16,197.77 L763.04,201.54 L777.92,205.19 L792.80,202.59 L807.68,203.26 L822.56,203.04 L837.44,202.76 L852.32,203.72 L867.20,214.26 L882.08,218.58 L896.96,220.48 L911.84,223.30 L926.72,224.90 L941.60,225.14 L956.48,225.09 L971.36,225.92 L986.24,227.00 L1001.12,228.12 L1016.00,229.22" fill="none" stroke="#7c2f2a" stroke-width="3"/>
+  <circle cx="1016.00" cy="229.22" r="4" fill="#7c2f2a" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="964.00" y="221.22" class="panel-last">51.4%</text>
+  <rect x="612" y="366" width="10" height="10" fill="#7c2f2a" rx="2"/>
+  <text x="628" y="375" class="legend">Vulnerable</text>
+  <path d="M644.00,295.48 L658.88,289.79 L673.76,290.86 L688.64,287.34 L703.52,278.86 L718.40,277.66 L733.28,276.46 L748.16,275.27 L763.04,273.11 L777.92,271.06 L792.80,270.49 L807.68,268.54 L822.56,268.30 L837.44,268.09 L852.32,266.20 L867.20,257.56 L882.08,253.08 L896.96,249.31 L911.84,246.73 L926.72,245.78 L941.60,246.25 L956.48,244.77 L971.36,243.43 L986.24,242.57 L1001.12,241.46 L1016.00,240.36" fill="none" stroke="#345995" stroke-width="3"/>
+  <circle cx="1016.00" cy="240.36" r="4" fill="#345995" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="964.00" y="232.36" class="panel-last">46.7%</text>
+  <rect x="760" y="366" width="10" height="10" fill="#345995" rx="2"/>
+  <text x="776" y="375" class="legend">Wage/salaried</text>
+  <rect x="54" y="462" width="476" height="174" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="76" y="496" class="panel-title">Rural transformation agenda</text>
+  <text x="76" y="530" class="box-text">Land consolidation, mechanization, irrigation, agro-processing, rural logistics, and climate adaptation.</text>
+  <text x="76" y="560" class="box-text">Without nonfarm jobs and skills, agricultural workers move into informal services or unstable urban work.</text>
+  <text x="76" y="590" class="box-text">The Mekong Delta adds a climate-migration dimension to labor administration.</text>
+  <rect x="570" y="462" width="476" height="174" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="592" y="496" class="panel-title">Industrial-zone labor agenda</text>
+  <text x="592" y="530" class="box-text">Industrial parks absorb rural migrants but create demand for housing, childcare, schools, transport, safety, and dispute resolution.</text>
+  <text x="592" y="560" class="box-text">Social housing targets include 100,000 new units in 2025 and at least 1 million units by 2030.</text>
+  <text x="592" y="590" class="box-text">The test is whether FDI labor demand becomes stable urban livelihoods.</text>
+  
+  <rect x="54" y="666" width="314" height="92" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="70" y="692" class="label">2025 agriculture employment</text>
+  <text x="70" y="724" class="value" fill="#b8873a">25.0%</text>
+  <text x="70" y="744" class="small">of total employment, WDI/ILO modeled</text>
+  
+  <rect x="394" y="666" width="314" height="92" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="410" y="692" class="label">2024 agriculture value added</text>
+  <text x="410" y="724" class="value" fill="#176b63">11.9%</text>
+  <text x="410" y="744" class="small">of GDP, WDI</text>
+  
+  <rect x="734" y="666" width="314" height="92" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="750" y="692" class="label">2025 social housing target</text>
+  <text x="750" y="724" class="value" fill="#345995">100,000 units</text>
+  <text x="750" y="744" class="small">low-income and industrial-park workers</text>
+  <text x="54" y="748" class="source">Sources: World Bank WDI/ILO modeled indicators SL.AGR.EMPL.ZS, NV.AGR.TOTL.ZS, SL.EMP.VULN.ZS, SL.EMP.WORK.ZS; VietnamPlus/VNA 2025 social-housing policy reporting.</text>
+</svg>

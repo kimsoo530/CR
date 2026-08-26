@@ -1,0 +1,21 @@
+## 3.1 Constitutional Order and Amendments
+
+<!-- asean-comparative-lens-2026:start -->
+**ASEAN comparative lens (2026).** Myanmar should be read in ASEAN comparison as ASEAN's most fragile contemporary state-capacity and conflict-governance case. It differs from the developmental trajectories of Vietnam, Thailand, Malaysia, and Indonesia because regime conflict, armed fragmentation, sanctions, and administrative breakdown dominate the policy environment. For this section, the regional comparison should compare constitutional design with ASEAN's range from city-state legalism and federalism to socialist party leadership, monarchy, military rule, and electoral democracy. Local comparable indicators show: population 54.50 million (2024), rank 5 among the nine ASEAN reports in this workspace; GDP US$74.07 billion (2024), rank 7 among the nine ASEAN reports in this workspace; GDP per capita US$1,359 (2024), rank 9 among the nine ASEAN reports in this workspace; real GDP growth -0.97% (2024), rank 9 among the nine ASEAN reports in this workspace; government effectiveness -1.23 (2023), rank 9 among the nine ASEAN reports in this workspace; internet use 45.45% (2020), rank 9 among the nine ASEAN reports in this workspace. Use `sources/documents/regional/asean_comparative_lens_2026.md` together with ASEANstats, ASEAN Secretariat materials, and the country processed-indicator files before making cross-ASEAN claims.
+<!-- asean-comparative-lens-2026:end -->
+
+The constitutional order of Myanmar is best understood as a historical sequence rather than as a static legal text. Each constitutional settlement reorganized the relationship among sovereignty, executive authority, representation, courts, territorial administration, and rights. The chronology below therefore treats the current constitution as the latest layer in a longer institutional formation.
+
+The first task is chronological. A professional constitutional chapter distinguishes founding texts, transition charters, amendment cycles, regime changes, and judicial or administrative reforms. In Myanmar, constitutional change should be read as a sequence of state-building choices: how authority was centralized or dispersed, how representation was organized, how courts were positioned, and how the state defined its relationship with citizens and territory.
+
+The second task is institutional. Constitutions do not implement themselves. Their provisions become real through organic laws, budget laws, local-government statutes, civil-service rules, electoral laws, court procedures, audit institutions, and administrative practice. For this reason, the constitutional order is connected directly to later chapters on political power, government organization, fiscal administration, and implementation capacity.
+
+A constitutional chronology separates formal continuity from institutional change. A country may retain the same constitutional text while altering presidential powers, electoral rules, judicial review, decentralization, fiscal authority, or emergency powers through amendments and implementing statutes. Conversely, a new constitution may preserve older administrative habits if personnel systems, security institutions, and fiscal routines remain unchanged.
+
+In Myanmar, the constitutional order must therefore be read through both text and practice. The report asks whether the constitution creates predictable authority, whether it constrains arbitrary action, whether it enables policy coordination, and whether citizens and local governments can use constitutional rules to make claims on the state.
+
+The evidence base combines official constitutional texts, amendment acts, parliamentary or justice-ministry materials, constitutional-court or supreme-court sources where available, and credible comparative legal compilations. Indicators such as rule of law or voice and accountability can support interpretation, but they do not substitute for legal and institutional analysis.
+
+### Connection to the Report
+
+This constitutional reading guides the report's later analysis of Myanmar's political power structure, public administration, local government, fiscal control, rights protection, and implementation capacity.

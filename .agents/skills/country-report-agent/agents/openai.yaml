@@ -1,0 +1,4 @@
+interface:
+  display_name: "Country Report Agent"
+  short_description: "Build coherent, evidence-based country reports."
+  default_prompt: "Use $country-report-agent to build or improve a source-traceable country report with chapter-sensitive, non-template prose and verified citations, statistics, and visuals."

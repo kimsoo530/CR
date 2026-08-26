@@ -1,0 +1,1018 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>10.3 FDI: Absolute Amount and Share of GDP | Uzbekistan Country Report</title>
+  <script src="../assets/chart.umd.min.js"></script>
+  <script src="../assets/marked.min.js"></script>
+  <style>
+    :root {
+      --ink: #17212b;
+      --muted: #5b6773;
+      --line: #d9e1e8;
+      --panel: #f7f9fb;
+      --accent: #146c94;
+      --paper: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.62;
+    }
+    .layout {
+      display: grid;
+      grid-template-columns: 310px minmax(0, 1fr);
+      min-height: 100vh;
+    }
+    aside {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      overflow: auto;
+      border-right: 1px solid var(--line);
+      background: var(--panel);
+      padding: 22px 18px;
+    }
+    aside h1 { font-size: 20px; margin: 0 0 6px; }
+    aside h1 a { color: var(--ink); text-decoration: none; }
+    aside h1 a:hover { color: var(--accent); }
+    aside p { color: var(--muted); font-size: 13px; margin: 0 0 18px; }
+    nav a {
+      display: block;
+      color: var(--ink);
+      text-decoration: none;
+      padding: 8px 10px;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+    nav a:hover, nav a.active { background: #e9f1f6; color: var(--accent); }
+    .chapter-link { font-weight: 700; }
+    .toc-group {
+      margin: 1px 0;
+      border-radius: 6px;
+    }
+    .toc-group summary {
+      list-style: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .toc-group summary::-webkit-details-marker { display: none; }
+    .toc-group summary::before {
+      content: "›";
+      color: var(--muted);
+      font-size: 15px;
+      transform: rotate(0deg);
+      transition: transform 0.12s ease;
+    }
+    .toc-group[open] summary::before { transform: rotate(90deg); }
+    .toc-group summary a { flex: 1; }
+    .section-nav {
+      margin: 2px 0 8px 8px;
+      padding-left: 10px;
+      border-left: 2px solid #d2dde6;
+    }
+    .section-link {
+      padding: 5px 8px;
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.35;
+    }
+    .anchor-target {
+      display: block;
+      position: relative;
+      top: -18px;
+      visibility: hidden;
+    }
+    main { padding: 34px min(7vw, 86px); max-width: 980px; }
+    .hero { border-bottom: 1px solid var(--line); padding-bottom: 24px; margin-bottom: 24px; }
+    .hero h2 { font-size: 34px; margin: 0 0 8px; letter-spacing: 0; }
+    .hero p { color: var(--muted); max-width: 820px; }
+    .chapter h2 { font-size: 24px; margin: 0 0 12px; }
+    .chapter-landing-note {
+      color: var(--muted);
+      max-width: 760px;
+      margin: 0 0 18px;
+    }
+    .chapter-section-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 12px;
+      margin: 18px 0 28px;
+    }
+    .chapter-section-card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      padding: 14px;
+    }
+    .chapter-section-card a {
+      display: grid;
+      grid-template-columns: 48px minmax(0, 1fr);
+      gap: 10px;
+      align-items: start;
+      text-decoration: none;
+      color: var(--ink);
+    }
+    .chapter-section-card a:hover strong { color: var(--accent); }
+    .chapter-section-card span {
+      font-weight: 800;
+      color: var(--accent);
+      font-size: 15px;
+    }
+    .chapter-section-card strong {
+      font-size: 16px;
+      line-height: 1.35;
+      transition: color 0.12s ease;
+    }
+    .section-source {
+      margin: 10px 0 0 58px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.35;
+    }
+    .facts {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 10px;
+      margin: 18px 0;
+    }
+    .facts div { border: 1px solid var(--line); border-radius: 8px; padding: 12px; background: #fff; }
+    .facts b { display: block; font-size: 12px; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+    .facts span { font-weight: 700; }
+    .figure-card {
+      margin: 28px 0 34px;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+    .symbol-gallery {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin: 24px 0 30px;
+    }
+    .symbol-card {
+      margin: 0;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+    .symbol-card-wide { grid-column: 1 / -1; }
+    .symbol-card img {
+      display: block;
+      width: 100%;
+      max-height: 360px;
+      object-fit: contain;
+      background: #f7fbfc;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 10px;
+    }
+    .symbol-card-wide img {
+      max-height: 300px;
+      padding: 0;
+      object-fit: contain;
+    }
+    .symbol-card p {
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.55;
+    }
+    .heritage-photo {
+      margin: 24px 0 30px;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+    .heritage-photo img {
+      display: block;
+      width: 100%;
+      max-height: 520px;
+      object-fit: cover;
+      border-radius: 6px;
+      border: 1px solid var(--line);
+      background: #f7fbfc;
+    }
+    .heritage-photo figcaption {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+    .gov-org-chart {
+      margin: 24px 0 30px;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+    .gov-org-chart > figcaption {
+      font-weight: 800;
+      font-size: 18px;
+      margin: 0 0 14px;
+    }
+    .org-flow {
+      display: grid;
+      gap: 14px;
+    }
+    .org-branches,
+    .org-implementation {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      position: relative;
+    }
+    .org-node {
+      border: 1px solid #cfdce3;
+      border-radius: 8px;
+      padding: 13px;
+      background: #f8fbfc;
+      min-height: 146px;
+    }
+    .org-presidency {
+      background: #e9f4f7;
+      border-color: #9fc7d3;
+      max-width: 720px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .org-executive {
+      background: #f4f8ee;
+      border-color: #bfd4a5;
+    }
+    .org-node span {
+      display: block;
+      color: var(--accent);
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 6px;
+    }
+    .org-node strong {
+      display: block;
+      font-size: 16px;
+      line-height: 1.25;
+      margin-bottom: 8px;
+    }
+    .org-node p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+    .map-card {
+      margin: 24px 0 30px;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      width: min(1180px, calc(100vw - 380px));
+      max-width: none;
+    }
+    .map-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(250px, 0.85fr);
+      gap: 18px;
+      align-items: start;
+    }
+    .adm-map {
+      width: 100%;
+      height: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #f7fbfc;
+    }
+    .adm-path {
+      stroke: #415766;
+      stroke-width: 1;
+      vector-effect: non-scaling-stroke;
+    }
+    .adm-path:hover { fill: #98c6d2; }
+    .map-label {
+      font-size: 15px;
+      font-weight: 700;
+      text-anchor: middle;
+      fill: #253746;
+      paint-order: stroke;
+      stroke: #ffffff;
+      stroke-width: 3.8px;
+      stroke-linejoin: round;
+      pointer-events: none;
+    }
+    .neighbor-label {
+      font-size: 17px;
+      font-weight: 700;
+      text-anchor: middle;
+      fill: #6a7782;
+      letter-spacing: 0;
+    }
+    .capital-marker circle {
+      fill: #a12222;
+      stroke: #ffffff;
+      stroke-width: 2.2;
+    }
+    .capital-marker text {
+      font-size: 16px;
+      font-weight: 700;
+      fill: #17212b;
+      paint-order: stroke;
+      stroke: #ffffff;
+      stroke-width: 3.6px;
+    }
+    .map-table-wrap {
+      max-height: 660px;
+      overflow: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+    .compact-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12px;
+      line-height: 1.35;
+    }
+    .compact-table th, .compact-table td {
+      padding: 7px 8px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+    .compact-table th {
+      position: sticky;
+      top: 0;
+      background: #eef5f8;
+    }
+    .map-missing {
+      border: 1px dashed #aab7c2;
+      border-radius: 8px;
+      padding: 16px;
+      color: var(--muted);
+      background: #fbfcfd;
+    }
+    figcaption {
+      font-weight: 700;
+      margin-bottom: 8px;
+      text-align: center;
+    }
+    .chart-frame { height: 420px; width: 100%; }
+    .hdi-scatter-frame { width: 100%; overflow-x: auto; }
+    .hdi-scatter-svg {
+      display: block;
+      width: 100%;
+      min-width: 720px;
+      height: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+    canvas { display: block; width: 100%; height: 100%; }
+    .panel-figure { margin-top: -14px; }
+    .panel-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 14px;
+    }
+    .panel-chart {
+      min-height: 210px;
+      height: 230px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 10px;
+      background: #fbfcfd;
+    }
+    .source { color: var(--muted); font-size: 12px; }
+    .chart-empty { border: 1px dashed #aab7c2; border-radius: 8px; padding: 16px; background: #fbfcfd; }
+    .chart-empty strong, .chart-empty span, .chart-empty small { display: block; }
+    .editable-prose {
+      position: relative;
+      margin: 0 0 20px;
+    }
+    .prose-toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin: 0 0 12px;
+      padding: 8px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .prose-toolbar span {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .prose-toolbar div { display: flex; gap: 6px; flex-wrap: wrap; justify-content: flex-end; }
+    .prose-toolbar button {
+      border: 1px solid #b9c6d0;
+      background: #fff;
+      color: var(--ink);
+      border-radius: 6px;
+      padding: 6px 9px;
+      font-size: 12px;
+      cursor: pointer;
+    }
+    .prose-toolbar button:hover { border-color: var(--accent); color: var(--accent); }
+    .prose-body {
+      font-size: 17px;
+      line-height: 1.78;
+    }
+    .prose-body h1, .prose-body h2, .prose-body h3 {
+      margin: 24px 0 10px;
+      line-height: 1.25;
+      scroll-margin-top: 24px;
+    }
+    .prose-body p { margin: 0 0 16px; }
+    .prose-body ul, .prose-body ol { padding-left: 24px; margin: 0 0 16px; }
+    .prose-body blockquote { margin: 18px 0; padding-left: 14px; border-left: 3px solid var(--line); color: var(--muted); }
+    .prose-body table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0 22px;
+      font-size: 15px;
+      line-height: 1.55;
+      background: #fff;
+      border: 1px solid #b8c7d2;
+    }
+    .prose-body th,
+    .prose-body td {
+      border: 1px solid #b8c7d2;
+      padding: 9px 11px;
+      text-align: left;
+      vertical-align: top;
+    }
+    .prose-body th {
+      background: #eef5f8;
+      font-weight: 800;
+    }
+    .prose-body tr:nth-child(even) td {
+      background: #fbfcfd;
+    }
+    .equation-block {
+      margin: 18px 0 22px;
+      padding: 16px 18px;
+      border: 1px solid #b8c7d2;
+      border-left: 4px solid var(--accent);
+      border-radius: 8px;
+      background: #fbfcfd;
+      overflow-x: auto;
+    }
+    .equation-label {
+      margin-bottom: 8px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+    .equation-line {
+      min-width: 680px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 21px;
+      line-height: 1.8;
+      white-space: normal;
+    }
+    .equation-line sub {
+      font-size: 65%;
+    }
+    .markdown-editor {
+      display: block;
+      width: 100%;
+      min-height: 520px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 12px 14px;
+      resize: vertical;
+      font: 13px/1.55 Consolas, "Courier New", monospace;
+      color: var(--ink);
+      background: #fbfcfd;
+    }
+    .cover-body {
+      min-height: 100vh;
+      background:
+        linear-gradient(90deg, rgba(20, 108, 148, 0.08) 1px, transparent 1px),
+        linear-gradient(0deg, rgba(111, 122, 133, 0.08) 1px, transparent 1px),
+        #eef3f5;
+      background-size: 42px 42px;
+    }
+    .cover-page {
+      max-width: none;
+      min-height: 100vh;
+      padding: 42px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .book-cover {
+      width: min(980px, 100%);
+      min-height: min(780px, calc(100vh - 84px));
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 260px;
+      grid-template-rows: auto auto 1fr auto auto;
+      gap: 20px 34px;
+      border: 1px solid #c8d3dc;
+      background: linear-gradient(90deg, #ffffff 0%, #ffffff 66%, #f3f7f8 66%, #f3f7f8 100%);
+      box-shadow: 0 18px 50px rgba(23, 33, 43, 0.14);
+      padding: clamp(30px, 5vw, 64px);
+      position: relative;
+      overflow: hidden;
+    }
+    .book-cover::before {
+      content: "";
+      position: absolute;
+      inset: 24px auto 24px 24px;
+      width: 8px;
+      background: #b43a32;
+    }
+    .book-cover::after {
+      content: "UZB";
+      position: absolute;
+      right: 34px;
+      bottom: 16px;
+      color: rgba(20, 108, 148, 0.1);
+      font-size: clamp(82px, 18vw, 176px);
+      line-height: 1;
+      font-weight: 800;
+      letter-spacing: 0;
+      pointer-events: none;
+    }
+    .cover-kicker {
+      grid-column: 1 / 3;
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+    .cover-rule {
+      grid-column: 1 / 3;
+      height: 1px;
+      background: #c8d3dc;
+    }
+    .book-cover h1 {
+      grid-column: 1 / 2;
+      margin: 10px 0 0;
+      font-size: clamp(48px, 8vw, 92px);
+      line-height: 0.96;
+      letter-spacing: 0;
+      font-weight: 800;
+    }
+    .cover-subtitle {
+      grid-column: 1 / 2;
+      margin: 0;
+      max-width: 650px;
+      color: #344451;
+      font-size: clamp(18px, 2.4vw, 25px);
+      line-height: 1.32;
+      font-weight: 700;
+    }
+    .cover-purpose {
+      grid-column: 1 / 2;
+      max-width: 680px;
+      margin: 0;
+      color: #344451;
+      font-size: 16px;
+      line-height: 1.74;
+    }
+    .cover-editor {
+      grid-column: 2 / 3;
+      grid-row: 3 / 5;
+      align-self: start;
+      border-top: 4px solid var(--accent);
+      padding-top: 18px;
+      z-index: 1;
+    }
+    .cover-editor span {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+    .cover-editor strong {
+      display: block;
+      margin-top: 8px;
+      font-size: 24px;
+      line-height: 1.1;
+    }
+    .cover-editor em {
+      display: block;
+      margin-top: 6px;
+      color: #344451;
+      font-style: normal;
+      font-size: 14px;
+    }
+    .cover-actions {
+      grid-column: 1 / 2;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-self: end;
+      z-index: 1;
+    }
+    .primary-link, .secondary-link {
+      display: inline-flex;
+      align-items: center;
+      min-height: 42px;
+      padding: 9px 14px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 14px;
+    }
+    .primary-link { background: var(--accent); color: #fff; border: 1px solid var(--accent); }
+    .secondary-link { background: #fff; color: var(--ink); border: 1px solid #b9c6d0; }
+    .cover-method {
+      grid-column: 1 / 3;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      z-index: 1;
+    }
+    .cover-method div {
+      border-top: 1px solid #c8d3dc;
+      padding-top: 12px;
+    }
+    .cover-method b {
+      display: block;
+      font-size: 13px;
+      text-transform: uppercase;
+      color: var(--ink);
+    }
+    .cover-method span {
+      display: block;
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+    [hidden] { display: none !important; }
+    code, pre { background: #eef3f6; border-radius: 5px; }
+    code { padding: 1px 4px; }
+    pre { padding: 12px; overflow: auto; }
+    @media (max-width: 980px) {
+      .layout { grid-template-columns: 1fr; }
+      aside { position: relative; height: auto; }
+      main { padding: 24px 18px; }
+      .chart-frame { height: 320px; }
+      .symbol-gallery { grid-template-columns: 1fr; }
+      .symbol-card-wide { grid-column: auto; }
+      .map-card { width: 100%; }
+      .map-grid { grid-template-columns: 1fr; }
+      .cover-page { padding: 18px; align-items: stretch; }
+      .book-cover {
+        min-height: auto;
+        grid-template-columns: 1fr;
+        background: #fff;
+      }
+      .cover-kicker, .cover-rule, .book-cover h1, .cover-subtitle,
+      .cover-purpose, .cover-editor, .cover-actions, .cover-method {
+        grid-column: 1 / 2;
+        grid-row: auto;
+      }
+      .cover-method { grid-template-columns: 1fr; }
+    }
+    </style>
+</head>
+<body>
+  <div class="layout">
+    <aside>
+      <h1><a href="../index.html">Uzbekistan</a></h1>
+      <p>Official-source country report with reproducible indicators and editable Markdown notes.</p>
+      <nav><details class="toc-group"><summary><a class="chapter-link" href="../01-overview.html">1. Country Overview</a></summary><div class="section-nav"><a class="section-link" href="../sections/01-01-official-name-capital-location-area-population-language-religion-and-currency.html">1.1 Official Name, Capital, Location, Area, Population, Language, Religion, and Currency</a><a class="section-link" href="../sections/01-02-state-symbols.html">1.2 State Symbols</a><a class="section-link" href="../sections/01-03-country-profile-and-strategic-setting.html">1.3 Country Profile and Strategic Setting</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../02-history.html">2. Historical Background</a></summary><div class="section-nav"><a class="section-link" href="../sections/02-01-ancient-and-medieval-political-communities-and-civilizational-zones.html">2.1 Ancient and Medieval Political Communities and Civilizational Zones</a><a class="section-link" href="../sections/02-02-empire-colonial-rule-and-pre-independence-state-formation.html">2.2 Empire, Colonial Rule, and Pre-Independence State Formation</a><a class="section-link" href="../sections/02-03-independence-transition-and-constitutional-turning-points.html">2.3 Independence, Transition, and Constitutional Turning Points</a><a class="section-link" href="../sections/02-04-historical-legacies-in-present-institutions.html">2.4 Historical Legacies in Present Institutions</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../03-constitution.html">3. Constitution and Basic State Order</a></summary><div class="section-nav"><a class="section-link" href="../sections/03-01-enactment-and-amendment-history.html">3.1 Enactment and Amendment History</a><a class="section-link" href="../sections/03-02-state-identity-sovereignty-territory-and-people.html">3.2 State Identity, Sovereignty, Territory, and People</a><a class="section-link" href="../sections/03-03-fundamental-rights-system.html">3.3 Fundamental Rights System</a><a class="section-link" href="../sections/03-04-separation-of-powers-constitutional-review-judicial-review-and-emergency-powers.html">3.4 Separation of Powers, Constitutional Review, Judicial Review, and Emergency Powers</a><a class="section-link" href="../sections/03-05-constitutional-implications-for-state-authority.html">3.5 Constitutional Implications for State Authority</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../04-politics.html">4. Political System and Power Structure</a></summary><div class="section-nav"><a class="section-link" href="../sections/04-01-form-of-government.html">4.1 Form of Government</a><a class="section-link" href="../sections/04-02-head-of-state-and-head-of-government.html">4.2 Head of State and Head of Government</a><a class="section-link" href="../sections/04-03-parliament-legislative-process-parties-and-elections.html">4.3 Parliament, Legislative Process, Parties, and Elections</a><a class="section-link" href="../sections/04-04-local-politics-and-real-power-relations.html">4.4 Local Politics and Real Power Relations</a><a class="section-link" href="../sections/04-05-political-dynamics-and-institutional-accountability.html">4.5 Political Dynamics and Institutional Accountability</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../05-administration.html">5. Administrative System and Government Organization</a></summary><div class="section-nav"><a class="section-link" href="../sections/05-01-central-executive-administration-strategic-planning-and-policy-coordination.html">5.1 Central Executive Administration, Strategic Planning, and Policy Coordination</a><a class="section-link" href="../sections/05-02-organizational-management-and-administrative-reform.html">5.2 Organizational Management and Administrative Reform</a><a class="section-link" href="../sections/05-03-human-resource-management-and-civil-service.html">5.3 Human Resource Management and Civil Service</a><a class="section-link" href="../sections/05-04-financial-administration-budget-execution-procurement-and-audit.html">5.4 Financial Administration, Budget Execution, Procurement, and Audit</a><a class="section-link" href="../sections/05-05-local-administration-mahalla-and-service-delivery.html">5.5 Local Administration, Mahalla, and Service Delivery</a><a class="section-link" href="../sections/05-06-administrative-governance-accountability-and-digital-government.html">5.6 Administrative Governance, Accountability, and Digital Government</a><a class="section-link" href="../sections/05-07-implementation-capacity-and-administrative-performance.html">5.7 Implementation Capacity and Administrative Performance</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../06-governance.html">6. Governance and Institutional Capacity</a></summary><div class="section-nav"><a class="section-link" href="../sections/06-01-government-effectiveness-and-regulatory-quality.html">6.1 Government Effectiveness and Regulatory Quality</a><a class="section-link" href="../sections/06-02-rule-of-law-and-control-of-corruption.html">6.2 Rule of Law and Control of Corruption</a><a class="section-link" href="../sections/06-03-political-stability-citizen-participation-and-accountability.html">6.3 Political Stability, Citizen Participation, and Accountability</a><a class="section-link" href="../sections/06-04-institutional-performance-and-reform-credibility.html">6.4 Institutional Performance and Reform Credibility</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../07-fiscal.html">7. Fiscal System and Public Sector</a></summary><div class="section-nav"><a class="section-link" href="../sections/07-01-government-revenue-tax-revenue-and-expenditure-structure.html">7.1 Government Revenue, Tax Revenue, and Expenditure Structure</a><a class="section-link" href="../sections/07-02-fiscal-balance-debt-and-interest-burden.html">7.2 Fiscal Balance, Debt, and Interest Burden</a><a class="section-link" href="../sections/07-03-state-owned-enterprises-and-quasi-public-sector.html">7.3 State-Owned Enterprises and Quasi-Public Sector</a><a class="section-link" href="../sections/07-04-defense-and-public-security-spending.html">7.4 Defense and Public Security Spending</a><a class="section-link" href="../sections/07-05-fiscal-capacity-and-public-sector-risks.html">7.5 Fiscal Capacity and Public Sector Risks</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../08-society.html">8. Population and Social Structure</a></summary><div class="section-nav"><a class="section-link" href="../sections/08-01-population-size-growth-age-structure-and-dependency.html">8.1 Population Size, Growth, Age Structure, and Dependency</a><a class="section-link" href="../sections/08-02-urbanization-and-regional-distribution.html">8.2 Urbanization and Regional Distribution</a><a class="section-link" href="../sections/08-03-ethnicity-language-religion-migration-remittances-and-diaspora.html">8.3 Ethnicity, Language, Religion, Migration, Remittances, and Diaspora</a><a class="section-link" href="../sections/08-04-social-integration-and-conflict-factors.html">8.4 Social Integration and Conflict Factors</a><a class="section-link" href="../sections/08-05-demographic-pressures-and-social-cohesion.html">8.5 Demographic Pressures and Social Cohesion</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../09-macro.html">9. Macroeconomic Structure</a></summary><div class="section-nav"><a class="section-link" href="../sections/09-01-gdp-scale-growth-and-gdp-per-capita.html">9.1 GDP Scale, Growth, and GDP per Capita</a><a class="section-link" href="../sections/09-02-prices-exchange-rate-and-macroeconomic-stability.html">9.2 Prices, Exchange Rate, and Macroeconomic Stability</a><a class="section-link" href="../sections/09-03-sectoral-structure-resource-dependence-growth-model-and-vulnerabilities.html">9.3 Sectoral Structure, Resource Dependence, Growth Model, and Vulnerabilities</a><a class="section-link" href="../sections/09-04-growth-sustainability-and-structural-constraints.html">9.4 Growth Sustainability and Structural Constraints</a><a class="section-link" href="../sections/09-05-growth-driver-models-and-interpretation.html">9.5 Growth Driver Models and Interpretation</a></div></details>
+<details class="toc-group active" open><summary><a class="chapter-link active" href="../10-trade.html">10. Trade, Investment, and External Economy</a></summary><div class="section-nav"><a class="section-link" href="../sections/10-01-exports-imports-trading-partners-and-current-account.html">10.1 Exports, Imports, Trading Partners, and Current Account</a><a class="section-link" href="../sections/10-02-tourism-high-technology-exports-and-services.html">10.2 Tourism, High-Technology Exports, and Services</a><a class="section-link" href="../sections/10-03-fdi-absolute-amount-and-share-of-gdp.html">10.3 FDI: Absolute Amount and Share of GDP</a><a class="section-link" href="../sections/10-04-investment-regime-foreign-exchange-economic-zones-and-industrial-policy.html">10.4 Investment Regime, Foreign Exchange, Economic Zones, and Industrial Policy</a><a class="section-link" href="../sections/10-05-external-integration-and-competitiveness.html">10.5 External Integration and Competitiveness</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../11-infrastructure.html">11. Infrastructure, Energy, and Digital Connectivity</a></summary><div class="section-nav"><a class="section-link" href="../sections/11-01-electricity-access-and-energy-dependence.html">11.1 Electricity Access and Energy Dependence</a><a class="section-link" href="../sections/11-02-transport-logistics-air-rail-road-and-ports.html">11.2 Transport, Logistics, Air, Rail, Road, and Ports</a><a class="section-link" href="../sections/11-03-internet-mobile-connectivity-secure-servers-and-logistics-performance.html">11.3 Internet, Mobile Connectivity, Secure Servers, and Logistics Performance</a><a class="section-link" href="../sections/11-04-connectivity-service-delivery-and-bottlenecks.html">11.4 Connectivity, Service Delivery, and Bottlenecks</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../12-labor.html">12. Labor Market and Human Capital</a></summary><div class="section-nav"><a class="section-link" href="../sections/12-01-labor-force-size-and-participation.html">12.1 Labor Force Size and Participation</a><a class="section-link" href="../sections/12-02-female-participation-unemployment-youth-unemployment-and-vulnerable-employment.html">12.2 Female Participation, Unemployment, Youth Unemployment, and Vulnerable Employment</a><a class="section-link" href="../sections/12-03-agricultural-employment-education-literacy-productivity-hdi-and-r-d.html">12.3 Agricultural Employment, Education, Literacy, Productivity, HDI, and R&amp;D</a><a class="section-link" href="../sections/12-04-employment-absorption-and-human-capital-use.html">12.4 Employment Absorption and Human Capital Use</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../13-education-health.html">13. Education, Health, and Welfare</a></summary><div class="section-nav"><a class="section-link" href="../sections/13-01-education-system-and-public-expenditure.html">13.1 Education System and Public Expenditure</a><a class="section-link" href="../sections/13-02-life-expectancy-infant-mortality-hospital-beds-doctors-and-health-expenditure.html">13.2 Life Expectancy, Infant Mortality, Hospital Beds, Doctors, and Health Expenditure</a><a class="section-link" href="../sections/13-03-sanitation-public-health-risks-and-welfare.html">13.3 Sanitation, Public Health Risks, and Welfare</a><a class="section-link" href="../sections/13-04-human-development-outcomes-and-welfare-capacity.html">13.4 Human Development Outcomes and Welfare Capacity</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../14-finance.html">14. Financial Sector and Economic Institutions</a></summary><div class="section-nav"><a class="section-link" href="../sections/14-01-domestic-credit-private-credit-stock-market-and-fintech.html">14.1 Domestic Credit, Private Credit, Stock Market, and Fintech</a><a class="section-link" href="../sections/14-02-central-bank-monetary-policy-and-supervision.html">14.2 Central Bank, Monetary Policy, and Supervision</a><a class="section-link" href="../sections/14-03-foreign-investment-protection-and-capital-market-openness.html">14.3 Foreign Investment Protection and Capital-Market Openness</a><a class="section-link" href="../sections/14-04-financial-deepening-and-market-institutions.html">14.4 Financial Deepening and Market Institutions</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../15-security.html">15. Foreign Relations, Security, and Geopolitics</a></summary><div class="section-nav"><a class="section-link" href="../sections/15-01-foreign-policy-orientation-and-international-organizations.html">15.1 Foreign Policy Orientation and International Organizations</a><a class="section-link" href="../sections/15-02-borders-security-organizations-military-capacity-and-transnational-issues.html">15.2 Borders, Security Organizations, Military Capacity, and Transnational Issues</a><a class="section-link" href="../sections/15-03-strategic-resources-and-corridors.html">15.3 Strategic Resources and Corridors</a><a class="section-link" href="../sections/15-04-strategic-environment-and-transnational-risks.html">15.4 Strategic Environment and Transnational Risks</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../16-policy.html">16. Major Policies and National Development Strategy</a></summary><div class="section-nav"><a class="section-link" href="../sections/16-01-evolution-of-national-development-strategy.html">16.1 Evolution of National Development Strategy</a><a class="section-link" href="../sections/16-02-national-development-plan-and-industrial-policy.html">16.2 National Development Plan and Industrial Policy</a><a class="section-link" href="../sections/16-03-digital-transformation-energy-transition-climate-policy-and-administrative-reform.html">16.3 Digital Transformation, Energy Transition, Climate Policy, and Administrative Reform</a><a class="section-link" href="../sections/16-04-welfare-education-health-and-recent-five-year-policy-changes.html">16.4 Welfare, Education, Health, and Recent Five-Year Policy Changes</a><a class="section-link" href="../sections/16-05-policy-implementation-and-reform-sequencing.html">16.5 Policy Implementation and Reform Sequencing</a><a class="section-link" href="../sections/16-06-environmental-sustainability-sdgs-and-green-transition.html">16.6 Environmental Sustainability, SDGs, and Green Transition</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../17-assessment.html">17. Integrated Assessment</a></summary><div class="section-nav"><a class="section-link" href="../sections/17-01-national-operating-model.html">17.1 National Operating Model</a><a class="section-link" href="../sections/17-02-political-stability-institutional-risk-growth-drivers-and-bottlenecks.html">17.2 Political Stability, Institutional Risk, Growth Drivers, and Bottlenecks</a><a class="section-link" href="../sections/17-03-administrative-capacity-and-international-cooperation-implications.html">17.3 Administrative Capacity and International Cooperation Implications</a><a class="section-link" href="../sections/17-04-uzbekistan-and-comparative-administration-theory.html">17.4 Uzbekistan and Comparative Administration Theory</a><a class="section-link" href="../sections/17-05-evidence-limits-and-source-triangulation.html">17.5 Evidence Limits and Source Triangulation</a><a class="section-link" href="../sections/17-06-strategic-diagnosis-and-outlook.html">17.6 Strategic Diagnosis and Outlook</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../18-appendix.html">18. Appendix, Sources, and Method</a></summary><div class="section-nav"><a class="section-link" href="../sections/18-01-annual-data-revision-protocol.html">18.1 Annual Data Revision Protocol</a><a class="section-link" href="../sections/18-02-editorial-workflow-and-manuscript-preservation.html">18.2 Editorial Workflow and Manuscript Preservation</a><a class="section-link" href="../sections/18-03-data-integrity.html">18.3 Data Integrity</a><a class="section-link" href="../sections/18-04-evidence-archive-and-review-trail.html">18.4 Evidence Archive and Review Trail</a><a class="section-link" href="../sections/18-05-data-limits-and-source-triangulation.html">18.5 Data Limits and Source Triangulation</a><a class="section-link" href="../sections/18-06-external-review-checklist.html">18.6 External Review Checklist</a><a class="section-link" href="../sections/18-07-comparative-administration-benchmark.html">18.7 Comparative Administration Benchmark</a><a class="section-link" href="../sections/18-08-timeline.html">18.8 Timeline</a><a class="section-link" href="../sections/18-09-government-organization-chart.html">18.9 Government Organization Chart</a><a class="section-link" href="../sections/18-10-constitution-and-major-laws.html">18.10 Constitution and Major Laws</a><a class="section-link" href="../sections/18-11-key-indicator-table-source-list-and-data-codebook.html">18.11 Key Indicator Table, Source List, and Data Codebook</a><a class="section-link" href="../sections/18-12-methodological-notes-and-update-standards.html">18.12 Methodological Notes and Update Standards</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../19-references.html">19. References</a></summary><div class="section-nav"><a class="section-link" href="../sections/19-01-references.html">19.1 References</a><a class="section-link" href="../sections/19-02-source-integrity-and-citation-notes.html">19.2 Source Integrity and Citation Notes</a></div></details></nav>
+    </aside>
+    <main>
+      <header class="hero">
+        <h2>10.3 FDI: Absolute Amount and Share of GDP</h2>
+      </header>
+      <section class="chapter">
+    <article class="editable-prose" data-md-panel="trade-fdi-absolute-amount-and-share-of-gdp-text" data-md-source="sections/10-03-fdi-absolute-amount-and-share-of-gdp.md">
+      <div class="prose-toolbar">
+        <span>Editable chapter text</span>
+        <div>
+          <button type="button" data-md-action="edit">Edit Markdown</button>
+          <button type="button" data-md-action="save" hidden>Save</button>
+          <button type="button" data-md-action="cancel" hidden>Cancel</button>
+        </div>
+      </div>
+      <div class="markdown-preview prose-body"></div>
+      <textarea class="markdown-editor" hidden>&lt;span id=&quot;10-3-fdi-absolute-amount-and-share-of-gdp&quot; class=&quot;anchor-target&quot;&gt;&lt;/span&gt;
+## 10.3 FDI: Absolute Amount and Share of GDP
+
+Foreign direct investment has become one of the central pillars of Uzbekistan&#x27;s post-2016 reform strategy. The government has sought to move from a relatively closed, state-led, and administratively controlled economy toward a more internationally connected development model. Currency liberalization, tax reform, special economic zones, public-private partnerships, privatization, investment promotion, and regional diplomacy have all been used to attract foreign capital. Yet FDI in Uzbekistan is not understood merely as a financial inflow. It is also a mechanism through which the country seeks technology transfer, infrastructure modernization, export diversification, energy security, industrial upgrading, and integration into global and regional value chains.
+
+The first analytical task is to keep different investment concepts separate. **Net FDI** in balance-of-payments statistics measures direct-investment inflows net of disinvestment, repayment, and related balance-of-payments adjustments. It is useful for macroeconomic comparison. **Foreign investments and loans** in national fixed-capital statistics are broader: they include foreign-financed loans, project finance, and capital investment flows that are not identical to net FDI. **Foreign-financed fixed capital formation** is still another concept because it asks how much foreign capital is used for physical investment in buildings, equipment, infrastructure, and production assets. Mixing these figures would make the investment story look larger or smaller than it really is.
+
+{{figure:external-balance-investment}}
+
+World Bank WDI data in the project archive show that net FDI inflows rose from **USD 1.66 billion in 2016** to **USD 1.80 billion in 2017**, fell to **USD 0.62 billion in 2018**, rebounded to **USD 2.32 billion in 2019**, and then remained mostly between **USD 1.7 billion and USD 3.0 billion** during 2020-2024. The latest WDI value in the archive is **USD 2.99 billion in 2024**, equivalent to **2.6 percent of GDP**. The Central Bank of Uzbekistan reported a closely related 2024 balance-of-payments figure of about **USD 2.8 billion** in net FDI inflows, a **32 percent** increase from 2023. The small difference between WDI and Central Bank reporting is not substantively important for this chapter; both sources point to the same conclusion: Uzbekistan has become more successful in attracting FDI since reform acceleration, but net FDI remains moderate relative to the size of the country&#x27;s investment ambitions.
+
+| Year | Net FDI inflows, current USD billion | Net FDI inflows, % of GDP | Interpretation |
+|---|---:|---:|---|
+| 2010 | 1.66 | 3.34% | Earlier high point, before the later reform acceleration. |
+| 2016 | 1.66 | 1.93% | Pre-reform baseline; FDI was present but constrained by the policy environment. |
+| 2017 | 1.80 | 2.58% | Currency and reform opening began to improve investor attention. |
+| 2018 | 0.62 | 1.06% | Volatility shows that announced reform does not immediately create stable inflows. |
+| 2019 | 2.32 | 3.44% | Strong rebound as reform credibility and project activity increased. |
+| 2022 | 2.66 | 2.95% | FDI remained significant after the pandemic shock. |
+| 2023 | 2.16 | 2.10% | Lower inflow year, underlining year-to-year volatility. |
+| 2024 | 2.99 | 2.60% | New high in the WDI archive; foreign investment is important but not yet transformative by itself. |
+
+The broader national investment data tell a different story because they include foreign loans as well as direct investment. Uzbekistan&#x27;s National Statistics Committee reported that foreign investments and loans disbursed into fixed assets reached **USD 27.7 billion in 2024**. Other official 2025 reporting on foreign investment and loans shows the scale of foreign-financed capital formation continuing to grow. In January-September 2025, total foreign investments and loans reached **USD 34.9 billion**, of which **USD 26.4 billion** was directed to fixed capital. Direct foreign investments and loans not guaranteed by the state accounted for **USD 29.9 billion**, or **85.6 percent** of total foreign investments and loans. These figures show that foreign-financed capital investment is much larger than net FDI because it includes loans and project finance.
+
+| Concept | Recent reported value | What it measures | How it should be used |
+|---|---:|---|---|
+| Net FDI inflows, balance-of-payments concept | USD 2.8-3.0 billion in 2024 | Direct investment inflows net of reverse flows and BOP adjustments | Best for macroeconomic comparison and FDI/GDP analysis |
+| Foreign investments and loans into fixed assets | USD 27.7 billion in 2024 | Broad foreign-financed fixed-capital investment, including loans | Best for project scale and capital-formation analysis |
+| Total foreign investments and loans | USD 34.9 billion in January-September 2025 | Foreign investment and loan resources used in the economy | Best for current investment activity, but not equivalent to net FDI |
+| Foreign investments and loans directed to fixed capital | USD 26.4 billion in January-September 2025 | Foreign-funded capital formation | Best for infrastructure, energy, industrial, and construction investment analysis |
+
+&lt;span id=&quot;source-countries-and-multi-vector-investment-diplomacy&quot; class=&quot;anchor-target&quot;&gt;&lt;/span&gt;
+### Source Countries And Multi-Vector Investment Diplomacy
+
+The source-country structure shows the growing importance of China, Russia, Turkey, Germany, Saudi Arabia, and the United Kingdom. In the 2024 fixed-capital foreign investment and loan data, China accounted for the largest share, at **28.7 percent**, followed by Russia at **12.7 percent**, Turkey at **7.0 percent**, Germany at **5.1 percent**, Saudi Arabia at **4.8 percent**, and the United Kingdom at **3.8 percent**. This pattern reflects Uzbekistan&#x27;s multi-vector economic diplomacy.
+
+| Source country | Share of 2024 foreign investment and loans into fixed assets | Main analytical meaning |
+|---|---:|---|
+| China | 28.7% | Infrastructure, energy, industrial parks, transport, manufacturing, and increasingly technology-related investment. |
+| Russia | 12.7% | Historical economic ties, energy, migration, industrial cooperation, nuclear power, and regional logistics. |
+| Turkey | 7.0% | Textiles, construction materials, consumer goods, services, and manufacturing. |
+| Germany | 5.1% | Machinery, technology, industrial standards, green transition, and institutional partnership. |
+| Saudi Arabia | 4.8% | Renewable energy, infrastructure finance, and large-scale power projects. |
+| United Kingdom | 3.8% | Finance, investment vehicles, mining, services, and capital-market links. |
+
+China&#x27;s role is especially important because it connects foreign investment to Uzbekistan&#x27;s landlocked development problem: rail, road, energy, manufacturing, and logistics projects can reduce the penalty of geography. Russia remains important because economic interdependence is not only commercial but also institutional and strategic. Turkey has become a visible partner in light manufacturing, construction, and consumer sectors. Germany and other European partners are relevant for technology, quality standards, green transition, and regulatory modernization. Saudi Arabia and the Gulf states are increasingly important in renewable energy and infrastructure finance. The policy implication is not that Uzbekistan should favor one partner. It is that the country needs a diversified investment portfolio that prevents overdependence and uses different partners for different development functions.
+
+&lt;span id=&quot;sectoral-composition-and-development-priorities&quot; class=&quot;anchor-target&quot;&gt;&lt;/span&gt;
+### Sectoral Composition And Development Priorities
+
+The sectoral pattern of foreign investment and loans is closely linked to Uzbekistan&#x27;s development priorities. National Statistics Committee data for January-September 2025 show that foreign investments and loans were concentrated in **manufacturing**, **electricity and gas supply**, **mining**, **agriculture**, **construction**, **transport and storage**, and **information and communication**. The largest share went to manufacturing, at **32.9 percent**, followed by electricity and gas supply at **18.4 percent**, mining at **12.2 percent**, agriculture at **9.1 percent**, construction at **6.1 percent**, transport and storage at **5.3 percent**, and information and communication at **0.9 percent**.
+
+| Sector | Share of foreign investments and loans, January-September 2025 | Policy reading |
+|---|---:|---|
+| Manufacturing | 32.9% | Foreign capital is being used to expand industrial production, but the test is technology transfer, supplier upgrading, and export capability. |
+| Electricity and gas supply | 18.4% | Energy reliability is a binding constraint on growth, making power investment strategically important. |
+| Mining and quarrying | 12.2% | Resource investment can raise exports and fiscal revenue, but it needs processing, transparency, and environmental safeguards. |
+| Agriculture, forestry, and fisheries | 9.1% | Investment can support agro-processing, irrigation, cold chains, and export quality. |
+| Construction | 6.1% | Useful for infrastructure and urbanization, but vulnerable to project-quality and debt risks. |
+| Transport and storage | 5.3% | Central to corridor strategy and regional integration. |
+| Information and communication | 0.9% | Still small in capital-finance terms, despite fast growth in IT-enabled services. |
+
+Energy is one of the most important sectors. Uzbekistan has rising electricity demand, aging infrastructure, and a policy need to improve energy reliability while reducing fiscal and quasi-fiscal burdens. Foreign investors have therefore entered solar, wind, thermal power, transmission, gas, and related infrastructure projects. Gulf investors, especially Saudi- and UAE-linked firms, have become prominent in renewable energy and power projects. Russia has also deepened its role through nuclear-energy cooperation; in 2024, Uzbekistan and Russia agreed that Rosatom would build a small nuclear power plant project in Uzbekistan, widely described as Central Asia&#x27;s first post-Soviet nuclear power plant project. This illustrates how FDI in energy is not only commercial, but also strategic: it affects electricity security, industrial policy, geopolitical alignment, and long-term technological dependence.
+
+Mining and critical minerals are another major area. Uzbekistan possesses significant gold, uranium, copper, and other mineral resources, and its strategic relevance has increased as major powers seek diversified supply chains for critical minerals. In 2026, the United States and Uzbekistan signed a critical-minerals investment framework intended to support investment across exploration, extraction, processing, and infrastructure, including a joint investment vehicle. This indicates that mining-related investment is moving beyond traditional extractive activity. It is increasingly connected to battery supply chains, renewable-energy technologies, geopolitical diversification, and industrial processing. The policy question is whether Uzbekistan can move from raw-material extraction toward higher-value processing, environmental safeguards, local supplier development, and transparent revenue management.
+
+Manufacturing remains a central target for FDI. Uzbekistan&#x27;s large population, relatively low labor costs, and location between China, Russia, South Asia, and the Middle East make it attractive for labor-intensive and regional-market manufacturing. Foreign investment has been visible in textiles and garments, food processing, construction materials, chemicals, pharmaceuticals, electrical equipment, automotive components, and consumer manufacturing. The policy aim is to use FDI to reduce dependence on raw commodities and increase export complexity. However, manufacturing FDI can remain shallow if investors focus only on low-cost assembly, tariff advantages, or domestic market access. The stronger developmental outcome requires technology transfer, local supplier upgrading, management training, logistics improvement, and export-market integration.
+
+Infrastructure and transport are crucial because Uzbekistan is double-landlocked. Investment in railways, roads, dry ports, logistics centers, aviation, border infrastructure, and customs modernization directly affects the country&#x27;s ability to turn geographic constraint into corridor advantage. FDI and foreign loans in infrastructure therefore serve a strategic function: they help Uzbekistan participate in China-Central Asia-Europe routes, Trans-Caspian alternatives, South Asian connectivity, and regional trade corridors. The main policy issue is debt sustainability and project selection. Infrastructure projects can increase long-term productivity, but poorly selected or politically motivated projects can create fiscal burdens without sufficient economic return.
+
+Digital infrastructure and AI-related investment are emerging areas. Uzbekistan has sought to attract foreign investment in data centers, AI, and digital services. In 2025, the government announced a tax-free zone in Karakalpakstan for AI and data-center investment, offering long-term tax and customs exemptions for foreign firms investing at least USD 100 million and aiming to attract more than USD 1 billion in AI and digital infrastructure investment by 2030. This initiative is significant for two reasons. First, it shows that Uzbekistan wants to move beyond traditional FDI in commodities, construction, and manufacturing. Second, it uses regional development policy, especially in Karakalpakstan, a poorer and environmentally affected region, as part of digital investment attraction. The risks are energy availability, water use for cooling, cybersecurity, data governance, and whether digital FDI creates domestic skills and firms or remains an enclave activity.
+
+Privatization and capital-market development are increasingly linked to FDI. Uzbekistan has begun to use the sale of minority stakes, IPOs, investment funds, and state-asset restructuring to attract foreign capital. In 2026, the government announced plans to sell a 30 percent stake in the Uzbekistan National Investment Fund through IPOs in London and Tashkent. Reuters reported that the fund holds minority stakes in several major state enterprises and has assets valued at about USD 2.44 billion. This is important because privatization-related FDI can improve disclosure, valuation, corporate governance, and investor discipline. However, partial privatization does not automatically create competition if the state retains control, appointments, and strategic decision-making.
+
+&lt;span id=&quot;institutional-and-policy-issues&quot; class=&quot;anchor-target&quot;&gt;&lt;/span&gt;
+### Institutional And Policy Issues
+
+Several policy issues shape Uzbekistan&#x27;s FDI environment. The first is legal predictability. Foreign investors need clear rules on ownership, taxation, land, licensing, repatriation of profits, dispute settlement, and regulatory change. The OECD notes that Uzbekistan is working to clarify statutory restrictions on FDI and that the draft investment law is expected to introduce a &quot;negative list&quot; approach, identifying sectors not open to foreign investors. The OECD regards this as positive because it improves transparency and investor security. However, investors will also judge whether rules are applied consistently across regions, ministries, state-owned enterprises, and courts.
+
+The second issue is institutional coordination. Uzbekistan has created investment-promotion mechanisms, but the investment ecosystem remains administratively complex. The OECD notes that the Investment Promotion Agency of Uzbekistan operates under the Ministry of Investment, Industry and Trade and that a wide range of public institutions are involved in investment promotion and facilitation. It also observes that the agency&#x27;s role can be overshadowed by the size and resources of the line ministry. This matters because investors often face multiple agencies, local authorities, permits, infrastructure providers, tax bodies, customs offices, and sector regulators. Investment attraction therefore depends not only on incentives, but on whole-of-government coordination and aftercare.
+
+The third issue is the balance between incentives and public value. Special economic zones, tax exemptions, customs preferences, subsidized land, discounted electricity, and guarantees can attract investors. Yet excessive incentives may reduce fiscal revenue, distort competition, and create enclave projects with weak local spillovers. The correct policy question is not whether Uzbekistan should offer incentives, but whether incentives are transparent, time-limited, performance-based, and linked to jobs, exports, technology transfer, training, local procurement, and environmental standards.
+
+The fourth issue is state ownership and competition. Foreign investors may be attracted to Uzbekistan&#x27;s strategic sectors, but many of these sectors are still shaped by state-owned enterprises, state-owned banks, administrative allocation, and monopoly structures. FDI can modernize state enterprises through joint ventures and partial privatization, but it can also reinforce insider arrangements if deals are negotiated bilaterally without open competition. Investment policy must therefore be linked to SOE reform, competition policy, procurement transparency, and regulatory independence.
+
+The fifth issue is regional inequality. Much foreign investment tends to concentrate in Tashkent, resource-rich regions, industrial zones, or large infrastructure corridors. If FDI does not reach labor-abundant or ecologically vulnerable regions, it may deepen territorial disparities. The Karakalpakstan AI zone proposal is an example of using investment policy for regional development, but such initiatives require realistic infrastructure, skills, energy, water, and social safeguards. Regional FDI strategy distinguishes among Tashkent&#x27;s services and finance role, Samarkand-Bukhara-Khiva tourism potential, the Fergana Valley&#x27;s labor-intensive industry, and Karakalpakstan&#x27;s need for ecological and social regeneration.
+
+The sixth issue is sustainable investment. Uzbekistan&#x27;s earlier development experience shows the environmental cost of poorly governed resource and agricultural strategies, especially the Aral Sea crisis. New FDI should therefore be evaluated not only by capital volume, but also by environmental impact, water use, emissions, labor standards, community consultation, and long-term resilience. This is particularly important for mining, energy, chemicals, construction materials, agriculture, and data centers.
+
+&lt;span id=&quot;summary-fdi-pattern-and-policy-issues&quot; class=&quot;anchor-target&quot;&gt;&lt;/span&gt;
+### Summary: FDI Pattern And Policy Issues
+
+| Dimension | Current pattern | Main policy issue |
+|---|---|---|
+| Scale | Net FDI was about USD 2.8-3.0 billion in 2024; broader foreign investment and loans into fixed assets reached USD 27.7 billion | Distinguish net FDI from broader foreign-financed capital investment |
+| Main source countries | China, Russia, Turkey, Germany, Saudi Arabia, United Kingdom; Korea, Kazakhstan, UAE and others also relevant | Avoid overdependence on a few partners while maintaining multi-vector diplomacy |
+| Energy | Renewables, gas, electricity, nuclear cooperation, grid modernization | Balance energy security, tariff reform, social protection, and geopolitical risk |
+| Mining and critical minerals | Gold, uranium, copper, critical-mineral processing potential | Move from extraction to value-added processing with environmental safeguards |
+| Manufacturing | Textiles, chemicals, food processing, construction materials, automotive, pharmaceuticals, equipment | Increase local supplier linkages, exports, technology transfer, and productivity |
+| Infrastructure and logistics | Rail, road, logistics corridors, dry ports, airports, customs modernization | Ensure project selection, debt sustainability, and regional connectivity gains |
+| Digital and AI | Data centers, AI zones, digital infrastructure, ICT services | Link incentives to skills, local firms, cybersecurity, energy, and data governance |
+| Privatization-linked FDI | SOE minority stakes, IPOs, UzNIF, state-asset restructuring | Improve governance and competition, not only raise capital |
+| Institutional environment | Investment Promotion Agency, Ministry of Investment, Industry and Trade, Foreign Investor Council, SEZs | Reduce fragmentation, improve aftercare, clarify rules, and strengthen dispute resolution |
+
+&lt;span id=&quot;policy-implications&quot; class=&quot;anchor-target&quot;&gt;&lt;/span&gt;
+### Policy Implications
+
+From a policy perspective, Uzbekistan should move from a volume-oriented FDI strategy to a quality-oriented FDI strategy. The goal is not simply to maximize announced investment figures, but to attract investment that improves productivity, exports, skills, technology, fiscal sustainability, and regional inclusion. This requires clearer investment rules, stronger investor aftercare, fewer overlapping agencies, transparent incentives, better dispute resolution, public-private dialogue, environmental safeguards, and stronger links between FDI and domestic firms.
+
+The first policy implication is statistical discipline. Future editions need to separate balance-of-payments net FDI, gross FDI, foreign loans, and foreign-financed fixed investment. Without this distinction, the investment narrative can exaggerate the scale of FDI or understate the role of debt-financed projects.
+
+The second implication is sectoral selectivity. Energy, mining, manufacturing, logistics, digital infrastructure, and privatization-linked finance all matter, but each requires a different governance test. Energy investment must be linked to tariff reform and reliability. Mining investment must be linked to environmental protection and processing. Manufacturing investment must be linked to local suppliers and exports. Digital investment must be linked to skills, cybersecurity, and electricity reliability. Privatization-linked investment must be linked to corporate governance and competition.
+
+The third implication is domestic spillover. FDI becomes developmental when domestic firms learn from it, supply it, compete with it, and export through it. Uzbekistan therefore needs supplier-development programs, vocational training, quality certification, local procurement rules that do not become protectionist, and export-promotion systems that connect foreign investors with domestic enterprises.
+
+In conclusion, Uzbekistan&#x27;s FDI pattern reflects both opportunity and constraint. The country is increasingly attractive because of reform momentum, a large domestic market, strategic location, natural resources, energy demand, privatization prospects, and regional diplomacy. China, Russia, Turkey, Germany, Saudi Arabia, the United Kingdom, Korea, Kazakhstan, and other partners all play roles in different sectors. Yet the country&#x27;s ability to transform FDI into development will depend on the quality of institutions. If FDI remains concentrated in resource extraction, protected markets, and infrastructure loans, its developmental impact may be limited. If, however, Uzbekistan uses FDI to deepen competition, upgrade technology, build skills, strengthen exports, modernize energy, and develop regional economies, foreign investment can become a central driver of structural transformation.
+
+Sources and indicators: World Bank WDI indicators `BX.KLT.DINV.CD.WD` and `BX.KLT.DINV.WD.GD.ZS`; National Statistics Committee foreign investment and loan releases; Central Bank of Uzbekistan balance-of-payments reporting; OECD Roadmap for Sustainable Investment Policy Reforms in Uzbekistan; AP News reporting on Uzbekistan-Russia nuclear power cooperation; Reuters reporting on AI/data-center incentives, critical minerals cooperation, and Uzbekistan National Investment Fund IPO plans.</textarea>
+    </article>
+    
+<template data-figure-template="external-balance-investment">
+    <figure class="figure-card" id="external-balance-investment">
+      <figcaption>External Balance and FDI</figcaption>
+      <div class="chart-frame">
+        <canvas id="chart-external-balance-investment" aria-label="External Balance and FDI" role="img"></canvas>
+      </div>
+      <p class="source">Source: World Bank API. Indicator/Table IDs: BN.CAB.XOKA.GD.ZS, BX.KLT.DINV.WD.GD.ZS. Unit: Percent of GDP (%).</p>
+      <script type="application/json" id="chart-external-balance-investment-config">{"type": "line", "data": {"labels": [1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], "datasets": [{"label": "Current account balance, % of GDP", "data": [null, null, null, null, null, null, null, null, null, null, null, null, null, 8.02147599172506, 9.98278095339074, 8.10827572787101, 10.775516002095, 5.22767728940483, 4.57873837700294, 4.62538550929307, 1.79063211759422, 1.79798249224147, 2.56777659798885, 1.03912867157671, 0.24755111491788, 2.12025210569772, -6.12166433969794, -5.00972224414463, -4.55709801917972, -6.33246372299442, -3.15905928026031, -7.59638339780618, -4.97812922686191], "borderColor": "#146C94", "backgroundColor": "#146C94", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}, {"label": "FDI net inflows, % of GDP", "data": [0.0694776727834706, 0.366414449820697, 0.565932056672873, -0.179769069574583, 0.645212527339969, 1.13126132489788, 0.931351445248341, 0.7096656112296, 0.542857629929967, 0.726225245162731, 0.674044441759953, 0.815041487200325, 1.46799380148438, 1.49216056466347, 1.19530557570436, 2.99176207276698, 1.85438789059302, 1.81985173937585, 3.34115466012917, 2.68375111593279, 1.10230120247607, 0.945033981533171, 1.00027476951682, 1.20794015152469, 1.93048466413592, 2.57993736270607, 1.06427628704368, 3.44235052410005, 2.60108803608825, 2.94839500995796, 2.94947448385164, 2.10084902446518, 2.5972703195852], "borderColor": "#D94F30", "backgroundColor": "#D94F30", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}]}, "options": {"responsive": true, "maintainAspectRatio": false, "interaction": {"mode": "index", "intersect": false}, "plugins": {"legend": {"position": "bottom", "labels": {"boxWidth": 14, "boxHeight": 3}}, "tooltip": {"enabled": true}}, "scales": {"x": {"grid": {"display": false}, "ticks": {"maxTicksLimit": 8}}, "y": {"title": {"display": true, "text": "Percent of GDP (%)"}, "grid": {"color": "#e8eef3"}, "ticks": {"precision": 1}}}}}</script>
+    </figure>
+    
+
+    <article class="editable-prose" data-md-panel="external-balance-investment-interpretation">
+      <div class="prose-toolbar">
+        <span>Editable chapter text</span>
+        <div>
+          <button type="button" data-md-action="edit">Edit Markdown</button>
+          <button type="button" data-md-action="save" hidden>Save</button>
+          <button type="button" data-md-action="cancel" hidden>Cancel</button>
+        </div>
+      </div>
+      <div class="markdown-preview prose-body"></div>
+      <textarea class="markdown-editor" hidden>The external balance and FDI figure links macroeconomic exposure with investment inflows. The current account balance indicates whether the economy is generating or absorbing external financing, while FDI as a share of GDP shows the macroeconomic importance of foreign investment.
+
+- Current account balance, % of GDP declined from 8.02 in 2005 to -4.98 in 2024.
+- FDI net inflows, % of GDP increased from 0.07 in 1992 to 2.60 in 2024.
+
+The analytical issue is whether foreign investment supports diversification, technology transfer, and export capacity, or whether external financing mainly covers imbalances. This distinction is central to assessing sustainability.</textarea>
+    </article>
+    </template></section>
+    </main>
+  </div>
+  <script>
+    function fallbackMarkdown(text) {
+      const escaped = text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+      return escaped.split(/\n{2,}/).map((block) => `<p>${block.replace(/\n/g, "<br>")}</p>`).join("");
+    }
+    function renderMarkdown(text) {
+      return window.marked ? marked.parse(text) : fallbackMarkdown(text);
+    }
+    function replaceFigurePlaceholders(preview, panel) {
+      const pattern = /^\{\{\s*(figure|map|image):([a-z0-9-]+)\s*\}\}$/i;
+      preview.querySelectorAll("p").forEach((paragraph) => {
+        const match = (paragraph.textContent || "").trim().match(pattern);
+        if (!match) return;
+        const key = match[1].toLowerCase() === "figure" ? match[2].toLowerCase() : `${match[1].toLowerCase()}:${match[2].toLowerCase()}`;
+        const template = panel.querySelector(`template[data-figure-template="${key}"]`) || document.querySelector(`template[data-figure-template="${key}"]`);
+        if (!template) {
+          const note = document.createElement("p");
+          note.className = "source";
+          note.textContent = `Figure not available: ${key}`;
+          paragraph.replaceWith(note);
+          return;
+        }
+        paragraph.replaceWith(template.content.cloneNode(true));
+      });
+    }
+    function slugifyHeading(text) {
+      return text.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "") || "section";
+    }
+    function enhancePreview(preview) {
+      preview.querySelectorAll("h2, h3").forEach((heading) => {
+        if (!heading.id) heading.id = slugifyHeading(heading.textContent || "");
+      });
+    }
+    function scrollToHashTarget() {
+      if (!window.location.hash) return;
+      const id = decodeURIComponent(window.location.hash.slice(1));
+      const target = document.getElementById(id);
+      if (target) target.scrollIntoView({ block: "start" });
+    }
+    function setupSectionNavigation() {
+      document.querySelectorAll("a.section-link").forEach((link) => {
+        link.addEventListener("click", () => {
+          window.setTimeout(scrollToHashTarget, 30);
+        });
+      });
+    }
+    function setupMarkdownPanels() {
+      document.querySelectorAll("[data-md-panel]").forEach((panel) => {
+        const id = panel.getAttribute("data-md-panel");
+        const preview = panel.querySelector(".markdown-preview");
+        const editor = panel.querySelector(".markdown-editor");
+        const edit = panel.querySelector("[data-md-action='edit']");
+        const save = panel.querySelector("[data-md-action='save']");
+        const cancel = panel.querySelector("[data-md-action='cancel']");
+        const source = panel.getAttribute("data-md-source");
+        const storageKey = `uzb-report-markdown:v5:${id}`;
+        const original = editor.value;
+        const stored = localStorage.getItem(storageKey);
+        if (stored !== null && (!source || window.location.protocol === "file:")) editor.value = stored;
+        const showPreview = () => {
+          preview.innerHTML = renderMarkdown(editor.value);
+          replaceFigurePlaceholders(preview, panel);
+          enhancePreview(preview);
+          setupCharts();
+        };
+        const saveMarkdown = async () => {
+          if (source && window.location.protocol.startsWith("http")) {
+            const response = await fetch("/api/save-section", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ source, markdown: editor.value })
+            });
+            if (!response.ok) {
+              const message = await response.text();
+              throw new Error(message || `Save failed with ${response.status}`);
+            }
+            localStorage.removeItem(storageKey);
+          } else {
+            localStorage.setItem(storageKey, editor.value);
+            if (source) {
+              window.alert("This edit was saved only as a browser draft. Open the report through UZB/code/serve_report.py to save it permanently to the Markdown source file.");
+            }
+          }
+        };
+        const setEditing = (editing) => {
+          editor.hidden = !editing;
+          preview.hidden = editing;
+          edit.hidden = editing;
+          save.hidden = !editing;
+          cancel.hidden = !editing;
+        };
+        showPreview();
+        setEditing(false);
+        edit.addEventListener("click", () => setEditing(true));
+        save.addEventListener("click", async () => {
+          save.disabled = true;
+          try {
+            await saveMarkdown();
+            showPreview();
+            setEditing(false);
+          } catch (error) {
+            window.alert(error.message || "Could not save the Markdown source.");
+          } finally {
+            save.disabled = false;
+          }
+        });
+        cancel.addEventListener("click", () => {
+          editor.value = localStorage.getItem(storageKey) ?? original;
+          showPreview();
+          setEditing(false);
+        });
+      });
+    }
+    function setupCharts() {
+      if (!window.Chart) {
+        document.querySelectorAll(".figure-card").forEach((card) => {
+          const note = document.createElement("p");
+          note.className = "source";
+          note.textContent = "Chart.js could not be loaded from local assets/chart.umd.min.js.";
+          card.appendChild(note);
+        });
+        return;
+      }
+      document.querySelectorAll("script[type='application/json'][id$='-config']").forEach((script) => {
+        const canvasId = script.id.replace("-config", "");
+        const canvas = document.getElementById(canvasId);
+        if (!canvas) return;
+        if (canvas.dataset.chartReady === "1") return;
+        canvas.dataset.chartReady = "1";
+        new Chart(canvas, JSON.parse(script.textContent));
+      });
+    }
+    window.addEventListener("DOMContentLoaded", () => {
+      setupMarkdownPanels();
+      setupSectionNavigation();
+      setupCharts();
+      window.setTimeout(scrollToHashTarget, 60);
+    });
+    </script>
+</body>
+</html>

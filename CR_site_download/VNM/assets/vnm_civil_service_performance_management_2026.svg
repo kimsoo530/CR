@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 704" role="img" aria-label="Vietnam civil service performance management evolution and 2026 evaluation cycle">
+  
+  <style>
+    .title{font:700 28px Arial,sans-serif;fill:#172026}
+    .subtitle{font:15px Arial,sans-serif;fill:#526069}
+    .panel-title{font:700 17px Arial,sans-serif;fill:#172026}
+    .stage{font:700 13px Arial,sans-serif;fill:#172026}
+    .num{font:700 13px Arial,sans-serif;fill:#ffffff;text-anchor:middle}
+    .label{font:12px Arial,sans-serif;fill:#526069}
+    .small{font:11px Arial,sans-serif;fill:#526069}
+    .score{font:700 25px Arial,sans-serif;fill:#172026}
+    .source{font:12px Arial,sans-serif;fill:#65717a}
+  </style>
+  <rect width="1100" height="704" fill="#f6f4ee"/>
+  <text x="54" y="44" class="title">Civil Service Performance Management in Viet Nam</text>
+  <text x="54" y="68" class="subtitle">The system has moved from annual qualitative classification toward continuous, task-based, evidence-oriented assessment.</text>
+  <rect x="54" y="102" width="426" height="384" rx="12" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="76" y="126" class="panel-title">Regulatory evolution</text>
+  <circle cx="92" cy="140" r="13" fill="#176b63"/><text x="120" y="126" class="stage">Before 2020: Annual personnel review</text><text x="120" y="148" class="label">Qualitative classification, party discipline,</text><text x="120" y="167" class="label">and personnel-file logic dominated.</text><line x1="92" y1="158" x2="92" y2="204" stroke="#b9c4c9" stroke-width="3"/><circle cx="92" cy="222" r="13" fill="#176b63"/><text x="120" y="208" class="stage">2020: Decree 90</text><text x="120" y="230" class="label">Unified quality classification for cadres,</text><text x="120" y="249" class="label">civil servants, and public employees.</text><line x1="92" y1="240" x2="92" y2="286" stroke="#b9c4c9" stroke-width="3"/><circle cx="92" cy="304" r="13" fill="#176b63"/><text x="120" y="290" class="stage">2023: Decree 48</text><text x="120" y="312" class="label">Tighter anti-formality principles,</text><text x="120" y="331" class="label">discipline linkage, and electronic records.</text><line x1="92" y1="322" x2="92" y2="368" stroke="#b9c4c9" stroke-width="3"/><circle cx="92" cy="386" r="13" fill="#7c2f2a"/><text x="120" y="372" class="stage">2026: Decree 335</text><text x="120" y="394" class="label">Civil servants and agencies move to</text><text x="120" y="413" class="label">100-point, task/product-based scoring.</text>
+  <rect x="512" y="102" width="534" height="384" rx="12" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="536" y="126" class="panel-title">Current civil-service cycle</text>
+  <rect x="520" y="132" width="220" height="76" rx="10" fill="#ffffff" stroke="#d7dee2"/><circle cx="548" cy="160" r="16" fill="#b8873a"/><text x="548" y="165" class="num">1</text><text x="574" y="158" class="stage">Assign tasks</text><text x="574" y="181" class="small">Job position, annual plan, leadership tasks</text><rect x="770" y="132" width="220" height="76" rx="10" fill="#ffffff" stroke="#d7dee2"/><circle cx="798" cy="160" r="16" fill="#b8873a"/><text x="798" y="165" class="num">2</text><text x="824" y="158" class="stage">Track evidence</text><text x="824" y="181" class="small">Outputs, deadlines, discipline, citizen service</text><rect x="520" y="236" width="220" height="76" rx="10" fill="#ffffff" stroke="#d7dee2"/><circle cx="548" cy="264" r="16" fill="#b8873a"/><text x="548" y="269" class="num">3</text><text x="574" y="262" class="stage">Score and review</text><text x="574" y="285" class="small">Self-report, superior review, council or unit discussion</text><rect x="770" y="236" width="220" height="76" rx="10" fill="#ffffff" stroke="#d7dee2"/><circle cx="798" cy="264" r="16" fill="#b8873a"/><text x="798" y="269" class="num">4</text><text x="824" y="262" class="stage">Classify</text><text x="824" y="285" class="small">Excellent, good, completed, not completed</text><rect x="520" y="340" width="220" height="76" rx="10" fill="#ffffff" stroke="#d7dee2"/><circle cx="548" cy="368" r="16" fill="#b8873a"/><text x="548" y="373" class="num">5</text><text x="574" y="366" class="stage">Use results</text><text x="574" y="389" class="small">Appointment, rewards, training, discipline, streamlining</text>
+  
+  <rect x="54" y="528" width="238" height="106" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="76" y="558" class="label">Current civil-service score</text>
+  <text x="76" y="595" class="score">100-point scale</text>
+  <text x="76" y="617" class="small">Decree 335, effective 1 Jan 2026</text>
+  <rect x="306" y="528" width="238" height="106" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="328" y="558" class="label">Classification levels</text>
+  <text x="328" y="595" class="score">4 levels</text>
+  <text x="328" y="617" class="small">excellent, good, completed, not completed</text>
+  <rect x="558" y="528" width="238" height="106" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="580" y="558" class="label">Main reform logic</text>
+  <text x="580" y="595" class="score">outputs</text>
+  <text x="580" y="617" class="small">task products, deadlines, responsibilities</text>
+  <rect x="810" y="528" width="238" height="106" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="832" y="558" class="label">Main risk</text>
+  <text x="832" y="595" class="score">formalism</text>
+  <text x="832" y="617" class="small">rating inflation, caution, weak evidence</text>
+
+  <text x="54" y="674" class="source">Sources: Decree No. 90/2020/ND-CP; Decree No. 48/2023/ND-CP; Decree No. 335/2025/ND-CP. The 2026 rule applies to state administrative agencies and civil servants.</text>
+</svg>

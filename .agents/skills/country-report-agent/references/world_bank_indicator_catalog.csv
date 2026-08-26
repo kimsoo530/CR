@@ -1,0 +1,77 @@
+chapter,domain,source_id,indicator_code,indicator_name,unit,value_type,analytical_use,caution
+1,demography,2,SP.POP.TOTL,Population total,persons,international estimate,Scale and denominator,Revisions and census breaks
+1,demography,2,SP.POP.GROW,Population growth,annual percent,international estimate,Demographic pressure,Not a level measure
+1,demography,2,EN.POP.DNST,Population density,people per sq km of land area,international estimate,Spatial concentration,Not a percentage
+1,demography,2,SP.URB.TOTL.IN.ZS,Urban population,percent of population,international estimate,Urbanization,Definitions differ nationally
+1,demography,2,SP.DYN.TFRT.IN,Total fertility rate,births per woman,international estimate,Demographic transition,Modelled where registration is weak
+1,demography,2,SP.DYN.LE00.IN,Life expectancy at birth,years,international estimate,Population health,Modelled estimate
+1,demography,2,SP.POP.0014.TO.ZS,Population ages 0-14,percent of population,international estimate,Youth dependency,Age shares use estimates
+1,demography,2,SP.POP.65UP.TO.ZS,Population ages 65+,percent of population,international estimate,Population ageing,Age shares use estimates
+2,macro economy,2,NY.GDP.MKTP.CD,GDP,current US dollars,international estimate,Economic scale,Exchange-rate sensitive
+2,macro economy,2,NY.GDP.MKTP.KD.ZG,GDP growth,annual percent,international estimate,Cycle and growth,Revisions common
+2,macro economy,2,NY.GDP.PCAP.CD,GDP per capita,current US dollars,international estimate,Income level,Exchange-rate sensitive
+2,macro economy,2,NY.GDP.PCAP.KD.ZG,GDP per capita growth,annual percent,international estimate,Living-standard growth,Do not confuse with aggregate GDP growth
+2,macro economy,2,NY.GDP.PCAP.PP.KD,GDP per capita PPP,constant 2021 international dollars,international estimate,Cross-country living standards,PPP benchmark revisions
+2,macro economy,2,FP.CPI.TOTL.ZG,Inflation consumer prices,annual percent,international estimate,Price stability,National basket differences
+2,macro economy,2,NE.TRD.GNFS.ZS,Trade,percent of GDP,international estimate,External openness,Small economies mechanically higher
+2,macro economy,2,NE.EXP.GNFS.ZS,Exports of goods and services,percent of GDP,international estimate,Export orientation,Value-added not measured
+2,macro economy,2,NE.IMP.GNFS.ZS,Imports of goods and services,percent of GDP,international estimate,Import dependence,Value-added not measured
+2,macro economy,2,BX.KLT.DINV.WD.GD.ZS,FDI net inflows,percent of GDP,international estimate,External investment,Volatile and affected by financial centers
+2,structure,2,NV.AGR.TOTL.ZS,Agriculture value added,percent of GDP,international estimate,Structural transformation,Sector classifications vary
+2,structure,2,NV.IND.TOTL.ZS,Industry value added,percent of GDP,international estimate,Industrial structure,Includes construction
+2,structure,2,NV.SRV.TOTL.ZS,Services value added,percent of GDP,international estimate,Service-sector structure,Residual and classification issues
+2,poverty inequality,2,SI.POV.DDAY,Poverty headcount at 3 dollars a day 2021 PPP,percent of population,survey estimate,Extreme poverty,Survey years sparse and comparability limited
+2,poverty inequality,2,SI.POV.GINI,Gini index,index 0-100,survey estimate,Income inequality,Income versus consumption concepts differ
+3,labor,2,SL.UEM.TOTL.ZS,Unemployment total,percent of labor force,ILO modelled estimate,Labor-market slack,Informality limits interpretation
+3,labor,2,SL.UEM.1524.ZS,Youth unemployment,percent of youth labor force,ILO modelled estimate,School-to-work transition,Not share of all youth
+3,labor,2,SL.TLF.CACT.ZS,Labor force participation,percent ages 15+,ILO modelled estimate,Labor supply,Modelled and definition-sensitive
+3,labor,2,SL.TLF.CACT.FE.ZS,Female labor force participation,percent female ages 15+,ILO modelled estimate,Gender inclusion,Modelled estimate
+3,labor,2,SL.EMP.TOTL.SP.ZS,Employment to population ratio,percent ages 15+,ILO modelled estimate,Employment absorption,Job quality not captured
+3,labor,2,SL.AGR.EMPL.ZS,Employment in agriculture,percent of employment,ILO modelled estimate,Structural transformation,Informality and model uncertainty
+3,labor,2,SL.IND.EMPL.ZS,Employment in industry,percent of employment,ILO modelled estimate,Industrial employment,Modelled estimate
+3,labor,2,SL.SRV.EMPL.ZS,Employment in services,percent of employment,ILO modelled estimate,Service employment,Modelled estimate
+3,labor,2,SL.EMP.VULN.ZS,Vulnerable employment,percent of total employment,ILO modelled estimate,Employment precarity,Proxy not a legal job-quality measure
+4,education,2,SE.ADT.LITR.ZS,Adult literacy rate,percent ages 15+,international estimate,Human capital,Observation years sparse
+4,education,2,SE.ADT.1524.LT.ZS,Youth literacy rate,percent ages 15-24,international estimate,Recent schooling outcomes,Observation years sparse
+4,education,2,SE.ADT.1524.LT.MA.ZS,Youth literacy rate male,percent male ages 15-24,international estimate,Gender comparison,Use matching female series and year
+4,education,2,SE.ADT.1524.LT.FE.ZS,Youth literacy rate female,percent female ages 15-24,international estimate,Gender comparison,Use matching male series and year
+4,education,2,SE.PRM.ENRR,Primary school enrollment gross,percent,gross enrollment estimate,Access,Can exceed 100
+4,education,2,SE.SEC.ENRR,Secondary school enrollment gross,percent,gross enrollment estimate,Access,Can exceed 100
+4,education,2,SE.TER.ENRR,Tertiary school enrollment gross,percent,gross enrollment estimate,Higher education access,Can exceed 100
+4,education,2,SE.XPD.TOTL.GD.ZS,Government education expenditure,percent of GDP,international estimate,Public effort,Execution and quality not measured
+4,health,2,SH.XPD.CHEX.GD.ZS,Current health expenditure,percent of GDP,international estimate,Health-system resources,High share may reflect low GDP
+4,health,2,SH.XPD.GHED.GD.ZS,Domestic general government health expenditure,percent of GDP,international estimate,Public health effort,Accounting revisions
+4,health,2,SH.DYN.MORT,Under-5 mortality,per 1000 live births,UN inter-agency estimate,Child survival,Modelled estimate
+4,health,2,SH.STA.MMRT,Maternal mortality ratio,per 100000 live births,UN inter-agency estimate,Maternal health,Uncertainty can be large
+5,infrastructure,2,EG.ELC.ACCS.ZS,Access to electricity,percent of population,international estimate,Infrastructure access,Access does not measure reliability
+5,digital,2,IT.NET.USER.ZS,Individuals using the Internet,percent of population,international estimate,Digital access,Methods differ and use not quality
+5,finance,2,FB.ATM.TOTL.P5,ATMs,per 100000 adults,international estimate,Financial access,Digital finance substitution
+5,finance,2,FX.OWN.TOTL.ZS,Account ownership,percent ages 15+,survey estimate,Financial inclusion,Global Findex survey years only
+5,environment,2,EN.GHG.CO2.PC.CE.AR5,CO2 emissions excluding LULUCF per capita,metric tons CO2 equivalent per capita,international estimate,Carbon intensity context,Production not consumption basis
+5,environment,2,EG.FEC.RNEW.ZS,Renewable energy consumption,percent of total final energy,international estimate,Energy transition,Traditional biomass may dominate
+5,environment,2,AG.LND.FRST.ZS,Forest area,percent of land area,international estimate,Natural capital,Definition and remote-sensing revisions
+5,water sanitation,2,SH.H2O.SMDW.ZS,Safely managed drinking water,percent of population,JMP estimate,Basic services,Missing where monitoring is weak
+5,water sanitation,2,SH.STA.SMSS.ZS,Safely managed sanitation,percent of population,JMP estimate,Basic services,Missing where monitoring is weak
+5,governance,3,GOV_WGI_GE.EST,Government effectiveness,estimate -2.5 to 2.5,perception-based composite,State capability,Uncertainty intervals and perception bias
+5,governance,3,GOV_WGI_RL.EST,Rule of law,estimate -2.5 to 2.5,perception-based composite,Institutional quality,Not a direct performance measure
+5,governance,3,GOV_WGI_CC.EST,Control of corruption,estimate -2.5 to 2.5,perception-based composite,Integrity environment,Not observed corruption incidence
+5,governance,3,GOV_WGI_VA.EST,Voice and accountability,estimate -2.5 to 2.5,perception-based composite,Political accountability,Uncertainty intervals matter
+5,governance,3,GOV_WGI_PV.EST,Political stability and absence of violence,estimate -2.5 to 2.5,perception-based composite,Political risk,Concept is broad
+5,governance,3,GOV_WGI_RQ.EST,Regulatory quality,estimate -2.5 to 2.5,perception-based composite,Regulatory institutions,Perception-based composite
+10,trade,2,BN.CAB.XOKA.GD.ZS,Current account balance,percent of GDP,balance-of-payments estimate,External balance,Revisions and commodity shocks matter
+10,trade,2,ST.INT.ARVL,International tourism arrivals,arrivals,international estimate,Tourism-linked external activity,Visitor definitions differ
+10,trade,2,NV.MNF.TECH.ZS.UN,Medium- and high-tech manufacturing value added,percent of manufacturing value added,UNIDO estimate,Technology intensity,Industry classifications and missing years
+10,trade,2,TX.VAL.TECH.MF.ZS,High-technology exports,percent of manufactured exports,international trade estimate,Export sophistication,Re-exports can distort shares
+10,trade,2,TX.VAL.MRCH.CD.WT,Merchandise exports,current US dollars,WTO international trade estimate,Nominal export scale,Prices and exchange rates affect values
+10,trade,2,TM.VAL.FUEL.ZS.UN,Fuel imports,percent of merchandise imports,UN Comtrade estimate,Energy import exposure,Product classifications and reporting gaps
+11,infrastructure,2,EG.ELC.LOSS.ZS,Electric power transmission and distribution losses,percent of output,international estimate,Power-system efficiency,Technical and commercial losses not separated
+11,infrastructure,2,EG.USE.ELEC.KH.PC,Electric power consumption,kWh per capita,international estimate,Electricity use,Series can lag and masks distribution
+11,infrastructure,2,EG.ELC.FOSL.ZS,Electricity production from fossil fuels,percent of total electricity production,international estimate,Generation mix,Does not measure installed capacity
+11,infrastructure,2,EG.ELC.HYRO.ZS,Hydroelectricity production,percent of total electricity production,international estimate,Generation mix,Hydrological variation matters
+11,infrastructure,2,EG.ELC.RNEW.ZS,Renewable electricity excluding hydro,percent of total electricity production,international estimate,Energy transition,Excludes hydropower
+11,infrastructure,2,EG.IMP.CONS.ZS,Energy imports net,percent of energy use,international estimate,Energy dependence,Negative values denote net exports
+11,infrastructure,2,IS.AIR.PSGR,Air transport passengers carried,passengers,international aviation estimate,Aviation connectivity,Assigned to nationally registered carriers
+11,infrastructure,2,IT.CEL.SETS.P2,Mobile cellular subscriptions,per 100 people,ITU estimate,Mobile connectivity,Subscriptions are not unique users
+11,infrastructure,2,IT.NET.SECR.P6,Secure Internet servers,per 1 million people,Netcraft and World Bank estimate,Secure hosting infrastructure,Location and certificate practices matter
+11,infrastructure,2,NV.IND.MANF.ZS,Manufacturing value added,percent of GDP,international estimate,Industrial capacity,Rebasing can create breaks
+11,infrastructure,2,LP.LPI.OVRL.XQ,Logistics Performance Index,score 1 to 5,survey-based international index,Trade logistics,Perception-based and intermittent

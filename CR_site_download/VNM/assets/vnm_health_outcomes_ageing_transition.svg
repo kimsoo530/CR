@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 740" role="img" aria-label="Vietnam health outcomes, ageing, life expectancy, and infant mortality trends">
+  
+  <style>
+    .title{font:700 28px Arial,sans-serif;fill:#172026}
+    .subtitle{font:15px Arial,sans-serif;fill:#526069}
+    .panel-title{font:700 16px Arial,sans-serif;fill:#172026}
+    .panel-y{font:11px Arial,sans-serif;fill:#526069;text-anchor:end}
+    .panel-x{font:11px Arial,sans-serif;fill:#526069;text-anchor:middle}
+    .panel-last{font:700 11px Arial,sans-serif;fill:#172026}
+    .legend{font:11px Arial,sans-serif;fill:#526069}
+    .label{font:12px Arial,sans-serif;fill:#526069}
+    .small{font:11px Arial,sans-serif;fill:#65717a}
+    .value{font:700 22px Arial,sans-serif;fill:#172026}
+    .source{font:12px Arial,sans-serif;fill:#65717a}
+  </style>
+  <rect width="1100" height="740" fill="#f6f4ee"/>
+  <text x="54" y="44" class="title">Health Outcomes and Ageing Pressure in Viet Nam</text>
+  <text x="54" y="68" class="subtitle">Long-run gains in survival now create a second-stage agenda: chronic disease, old-age care, prevention, and sustainable financing.</text>
+  <rect x="54" y="104" width="496" height="286" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="76" y="136" class="panel-title">Life expectancy and healthy life expectancy</text>
+  <line x1="108" y1="344.00" x2="520" y2="344.00" stroke="#edf2ef"/>
+  <text x="98" y="348.00" class="panel-y">60</text>
+  <line x1="108" y1="298.50" x2="520" y2="298.50" stroke="#edf2ef"/>
+  <text x="98" y="302.50" class="panel-y">65</text>
+  <line x1="108" y1="253.00" x2="520" y2="253.00" stroke="#edf2ef"/>
+  <text x="98" y="257.00" class="panel-y">70</text>
+  <line x1="108" y1="207.50" x2="520" y2="207.50" stroke="#edf2ef"/>
+  <text x="98" y="211.50" class="panel-y">75</text>
+  <line x1="108" y1="162.00" x2="520" y2="162.00" stroke="#edf2ef"/>
+  <text x="98" y="166.00" class="panel-y">80</text>
+  <line x1="108.00" y1="162" x2="108.00" y2="344" stroke="#f1f4f5"/>
+  <text x="108.00" y="368" class="panel-x">1991</text>
+  <line x1="220.36" y1="162" x2="220.36" y2="344" stroke="#f1f4f5"/>
+  <text x="220.36" y="368" class="panel-x">2000</text>
+  <line x1="345.21" y1="162" x2="345.21" y2="344" stroke="#f1f4f5"/>
+  <text x="345.21" y="368" class="panel-x">2010</text>
+  <line x1="470.06" y1="162" x2="470.06" y2="344" stroke="#f1f4f5"/>
+  <text x="470.06" y="368" class="panel-x">2020</text>
+  <line x1="520.00" y1="162" x2="520.00" y2="344" stroke="#f1f4f5"/>
+  <text x="520.00" y="368" class="panel-x">2024</text>
+  <path d="M108.00,259.34 L120.48,256.46 L132.97,253.39 L145.45,249.55 L157.94,245.07 L170.42,241.21 L182.91,237.80 L195.39,232.22 L207.88,229.57 L220.36,228.01 L232.85,225.85 L245.33,224.44 L257.82,223.55 L270.30,225.14 L282.79,223.90 L295.27,223.03 L307.76,222.20 L320.24,221.56 L332.73,220.92 L345.21,220.14 L357.70,219.21 L370.18,218.77 L382.67,218.23 L395.15,217.64 L407.64,217.01 L420.12,216.75 L432.61,216.36 L445.09,215.69 L457.58,214.68 L470.06,204.01 L482.55,215.28 L495.03,212.03 L507.52,211.25 L520.00,209.90" fill="none" stroke="#176b63" stroke-width="3"/>
+  <circle cx="520.00" cy="209.90" r="4" fill="#176b63" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="468.00" y="201.90" class="panel-last">74.7</text>
+  <rect x="76" y="360" width="10" height="10" fill="#176b63" rx="2"/>
+  <text x="92" y="369" class="legend">Life expectancy</text>
+  <path d="M220.36,309.99 L232.85,308.91 L245.33,308.05 L257.82,307.44 L270.30,306.92 L282.79,306.56 L295.27,305.98 L307.76,305.42 L320.24,304.97 L332.73,304.50 L345.21,303.88 L357.70,302.93 L370.18,302.02 L382.67,301.32 L395.15,300.53 L407.64,299.95 L420.12,298.62 L432.61,297.23 L445.09,296.04 L457.58,294.97 L470.06,287.91 L482.55,295.30" fill="none" stroke="#b8873a" stroke-width="3"/>
+  <circle cx="482.55" cy="295.30" r="4" fill="#b8873a" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="468.00" y="287.30" class="panel-last">65.4</text>
+  <rect x="234" y="360" width="10" height="10" fill="#b8873a" rx="2"/>
+  <text x="250" y="369" class="legend">Healthy life expectancy</text>
+  <rect x="590" y="104" width="456" height="286" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="612" y="136" class="panel-title">Infant mortality</text>
+  <line x1="644" y1="344.00" x2="1016" y2="344.00" stroke="#edf2ef"/>
+  <text x="634" y="348.00" class="panel-y">0</text>
+  <line x1="644" y1="298.50" x2="1016" y2="298.50" stroke="#edf2ef"/>
+  <text x="634" y="302.50" class="panel-y">10</text>
+  <line x1="644" y1="253.00" x2="1016" y2="253.00" stroke="#edf2ef"/>
+  <text x="634" y="257.00" class="panel-y">20</text>
+  <line x1="644" y1="207.50" x2="1016" y2="207.50" stroke="#edf2ef"/>
+  <text x="634" y="211.50" class="panel-y">30</text>
+  <line x1="644" y1="162.00" x2="1016" y2="162.00" stroke="#edf2ef"/>
+  <text x="634" y="166.00" class="panel-y">40</text>
+  <line x1="644.00" y1="162" x2="644.00" y2="344" stroke="#f1f4f5"/>
+  <text x="644.00" y="368" class="panel-x">1991</text>
+  <line x1="745.45" y1="162" x2="745.45" y2="344" stroke="#f1f4f5"/>
+  <text x="745.45" y="368" class="panel-x">2000</text>
+  <line x1="858.18" y1="162" x2="858.18" y2="344" stroke="#f1f4f5"/>
+  <text x="858.18" y="368" class="panel-x">2010</text>
+  <line x1="970.91" y1="162" x2="970.91" y2="344" stroke="#f1f4f5"/>
+  <text x="970.91" y="368" class="panel-x">2020</text>
+  <line x1="1016.00" y1="162" x2="1016.00" y2="344" stroke="#f1f4f5"/>
+  <text x="1016.00" y="368" class="panel-x">2024</text>
+  <path d="M644.00,181.56 L655.27,189.76 L666.55,197.94 L677.82,205.68 L689.09,212.96 L700.36,220.24 L711.64,227.06 L722.91,232.98 L734.18,238.44 L745.45,243.44 L756.73,247.54 L768.00,251.63 L779.27,254.82 L790.55,257.55 L801.82,259.82 L813.09,262.10 L824.36,263.92 L835.64,265.28 L846.91,266.65 L858.18,268.01 L869.45,269.38 L880.73,270.29 L892.00,271.20 L903.27,272.56 L914.55,273.48 L925.82,274.84 L937.09,276.20 L948.36,278.02 L959.64,279.85 L970.91,281.67 L982.18,283.49 L993.45,285.31 L1004.73,287.58 L1016.00,289.40" fill="none" stroke="#7c2f2a" stroke-width="3"/>
+  <circle cx="1016.00" cy="289.40" r="4" fill="#7c2f2a" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="964.00" y="281.40" class="panel-last">12</text>
+  <rect x="612" y="360" width="10" height="10" fill="#7c2f2a" rx="2"/>
+  <text x="628" y="369" class="legend">Infant mortality</text>
+  <rect x="54" y="456" width="496" height="226" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="76" y="488" class="panel-title">Age-structure transition</text>
+  <line x1="108" y1="636.00" x2="520" y2="636.00" stroke="#edf2ef"/>
+  <text x="98" y="640.00" class="panel-y">0%</text>
+  <line x1="108" y1="595.33" x2="520" y2="595.33" stroke="#edf2ef"/>
+  <text x="98" y="599.33" class="panel-y">15%</text>
+  <line x1="108" y1="554.67" x2="520" y2="554.67" stroke="#edf2ef"/>
+  <text x="98" y="558.67" class="panel-y">30%</text>
+  <line x1="108" y1="514.00" x2="520" y2="514.00" stroke="#edf2ef"/>
+  <text x="98" y="518.00" class="panel-y">45%</text>
+  <line x1="108.00" y1="514" x2="108.00" y2="636" stroke="#f1f4f5"/>
+  <text x="108.00" y="660" class="panel-x">1990</text>
+  <line x1="229.18" y1="514" x2="229.18" y2="636" stroke="#f1f4f5"/>
+  <text x="229.18" y="660" class="panel-x">2000</text>
+  <line x1="350.35" y1="514" x2="350.35" y2="636" stroke="#f1f4f5"/>
+  <text x="350.35" y="660" class="panel-x">2010</text>
+  <line x1="471.53" y1="514" x2="471.53" y2="636" stroke="#f1f4f5"/>
+  <text x="471.53" y="660" class="panel-x">2020</text>
+  <line x1="520.00" y1="514" x2="520.00" y2="636" stroke="#f1f4f5"/>
+  <text x="520.00" y="660" class="panel-x">2024</text>
+  <path d="M108.00,531.69 L120.12,532.70 L132.24,533.79 L144.35,535.05 L156.47,536.50 L168.59,538.20 L180.71,540.15 L192.82,542.46 L204.94,545.14 L217.06,547.97 L229.18,550.61 L241.29,552.93 L253.41,554.99 L265.53,556.87 L277.65,558.78 L289.76,560.83 L301.88,562.96 L314.00,564.91 L326.12,566.57 L338.24,568.06 L350.35,569.35 L362.47,570.32 L374.59,570.92 L386.71,571.11 L398.82,571.02 L410.94,570.95 L423.06,570.58 L435.18,569.80 L447.29,569.35 L459.41,569.47 L471.53,569.88 L483.65,570.40 L495.76,571.11 L507.88,572.00 L520.00,573.04" fill="none" stroke="#345995" stroke-width="3"/>
+  <circle cx="520.00" cy="573.04" r="4" fill="#345995" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="468.00" y="565.04" class="panel-last">23.2%</text>
+  <rect x="76" y="652" width="10" height="10" fill="#345995" rx="2"/>
+  <text x="92" y="661" class="legend">Ages 0-14</text>
+  <path d="M108.00,621.16 L120.12,621.12 L132.24,621.10 L144.35,621.08 L156.47,621.02 L168.59,620.91 L180.71,620.74 L192.82,620.51 L204.94,620.26 L217.06,620.00 L229.18,619.78 L241.29,619.58 L253.41,619.43 L265.53,619.32 L277.65,619.24 L289.76,619.19 L301.88,619.22 L314.00,619.31 L326.12,619.46 L338.24,619.59 L350.35,619.61 L362.47,619.58 L374.59,619.49 L386.71,619.28 L398.82,618.97 L410.94,618.51 L423.06,618.08 L435.18,617.65 L447.29,617.07 L459.41,616.34 L471.53,615.48 L483.65,614.62 L495.76,613.69 L507.88,612.63 L520.00,611.47" fill="none" stroke="#176b63" stroke-width="3"/>
+  <circle cx="520.00" cy="611.47" r="4" fill="#176b63" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="468.00" y="603.47" class="panel-last">9.0%</text>
+  <rect x="222" y="652" width="10" height="10" fill="#176b63" rx="2"/>
+  <text x="238" y="661" class="legend">Ages 65+</text>
+  
+  <rect x="590" y="456" width="456" height="226" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="612" y="490" class="panel-title">Policy reading</text>
+  <text x="612" y="526" class="value">74.7 years</text>
+  <text x="770" y="526" class="small">life expectancy at birth, 2024</text>
+  <text x="612" y="564" class="value">12.0</text>
+  <text x="770" y="564" class="small">infant deaths per 1,000 live births, 2024</text>
+  <text x="612" y="602" class="value">9.0%</text>
+  <text x="770" y="602" class="small">population ages 65 and above, 2024</text>
+  <text x="612" y="640" class="value">&gt;20%</text>
+  <text x="770" y="640" class="small">age 60+ share expected within a decade, UNFPA</text>
+
+  <text x="54" y="712" class="source">Sources: World Bank WDI table IDs SP.DYN.LE00.IN, SP.DYN.IMRT.IN, SP.POP.0014.TO.ZS, and SP.POP.65UP.TO.ZS; WHO Global Health Observatory table ID WHOSIS_000002; UNFPA Viet Nam ageing brief for the age-60-plus projection.</text>
+</svg>

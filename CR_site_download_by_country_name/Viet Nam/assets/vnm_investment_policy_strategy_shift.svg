@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 720" role="img" aria-label="Vietnam investment policy shift and foreign investment strategy">
+  
+  <style>
+    .title{font:700 28px Arial,sans-serif;fill:#172026}
+    .subtitle{font:15px Arial,sans-serif;fill:#526069}
+    .panel-title{font:700 17px Arial,sans-serif;fill:#172026}
+    .label{font:12px Arial,sans-serif;fill:#526069}
+    .small{font:11px Arial,sans-serif;fill:#65717a}
+    .value{font:700 22px Arial,sans-serif;fill:#172026}
+    .source{font:12px Arial,sans-serif;fill:#65717a}
+  </style>
+  <rect width="1100" height="720" fill="#f6f4ee"/>
+  <text x="54" y="44" class="title">Investment Policy: From Capital Access to Strategic Value Capture</text>
+  <text x="54" y="68" class="subtitle">Viet Nam remains open to foreign capital, but policy language has shifted toward quality, spillovers, resilience, and domestic capability.</text>
+  <rect x="54" y="108" width="184" height="110" rx="10" fill="#ffffff" stroke="#d7dee2"/><text x="72" y="142" class="panel-title">Open capital</text><text x="72" y="172" class="small">Retain foreign capital as a development</text><text x="72" y="192" class="small">engine.</text><rect x="258" y="108" width="184" height="110" rx="10" fill="#ffffff" stroke="#d7dee2"/><text x="276" y="142" class="panel-title">Select quality</text><text x="276" y="172" class="small">Prioritize technology, green investment, services, and</text><text x="276" y="192" class="small">supporting industries.</text><rect x="462" y="108" width="184" height="110" rx="10" fill="#ffffff" stroke="#d7dee2"/><text x="480" y="142" class="panel-title">Build linkages</text><text x="480" y="172" class="small">Use FDI to deepen local procurement,</text><text x="480" y="192" class="small">skills, and supplier capability.</text><rect x="666" y="108" width="184" height="110" rx="10" fill="#ffffff" stroke="#d7dee2"/><text x="684" y="142" class="panel-title">Govern zones</text><text x="684" y="172" class="small">Make industrial zones, land, infrastructure, and</text><text x="684" y="192" class="small">permits predictable.</text><rect x="870" y="108" width="184" height="110" rx="10" fill="#ffffff" stroke="#d7dee2"/><text x="888" y="142" class="panel-title">Manage risks</text><text x="888" y="172" class="small">Control tax incentives, real estate, environmental,</text><text x="888" y="192" class="small">and security exposure.</text>
+  <rect x="54" y="272" width="992" height="220" rx="10" fill="#ffffff" stroke="#d7dee2"/><text x="76" y="306" class="panel-title">Policy shift: from access to quality and value capture</text><line x1="96" y1="366" x2="996" y2="366" stroke="#b8873a" stroke-width="4" stroke-linecap="round"/><circle cx="96.00" cy="366" r="7" fill="#176b63" stroke="#ffffff" stroke-width="2"/><line x1="96.00" y1="366" x2="96.00" y2="340" stroke="#d7dee2"/><text x="96.00" y="330" text-anchor="middle" class="value">1986</text><text x="96.00" y="352" text-anchor="middle" class="small">Doi Moi reform</text><circle cx="525.55" cy="366" r="7" fill="#176b63" stroke="#ffffff" stroke-width="2"/><line x1="525.55" y1="366" x2="525.55" y2="404" stroke="#d7dee2"/><text x="525.55" y="424" text-anchor="middle" class="value">2007</text><text x="525.55" y="446" text-anchor="middle" class="small">WTO accession</text><circle cx="771.00" cy="366" r="7" fill="#176b63" stroke="#ffffff" stroke-width="2"/><line x1="771.00" y1="366" x2="771.00" y2="340" stroke="#d7dee2"/><text x="771.00" y="330" text-anchor="middle" class="value">2019</text><text x="771.00" y="352" text-anchor="middle" class="small">Politburo Resolution 50-NQ/TW</text><circle cx="832.36" cy="366" r="7" fill="#176b63" stroke="#ffffff" stroke-width="2"/><line x1="832.36" y1="366" x2="832.36" y2="404" stroke="#d7dee2"/><text x="832.36" y="424" text-anchor="middle" class="value">2022</text><text x="832.36" y="446" text-anchor="middle" class="small">Decision 667/QD-TTg</text><circle cx="893.73" cy="366" r="7" fill="#176b63" stroke="#ffffff" stroke-width="2"/><line x1="893.73" y1="366" x2="893.73" y2="340" stroke="#d7dee2"/><text x="893.73" y="330" text-anchor="middle" class="value">2025</text><text x="893.73" y="352" text-anchor="middle" class="small">Administrative reorganization and strong investment disbursement</text><circle cx="996.00" cy="366" r="7" fill="#176b63" stroke="#ffffff" stroke-width="2"/><line x1="996.00" y1="366" x2="996.00" y2="404" stroke="#d7dee2"/><text x="996.00" y="424" text-anchor="middle" class="value">2030</text><text x="996.00" y="446" text-anchor="middle" class="small">Foreign investment cooperation targets</text>
+  
+  <rect x="54" y="532" width="992" height="118" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="76" y="566" class="panel-title">Decision 667/QD-TTg strategy targets</text>
+  <text x="76" y="604" class="value">&gt;70%</text>
+  <text x="76" y="630" class="small">target-partner registered capital share, 2021-2025</text>
+  <text x="366" y="604" class="value">&gt;75%</text>
+  <text x="366" y="630" class="small">target-partner registered capital share, 2026-2030</text>
+  <text x="656" y="604" class="value">+50%</text>
+  <text x="656" y="630" class="small">Fortune 500 multinational presence target by 2030</text>
+  <text x="900" y="604" class="value">Top 3 ASEAN</text>
+  <text x="900" y="630" class="small">and top 60 global business environment target</text>
+
+  <text x="54" y="696" class="source">Source: Prime Minister Decision No. 667/QD-TTg on the Strategy for foreign investment cooperation in the 2021-2030 period; milestones summarized for policy interpretation.</text>
+</svg>

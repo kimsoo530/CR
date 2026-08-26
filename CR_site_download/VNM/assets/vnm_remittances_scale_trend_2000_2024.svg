@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 720" role="img" aria-label="Vietnam remittance scale and trend with 2024 Ho Chi Minh City concentration">
+  
+  <style>
+    .title{font:700 28px Arial,sans-serif;fill:#172026}
+    .subtitle{font:15px Arial,sans-serif;fill:#526069}
+    .panel-title{font:700 16px Arial,sans-serif;fill:#172026}
+    .label{font:12px Arial,sans-serif;fill:#526069}
+    .value{font:700 13px Arial,sans-serif;fill:#172026}
+    .value.light{fill:#ffffff}
+    .source{font:12px Arial,sans-serif;fill:#65717a}
+  </style>
+  <rect width="1100" height="720" fill="#f6f4ee"/>
+  <text x="54" y="44" class="title">Viet Nam Remittance Scale and Trend</text>
+  <text x="54" y="68" class="subtitle">Local WDI observations show early-2000s inflows; 2024 sources place national remittances at about USD 16 billion, or 3.4 percent of GDP.</text>
+  <rect x="54" y="104" width="496" height="350" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="76" y="136" class="panel-title">Remittances received, current US$ billion</text>
+  <line x1="112" y1="406.00" x2="514" y2="406.00" stroke="#edf2ef"/>
+  <text x="102" y="410.00" class="label" text-anchor="end">0.0</text>
+  <line x1="112" y1="345.00" x2="514" y2="345.00" stroke="#edf2ef"/>
+  <text x="102" y="349.00" class="label" text-anchor="end">4.5</text>
+  <line x1="112" y1="284.00" x2="514" y2="284.00" stroke="#edf2ef"/>
+  <text x="102" y="288.00" class="label" text-anchor="end">9.0</text>
+  <line x1="112" y1="223.00" x2="514" y2="223.00" stroke="#edf2ef"/>
+  <text x="102" y="227.00" class="label" text-anchor="end">13.5</text>
+  <line x1="112" y1="162.00" x2="514" y2="162.00" stroke="#edf2ef"/>
+  <text x="102" y="166.00" class="label" text-anchor="end">18.0</text>
+  <line x1="112.00" y1="162" x2="112.00" y2="406" stroke="#f1f4f5"/>
+  <text x="112.00" y="430" class="label" text-anchor="middle">2000</text>
+  <line x1="179.00" y1="162" x2="179.00" y2="406" stroke="#f1f4f5"/>
+  <text x="179.00" y="430" class="label" text-anchor="middle">2004</text>
+  <line x1="514.00" y1="162" x2="514.00" y2="406" stroke="#f1f4f5"/>
+  <text x="514.00" y="430" class="label" text-anchor="middle">2024</text>
+  <path d="M112.00,387.84 L128.75,391.09 L145.50,382.01 L162.25,377.53 L179.00,374.69" fill="none" stroke="#176b63" stroke-width="4"/>
+  <path d="M179.00,374.69 L514.00,189.11" fill="none" stroke="#b8873a" stroke-width="3" stroke-dasharray="8 7"/>
+  <circle cx="112.00" cy="387.84" r="4" fill="#176b63" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="128.75" cy="391.09" r="4" fill="#176b63" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="145.50" cy="382.01" r="4" fill="#176b63" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="162.25" cy="377.53" r="4" fill="#176b63" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="179.00" cy="374.69" r="4" fill="#176b63" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="514.00" cy="189.11" r="6" fill="#7c2f2a" stroke="#ffffff" stroke-width="2"/>
+  <text x="456.00" y="177.11" class="value">16.0</text>
+  <text x="112" y="456" class="label">Dashed segment indicates a data gap in the local archive, not annual interpolation.</text>
+  <rect x="590" y="104" width="456" height="350" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="612" y="136" class="panel-title">Remittances received (% of GDP)</text>
+  <line x1="648" y1="406.00" x2="1010" y2="406.00" stroke="#edf2ef"/>
+  <text x="638" y="410.00" class="label" text-anchor="end">0.0%</text>
+  <line x1="648" y1="345.00" x2="1010" y2="345.00" stroke="#edf2ef"/>
+  <text x="638" y="349.00" class="label" text-anchor="end">1.5%</text>
+  <line x1="648" y1="284.00" x2="1010" y2="284.00" stroke="#edf2ef"/>
+  <text x="638" y="288.00" class="label" text-anchor="end">3.0%</text>
+  <line x1="648" y1="223.00" x2="1010" y2="223.00" stroke="#edf2ef"/>
+  <text x="638" y="227.00" class="label" text-anchor="end">4.5%</text>
+  <line x1="648" y1="162.00" x2="1010" y2="162.00" stroke="#edf2ef"/>
+  <text x="638" y="166.00" class="label" text-anchor="end">6.0%</text>
+  <line x1="648.00" y1="162" x2="648.00" y2="406" stroke="#f1f4f5"/>
+  <text x="648.00" y="430" class="label" text-anchor="middle">2000</text>
+  <line x1="708.33" y1="162" x2="708.33" y2="406" stroke="#f1f4f5"/>
+  <text x="708.33" y="430" class="label" text-anchor="middle">2004</text>
+  <line x1="1010.00" y1="162" x2="1010.00" y2="406" stroke="#f1f4f5"/>
+  <text x="1010.00" y="430" class="label" text-anchor="middle">2024</text>
+  <path d="M648.00,231.19 L663.08,269.14 L678.17,200.72 L693.25,190.08 L708.33,199.21" fill="none" stroke="#176b63" stroke-width="4"/>
+  <path d="M708.33,199.21 L1010.00,269.42" fill="none" stroke="#b8873a" stroke-width="3" stroke-dasharray="8 7"/>
+  <circle cx="648.00" cy="231.19" r="4" fill="#176b63" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="663.08" cy="269.14" r="4" fill="#176b63" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="678.17" cy="200.72" r="4" fill="#176b63" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="693.25" cy="190.08" r="4" fill="#176b63" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="708.33" cy="199.21" r="4" fill="#176b63" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="1010.00" cy="269.42" r="6" fill="#7c2f2a" stroke="#ffffff" stroke-width="2"/>
+  <text x="952.00" y="257.42" class="value">3.4%</text>
+  <text x="648" y="456" class="label">Dashed segment indicates a data gap in the local archive, not annual interpolation.</text>
+  
+  <rect x="54" y="518" width="992" height="128" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="76" y="550" class="panel-title">2024 geographic concentration: Ho Chi Minh City as remittance gateway</text>
+  <rect x="92" y="576" width="468.00" height="38" rx="8" fill="#176b63"/>
+  <rect x="560.00" y="576" width="312.00" height="38" rx="8" fill="#b8873a"/>
+  <text x="110" y="601" class="value light">HCMC USD 9.6b, about 60%</text>
+  <text x="578.00" y="601" class="value">Other destinations USD 6.4b</text>
+  <text x="76" y="632" class="label">HCMC's role reflects diaspora links, financial services, real estate, enterprise networks, and the city's banking infrastructure.</text>
+
+  <text x="54" y="684" class="source">Sources: World Bank WDI local processed file for 2000-2004; World Bank Viet Nam country profile, 2024 remittances share of GDP; VietnamPlus/VNA and SBV HCMC branch reporting for 2024 national and HCMC estimates.</text>
+</svg>

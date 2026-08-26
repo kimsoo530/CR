@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 650" role="img" aria-label="Vietnam ethnic group distribution in the 2019 census">
+  <style>
+    .title{font:700 28px Arial,sans-serif;fill:#172026}
+    .subtitle{font:15px Arial,sans-serif;fill:#526069}
+    .bar-label{font:700 18px Arial,sans-serif}
+    .light{fill:#ffffff}
+    .dark{fill:#172026}
+    .section-title{font:700 18px Arial,sans-serif;fill:#172026}
+    .minor-label{font:700 14px Arial,sans-serif;fill:#172026}
+    .minor-value{font:12px Arial,sans-serif;fill:#526069}
+    .note{font:13px Arial,sans-serif;fill:#526069}
+    .source{font:12px Arial,sans-serif;fill:#65717a}
+  </style>
+  <rect width="1100" height="650" fill="#f6f4ee"/>
+  <text x="54" y="44" class="title">Viet Nam Ethnic Group Distribution, 2019 Census</text>
+  <text x="54" y="68" class="subtitle">Official classification recognizes 54 ethnic groups. The figure uses ethnic group categories, not biological race categories.</text>
+  <rect x="54" y="98" width="992" height="118" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <rect x="76" y="128" width="808.83" height="58" rx="8" fill="#176b63"/><rect x="884.83" y="128" width="139.17" height="58" rx="8" fill="#b8873a"/><text x="94" y="164" class="bar-label light">Kinh 85.3%</text><text x="900.83" y="164" class="bar-label dark">Minorities 14.7%</text><text x="76" y="288" class="minor-label">Tay</text><rect x="246" y="270" width="269.11" height="22" rx="5" fill="#345995"/><text x="525.11" y="286" class="minor-value">1.92% | 1.8m</text><text x="76" y="324" class="minor-label">Thai</text><rect x="246" y="306" width="264.91" height="22" rx="5" fill="#345995"/><text x="520.91" y="322" class="minor-value">1.89% | 1.8m</text><text x="76" y="360" class="minor-label">Muong</text><rect x="246" y="342" width="211.64" height="22" rx="5" fill="#345995"/><text x="467.64" y="358" class="minor-value">1.51% | 1.5m</text><text x="76" y="396" class="minor-label">Hmong</text><rect x="246" y="378" width="203.23" height="22" rx="5" fill="#345995"/><text x="459.23" y="394" class="minor-value">1.45% | 1.4m</text><text x="76" y="432" class="minor-label">Khmer</text><rect x="246" y="414" width="192.02" height="22" rx="5" fill="#345995"/><text x="448.02" y="430" class="minor-value">1.37% | 1.3m</text><text x="76" y="468" class="minor-label">Nung</text><rect x="246" y="450" width="158.38" height="22" rx="5" fill="#345995"/><text x="414.38" y="466" class="minor-value">1.13% | 1.1m</text><text x="76" y="504" class="minor-label">Dao</text><rect x="246" y="486" width="130.35" height="22" rx="5" fill="#345995"/><text x="386.35" y="502" class="minor-value">0.93% | 0.9m</text><text x="76" y="540" class="minor-label">Hoa</text><rect x="246" y="522" width="109.33" height="22" rx="5" fill="#345995"/><text x="365.33" y="538" class="minor-value">0.78% | 0.7m</text><text x="76" y="576" class="minor-label">Other 45 groups</text><rect x="246" y="558" width="520.00" height="22" rx="5" fill="#7c2f2a"/><text x="776.00" y="574" class="minor-value">3.71% | 3.6m</text>
+  <text x="76" y="244" class="section-title">Largest non-Kinh ethnic groups and all other recognized groups</text>
+  <text x="76" y="606" class="source">Source: Central Population and Housing Census Steering Committee and General Statistics Office of Viet Nam, Completed Results of the 2019 Viet Nam Population and Housing Census.</text>
+  <text x="76" y="626" class="source">Numeric ethnic-group table archived from Population Information / danso.info, based on GSO data. Reference date: 1 April 2019.</text>
+</svg>

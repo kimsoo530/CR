@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 780" role="img" aria-label="Vietnam human development and territorial equity indicators">
+  
+  <style>
+    .title{font:700 28px Arial,sans-serif;fill:#172026}
+    .subtitle{font:15px Arial,sans-serif;fill:#526069}
+    .panel-title{font:700 16px Arial,sans-serif;fill:#172026}
+    .panel-y{font:11px Arial,sans-serif;fill:#526069;text-anchor:end}
+    .panel-x{font:11px Arial,sans-serif;fill:#526069;text-anchor:middle}
+    .panel-last{font:700 11px Arial,sans-serif;fill:#172026}
+    .legend{font:11px Arial,sans-serif;fill:#526069}
+    .label{font:12px Arial,sans-serif;fill:#526069}
+    .small{font:11px Arial,sans-serif;fill:#65717a}
+    .value{font:700 22px Arial,sans-serif;fill:#172026}
+    .source{font:12px Arial,sans-serif;fill:#65717a}
+    .box-title{font:700 14px Arial,sans-serif;fill:#172026}
+    .box-text{font:12px Arial,sans-serif;fill:#526069}
+    .bar-label{font:700 12px Arial,sans-serif;fill:#172026}
+    .bar-value{font:12px Arial,sans-serif;fill:#526069}
+  </style>
+  <rect width="1100" height="780" fill="#f6f4ee"/>
+  <text x="54" y="44" class="title">Human Development and Territorial Equity</text>
+  <text x="54" y="68" class="subtitle">Vietnam is a high-HDI country, but inequality adjustment and provincial gaps show why social policy is an administrative-capacity problem.</text>
+  <rect x="54" y="106" width="620" height="330" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="76" y="140" class="panel-title">HDI ladder: national progress and territorial gap</text>
+  <text x="76" y="162" class="small">Index values from UNDP Viet Nam reporting</text>
+  <text x="76" y="213" class="bar-label">Hanoi</text>
+  <rect x="264" y="198" width="350.78" height="22" rx="5" fill="#176b63"/>
+  <text x="622.78" y="214" class="bar-value">0.799</text>
+  <text x="76" y="258" class="bar-label">Ho Chi Minh City</text>
+  <rect x="264" y="243" width="349.02" height="22" rx="5" fill="#345995"/>
+  <text x="621.02" y="259" class="bar-value">0.795</text>
+  <text x="76" y="303" class="bar-label">Viet Nam</text>
+  <rect x="264" y="288" width="336.29" height="22" rx="5" fill="#7c2f2a"/>
+  <text x="608.29" y="304" class="bar-value">0.766</text>
+  <text x="76" y="348" class="bar-label">Inequality-adjusted HDI</text>
+  <rect x="264" y="333" width="281.41" height="22" rx="5" fill="#b8873a"/>
+  <text x="553.41" y="349" class="bar-value">0.641</text>
+  <text x="76" y="393" class="bar-label">Lai Chau</text>
+  <rect x="264" y="378" width="263.41" height="22" rx="5" fill="#65717a"/>
+  <text x="535.41" y="394" class="bar-value">&lt;0.600</text>
+  <text x="76" y="438" class="bar-label">Ha Giang</text>
+  <rect x="264" y="423" width="263.41" height="22" rx="5" fill="#65717a"/>
+  <text x="535.41" y="439" class="bar-value">&lt;0.600</text>
+  <rect x="714" y="106" width="332" height="330" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="736" y="142" class="panel-title">National human-development position</text>
+  <text x="736" y="184" class="value">0.766</text>
+  <text x="844" y="184" class="small">HDI, high human development</text>
+  <text x="736" y="226" class="value">#93</text>
+  <text x="844" y="226" class="small">of 193 countries and territories</text>
+  <text x="736" y="268" class="value">+53.5%</text>
+  <text x="884" y="268" class="small">HDI gain since 1990</text>
+  <text x="736" y="310" class="value">16.3%</text>
+  <text x="884" y="310" class="small">loss after inequality adjustment</text>
+  <text x="736" y="354" class="box-text">The inequality adjustment turns a success story into a governance question: who can actually convert national growth into education, health, income security, and local opportunity?</text>
+  <rect x="54" y="498" width="992" height="170" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="76" y="534" class="panel-title">Territorial-equity reading</text>
+  <text x="76" y="570" class="box-text">Hanoi and Ho Chi Minh City approach very-high human-development levels, while mountainous provinces such as Lai Chau and Ha Giang remain below 0.6 in UNDP reporting.</text>
+  <text x="76" y="606" class="box-text">This gap is not only regional income inequality. It reflects the combined geography of schools, health facilities, transport, digital access, ethnic-minority inclusion, clean water, nutrition, and provincial fiscal capacity.</text>
+  <text x="76" y="642" class="box-text">The administrative task is therefore spatial targeting: equalizing service quality, not only raising national averages.</text>
+  <text x="54" y="738" class="source">Sources: UNDP Viet Nam, Human Development Report 2025 release; HDI and inequality-adjusted HDI indicators; provincial HDI examples reported by UNDP Viet Nam.</text>
+</svg>

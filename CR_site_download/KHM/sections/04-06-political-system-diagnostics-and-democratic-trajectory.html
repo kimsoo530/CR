@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>4.6 Political System Diagnostics and Democratic Trajectory | KHM Country Report</title>
+<link href="../assets/styles.css" rel="stylesheet"/>
+<script src="../assets/chart.umd.min.js"></script>
+<style>
+    body{margin:0;background:#f4f6f4;color:#17201b;font-family:Arial,Helvetica,sans-serif;line-height:1.65}
+    .layout{display:grid;grid-template-columns:320px minmax(0,1fr);min-height:100vh}
+    aside{position:sticky;top:0;height:100vh;overflow:auto;background:#fff;border-right:1px solid #d9ded8;padding:18px}
+    aside a{display:block;color:#25312a;text-decoration:none;border-radius:6px;padding:6px 8px;font-size:13px}
+    aside a:hover,aside a.active{background:#e8f0ea;color:#0d5a6a} summary{cursor:pointer;font-weight:700;margin:10px 0 4px}
+    .home{font-weight:800;margin-bottom:8px}
+    main{max-width:1050px;padding:36px min(6vw,72px) 90px}
+    .crumb{font-size:13px;color:#607067;margin:0 0 8px} h1{font-size:36px;line-height:1.15;margin:0 0 8px}
+    .chapter-title{color:#56645c;margin:0 0 26px}
+    .section-body,.chart-card{background:#fff;border:1px solid #d9ded8;border-radius:8px;padding:18px;margin:0 0 22px}
+    .section-body h2{font-size:26px;margin:0 0 14px} .section-body p{font-family:Georgia,'Times New Roman',serif;font-size:18px;margin:0 0 14px}
+    table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px} th,td{border:1px solid #d9ded8;padding:8px;vertical-align:top} th{background:#edf2ea;text-align:left}
+    code{background:#eef2ee;border:1px solid #d8ded8;border-radius:4px;padding:1px 4px} .source-note,figcaption{font-size:12px;color:#607067}
+    .chart-frame{height:340px} .chart-frame canvas{width:100%;height:100%}
+    .figure-card,.map-card,.symbol-figure{background:#fff;border:1px solid #d9ded8;border-radius:8px;padding:14px;margin:18px 0 24px}
+    .source{color:#607067;font-size:12px;margin:10px 0 0} .map-grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(280px,.7fr);gap:16px;align-items:start}
+    .adm-map{width:100%;height:auto;border:1px solid #d9ded8;background:#f7fbfc} .adm-path{stroke:#fff;stroke-width:.7} .map-label{font-size:6px;fill:#32424f;text-anchor:middle;pointer-events:none} .neighbor-label{font-size:12px;fill:#6c7b88}
+    .capital-marker circle{fill:#c23b22;stroke:#fff;stroke-width:1.4} .capital-marker text{font-size:12px;fill:#17212b;font-weight:700} .map-table-wrap{max-height:420px;overflow:auto}
+    .symbol-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px} .symbol-card{min-height:260px;border:1px solid #d9ded8;border-radius:8px;background:#fbfdfe;padding:14px;display:flex;flex-direction:column;gap:10px}
+    .symbol-card h3{font-size:18px;margin:2px 0 0} .symbol-card p{font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:1.48;color:#34424e;margin:0} .symbol-kicker{color:#607067;font-size:11px;text-transform:uppercase;letter-spacing:.06em}
+    .flag-indonesia{height:92px;border:1px solid #b9c6cd;border-radius:4px;overflow:hidden} .flag-indonesia span{display:block;height:50%} .flag-indonesia span:first-child{background:#c9182b} .flag-indonesia span:last-child{background:#fff}
+    .garuda-mark{height:92px;display:grid;grid-template-columns:1fr 56px 1fr;align-items:center;gap:4px} .garuda-mark .wing{height:60px;background:#c59a35;border:1px solid #9d761e} .garuda-mark .left{border-radius:60px 10px 18px 60px} .garuda-mark .right{border-radius:10px 60px 60px 18px}
+    .garuda-mark .body{height:82px;background:#d6ad46;border:1px solid #9d761e;border-radius:36px 36px 18px 18px} .garuda-mark .shield{grid-column:2;justify-self:center;margin-top:-58px;width:36px;height:42px;border-radius:8px 8px 14px 14px;background:#1f3f68;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;border:2px solid #f1d47b}
+    .motto-line{height:92px;display:flex;align-items:center;justify-content:center;text-align:center;border:1px solid #cfd9de;border-radius:6px;background:linear-gradient(180deg,#fff,#eef5f7);font-weight:800;color:#15384a;padding:12px} .anthem-bars{height:92px;display:flex;align-items:end;gap:8px;justify-content:center;border:1px solid #cfd9de;border-radius:6px;background:#f8fbfc;padding:16px}
+    .anthem-bars span{width:22px;background:#0f6f87;border-radius:4px 4px 0 0} .anthem-bars span:nth-child(1){height:38px} .anthem-bars span:nth-child(2){height:62px} .anthem-bars span:nth-child(3){height:48px} .anthem-bars span:nth-child(4){height:72px}
+    @media(max-width:860px){.layout{grid-template-columns:1fr}aside{position:relative;height:auto}main{padding:24px 18px}}
+  
+    .md-toolbar{display:flex;justify-content:flex-end;gap:8px;margin:0 0 14px}
+    .md-toolbar button{border:1px solid #0d5a6a;background:#0d5a6a;color:#fff;border-radius:5px;padding:7px 11px;font:700 12px Arial,Helvetica,sans-serif;cursor:pointer}
+    .md-toolbar button[data-md-action='cancel']{background:#fff;color:#25312a;border-color:#cfd8d3}
+    .md-editor{width:100%;min-height:520px;border:1px solid #cfd8d3;border-radius:6px;padding:14px;font:14px Consolas,monospace;line-height:1.45}
+
+  </style>
+  <script src="../assets/marked.min.js"></script>
+</head>
+<body>
+<div class="layout">
+<aside><a class='home' href='../index.html'>KHM cover</a>
+<details ><summary>1. Country Overview</summary><a class='section-link ' href='01-01-national-profile.html'>1.1 National Profile</a><a class='section-link ' href='01-02-state-symbols.html'>1.2 State Symbols</a><a class='section-link ' href='01-03-geography-and-administrative-divisions.html'>1.3 Geography and Administrative Divisions</a><a class='section-link ' href='01-04-core-institutional-diagnosis.html'>1.4 Core Institutional Diagnosis</a><a class='section-link ' href='01-05-evidence-base.html'>1.5 Evidence Base</a><a class='section-link ' href='01-06-latest-comparative-indicators.html'>1.6 Latest Comparative Indicators</a></details>
+<details ><summary>2. Historical Background</summary><a class='section-link ' href='02-01-angkor-mandala-politics-and-territorial-memory.html'>2.1 Angkor, Mandala Politics, and Territorial Memory</a><a class='section-link ' href='02-02-protectorate-independence-war-and-genocide.html'>2.2 Protectorate, Independence, War, and Genocide</a><a class='section-link ' href='02-03-untac-the-1993-constitution-and-cpp-consolidation.html'>2.3 UNTAC, the 1993 Constitution, and CPP Consolidation</a><a class='section-link ' href='02-04-historical-legacies-in-present-institutions.html'>2.4 Historical Legacies in Present Institutions</a></details>
+<details ><summary>3. Constitution and Basic State Order</summary><a class='section-link ' href='03-01-constitutional-order-and-amendments.html'>3.1 Constitutional Order and Amendments</a><a class='section-link ' href='03-02-monarchy-sovereignty-and-liberal-democracy.html'>3.2 Monarchy, Sovereignty, and Liberal Democracy</a><a class='section-link ' href='03-03-rights-duties-and-rule-of-law-institutions.html'>3.3 Rights, Duties, and Rule-of-Law Institutions</a><a class='section-link ' href='03-04-parliament-government-courts-and-constitutional-council.html'>3.4 Parliament, Government, Courts, and Constitutional Council</a></details>
+<details open><summary>4. Political System and Power Structure</summary><a class='section-link ' href='04-01-historical-formation-of-the-political-order.html'>4.1 Historical Formation of the Political Order</a><a class='section-link ' href='04-02-executive-power-and-government-formation.html'>4.2 Executive Power and Government Formation</a><a class='section-link ' href='04-03-parliament-parties-and-elections.html'>4.3 Parliament, Parties, and Elections</a><a class='section-link ' href='04-04-judiciary-rule-of-law-corruption-and-accountability.html'>4.4 Judiciary, Rule of Law, Corruption, and Accountability</a><a class='section-link ' href='04-05-local-politics-and-real-power-relations.html'>4.5 Local Politics and Real Power Relations</a><a class='section-link active' href='04-06-political-system-diagnostics-and-democratic-trajectory.html'>4.6 Political System Diagnostics and Democratic Trajectory</a></details>
+<details ><summary>5. Administrative System and Government Organization</summary><a class='section-link ' href='05-01-central-government-and-ministerial-system.html'>5.1 Central Government and Ministerial System</a><a class='section-link ' href='05-02-organizational-management-and-bureaucratic-reform.html'>5.2 Organizational Management and Bureaucratic Reform</a><a class='section-link ' href='05-03-human-resource-management-and-civil-service.html'>5.3 Human Resource Management and Civil Service</a><a class='section-link ' href='05-04-financial-administration-procurement-audit-and-inspection.html'>5.4 Financial Administration, Procurement, Audit, and Inspection</a><a class='section-link ' href='05-05-local-administration-and-service-delivery.html'>5.5 Local Administration and Service Delivery</a><a class='section-link ' href='05-06-digital-government-and-administrative-accountability.html'>5.6 Digital Government and Administrative Accountability</a><a class='section-link ' href='05-07-implementation-capacity-and-administrative-performance.html'>5.7 Implementation Capacity and Administrative Performance</a></details>
+<details ><summary>6. Governance and Institutional Capacity</summary><a class='section-link ' href='06-01-government-effectiveness-and-regulatory-quality.html'>6.1 Government Effectiveness and Regulatory Quality</a><a class='section-link ' href='06-02-rule-of-law-and-corruption-control.html'>6.2 Rule of Law and Corruption Control</a><a class='section-link ' href='06-03-voice-accountability-and-stability.html'>6.3 Voice, Accountability, and Stability</a><a class='section-link ' href='06-04-what-governance-indicators-reveal.html'>6.4 What Governance Indicators Reveal</a></details>
+<details ><summary>7. Fiscal System and Public Sector</summary><a class='section-link ' href='07-01-revenue-taxation-and-expenditure.html'>7.1 Government Revenue, Tax Revenue, and Expenditure Structure</a><a class='section-link ' href='07-02-deficit-debt-and-fiscal-buffers.html'>7.2 Fiscal Balance, Debt, and Interest Burden</a><a class='section-link ' href='07-03-pfm-reform-fmis-and-public-investment.html'>7.3 PFM Reform, FMIS, and Public Investment</a><a class='section-link ' href='07-04-sub-national-finance-and-service-delivery.html'>7.4 Defense and Public Security Spending</a><a class='section-link ' href='07-05-fiscal-capacity-and-public-sector-risks.html'>7.5 Fiscal Capacity and Public Sector Risks</a></details>
+<details ><summary>8. Population and Social Structure</summary><a class='section-link ' href='08-01-population-scale-and-age-structure.html'>8.1 Population Size, Growth, Age Structure, and Dependency</a><a class='section-link ' href='08-02-urbanization-and-regional-distribution.html'>8.2 Urbanization and Regional Distribution</a><a class='section-link ' href='08-03-ethnicity-language-religion-and-social-cohesion.html'>8.3 Ethnicity, Language, Religion, and Social Cohesion</a><a class='section-link ' href='08-04-migration-remittances-and-vulnerability.html'>8.4 Migration, Remittances, and Vulnerability</a></details>
+<details ><summary>9. Macroeconomic Structure</summary><a class='section-link ' href='09-01-macroeconomic-diagnostic-framework.html'>9.1 Macroeconomic Diagnostic Framework</a><a class='section-link ' href='09-02-output-growth-and-income-level.html'>9.2 Output, Growth, and Income Level</a><a class='section-link ' href='09-03-prices-exchange-rate-and-external-buffers.html'>9.3 Prices, Exchange Rate, and External Buffers</a><a class='section-link ' href='09-04-trade-balance-external-position-and-openness.html'>9.4 Trade Balance, External Position, and Openness</a><a class='section-link ' href='09-05-sectoral-structure-vulnerability-and-macroeconomic-outlook.html'>9.5 Sectoral Structure, Vulnerability, and Macroeconomic Outlook</a></details>
+<details ><summary>10. Trade, Investment, and External Economy</summary><a class='section-link ' href='10-01-exports-imports-and-current-account.html'>10.1 Exports, Imports, and Current Account</a><a class='section-link ' href='10-02-gft-agriculture-tourism-and-construction.html'>10.2 GFT, Agriculture, Tourism, and Construction</a><a class='section-link ' href='10-03-fdi-sezs-and-china-linkages.html'>10.3 FDI, SEZs, and China Linkages</a><a class='section-link ' href='10-04-investment-climate-and-diversification.html'>10.4 Investment Climate and Diversification</a></details>
+<details ><summary>11. Infrastructure, Energy, and Digital Connectivity</summary><a class='section-link ' href='11-01-energy-access-and-power-security.html'>11.1 Energy Access and Power Security</a><a class='section-link ' href='11-02-transport-logistics-and-cross-border-corridors.html'>11.2 Transport, Logistics, and Cross-Border Corridors</a><a class='section-link ' href='11-03-digital-connectivity.html'>11.3 Digital Connectivity</a><a class='section-link ' href='11-04-infrastructure-governance-and-climate-resilience.html'>11.4 Infrastructure Governance and Climate Resilience</a></details>
+<details ><summary>12. Labor Market and Human Capital</summary><a class='section-link ' href='12-01-labor-force-and-participation.html'>12.1 Labor Force and Participation</a><a class='section-link ' href='12-02-women-youth-and-informality.html'>12.2 Women, Youth, and Informality</a><a class='section-link ' href='12-03-agriculture-garments-tourism-and-migration.html'>12.3 Agriculture, Garments, Tourism, and Migration</a><a class='section-link ' href='12-04-skills-education-and-human-capital.html'>12.4 Skills, Education, and Human Capital</a></details>
+<details ><summary>13. Education, Health, and Welfare</summary><a class='section-link ' href='13-01-education-system-and-public-spending.html'>13.1 Education System and Public Spending</a><a class='section-link ' href='13-02-health-outcomes-and-service-capacity.html'>13.2 Health Outcomes and Service Capacity</a><a class='section-link ' href='13-03-water-sanitation-nutrition-and-social-protection.html'>13.3 Water, Sanitation, Nutrition, and Social Protection</a><a class='section-link ' href='13-04-human-development-and-territorial-equity.html'>13.4 Human Development and Territorial Equity</a></details>
+<details ><summary>14. Financial Sector and Economic Institutions</summary><a class='section-link ' href='14-01-banks-microfinance-credit-and-real-estate.html'>14.1 Banks, Microfinance, Credit, and Real Estate</a><a class='section-link ' href='14-02-national-bank-of-cambodia-and-dollarization.html'>14.2 National Bank of Cambodia and Dollarization</a><a class='section-link ' href='14-03-fintech-bakong-and-inclusion.html'>14.3 Fintech, Bakong, and Inclusion</a><a class='section-link ' href='14-04-financial-stability-and-reform-priorities.html'>14.4 Financial Stability and Reform Priorities</a></details>
+<details ><summary>15. Foreign Relations, Security, and Geopolitics</summary><a class='section-link ' href='15-01-foreign-policy-and-asean.html'>15.1 Foreign Policy and ASEAN</a><a class='section-link ' href='15-02-thailand-vietnam-china-and-the-mekong.html'>15.2 Thailand, Vietnam, China, and the Mekong</a><a class='section-link ' href='15-03-defense-police-border-and-transnational-risks.html'>15.3 Defense, Police, Border, and Transnational Risks</a><a class='section-link ' href='15-04-land-mines-water-and-strategic-infrastructure.html'>15.4 Land, Mines, Water, and Strategic Infrastructure</a></details>
+<details ><summary>16. Major Policies and National Development Strategy</summary><a class='section-link ' href='16-01-evolution-of-national-development-strategy.html'>16.1 Evolution of National Development Strategy</a><a class='section-link ' href='16-02-pentagonal-strategy-phase-i-and-vision-2050.html'>16.2 Pentagonal Strategy Phase I and Vision 2050</a><a class='section-link ' href='16-03-public-administration-pfm-and-d-d-reform.html'>16.3 Public Administration, PFM, and D&amp;D Reform</a><a class='section-link ' href='16-04-digital-industrial-and-human-capital-transformation.html'>16.4 Digital, Industrial, and Human-Capital Transformation</a><a class='section-link ' href='16-05-implementation-matrix-and-risks.html'>16.5 Implementation Matrix and Risks</a><a class='section-link ' href='16-06-climate-mekong-resilience-and-sdg-implementation.html'>16.6 Climate, Mekong Resilience, and SDG Implementation</a></details>
+<details ><summary>17. Integrated Assessment</summary><a class='section-link ' href='17-01-national-operating-model.html'>17.1 National Operating Model</a><a class='section-link ' href='17-02-institutional-strengths-risks-and-bottlenecks.html'>17.2 Institutional Strengths, Risks, and Bottlenecks</a><a class='section-link ' href='17-03-implications-for-korea-and-international-cooperation.html'>17.3 Implications for Korea and International Cooperation</a><a class='section-link ' href='17-04-cambodia-and-comparative-administration-theory.html'>17.4 Cambodia and Comparative Administration Theory</a><a class='section-link ' href='17-05-strategic-outlook.html'>17.5 Strategic Outlook</a></details>
+<details ><summary>18. Appendix, Sources, and Method</summary><a class='section-link ' href='18-01-timeline.html'>18.1 Timeline</a><a class='section-link ' href='18-02-government-organization-chart.html'>18.2 Government Organization Chart</a><a class='section-link ' href='18-03-major-laws-and-policy-documents.html'>18.3 Major Laws and Policy Documents</a><a class='section-link ' href='18-04-indicator-codebook.html'>18.4 Indicator Codebook</a><a class='section-link ' href='18-05-update-workflow-and-evidence-archive.html'>18.5 Update Workflow and Evidence Archive</a></details>
+<details ><summary>19. References</summary><a class='section-link ' href='19-01-references.html'>19.1 References</a><a class='section-link ' href='19-02-citation-and-source-integrity-notes.html'>19.2 Citation and Source Integrity Notes</a></details></aside>
+<main>
+<p class="crumb"><a href="../04-politics.html">Chapter 4</a> / Section 6</p>
+<h1>4.6 Political System Diagnostics and Democratic Trajectory</h1>
+<p class="chapter-title">4. Political System and Power Structure</p>
+<article class="section-body editable-section" data-md-panel="04-06-political-system-diagnostics-and-democratic-trajectory" data-md-source="sections/04-06-political-system-diagnostics-and-democratic-trajectory.md">
+  <div class="md-toolbar">
+    <button type="button" data-md-action="edit">Edit Markdown</button>
+    <button type="button" data-md-action="save" hidden>Save</button>
+    <button type="button" data-md-action="cancel" hidden>Cancel</button>
+  </div>
+  <div class="md-preview"><h2 id='4-6-political-system-diagnostics-and-democratic-trajectory'>4.6 Political System Diagnostics and Democratic Trajectory</h2>
+<p><strong>ASEAN comparative lens (2026).</strong> Cambodia should be read in ASEAN comparison as a post-conflict, party-dominant, small open economy linked to garments, tourism, construction, and Chinese finance. Compared with Vietnam and Thailand it has thinner industrial depth; compared with Laos it is less landlocked but similarly exposed to external finance; compared with Singapore and Malaysia it has a much lower administrative and income base. For this section, the regional comparison should explain how political authority differs from neighboring ASEAN cases in party organization, executive power, local mediation, civil-military influence, and informal power. Local comparable indicators show: population 17.64 million (2024), rank 7 among the nine ASEAN reports in this workspace; GDP US$46.35 billion (2024), rank 8 among the nine ASEAN reports in this workspace; GDP per capita US$2,628 (2024), rank 7 among the nine ASEAN reports in this workspace; real GDP growth 5.98% (2024), rank 2 among the nine ASEAN reports in this workspace; government effectiveness -0.21 (2023), rank 7 among the nine ASEAN reports in this workspace; internet use 68.48% (2024), rank 6 among the nine ASEAN reports in this workspace. Use `sources/documents/regional/asean_comparative_lens_2026.md` together with ASEANstats, ASEAN Secretariat materials, and the country processed-indicator files before making cross-ASEAN claims.</p>
+<table><thead><tr><th>Dimension</th><th>Source table ID</th><th>Latest year</th><th>Latest value</th><th>Unit</th><th>Change since 2000 or earliest post-2000 value</th></tr></thead><tbody><tr><td>Electoral democracy index</td><td>`v2x_polyarchy`</td><td>2025</td><td>0.18</td><td>0-1</td><td>-0.14</td></tr><tr><td>Liberal democracy index</td><td>`v2x_libdem`</td><td>2025</td><td>0.05</td><td>0-1</td><td>-0.07</td></tr><tr><td>Electoral integrity index</td><td>`v2x_electoral_integrity`</td><td>2025</td><td>0.28</td><td>0-1</td><td>-0.27</td></tr><tr><td>Clean elections index</td><td>`v2xel_frefair`</td><td>2025</td><td>0.09</td><td>0-1</td><td>-0.15</td></tr><tr><td>Party system institutionalization</td><td>`v2xps_party`</td><td>2025</td><td>0.32</td><td>0-1</td><td>-0.14</td></tr><tr><td>Legislative constraints on the executive</td><td>`v2xlg_legcon`</td><td>2025</td><td>0.05</td><td>0-1</td><td>-0.12</td></tr><tr><td>Judicial constraints on the executive</td><td>`v2x_jucon`</td><td>2025</td><td>0.07</td><td>0-1</td><td>-0.05</td></tr><tr><td>Rule of law index</td><td>`v2xcl_rol`</td><td>2025</td><td>0.20</td><td>0-1</td><td>-0.23</td></tr><tr><td>Political corruption index</td><td>`v2x_corr`</td><td>2025</td><td>0.90</td><td>0-1, higher means more corruption</td><td>0.00</td></tr><tr><td>Public-sector corruption index</td><td>`v2x_pubcorr`</td><td>2025</td><td>0.86</td><td>0-1, higher means more corruption</td><td>0.00</td></tr><tr><td>Regime of the World classification</td><td>`v2x_regime`</td><td>2025</td><td>1.00</td><td>0 closed autocracy, 1 electoral autocracy, 2 electoral democracy, 3 liberal democracy</td><td>0.00</td></tr><tr><td>Voice and accountability</td><td>`VA.EST`</td><td>2023</td><td>-0.90</td><td>WGI estimate</td><td>0.42</td></tr><tr><td>Political stability and absence of violence/terrorism</td><td>`PV.EST`</td><td>2023</td><td>0.03</td><td>WGI estimate</td><td>1.35</td></tr><tr><td>Rule of law</td><td>`RL.EST`</td><td>2023</td><td>-0.57</td><td>WGI estimate</td><td>1.27</td></tr><tr><td>Control of corruption</td><td>`CC.EST`</td><td>2023</td><td>-0.91</td><td>WGI estimate</td><td>0.73</td></tr></tbody></table>
+<h3>Political-system trajectory in V-Dem indicators</h3>
+<p>  Source: V-Dem vdemdata, table IDs v2x_polyarchy, v2x_libdem, v2x_electoral_integrity, and v2x_jucon. Unit: index from 0 to 1. Processed file: KHM/processed/political_system_diagnostics.csv.</p>
+<p>    document.addEventListener(&#x27;DOMContentLoaded&#x27;, function () {</p>
+<p>      var el = document.getElementById(&#x27;vdem-politics-khm&#x27;);</p>
+<p>      if (!el || !window.Chart) return;</p>
+<p>      new Chart(el, {</p>
+<p>        type: &#x27;line&#x27;,</p>
+<p>        data: { labels: [1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025], datasets: [{&quot;label&quot;: &quot;Electoral democracy&quot;, &quot;data&quot;: [0.365, 0.365, 0.347, 0.321, 0.318, 0.317, 0.317, 0.321, 0.324, 0.32, 0.32, 0.319, 0.316, 0.308, 0.308, 0.308, 0.305, 0.297, 0.293, 0.291, 0.275, 0.234, 0.211, 0.194, 0.191, 0.19, 0.199, 0.189, 0.184, 0.183], &quot;borderColor&quot;: &quot;#0f6f87&quot;, &quot;backgroundColor&quot;: &quot;#0f6f87&quot;, &quot;tension&quot;: 0.25, &quot;spanGaps&quot;: true}, {&quot;label&quot;: &quot;Liberal democracy&quot;, &quot;data&quot;: [0.14, 0.137, 0.132, 0.125, 0.124, 0.126, 0.124, 0.126, 0.126, 0.123, 0.123, 0.123, 0.121, 0.118, 0.118, 0.118, 0.118, 0.114, 0.114, 0.115, 0.103, 0.078, 0.07, 0.066, 0.063, 0.059, 0.059, 0.052, 0.048, 0.051], &quot;borderColor&quot;: &quot;#34675c&quot;, &quot;backgroundColor&quot;: &quot;#34675c&quot;, &quot;tension&quot;: 0.25, &quot;spanGaps&quot;: true}, {&quot;label&quot;: &quot;Electoral integrity&quot;, &quot;data&quot;: [0.578, 0.574, 0.554, 0.551, 0.549, 0.547, 0.547, 0.523, 0.518, 0.514, 0.518, 0.518, 0.502, 0.506, 0.5, 0.501, 0.488, 0.483, 0.479, 0.475, 0.449, 0.369, 0.298, 0.297, 0.307, 0.306, 0.315, 0.296, 0.287, 0.277], &quot;borderColor&quot;: &quot;#7a5c00&quot;, &quot;backgroundColor&quot;: &quot;#7a5c00&quot;, &quot;tension&quot;: 0.25, &quot;spanGaps&quot;: true}, {&quot;label&quot;: &quot;Judicial constraints&quot;, &quot;data&quot;: [0.145, 0.145, 0.107, 0.122, 0.122, 0.122, 0.122, 0.122, 0.122, 0.122, 0.122, 0.122, 0.122, 0.122, 0.122, 0.122, 0.122, 0.135, 0.135, 0.135, 0.135, 0.105, 0.105, 0.116, 0.105, 0.105, 0.105, 0.09, 0.071, 0.072], &quot;borderColor&quot;: &quot;#8a3b4a&quot;, &quot;backgroundColor&quot;: &quot;#8a3b4a&quot;, &quot;tension&quot;: 0.25, &quot;spanGaps&quot;: true}] },</p>
+<p>        options: {</p>
+<p>          responsive: true,</p>
+<p>          maintainAspectRatio: false,</p>
+<p>          interaction: { mode: &#x27;index&#x27;, intersect: false },</p>
+<p>          plugins: { legend: { position: &#x27;bottom&#x27; } },</p>
+<p>          scales: {</p>
+<p>            x: { title: { display: true, text: &#x27;Year&#x27; } },</p>
+<p>            y: { min: 0, max: 1, title: { display: true, text: &#x27;V-Dem index (0-1)&#x27; } }</p>
+<p>          }</p>
+<p>        }</p>
+<p>      });</p>
+<p>    });</p>
+<p>The political-governance indicators are best read as a profile of constraints, not as a democracy ranking. Voice and accountability is -0.90, political stability is 0.03, rule of law is -0.57, and control of corruption is -0.91. A country may hold regular elections but still show weak judicial constraints, low corruption control, or limited legislative oversight. Conversely, a centralized political order may score comparatively well on stability while still limiting electoral competition and accountability. The analytical task is to identify which part of the political system explains policy predictability, administrative discretion, reform credibility, and the risks faced by citizens, firms, courts, local governments, and opposition actors.</p>
+<h3>Political accountability, stability, rule of law, and corruption control</h3>
+<p>  Source: World Bank Worldwide Governance Indicators table IDs VA.EST, PV.EST, RL.EST, and CC.EST. Unit: WGI estimate, approximately -2.5 to 2.5. Processed file: KHM/processed/political_system_diagnostics.csv.</p>
+<p>    document.addEventListener(&#x27;DOMContentLoaded&#x27;, function () {</p>
+<p>      var el = document.getElementById(&#x27;wgi-politics-khm&#x27;);</p>
+<p>      if (!el || !window.Chart) return;</p>
+<p>      new Chart(el, {</p>
+<p>        type: &#x27;line&#x27;,</p>
+<p>        data: { labels: [2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023], datasets: [{&quot;label&quot;: &quot;Voice and accountability&quot;, &quot;data&quot;: [-1.55, -1.58, -1.55, -1.63, -1.67, -1.88, -1.91, -1.88, -1.96, -2.1, -2.07, -2.31, -2.44, -1.83, -0.9], &quot;borderColor&quot;: &quot;#0f6f87&quot;, &quot;backgroundColor&quot;: &quot;#0f6f87&quot;, &quot;tension&quot;: 0.25, &quot;spanGaps&quot;: true}, {&quot;label&quot;: &quot;Political stability&quot;, &quot;data&quot;: [-0.95, -0.85, -0.52, -0.18, -0.23, 0.04, 0.11, 0.35, 0.16, 0.19, -0.13, -0.36, -0.22, -0.09, 0.03], &quot;borderColor&quot;: &quot;#34675c&quot;, &quot;backgroundColor&quot;: &quot;#34675c&quot;, &quot;tension&quot;: 0.25, &quot;spanGaps&quot;: true}, {&quot;label&quot;: &quot;Rule of law&quot;, &quot;data&quot;: [-1.91, -1.91, -1.79, -1.67, -1.71, -1.62, -1.69, -1.83, -1.82, -1.92, -1.62, -1.63, -1.56, -1.21, -0.57], &quot;borderColor&quot;: &quot;#7a5c00&quot;, &quot;backgroundColor&quot;: &quot;#7a5c00&quot;, &quot;tension&quot;: 0.25, &quot;spanGaps&quot;: true}, {&quot;label&quot;: &quot;Control of corruption&quot;, &quot;data&quot;: [-2.01, -2.12, -2.13, -1.84, -1.81, -1.95, -1.95, -2.21, -2.23, -2.3, -2.24, -2.16, -2.03, -1.74, -0.91], &quot;borderColor&quot;: &quot;#8a3b4a&quot;, &quot;backgroundColor&quot;: &quot;#8a3b4a&quot;, &quot;tension&quot;: 0.25, &quot;spanGaps&quot;: true}] },</p>
+<p>        options: {</p>
+<p>          responsive: true,</p>
+<p>          maintainAspectRatio: false,</p>
+<p>          interaction: { mode: &#x27;index&#x27;, intersect: false },</p>
+<p>          plugins: { legend: { position: &#x27;bottom&#x27; } },</p>
+<p>          scales: {</p>
+<p>            x: { title: { display: true, text: &#x27;Year&#x27; } },</p>
+<p>            y: { title: { display: true, text: &#x27;WGI estimate (-2.5 to 2.5)&#x27; } }</p>
+<p>          }</p>
+<p>        }</p>
+<p>      });</p>
+<p>    });</p>
+<p>Sources: V-Dem vdemdata table IDs `v2x_polyarchy`, `v2x_libdem`, `v2x_electoral_integrity`, `v2xel_frefair`, `v2xps_party`, `v2xlg_legcon`, `v2x_jucon`, `v2xcl_rol`, `v2x_corr`, `v2x_pubcorr`, and `v2x_regime`; World Bank WGI table IDs `VA.EST`, `PV.EST`, `RL.EST`, and `CC.EST`. Processed file: `KHM/processed/political_system_diagnostics.csv`; source note: `KHM/sources/documents/international_diagnostics/political_system_source_note.md`.</p>
+<p>The political diagnosis combines Cambodia&#x27;s constitutional allocation of authority with comparative governance indicators that capture accountability, rule of law, and corruption-control constraints (Royal Government of Cambodia, 1993; World Bank, 2025b).</p></div>
+  <textarea class="md-editor" hidden>## 4.6 Political System Diagnostics and Democratic Trajectory
+
+&lt;!-- asean-comparative-lens-2026:start --&gt;
+**ASEAN comparative lens (2026).** Cambodia should be read in ASEAN comparison as a post-conflict, party-dominant, small open economy linked to garments, tourism, construction, and Chinese finance. Compared with Vietnam and Thailand it has thinner industrial depth; compared with Laos it is less landlocked but similarly exposed to external finance; compared with Singapore and Malaysia it has a much lower administrative and income base. For this section, the regional comparison should explain how political authority differs from neighboring ASEAN cases in party organization, executive power, local mediation, civil-military influence, and informal power. Local comparable indicators show: population 17.64 million (2024), rank 7 among the nine ASEAN reports in this workspace; GDP US$46.35 billion (2024), rank 8 among the nine ASEAN reports in this workspace; GDP per capita US$2,628 (2024), rank 7 among the nine ASEAN reports in this workspace; real GDP growth 5.98% (2024), rank 2 among the nine ASEAN reports in this workspace; government effectiveness -0.21 (2023), rank 7 among the nine ASEAN reports in this workspace; internet use 68.48% (2024), rank 6 among the nine ASEAN reports in this workspace. Use `sources/documents/regional/asean_comparative_lens_2026.md` together with ASEANstats, ASEAN Secretariat materials, and the country processed-indicator files before making cross-ASEAN claims.
+&lt;!-- asean-comparative-lens-2026:end --&gt;
+
+| Dimension | Source table ID | Latest year | Latest value | Unit | Change since 2000 or earliest post-2000 value |
+| Electoral democracy index | `v2x_polyarchy` | 2025 | 0.18 | 0-1 | -0.14 |
+| Liberal democracy index | `v2x_libdem` | 2025 | 0.05 | 0-1 | -0.07 |
+| Electoral integrity index | `v2x_electoral_integrity` | 2025 | 0.28 | 0-1 | -0.27 |
+| Clean elections index | `v2xel_frefair` | 2025 | 0.09 | 0-1 | -0.15 |
+| Party system institutionalization | `v2xps_party` | 2025 | 0.32 | 0-1 | -0.14 |
+| Legislative constraints on the executive | `v2xlg_legcon` | 2025 | 0.05 | 0-1 | -0.12 |
+| Judicial constraints on the executive | `v2x_jucon` | 2025 | 0.07 | 0-1 | -0.05 |
+| Rule of law index | `v2xcl_rol` | 2025 | 0.20 | 0-1 | -0.23 |
+| Political corruption index | `v2x_corr` | 2025 | 0.90 | 0-1, higher means more corruption | 0.00 |
+| Public-sector corruption index | `v2x_pubcorr` | 2025 | 0.86 | 0-1, higher means more corruption | 0.00 |
+| Regime of the World classification | `v2x_regime` | 2025 | 1.00 | 0 closed autocracy, 1 electoral autocracy, 2 electoral democracy, 3 liberal democracy | 0.00 |
+| Voice and accountability | `VA.EST` | 2023 | -0.90 | WGI estimate | 0.42 |
+| Political stability and absence of violence/terrorism | `PV.EST` | 2023 | 0.03 | WGI estimate | 1.35 |
+| Rule of law | `RL.EST` | 2023 | -0.57 | WGI estimate | 1.27 |
+| Control of corruption | `CC.EST` | 2023 | -0.91 | WGI estimate | 0.73 |
+
+### Political-system trajectory in V-Dem indicators
+
+  Source: V-Dem vdemdata, table IDs v2x_polyarchy, v2x_libdem, v2x_electoral_integrity, and v2x_jucon. Unit: index from 0 to 1. Processed file: KHM/processed/political_system_diagnostics.csv.
+
+    document.addEventListener(&#x27;DOMContentLoaded&#x27;, function () {
+      var el = document.getElementById(&#x27;vdem-politics-khm&#x27;);
+      if (!el || !window.Chart) return;
+      new Chart(el, {
+        type: &#x27;line&#x27;,
+        data: { labels: [1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025], datasets: [{&quot;label&quot;: &quot;Electoral democracy&quot;, &quot;data&quot;: [0.365, 0.365, 0.347, 0.321, 0.318, 0.317, 0.317, 0.321, 0.324, 0.32, 0.32, 0.319, 0.316, 0.308, 0.308, 0.308, 0.305, 0.297, 0.293, 0.291, 0.275, 0.234, 0.211, 0.194, 0.191, 0.19, 0.199, 0.189, 0.184, 0.183], &quot;borderColor&quot;: &quot;#0f6f87&quot;, &quot;backgroundColor&quot;: &quot;#0f6f87&quot;, &quot;tension&quot;: 0.25, &quot;spanGaps&quot;: true}, {&quot;label&quot;: &quot;Liberal democracy&quot;, &quot;data&quot;: [0.14, 0.137, 0.132, 0.125, 0.124, 0.126, 0.124, 0.126, 0.126, 0.123, 0.123, 0.123, 0.121, 0.118, 0.118, 0.118, 0.118, 0.114, 0.114, 0.115, 0.103, 0.078, 0.07, 0.066, 0.063, 0.059, 0.059, 0.052, 0.048, 0.051], &quot;borderColor&quot;: &quot;#34675c&quot;, &quot;backgroundColor&quot;: &quot;#34675c&quot;, &quot;tension&quot;: 0.25, &quot;spanGaps&quot;: true}, {&quot;label&quot;: &quot;Electoral integrity&quot;, &quot;data&quot;: [0.578, 0.574, 0.554, 0.551, 0.549, 0.547, 0.547, 0.523, 0.518, 0.514, 0.518, 0.518, 0.502, 0.506, 0.5, 0.501, 0.488, 0.483, 0.479, 0.475, 0.449, 0.369, 0.298, 0.297, 0.307, 0.306, 0.315, 0.296, 0.287, 0.277], &quot;borderColor&quot;: &quot;#7a5c00&quot;, &quot;backgroundColor&quot;: &quot;#7a5c00&quot;, &quot;tension&quot;: 0.25, &quot;spanGaps&quot;: true}, {&quot;label&quot;: &quot;Judicial constraints&quot;, &quot;data&quot;: [0.145, 0.145, 0.107, 0.122, 0.122, 0.122, 0.122, 0.122, 0.122, 0.122, 0.122, 0.122, 0.122, 0.122, 0.122, 0.122, 0.122, 0.135, 0.135, 0.135, 0.135, 0.105, 0.105, 0.116, 0.105, 0.105, 0.105, 0.09, 0.071, 0.072], &quot;borderColor&quot;: &quot;#8a3b4a&quot;, &quot;backgroundColor&quot;: &quot;#8a3b4a&quot;, &quot;tension&quot;: 0.25, &quot;spanGaps&quot;: true}] },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          interaction: { mode: &#x27;index&#x27;, intersect: false },
+          plugins: { legend: { position: &#x27;bottom&#x27; } },
+          scales: {
+            x: { title: { display: true, text: &#x27;Year&#x27; } },
+            y: { min: 0, max: 1, title: { display: true, text: &#x27;V-Dem index (0-1)&#x27; } }
+          }
+        }
+      });
+    });
+
+The political-governance indicators are best read as a profile of constraints, not as a democracy ranking. Voice and accountability is -0.90, political stability is 0.03, rule of law is -0.57, and control of corruption is -0.91. A country may hold regular elections but still show weak judicial constraints, low corruption control, or limited legislative oversight. Conversely, a centralized political order may score comparatively well on stability while still limiting electoral competition and accountability. The analytical task is to identify which part of the political system explains policy predictability, administrative discretion, reform credibility, and the risks faced by citizens, firms, courts, local governments, and opposition actors.
+
+### Political accountability, stability, rule of law, and corruption control
+
+  Source: World Bank Worldwide Governance Indicators table IDs VA.EST, PV.EST, RL.EST, and CC.EST. Unit: WGI estimate, approximately -2.5 to 2.5. Processed file: KHM/processed/political_system_diagnostics.csv.
+
+    document.addEventListener(&#x27;DOMContentLoaded&#x27;, function () {
+      var el = document.getElementById(&#x27;wgi-politics-khm&#x27;);
+      if (!el || !window.Chart) return;
+      new Chart(el, {
+        type: &#x27;line&#x27;,
+        data: { labels: [2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023], datasets: [{&quot;label&quot;: &quot;Voice and accountability&quot;, &quot;data&quot;: [-1.55, -1.58, -1.55, -1.63, -1.67, -1.88, -1.91, -1.88, -1.96, -2.1, -2.07, -2.31, -2.44, -1.83, -0.9], &quot;borderColor&quot;: &quot;#0f6f87&quot;, &quot;backgroundColor&quot;: &quot;#0f6f87&quot;, &quot;tension&quot;: 0.25, &quot;spanGaps&quot;: true}, {&quot;label&quot;: &quot;Political stability&quot;, &quot;data&quot;: [-0.95, -0.85, -0.52, -0.18, -0.23, 0.04, 0.11, 0.35, 0.16, 0.19, -0.13, -0.36, -0.22, -0.09, 0.03], &quot;borderColor&quot;: &quot;#34675c&quot;, &quot;backgroundColor&quot;: &quot;#34675c&quot;, &quot;tension&quot;: 0.25, &quot;spanGaps&quot;: true}, {&quot;label&quot;: &quot;Rule of law&quot;, &quot;data&quot;: [-1.91, -1.91, -1.79, -1.67, -1.71, -1.62, -1.69, -1.83, -1.82, -1.92, -1.62, -1.63, -1.56, -1.21, -0.57], &quot;borderColor&quot;: &quot;#7a5c00&quot;, &quot;backgroundColor&quot;: &quot;#7a5c00&quot;, &quot;tension&quot;: 0.25, &quot;spanGaps&quot;: true}, {&quot;label&quot;: &quot;Control of corruption&quot;, &quot;data&quot;: [-2.01, -2.12, -2.13, -1.84, -1.81, -1.95, -1.95, -2.21, -2.23, -2.3, -2.24, -2.16, -2.03, -1.74, -0.91], &quot;borderColor&quot;: &quot;#8a3b4a&quot;, &quot;backgroundColor&quot;: &quot;#8a3b4a&quot;, &quot;tension&quot;: 0.25, &quot;spanGaps&quot;: true}] },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          interaction: { mode: &#x27;index&#x27;, intersect: false },
+          plugins: { legend: { position: &#x27;bottom&#x27; } },
+          scales: {
+            x: { title: { display: true, text: &#x27;Year&#x27; } },
+            y: { title: { display: true, text: &#x27;WGI estimate (-2.5 to 2.5)&#x27; } }
+          }
+        }
+      });
+    });
+
+Sources: V-Dem vdemdata table IDs `v2x_polyarchy`, `v2x_libdem`, `v2x_electoral_integrity`, `v2xel_frefair`, `v2xps_party`, `v2xlg_legcon`, `v2x_jucon`, `v2xcl_rol`, `v2x_corr`, `v2x_pubcorr`, and `v2x_regime`; World Bank WGI table IDs `VA.EST`, `PV.EST`, `RL.EST`, and `CC.EST`. Processed file: `KHM/processed/political_system_diagnostics.csv`; source note: `KHM/sources/documents/international_diagnostics/political_system_source_note.md`.
+
+The political diagnosis combines Cambodia&#x27;s constitutional allocation of authority with comparative governance indicators that capture accountability, rule of law, and corruption-control constraints (Royal Government of Cambodia, 1993; World Bank, 2025b).</textarea>
+</article>
+</main>
+</div>
+<script>
+    window.REPORT_CHARTS = [];
+    document.addEventListener('DOMContentLoaded', () => {
+      if (!window.Chart || !window.REPORT_CHARTS) return;
+      window.REPORT_CHARTS.forEach((entry) => {
+        const cfg = entry.data || {};
+        const el = document.getElementById('chart-' + entry.id);
+        if (!el || !cfg.datasets) return;
+        const colors = ['#197278', '#246b46', '#b7860b', '#7b2d26', '#3f4e9a', '#6a4c93'];
+        const dashes = [[], [8, 4], [2, 3], [10, 4, 2, 4], [1, 4], [12, 3, 3, 3]];
+        const pointStyles = ['circle', 'rect', 'triangle', 'rectRot', 'crossRot', 'star'];
+        const datasets = (cfg.datasets || []).map((dataset, i) => ({
+          ...dataset,
+          borderColor: dataset.borderColor || colors[i % colors.length],
+          backgroundColor: dataset.backgroundColor || 'transparent',
+          borderDash: dataset.borderDash || dashes[i % dashes.length],
+          borderWidth: dataset.borderWidth || 2.4,
+          pointStyle: dataset.pointStyle || pointStyles[i % pointStyles.length],
+          pointRadius: dataset.pointRadius ?? 1.8,
+          tension: dataset.tension ?? 0.25,
+          spanGaps: dataset.spanGaps ?? true
+        }));
+        new Chart(el, {
+          type: 'line',
+          data: { labels: cfg.labels || [], datasets },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            interaction: { mode: 'index', intersect: false },
+            plugins: { legend: { position: 'bottom', labels: { boxWidth: 28 } } },
+            scales: { x: { title: { display: true, text: 'Year' } }, y: { title: { display: true, text: cfg.unit || 'Value' } } }
+          }
+        });
+      });
+    });
+  </script>
+  <script src="../assets/report.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  function fallbackMarkdown(text) {
+    const escaped = text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    return escaped.split(/\n{2,}/).map((block) => `<p>${block.replace(/\n/g, "<br>")}</p>`).join("");
+  }
+  function renderMarkdown(text) {
+    return window.marked ? marked.parse(text) : fallbackMarkdown(text);
+  }
+  document.querySelectorAll('[data-md-panel]').forEach((panel) => {
+    const id = panel.getAttribute('data-md-panel');
+    const source = panel.getAttribute('data-md-source');
+    const preview = panel.querySelector('.md-preview');
+    const editor = panel.querySelector('.md-editor');
+    const edit = panel.querySelector('[data-md-action="edit"]');
+    const save = panel.querySelector('[data-md-action="save"]');
+    const cancel = panel.querySelector('[data-md-action="cancel"]');
+    if (!preview || !editor || !edit || !save || !cancel) return;
+    const storageKey = `country-report-markdown:v1:${source || id}`;
+    const original = editor.value;
+    const stored = localStorage.getItem(storageKey);
+    const hasStoredDraft = stored !== null && (!source || window.location.protocol === 'file:');
+    if (hasStoredDraft) editor.value = stored;
+    const showPreview = () => { preview.innerHTML = renderMarkdown(editor.value); };
+    const setEditing = (editing) => {
+      editor.hidden = !editing;
+      preview.hidden = editing;
+      edit.hidden = editing;
+      save.hidden = !editing;
+      cancel.hidden = !editing;
+    };
+    async function saveMarkdown() {
+      if (source && window.location.protocol.startsWith('http')) {
+        const response = await fetch('/api/save-section', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ source, markdown: editor.value })
+        });
+        if (!response.ok) throw new Error(await response.text());
+        localStorage.removeItem(storageKey);
+        return true;
+      } else {
+        localStorage.setItem(storageKey, editor.value);
+        if (source) window.alert('This edit was saved only as a browser draft. Open the report through code/serve_report.py to save it permanently to the Markdown source file.');
+        return false;
+      }
+    }
+    if (hasStoredDraft) showPreview();
+    setEditing(false);
+    edit.addEventListener('click', () => setEditing(true));
+    save.addEventListener('click', async () => {
+      save.disabled = true;
+      try {
+        const savedToServer = await saveMarkdown();
+        if (savedToServer) {
+          window.location.reload();
+          return;
+        }
+        showPreview();
+        setEditing(false);
+      } catch (error) {
+        window.alert(error.message || 'Could not save the Markdown source.');
+      } finally {
+        save.disabled = false;
+      }
+    });
+    cancel.addEventListener('click', () => {
+      editor.value = localStorage.getItem(storageKey) ?? original;
+      if (hasStoredDraft || window.location.protocol === 'file:') showPreview();
+      setEditing(false);
+    });
+  });
+});
+</script>
+
+</body>
+</html>

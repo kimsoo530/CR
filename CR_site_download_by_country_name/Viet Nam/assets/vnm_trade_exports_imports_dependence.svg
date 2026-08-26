@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 760" role="img" aria-label="Vietnam exports imports and trade dependence trends">
+  
+  <style>
+    .title{font:700 28px Arial,sans-serif;fill:#172026}
+    .subtitle{font:15px Arial,sans-serif;fill:#526069}
+    .panel-title{font:700 17px Arial,sans-serif;fill:#172026}
+    .panel-y{font:11px Arial,sans-serif;fill:#526069;text-anchor:end}
+    .panel-x{font:11px Arial,sans-serif;fill:#526069;text-anchor:middle}
+    .panel-last{font:700 11px Arial,sans-serif;fill:#172026}
+    .legend{font:11px Arial,sans-serif;fill:#526069}
+    .label{font:12px Arial,sans-serif;fill:#526069}
+    .small{font:11px Arial,sans-serif;fill:#65717a}
+    .value{font:700 18px Arial,sans-serif;fill:#172026}
+    .source{font:12px Arial,sans-serif;fill:#65717a}
+  </style>
+  <rect width="1100" height="760" fill="#f6f4ee"/>
+  <text x="54" y="44" class="title">Viet Nam Export-Import Scale and Trade Dependence</text>
+  <text x="54" y="68" class="subtitle">Goods trade expanded from a small post-Doi Moi base into a highly open manufacturing-trade system.</text>
+  
+  <rect x="54" y="98" width="238" height="92" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="72" y="126" class="label">Goods exports, 2025</text>
+  <text x="72" y="154" class="value">USD 475 bn</text>
+  <text x="72" y="176" class="small">NSO 2025</text>
+  
+  <rect x="306" y="98" width="238" height="92" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="324" y="126" class="label">Goods imports, 2025</text>
+  <text x="324" y="154" class="value">USD 455 bn</text>
+  <text x="324" y="176" class="small">NSO 2025</text>
+  
+  <rect x="558" y="98" width="238" height="92" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="576" y="126" class="label">Trade openness, 2024</text>
+  <text x="576" y="154" class="value">173.9% of GDP</text>
+  <text x="576" y="176" class="small">WDI goods and services</text>
+  
+  <rect x="810" y="98" width="238" height="92" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="828" y="126" class="label">Goods trade balance, 2025</text>
+  <text x="828" y="154" class="value">USD 20.0 bn</text>
+  <text x="828" y="176" class="small">Exports minus imports</text>
+  <rect x="54" y="236" width="992" height="240" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="76" y="268" class="panel-title">Merchandise exports and imports, current US$ billions</text>
+  <line x1="108" y1="430.00" x2="1016" y2="430.00" stroke="#edf2ef"/>
+  <text x="98" y="434.00" class="panel-y">0</text>
+  <line x1="108" y1="402.80" x2="1016" y2="402.80" stroke="#edf2ef"/>
+  <text x="98" y="406.80" class="panel-y">100</text>
+  <line x1="108" y1="375.60" x2="1016" y2="375.60" stroke="#edf2ef"/>
+  <text x="98" y="379.60" class="panel-y">200</text>
+  <line x1="108" y1="348.40" x2="1016" y2="348.40" stroke="#edf2ef"/>
+  <text x="98" y="352.40" class="panel-y">300</text>
+  <line x1="108" y1="321.20" x2="1016" y2="321.20" stroke="#edf2ef"/>
+  <text x="98" y="325.20" class="panel-y">400</text>
+  <line x1="108" y1="294.00" x2="1016" y2="294.00" stroke="#edf2ef"/>
+  <text x="98" y="298.00" class="panel-y">500</text>
+  <line x1="108.00" y1="294" x2="108.00" y2="430" stroke="#f1f4f5"/>
+  <text x="108.00" y="454" class="panel-x">1990</text>
+  <line x1="367.43" y1="294" x2="367.43" y2="430" stroke="#f1f4f5"/>
+  <text x="367.43" y="454" class="panel-x">2000</text>
+  <line x1="626.86" y1="294" x2="626.86" y2="430" stroke="#f1f4f5"/>
+  <text x="626.86" y="454" class="panel-x">2010</text>
+  <line x1="886.29" y1="294" x2="886.29" y2="430" stroke="#f1f4f5"/>
+  <text x="886.29" y="454" class="panel-x">2020</text>
+  <line x1="1016.00" y1="294" x2="1016.00" y2="430" stroke="#f1f4f5"/>
+  <text x="1016.00" y="454" class="panel-x">2025</text>
+  <path d="M108.00,429.35 L133.94,429.43 L159.89,429.30 L185.83,429.19 L211.77,428.90 L237.71,428.52 L263.66,428.03 L289.60,427.50 L315.54,427.45 L341.49,426.86 L367.43,426.06 L393.37,425.91 L419.31,425.46 L445.26,424.52 L471.20,422.80 L497.14,421.18 L523.09,419.17 L549.03,416.79 L574.97,412.95 L600.91,414.47 L626.86,410.35 L652.80,403.64 L678.74,398.85 L704.69,394.09 L730.63,389.14 L756.57,385.92 L782.51,381.97 L808.46,371.52 L834.40,363.71 L860.34,358.12 L886.29,353.12 L912.23,338.61 L938.17,329.01 L964.11,333.77 L990.06,319.89 L1016.00,300.79" fill="none" stroke="#176b63" stroke-width="3"/>
+  <circle cx="1016.00" cy="300.79" r="4" fill="#176b63" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="964.00" y="292.79" class="panel-last">475</text>
+  <rect x="76" y="446" width="10" height="10" fill="#176b63" rx="2"/>
+  <text x="92" y="455" class="legend">Exports</text>
+  <path d="M108.00,429.25 L133.94,429.36 L159.89,429.31 L185.83,429.04 L211.77,428.42 L237.71,427.78 L263.66,426.97 L289.60,426.85 L315.54,426.87 L341.49,426.81 L367.43,425.75 L393.37,425.59 L419.31,424.63 L445.26,423.13 L471.20,421.30 L497.14,420.00 L523.09,417.76 L549.03,412.95 L574.97,408.05 L600.91,410.97 L626.86,406.92 L652.80,400.96 L678.74,399.05 L704.69,394.09 L730.63,389.79 L756.57,384.95 L782.51,382.45 L808.46,372.09 L834.40,365.57 L860.34,361.08 L886.29,358.55 L912.23,339.57 L938.17,332.31 L964.11,341.39 L990.06,326.50 L1016.00,306.24" fill="none" stroke="#7c2f2a" stroke-width="3"/>
+  <circle cx="1016.00" cy="306.24" r="4" fill="#7c2f2a" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="964.00" y="298.24" class="panel-last">455</text>
+  <rect x="218" y="446" width="10" height="10" fill="#7c2f2a" rx="2"/>
+  <text x="234" y="455" class="legend">Imports</text>
+  <rect x="54" y="512" width="476" height="170" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="76" y="544" class="panel-title">Trade openness</text>
+  <line x1="108" y1="636.00" x2="500" y2="636.00" stroke="#edf2ef"/>
+  <text x="98" y="640.00" class="panel-y">50%</text>
+  <line x1="108" y1="614.00" x2="500" y2="614.00" stroke="#edf2ef"/>
+  <text x="98" y="618.00" class="panel-y">100%</text>
+  <line x1="108" y1="592.00" x2="500" y2="592.00" stroke="#edf2ef"/>
+  <text x="98" y="596.00" class="panel-y">150%</text>
+  <line x1="108" y1="570.00" x2="500" y2="570.00" stroke="#edf2ef"/>
+  <text x="98" y="574.00" class="panel-y">200%</text>
+  <line x1="108.00" y1="570" x2="108.00" y2="636" stroke="#f1f4f5"/>
+  <text x="108.00" y="660" class="panel-x">1990</text>
+  <line x1="223.29" y1="570" x2="223.29" y2="636" stroke="#f1f4f5"/>
+  <text x="223.29" y="660" class="panel-x">2000</text>
+  <line x1="338.59" y1="570" x2="338.59" y2="636" stroke="#f1f4f5"/>
+  <text x="338.59" y="660" class="panel-x">2010</text>
+  <line x1="453.88" y1="570" x2="453.88" y2="636" stroke="#f1f4f5"/>
+  <text x="453.88" y="660" class="panel-x">2020</text>
+  <line x1="500.00" y1="570" x2="500.00" y2="636" stroke="#f1f4f5"/>
+  <text x="500.00" y="660" class="panel-x">2024</text>
+  <path d="M108.00,622.22 L119.53,628.54 L131.06,625.63 L142.59,628.87 L154.12,623.91 L165.65,625.12 L177.18,617.21 L188.71,616.49 L200.24,615.32 L211.76,612.77 L223.29,608.98 L234.82,608.74 L246.35,606.65 L257.88,603.30 L269.41,599.47 L280.94,600.49 L292.47,597.14 L304.00,589.97 L315.53,590.10 L327.06,598.73 L338.59,607.85 L350.12,602.89 L361.65,603.78 L373.18,600.43 L384.71,598.42 L396.24,594.24 L407.76,594.02 L419.29,587.17 L430.82,585.55 L442.35,585.53 L453.88,586.17 L465.41,575.86 L476.94,577.41 L488.47,585.48 L500.00,581.50" fill="none" stroke="#345995" stroke-width="3"/>
+  <circle cx="500.00" cy="581.50" r="4" fill="#345995" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="448.00" y="573.50" class="panel-last">174%</text>
+  <rect x="76" y="652" width="10" height="10" fill="#345995" rx="2"/>
+  <text x="92" y="661" class="legend">Trade/GDP</text>
+  <rect x="570" y="512" width="476" height="170" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="592" y="544" class="panel-title">Merchandise trade balance</text>
+  <line x1="624" y1="636.00" x2="1016" y2="636.00" stroke="#edf2ef"/>
+  <text x="614" y="640.00" class="panel-y">-40</text>
+  <line x1="624" y1="619.50" x2="1016" y2="619.50" stroke="#edf2ef"/>
+  <text x="614" y="623.50" class="panel-y">-20</text>
+  <line x1="624" y1="603.00" x2="1016" y2="603.00" stroke="#edf2ef"/>
+  <text x="614" y="607.00" class="panel-y">0</text>
+  <line x1="624" y1="586.50" x2="1016" y2="586.50" stroke="#edf2ef"/>
+  <text x="614" y="590.50" class="panel-y">20</text>
+  <line x1="624" y1="570.00" x2="1016" y2="570.00" stroke="#edf2ef"/>
+  <text x="614" y="574.00" class="panel-y">40</text>
+  <line x1="624.00" y1="570" x2="624.00" y2="636" stroke="#f1f4f5"/>
+  <text x="624.00" y="660" class="panel-x">1990</text>
+  <line x1="736.00" y1="570" x2="736.00" y2="636" stroke="#f1f4f5"/>
+  <text x="736.00" y="660" class="panel-x">2000</text>
+  <line x1="848.00" y1="570" x2="848.00" y2="636" stroke="#f1f4f5"/>
+  <text x="848.00" y="660" class="panel-x">2010</text>
+  <line x1="960.00" y1="570" x2="960.00" y2="636" stroke="#f1f4f5"/>
+  <text x="960.00" y="660" class="panel-x">2020</text>
+  <line x1="1016.00" y1="570" x2="1016.00" y2="636" stroke="#f1f4f5"/>
+  <text x="1016.00" y="660" class="panel-x">2025</text>
+  <path d="M624.00,603.29 L635.20,603.21 L646.40,602.97 L657.60,603.45 L668.80,604.46 L680.00,605.23 L691.20,606.21 L702.40,604.99 L713.60,604.76 L724.80,603.17 L736.00,603.95 L747.20,603.98 L758.40,605.51 L769.60,607.21 L780.80,607.52 L792.00,606.56 L803.20,607.28 L814.40,614.65 L825.60,617.87 L836.80,613.60 L848.00,613.40 L859.20,611.12 L870.40,602.38 L881.60,603.00 L892.80,601.05 L904.00,605.92 L915.20,601.53 L926.40,601.27 L937.60,597.36 L948.80,594.03 L960.00,586.56 L971.20,600.09 L982.40,592.98 L993.60,579.90 L1004.80,582.95 L1016.00,586.48" fill="none" stroke="#b8873a" stroke-width="3"/>
+  <circle cx="1016.00" cy="586.48" r="4" fill="#b8873a" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="964.00" y="578.48" class="panel-last">20</text>
+  <rect x="592" y="652" width="10" height="10" fill="#b8873a" rx="2"/>
+  <text x="608" y="661" class="legend">Balance</text>
+  <text x="54" y="726" class="source">Sources: World Bank WDI API for 1990-2024 merchandise trade, trade openness, and balance; National Statistics Office of Viet Nam 2025 goods exports/imports.</text>
+</svg>

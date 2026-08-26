@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 720" role="img" aria-label="Vietnam growth driver model framework">
+  
+  <style>
+    .title{font:700 28px Arial,sans-serif;fill:#172026}
+    .subtitle{font:15px Arial,sans-serif;fill:#526069}
+    .panel-title{font:700 17px Arial,sans-serif;fill:#172026}
+    .label{font:12px Arial,sans-serif;fill:#526069}
+    .small{font:11px Arial,sans-serif;fill:#65717a}
+    .value{font:700 22px Arial,sans-serif;fill:#172026}
+    .source{font:12px Arial,sans-serif;fill:#65717a}
+  </style>
+  <rect width="1100" height="720" fill="#f6f4ee"/>
+  <text x="54" y="44" class="title">Growth Driver Model for Viet Nam</text>
+  <text x="54" y="68" class="subtitle">The section treats growth as the interaction of capital, openness, human capability, demography, macro stability, and state coordination.</text>
+  <rect x="330" y="286" width="440" height="128" rx="12" fill="#ffffff" stroke="#172026" stroke-width="2"/>
+  <text x="550" y="330" text-anchor="middle" class="panel-title">GDP growth and growth acceleration</text>
+  <text x="550" y="360" text-anchor="middle" class="label">Outcome variable: annual real GDP growth</text>
+  <text x="550" y="382" text-anchor="middle" class="label">Diagnostic model: first differences in growth drivers</text>
+  <g fill="#ffffff" stroke="#d7dee2">
+    <rect x="64" y="126" width="260" height="112" rx="10"/>
+    <rect x="420" y="126" width="260" height="112" rx="10"/>
+    <rect x="776" y="126" width="260" height="112" rx="10"/>
+    <rect x="64" y="482" width="260" height="112" rx="10"/>
+    <rect x="420" y="482" width="260" height="112" rx="10"/>
+    <rect x="776" y="482" width="260" height="112" rx="10"/>
+  </g>
+  <g stroke="#b8873a" stroke-width="2.5" fill="none" marker-end="url(#arrow)">
+    <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#b8873a"/></marker></defs>
+    <path d="M324 184 C396 214 426 246 466 286"/>
+    <path d="M550 238 L550 286"/>
+    <path d="M776 184 C704 214 674 246 634 286"/>
+    <path d="M324 538 C396 508 426 456 466 414"/>
+    <path d="M550 482 L550 414"/>
+    <path d="M776 538 C704 508 674 456 634 414"/>
+  </g>
+  <text x="86" y="160" class="panel-title">Capital deepening</text>
+  <text x="86" y="188" class="label">Gross capital formation</text>
+  <text x="86" y="210" class="label">Public investment and fixed assets</text>
+  <text x="442" y="160" class="panel-title">FDI and export platforms</text>
+  <text x="442" y="188" class="label">Foreign direct investment</text>
+  <text x="442" y="210" class="label">Supplier links and technology transfer</text>
+  <text x="798" y="160" class="panel-title">Trade openness</text>
+  <text x="798" y="188" class="label">Exports plus imports relative to GDP</text>
+  <text x="798" y="210" class="label">Global value-chain integration</text>
+  <text x="86" y="516" class="panel-title">Human development</text>
+  <text x="86" y="544" class="label">HDI, education, health, skills</text>
+  <text x="86" y="566" class="label">Capability for productivity growth</text>
+  <text x="442" y="516" class="panel-title">Demography and labor</text>
+  <text x="442" y="544" class="label">Population and labor-force growth</text>
+  <text x="442" y="566" class="label">Urbanization and reallocation</text>
+  <text x="798" y="516" class="panel-title">Macro stability</text>
+  <text x="798" y="544" class="label">Inflation and financial confidence</text>
+  <text x="798" y="566" class="label">Policy credibility and risk control</text>
+  <rect x="78" y="630" width="944" height="48" rx="8" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="98" y="660" class="label">Model A: Delta GDP_growth = beta0 + beta1 Delta investment + beta2 Delta FDI + beta3 Delta HDI + beta4 Delta population + beta5 Delta trade + beta6 Delta inflation + error.</text>
+</svg>

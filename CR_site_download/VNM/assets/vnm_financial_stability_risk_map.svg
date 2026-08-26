@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 820" role="img" aria-label="Vietnam financial stability risk transmission map">
+  
+  <style>
+    .title{font:700 28px Arial,sans-serif;fill:#172026}
+    .subtitle{font:15px Arial,sans-serif;fill:#526069}
+    .panel-title{font:700 16px Arial,sans-serif;fill:#172026}
+    .panel-y{font:11px Arial,sans-serif;fill:#526069;text-anchor:end}
+    .panel-x{font:11px Arial,sans-serif;fill:#526069;text-anchor:middle}
+    .panel-last{font:700 11px Arial,sans-serif;fill:#172026}
+    .legend{font:11px Arial,sans-serif;fill:#526069}
+    .label{font:12px Arial,sans-serif;fill:#526069}
+    .small{font:11px Arial,sans-serif;fill:#65717a}
+    .value{font:700 22px Arial,sans-serif;fill:#172026}
+    .source{font:12px Arial,sans-serif;fill:#65717a}
+    .box-title{font:700 14px Arial,sans-serif;fill:#172026}
+    .box-text{font:12px Arial,sans-serif;fill:#526069}
+  </style>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#65717a"/></marker></defs>
+  <rect width="1100" height="820" fill="#f6f4ee"/>
+  <text x="54" y="44" class="title">Financial Stability Risk Map and Reform Priorities</text>
+  <text x="54" y="68" class="subtitle">Risk moves through a chain; reform has to target the links, not only the headline symptoms.</text>
+  
+  <rect x="54" y="128" width="256" height="112" rx="10" fill="#ffffff" stroke="#176b63" stroke-width="2"/>
+  <text x="70" y="156" class="box-title">1. Credit expansion</text>
+  <text x="70" y="182" class="box-text">supports growth but can weaken underwriting</text>
+  
+  <rect x="364" y="128" width="256" height="112" rx="10" fill="#ffffff" stroke="#7c2f2a" stroke-width="2"/>
+  <text x="380" y="156" class="box-title">2. Real estate</text>
+  <text x="380" y="182" class="box-text">collateral, developers, land revenue, households</text>
+  
+  <rect x="674" y="128" width="256" height="112" rx="10" fill="#ffffff" stroke="#b8873a" stroke-width="2"/>
+  <text x="690" y="156" class="box-title">3. Corporate bonds</text>
+  <text x="690" y="182" class="box-text">long-term finance or hidden credit risk</text>
+  
+  <rect x="674" y="340" width="256" height="112" rx="10" fill="#ffffff" stroke="#345995" stroke-width="2"/>
+  <text x="690" y="368" class="box-title">4. Banks and SOCBs</text>
+  <text x="690" y="394" class="box-text">NPLs, capital, liquidity, policy lending</text>
+  
+  <rect x="364" y="340" width="256" height="112" rx="10" fill="#ffffff" stroke="#8b5e34" stroke-width="2"/>
+  <text x="380" y="368" class="box-title">5. SBV and state</text>
+  <text x="380" y="394" class="box-text">liquidity, resolution, FX, confidence</text>
+  
+  <rect x="54" y="340" width="256" height="112" rx="10" fill="#ffffff" stroke="#176b63" stroke-width="2"/>
+  <text x="70" y="368" class="box-title">6. Households and firms</text>
+  <text x="70" y="394" class="box-text">payments, savings, credit access, trust</text>
+  
+  <path d="M310 184 L364 184" stroke="#65717a" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M620 184 L674 184" stroke="#65717a" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M846 252 L846 314" stroke="#65717a" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M674 396 L620 396" stroke="#65717a" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M364 396 L310 396" stroke="#65717a" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="54" y="516" width="992" height="152" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="76" y="550" class="panel-title">Reform priorities</text>
+  <text x="76" y="586" class="box-text">Bank capital and liquidity buffers | NPL recognition and collateral enforcement | Corporate-bond disclosure and restructuring</text>
+  <text x="76" y="616" class="box-text">Macroprudential tools for real-estate and household leverage | Crisis preparedness and deposit insurance | Fintech, crypto, AML/CFT, and cyber supervision</text>
+  <text x="76" y="646" class="box-text">The administrative challenge is early action: supervisors need data, authority, coordination, and credible enforcement before stress becomes systemic.</text>
+  
+  <rect x="54" y="690" width="238" height="92" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="70" y="716" class="label">NPL ratio</text>
+  <text x="70" y="748" class="value" fill="#7c2f2a">5.3%</text>
+  <text x="70" y="768" class="small">IMF Mar. 2025 estimate</text>
+  
+  <rect x="306" y="690" width="238" height="92" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="322" y="716" class="label">Liquid assets</text>
+  <text x="322" y="748" class="value" fill="#176b63">7.8%</text>
+  <text x="322" y="768" class="small">of total assets, Jun. 2024</text>
+  
+  <rect x="558" y="690" width="238" height="92" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="574" y="716" class="label">SOCB assets</text>
+  <text x="574" y="748" class="value" fill="#345995">42%</text>
+  <text x="574" y="768" class="small">system role and capital need</text>
+  
+  <rect x="810" y="690" width="238" height="92" rx="10" fill="#ffffff" stroke="#d7dee2"/>
+  <text x="826" y="716" class="label">Crypto flows</text>
+  <text x="826" y="748" class="value" fill="#b8873a">38% GDP</text>
+  <text x="826" y="768" class="small">IMF/Chainalysis 2024 estimate</text>
+  <text x="54" y="806" class="source">Sources: IMF 2025 Article IV; Law on Credit Institutions No. 32/2024/QH15; Decrees 65/2022, 08/2023, and 94/2025; SBV credit and payment reporting.</text>
+</svg>

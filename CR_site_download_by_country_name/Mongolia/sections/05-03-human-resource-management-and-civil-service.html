@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>5.3 Human Resource Management and Civil Service | Mongolia Country Report</title>
+  <script src="../assets/marked.min.js"></script>
+  <script src="../assets/chart.umd.min.js"></script>
+  <style>
+    :root { --ink: #162029; --muted: #62707c; --line: #d8e0e6; --panel: #f5f7f8; --accent: #0f6f78; --accent2: #7a5b1e; --paper: #ffffff; --soft: #edf5f2; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: var(--ink); background: var(--paper); line-height: 1.62; }
+    .layout { display: grid; grid-template-columns: 310px minmax(0, 1fr); min-height: 100vh; }
+    .toc { position: sticky; top: 0; height: 100vh; overflow: auto; border-right: 1px solid var(--line); background: var(--panel); padding: 22px 18px; }
+    .toc h1 { font-size: 20px; margin: 0 0 6px; }
+    .toc h1 a { color: var(--ink); text-decoration: none; }
+    .toc p { color: var(--muted); font-size: 13px; margin: 0 0 18px; }
+    nav a { display: block; color: var(--ink); text-decoration: none; padding: 8px 10px; border-radius: 6px; font-size: 14px; }
+    nav a:hover, nav a.active { background: #e3f0ef; color: var(--accent); }
+    .chapter-link { font-weight: 700; }
+    .toc-group { margin: 1px 0; border-radius: 6px; }
+    .toc-group summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 4px; }
+    .toc-group summary::-webkit-details-marker { display: none; }
+    .toc-group summary::before { content: ">"; color: var(--muted); font-size: 12px; transition: transform .12s ease; }
+    .toc-group[open] summary::before { transform: rotate(90deg); }
+    .toc-group summary a { flex: 1; }
+    .section-nav { margin: 2px 0 8px 8px; padding-left: 10px; border-left: 2px solid #cdd9df; }
+    .section-link { padding: 5px 8px; font-size: 12px; color: var(--muted); line-height: 1.35; }
+    main { padding: 34px min(6vw, 82px); max-width: 1120px; }
+    .hero { border-bottom: 1px solid var(--line); padding-bottom: 20px; margin-bottom: 24px; }
+    .hero h2 { font-size: 34px; margin: 0 0 8px; letter-spacing: 0; }
+    .hero p, .chapter-landing-note { color: var(--muted); max-width: 860px; }
+    .chapter-thesis { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 16px; border: 1px solid var(--line); border-radius: 8px; padding: 14px; background: var(--soft); margin: 18px 0; }
+    .chapter-thesis b { color: var(--accent); }
+    .chapter-section-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 12px; margin: 18px 0 28px; }
+    .chapter-section-card { border: 1px solid var(--line); border-radius: 8px; background: #fff; padding: 14px; }
+    .chapter-section-card a { display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: 10px; align-items: start; text-decoration: none; color: var(--ink); }
+    .chapter-section-card span { font-weight: 800; color: var(--accent); font-size: 15px; }
+    .chapter-section-card strong { font-size: 16px; line-height: 1.35; }
+    .chapter-section-card p { color: var(--muted); font-size: 13px; margin: 10px 0 0; }
+    .section-reading { max-width: 940px; }
+    .editable-prose { border: 1px solid var(--line); border-radius: 8px; background: #fff; overflow: hidden; }
+    .prose-toolbar { display: flex; justify-content: space-between; gap: 10px; align-items: center; border-bottom: 1px solid var(--line); background: #f8fafb; padding: 10px 12px; color: var(--muted); font-size: 13px; }
+    .prose-toolbar button, .primary-link, .secondary-link { border: 1px solid var(--accent); border-radius: 6px; background: var(--accent); color: #fff; padding: 7px 10px; text-decoration: none; cursor: pointer; font-weight: 700; font-size: 13px; }
+    .prose-toolbar button[data-md-action='cancel'], .secondary-link { background: #fff; color: var(--accent); }
+    .prose-body { padding: 18px 22px; }
+    .prose-body h2 { font-size: 25px; margin: 0 0 14px; }
+    .prose-body h3 { font-size: 18px; margin: 24px 0 8px; }
+    .prose-body img { display: block; max-width: 100%; height: auto; margin: 14px auto; border: 1px solid var(--line); border-radius: 8px; background: #f8fafb; padding: 8px; }
+    .prose-body figure { margin: 18px 0; }
+    .prose-body figcaption { color: var(--muted); font-size: 13px; line-height: 1.45; }
+    .prose-body table, .index-table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+    .prose-body th, .prose-body td, .index-table th, .index-table td { border: 1px solid var(--line); padding: 8px 10px; vertical-align: top; }
+    .prose-body th, .index-table th { background: #f4f8f7; }
+    .visual-analysis { margin-top: 20px; }
+    .visual-analysis > p { color: #34444f; margin: 0 0 12px; max-width: 880px; }
+    .map-figure, .image-figure { margin: 20px 0 18px; }
+    .map-figure img, .image-figure img { display: block; width: min(100%, 900px); height: auto; border: 1px solid var(--line); border-radius: 8px; background: #fff; padding: 8px; }
+    .image-figure img { width: min(100%, 760px); }
+    .map-figure figcaption, .image-figure figcaption { color: var(--muted); font-size: 13px; line-height: 1.45; margin-top: 8px; }
+    .paired-images { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; align-items: start; }
+    .paired-images img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+    .paired-images span { display: block; margin-top: 6px; color: var(--muted); font-size: 12px; font-weight: 700; }
+    .figure-card, .chart-empty { border: 1px solid var(--line); border-radius: 8px; background: #fff; margin: 16px 0; padding: 16px; }
+    .figure-card figcaption { font-weight: 800; font-size: 16px; margin-bottom: 12px; color: var(--ink); }
+    .chart-frame { height: 360px; position: relative; }
+    .chart-panel-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+    .chart-panel { min-width: 0; padding: 12px; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+    .chart-panel h3 { margin: 0 0 8px; font-size: 0.92rem; line-height: 1.25; color: var(--ink); }
+    .chart-panel-frame { height: 220px; position: relative; }
+    .figure-interpretation { margin: -4px 0 18px; color: #34444f; }
+    .figure-interpretation p { margin: 0 0 8px; }
+    .figure-interpretation ul { margin: 8px 0 0 18px; padding: 0; }
+    .chart-empty { display: grid; gap: 6px; color: var(--muted); }
+    [hidden] { display: none !important; }
+    .markdown-editor { display: block; width: 100%; min-height: 560px; border: 0; padding: 16px; font-family: Consolas, monospace; font-size: 14px; line-height: 1.55; resize: vertical; }
+    .source { color: var(--muted); font-size: 13px; }
+    .cover-body { background: #e9eef0; }
+    .cover-page { min-height: 100vh; display: grid; place-items: center; padding: 36px; }
+    .book-cover { width: min(980px, 100%); min-height: 760px; background: #fff; border: 1px solid #cfd8de; border-radius: 8px; padding: 58px; box-shadow: 0 24px 70px rgba(22, 32, 41, .14); }
+    .cover-kicker { color: var(--accent); font-weight: 800; text-transform: uppercase; font-size: 13px; letter-spacing: .08em; }
+    .cover-rule { height: 7px; width: 150px; background: linear-gradient(90deg, var(--accent), var(--accent2)); margin: 22px 0 42px; border-radius: 999px; }
+    .book-cover h1 { font-size: clamp(52px, 8vw, 92px); line-height: .96; margin: 0 0 24px; letter-spacing: 0; }
+    .cover-subtitle { font-size: 22px; max-width: 760px; color: #33414c; }
+    .cover-purpose { max-width: 820px; color: var(--muted); font-size: 16px; }
+    .cover-editor { margin: 36px 0; display: grid; gap: 3px; }
+    .cover-editor span { color: var(--muted); font-size: 12px; text-transform: uppercase; }
+    .cover-editor strong { font-size: 20px; }
+    .cover-editor em { color: var(--muted); font-style: normal; }
+    .cover-actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 22px 0; }
+    .cover-method { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 30px; }
+    .cover-method div { border-top: 1px solid var(--line); padding-top: 12px; }
+    .cover-method b { display: block; color: var(--accent); }
+    .cover-method span { color: var(--muted); font-size: 13px; }
+    @media (max-width: 1040px) { .layout { grid-template-columns: 1fr; } .toc { position: static; height: auto; } .cover-method { grid-template-columns: 1fr; } main { padding: 24px 18px; } .book-cover { padding: 32px; min-height: auto; } .chart-frame { height: 300px; } .chart-panel-grid { grid-template-columns: 1fr; } .paired-images { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+  <div class="layout">
+    <aside class="toc">
+      <h1><a href="../index.html">Mongolia</a></h1>
+      <p>Official-source country report with section-level Markdown editing and separated analysis visuals.</p>
+      <nav><details class="toc-group"><summary><a class="chapter-link" href="../01-overview.html">1. Country Overview</a></summary><div class="section-nav"><a class="section-link" href="../sections/01-01-official-name-capital-location-area-population-language-religion-and-currency.html">1.1 Official Name, Capital, Location, Area, Population, Language, Religion, and Currency</a><a class="section-link" href="../sections/01-02-state-symbols.html">1.2 State Symbols</a><a class="section-link" href="../sections/01-03-country-profile-and-strategic-setting.html">1.3 Country Profile and Strategic Setting</a><a class="section-link" href="../sections/01-04-territory-climate-settlement-and-administrative-divisions.html">1.4 Territory, Climate, Settlement, and Administrative Divisions</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../02-history.html">2. Historical Background</a></summary><div class="section-nav"><a class="section-link" href="../sections/02-01-steppe-polities-empire-and-civilizational-zones.html">2.1 Steppe Polities, Empire, and Civilizational Zones</a><a class="section-link" href="../sections/02-02-qing-rule-autonomy-socialism-and-state-formation.html">2.2 Qing Rule, Autonomy, Socialism, and State Formation</a><a class="section-link" href="../sections/02-03-democratic-transition-and-constitutional-turning-points.html">2.3 Democratic Transition and Constitutional Turning Points</a><a class="section-link" href="../sections/02-04-historical-legacies-in-present-institutions.html">2.4 Historical Legacies in Present Institutions</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../03-constitution.html">3. Constitution and Basic State Order</a></summary><div class="section-nav"><a class="section-link" href="../sections/03-01-constitutional-order-and-amendments.html">3.1 Constitutional Order and Amendments</a><a class="section-link" href="../sections/03-02-fundamental-rights-system.html">3.2 Fundamental Rights System</a><a class="section-link" href="../sections/03-03-separation-of-powers-constitutional-review-judicial-review-and-emergency-powers.html">3.3 Separation of Powers, Constitutional Review, Judicial Review, and Emergency Powers</a><a class="section-link" href="../sections/03-04-constitutional-implications-for-state-authority.html">3.4 Constitutional Implications for State Authority</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../04-politics.html">4. Political System and Power Structure</a></summary><div class="section-nav"><a class="section-link" href="../sections/04-01-form-of-government.html">4.1 Form of Government</a><a class="section-link" href="../sections/04-02-president-prime-minister-cabinet-and-parliament.html">4.2 President, Prime Minister, Cabinet, and Parliament</a><a class="section-link" href="../sections/04-03-party-system-elections-representation-and-coalition-politics.html">4.3 Party System, Elections, Representation, and Coalition Politics</a><a class="section-link" href="../sections/04-04-local-politics-governors-and-real-power-relations.html">4.4 Local Politics, Governors, and Real Power Relations</a><a class="section-link" href="../sections/04-05-political-dynamics-and-institutional-accountability.html">4.5 Political Dynamics and Institutional Accountability</a></div></details>
+<details class="toc-group active" open><summary><a class="chapter-link active" href="../05-administration.html">5. Administrative System and Government Organization</a></summary><div class="section-nav"><a class="section-link" href="../sections/05-01-central-executive-administration-and-policy-coordination.html">5.1 Central Executive Administration and Policy Coordination</a><a class="section-link" href="../sections/05-02-organizational-management-and-administrative-reform.html">5.2 Organizational Management and Administrative Reform</a><a class="section-link" href="../sections/05-03-human-resource-management-and-civil-service.html">5.3 Human Resource Management and Civil Service</a><a class="section-link" href="../sections/05-04-budget-execution-procurement-audit-and-anti-corruption-administration.html">5.4 Budget Execution, Procurement, Audit, and Anti-Corruption Administration</a><a class="section-link" href="../sections/05-05-aimags-soums-districts-khoroos-and-service-delivery.html">5.5 Aimags, Soums, Districts, Khoroos, and Service Delivery</a><a class="section-link" href="../sections/05-06-digital-government-e-mongolia-and-administrative-accountability.html">5.6 Digital Government, E-Mongolia, and Administrative Accountability</a><a class="section-link" href="../sections/05-07-implementation-capacity-in-a-low-density-territory.html">5.7 Implementation Capacity in a Low-Density Territory</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../06-governance.html">6. Governance and Institutional Capacity</a></summary><div class="section-nav"><a class="section-link" href="../sections/06-01-government-effectiveness-and-regulatory-quality.html">6.1 Government Effectiveness and Regulatory Quality</a><a class="section-link" href="../sections/06-02-rule-of-law-and-control-of-corruption.html">6.2 Rule of Law and Control of Corruption</a><a class="section-link" href="../sections/06-03-voice-accountability-political-stability-and-citizen-participation.html">6.3 Voice, Accountability, Political Stability, and Citizen Participation</a><a class="section-link" href="../sections/06-04-institutional-performance-and-reform-credibility.html">6.4 Institutional Performance and Reform Credibility</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../07-fiscal.html">7. Fiscal System and Public Sector</a></summary><div class="section-nav"><a class="section-link" href="../sections/07-01-government-revenue-mineral-revenue-and-expenditure-structure.html">7.1 Government Revenue, Mineral Revenue, and Expenditure Structure</a><a class="section-link" href="../sections/07-02-fiscal-balance-debt-stabilization-funds-and-interest-burden.html">7.2 Fiscal Balance, Debt, Stabilization Funds, and Interest Burden</a><a class="section-link" href="../sections/07-03-state-owned-enterprises-mining-soes-and-quasi-public-sector.html">7.3 State-Owned Enterprises, Mining SOEs, and Quasi-Public Sector</a><a class="section-link" href="../sections/07-04-public-investment-roads-urban-infrastructure-and-investment-decision-making.html">7.4 Public Investment, Roads, Urban Infrastructure, and Investment Decision-Making</a><a class="section-link" href="../sections/07-05-fiscal-capacity-commodity-cycles-and-public-sector-risks.html">7.5 Fiscal Capacity, Commodity Cycles, and Public Sector Risks</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../08-society.html">8. Population and Social Structure</a></summary><div class="section-nav"><a class="section-link" href="../sections/08-01-population-size-growth-age-structure-and-dependency.html">8.1 Population Size, Growth, Age Structure, and Dependency</a><a class="section-link" href="../sections/08-02-urbanization-ulaanbaatar-concentration-and-regional-distribution.html">8.2 Urbanization, Ulaanbaatar Concentration, and Regional Distribution</a><a class="section-link" href="../sections/08-03-ethnicity-language-religion-migration-remittances-and-diaspora.html">8.3 Ethnicity, Language, Religion, Migration, Remittances, and Diaspora</a><a class="section-link" href="../sections/08-04-nomadic-livelihoods-social-integration-and-conflict-factors.html">8.4 Nomadic Livelihoods, Social Integration, and Conflict Factors</a><a class="section-link" href="../sections/08-05-demographic-pressures-and-social-cohesion.html">8.5 Demographic Pressures and Social Cohesion</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../09-macro.html">9. Macroeconomic Structure</a></summary><div class="section-nav"><a class="section-link" href="../sections/09-01-gdp-scale-growth-and-gdp-per-capita.html">9.1 GDP Scale, Growth, and GDP Per Capita</a><a class="section-link" href="../sections/09-02-prices-exchange-rate-and-macroeconomic-stability.html">9.2 Prices, Exchange Rate, and Macroeconomic Stability</a><a class="section-link" href="../sections/09-03-sectoral-structure-mineral-dependence-growth-model-and-vulnerabilities.html">9.3 Sectoral Structure, Mineral Dependence, Growth Model, and Vulnerabilities</a><a class="section-link" href="../sections/09-04-growth-sustainability-and-structural-constraints.html">9.4 Growth Sustainability and Structural Constraints</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../10-trade.html">10. Trade, Investment, and External Economy</a></summary><div class="section-nav"><a class="section-link" href="../sections/10-01-exports-imports-trading-partners-and-current-account.html">10.1 Exports, Imports, Trading Partners, and Current Account</a><a class="section-link" href="../sections/10-02-copper-coal-gold-cashmere-tourism-and-services.html">10.2 Copper, Coal, Gold, Cashmere, Tourism, and Services</a><a class="section-link" href="../sections/10-03-fdi-absolute-amount-and-share-of-gdp.html">10.3 FDI Absolute Amount and Share of GDP</a><a class="section-link" href="../sections/10-04-investment-regime-economic-zones-and-industrial-policy.html">10.4 Investment Regime, Economic Zones, and Industrial Policy</a><a class="section-link" href="../sections/10-05-external-integration-and-competitiveness.html">10.5 External Integration and Competitiveness</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../11-infrastructure.html">11. Infrastructure, Energy, and Digital Connectivity</a></summary><div class="section-nav"><a class="section-link" href="../sections/11-01-electricity-access-heating-energy-dependence-and-transition.html">11.1 Electricity Access, Heating, Energy Dependence, and Transition</a><a class="section-link" href="../sections/11-02-transport-logistics-rail-road-air-and-border-corridors.html">11.2 Transport, Logistics, Rail, Road, Air, and Border Corridors</a><a class="section-link" href="../sections/11-03-internet-mobile-connectivity-secure-servers-and-logistics-performance.html">11.3 Internet, Mobile Connectivity, Secure Servers, and Logistics Performance</a><a class="section-link" href="../sections/11-04-connectivity-service-delivery-and-bottlenecks.html">11.4 Connectivity, Service Delivery, and Bottlenecks</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../12-labor.html">12. Labor Market and Human Capital</a></summary><div class="section-nav"><a class="section-link" href="../sections/12-01-labor-force-size-and-participation.html">12.1 Labor Force Size and Participation</a><a class="section-link" href="../sections/12-02-female-participation-unemployment-youth-unemployment-and-vulnerable-employment.html">12.2 Female Participation, Unemployment, Youth Unemployment, and Vulnerable Employment</a><a class="section-link" href="../sections/12-03-herding-mining-education-productivity-hdi-and-r-d.html">12.3 Herding, Mining, Education, Productivity, HDI, and R&amp;D</a><a class="section-link" href="../sections/12-04-employment-absorption-and-human-capital-use.html">12.4 Employment Absorption and Human Capital Use</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../13-education-health.html">13. Education, Health, and Welfare</a></summary><div class="section-nav"><a class="section-link" href="../sections/13-01-education-system-and-public-expenditure.html">13.1 Education System and Public Expenditure</a><a class="section-link" href="../sections/13-02-life-expectancy-infant-mortality-hospital-beds-doctors-and-health-expenditure.html">13.2 Life Expectancy, Infant Mortality, Hospital Beds, Doctors, and Health Expenditure</a><a class="section-link" href="../sections/13-03-air-pollution-sanitation-public-health-risks-and-welfare.html">13.3 Air Pollution, Sanitation, Public Health Risks, and Welfare</a><a class="section-link" href="../sections/13-04-human-development-outcomes-and-welfare-capacity.html">13.4 Human Development Outcomes and Welfare Capacity</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../14-environment.html">14. Environment, Climate Risk, and Sustainable Development</a></summary><div class="section-nav"><a class="section-link" href="../sections/14-01-climate-change-dzud-desertification-and-rural-livelihood-risk.html">14.1 Climate Change, Dzud, Desertification, and Rural Livelihood Risk</a><a class="section-link" href="../sections/14-02-ger-district-and-urban-public-health.html">14.2 Ger District and Urban Public Health</a><a class="section-link" href="../sections/14-03-mining-water-land-restoration-and-environmental-governance.html">14.3 Mining, Water, Land Restoration, and Environmental Governance</a><a class="section-link" href="../sections/14-04-sdg-performance-green-development-and-policy-implementation.html">14.4 SDG Performance, Green Development, and Policy Implementation</a><a class="section-link" href="../sections/14-05-environmental-sustainability-sdg-implementation-and-future-policy-direction.html">14.5 Environmental Sustainability, SDG Implementation, and Future Policy Direction</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../15-finance.html">15. Financial Sector and Economic Institutions</a></summary><div class="section-nav"><a class="section-link" href="../sections/15-01-domestic-credit-private-credit-capital-markets-and-fintech.html">15.1 Domestic Credit, Private Credit, Capital Markets, and Fintech</a><a class="section-link" href="../sections/15-02-central-bank-monetary-policy-supervision-and-exchange-rate.html">15.2 Central Bank, Monetary Policy, Supervision, and Exchange Rate</a><a class="section-link" href="../sections/15-03-foreign-investment-protection-and-capital-market-openness.html">15.3 Foreign Investment Protection and Capital Market Openness</a><a class="section-link" href="../sections/15-04-financial-deepening-and-market-institutions.html">15.4 Financial Deepening and Market Institutions</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../16-security.html">16. Foreign Relations, Security, and Geopolitics</a></summary><div class="section-nav"><a class="section-link" href="../sections/16-01-foreign-policy-orientation-and-international-organizations.html">16.1 Foreign Policy Orientation and International Organizations</a><a class="section-link" href="../sections/16-02-china-russia-third-neighbor-policy-and-strategic-balancing.html">16.2 China, Russia, Third Neighbor Policy, and Strategic Balancing</a><a class="section-link" href="../sections/16-03-borders-security-organizations-military-capacity-and-transnational-issues.html">16.3 Borders, Security Organizations, Military Capacity, and Transnational Issues</a><a class="section-link" href="../sections/16-04-strategic-resources-corridors-and-climate-security-risks.html">16.4 Strategic Resources, Corridors, and Climate-Security Risks</a><a class="section-link" href="../sections/16-05-strategic-environment-and-transnational-risks.html">16.5 Strategic Environment and Transnational Risks</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../17-policy.html">17. Major Policies and National Development Strategy</a></summary><div class="section-nav"><a class="section-link" href="../sections/17-01-evolution-of-national-development-strategy.html">17.1 Evolution of National Development Strategy</a><a class="section-link" href="../sections/17-02-vision-2050-new-recovery-policy-and-industrial-policy.html">17.2 Vision 2050, New Recovery Policy, and Industrial Policy</a><a class="section-link" href="../sections/17-03-digital-transformation-energy-transition-climate-policy-and-administrative-reform.html">17.3 Digital Transformation, Energy Transition, Climate Policy, and Administrative Reform</a><a class="section-link" href="../sections/17-04-welfare-education-health-and-recent-five-year-policy-changes.html">17.4 Welfare, Education, Health, and Recent Five-Year Policy Changes</a><a class="section-link" href="../sections/17-05-policy-implementation-and-reform-sequencing.html">17.5 Policy Implementation and Reform Sequencing</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../18-assessment.html">18. Integrated Assessment</a></summary><div class="section-nav"><a class="section-link" href="../sections/18-01-national-operating-model.html">18.1 National Operating Model</a><a class="section-link" href="../sections/18-02-political-stability-institutional-risk-growth-drivers-and-bottlenecks.html">18.2 Political Stability, Institutional Risk, Growth Drivers, and Bottlenecks</a><a class="section-link" href="../sections/18-03-administrative-capacity-and-international-cooperation-implications.html">18.3 Administrative Capacity and International Cooperation Implications</a><a class="section-link" href="../sections/18-04-mongolia-and-comparative-administration-theory.html">18.4 Mongolia and Comparative Administration Theory</a><a class="section-link" href="../sections/18-05-evidence-limits-and-source-triangulation.html">18.5 Evidence Limits and Source Triangulation</a><a class="section-link" href="../sections/18-06-strategic-diagnosis-and-outlook.html">18.6 Strategic Diagnosis and Outlook</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../19-appendix.html">19. Appendix and Update Workflow</a></summary><div class="section-nav"><a class="section-link" href="../sections/19-01-annual-revision-method.html">19.1 Annual Revision Method</a><a class="section-link" href="../sections/19-02-editorial-revision-method.html">19.2 Editorial Revision Method</a><a class="section-link" href="../sections/19-03-data-integrity.html">19.3 Data Integrity</a><a class="section-link" href="../sections/19-04-evidence-archive-and-review-trail.html">19.4 Evidence Archive and Review Trail</a><a class="section-link" href="../sections/19-05-data-limits-and-source-triangulation.html">19.5 Data Limits and Source Triangulation</a><a class="section-link" href="../sections/19-06-external-review-checklist.html">19.6 External Review Checklist</a><a class="section-link" href="../sections/19-07-comparative-administration-benchmark.html">19.7 Comparative Administration Benchmark</a><a class="section-link" href="../sections/19-08-timeline.html">19.8 Timeline</a><a class="section-link" href="../sections/19-09-government-organization-chart.html">19.9 Government Organization Chart</a><a class="section-link" href="../sections/19-10-constitution-and-major-laws.html">19.10 Constitution and Major Laws</a><a class="section-link" href="../sections/19-11-key-indicator-table-source-list-and-data-codebook.html">19.11 Key Indicator Table, Source List, and Data Codebook</a><a class="section-link" href="../sections/19-12-methodological-notes-and-update-standards.html">19.12 Methodological Notes and Update Standards</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../20-references.html">20. References</a></summary><div class="section-nav"><a class="section-link" href="../sections/20-01-references.html">20.1 References</a><a class="section-link" href="../sections/20-02-source-integrity-and-citation-notes.html">20.2 Source Integrity and Citation Notes</a></div></details></nav>
+    </aside>
+    <main>
+      <header class="hero"><h2>5.3 Human Resource Management and Civil Service</h2></header>
+      
+    <section class="section-reading">
+      
+    <article class="editable-prose" data-md-panel="administration-human-resource-management-and-civil-service-text" data-md-source="sections/05-03-human-resource-management-and-civil-service.md">
+      <div class="prose-toolbar">
+        <span>Editable section manuscript</span>
+        <div>
+          <button type="button" data-md-action="edit">Edit Markdown</button>
+          <button type="button" data-md-action="save" hidden>Save</button>
+          <button type="button" data-md-action="cancel" hidden>Cancel</button>
+        </div>
+      </div>
+      <div class="markdown-preview prose-body"></div>
+      <textarea class="markdown-editor" hidden>## 5.3 Human Resource Management and Civil Service
+
+The Mongolian civil service is the human infrastructure of the state. Laws, budgets, digital platforms, public investment systems, and national strategies matter only if public officials can implement them. Human resource management is therefore not a narrow internal administrative function. It determines whether Mongolia can regulate mining, collect taxes, manage public investment, deliver education and health services, operate digital government, supervise local administrations, respond to dzud, and provide equal public services across a vast territory.
+
+The core challenge is that Mongolia must build a professional civil service under difficult structural conditions. The country has a small population, a concentrated professional labor market in Ulaanbaatar, large territorial distances, remote soums, and strong private-sector competition from mining and urban services. A vacancy in a remote soum school, clinic, veterinary office, tax unit, or emergency post is therefore not simply a personnel problem. It weakens the state’s capacity to provide equal citizenship across territory. Civil-service reform must consequently be understood as both a personnel-management agenda and a territorial service-delivery strategy.
+
+### Civil Service Size and the Question of Government Expansion
+
+The size of the civil service matters because it reveals the administrative cost of governing Mongolia&#x27;s territory. A larger civil service is not automatically evidence of government bloat. In a low-density country, the state needs a minimum presence in schools, clinics, emergency posts, veterinary services, registration offices, tax units, social-insurance desks, border facilities, and local administrations even where the population base is small. A purely population-proportional staffing formula would understate the number of officials needed to provide equal citizenship across distance.
+
+At the same time, the trend raises a serious management question. Reported civil-service employment increased from roughly 140,000 in 2017 to more than 226,000 in 2023 and about 229,600 by mid-2024. Civil servants accounted for 6.67 percent of the population and 18.2 percent of the workforce in 2023, and about 6.8 percent of the population and 17.9 percent of the workforce by mid-2024. This is a large public workforce relative to the labor market. The key policy issue is therefore not whether the number is &quot;too high&quot; in the abstract, but whether each additional post improves service access, regulatory quality, implementation capacity, or territorial equity.
+
+{{figure:civil-service-size}}
+
+The chart should be read as a productivity and allocation question. If headcount grows because new health centers, lifelong-learning centers, procurement offices, emergency services, and local public-service units are needed, expansion may be justified. If headcount grows through patronage appointments, duplicated functions, weak workload planning, or politically motivated restructuring, it becomes a fiscal and governance risk. Mongolia should therefore judge civil-service size through staffing standards, vacancy data, service outcomes, payroll sustainability, regional distribution, and productivity indicators rather than through headcount alone.
+
+### 5.3.1 Legal Classification of the Civil Service
+
+A concrete starting point is the legal classification of civil-service posts. Mongolia’s civil-service system distinguishes among political positions, public administration positions, special state service positions, and public support service positions. The Law on the Civil Service defines politically appointed positions separately, while core civil servants are governed by the civil-service law and related legislation. Public support service employees are also connected to labor-law rules. Public administration positions include officials who provide professional advice for state policy development and implementation, while special service positions include areas such as defense, police, intelligence, emergency, border, customs, taxation, and other legally defined functions. ([investmongolia.gov.mn][1])
+
+This classification is important because different types of posts require different HR rules. Political positions may change with elected leadership. Administrative and special service posts, however, should form the professional core of the state. If these professional posts are politicized or frequently replaced after political changes, the administrative system loses continuity. The practical issue is therefore not simply how many civil servants Mongolia has, but whether the boundary between political appointment and professional administration is respected.
+
+This boundary is especially important in a parliamentary democracy. Ministers and senior political leaders must be able to set policy priorities. However, the implementation of those priorities requires nonpartisan officials who retain institutional memory, technical expertise, and administrative routines. In Mongolia, where cabinet turnover and political competition can be intense, a protected professional civil service is essential for policy continuity.
+
+### 5.3.2 Recruitment and Entry into the Civil Service
+
+Recruitment is the first major test of merit-based human resource management. Mongolia’s civil-service law establishes the principle that core civil-service positions should be filled through merit-based procedures, including examinations and qualification requirements. The Civil Service Council has a central role in examining applicants, maintaining eligibility lists, and supporting merit-based recruitment. In principle, this system is designed to reduce arbitrary hiring and ensure that public administration positions are filled by qualified personnel.
+
+However, the practical difficulty is that formal examination systems do not automatically eliminate political influence or informal favoritism. Mongolia’s public administration has long faced concerns about patronage, appointment instability, and political intervention in personnel decisions. The World Bank reported that Mongolia’s annual civil-service attrition rate increased from about **9 percent during 2009–2012** to more than **22 percent in 2019**, and it linked this increase to frequent changes of government and the lack of a sufficiently meritocratic system. Such turnover weakens the state’s ability to deliver public goods and services efficiently. ([worldbank.org][2])
+
+The implication is that Mongolia needs to strengthen not only recruitment examinations, but also the entire appointment process. Vacancies should be publicly announced, qualification criteria should be clear, examination results should be transparent, and appointment decisions should be auditable. Exceptions to competitive recruitment should be narrowly defined. The Civil Service Council and branch councils should have sufficient independence and capacity to resist political pressure. Appeals and complaint mechanisms should be accessible to candidates and civil servants who believe recruitment rules have been violated.
+
+### 5.3.3 Appointment, Probation, and Deployment
+
+Human resource management does not end with recruitment. The state must also decide where officials are deployed, how they are introduced to public service, and how their early performance is assessed. This is especially important in Mongolia because territorial deployment is one of the most difficult HR problems. Ulaanbaatar attracts educated professionals, while remote aimags and soums often face shortages of teachers, doctors, engineers, veterinarians, social workers, inspectors, and administrative personnel.
+
+A functional civil-service system should therefore include structured induction and probation. New officials should receive training on ethics, administrative law, budgeting, digital systems, citizen service, and sector-specific responsibilities. Probation should not be a formality; it should assess whether officials can perform the duties of the position. Deployment should also be linked to service needs. If qualified officials are concentrated in central ministries while local offices remain understaffed, the state’s administrative capacity becomes spatially unequal.
+
+For Mongolia, deployment policy should be explicitly territorial. Remote service should be recognized as a professional contribution, not as a career disadvantage. Rural and remote postings should provide housing support, hardship allowances, family support, professional mentoring, online training, and accelerated career credit. Without such incentives, decentralization will remain formal rather than real.
+
+### 5.3.4 Promotion and Career Development
+
+Promotion is the second major test of merit. In a professional civil service, promotion should be based on competence, experience, performance, integrity, and readiness for higher responsibility. Mongolia’s civil-service framework formally recognizes merit principles, but implementation has been affected by political turnover and weak performance management. If promotion depends on personal connections or political loyalty, talented officials lose motivation and the state loses expertise.
+
+Career development should therefore be organized around clear professional pathways. General administrative officials, financial officers, procurement specialists, engineers, environmental inspectors, digital specialists, tax officials, social-policy administrators, and local-government managers require different skill trajectories. A single undifferentiated promotion ladder is insufficient for the complexity of modern public administration.
+
+Mongolia should develop specialist career tracks in fields where state capacity is especially important. These include public investment appraisal, project management, fiscal risk analysis, mining taxation, environmental monitoring, water governance, procurement, digital transformation, cybersecurity, urban planning, and emergency management. In these fields, losing experienced officials to the private sector or political turnover can severely damage state capacity. Career structures should therefore reward technical expertise as well as managerial rank.
+
+### 5.3.5 Pay, Allowances, and Retention
+
+Compensation is a concrete HR issue because the civil service competes with mining, private services, international organizations, and overseas opportunities for skilled workers. Low or uncompetitive pay can produce several problems: difficulty recruiting qualified candidates, high turnover, moonlighting, vulnerability to corruption, and weak morale. This is especially important in technical fields where private-sector wages may be much higher than public-sector salaries.
+
+The Mongolian government has recently adjusted public-sector pay. The Ministry of Labour and Social Protection reported that government employee salaries would increase by **6 percent from January 1, 2025**, as part of the Government Action Plan for 2024–2028 and the commitment to raise labor productivity and wages annually. ([mlsp.gov.mn][3]) This type of adjustment is important, especially under inflationary pressure. However, across-the-board wage increases alone do not solve HR problems. The state also needs a pay structure that reflects responsibility, skill scarcity, working conditions, and territorial hardship.
+
+For remote areas, non-wage incentives may be as important as salary. Housing, heating support, transport allowances, school access for children, professional training, safe working conditions, and rotation options can affect whether officials remain in local posts. For technical experts, retention may depend on professional autonomy, training opportunities, career progression, and protection from political interference. Pay reform should therefore be integrated with workforce planning rather than treated only as an annual budget adjustment.
+
+### 5.3.6 Performance Management and Appraisal
+
+Performance management is one of the weakest but most important parts of civil-service HRM. Many public administrations formally evaluate officials, but evaluations often become procedural exercises that do not meaningfully distinguish strong performance from weak performance. Mongolia needs performance appraisal systems that connect individual responsibilities to organizational goals and citizen-facing outcomes.
+
+Performance indicators should vary by function. A tax official may be assessed through compliance support, revenue administration quality, dispute resolution, and integrity. A procurement officer may be evaluated by timely procurement, competition, compliance, and reduction of complaints. A local administrator may be assessed by service access, citizen satisfaction, registration accuracy, social assistance delivery, and emergency response. A public investment officer may be assessed by project appraisal quality, monitoring, cost control, and maintenance planning.
+
+The danger is that performance management becomes too formalistic. Counting documents, meetings, or reports does not measure administrative effectiveness. Mongolia’s HR system should gradually move toward performance agreements linked to agency plans, service standards, and measurable outcomes. However, this must be done carefully. If performance indicators are poorly designed, they can create perverse incentives, data manipulation, or excessive paperwork. Performance management should therefore be linked to training, feedback, promotion, and organizational learning, not only discipline.
+
+### 5.3.7 Training and Capacity Development
+
+Training is essential because the demands on Mongolian public administration have changed. The state now needs officials who can manage digital systems, fiscal risk, public-private partnerships, mining contracts, climate adaptation, urban infrastructure, public health, procurement, and cross-sector coordination. Traditional legal-administrative training is not enough.
+
+Civil-service training should include several layers. Entry-level training should cover ethics, administrative procedure, public finance, citizen service, digital tools, and constitutional principles. Mid-career training should focus on project management, policy analysis, budgeting, procurement, monitoring and evaluation, and intergovernmental coordination. Senior executive training should emphasize strategic leadership, fiscal discipline, cabinet coordination, public communication, crisis management, and institutional integrity.
+
+Training should also be linked to career progression. If officials attend training but promotion remains political, training will have limited effect. Conversely, if promotion requires demonstrated skills and training completion, professional development becomes meaningful. Mongolia should also use digital learning platforms to support officials in remote aimags and soums, but such platforms should supplement, not replace, mentoring and practical field support.
+
+### 5.3.8 Ethics, Political Neutrality, and Discipline
+
+Ethics and political neutrality are central to civil-service legitimacy. The civil service must implement the policies of elected leaders, but professional officials should not become party agents. This distinction is especially important in Mongolia because political turnover has historically affected personnel stability. Civil servants need clear rules on party activity, conflicts of interest, asset disclosure, procurement integrity, gifts, confidentiality, and use of public resources.
+
+Mongolia has adopted formal ethics rules for administrative and service-category civil servants. A Civil Service Project progress report noted that the “Code of Ethics of Administrative and Service Category Civil Servants” was adopted in January 2019 by Government Resolution No. 334. ([Төрийн албаны зөвлөл][4]) Ethics rules are necessary, but they must be enforceable. A code that is not supported by training, reporting channels, disciplinary procedures, whistleblower protection, and managerial accountability will have limited impact.
+
+Political neutrality also requires protection from arbitrary dismissal. If officials can be removed easily after political changes, they may become dependent on political patrons. This undermines both integrity and performance. Disciplinary systems should therefore distinguish between misconduct, poor performance, restructuring, and politically motivated dismissal. Civil servants should have access to appeal mechanisms and legal protection when rules are violated.
+
+### 5.3.9 Local Staffing, Pay Incentives, Promotion, and Local Capture Risk
+
+The hardest HR problem is local staffing, but it should not be described only as a shortage of people. It is a combined problem of pay incentives, career prospects, demographic decline, local political pressure, and integrity risk. Remote schools, clinics, veterinary services, social-insurance offices, environmental monitoring units, emergency services, tax offices, and local administrations need staff who are willing and able to work outside Ulaanbaatar. Yet the officials who accept local postings often face thinner professional networks, fewer training opportunities, weaker spouse employment prospects, poorer housing conditions, and less visible career pathways.
+
+The salary issue is more complex than a simple central-local gap. Mongolia&#x27;s Civil Service Law sets the principle that civil servants are paid from the state budget and that salaries include base pay plus additions for tenure, rank, grade, qualifications, special conditions, and legally provided allowances. In formal terms, therefore, local officials are not supposed to be a lower class of civil servants. In practice, however, the compensation system is fragmented. The World Bank notes that overall monetary compensation combines base pay, allowances, extra payments, and rewards, and that allowances vary by service and sector. BTI 2026, citing the Civil Service Council&#x27;s 2023 annual report, states that even identical positions can have different salary levels and that sector-specific legislation has weakened a unified salary policy. This means that the real comparison is not only &quot;central versus local&quot;; it is also ministry versus agency, education versus culture, health versus administration, special service versus support service, and resource-rich locality versus ordinary soum.
+
+A concrete example is the rural cultural sector. MONTSAME reported in 2023 that Mongolia approved measures to equalize salaries in culture, sports, and health with education and science, and that rural cultural employees could receive cash benefits equivalent to six months&#x27; basic salary once every five years. The same report noted 4,470 employees in 432 rural-owned cultural organizations, with around 70 percent expected to receive the benefit, and acknowledged that cultural-sector wages were lower than in other public-service sectors. This is important because it shows two things at once: the government recognizes rural retention problems, but it is addressing them through sector-specific benefits rather than a fully unified territorial pay policy.
+
+Promotion is the second problem. Central ministries and Ulaanbaatar-based agencies usually provide better access to senior officials, policy networks, donor projects, training, and information about vacancies. A capable soum or aimag official may gain valuable field experience, but that experience is not always converted into promotion. If rural service is viewed as peripheral rather than as a qualification for advancement, ambitious officials will try to move to the capital as soon as possible. The result is a circular problem: local offices receive fewer experienced staff, weak local capacity reinforces the perception that important careers are made in Ulaanbaatar, and citizens outside the capital experience the state through less stable administration.
+
+Regional demographic thinning makes this harder. As young people, students, professionals, and entrepreneurs move to Ulaanbaatar or a few larger urban centers, many soums face a smaller pool of qualified applicants. Local administrations may then rely on the same narrow circle of teachers, accountants, school directors, health managers, party activists, business owners, and former officials. This can preserve local knowledge, but it also increases the risk of closed networks. In a small labor market, recruitment panels, local party branches, procurement committees, school administrations, and business bidders may overlap socially or politically. Even without overt bribery, this can weaken merit recruitment and make conflicts of interest harder to avoid.
+
+This is where local elite capture becomes a civil-service issue. IAAC&#x27;s 2021 analysis of corruption complaints reported that many complaints related to local governments, especially Local Governor&#x27;s Offices, and commonly involved human resources, budget spending, tenders, procurement, civil-service activities, and licensing. A 2025 government notice similarly stated that 43 percent of corruption and conflict-of-interest complaints reviewed in the first four months came from local areas, with allegations including appointment of unqualified persons to public office, illegal procurement and tender selection, weak implementation of law at the local level, and selection of unqualified entities. These are not isolated HR problems. They show how staffing, procurement, local politics, and conflict of interest can merge in small jurisdictions.
+
+Mining areas create a particularly sensitive version of this problem. Local officials may have to deal with land use, water complaints, road damage, dust, local hiring promises, and community consultation, while major licensing and revenue decisions are controlled nationally. UNDP&#x27;s corruption-risk assessment in the mining sector explicitly included interviews with local authorities, Citizens&#x27; Representative Khurals, civil society, companies, and citizens, and identified risks across exploration, pre-operation, operation, and post-operation phases. In such settings, a local official may be squeezed between citizens demanding protection, companies seeking predictable approvals, party networks seeking influence, and central agencies controlling the main decisions. If local staffing is weak or politically dependent, the risk of capture increases.
+
+The policy response should therefore be more specific than &quot;send more staff to the countryside.&quot; Mongolia needs a territorial HR strategy. First, rural and remote service should count as career credit for promotion, especially for administrative, health, education, veterinary, emergency, environmental, and procurement posts. Second, hardship allowances should be transparent and standardized enough to avoid sectoral fragmentation, while still reflecting distance, climate risk, and skill scarcity. Third, housing, heating support, spouse employment assistance, school access for children, and rotation options should be part of the retention package. Fourth, recruitment and promotion decisions in small jurisdictions should be auditable, with conflict-of-interest screening for appointment panels and procurement committees. Fifth, local officials in mining and infrastructure areas should receive specialized training in consultation, environmental monitoring, procurement, grievance handling, and conflict-of-interest rules.
+
+Digital tools can support this agenda through remote training, HR databases, online vacancy announcements, e-procurement, digital case systems, and complaint channels. But digital tools cannot replace local human presence or local integrity. Citizens still need teachers, nurses, administrators, inspectors, veterinarians, and emergency responders close enough to act. In a large country with low population density, a territorially distributed civil service is a condition of equal citizenship, but it will work only if local officials are paid fairly, promoted credibly, protected from local pressure, and held accountable through transparent systems.
+
+### 5.3.10 Workforce Planning and Data
+
+A modern HR system requires reliable workforce data, but Mongolia&#x27;s problem is not only data collection. It is the political and administrative question of whether the civil service is growing because the state genuinely needs more capacity, or because public employment is being used to absorb political pressure, reward networks, duplicate functions, or compensate for weak productivity. The World Bank reported that the number of civil servants grew by 34 percent during 2009-2019, while the wage bill became the fastest-growing and largest component of recurrent government expenditure. It also warned that simply increasing staff is not the solution to service-demand pressures created by Mongolia&#x27;s geography; better management of existing staff is essential. ([worldbank.org][2])
+
+This criticism remains relevant because the civil service has continued to expand. The 2023 National Public Service Employee Registration recorded 226,496 civil servants, equal to 6.67 percent of the population and 18.2 percent of the workforce, and mid-2024 figures reported 229,621 civil servants. Those numbers do not prove that the state is &quot;too large&quot; by themselves. Mongolia&#x27;s low-density territory requires schools, clinics, emergency posts, veterinary services, registration offices, tax units, border functions, and local administrations in places where population is small. But the numbers do show that every new position should be justified through workload, service standards, fiscal affordability, and productivity, not through incremental expansion.
+
+Recruitment planning should therefore begin before vacancies are advertised. Each ministry, agency, aimag, soum, district, and khoroo should be required to distinguish between four categories of staffing need. The first is legally mandatory minimum staffing: posts required for core state functions such as civil registration, education, health, emergency response, tax administration, customs, policing, and local executive administration. The second is workload-driven staffing: posts justified by caseloads, service transactions, inspection volume, population served, distance covered, school or clinic capacity, or emergency exposure. The third is strategic capability staffing: scarce specialists needed for digital government, public investment appraisal, procurement, environmental monitoring, mining taxation, cybersecurity, fiscal risk, and project management. The fourth is legacy or low-priority staffing: posts that remain from older organizational structures but no longer match service demand.
+
+This distinction is important because Mongolia faces opposite risks at the same time. Some remote soums may look overstaffed if judged only by population, but they may still need a minimum administrative presence because citizens require education, health care, registration, emergency response, veterinary services, and social protection across long distances. Conversely, some central agencies or urban offices may have growing headcounts without clear evidence of better service performance. Workforce planning must therefore combine population data with distance, climate risk, poverty, migration, workload, digital-service uptake, and service standards.
+
+The recruitment plan should also be linked to the budget process. A new position should not be approved only because an agency requests it. It should pass a staffing review asking whether the function is legally required, whether the workload is measured, whether the same function exists elsewhere, whether digitalization can reduce manual processing, whether redeployment is possible, whether the salary and allowance cost is affordable over the medium term, and whether the position has a clear performance output. This would turn recruitment from an annual personnel request into an establishment-control system.
+
+Recent policy signals show that this issue is already politically salient. In April 2026, Prime Minister Uchral Nyam-Osor reportedly instructed cabinet members to freeze about 3,000 vacant public-sector positions and suspend new appointments or internal transfers until a functional review of ministries and agencies is completed. The point of such a measure should not be austerity for its own sake. A vacancy freeze is useful only if it is followed by function analysis: which posts are unnecessary, which are misplaced, which should be moved to local service delivery, and which technical positions should be protected or expanded. ([Qazinform / MONTSAME][9])
+
+Workforce data should therefore cover more than headcount. Mongolia should know each position&#x27;s occupation, grade, location, age, education, tenure, vacancy duration, turnover history, training record, pay level, allowance type, performance record, retirement risk, and connection to a statutory function or service standard. It should also identify whether posts are funded, vacant, frozen, temporary, politically appointed, support-service, administrative, or special-service positions. Without this, the government cannot know whether staff growth reflects real capacity or payroll drift.
+
+A stronger workforce-planning system would have several policy effects. It would make civil-service expansion harder to justify without evidence. It would protect essential local posts from across-the-board cuts. It would allow redeployment from low-priority administrative functions to frontline service delivery. It would identify sectors where pay and skill scarcity cause vacancies. It would make promotion and training more strategic. Most importantly, it would help Mongolia answer the central question behind the &quot;bloated bureaucracy&quot; criticism: not simply how many officials the state employs, but whether the existing workforce is located, skilled, motivated, and managed in ways that improve public services.
+
+### Policy Implications
+
+Mongolia should treat civil-service reform as a concrete human-resource management agenda, not as a general administrative slogan.
+
+First, the boundary between political posts and professional civil-service posts should be protected. Political leaders should set policy, but professional officials should not be replaced after every political change.
+
+Second, recruitment should be made more transparent and merit-based. Vacancies, examination results, appointment criteria, and appeals procedures should be publicly credible.
+
+Third, promotion should be linked to competence, performance, training, and integrity. Specialist career tracks should be created for technical fields such as public finance, procurement, mining regulation, environmental monitoring, digital government, and public investment.
+
+Fourth, pay and allowances should support retention. General salary increases are useful, but Mongolia also needs differentiated incentives for scarce skills and remote postings.
+
+Fifth, rural service should be rewarded. Housing support, hardship allowances, career credit, family support, and rotation systems should be used to attract and retain officials in aimags and soums.
+
+Sixth, training should be linked to career development. Entry-level, mid-career, senior executive, and specialist training should correspond to actual administrative tasks.
+
+Seventh, performance appraisal should move beyond formal reporting. It should measure service quality, implementation results, citizen access, integrity, and organizational learning.
+
+Eighth, ethics and discipline systems should be strengthened. Codes of ethics should be linked to training, reporting, investigation, sanctions, and protection against arbitrary dismissal.
+
+Ninth, workforce planning should be data-driven. Civil-service databases should track vacancies, turnover, age structure, skills, location, training, and retirement risk.
+
+Finally, digital tools should support HR management. A unified HR information system can help the government monitor staffing gaps, manage recruitment, support training, and identify regions where service delivery is at risk.
+
+In conclusion, Mongolia’s civil service is central to whether the state can govern a large territory with a small population. The policy challenge is not only to recruit more officials, but to build a professional, stable, merit-based, territorially distributed, and technically capable public workforce. Civil-service reform will be credible only when it improves recruitment, promotion, pay, training, performance management, ethics, and local staffing in concrete terms. A capable Mongolian state ultimately depends on whether its public servants can deliver services beyond Ulaanbaatar and maintain administrative continuity despite political change.
+
+### Sources
+
+* Government of Mongolia. *Law on the Civil Service*.
+* World Bank. 2021. *Mongolia: Towards a High Performing Civil Service—Reform Progress and Challenges*.
+* World Bank. 2021. “Further Reforms Are Key to Strengthening Mongolia’s Civil Service.”
+* Ministry of Labour and Social Protection of Mongolia. 2025. “Government Employees’ Salaries to Increase by Six Percent.”
+* Civil Service Council / Civil Service Project. 2019. *Annual Progress Report*.
+* Government of Mongolia. *Vision 2050: Long-Term Development Policy of Mongolia*.
+* E-Mongolia Academy and Civil Service Council consolidated civil-service registration data for 2023.
+* Ethics Committee of Mongolia. 2024. Civil Service Council visit report with 2024 mid-year civil-service figures.
+* Bertelsmann Stiftung. *BTI 2024 Mongolia Country Report* and *BTI 2026 Mongolia Country Report*.
+* MONTSAME. 2023. &quot;Government Takes Steps towards Salary Equality.&quot;
+* Independent Authority Against Corruption / MONTSAME. 2021. &quot;Complaints regarding local government corruption increasing.&quot;
+* Government of Mongolia. 2025. &quot;Advice given to local leadership officers on how to improve the implementation of the law.&quot;
+* UNDP Mongolia. *Corruption Risk Assessment in Mining Sector of Mongolia*.
+* Qazinform / MONTSAME. 2026. &quot;Mongolia&#x27;s PM freezes 3,000 civil service positions, moves to cut workload.&quot;
+
+[1]: https://investmongolia.gov.mn/wp-content/uploads/2023/11/LAW-OF-MONGOLIA-ON-THE-CIVIL-SERVICE-1.pdf?utm_source=chatgpt.com &quot;LAW ON THE CIVIL SERVICE&quot;
+[2]: https://www.worldbank.org/en/news/press-release/2021/01/28/further-reforms-are-key-to-strengthening-mongolia-civil-service?utm_source=chatgpt.com &quot;Further Reforms Are Key to Strengthening Mongolia&#x27;s Civil ...&quot;
+[3]: https://mlsp.gov.mn/eng/content/detail/1877?utm_source=chatgpt.com &quot;Government Employees&#x27; Salaries to Increase by Six Percent&quot;
+[4]: https://www.old.csc.gov.mn/uploads/Civil%20Service%20Project%20-%20Annual%20Progress%20report%202019_FINAL.pdf?utm_source=chatgpt.com &quot;centered civil service in Mongolia ANNUAL PROGRESS ...&quot;
+[5]: https://w.montsame.mn/en/read/319303 &quot;Government Takes Steps towards Salary Equality&quot;
+[6]: https://old.montsame.mn/en/read/264800 &quot;IAAC: Complaints regarding local government corruption increasing&quot;
+[7]: https://www.gov.mn/en/news/all/5e4f05df-9c22-4954-b9df-90c75f83f526 &quot;Advice given to local leadership officers on how to improve the implementation of the law&quot;
+[8]: https://www.undp.org/mongolia/publications/corruption-risk-assessment-mining-sector-mongolia &quot;Corruption Risk Assessment in Mining Sector of Mongolia&quot;
+[9]: https://qazinform.com/news/mongolias-pm-freezes-3000-civil-service-positions-moves-to-cut-workload-035406 &quot;Mongolia&#x27;s PM freezes 3,000 civil service positions, moves to cut workload&quot;</textarea>
+      <template data-figure-template="civil-service-size">
+    <figure class="figure-card" id="civil-service-size">
+      <figcaption>Mongolia: Civil Service Size and Relative Government Workforce</figcaption>
+      <div class="chart-frame">
+        <canvas id="chart-civil-service-size" aria-label="Mongolia: Civil Service Size and Relative Government Workforce" role="img"></canvas>
+      </div>
+      <p class="source">Source: Civil Service Council data as reported by E-Mongolia Academy, Ethics Committee of Mongolia, and BTI Mongolia country reports. Indicator IDs: civil servants, share of population, share of workforce. Unit: Thousand persons and percent.</p>
+      <script type="application/json" id="chart-civil-service-size-config">{"type": "line", "data": {"labels": [2017, 2020, 2021, 2022, 2023, 2024], "datasets": [{"label": "Civil servants (thousand)", "data": [140.0, 205.011, 208.864, 225.205, 226.496, 229.621], "borderColor": "#0f6f78", "backgroundColor": "#0f6f78", "borderWidth": 3, "pointRadius": 3, "spanGaps": true, "tension": 0.15, "yAxisID": "y"}, {"label": "Share of population", "data": [null, null, 6.3, null, 6.67, 6.8], "borderColor": "#a6502a", "backgroundColor": "#a6502a", "borderWidth": 2, "pointRadius": 3, "spanGaps": true, "tension": 0.15, "yAxisID": "y1"}, {"label": "Share of workforce", "data": [null, null, 17.1, null, 18.2, 17.9], "borderColor": "#6f4aa8", "backgroundColor": "#6f4aa8", "borderWidth": 2, "pointRadius": 3, "spanGaps": true, "tension": 0.15, "yAxisID": "y1"}]}, "options": {"responsive": true, "maintainAspectRatio": false, "interaction": {"mode": "index", "intersect": false}, "plugins": {"legend": {"position": "bottom", "labels": {"boxWidth": 14, "boxHeight": 3}}}, "scales": {"x": {"grid": {"display": false}}, "y": {"position": "left", "title": {"display": true, "text": "Thousand persons"}, "grid": {"color": "#e8eef3"}}, "y1": {"position": "right", "title": {"display": true, "text": "Percent"}, "grid": {"drawOnChartArea": false}}}}}</script>
+    </figure>
+    
+    <div class="figure-interpretation">
+      <p>The trend shows rapid expansion from the 2017 reference point to the early 2020s, followed by slower growth in 2023-2024. The important question is not headcount alone. Mongolia's low density and dispersed settlements require teachers, doctors, emergency staff, veterinary officers, local administrators, and inspectors across a very large territory. At the same time, a civil service equal to nearly one-fifth of the workforce raises concerns about payroll pressure, politicized appointments, productivity, and whether staffing growth is matched by better services outside Ulaanbaatar.</p>
+    </div>
+    </template>
+    </article>
+    
+    </section>
+    
+    </main>
+  </div>
+  <script>
+    function fallbackMarkdown(text) {
+      const escaped = text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+      return escaped.split(/\n{2,}/).map((block) => `<p>${block.replace(/\n/g, "<br>")}</p>`).join("");
+    }
+    function renderMarkdown(text) {
+      return window.marked ? marked.parse(text) : fallbackMarkdown(text);
+    }
+    function replaceFigurePlaceholders(preview, panel) {
+      const pattern = /^\{\{(figure|map|image):([a-z0-9-]+)\}\}$/;
+      preview.querySelectorAll("p").forEach((paragraph) => {
+        const match = (paragraph.textContent || "").trim().match(pattern);
+        if (!match) return;
+        const key = match[1] === "figure" ? match[2] : `${match[1]}:${match[2]}`;
+        const template = panel.querySelector(`template[data-figure-template="${key}"]`);
+        if (!template) {
+          const note = document.createElement("p");
+          note.className = "source";
+          note.textContent = `Figure not available: ${key}`;
+          paragraph.replaceWith(note);
+          return;
+        }
+        paragraph.replaceWith(template.content.cloneNode(true));
+      });
+    }
+    function setupMarkdownPanels() {
+      document.querySelectorAll("[data-md-panel]").forEach((panel) => {
+        const id = panel.getAttribute("data-md-panel");
+        const preview = panel.querySelector(".markdown-preview");
+        const editor = panel.querySelector(".markdown-editor");
+        const edit = panel.querySelector("[data-md-action='edit']");
+        const save = panel.querySelector("[data-md-action='save']");
+        const cancel = panel.querySelector("[data-md-action='cancel']");
+        const source = panel.getAttribute("data-md-source");
+        const original = editor.value;
+        let hash = 0;
+        for (let i = 0; i < original.length; i += 1) {
+          hash = ((hash << 5) - hash + original.charCodeAt(i)) | 0;
+        }
+        const storageKey = `mng-report-markdown:v2:${id}:${hash}`;
+        const stored = localStorage.getItem(storageKey);
+        const isPermanentMode = source && window.location.protocol.startsWith("http");
+        if (stored !== null && (!source || window.location.protocol === "file:")) {
+          editor.value = stored;
+        } else if (stored !== null && isPermanentMode && stored !== editor.value) {
+          const useDraft = window.confirm("A browser draft exists for this section. Load it into the editor so you can save it permanently?");
+          if (useDraft) editor.value = stored;
+        }
+        const showPreview = () => {
+          preview.innerHTML = renderMarkdown(editor.value);
+          replaceFigurePlaceholders(preview, panel);
+          setupCharts();
+        };
+        const setEditing = (editing) => {
+          editor.hidden = !editing;
+          preview.hidden = editing;
+          edit.hidden = editing;
+          save.hidden = !editing;
+          cancel.hidden = !editing;
+        };
+        const saveMarkdown = async () => {
+          if (isPermanentMode) {
+            const response = await fetch("/api/save-section", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ source, markdown: editor.value })
+            });
+            if (!response.ok) {
+              const message = await response.text();
+              throw new Error(message || `Save failed with ${response.status}`);
+            }
+            localStorage.removeItem(storageKey);
+            window.alert("Saved permanently to the Markdown source file.");
+          } else {
+            localStorage.setItem(storageKey, editor.value);
+            if (source) {
+              window.alert("This edit was saved only as a browser draft. Open the report through MNG/code/serve_report.py to save it permanently to the Markdown source file.");
+            }
+          }
+        };
+        showPreview();
+        setEditing(false);
+        edit.addEventListener("click", () => setEditing(true));
+        save.addEventListener("click", async () => {
+          save.disabled = true;
+          try {
+            await saveMarkdown();
+            showPreview();
+            setEditing(false);
+          } catch (error) {
+            window.alert(error.message || "Could not save the Markdown source.");
+          } finally {
+            save.disabled = false;
+          }
+        });
+        cancel.addEventListener("click", () => {
+          editor.value = localStorage.getItem(storageKey) ?? original;
+          showPreview();
+          setEditing(false);
+        });
+      });
+    }
+    function setupCharts() {
+      if (!window.Chart) {
+        document.querySelectorAll(".figure-card").forEach((card) => {
+          const note = document.createElement("p");
+          note.className = "source";
+          note.textContent = "Chart.js could not be loaded from local assets/chart.umd.min.js.";
+          card.appendChild(note);
+        });
+        return;
+      }
+      document.querySelectorAll("script[type='application/json'][id$='-config']").forEach((script) => {
+        const canvasId = script.id.replace("-config", "");
+        const canvas = document.getElementById(canvasId);
+        if (!canvas) return;
+        if (canvas.dataset.chartReady === "1") return;
+        canvas.dataset.chartReady = "1";
+        new Chart(canvas, JSON.parse(script.textContent));
+      });
+    }
+    window.addEventListener("DOMContentLoaded", () => {
+      setupMarkdownPanels();
+      setupCharts();
+    });
+    </script>
+</body>
+</html>

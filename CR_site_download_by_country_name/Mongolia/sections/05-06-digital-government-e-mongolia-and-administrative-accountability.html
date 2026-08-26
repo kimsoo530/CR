@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>5.6 Digital Government, E-Mongolia, and Administrative Accountability | Mongolia Country Report</title>
+  <script src="../assets/marked.min.js"></script>
+  <script src="../assets/chart.umd.min.js"></script>
+  <style>
+    :root { --ink: #162029; --muted: #62707c; --line: #d8e0e6; --panel: #f5f7f8; --accent: #0f6f78; --accent2: #7a5b1e; --paper: #ffffff; --soft: #edf5f2; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: var(--ink); background: var(--paper); line-height: 1.62; }
+    .layout { display: grid; grid-template-columns: 310px minmax(0, 1fr); min-height: 100vh; }
+    .toc { position: sticky; top: 0; height: 100vh; overflow: auto; border-right: 1px solid var(--line); background: var(--panel); padding: 22px 18px; }
+    .toc h1 { font-size: 20px; margin: 0 0 6px; }
+    .toc h1 a { color: var(--ink); text-decoration: none; }
+    .toc p { color: var(--muted); font-size: 13px; margin: 0 0 18px; }
+    nav a { display: block; color: var(--ink); text-decoration: none; padding: 8px 10px; border-radius: 6px; font-size: 14px; }
+    nav a:hover, nav a.active { background: #e3f0ef; color: var(--accent); }
+    .chapter-link { font-weight: 700; }
+    .toc-group { margin: 1px 0; border-radius: 6px; }
+    .toc-group summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 4px; }
+    .toc-group summary::-webkit-details-marker { display: none; }
+    .toc-group summary::before { content: ">"; color: var(--muted); font-size: 12px; transition: transform .12s ease; }
+    .toc-group[open] summary::before { transform: rotate(90deg); }
+    .toc-group summary a { flex: 1; }
+    .section-nav { margin: 2px 0 8px 8px; padding-left: 10px; border-left: 2px solid #cdd9df; }
+    .section-link { padding: 5px 8px; font-size: 12px; color: var(--muted); line-height: 1.35; }
+    main { padding: 34px min(6vw, 82px); max-width: 1120px; }
+    .hero { border-bottom: 1px solid var(--line); padding-bottom: 20px; margin-bottom: 24px; }
+    .hero h2 { font-size: 34px; margin: 0 0 8px; letter-spacing: 0; }
+    .hero p, .chapter-landing-note { color: var(--muted); max-width: 860px; }
+    .chapter-thesis { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 16px; border: 1px solid var(--line); border-radius: 8px; padding: 14px; background: var(--soft); margin: 18px 0; }
+    .chapter-thesis b { color: var(--accent); }
+    .chapter-section-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 12px; margin: 18px 0 28px; }
+    .chapter-section-card { border: 1px solid var(--line); border-radius: 8px; background: #fff; padding: 14px; }
+    .chapter-section-card a { display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: 10px; align-items: start; text-decoration: none; color: var(--ink); }
+    .chapter-section-card span { font-weight: 800; color: var(--accent); font-size: 15px; }
+    .chapter-section-card strong { font-size: 16px; line-height: 1.35; }
+    .chapter-section-card p { color: var(--muted); font-size: 13px; margin: 10px 0 0; }
+    .section-reading { max-width: 940px; }
+    .editable-prose { border: 1px solid var(--line); border-radius: 8px; background: #fff; overflow: hidden; }
+    .prose-toolbar { display: flex; justify-content: space-between; gap: 10px; align-items: center; border-bottom: 1px solid var(--line); background: #f8fafb; padding: 10px 12px; color: var(--muted); font-size: 13px; }
+    .prose-toolbar button, .primary-link, .secondary-link { border: 1px solid var(--accent); border-radius: 6px; background: var(--accent); color: #fff; padding: 7px 10px; text-decoration: none; cursor: pointer; font-weight: 700; font-size: 13px; }
+    .prose-toolbar button[data-md-action='cancel'], .secondary-link { background: #fff; color: var(--accent); }
+    .prose-body { padding: 18px 22px; }
+    .prose-body h2 { font-size: 25px; margin: 0 0 14px; }
+    .prose-body h3 { font-size: 18px; margin: 24px 0 8px; }
+    .prose-body img { display: block; max-width: 100%; height: auto; margin: 14px auto; border: 1px solid var(--line); border-radius: 8px; background: #f8fafb; padding: 8px; }
+    .prose-body figure { margin: 18px 0; }
+    .prose-body figcaption { color: var(--muted); font-size: 13px; line-height: 1.45; }
+    .prose-body table, .index-table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+    .prose-body th, .prose-body td, .index-table th, .index-table td { border: 1px solid var(--line); padding: 8px 10px; vertical-align: top; }
+    .prose-body th, .index-table th { background: #f4f8f7; }
+    .visual-analysis { margin-top: 20px; }
+    .visual-analysis > p { color: #34444f; margin: 0 0 12px; max-width: 880px; }
+    .map-figure, .image-figure { margin: 20px 0 18px; }
+    .map-figure img, .image-figure img { display: block; width: min(100%, 900px); height: auto; border: 1px solid var(--line); border-radius: 8px; background: #fff; padding: 8px; }
+    .image-figure img { width: min(100%, 760px); }
+    .map-figure figcaption, .image-figure figcaption { color: var(--muted); font-size: 13px; line-height: 1.45; margin-top: 8px; }
+    .paired-images { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; align-items: start; }
+    .paired-images img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+    .paired-images span { display: block; margin-top: 6px; color: var(--muted); font-size: 12px; font-weight: 700; }
+    .figure-card, .chart-empty { border: 1px solid var(--line); border-radius: 8px; background: #fff; margin: 16px 0; padding: 16px; }
+    .figure-card figcaption { font-weight: 800; font-size: 16px; margin-bottom: 12px; color: var(--ink); }
+    .chart-frame { height: 360px; position: relative; }
+    .chart-panel-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+    .chart-panel { min-width: 0; padding: 12px; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+    .chart-panel h3 { margin: 0 0 8px; font-size: 0.92rem; line-height: 1.25; color: var(--ink); }
+    .chart-panel-frame { height: 220px; position: relative; }
+    .figure-interpretation { margin: -4px 0 18px; color: #34444f; }
+    .figure-interpretation p { margin: 0 0 8px; }
+    .figure-interpretation ul { margin: 8px 0 0 18px; padding: 0; }
+    .chart-empty { display: grid; gap: 6px; color: var(--muted); }
+    [hidden] { display: none !important; }
+    .markdown-editor { display: block; width: 100%; min-height: 560px; border: 0; padding: 16px; font-family: Consolas, monospace; font-size: 14px; line-height: 1.55; resize: vertical; }
+    .source { color: var(--muted); font-size: 13px; }
+    .cover-body { background: #e9eef0; }
+    .cover-page { min-height: 100vh; display: grid; place-items: center; padding: 36px; }
+    .book-cover { width: min(980px, 100%); min-height: 760px; background: #fff; border: 1px solid #cfd8de; border-radius: 8px; padding: 58px; box-shadow: 0 24px 70px rgba(22, 32, 41, .14); }
+    .cover-kicker { color: var(--accent); font-weight: 800; text-transform: uppercase; font-size: 13px; letter-spacing: .08em; }
+    .cover-rule { height: 7px; width: 150px; background: linear-gradient(90deg, var(--accent), var(--accent2)); margin: 22px 0 42px; border-radius: 999px; }
+    .book-cover h1 { font-size: clamp(52px, 8vw, 92px); line-height: .96; margin: 0 0 24px; letter-spacing: 0; }
+    .cover-subtitle { font-size: 22px; max-width: 760px; color: #33414c; }
+    .cover-purpose { max-width: 820px; color: var(--muted); font-size: 16px; }
+    .cover-editor { margin: 36px 0; display: grid; gap: 3px; }
+    .cover-editor span { color: var(--muted); font-size: 12px; text-transform: uppercase; }
+    .cover-editor strong { font-size: 20px; }
+    .cover-editor em { color: var(--muted); font-style: normal; }
+    .cover-actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 22px 0; }
+    .cover-method { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 30px; }
+    .cover-method div { border-top: 1px solid var(--line); padding-top: 12px; }
+    .cover-method b { display: block; color: var(--accent); }
+    .cover-method span { color: var(--muted); font-size: 13px; }
+    @media (max-width: 1040px) { .layout { grid-template-columns: 1fr; } .toc { position: static; height: auto; } .cover-method { grid-template-columns: 1fr; } main { padding: 24px 18px; } .book-cover { padding: 32px; min-height: auto; } .chart-frame { height: 300px; } .chart-panel-grid { grid-template-columns: 1fr; } .paired-images { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+  <div class="layout">
+    <aside class="toc">
+      <h1><a href="../index.html">Mongolia</a></h1>
+      <p>Official-source country report with section-level Markdown editing and separated analysis visuals.</p>
+      <nav><details class="toc-group"><summary><a class="chapter-link" href="../01-overview.html">1. Country Overview</a></summary><div class="section-nav"><a class="section-link" href="../sections/01-01-official-name-capital-location-area-population-language-religion-and-currency.html">1.1 Official Name, Capital, Location, Area, Population, Language, Religion, and Currency</a><a class="section-link" href="../sections/01-02-state-symbols.html">1.2 State Symbols</a><a class="section-link" href="../sections/01-03-country-profile-and-strategic-setting.html">1.3 Country Profile and Strategic Setting</a><a class="section-link" href="../sections/01-04-territory-climate-settlement-and-administrative-divisions.html">1.4 Territory, Climate, Settlement, and Administrative Divisions</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../02-history.html">2. Historical Background</a></summary><div class="section-nav"><a class="section-link" href="../sections/02-01-steppe-polities-empire-and-civilizational-zones.html">2.1 Steppe Polities, Empire, and Civilizational Zones</a><a class="section-link" href="../sections/02-02-qing-rule-autonomy-socialism-and-state-formation.html">2.2 Qing Rule, Autonomy, Socialism, and State Formation</a><a class="section-link" href="../sections/02-03-democratic-transition-and-constitutional-turning-points.html">2.3 Democratic Transition and Constitutional Turning Points</a><a class="section-link" href="../sections/02-04-historical-legacies-in-present-institutions.html">2.4 Historical Legacies in Present Institutions</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../03-constitution.html">3. Constitution and Basic State Order</a></summary><div class="section-nav"><a class="section-link" href="../sections/03-01-constitutional-order-and-amendments.html">3.1 Constitutional Order and Amendments</a><a class="section-link" href="../sections/03-02-fundamental-rights-system.html">3.2 Fundamental Rights System</a><a class="section-link" href="../sections/03-03-separation-of-powers-constitutional-review-judicial-review-and-emergency-powers.html">3.3 Separation of Powers, Constitutional Review, Judicial Review, and Emergency Powers</a><a class="section-link" href="../sections/03-04-constitutional-implications-for-state-authority.html">3.4 Constitutional Implications for State Authority</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../04-politics.html">4. Political System and Power Structure</a></summary><div class="section-nav"><a class="section-link" href="../sections/04-01-form-of-government.html">4.1 Form of Government</a><a class="section-link" href="../sections/04-02-president-prime-minister-cabinet-and-parliament.html">4.2 President, Prime Minister, Cabinet, and Parliament</a><a class="section-link" href="../sections/04-03-party-system-elections-representation-and-coalition-politics.html">4.3 Party System, Elections, Representation, and Coalition Politics</a><a class="section-link" href="../sections/04-04-local-politics-governors-and-real-power-relations.html">4.4 Local Politics, Governors, and Real Power Relations</a><a class="section-link" href="../sections/04-05-political-dynamics-and-institutional-accountability.html">4.5 Political Dynamics and Institutional Accountability</a></div></details>
+<details class="toc-group active" open><summary><a class="chapter-link active" href="../05-administration.html">5. Administrative System and Government Organization</a></summary><div class="section-nav"><a class="section-link" href="../sections/05-01-central-executive-administration-and-policy-coordination.html">5.1 Central Executive Administration and Policy Coordination</a><a class="section-link" href="../sections/05-02-organizational-management-and-administrative-reform.html">5.2 Organizational Management and Administrative Reform</a><a class="section-link" href="../sections/05-03-human-resource-management-and-civil-service.html">5.3 Human Resource Management and Civil Service</a><a class="section-link" href="../sections/05-04-budget-execution-procurement-audit-and-anti-corruption-administration.html">5.4 Budget Execution, Procurement, Audit, and Anti-Corruption Administration</a><a class="section-link" href="../sections/05-05-aimags-soums-districts-khoroos-and-service-delivery.html">5.5 Aimags, Soums, Districts, Khoroos, and Service Delivery</a><a class="section-link" href="../sections/05-06-digital-government-e-mongolia-and-administrative-accountability.html">5.6 Digital Government, E-Mongolia, and Administrative Accountability</a><a class="section-link" href="../sections/05-07-implementation-capacity-in-a-low-density-territory.html">5.7 Implementation Capacity in a Low-Density Territory</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../06-governance.html">6. Governance and Institutional Capacity</a></summary><div class="section-nav"><a class="section-link" href="../sections/06-01-government-effectiveness-and-regulatory-quality.html">6.1 Government Effectiveness and Regulatory Quality</a><a class="section-link" href="../sections/06-02-rule-of-law-and-control-of-corruption.html">6.2 Rule of Law and Control of Corruption</a><a class="section-link" href="../sections/06-03-voice-accountability-political-stability-and-citizen-participation.html">6.3 Voice, Accountability, Political Stability, and Citizen Participation</a><a class="section-link" href="../sections/06-04-institutional-performance-and-reform-credibility.html">6.4 Institutional Performance and Reform Credibility</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../07-fiscal.html">7. Fiscal System and Public Sector</a></summary><div class="section-nav"><a class="section-link" href="../sections/07-01-government-revenue-mineral-revenue-and-expenditure-structure.html">7.1 Government Revenue, Mineral Revenue, and Expenditure Structure</a><a class="section-link" href="../sections/07-02-fiscal-balance-debt-stabilization-funds-and-interest-burden.html">7.2 Fiscal Balance, Debt, Stabilization Funds, and Interest Burden</a><a class="section-link" href="../sections/07-03-state-owned-enterprises-mining-soes-and-quasi-public-sector.html">7.3 State-Owned Enterprises, Mining SOEs, and Quasi-Public Sector</a><a class="section-link" href="../sections/07-04-public-investment-roads-urban-infrastructure-and-investment-decision-making.html">7.4 Public Investment, Roads, Urban Infrastructure, and Investment Decision-Making</a><a class="section-link" href="../sections/07-05-fiscal-capacity-commodity-cycles-and-public-sector-risks.html">7.5 Fiscal Capacity, Commodity Cycles, and Public Sector Risks</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../08-society.html">8. Population and Social Structure</a></summary><div class="section-nav"><a class="section-link" href="../sections/08-01-population-size-growth-age-structure-and-dependency.html">8.1 Population Size, Growth, Age Structure, and Dependency</a><a class="section-link" href="../sections/08-02-urbanization-ulaanbaatar-concentration-and-regional-distribution.html">8.2 Urbanization, Ulaanbaatar Concentration, and Regional Distribution</a><a class="section-link" href="../sections/08-03-ethnicity-language-religion-migration-remittances-and-diaspora.html">8.3 Ethnicity, Language, Religion, Migration, Remittances, and Diaspora</a><a class="section-link" href="../sections/08-04-nomadic-livelihoods-social-integration-and-conflict-factors.html">8.4 Nomadic Livelihoods, Social Integration, and Conflict Factors</a><a class="section-link" href="../sections/08-05-demographic-pressures-and-social-cohesion.html">8.5 Demographic Pressures and Social Cohesion</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../09-macro.html">9. Macroeconomic Structure</a></summary><div class="section-nav"><a class="section-link" href="../sections/09-01-gdp-scale-growth-and-gdp-per-capita.html">9.1 GDP Scale, Growth, and GDP Per Capita</a><a class="section-link" href="../sections/09-02-prices-exchange-rate-and-macroeconomic-stability.html">9.2 Prices, Exchange Rate, and Macroeconomic Stability</a><a class="section-link" href="../sections/09-03-sectoral-structure-mineral-dependence-growth-model-and-vulnerabilities.html">9.3 Sectoral Structure, Mineral Dependence, Growth Model, and Vulnerabilities</a><a class="section-link" href="../sections/09-04-growth-sustainability-and-structural-constraints.html">9.4 Growth Sustainability and Structural Constraints</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../10-trade.html">10. Trade, Investment, and External Economy</a></summary><div class="section-nav"><a class="section-link" href="../sections/10-01-exports-imports-trading-partners-and-current-account.html">10.1 Exports, Imports, Trading Partners, and Current Account</a><a class="section-link" href="../sections/10-02-copper-coal-gold-cashmere-tourism-and-services.html">10.2 Copper, Coal, Gold, Cashmere, Tourism, and Services</a><a class="section-link" href="../sections/10-03-fdi-absolute-amount-and-share-of-gdp.html">10.3 FDI Absolute Amount and Share of GDP</a><a class="section-link" href="../sections/10-04-investment-regime-economic-zones-and-industrial-policy.html">10.4 Investment Regime, Economic Zones, and Industrial Policy</a><a class="section-link" href="../sections/10-05-external-integration-and-competitiveness.html">10.5 External Integration and Competitiveness</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../11-infrastructure.html">11. Infrastructure, Energy, and Digital Connectivity</a></summary><div class="section-nav"><a class="section-link" href="../sections/11-01-electricity-access-heating-energy-dependence-and-transition.html">11.1 Electricity Access, Heating, Energy Dependence, and Transition</a><a class="section-link" href="../sections/11-02-transport-logistics-rail-road-air-and-border-corridors.html">11.2 Transport, Logistics, Rail, Road, Air, and Border Corridors</a><a class="section-link" href="../sections/11-03-internet-mobile-connectivity-secure-servers-and-logistics-performance.html">11.3 Internet, Mobile Connectivity, Secure Servers, and Logistics Performance</a><a class="section-link" href="../sections/11-04-connectivity-service-delivery-and-bottlenecks.html">11.4 Connectivity, Service Delivery, and Bottlenecks</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../12-labor.html">12. Labor Market and Human Capital</a></summary><div class="section-nav"><a class="section-link" href="../sections/12-01-labor-force-size-and-participation.html">12.1 Labor Force Size and Participation</a><a class="section-link" href="../sections/12-02-female-participation-unemployment-youth-unemployment-and-vulnerable-employment.html">12.2 Female Participation, Unemployment, Youth Unemployment, and Vulnerable Employment</a><a class="section-link" href="../sections/12-03-herding-mining-education-productivity-hdi-and-r-d.html">12.3 Herding, Mining, Education, Productivity, HDI, and R&amp;D</a><a class="section-link" href="../sections/12-04-employment-absorption-and-human-capital-use.html">12.4 Employment Absorption and Human Capital Use</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../13-education-health.html">13. Education, Health, and Welfare</a></summary><div class="section-nav"><a class="section-link" href="../sections/13-01-education-system-and-public-expenditure.html">13.1 Education System and Public Expenditure</a><a class="section-link" href="../sections/13-02-life-expectancy-infant-mortality-hospital-beds-doctors-and-health-expenditure.html">13.2 Life Expectancy, Infant Mortality, Hospital Beds, Doctors, and Health Expenditure</a><a class="section-link" href="../sections/13-03-air-pollution-sanitation-public-health-risks-and-welfare.html">13.3 Air Pollution, Sanitation, Public Health Risks, and Welfare</a><a class="section-link" href="../sections/13-04-human-development-outcomes-and-welfare-capacity.html">13.4 Human Development Outcomes and Welfare Capacity</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../14-environment.html">14. Environment, Climate Risk, and Sustainable Development</a></summary><div class="section-nav"><a class="section-link" href="../sections/14-01-climate-change-dzud-desertification-and-rural-livelihood-risk.html">14.1 Climate Change, Dzud, Desertification, and Rural Livelihood Risk</a><a class="section-link" href="../sections/14-02-ger-district-and-urban-public-health.html">14.2 Ger District and Urban Public Health</a><a class="section-link" href="../sections/14-03-mining-water-land-restoration-and-environmental-governance.html">14.3 Mining, Water, Land Restoration, and Environmental Governance</a><a class="section-link" href="../sections/14-04-sdg-performance-green-development-and-policy-implementation.html">14.4 SDG Performance, Green Development, and Policy Implementation</a><a class="section-link" href="../sections/14-05-environmental-sustainability-sdg-implementation-and-future-policy-direction.html">14.5 Environmental Sustainability, SDG Implementation, and Future Policy Direction</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../15-finance.html">15. Financial Sector and Economic Institutions</a></summary><div class="section-nav"><a class="section-link" href="../sections/15-01-domestic-credit-private-credit-capital-markets-and-fintech.html">15.1 Domestic Credit, Private Credit, Capital Markets, and Fintech</a><a class="section-link" href="../sections/15-02-central-bank-monetary-policy-supervision-and-exchange-rate.html">15.2 Central Bank, Monetary Policy, Supervision, and Exchange Rate</a><a class="section-link" href="../sections/15-03-foreign-investment-protection-and-capital-market-openness.html">15.3 Foreign Investment Protection and Capital Market Openness</a><a class="section-link" href="../sections/15-04-financial-deepening-and-market-institutions.html">15.4 Financial Deepening and Market Institutions</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../16-security.html">16. Foreign Relations, Security, and Geopolitics</a></summary><div class="section-nav"><a class="section-link" href="../sections/16-01-foreign-policy-orientation-and-international-organizations.html">16.1 Foreign Policy Orientation and International Organizations</a><a class="section-link" href="../sections/16-02-china-russia-third-neighbor-policy-and-strategic-balancing.html">16.2 China, Russia, Third Neighbor Policy, and Strategic Balancing</a><a class="section-link" href="../sections/16-03-borders-security-organizations-military-capacity-and-transnational-issues.html">16.3 Borders, Security Organizations, Military Capacity, and Transnational Issues</a><a class="section-link" href="../sections/16-04-strategic-resources-corridors-and-climate-security-risks.html">16.4 Strategic Resources, Corridors, and Climate-Security Risks</a><a class="section-link" href="../sections/16-05-strategic-environment-and-transnational-risks.html">16.5 Strategic Environment and Transnational Risks</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../17-policy.html">17. Major Policies and National Development Strategy</a></summary><div class="section-nav"><a class="section-link" href="../sections/17-01-evolution-of-national-development-strategy.html">17.1 Evolution of National Development Strategy</a><a class="section-link" href="../sections/17-02-vision-2050-new-recovery-policy-and-industrial-policy.html">17.2 Vision 2050, New Recovery Policy, and Industrial Policy</a><a class="section-link" href="../sections/17-03-digital-transformation-energy-transition-climate-policy-and-administrative-reform.html">17.3 Digital Transformation, Energy Transition, Climate Policy, and Administrative Reform</a><a class="section-link" href="../sections/17-04-welfare-education-health-and-recent-five-year-policy-changes.html">17.4 Welfare, Education, Health, and Recent Five-Year Policy Changes</a><a class="section-link" href="../sections/17-05-policy-implementation-and-reform-sequencing.html">17.5 Policy Implementation and Reform Sequencing</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../18-assessment.html">18. Integrated Assessment</a></summary><div class="section-nav"><a class="section-link" href="../sections/18-01-national-operating-model.html">18.1 National Operating Model</a><a class="section-link" href="../sections/18-02-political-stability-institutional-risk-growth-drivers-and-bottlenecks.html">18.2 Political Stability, Institutional Risk, Growth Drivers, and Bottlenecks</a><a class="section-link" href="../sections/18-03-administrative-capacity-and-international-cooperation-implications.html">18.3 Administrative Capacity and International Cooperation Implications</a><a class="section-link" href="../sections/18-04-mongolia-and-comparative-administration-theory.html">18.4 Mongolia and Comparative Administration Theory</a><a class="section-link" href="../sections/18-05-evidence-limits-and-source-triangulation.html">18.5 Evidence Limits and Source Triangulation</a><a class="section-link" href="../sections/18-06-strategic-diagnosis-and-outlook.html">18.6 Strategic Diagnosis and Outlook</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../19-appendix.html">19. Appendix and Update Workflow</a></summary><div class="section-nav"><a class="section-link" href="../sections/19-01-annual-revision-method.html">19.1 Annual Revision Method</a><a class="section-link" href="../sections/19-02-editorial-revision-method.html">19.2 Editorial Revision Method</a><a class="section-link" href="../sections/19-03-data-integrity.html">19.3 Data Integrity</a><a class="section-link" href="../sections/19-04-evidence-archive-and-review-trail.html">19.4 Evidence Archive and Review Trail</a><a class="section-link" href="../sections/19-05-data-limits-and-source-triangulation.html">19.5 Data Limits and Source Triangulation</a><a class="section-link" href="../sections/19-06-external-review-checklist.html">19.6 External Review Checklist</a><a class="section-link" href="../sections/19-07-comparative-administration-benchmark.html">19.7 Comparative Administration Benchmark</a><a class="section-link" href="../sections/19-08-timeline.html">19.8 Timeline</a><a class="section-link" href="../sections/19-09-government-organization-chart.html">19.9 Government Organization Chart</a><a class="section-link" href="../sections/19-10-constitution-and-major-laws.html">19.10 Constitution and Major Laws</a><a class="section-link" href="../sections/19-11-key-indicator-table-source-list-and-data-codebook.html">19.11 Key Indicator Table, Source List, and Data Codebook</a><a class="section-link" href="../sections/19-12-methodological-notes-and-update-standards.html">19.12 Methodological Notes and Update Standards</a></div></details>
+<details class="toc-group"><summary><a class="chapter-link" href="../20-references.html">20. References</a></summary><div class="section-nav"><a class="section-link" href="../sections/20-01-references.html">20.1 References</a><a class="section-link" href="../sections/20-02-source-integrity-and-citation-notes.html">20.2 Source Integrity and Citation Notes</a></div></details></nav>
+    </aside>
+    <main>
+      <header class="hero"><h2>5.6 Digital Government, E-Mongolia, and Administrative Accountability</h2></header>
+      
+    <section class="section-reading">
+      
+    <article class="editable-prose" data-md-panel="administration-digital-government-e-mongolia-and-administrative-accountability-text" data-md-source="sections/05-06-digital-government-e-mongolia-and-administrative-accountability.md">
+      <div class="prose-toolbar">
+        <span>Editable section manuscript</span>
+        <div>
+          <button type="button" data-md-action="edit">Edit Markdown</button>
+          <button type="button" data-md-action="save" hidden>Save</button>
+          <button type="button" data-md-action="cancel" hidden>Cancel</button>
+        </div>
+      </div>
+      <div class="markdown-preview prose-body"></div>
+      <textarea class="markdown-editor" hidden>## 5.6 Digital Government, E-Mongolia, AI Strategy, and Administrative Accountability
+
+Digital government is one of Mongolia’s most promising administrative reforms because it can reduce distance costs in a vast, low-density country. E-Mongolia and related digital public-service initiatives can make civil registration, permits, tax services, social insurance, business services, and information access easier for citizens and firms. However, digital government should not be judged only by the number of online services. It should be judged by whether it reduces travel, waiting time, administrative discretion, corruption risks, exclusion, and the overall burden of dealing with the state.
+
+The political-administrative significance of digital government is especially high in Mongolia because geography makes conventional service delivery expensive. Citizens in remote soums, bags, and herder households often face long travel times to access administrative services. Digital platforms can reduce this distance penalty. They can also improve transparency by recording transactions, reducing face-to-face discretion, and creating service-performance data. In this sense, digital government is not simply a technology project. It is a state-capacity project.
+
+{{figure:digital-depth}}
+
+### 5.6.1 E-Mongolia and the Digitization of Public Services
+
+E-Mongolia has become the flagship of Mongolia’s digital public-service reform. It was designed as a unified platform through which citizens and firms can access government services without visiting multiple offices. The logic is administratively important: instead of requiring citizens to understand the internal structure of ministries and agencies, the platform attempts to present government as a more integrated service system.
+
+Recent reporting indicates that E-Mongolia has expanded substantially. E-Mongolia 4.0, launched in 2024, was described as offering around 1,200 online services and serving more than 1.8 million citizens. Later platform reporting stated that E-Mongolia 5.0, launched in September 2025, offered more than 1,260 services from 87 government organizations and had reached around 2.06 million active users, covering a large share of the adult population. These figures should be treated as platform-reported numbers rather than independently audited service-quality indicators, but they nevertheless show the scale of Mongolia’s digital-service expansion. ([innovationlibrary.com](https://innovationlibrary.com/articles/mongolia-upgrades-digital-services-with-e-mongolia-4-0?utm_source=chatgpt.com))
+
+The key administrative question is whether this expansion has changed the operating logic of government. A larger number of online services is useful, but service quantity is not the same as service quality. Digital public services should be evaluated by completion rates, user satisfaction, reduction in travel time, reduction in required documents, processing speed, appeal mechanisms, error correction, and access for rural or vulnerable users. If an online service still requires citizens to visit offices, upload repeated documents, or navigate unclear procedures, digitalization remains incomplete.
+
+### 5.6.2 Digital Access and Digital Depth
+
+Internet and mobile indicators show that Mongolia has a relatively strong base for digital service delivery. DataReportal estimated that Mongolia had **2.90 million internet users in January 2025**, equal to **83.0 percent** of the population, and **2.60 million social-media user identities**, equal to **74.4 percent** of the population. These figures indicate substantial connectivity, especially compared with Mongolia’s large territory and low density. ([datareportal.com](https://datareportal.com/reports/digital-2025-mongolia?utm_source=chatgpt.com)) For public administration, however, this is only the first layer. High internet use tells us that citizens can potentially reach the state online; it does not tell us whether the state can process applications, verify eligibility, share records across agencies, correct errors, protect personal data, or deliver a legally valid decision without forcing the citizen back into an office.
+
+{{figure:digital-connectivity}}
+
+For e-government, digital access means that citizens have a channel to reach services. Digital depth means that government has the institutional capacity to complete those services. A digitally deep administration needs reliable broadband, secure servers, cloud or data-center capacity, cybersecurity, interoperable registries, digital identity, electronic signatures, payment integration, data-protection rules, user-centered design, and trained public officials. Without these back-office foundations, an online portal can become only a digital front desk: citizens submit forms online, but officials still print, verify manually, request documents from other agencies, or ask the applicant to visit in person.
+
+This distinction is crucial for E-Mongolia. The platform’s administrative value is not simply that many services are listed online. Its value depends on whether a citizen can complete a transaction end to end: authenticate identity, submit data once, allow agencies to reuse verified records, pay fees, receive a decision, appeal an error, and track the responsible agency. A birth certificate, business registration, social-insurance record, tax document, land-related service, welfare eligibility check, or permit application should not require citizens to understand which ministry owns which database. The digital state should reorganize service delivery around life events and user needs rather than around bureaucratic silos.
+
+The figure should therefore be read as evidence of administrative preconditions. Internet use and mobile subscriptions show that Mongolia has a broad access channel. Fixed broadband shows whether households, firms, schools, hospitals, soum offices, and local service points can use more data-intensive services reliably. Secure servers matter because digital government handles identity, tax, health, social insurance, land, procurement, and business data. If secure infrastructure and cybersecurity lag behind citizen access, digitalization may increase convenience while also increasing exposure to data leakage, fraud, unauthorized access, and public distrust.
+
+Territory makes this issue more complex. A herder household may have mobile access but still face difficulty using complex online services if winter power is unreliable, authentication requires multiple steps, documents are not integrated, or local assistance is unavailable. A soum official may be expected to support digital services but lack stable broadband, equipment, training, or authority to resolve back-office errors. In Ulaanbaatar, the problem may be service volume and platform reliability; in rural areas, it may be assisted access, electricity, device availability, digital literacy, and the ability of local officials to help citizens without recreating informal discretion.
+
+Digital depth should therefore be measured with administrative indicators, not only telecommunications indicators. Mongolia should track end-to-end completion rates, average processing time, number of documents required, share of services completed without office visits, error-correction time, appeal outcomes, rural usage, disabled-user accessibility, system downtime, cybersecurity incidents, and user satisfaction. These indicators would show whether digital transformation is actually reducing administrative burden and corruption risk. They would also help parliament and the cabinet distinguish between visible platform expansion and real state-capacity improvement.
+
+The UN Joint SDG Fund’s DEMOSC programme illustrates this problem. Implemented from June 2024 to June 2025 by the Ministry of Digital Development, Innovation and Communications and UNDP, in partnership with UNICEF, the programme aimed to improve access to digital public services and boost digital skills in Darkhan-Uul, Dornod, Khentii provinces, and underserved areas of Ulaanbaatar. Its focus on marginalized communities shows that Mongolia’s digital transformation still faces a territorial and social inclusion challenge. ([jointsdgfund.org](https://jointsdgfund.org/article/un-joint-programme-strengthening-digital-e-mongolia-services-and-communities-concludes?utm_source=chatgpt.com))
+
+### 5.6.3 AI and Big Data Strategy: From Digital Services to Intelligent Government
+
+Mongolia’s digital agenda has recently moved beyond online service delivery toward artificial intelligence and big data. In February 2025, the Government of Mongolia, led by the Ministry of Digital Development, Innovation, and Communications, in partnership with UNDP, hosted the country’s first conference on the National Strategy for Big Data and Artificial Intelligence at the State Palace. The event brought together government officials, industry leaders, and global experts to discuss Mongolia’s AI development and digital transformation. ([undp.org](https://www.undp.org/mongolia/press-releases/undp-co-organizes-mongolias-first-conference-national-strategy-ai-and-big-data?utm_source=chatgpt.com))
+
+The strategy signals an important shift in administrative ambition. Digital government first focused on putting services online. AI and big data aim to use data to improve policy analysis, service targeting, forecasting, automation, and decision support. In principle, this could help Mongolia in several high-priority areas: dzud early warning, pasture monitoring, social protection targeting, public-health surveillance, traffic management, mining environmental monitoring, tax compliance, procurement-risk detection, and citizen-service chatbots.
+
+Public reporting on the National Strategy on Big Data and Artificial Intelligence indicates that the 2025–2026 phase aims to establish core infrastructure and legal frameworks, including a National Council on Artificial Intelligence, a GPU-cluster-based AI Center, and a National Data Repository. By 2027, the plan reportedly includes graduate scholarships, support for research in 100 AI-related topics, training 300 master’s and doctoral students, and preparing 1,000 AI ambassadors. These are ambitious targets, and they show that Mongolia is trying to connect AI policy with infrastructure, human capital, and institutional coordination. ([pkf-ifs.mn](https://www.pkf-ifs.mn/1921/nitem?utm_source=chatgpt.com))
+
+Mongolia has also sought international cooperation for AI-supported strategic planning. In January 2025, the Government of Mongolia signed a collaboration agreement with the World Economic Forum to develop an AI-driven Strategic Intelligence platform. The platform is intended to provide a whole-of-government overview of 10–12 key sectors connected to Vision 2050 and policy innovation. ([en.mininginsight.mn](https://en.mininginsight.mn/index.php?newsid=407&amp;utm_source=chatgpt.com)) If implemented well, this can support policy coordination. However, such platforms must be connected to real administrative decisions; otherwise, they risk becoming high-level dashboards without operational effect.
+
+### 5.6.4 Implementation Difficulties: Data Silos, Capacity, and Governance
+
+The main challenge is implementation. AI and digital transformation require much more than software. They require reliable data, interoperable systems, legal authority to share data, privacy safeguards, cybersecurity, skilled personnel, procurement capacity, and public trust. Mongolia’s ministries and agencies often maintain separate databases and procedures. Citizens experience government as one system, but agencies may operate as separate silos. Effective digital government requires shared standards, interoperable data, privacy protection, cybersecurity, and coordinated back-office reform.
+
+Data quality is a particularly important issue. AI systems are only as useful as the data on which they depend. If administrative records are incomplete, outdated, inconsistent, or not connected across agencies, AI tools may produce poor recommendations or reinforce existing errors. This is especially risky in social protection, taxation, land administration, environmental monitoring, and local service delivery. A wrong administrative record can exclude a household from benefits, delay a permit, misclassify a business, or distort local planning.
+
+Civil-service capacity is another constraint. Officials need training in data management, service design, cybersecurity, procurement of IT systems, digital ethics, AI governance, and monitoring of automated systems. Without this capacity, digital projects can become expensive platforms that do not change service delivery. The state may become dependent on vendors without sufficient internal ability to evaluate systems, manage contracts, protect data, or audit algorithms.
+
+Procurement is also a major issue. Digital and AI systems are often complex, costly, and difficult for non-specialists to evaluate. If procurement rules focus only on lowest price, the government may acquire weak systems. If procurement is opaque, IT projects can become channels for favoritism or vendor lock-in. Digital procurement should therefore require technical standards, cybersecurity assessment, interoperability requirements, data ownership clauses, open APIs where appropriate, and independent audit.
+
+### 5.6.5 Accountability Through Digital Systems
+
+Digital government can reduce corruption when it changes the opportunity structure of administration. In a paper-based or face-to-face system, corruption often appears through discretionary contact: an official can delay an application, ask for unnecessary documents, hide the status of a case, steer a contract, or make citizens dependent on informal relationships. Digital systems can limit these opportunities by standardizing procedures, recording transactions, time-stamping decisions, publishing information, and making it easier for supervisors, auditors, journalists, firms, and citizens to compare what agencies actually do.
+
+Mongolia has several policy instruments that fit this logic. The first is digital public-service delivery through E-Mongolia. When a service is completed online, the citizen has less need to visit multiple offices, negotiate with frontline officials, or rely on personal contacts. This can reduce petty bribery and administrative harassment. It also creates service logs: who received the application, when it was processed, what decision was made, and whether the case exceeded the legal deadline. These logs are administratively important because corruption is often hidden in delay, ambiguity, and undocumented discretion. If E-Mongolia is connected to complaint systems and performance dashboards, ministries can identify agencies with repeated delays, unusual rejection patterns, or high correction rates.
+
+The second instrument is electronic public procurement. Procurement is one of Mongolia&#x27;s highest-risk areas because infrastructure, mining-related works, local construction, information technology, and public investment contracts involve large sums and repeated interaction between officials and firms. Mongolia&#x27;s e-procurement system is therefore central to anti-corruption policy. OECD monitoring notes that Mongolia established an electronic procurement system in 2016 and that it became mandatory for all procurement in 2019; the same assessment describes the system as operational, accessible, and providing a high degree of transparency. ([OECD][8]) The anti-corruption mechanism is straightforward: tender notices, bidding documents, deadlines, evaluation information, contract awards, and supplier participation become more visible. This reduces the ability of officials to hide tenders, shorten deadlines for favored bidders, or exclude competitors through informal information advantages.
+
+The third instrument is fiscal transparency through the Glass Account system and open-budget reforms. Mongolia&#x27;s 2014 Law on Glass Account created an information system intended to ensure public control, transparency, openness, and clarity in budget-management decisions and activities. ([Legalinfo.mn][9]) The World Bank has emphasized that Mongolia&#x27;s fiscal openness agenda includes timely access to public finance data, the Glass Account Portal, citizen budgets, the BOOST platform, and public participation in budget processes. ([World Bank][10]) These tools are not merely transparency decorations. They allow citizens and civil society to see how public money is raised, allocated, spent, and reported. In anti-corruption terms, they can expose off-budget commitments, unusual spending spikes, poorly justified transfers, politically directed local investments, and discrepancies between approved budgets and actual execution.
+
+The fourth instrument is data-driven monitoring by oversight bodies. A recent example is the Independent Authority Against Corruption&#x27;s reported use of the tuss.io platform to monitor government orders, decisions, rules, and regulations. Digital Watch reported in March 2026 that IAAC had used the platform to review 388 state decisions and that 152 had been revised, amended, or invalidated over the previous three years. ([Digital Watch Observatory][11]) This is important because corruption is not always a cash bribe. It can also be embedded in administrative rules that create unnecessary procedural steps, discretionary permissions, conflicts of interest, or legal inconsistencies. AI-assisted screening can help oversight bodies identify such risks earlier, especially in a system where ministries, agencies, and local governments produce many orders and regulations.
+
+Academic evidence also supports a cautious but positive reading. A study of Mongolian public officials&#x27; perceptions and experience with e-government in customs, immigration, and procurement found that officials viewed e-government as improving the administrative environment and helping prevent some forms of corruption, especially fraudulent or transactional corruption and nonfeasance. But the same study found weaker perceived effects against unfair practices such as political intervention and sponsorship-type corruption. ([KCI][12]) This distinction is crucial for policy. Digital systems can make bribery, delay, and document manipulation harder; they are less effective against elite bargaining, party patronage, conflict of interest, beneficial-ownership concealment, and politically protected firms unless combined with disclosure rules, independent audit, enforcement, and campaign-finance reform.
+
+The limits are therefore clear. First, digitalization can move corruption from the front office to the back office. If system design, database access, procurement specifications, algorithmic rules, or vendor contracts are controlled by a small group without scrutiny, discretion does not disappear; it becomes technical and less visible. Second, digital procurement does not automatically prevent collusion. Firms can still coordinate bids, use related companies, rely on political connections, or tailor specifications before a tender is published. Third, transparency portals do not produce accountability unless data are timely, complete, machine-readable, and used by parliament, audit bodies, media, civil society, and citizens. Fourth, AI-based risk monitoring can create false positives, miss politically sensitive cases, or become a tool of selective enforcement if institutional safeguards are weak.
+
+For Mongolia, the policy lesson is that digital anti-corruption should be designed as an accountability chain. Service portals should reduce face-to-face discretion; procurement platforms should publish comparable contracting data; Glass Account and budget portals should allow spending to be traced; complaint systems should let citizens challenge delays and errors; IAAC, audit institutions, and parliamentary committees should use the data for enforcement; and courts should provide remedy when digital records reveal abuse. Digital systems should therefore strengthen accountability rather than simply make bureaucracy faster.
+
+AI raises this issue more sharply. If AI is used for risk scoring, eligibility screening, procurement red-flagging, fraud detection, regulatory review, or resource allocation, Mongolia will need rules on transparency, human review, bias prevention, data protection, appeal rights, audit logs, and disclosure of model purpose. AI should support public officials and oversight bodies, not replace accountable decision-making in areas that affect rights and benefits. The political implication is clear: digital transformation must be governed by constitutional principles of legality, equality, due process, and administrative accountability.
+
+### 5.6.6 Cybersecurity, Data Protection, and Digital Sovereignty
+
+As the state becomes more digital, cybersecurity becomes a core administrative function. Government databases contain identity records, tax information, health data, social insurance records, land information, business records, and security-sensitive information. Cybersecurity failures can disrupt services, expose citizens’ personal data, undermine trust, and create national-security risks.
+
+The recent AI and big-data agenda also raises questions of digital sovereignty. Mongolia is a small state located between two major powers and dependent on external technology providers, cloud services, platforms, and international partners. Digital sovereignty does not mean isolation. It means that Mongolia must have enough legal, technical, and institutional capacity to control public data, set standards, protect critical systems, and avoid excessive dependence on any single vendor or foreign platform. A National Data Repository and AI Center could contribute to this objective, but only if governed transparently and securely.
+
+### 5.6.7 Political and Administrative Implications
+
+Digital transformation has several implications for Mongolia’s political and administrative system.
+
+First, it can strengthen the center of government. Shared data, dashboards, and digital service records can help the cabinet monitor implementation across ministries and territories. This is especially relevant for cross-sector agendas such as ger-district upgrading, border-port reform, dzud response, and public investment.
+
+Second, it can reduce administrative discretion. If procedures are standardized and tracked online, opportunities for petty corruption may decline. However, discretion may simply move from front offices to back-office system design unless rules are transparent.
+
+Third, it can reshape citizen-state relations. Citizens may expect faster, simpler, and more transparent services. This can increase trust if services work, but it can also increase frustration if platforms are unreliable or exclusionary.
+
+Fourth, it can deepen inequality if digital access is uneven. Rural citizens, older persons, poor households, persons with disabilities, and citizens with limited digital literacy may be left behind unless assisted access is built into service design.
+
+Fifth, it can improve policy learning. Digital records can help identify service gaps, processing delays, local bottlenecks, and regional inequalities. But this requires a culture of using data for improvement, not only for reporting.
+
+### Policy Implications
+
+Mongolia should deepen digital government as an accountability and state-capacity reform.
+
+First, service completion should be measured from the citizen’s perspective, not by the number of portals or services listed online. Key indicators should include completion rates, processing time, user satisfaction, travel reduction, document reduction, complaint resolution, and accessibility.
+
+Second, rural and vulnerable users should have assisted access through local offices, mobile teams, help desks, digital kiosks, and trained local officials. Digital inclusion should be treated as part of equal citizenship.
+
+Third, data interoperability and cybersecurity should be treated as core infrastructure. Ministries and agencies should follow common data standards, secure architecture, privacy rules, and incident-response procedures.
+
+Fourth, AI strategy should begin with high-value public problems. Dzud early warning, social protection targeting, procurement-risk detection, traffic management, environmental monitoring, and service-delivery dashboards are more administratively meaningful than symbolic AI projects.
+
+Fifth, AI governance should include legality, transparency, human oversight, bias prevention, privacy protection, and appeal rights. Citizens should know when automated tools affect decisions and how to challenge errors.
+
+Sixth, digital procurement and platform development should be transparent and auditable. IT contracts should include interoperability, data ownership, cybersecurity, maintenance, and vendor-lock-in safeguards.
+
+Seventh, civil-service training should include data governance, cybersecurity, AI literacy, service design, and digital ethics. Digital transformation cannot be sustained if only private vendors understand the systems.
+
+Eighth, performance dashboards should track waiting times, completion rates, complaints, service gaps, and local implementation. These dashboards should inform cabinet coordination and budget decisions.
+
+Finally, digital government should be linked to broader administrative reform. E-Mongolia, AI strategy, data repositories, and digital platforms should not operate as separate technology projects. They should simplify procedures, reduce corruption risks, improve inclusion, and strengthen accountability across the public sector.
+
+In conclusion, digital government can help Mongolia overcome distance, but only if it changes the operating logic of administration. The objective is not to put bureaucracy online; it is to make public services simpler, fairer, more transparent, and more reachable. Mongolia’s emerging AI and big-data agenda can strengthen this transformation, but it also raises new risks of data fragmentation, algorithmic opacity, cybersecurity vulnerability, and digital exclusion. The political-administrative test is whether Mongolia can govern digital transformation democratically: using technology to strengthen accountability, protect rights, reduce territorial inequality, and improve the state’s capacity to deliver.
+
+### Sources
+
+* Government of Mongolia. E-Mongolia and digital public-service reform materials.
+* Government of Mongolia. *Vision 2050: Long-Term Development Policy of Mongolia*.
+* Ministry of Digital Development, Innovation and Communications / UNDP. 2025. “National Strategy for Big Data and Artificial Intelligence.”
+* UN Joint SDG Fund. 2025. “UN Joint Programme on Strengthening Digital E-Mongolia Services and Communities Concludes.”
+* DataReportal. 2025. *Digital 2025: Mongolia*.
+* World Economic Forum / Government of Mongolia. 2025. AI-driven Strategic Intelligence Platform collaboration materials.
+* World Bank WDI. Mongolia indicators on internet use, mobile subscriptions, broadband, secure servers, electricity access, and governance.
+* OECD. 2024. *Baseline Report of the Fifth Round of Monitoring of Anti-Corruption Reforms in Mongolia*.
+* Legalinfo.mn. 2014. *Law of Mongolia on Glass Account*.
+* World Bank. 2020. *Mongolia&#x27;s Open Budget: Key to a Transparent and an Accountable Future*.
+* Digital Watch Observatory. 2026. *Mongolia anti-corruption authority adopts AI system for decision monitoring*.
+* Song, Hyojin. 2020. *The Control Effect of e-Government on Corruption&#x27;s Behavior and Cause: Based on Mongolian Public Officials&#x27; Awareness and Experience*.
+
+[8]: https://www.oecd.org/content/dam/oecd/en/publications/reports/2024/11/baseline-report-of-the-fifth-round-of-monitoring-of-anti-corruption-reforms-in-mongolia_0c293867/a6e46fdb-en.pdf
+[9]: https://legalinfo.mn/en/edtl/16532710409181
+[10]: https://www.worldbank.org/en/news/feature/2020/05/25/mongolias-open-budget-key-to-a-transparent-and-an-accountable-future
+[11]: https://dig.watch/updates/mongolia-anti-corruption-authority-adopts-ai-system-for-decision-monitoring
+[12]: https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART002575396</textarea>
+      <template data-figure-template="digital-depth">
+    <figure class="figure-card panel-figure" id="digital-depth">
+      <figcaption>Mongolia: Internet, Mobile, Broadband, and Secure Servers</figcaption>
+      <div class="chart-panel-grid">
+        
+            <div class="chart-panel">
+              <h3>Internet users</h3>
+              <div class="chart-panel-frame">
+                <canvas id="chart-digital-depth-internet-users" aria-label="Internet users" role="img"></canvas>
+              </div>
+              <script type="application/json" id="chart-digital-depth-internet-users-config">{"type": "line", "data": {"labels": [1990, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], "datasets": [{"label": "Internet users", "data": [0.0, 0.00881, 0.0182, 0.113, 0.146, 0.508, 1.25565200358112, 1.65323823906982, 2.0395726034818, 9.0, 9.0, 9.0, 9.800000191, 10.0, 10.2, 12.4999911084745, 16.4, 17.699984237, 19.9424474349209, 22.5000041337688, 22.2657705007562, 23.71430016, 47.1300018848989, 51.079994082603, 62.50002848, 81.60682285, 81.07720184, 83.74320221, 85.12349701], "borderColor": "#0f6f78", "backgroundColor": "#0f6f78", "borderWidth": 2, "pointRadius": 1.5, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}]}, "options": {"responsive": true, "maintainAspectRatio": false, "interaction": {"mode": "index", "intersect": false}, "plugins": {"legend": {"display": false}, "tooltip": {"enabled": true}}, "scales": {"x": {"grid": {"display": false}, "ticks": {"maxTicksLimit": 5}}, "y": {"title": {"display": true, "text": "Percent of population (%)"}, "grid": {"color": "#e8eef3"}, "ticks": {"precision": 1}}}}}</script>
+            </div>
+            
+            <div class="chart-panel">
+              <h3>Mobile cellular subscriptions</h3>
+              <div class="chart-panel-frame">
+                <canvas id="chart-digital-depth-mobile-subscriptions" aria-label="Mobile cellular subscriptions" role="img"></canvas>
+              </div>
+              <script type="application/json" id="chart-digital-depth-mobile-subscriptions-config">{"type": "line", "data": {"labels": [1960, 1965, 1970, 1975, 1976, 1977, 1978, 1979, 1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], "datasets": [{"label": "Mobile cellular subscriptions", "data": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.038183598, 0.083971129, 0.375527826, 1.423190067, 6.29688552620539, 7.87020220365662, 8.63974080777577, 12.6496695819066, 16.8592174038547, 21.7365116925906, 29.9796189659682, 45.8051776001595, 66.9284063613147, 84.3807849396284, 92.9207634213904, 107.181059165519, 120.738848253543, 100.901264814345, 103.920441847843, 103.078420951136, 110.745846833017, 125.18399904135, 133.283865358717, 136.719198864644, 132.610273840436, 140.352142155192, 142.808581769425, 141.08481753135, 140.670025377351], "borderColor": "#a6502a", "backgroundColor": "#a6502a", "borderWidth": 2, "pointRadius": 1.5, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}]}, "options": {"responsive": true, "maintainAspectRatio": false, "interaction": {"mode": "index", "intersect": false}, "plugins": {"legend": {"display": false}, "tooltip": {"enabled": true}}, "scales": {"x": {"grid": {"display": false}, "ticks": {"maxTicksLimit": 5}}, "y": {"title": {"display": true, "text": "Per 100 people"}, "grid": {"color": "#e8eef3"}, "ticks": {"precision": 1}}}}}</script>
+            </div>
+            
+            <div class="chart-panel">
+              <h3>Fixed broadband subscriptions</h3>
+              <div class="chart-panel-frame">
+                <canvas id="chart-digital-depth-fixed-broadband" aria-label="Fixed broadband subscriptions" role="img"></canvas>
+              </div>
+              <script type="application/json" id="chart-digital-depth-fixed-broadband-config">{"type": "line", "data": {"labels": [2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], "datasets": [{"label": "Fixed broadband subscriptions", "data": [0.00197764055373936, 0.0035998920032399, 0.0198270683101985, 0.035394151234489, 0.070217569137974, 0.135409299755954, 0.283554418866818, 1.23381809458159, 1.50364345674788, 2.84091834423251, 3.42607770710846, 3.94085550888065, 4.89953823458973, 6.77117608106174, 6.98959122144406, 7.43705957487671, 9.18362021979381, 9.66655365112798, 9.83638257697054, 9.3475568899214, 11.3929982387502, 12.9008288504333, 14.5529107220073, 15.7837343261767], "borderColor": "#2f7d4f", "backgroundColor": "#2f7d4f", "borderWidth": 2, "pointRadius": 1.5, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}]}, "options": {"responsive": true, "maintainAspectRatio": false, "interaction": {"mode": "index", "intersect": false}, "plugins": {"legend": {"display": false}, "tooltip": {"enabled": true}}, "scales": {"x": {"grid": {"display": false}, "ticks": {"maxTicksLimit": 5}}, "y": {"title": {"display": true, "text": "Per 100 people"}, "grid": {"color": "#e8eef3"}, "ticks": {"precision": 1}}}}}</script>
+            </div>
+            
+            <div class="chart-panel">
+              <h3>Secure internet servers</h3>
+              <div class="chart-panel-frame">
+                <canvas id="chart-digital-depth-secure-servers" aria-label="Secure internet servers" role="img"></canvas>
+              </div>
+              <script type="application/json" id="chart-digital-depth-secure-servers-config">{"type": "line", "data": {"labels": [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], "datasets": [{"label": "Secure internet servers", "data": [9.12867858360884, 12.5613847957716, 28.5240896501573, 40.3585912575013, 58.722026463385, 74.3343605791341, 432.846335342276, 1510.04297668055, 1669.78940455191, 1668.46560228028, 1709.2429559474, 1994.83352892553, 2187.98816919588, 2354.68502461116, 2564.12584246201], "borderColor": "#6f4aa8", "backgroundColor": "#6f4aa8", "borderWidth": 2, "pointRadius": 1.5, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}]}, "options": {"responsive": true, "maintainAspectRatio": false, "interaction": {"mode": "index", "intersect": false}, "plugins": {"legend": {"display": false}, "tooltip": {"enabled": true}}, "scales": {"x": {"grid": {"display": false}, "ticks": {"maxTicksLimit": 5}}, "y": {"title": {"display": true, "text": "Per 1 million people"}, "grid": {"color": "#e8eef3"}, "ticks": {"precision": 1}}}}}</script>
+            </div>
+            
+      </div>
+      <p class="source">Source: World Bank WDI, Mongolia country code MNG. Indicator IDs: IT.NET.USER.ZS, IT.CEL.SETS.P2, IT.NET.BBND.P2, IT.NET.SECR.P6. Units vary by panel.</p>
+    </figure>
+    <div class="figure-interpretation">
+      <p>These indicators are deliberately separated into panels because they measure different layers of digital capacity on different scales. Internet use indicates citizen reach, mobile subscriptions show access-channel density, fixed broadband captures deeper household and firm connectivity, and secure servers proxy trust infrastructure for transactions, digital public services, and cybersecurity. For E-Mongolia, the policy question is therefore not only whether people are online, but whether the connection is deep, secure, and usable for rights-affecting public services.</p>
+      <ul><li>Internet users: Individuals using the Internet (% of population) rose from 0.00 in 1990 to 85.12 in 2024.</li><li>Mobile cellular subscriptions: Mobile cellular subscriptions (per 100 people) rose from 0.00 in 1960 to 140.67 in 2024.</li><li>Fixed broadband subscriptions: Fixed broadband subscriptions (per 100 people) rose from 0.00 in 2001 to 15.78 in 2024.</li><li>Secure internet servers: Secure Internet servers (per 1 million people) rose from 9.13 in 2010 to 2564.13 in 2024.</li></ul>
+    </div>
+    </template>
+<template data-figure-template="digital-connectivity">
+    <figure class="figure-card" id="digital-connectivity">
+      <figcaption>Mongolia: Digital and Electricity Access</figcaption>
+      <div class="chart-frame">
+        <canvas id="chart-digital-connectivity" aria-label="Mongolia: Digital and Electricity Access" role="img"></canvas>
+      </div>
+      <p class="source">Source: World Bank API, Mongolia country code MNG. Indicator IDs: IT.NET.USER.ZS, EG.ELC.ACCS.ZS. Unit: Percent of population (%).</p>
+      <script type="application/json" id="chart-digital-connectivity-config">{"type": "line", "data": {"labels": [1990, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], "datasets": [{"label": "Individuals using the Internet (% of population)", "data": [0.0, 0.00881, 0.0182, 0.113, 0.146, 0.508, 1.25565200358112, 1.65323823906982, 2.0395726034818, null, null, 9.0, 9.0, 9.0, 9.800000191, 10.0, 10.2, 12.4999911084745, 16.4, 17.699984237, 19.9424474349209, 22.5000041337688, 22.2657705007562, 23.71430016, 47.1300018848989, 51.079994082603, 62.50002848, 81.60682285, 81.07720184, 83.74320221, 85.12349701], "borderColor": "#0f6f78", "backgroundColor": "#0f6f78", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}, {"label": "Access to electricity (% of population)", "data": [null, null, null, null, null, null, 67.3, 71.7, 72.8, 76.3, 74.8, 86.2, 77.0, 78.1, 79.2, 80.3, 78.5, 72.1, 83.7, 81.2, 86.0, 88.0, 90.8, 93.6, 98.1, 98.9, 99.5, 100.0, 100.0, 100.0, null], "borderColor": "#a6502a", "backgroundColor": "#a6502a", "borderWidth": 2, "pointRadius": 2, "pointHoverRadius": 4, "tension": 0.25, "spanGaps": true}]}, "options": {"responsive": true, "maintainAspectRatio": false, "interaction": {"mode": "index", "intersect": false}, "plugins": {"legend": {"position": "bottom", "labels": {"boxWidth": 14, "boxHeight": 3}}, "tooltip": {"enabled": true}}, "scales": {"x": {"grid": {"display": false}, "ticks": {"maxTicksLimit": 8}}, "y": {"title": {"display": true, "text": "Percent of population (%)"}, "grid": {"color": "#e8eef3"}, "ticks": {"precision": 1}}}}}</script>
+    </figure>
+    
+
+    <div class="figure-interpretation">
+      <p>Digital and electricity access are delivery-capacity indicators. For a low-density country, online public services, reliable power, and connectivity can reduce distance costs only if rural households and local administrations can actually use them.</p>
+      <ul><li>Individuals using the Internet (% of population) rose from 0.00 in 1990 to 85.12 in 2024.</li>
+<li>Access to electricity (% of population) rose from 67.30 in 2000 to 100.00 in 2023.</li></ul>
+    </div>
+    </template>
+    </article>
+    
+    </section>
+    
+    </main>
+  </div>
+  <script>
+    function fallbackMarkdown(text) {
+      const escaped = text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+      return escaped.split(/\n{2,}/).map((block) => `<p>${block.replace(/\n/g, "<br>")}</p>`).join("");
+    }
+    function renderMarkdown(text) {
+      return window.marked ? marked.parse(text) : fallbackMarkdown(text);
+    }
+    function replaceFigurePlaceholders(preview, panel) {
+      const pattern = /^\{\{(figure|map|image):([a-z0-9-]+)\}\}$/;
+      preview.querySelectorAll("p").forEach((paragraph) => {
+        const match = (paragraph.textContent || "").trim().match(pattern);
+        if (!match) return;
+        const key = match[1] === "figure" ? match[2] : `${match[1]}:${match[2]}`;
+        const template = panel.querySelector(`template[data-figure-template="${key}"]`);
+        if (!template) {
+          const note = document.createElement("p");
+          note.className = "source";
+          note.textContent = `Figure not available: ${key}`;
+          paragraph.replaceWith(note);
+          return;
+        }
+        paragraph.replaceWith(template.content.cloneNode(true));
+      });
+    }
+    function setupMarkdownPanels() {
+      document.querySelectorAll("[data-md-panel]").forEach((panel) => {
+        const id = panel.getAttribute("data-md-panel");
+        const preview = panel.querySelector(".markdown-preview");
+        const editor = panel.querySelector(".markdown-editor");
+        const edit = panel.querySelector("[data-md-action='edit']");
+        const save = panel.querySelector("[data-md-action='save']");
+        const cancel = panel.querySelector("[data-md-action='cancel']");
+        const source = panel.getAttribute("data-md-source");
+        const original = editor.value;
+        let hash = 0;
+        for (let i = 0; i < original.length; i += 1) {
+          hash = ((hash << 5) - hash + original.charCodeAt(i)) | 0;
+        }
+        const storageKey = `mng-report-markdown:v2:${id}:${hash}`;
+        const stored = localStorage.getItem(storageKey);
+        const isPermanentMode = source && window.location.protocol.startsWith("http");
+        if (stored !== null && (!source || window.location.protocol === "file:")) {
+          editor.value = stored;
+        } else if (stored !== null && isPermanentMode && stored !== editor.value) {
+          const useDraft = window.confirm("A browser draft exists for this section. Load it into the editor so you can save it permanently?");
+          if (useDraft) editor.value = stored;
+        }
+        const showPreview = () => {
+          preview.innerHTML = renderMarkdown(editor.value);
+          replaceFigurePlaceholders(preview, panel);
+          setupCharts();
+        };
+        const setEditing = (editing) => {
+          editor.hidden = !editing;
+          preview.hidden = editing;
+          edit.hidden = editing;
+          save.hidden = !editing;
+          cancel.hidden = !editing;
+        };
+        const saveMarkdown = async () => {
+          if (isPermanentMode) {
+            const response = await fetch("/api/save-section", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ source, markdown: editor.value })
+            });
+            if (!response.ok) {
+              const message = await response.text();
+              throw new Error(message || `Save failed with ${response.status}`);
+            }
+            localStorage.removeItem(storageKey);
+            window.alert("Saved permanently to the Markdown source file.");
+          } else {
+            localStorage.setItem(storageKey, editor.value);
+            if (source) {
+              window.alert("This edit was saved only as a browser draft. Open the report through MNG/code/serve_report.py to save it permanently to the Markdown source file.");
+            }
+          }
+        };
+        showPreview();
+        setEditing(false);
+        edit.addEventListener("click", () => setEditing(true));
+        save.addEventListener("click", async () => {
+          save.disabled = true;
+          try {
+            await saveMarkdown();
+            showPreview();
+            setEditing(false);
+          } catch (error) {
+            window.alert(error.message || "Could not save the Markdown source.");
+          } finally {
+            save.disabled = false;
+          }
+        });
+        cancel.addEventListener("click", () => {
+          editor.value = localStorage.getItem(storageKey) ?? original;
+          showPreview();
+          setEditing(false);
+        });
+      });
+    }
+    function setupCharts() {
+      if (!window.Chart) {
+        document.querySelectorAll(".figure-card").forEach((card) => {
+          const note = document.createElement("p");
+          note.className = "source";
+          note.textContent = "Chart.js could not be loaded from local assets/chart.umd.min.js.";
+          card.appendChild(note);
+        });
+        return;
+      }
+      document.querySelectorAll("script[type='application/json'][id$='-config']").forEach((script) => {
+        const canvasId = script.id.replace("-config", "");
+        const canvas = document.getElementById(canvasId);
+        if (!canvas) return;
+        if (canvas.dataset.chartReady === "1") return;
+        canvas.dataset.chartReady = "1";
+        new Chart(canvas, JSON.parse(script.textContent));
+      });
+    }
+    window.addEventListener("DOMContentLoaded", () => {
+      setupMarkdownPanels();
+      setupCharts();
+    });
+    </script>
+</body>
+</html>

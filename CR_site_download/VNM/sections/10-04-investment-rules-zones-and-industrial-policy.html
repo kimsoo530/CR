@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>10.4 Investment Rules, Zones, and Industrial Policy | VNM Country Report</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+  <script src="../assets/chart.umd.min.js"></script>
+  <style>
+    body{margin:0;background:#f4f6f4;color:#17201b;font-family:Arial,Helvetica,sans-serif;line-height:1.65}
+    .layout{display:grid;grid-template-columns:320px minmax(0,1fr);min-height:100vh}
+    aside{position:sticky;top:0;height:100vh;overflow:auto;background:#fff;border-right:1px solid #d9ded8;padding:18px}
+    aside a{display:block;color:#25312a;text-decoration:none;border-radius:6px;padding:6px 8px;font-size:13px}
+    aside a:hover,aside a.active{background:#e8f0ea;color:#0d5a6a} summary{cursor:pointer;font-weight:700;margin:10px 0 4px}
+    .home{font-weight:800;margin-bottom:8px}
+    main{max-width:1050px;padding:36px min(6vw,72px) 90px}
+    .crumb{font-size:13px;color:#607067;margin:0 0 8px} h1{font-size:36px;line-height:1.15;margin:0 0 8px}
+    .chapter-title{color:#56645c;margin:0 0 26px}
+    .section-body,.chart-card{background:#fff;border:1px solid #d9ded8;border-radius:8px;padding:18px;margin:0 0 22px}
+    .section-body h2{font-size:26px;margin:0 0 14px} .section-body p{font-family:Georgia,'Times New Roman',serif;font-size:18px;margin:0 0 14px}
+    table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px} th,td{border:1px solid #d9ded8;padding:8px;vertical-align:top} th{background:#edf2ea;text-align:left}
+    code{background:#eef2ee;border:1px solid #d8ded8;border-radius:4px;padding:1px 4px} .source-note,figcaption{font-size:12px;color:#607067}
+    .chart-frame{height:340px} .chart-frame canvas{width:100%;height:100%}
+    .figure-card,.map-card,.symbol-figure{background:#fff;border:1px solid #d9ded8;border-radius:8px;padding:14px;margin:18px 0 24px}
+    .source{color:#607067;font-size:12px;margin:10px 0 0} .map-grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(280px,.7fr);gap:16px;align-items:start}
+    .adm-map{width:100%;height:auto;border:1px solid #d9ded8;background:#f7fbfc} .adm-path{stroke:#fff;stroke-width:.7} .map-label{font-size:6px;fill:#32424f;text-anchor:middle;pointer-events:none} .neighbor-label{font-size:12px;fill:#6c7b88}
+    .capital-marker circle{fill:#c23b22;stroke:#fff;stroke-width:1.4} .capital-marker text{font-size:12px;fill:#17212b;font-weight:700} .map-table-wrap{max-height:420px;overflow:auto}
+    .symbol-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px} .symbol-card{min-height:260px;border:1px solid #d9ded8;border-radius:8px;background:#fbfdfe;padding:14px;display:flex;flex-direction:column;gap:10px}
+    .symbol-card h3{font-size:18px;margin:2px 0 0} .symbol-card p{font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:1.48;color:#34424e;margin:0} .symbol-kicker{color:#607067;font-size:11px;text-transform:uppercase;letter-spacing:.06em}
+    .flag-indonesia{height:92px;border:1px solid #b9c6cd;border-radius:4px;overflow:hidden} .flag-indonesia span{display:block;height:50%} .flag-indonesia span:first-child{background:#c9182b} .flag-indonesia span:last-child{background:#fff}
+    .garuda-mark{height:92px;display:grid;grid-template-columns:1fr 56px 1fr;align-items:center;gap:4px} .garuda-mark .wing{height:60px;background:#c59a35;border:1px solid #9d761e} .garuda-mark .left{border-radius:60px 10px 18px 60px} .garuda-mark .right{border-radius:10px 60px 60px 18px}
+    .garuda-mark .body{height:82px;background:#d6ad46;border:1px solid #9d761e;border-radius:36px 36px 18px 18px} .garuda-mark .shield{grid-column:2;justify-self:center;margin-top:-58px;width:36px;height:42px;border-radius:8px 8px 14px 14px;background:#1f3f68;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;border:2px solid #f1d47b}
+    .motto-line{height:92px;display:flex;align-items:center;justify-content:center;text-align:center;border:1px solid #cfd9de;border-radius:6px;background:linear-gradient(180deg,#fff,#eef5f7);font-weight:800;color:#15384a;padding:12px} .anthem-bars{height:92px;display:flex;align-items:end;gap:8px;justify-content:center;border:1px solid #cfd9de;border-radius:6px;background:#f8fbfc;padding:16px}
+    .anthem-bars span{width:22px;background:#0f6f87;border-radius:4px 4px 0 0} .anthem-bars span:nth-child(1){height:38px} .anthem-bars span:nth-child(2){height:62px} .anthem-bars span:nth-child(3){height:48px} .anthem-bars span:nth-child(4){height:72px}
+    @media(max-width:860px){.layout{grid-template-columns:1fr}aside{position:relative;height:auto}main{padding:24px 18px}}
+  
+    .md-toolbar{display:flex;justify-content:flex-end;gap:8px;margin:0 0 14px}
+    .md-toolbar button{border:1px solid #0d5a6a;background:#0d5a6a;color:#fff;border-radius:5px;padding:7px 11px;font:700 12px Arial,Helvetica,sans-serif;cursor:pointer}
+    .md-toolbar button[data-md-action='cancel']{background:#fff;color:#25312a;border-color:#cfd8d3}
+    .md-editor{width:100%;min-height:520px;border:1px solid #cfd8d3;border-radius:6px;padding:14px;font:14px Consolas,monospace;line-height:1.45}
+
+  </style>
+  <script src="../assets/marked.min.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <aside><a class='home' href='../index.html'>VNM cover</a>
+<details ><summary>1. Country Overview</summary><a class='section-link ' href='01-01-national-profile.html'>1.1 National Profile</a><a class='section-link ' href='01-02-state-symbols.html'>1.2 State Symbols</a><a class='section-link ' href='01-03-geography-and-administrative-divisions.html'>1.3 Geography and Administrative Divisions</a><a class='section-link ' href='01-04-core-institutional-diagnosis.html'>1.4 Core Institutional Diagnosis</a><a class='section-link ' href='01-05-evidence-base.html'>1.5 Evidence Base and Reading Direction</a></details>
+<details ><summary>2. Historical Background</summary><a class='section-link ' href='02-01-civilizational-layers-and-frontier-statecraft.html'>2.1 Civilizational Layers and Frontier Statecraft</a><a class='section-link ' href='02-02-colonial-rule-revolution-and-war.html'>2.2 Colonial Rule, Revolution, and War</a><a class='section-link ' href='02-03-reunification-and-doi-moi.html'>2.3 Reunification and Doi Moi</a><a class='section-link ' href='02-04-historical-legacies-in-present-institutions.html'>2.4 Historical Legacies in Present Institutions</a></details>
+<details ><summary>3. Constitution and Basic State Order</summary><a class='section-link ' href='03-01-constitutional-order-and-amendments.html'>3.1 Constitutional Order, Ownership, and the Architecture of State Power</a><a class='section-link ' href='03-02-sovereignty-party-leadership-and-territorial-integrity.html'>3.2 Sovereignty, Party Leadership, and Territorial Integrity</a><a class='section-link ' href='03-03-rights-duties-and-socialist-rule-of-law.html'>3.3 Rights, Duties, and Socialist Rule of Law</a><a class='section-link ' href='03-04-state-power-review-audit-and-emergency-authority.html'>3.4 State Power, Review, Audit, and Emergency Authority</a></details>
+<details ><summary>4. Political System and Power Structure</summary><a class='section-link ' href='04-01-party-leadership-and-state-institutions.html'>4.1 Party Leadership and State Institutions</a><a class='section-link ' href='04-02-national-assembly-elections-and-representation.html'>4.2 National Assembly, Elections, and Representation</a><a class='section-link ' href='04-03-executive-coordination-and-government-formation.html'>4.3 Executive Coordination and Government Formation</a><a class='section-link ' href='04-04-judiciary-rule-of-law-corruption-and-accountability.html'>4.4 Courts, Procuracy, Inspection, and Anti-Corruption</a><a class='section-link ' href='04-05-local-politics-and-real-power-relations.html'>4.5 Local Politics and Real Power Relations</a><a class='section-link ' href='04-06-political-system-diagnostics-and-democratic-trajectory.html'>4.6 Political System Diagnostics and Democratic Trajectory</a></details>
+<details ><summary>5. Administrative System and Government Organization</summary><a class='section-link ' href='05-01-central-government-and-ministerial-system.html'>5.1 Central Government and Ministerial System</a><a class='section-link ' href='05-02-organizational-management-and-bureaucratic-reform.html'>5.2 Organizational Management and Bureaucratic Reform</a><a class='section-link ' href='05-03-human-resource-management-and-civil-service.html'>5.3 Human Resource Management and Civil Service</a><a class='section-link ' href='05-04-financial-administration-procurement-audit-and-inspection.html'>5.4 Financial Administration, Procurement, Audit, and Inspection</a><a class='section-link ' href='05-05-local-administration-and-service-delivery.html'>5.5 Local Administration and Service Delivery</a><a class='section-link ' href='05-06-digital-government-and-administrative-accountability.html'>5.6 Digital Government and Administrative Accountability</a><a class='section-link ' href='05-07-implementation-capacity-and-administrative-performance.html'>5.7 Implementation Capacity and Administrative Performance</a></details>
+<details ><summary>6. Governance and Institutional Capacity</summary><a class='section-link ' href='06-01-government-effectiveness-and-regulatory-quality.html'>6.1 Government Effectiveness and Regulatory Quality</a><a class='section-link ' href='06-02-rule-of-law-and-corruption-control.html'>6.2 Rule of Law and Corruption Control</a><a class='section-link ' href='06-03-voice-accountability-and-stability.html'>6.3 Voice, Accountability, and Stability</a><a class='section-link ' href='06-04-what-governance-indicators-reveal.html'>6.4 What Governance Indicators Reveal</a></details>
+<details ><summary>7. Fiscal System and Public Sector</summary><a class='section-link ' href='07-01-revenue-taxation-and-expenditure.html'>7.1 Revenue, Taxation, and Expenditure</a><a class='section-link ' href='07-02-deficit-debt-and-fiscal-space.html'>7.2 Fiscal Balance, Debt, and Fiscal Space</a><a class='section-link ' href='07-03-public-investment-soes-and-quasi-fiscal-risk.html'>7.3 Public Investment, Procurement, SOEs, and Quasi-Fiscal Risk</a><a class='section-link ' href='07-04-budget-decentralization-and-audit.html'>7.4 Budget Decentralization, Procurement Oversight, and Audit</a><a class='section-link ' href='07-05-fiscal-capacity-and-public-sector-risks.html'>7.5 Fiscal Capacity and Public Sector Risks</a></details>
+<details ><summary>8. Population and Social Structure</summary><a class='section-link ' href='08-01-population-scale-and-age-structure.html'>8.1 Population Scale and Age Structure</a><a class='section-link ' href='08-02-urbanization-and-regional-distribution.html'>8.2 Urbanization and Regional Distribution</a><a class='section-link ' href='08-03-ethnicity-language-religion-and-social-cohesion.html'>8.3 Ethnicity, Language, Religion, and Social Cohesion</a><a class='section-link ' href='08-04-migration-remittances-and-inclusion.html'>8.4 Migration, Remittances, and Inclusion</a></details>
+<details ><summary>9. Macroeconomic Structure</summary><a class='section-link ' href='09-01-gdp-scale-growth-and-income.html'>9.1 GDP Scale, Growth, and Income Level</a><a class='section-link ' href='09-02-inflation-exchange-rate-and-macro-stability.html'>9.2 Inflation, Exchange-Rate Management, and Macro Stability</a><a class='section-link ' href='09-03-industrial-structure-and-productivity.html'>9.3 Industrial Structure, Sectoral Transformation, and Productivity</a><a class='section-link ' href='09-04-growth-model-and-structural-vulnerabilities.html'>9.4 External Position, Trade Balance, and Structural Constraints</a><a class='section-link ' href='09-05-growth-driver-model-and-interpretation.html'>9.5 Growth Driver Model and Interpretation</a></details>
+<details open><summary>10. Trade, Investment, and External Economy</summary><a class='section-link ' href='10-01-exports-imports-and-current-account.html'>10.1 Export-Import Trends, Trade Dependence, and Export Transformation</a><a class='section-link ' href='10-02-fdi-and-export-manufacturing.html'>10.2 FDI and Export Manufacturing</a><a class='section-link ' href='10-03-trading-partners-supply-chains-and-technology-upgrading.html'>10.3 Trading Partners, Supply Chains, and Technology Upgrading</a><a class='section-link active' href='10-04-investment-rules-zones-and-industrial-policy.html'>10.4 Investment Rules, Zones, and Industrial Policy</a></details>
+<details ><summary>11. Infrastructure, Energy, and Digital Connectivity</summary><a class='section-link ' href='11-01-energy-access-and-power-system-reform.html'>11.1 Energy Access and Power System Reform</a><a class='section-link ' href='11-02-transport-logistics-and-corridors.html'>11.2 Transport, Logistics, and Corridors</a><a class='section-link ' href='11-03-digital-connectivity.html'>11.3 Digital Connectivity, AI Infrastructure, and the Digital Economy</a><a class='section-link ' href='11-04-infrastructure-governance-and-climate-resilience.html'>11.4 Infrastructure Governance and Climate Resilience</a></details>
+<details ><summary>12. Labor Market and Human Capital</summary><a class='section-link ' href='12-01-labor-force-and-participation.html'>12.1 Labor Force and Participation</a><a class='section-link ' href='12-02-women-youth-and-informality.html'>12.2 Women, Youth, and Informality</a><a class='section-link ' href='12-03-agricultural-employment-and-productivity.html'>12.3 Agricultural Employment and Productivity</a><a class='section-link ' href='12-04-skills-education-and-human-capital.html'>12.4 Skills, Education, and Human Capital</a></details>
+<details ><summary>13. Education, Health, and Welfare</summary><a class='section-link ' href='13-01-education-system-and-public-spending.html'>13.1 Education System, Skills Policy, and Public Spending</a><a class='section-link ' href='13-02-health-outcomes-and-service-capacity.html'>13.2 Health Care, Population Ageing, and Financial Protection</a><a class='section-link ' href='13-03-water-sanitation-nutrition-and-welfare.html'>13.3 Water, Sanitation, Nutrition, and Welfare</a><a class='section-link ' href='13-04-human-development-and-territorial-equity.html'>13.4 Human Development and Territorial Equity</a></details>
+<details ><summary>14. Financial Sector and Economic Institutions</summary><a class='section-link ' href='14-01-banks-credit-and-capital-markets.html'>14.1 Banks, Credit, and Capital Markets</a><a class='section-link ' href='14-02-state-bank-of-vietnam-and-financial-supervision.html'>14.2 State Bank of Vietnam and Financial Supervision</a><a class='section-link ' href='14-03-fintech-payments-and-inclusion.html'>14.3 Fintech, Payments, and Inclusion</a><a class='section-link ' href='14-04-financial-stability-and-reform-priorities.html'>14.4 Financial Stability and Reform Priorities</a></details>
+<details ><summary>15. Foreign Relations, Security, and Geopolitics</summary><a class='section-link ' href='15-01-bamboo-diplomacy-and-asean.html'>15.1 Bamboo Diplomacy, ASEAN, and the Evolution of Vietnam’s Foreign Policy Principles</a><a class='section-link ' href='15-02-china-the-united-states-and-the-east-sea.html'>15.2 China, the United States, and the East Sea</a><a class='section-link ' href='15-03-defense-police-border-and-transnational-risks.html'>15.3 Defense, Police, Border, and Transnational Risks</a><a class='section-link ' href='15-04-mekong-energy-security-and-strategic-corridors.html'>15.4 Mekong, Energy Security, and Strategic Corridors</a></details>
+<details ><summary>16. Major Policies and National Development Strategy</summary><a class='section-link ' href='16-01-evolution-of-national-development-strategy.html'>16.1 Evolution of National Development Strategy</a><a class='section-link ' href='16-02-socio-economic-development-strategy-2021-2030.html'>16.2 Socio-Economic Development Strategy 2021-2030</a><a class='section-link ' href='16-03-administrative-restructuring-and-public-administration-reform.html'>16.3 Administrative Restructuring and Public Administration Reform</a><a class='section-link ' href='16-04-digital-green-and-industrial-transformation.html'>16.4 Digital, Green, and Industrial Transformation</a><a class='section-link ' href='16-05-implementation-matrix-and-risks.html'>16.5 Implementation Matrix and Risks</a><a class='section-link ' href='16-06-green-growth-climate-governance-and-sdg-implementation.html'>16.6 Green Growth, Climate Governance, and SDG Implementation</a></details>
+<details ><summary>17. Integrated Assessment</summary><a class='section-link ' href='17-01-national-operating-model.html'>17.1 National Operating Model</a><a class='section-link ' href='17-02-institutional-strengths-risks-and-bottlenecks.html'>17.2 Institutional Strengths, Risks, and Bottlenecks</a><a class='section-link ' href='17-03-implications-for-korea-and-international-cooperation.html'>17.3 Implications for Korea and International Cooperation</a><a class='section-link ' href='17-04-vietnam-and-comparative-administration-theory.html'>17.4 Vietnam and Comparative Administration Theory</a><a class='section-link ' href='17-05-strategic-outlook.html'>17.5 Strategic Outlook</a></details>
+<details ><summary>18. Appendix, Sources, and Method</summary><a class='section-link ' href='18-01-timeline.html'>18.1 Timeline</a><a class='section-link ' href='18-02-government-organization-chart.html'>18.2 Government Organization Chart</a><a class='section-link ' href='18-03-major-laws-and-policy-documents.html'>18.3 Major Laws and Policy Documents</a><a class='section-link ' href='18-04-indicator-codebook.html'>18.4 Indicator Codebook</a><a class='section-link ' href='18-05-update-workflow-and-evidence-archive.html'>18.5 Update Workflow and Evidence Archive</a></details>
+<details ><summary>19. References</summary><a class='section-link ' href='19-01-references.html'>19.1 References</a><a class='section-link ' href='19-02-citation-and-source-integrity-notes.html'>19.2 Citation and Source Integrity Notes</a></details></aside>
+    <main>
+      <p class="crumb"><a href="../10-trade.html">Chapter 10</a> / Section 4</p>
+      <h1>10.4 Investment Rules, Zones, and Industrial Policy</h1>
+      <p class="chapter-title">10. Trade, Investment, and External Economy</p>
+      <article class="section-body editable-section" data-md-panel="10-04-investment-rules-zones-and-industrial-policy" data-md-source="sections/10-04-investment-rules-zones-and-industrial-policy.md">
+  <div class="md-toolbar">
+    <button type="button" data-md-action="edit">Edit Markdown</button>
+    <button type="button" data-md-action="save" hidden>Save</button>
+    <button type="button" data-md-action="cancel" hidden>Cancel</button>
+  </div>
+  <div class="md-preview"><h2 id='10-4-investment-rules-zones-and-industrial-policy'>10.4 Investment Rules, Zones, and Industrial Policy</h2>
+<p><strong>ASEAN comparative lens (2026).</strong> Vietnam should be read in ASEAN comparison as ASEAN&#x27;s most prominent party-led, export-manufacturing upgrading case. Unlike the Philippines&#x27; service-remittance profile, Thailand&#x27;s older industrial-tourism base, Malaysia&#x27;s resource-industrial federal structure, or Indonesia&#x27;s archipelagic domestic-market scale, Vietnam&#x27;s comparative issue is how a socialist party-state manages very open global production networks. For this section, the regional comparison should compare trade, FDI, current-account structure, supply-chain depth, remittances, tourism receipts, and regional integration with ASEAN peers. Local comparable indicators show: population 100.99 million (2024), rank 3 among the nine ASEAN reports in this workspace; GDP US$476.39 billion (2024), rank 4 among the nine ASEAN reports in this workspace; GDP per capita US$4,717 (2024), rank 5 among the nine ASEAN reports in this workspace; real GDP growth 7.09% (2024), rank 1 among the nine ASEAN reports in this workspace; government effectiveness 0.09 (2023), rank 6 among the nine ASEAN reports in this workspace; internet use 84.15% (2024), rank 4 among the nine ASEAN reports in this workspace. Use `sources/documents/regional/asean_comparative_lens_2026.md` together with ASEANstats, ASEAN Secretariat materials, and the country processed-indicator files before making cross-ASEAN claims.</p>
+<p>The preceding sections showed that Viet Nam&#x27;s trade and investment model has two faces. It has produced extraordinary export growth, strong FDI inflows, industrial employment, and deeper insertion into global value chains. It has also created exposure to the U.S. market, dependence on Asian intermediate inputs, foreign-invested export dominance, uneven domestic supplier capability, and limited domestic ownership of technology. Section 10.4 therefore widens the lens: how does the Vietnamese state use investment rules, industrial zones, and industrial policy to turn openness into domestic development?</p>
+<p>The answer is that Viet Nam remains strongly open to foreign capital, but the government&#x27;s attitude has become more selective. In the early reform period, the core challenge was to attract capital, normalize external economic relations, and create confidence after the transition from central planning. In the WTO and export-platform period, the priority was to build industrial zones, simplify investment procedures, expand trade agreements, and position Viet Nam as a reliable manufacturing base. The current policy language is different. It still welcomes FDI, but it increasingly asks what kind of FDI is being attracted, whether it brings technology, whether it creates linkages with domestic firms, whether it supports green and digital transformation, and whether it strengthens Viet Nam&#x27;s strategic autonomy.</p>
+<p>Decision No. 667/QD-TTg, approving the Strategy for foreign investment cooperation in the 2021-2030 period, captures this shift. The strategy does not reject foreign capital. It tries to upgrade the terms on which foreign capital enters. Its targets include increasing the share of registered capital from specified partner countries and territories to more than 70 percent in 2021-2025 and more than 75 percent in 2026-2030, increasing the number of Fortune 500 multinationals with presence and operations in Viet Nam by 50 percent, and placing Viet Nam among the top three ASEAN countries and top 60 countries globally for business-environment indicators. The policy message is clear: Viet Nam wants capital, but it wants capital connected to technology, standards, innovation, supply-chain upgrading, and institutional credibility.</p>
+<figure class="map-card">
+<img alt="Vietnam investment policy shift from capital access to strategic value capture" class="admin-map" src="../assets/vnm_investment_policy_strategy_shift.svg"/>
+<figcaption>Source: Prime Minister Decision No. 667/QD-TTg on the Strategy for foreign investment cooperation in the 2021-2030 period. The figure summarizes the policy shift from opening and attraction toward quality, spillovers, value capture, and strategic investment governance.</figcaption>
+</figure>
+<h3>10.4.1 Investment Rules as Development Strategy</h3>
+<p>Investment rules operate as more than legal procedures. They define how the state allocates opportunity, risk, land, tax incentives, market access, administrative support, and regulatory scrutiny. Viet Nam uses investment law, enterprise law, industrial-zone regulation, land procedures, tax incentives, environmental approvals, public investment planning, customs administration, and provincial investment promotion as parts of one development toolkit. The state does more than wait for investors. It tries to shape where they locate, what sectors they enter, what infrastructure they use, and how they connect to national development goals.</p>
+<p>The policy challenge is balance. If rules are too restrictive, Viet Nam loses investors to other ASEAN and Asian production locations. If rules are too permissive, the state may accept low-value assembly, polluting projects, land speculation, fiscal giveaways, weak labor standards, or enclave-style FDI with few domestic linkages. The investment regime must therefore combine openness with discipline: fast procedures for high-quality projects, credible screening of risky projects, transparent land and tax rules, predictable dispute resolution, and stronger monitoring of implementation commitments.</p>
+<p>This is especially important after the 2025 administrative reorganization. Larger provincial-level units may make it easier to plan regional industrial corridors, logistics systems, energy infrastructure, and workforce development. But reorganization can also disrupt investment services if land records, business registration, tax offices, environmental approvals, and industrial-zone authorities do not coordinate smoothly. Investors care about national policy, but they experience Viet Nam through provincial and local administration. Investment competitiveness is therefore a test of local state capacity.</p>
+<h3>10.4.2 Zones, Corridors, and the Geography of Industrial Policy</h3>
+<p>Industrial zones and economic zones translate investment policy into territory. They offer land, infrastructure, power connections, customs access, labor pools, environmental systems, and administrative services in concentrated sites. This has been central to Viet Nam&#x27;s export-manufacturing success. Foreign firms did not enter an abstract market; they entered industrial zones connected to ports, highways, airports, customs offices, provincial governments, and labor markets.</p>
+<p>Zones solve coordination problems, but they also create governance risks. First, land conversion can generate social conflict, compensation disputes, and speculative pressure. Second, industrial-zone incentives can reduce fiscal revenue if tax benefits are granted without strong spillovers. Third, environmental standards matter because manufacturing upgrading can increase water, waste, air, and carbon pressures. Fourth, labor standards and housing matter because industrial zones depend on migrant workers. Fifth, zones can become enclaves if they connect foreign firms to global buyers but do not connect them to domestic suppliers.</p>
+<p>The policy objective should therefore be to move from <strong>industrial-zone occupancy</strong> to <strong>industrial ecosystem quality</strong>. A successful zone should be judged by more than occupancy. It should support supplier networks, training centers, logistics services, testing laboratories, standards certification, environmental management, digital infrastructure, and links with universities and domestic firms. This is where industrial policy becomes administrative policy: the state has to coordinate ministries, provincial governments, zone authorities, firms, schools, banks, customs agencies, and infrastructure providers.</p>
+<h3>10.4.3 Investment Composition and the 2025 FDI Signal</h3>
+<p>The 2025 investment data show why Viet Nam cannot rely on foreign capital alone. NSO reported total disbursed development investment of VND 4,150.5 trillion at current prices. The domestic non-state sector accounted for 53.9 percent, the state sector for 29.7 percent, and the FDI sector for 16.4 percent. This composition matters. Foreign capital is highly strategic because it anchors exports and technology-intensive production, but domestic private investment is the largest investment block. State investment also remains crucial because public infrastructure, energy, transport, education, water systems, and digital administration determine whether private and foreign investment can be productive.</p>
+<figure class="map-card">
+<img alt="Vietnam investment composition and FDI policy dashboard for 2025" class="admin-map" src="../assets/vnm_investment_policy_dashboard_2025.svg"/>
+<figcaption>Source: National Statistics Office of Viet Nam, Socio-economic situation in the fourth quarter and 2025. The dashboard distinguishes total disbursed investment by ownership sector from foreign-investment registration and disbursement measures.</figcaption>
+</figure>
+<p>The foreign-investment signal remains strong. In 2025, registered inward foreign investment reached USD 38.42 billion, while disbursed FDI reached USD 27.62 billion, the highest level in the previous five-year period. Viet Nam licensed 4,054 new FDI projects with USD 17.32 billion in newly registered capital, while adjusted capital for existing projects reached USD 14.07 billion and capital contributions and share purchases reached USD 7.03 billion. These figures show that Viet Nam remains attractive to foreign investors despite global uncertainty.</p>
+<p>The sectoral composition also matters. Processing and manufacturing accounted for USD 9.80 billion, or 56.5 percent of newly licensed FDI capital in 2025. Real estate accounted for USD 3.67 billion, or 21.2 percent. This is a useful warning. Manufacturing FDI can support exports, jobs, technology exposure, and supplier networks, especially when it moves into higher-value segments. Real estate FDI can support urban development and services, but it can also fuel land speculation, asset cycles, and uneven regional development if not governed carefully. A quality-FDI strategy should therefore not only ask how much capital entered. It should ask whether capital deepens productive capability.</p>
+<h3>10.4.4 The Government&#x27;s Attitude toward Foreign Capital</h3>
+<p>The Vietnamese government&#x27;s attitude toward foreign capital has evolved through four stages. The first was cautious opening. After Doi Moi, foreign capital became acceptable as part of renovation and reconstruction, but it was still embedded in a socialist political framework. The second was export-platform pragmatism. As Viet Nam normalized relations, joined ASEAN, entered the WTO, and signed trade agreements, FDI became a central growth tool. The third was selective upgrading. By the late 2010s and early 2020s, policy documents increasingly emphasized quality, efficiency, technology transfer, environmental standards, domestic linkages, and stronger institutions. The fourth, now emerging, is strategic positioning: Viet Nam wants to benefit from supply-chain diversification, semiconductors, AI, green investment, and high-value services while avoiding excessive dependence on any single foreign market or investor group.</p>
+<p>This evolution should not be misunderstood as a turn against FDI. Viet Nam still competes for foreign investment and still needs foreign capital, technology, management, and market access. The change is that the state is trying to bargain for better developmental terms. It wants investors that bring technology, train workers, use local suppliers, comply with standards, invest in supporting industries, and help Viet Nam move up global value chains. The government&#x27;s posture is therefore open but more demanding.</p>
+<p>The difficulty is implementation. It is easier to announce selective FDI than to enforce it. Provincial governments may compete for projects and incentives. Local officials may prefer visible capital commitments over long-term spillovers. Ministries may have different priorities. Some projects promise technology transfer but deliver limited domestic learning. Domestic firms may not be ready to supply multinational firms even when investors are willing to localize procurement. A quality-FDI strategy therefore requires not only better screening but also domestic capability-building.</p>
+<h3>10.4.5 Industrial Policy and Domestic Capability</h3>
+<p>Industrial policy in Viet Nam should be understood as a capability-building agenda. It includes supplier development, workforce training, science and technology policy, digital infrastructure, standards and testing, public investment, finance for domestic firms, support for small and medium enterprises, and coordination with foreign investors. The policy goal is not to replace global value chains with self-sufficiency. It is to capture more value inside those chains.</p>
+<p>This requires several instruments. First, supplier-development programs should help domestic firms meet quality, cost, delivery, environmental, and compliance requirements. Second, vocational education and universities should align more closely with electronics, semiconductors, automation, logistics, AI, software, and precision manufacturing. Third, public investment should prioritize transport, power reliability, industrial water, digital connectivity, customs modernization, and climate resilience in export corridors. Fourth, FDI incentives should be tied more clearly to performance: local procurement, training, R&amp;D, technology transfer, carbon standards, and long-term presence. Fifth, competition and anti-corruption policy should prevent industrial policy from becoming a channel for capture, favoritism, or inefficient subsidies.</p>
+<p>There is also a fiscal issue. Investment incentives can attract firms, but tax holidays, land preferences, and infrastructure subsidies have opportunity costs. Viet Nam must evaluate whether incentives produce durable spillovers. A low-value assembly project with large tax benefits may create jobs, but it may not justify fiscal cost if it does not strengthen suppliers, skills, technology, or regional development. A higher-quality project may deserve stronger support if it brings training, R&amp;D, supplier development, and strategic technology.</p>
+<h3>10.4.6 Strategic Challenges</h3>
+<p>The trade and investment model faces eight major challenges.</p>
+<table><thead><tr><th>Challenge</th><th>Why it matters</th><th>Policy response</th></tr></thead><tbody><tr><td>U.S. market exposure</td><td>Large exports to the United States create tariff, rules-of-origin, and compliance risk.</td><td>Strengthen origin verification, customs transparency, market diversification, and domestic value-added documentation.</td></tr><tr><td>Asian input dependence</td><td>China, South Korea, Japan, and ASEAN supply critical components, machinery, and materials.</td><td>Diversify suppliers where feasible while building domestic supporting industries.</td></tr><tr><td>FDI export dominance</td><td>Foreign-invested firms account for a large share of exports.</td><td>Link incentives to local procurement, training, technology transfer, and supplier integration.</td></tr><tr><td>Domestic supplier weakness</td><td>Local firms often lack scale, quality certification, finance, and technology.</td><td>Expand supplier-development programs, technical assistance, credit access, and standards infrastructure.</td></tr><tr><td>Real estate and land risk</td><td>Investment can flow into asset accumulation rather than productive capability.</td><td>Tighten land governance, zoning, environmental review, and fiscal-risk assessment.</td></tr><tr><td>Provincial incentive competition</td><td>Localities may compete for capital without evaluating spillovers.</td><td>Coordinate investment promotion through national strategy, regional planning, and transparent incentive rules.</td></tr><tr><td>Green and digital transition</td><td>New investment must meet carbon, energy, data, and technology requirements.</td><td>Link industrial policy with power planning, digital infrastructure, data governance, and green standards.</td></tr><tr><td>Administrative capacity</td><td>Investment upgrading depends on permits, land records, customs, inspections, education, and infrastructure.</td><td>Strengthen local implementation after the 2025 reorganization and monitor project commitments.</td></tr></tbody></table>
+<h3>10.4.7 Interpretation</h3>
+<p>Viet Nam&#x27;s investment policy is entering a more difficult stage. The earlier challenge was to attract foreign capital and build an export platform. The new challenge is to extract more domestic capability from openness without undermining the openness that made growth possible. This requires a more sophisticated state: one that can welcome investors, select better projects, discipline incentives, coordinate zones and corridors, build domestic suppliers, protect labor and environmental standards, and maintain credibility with major partners.</p>
+<p>The policy direction is therefore not &quot;less FDI.&quot; It is <strong>better FDI, stronger domestic firms, and more capable industrial governance</strong>. Viet Nam&#x27;s growth model will remain open, but future success will depend on whether investment rules and industrial policy can turn foreign capital into domestic productivity, technology learning, and resilient value-chain participation. If the state manages this transition well, trade and FDI can support movement toward higher income. If not, Viet Nam may remain a very successful production platform while capturing too little of the knowledge, profits, and technological autonomy embedded in global production.</p></div>
+  <textarea class="md-editor" hidden>## 10.4 Investment Rules, Zones, and Industrial Policy
+
+&lt;!-- asean-comparative-lens-2026:start --&gt;
+**ASEAN comparative lens (2026).** Vietnam should be read in ASEAN comparison as ASEAN&#x27;s most prominent party-led, export-manufacturing upgrading case. Unlike the Philippines&#x27; service-remittance profile, Thailand&#x27;s older industrial-tourism base, Malaysia&#x27;s resource-industrial federal structure, or Indonesia&#x27;s archipelagic domestic-market scale, Vietnam&#x27;s comparative issue is how a socialist party-state manages very open global production networks. For this section, the regional comparison should compare trade, FDI, current-account structure, supply-chain depth, remittances, tourism receipts, and regional integration with ASEAN peers. Local comparable indicators show: population 100.99 million (2024), rank 3 among the nine ASEAN reports in this workspace; GDP US$476.39 billion (2024), rank 4 among the nine ASEAN reports in this workspace; GDP per capita US$4,717 (2024), rank 5 among the nine ASEAN reports in this workspace; real GDP growth 7.09% (2024), rank 1 among the nine ASEAN reports in this workspace; government effectiveness 0.09 (2023), rank 6 among the nine ASEAN reports in this workspace; internet use 84.15% (2024), rank 4 among the nine ASEAN reports in this workspace. Use `sources/documents/regional/asean_comparative_lens_2026.md` together with ASEANstats, ASEAN Secretariat materials, and the country processed-indicator files before making cross-ASEAN claims.
+&lt;!-- asean-comparative-lens-2026:end --&gt;
+
+The preceding sections showed that Viet Nam&#x27;s trade and investment model has two faces. It has produced extraordinary export growth, strong FDI inflows, industrial employment, and deeper insertion into global value chains. It has also created exposure to the U.S. market, dependence on Asian intermediate inputs, foreign-invested export dominance, uneven domestic supplier capability, and limited domestic ownership of technology. Section 10.4 therefore widens the lens: how does the Vietnamese state use investment rules, industrial zones, and industrial policy to turn openness into domestic development?
+
+The answer is that Viet Nam remains strongly open to foreign capital, but the government&#x27;s attitude has become more selective. In the early reform period, the core challenge was to attract capital, normalize external economic relations, and create confidence after the transition from central planning. In the WTO and export-platform period, the priority was to build industrial zones, simplify investment procedures, expand trade agreements, and position Viet Nam as a reliable manufacturing base. The current policy language is different. It still welcomes FDI, but it increasingly asks what kind of FDI is being attracted, whether it brings technology, whether it creates linkages with domestic firms, whether it supports green and digital transformation, and whether it strengthens Viet Nam&#x27;s strategic autonomy.
+
+Decision No. 667/QD-TTg, approving the Strategy for foreign investment cooperation in the 2021-2030 period, captures this shift. The strategy does not reject foreign capital. It tries to upgrade the terms on which foreign capital enters. Its targets include increasing the share of registered capital from specified partner countries and territories to more than 70 percent in 2021-2025 and more than 75 percent in 2026-2030, increasing the number of Fortune 500 multinationals with presence and operations in Viet Nam by 50 percent, and placing Viet Nam among the top three ASEAN countries and top 60 countries globally for business-environment indicators. The policy message is clear: Viet Nam wants capital, but it wants capital connected to technology, standards, innovation, supply-chain upgrading, and institutional credibility.
+
+&lt;figure class=&quot;map-card&quot;&gt;
+&lt;img alt=&quot;Vietnam investment policy shift from capital access to strategic value capture&quot; class=&quot;admin-map&quot; src=&quot;../assets/vnm_investment_policy_strategy_shift.svg&quot;/&gt;
+&lt;figcaption&gt;Source: Prime Minister Decision No. 667/QD-TTg on the Strategy for foreign investment cooperation in the 2021-2030 period. The figure summarizes the policy shift from opening and attraction toward quality, spillovers, value capture, and strategic investment governance.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+### 10.4.1 Investment Rules as Development Strategy
+
+Investment rules operate as more than legal procedures. They define how the state allocates opportunity, risk, land, tax incentives, market access, administrative support, and regulatory scrutiny. Viet Nam uses investment law, enterprise law, industrial-zone regulation, land procedures, tax incentives, environmental approvals, public investment planning, customs administration, and provincial investment promotion as parts of one development toolkit. The state does more than wait for investors. It tries to shape where they locate, what sectors they enter, what infrastructure they use, and how they connect to national development goals.
+
+The policy challenge is balance. If rules are too restrictive, Viet Nam loses investors to other ASEAN and Asian production locations. If rules are too permissive, the state may accept low-value assembly, polluting projects, land speculation, fiscal giveaways, weak labor standards, or enclave-style FDI with few domestic linkages. The investment regime must therefore combine openness with discipline: fast procedures for high-quality projects, credible screening of risky projects, transparent land and tax rules, predictable dispute resolution, and stronger monitoring of implementation commitments.
+
+This is especially important after the 2025 administrative reorganization. Larger provincial-level units may make it easier to plan regional industrial corridors, logistics systems, energy infrastructure, and workforce development. But reorganization can also disrupt investment services if land records, business registration, tax offices, environmental approvals, and industrial-zone authorities do not coordinate smoothly. Investors care about national policy, but they experience Viet Nam through provincial and local administration. Investment competitiveness is therefore a test of local state capacity.
+
+### 10.4.2 Zones, Corridors, and the Geography of Industrial Policy
+
+Industrial zones and economic zones translate investment policy into territory. They offer land, infrastructure, power connections, customs access, labor pools, environmental systems, and administrative services in concentrated sites. This has been central to Viet Nam&#x27;s export-manufacturing success. Foreign firms did not enter an abstract market; they entered industrial zones connected to ports, highways, airports, customs offices, provincial governments, and labor markets.
+
+Zones solve coordination problems, but they also create governance risks. First, land conversion can generate social conflict, compensation disputes, and speculative pressure. Second, industrial-zone incentives can reduce fiscal revenue if tax benefits are granted without strong spillovers. Third, environmental standards matter because manufacturing upgrading can increase water, waste, air, and carbon pressures. Fourth, labor standards and housing matter because industrial zones depend on migrant workers. Fifth, zones can become enclaves if they connect foreign firms to global buyers but do not connect them to domestic suppliers.
+
+The policy objective should therefore be to move from **industrial-zone occupancy** to **industrial ecosystem quality**. A successful zone should be judged by more than occupancy. It should support supplier networks, training centers, logistics services, testing laboratories, standards certification, environmental management, digital infrastructure, and links with universities and domestic firms. This is where industrial policy becomes administrative policy: the state has to coordinate ministries, provincial governments, zone authorities, firms, schools, banks, customs agencies, and infrastructure providers.
+
+### 10.4.3 Investment Composition and the 2025 FDI Signal
+
+The 2025 investment data show why Viet Nam cannot rely on foreign capital alone. NSO reported total disbursed development investment of VND 4,150.5 trillion at current prices. The domestic non-state sector accounted for 53.9 percent, the state sector for 29.7 percent, and the FDI sector for 16.4 percent. This composition matters. Foreign capital is highly strategic because it anchors exports and technology-intensive production, but domestic private investment is the largest investment block. State investment also remains crucial because public infrastructure, energy, transport, education, water systems, and digital administration determine whether private and foreign investment can be productive.
+
+&lt;figure class=&quot;map-card&quot;&gt;
+&lt;img alt=&quot;Vietnam investment composition and FDI policy dashboard for 2025&quot; class=&quot;admin-map&quot; src=&quot;../assets/vnm_investment_policy_dashboard_2025.svg&quot;/&gt;
+&lt;figcaption&gt;Source: National Statistics Office of Viet Nam, Socio-economic situation in the fourth quarter and 2025. The dashboard distinguishes total disbursed investment by ownership sector from foreign-investment registration and disbursement measures.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+The foreign-investment signal remains strong. In 2025, registered inward foreign investment reached USD 38.42 billion, while disbursed FDI reached USD 27.62 billion, the highest level in the previous five-year period. Viet Nam licensed 4,054 new FDI projects with USD 17.32 billion in newly registered capital, while adjusted capital for existing projects reached USD 14.07 billion and capital contributions and share purchases reached USD 7.03 billion. These figures show that Viet Nam remains attractive to foreign investors despite global uncertainty.
+
+The sectoral composition also matters. Processing and manufacturing accounted for USD 9.80 billion, or 56.5 percent of newly licensed FDI capital in 2025. Real estate accounted for USD 3.67 billion, or 21.2 percent. This is a useful warning. Manufacturing FDI can support exports, jobs, technology exposure, and supplier networks, especially when it moves into higher-value segments. Real estate FDI can support urban development and services, but it can also fuel land speculation, asset cycles, and uneven regional development if not governed carefully. A quality-FDI strategy should therefore not only ask how much capital entered. It should ask whether capital deepens productive capability.
+
+### 10.4.4 The Government&#x27;s Attitude toward Foreign Capital
+
+The Vietnamese government&#x27;s attitude toward foreign capital has evolved through four stages. The first was cautious opening. After Doi Moi, foreign capital became acceptable as part of renovation and reconstruction, but it was still embedded in a socialist political framework. The second was export-platform pragmatism. As Viet Nam normalized relations, joined ASEAN, entered the WTO, and signed trade agreements, FDI became a central growth tool. The third was selective upgrading. By the late 2010s and early 2020s, policy documents increasingly emphasized quality, efficiency, technology transfer, environmental standards, domestic linkages, and stronger institutions. The fourth, now emerging, is strategic positioning: Viet Nam wants to benefit from supply-chain diversification, semiconductors, AI, green investment, and high-value services while avoiding excessive dependence on any single foreign market or investor group.
+
+This evolution should not be misunderstood as a turn against FDI. Viet Nam still competes for foreign investment and still needs foreign capital, technology, management, and market access. The change is that the state is trying to bargain for better developmental terms. It wants investors that bring technology, train workers, use local suppliers, comply with standards, invest in supporting industries, and help Viet Nam move up global value chains. The government&#x27;s posture is therefore open but more demanding.
+
+The difficulty is implementation. It is easier to announce selective FDI than to enforce it. Provincial governments may compete for projects and incentives. Local officials may prefer visible capital commitments over long-term spillovers. Ministries may have different priorities. Some projects promise technology transfer but deliver limited domestic learning. Domestic firms may not be ready to supply multinational firms even when investors are willing to localize procurement. A quality-FDI strategy therefore requires not only better screening but also domestic capability-building.
+
+### 10.4.5 Industrial Policy and Domestic Capability
+
+Industrial policy in Viet Nam should be understood as a capability-building agenda. It includes supplier development, workforce training, science and technology policy, digital infrastructure, standards and testing, public investment, finance for domestic firms, support for small and medium enterprises, and coordination with foreign investors. The policy goal is not to replace global value chains with self-sufficiency. It is to capture more value inside those chains.
+
+This requires several instruments. First, supplier-development programs should help domestic firms meet quality, cost, delivery, environmental, and compliance requirements. Second, vocational education and universities should align more closely with electronics, semiconductors, automation, logistics, AI, software, and precision manufacturing. Third, public investment should prioritize transport, power reliability, industrial water, digital connectivity, customs modernization, and climate resilience in export corridors. Fourth, FDI incentives should be tied more clearly to performance: local procurement, training, R&amp;D, technology transfer, carbon standards, and long-term presence. Fifth, competition and anti-corruption policy should prevent industrial policy from becoming a channel for capture, favoritism, or inefficient subsidies.
+
+There is also a fiscal issue. Investment incentives can attract firms, but tax holidays, land preferences, and infrastructure subsidies have opportunity costs. Viet Nam must evaluate whether incentives produce durable spillovers. A low-value assembly project with large tax benefits may create jobs, but it may not justify fiscal cost if it does not strengthen suppliers, skills, technology, or regional development. A higher-quality project may deserve stronger support if it brings training, R&amp;D, supplier development, and strategic technology.
+
+### 10.4.6 Strategic Challenges
+
+The trade and investment model faces eight major challenges.
+
+| Challenge | Why it matters | Policy response |
+| --- | --- | --- |
+| U.S. market exposure | Large exports to the United States create tariff, rules-of-origin, and compliance risk. | Strengthen origin verification, customs transparency, market diversification, and domestic value-added documentation. |
+| Asian input dependence | China, South Korea, Japan, and ASEAN supply critical components, machinery, and materials. | Diversify suppliers where feasible while building domestic supporting industries. |
+| FDI export dominance | Foreign-invested firms account for a large share of exports. | Link incentives to local procurement, training, technology transfer, and supplier integration. |
+| Domestic supplier weakness | Local firms often lack scale, quality certification, finance, and technology. | Expand supplier-development programs, technical assistance, credit access, and standards infrastructure. |
+| Real estate and land risk | Investment can flow into asset accumulation rather than productive capability. | Tighten land governance, zoning, environmental review, and fiscal-risk assessment. |
+| Provincial incentive competition | Localities may compete for capital without evaluating spillovers. | Coordinate investment promotion through national strategy, regional planning, and transparent incentive rules. |
+| Green and digital transition | New investment must meet carbon, energy, data, and technology requirements. | Link industrial policy with power planning, digital infrastructure, data governance, and green standards. |
+| Administrative capacity | Investment upgrading depends on permits, land records, customs, inspections, education, and infrastructure. | Strengthen local implementation after the 2025 reorganization and monitor project commitments. |
+
+### 10.4.7 Interpretation
+
+Viet Nam&#x27;s investment policy is entering a more difficult stage. The earlier challenge was to attract foreign capital and build an export platform. The new challenge is to extract more domestic capability from openness without undermining the openness that made growth possible. This requires a more sophisticated state: one that can welcome investors, select better projects, discipline incentives, coordinate zones and corridors, build domestic suppliers, protect labor and environmental standards, and maintain credibility with major partners.
+
+The policy direction is therefore not &quot;less FDI.&quot; It is **better FDI, stronger domestic firms, and more capable industrial governance**. Viet Nam&#x27;s growth model will remain open, but future success will depend on whether investment rules and industrial policy can turn foreign capital into domestic productivity, technology learning, and resilient value-chain participation. If the state manages this transition well, trade and FDI can support movement toward higher income. If not, Viet Nam may remain a very successful production platform while capturing too little of the knowledge, profits, and technological autonomy embedded in global production.</textarea>
+</article>
+      
+<figure class="chart-card">
+  <h2>exports-imports</h2>
+  <div class="chart-frame"><canvas id="chart-exports-imports"></canvas></div>
+  <figcaption>Source:  Unit: </figcaption>
+  <p>The figure is included as chapter-level evidence. Interpret it by identifying direction, turning points, divergence among series, and the policy or institutional mechanism that could plausibly explain the pattern.</p>
+</figure>
+
+
+<figure class="chart-card">
+  <h2>current-account</h2>
+  <div class="chart-frame"><canvas id="chart-current-account"></canvas></div>
+  <figcaption>Source:  Unit: </figcaption>
+  <p>The figure is included as chapter-level evidence. Interpret it by identifying direction, turning points, divergence among series, and the policy or institutional mechanism that could plausibly explain the pattern.</p>
+</figure>
+
+
+<figure class="chart-card">
+  <h2>fdi-amount</h2>
+  <div class="chart-frame"><canvas id="chart-fdi-amount"></canvas></div>
+  <figcaption>Source:  Unit: </figcaption>
+  <p>The figure is included as chapter-level evidence. Interpret it by identifying direction, turning points, divergence among series, and the policy or institutional mechanism that could plausibly explain the pattern.</p>
+</figure>
+
+
+<figure class="chart-card">
+  <h2>fdi-share</h2>
+  <div class="chart-frame"><canvas id="chart-fdi-share"></canvas></div>
+  <figcaption>Source:  Unit: </figcaption>
+  <p>The figure is included as chapter-level evidence. Interpret it by identifying direction, turning points, divergence among series, and the policy or institutional mechanism that could plausibly explain the pattern.</p>
+</figure>
+
+    </main>
+  </div>
+  <script>
+    window.REPORT_CHARTS = [];
+    document.addEventListener('DOMContentLoaded', () => {
+      if (!window.Chart || !window.REPORT_CHARTS) return;
+      window.REPORT_CHARTS.forEach((entry) => {
+        const cfg = entry.data || {};
+        const el = document.getElementById('chart-' + entry.id);
+        if (!el || !cfg.datasets) return;
+        const colors = ['#197278', '#246b46', '#b7860b', '#7b2d26', '#3f4e9a', '#6a4c93'];
+        const dashes = [[], [8, 4], [2, 3], [10, 4, 2, 4], [1, 4], [12, 3, 3, 3]];
+        const pointStyles = ['circle', 'rect', 'triangle', 'rectRot', 'crossRot', 'star'];
+        const datasets = (cfg.datasets || []).map((dataset, i) => ({
+          ...dataset,
+          borderColor: dataset.borderColor || colors[i % colors.length],
+          backgroundColor: dataset.backgroundColor || 'transparent',
+          borderDash: dataset.borderDash || dashes[i % dashes.length],
+          borderWidth: dataset.borderWidth || 2.4,
+          pointStyle: dataset.pointStyle || pointStyles[i % pointStyles.length],
+          pointRadius: dataset.pointRadius ?? 1.8,
+          tension: dataset.tension ?? 0.25,
+          spanGaps: dataset.spanGaps ?? true
+        }));
+        new Chart(el, {
+          type: 'line',
+          data: { labels: cfg.labels || [], datasets },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            interaction: { mode: 'index', intersect: false },
+            plugins: { legend: { position: 'bottom', labels: { boxWidth: 28 } } },
+            scales: { x: { title: { display: true, text: 'Year' } }, y: { title: { display: true, text: cfg.unit || 'Value' } } }
+          }
+        });
+      });
+    });
+  </script>
+  <script src="../assets/report.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  function fallbackMarkdown(text) {
+    const escaped = text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    return escaped.split(/\n{2,}/).map((block) => `<p>${block.replace(/\n/g, "<br>")}</p>`).join("");
+  }
+  function renderMarkdown(text) {
+    return window.marked ? marked.parse(text) : fallbackMarkdown(text);
+  }
+  document.querySelectorAll('[data-md-panel]').forEach((panel) => {
+    const id = panel.getAttribute('data-md-panel');
+    const source = panel.getAttribute('data-md-source');
+    const preview = panel.querySelector('.md-preview');
+    const editor = panel.querySelector('.md-editor');
+    const edit = panel.querySelector('[data-md-action="edit"]');
+    const save = panel.querySelector('[data-md-action="save"]');
+    const cancel = panel.querySelector('[data-md-action="cancel"]');
+    if (!preview || !editor || !edit || !save || !cancel) return;
+    const storageKey = `country-report-markdown:v1:${source || id}`;
+    const original = editor.value;
+    const stored = localStorage.getItem(storageKey);
+    const hasStoredDraft = stored !== null && (!source || window.location.protocol === 'file:');
+    if (hasStoredDraft) editor.value = stored;
+    const showPreview = () => { preview.innerHTML = renderMarkdown(editor.value); };
+    const setEditing = (editing) => {
+      editor.hidden = !editing;
+      preview.hidden = editing;
+      edit.hidden = editing;
+      save.hidden = !editing;
+      cancel.hidden = !editing;
+    };
+    async function saveMarkdown() {
+      if (source && window.location.protocol.startsWith('http')) {
+        const response = await fetch('/api/save-section', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ source, markdown: editor.value })
+        });
+        if (!response.ok) throw new Error(await response.text());
+        localStorage.removeItem(storageKey);
+        return true;
+      } else {
+        localStorage.setItem(storageKey, editor.value);
+        if (source) window.alert('This edit was saved only as a browser draft. Open the report through code/serve_report.py to save it permanently to the Markdown source file.');
+        return false;
+      }
+    }
+    if (hasStoredDraft) showPreview();
+    setEditing(false);
+    edit.addEventListener('click', () => setEditing(true));
+    save.addEventListener('click', async () => {
+      save.disabled = true;
+      try {
+        const savedToServer = await saveMarkdown();
+        if (savedToServer) {
+          window.location.reload();
+          return;
+        }
+        showPreview();
+        setEditing(false);
+      } catch (error) {
+        window.alert(error.message || 'Could not save the Markdown source.');
+      } finally {
+        save.disabled = false;
+      }
+    });
+    cancel.addEventListener('click', () => {
+      editor.value = localStorage.getItem(storageKey) ?? original;
+      if (hasStoredDraft || window.location.protocol === 'file:') showPreview();
+      setEditing(false);
+    });
+  });
+});
+</script>
+
+</body>
+</html>
