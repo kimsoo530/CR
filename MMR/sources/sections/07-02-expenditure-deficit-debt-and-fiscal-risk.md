@@ -1,24 +1,30 @@
 ## 7.2 Fiscal Balance, Debt, and Interest Burden
 
-<!-- asean-comparative-lens-2026:start -->
-**ASEAN comparative lens (2026).** Myanmar should be read in ASEAN comparison as ASEAN's most fragile contemporary state-capacity and conflict-governance case. It differs from the developmental trajectories of Vietnam, Thailand, Malaysia, and Indonesia because regime conflict, armed fragmentation, sanctions, and administrative breakdown dominate the policy environment. For this section, the regional comparison should compare fiscal capacity, revenue extraction, debt pressure, and public-sector risk with ASEAN peers rather than treating fiscal ratios as isolated national facts. Local comparable indicators show: population 54.50 million (2024), rank 5 among the nine ASEAN reports in this workspace; GDP US$74.07 billion (2024), rank 7 among the nine ASEAN reports in this workspace; GDP per capita US$1,359 (2024), rank 9 among the nine ASEAN reports in this workspace; real GDP growth -0.97% (2024), rank 9 among the nine ASEAN reports in this workspace; government effectiveness -1.23 (2023), rank 9 among the nine ASEAN reports in this workspace; internet use 45.45% (2020), rank 9 among the nine ASEAN reports in this workspace. Use `sources/documents/regional/asean_comparative_lens_2026.md` together with ASEANstats, ASEAN Secretariat materials, and the country processed-indicator files before making cross-ASEAN claims.
-<!-- asean-comparative-lens-2026:end -->
+### 7.2 Revenue, Expenditure, Fiscal Balance, and Debt
 
-Debt sustainability cannot be judged from debt alone. The country report should ask whether fiscal balances are persistently negative, whether debt is rising faster than the economy, and whether interest payments are beginning to displace ordinary public services. This section therefore joins fiscal balance, general-government debt, central-government debt, and interest-burden indicators.
+The statistical appendix uses two separate evidence layers. The IMF DataMapper series represent general-government revenue, fiscal balance and gross debt; the intended general-government expenditure series could not be recovered from the authoritative endpoint in this batch. The World Bank WDI series represent central-government revenue excluding grants, tax revenue, expenses and interest payments. These indicators are not merged because their institutional coverage and definitions differ.
 
-| Fiscal question | Indicator | Table ID | Source | Latest year | Latest value | Unit | Five-year change |
-| Is fiscal policy adding to or reducing financing pressure? | Fiscal balance | `GGXCNL_NGDP` | IMF DataMapper API | 2026 | -5.0% | percent of GDP | -2.8% |
-| How heavy is the broad public-debt burden? | General government gross debt | `GGXWDG_NGDP` | IMF DataMapper API | 2026 | 51.9% | percent of GDP | -11.5% |
-| How much debt is carried directly by the central government? | Central government debt, total | `GC.DOD.TOTL.GD.ZS` | n.a. | n.a. | n.a. | percent of GDP | n.a. |
-| How much national income is absorbed by public debt interest? | Interest paid on public debt | `GGXIP_NGDP` | n.a. | n.a. | n.a. | percent of GDP | n.a. |
-| How much of expenditure is absorbed by interest rather than services or investment? | Government interest payments | `GC.XPN.INTP.ZS` | World Bank WDI API | 2019 | 10.2% | percent of expense | 2.1% |
+In the archived IMF series, general-government revenue is 15.6 percent of GDP in 2024, compared with 14.8 percent in 2020 and 15.8 percent in 2019. The fiscal-balance series records -4.1 percent of GDP in 2024, compared with -6.5 percent in 2020 and -4.7 percent in 2019. General-government gross debt is 50.6 percent of GDP in 2024, compared with 49.1 percent in 2020 and 37.6 percent in 2019 (International Monetary Fund, 2026; indicators `rev`, `GGXCNL_NGDP` and `GGXWDG_NGDP`). The expenditure series remains unresolved because its exact IMF raw payload could not be archived.
 
-### Fiscal balance and general government gross debt
+These figures describe a broad fiscal envelope rather than audited national accounts. The archived IMF payload does not preserve a field distinguishing historical observations from estimates or projections. The appendix therefore excludes later observations and labels the latest IMF values as status-uncertain international data. The reproducible series show revenue, fiscal-balance and debt pressure, but they do not identify the causal contribution of conflict, sanctions, exchange-rate changes, public-enterprise operations or changes in statistical coverage.
 
-Source: IMF DataMapper table IDs `GGXCNL_NGDP` and `GGXWDG_NGDP`. Unit: percent of GDP.
+The World Bank historical layer ends earlier. In 2019, central-government revenue excluding grants is 14.4 percent of GDP, tax revenue is 6.0 percent of GDP, and government expenses are 13.8 percent of GDP. Government interest payments are 10.2 percent of central-government expense (World Bank, 2026; indicators `GC.REV.XGRT.GD.ZS`, `GC.TAX.TOTL.GD.ZS`, `GC.XPN.TOTL.GD.ZS` and `GC.XPN.INTP.ZS`). These values are reproducible from the recovered raw payloads and useful for historical comparison, but they cannot be presented as current post-2021 fiscal performance.
 
-### Interest burden on public finances
+The two datasets answer different questions. The IMF series offers a more recent broad public-sector signal but carries estimate-status and coverage limitations. The World Bank series offers a historical central-government view with a clearly older endpoint in the archived package. Neither substitutes for Myanmar's budget execution reports or final accounts. The most defensible conclusion is therefore that Myanmar's fiscal space is constrained in the available international series, while the precise current composition and execution of public finance remain underdocumented.
 
-Source: IMF DataMapper table ID `GGXIP_NGDP` and World Bank WDI table ID `GC.XPN.INTP.ZS`. Units: percent of GDP and percent of expense; interpret as separate burden measures.
+![Chapter 7 fiscal indicator ch07_stat_rev](../../figures/ch07_stat_rev.svg)
 
-For Myanmar, fiscal-balance analysis asks whether current policy is adding to financing pressure and whether debt-service costs are beginning to crowd out spending. The latest IMF fiscal balance indicates a deficit of 5.0% of GDP. General government gross debt is 51.9% of GDP, while central government debt in the World Bank series is n.a. of GDP. Interest paid on public debt is n.a. of GDP in the IMF series, and World Bank interest payments absorb 10.2% of central-government expense. The analytical distinction matters: debt-to-GDP measures the stock burden, while interest indicators show the annual budget pressure created by that stock.
+![Chapter 7 fiscal indicator ch07_stat_GGXCNL_NGDP](../../figures/ch07_stat_GGXCNL_NGDP.svg)
+
+![Chapter 7 fiscal indicator ch07_stat_GGXWDG_NGDP](../../figures/ch07_stat_GGXWDG_NGDP.svg)
+
+![Chapter 7 fiscal indicator ch07_stat_GC.REV.XGRT.GD.ZS](../../figures/ch07_stat_GC.REV.XGRT.GD.ZS.svg)
+
+![Chapter 7 fiscal indicator ch07_stat_GC.TAX.TOTL.GD.ZS](../../figures/ch07_stat_GC.TAX.TOTL.GD.ZS.svg)
+
+![Chapter 7 fiscal indicator ch07_stat_GC.XPN.TOTL.GD.ZS](../../figures/ch07_stat_GC.XPN.TOTL.GD.ZS.svg)
+
+![Chapter 7 fiscal indicator ch07_stat_GC.XPN.INTP.ZS](../../figures/ch07_stat_GC.XPN.INTP.ZS.svg)
+
+*Figures. Reproducible international fiscal indicators. Sources: MMR-IMF-DATAMAPPER-FISCAL-2026 and MMR-WB-WDI-FISCAL-2026. Reference periods and units are stated in the chart metadata. Caveat: IMF estimate/projection status is not fully preserved; `exp` is excluded.*
+

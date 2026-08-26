@@ -1,4 +1,6 @@
-# Chapter 3 Constitutional Core: Review Candidate
+# Chapter 3 Constitutional Core: Superseded Supplement
+
+This file is retained as a non-current evidence supplement. The authoritative Chapter 3 review candidate is `chapter03_constitution_review_candidate.md`.
 
 ## 3.1 Constitutional order, military participation, and amendment rules
 
