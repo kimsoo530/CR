@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760" role="img" aria-labelledby="title desc">
+  <title id="title">Formal fiscal architecture under Myanmar's 2008 Constitution</title>
+  <desc id="desc">Constitutional fiscal relationship schematic showing the Union Government and Pyidaungsu Hluttaw, Financial Commission, Union Fund, Region and State budgets and funds, and Auditor-General reporting.</desc>
+  <style>text{font-family:Arial,sans-serif;fill:#17202a}.box{fill:#f4f7f8;stroke:#1f4e5f;stroke-width:2}.gold{fill:#fff8e7;stroke:#8a641c;stroke-width:2}.audit{fill:#e8f2f4;stroke:#1f4e5f;stroke-width:2}.line{stroke:#50636b;stroke-width:3;fill:none;marker-end:url(#arrow)}.dash{stroke:#8a641c;stroke-width:3;stroke-dasharray:9 7;fill:none;marker-end:url(#goldarrow)}.label{font-size:24px;font-weight:700}.note{font-size:19px;fill:#52636b}</style>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 z" fill="#50636b"/></marker><marker id="goldarrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 z" fill="#8a641c"/></marker></defs>
+  <rect width="1400" height="760" fill="#fff"/>
+  <text x="55" y="52" font-size="34" font-weight="700">Formal fiscal architecture</text>
+  <text x="55" y="84" class="note">2008 constitutional design; not evidence of current execution or transfer performance</text>
+  <rect class="box" x="80" y="145" width="330" height="100" rx="6"/><text class="label" x="245" y="187" text-anchor="middle">Union Government</text><text x="245" y="218" text-anchor="middle" font-size="19">national budget and taxation gateway</text>
+  <rect class="box" x="535" y="145" width="330" height="100" rx="6"/><text class="label" x="700" y="187" text-anchor="middle">Pyidaungsu Hluttaw</text><text x="700" y="218" text-anchor="middle" font-size="19">national budget legislation</text>
+  <rect class="gold" x="990" y="145" width="330" height="100" rx="6"/><text class="label" x="1155" y="187" text-anchor="middle">Financial Commission</text><text x="1155" y="218" text-anchor="middle" font-size="19">budget review and recommendations</text>
+  <path class="line" d="M410 195 H535"/><path class="line" d="M866 195 H990"/>
+  <rect class="gold" x="535" y="330" width="330" height="100" rx="6"/><text class="label" x="700" y="372" text-anchor="middle">Union Fund</text><text x="700" y="403" text-anchor="middle" font-size="19">distributions, grants and loans</text>
+  <path class="dash" d="M1155 245 V285 H700 V330"/>
+  <rect class="box" x="150" y="520" width="330" height="100" rx="6"/><text class="label" x="315" y="562" text-anchor="middle">Region / State budget</text><text x="315" y="593" text-anchor="middle" font-size="19">submitted to Region/State Hluttaw</text>
+  <rect class="box" x="535" y="520" width="330" height="100" rx="6"/><text class="label" x="700" y="562" text-anchor="middle">Region / State fund</text><text x="700" y="593" text-anchor="middle" font-size="19">taxes and revenues under law</text>
+  <rect class="audit" x="920" y="520" width="330" height="100" rx="6"/><text class="label" x="1085" y="562" text-anchor="middle">Auditor-General</text><text x="1085" y="593" text-anchor="middle" font-size="19">audit Union Budget; report to Hluttaw</text>
+  <path class="line" d="M700 430 V520"/><path class="line" d="M535 570 H480"/><path class="line" d="M700 245 V330"/><path class="line" d="M866 570 H920"/>
+  <text x="55" y="690" class="note">Source basis: Constitution Articles 100, 193, 229-230, 242, 249-257; local file MMR-LEGAL-CONST-2008-FISCAL.</text>
+  <text x="55" y="720" class="note">Solid arrows indicate formal constitutional relationships; gold dashed arrows indicate Financial Commission / Union Fund functions.</text>
+</svg>

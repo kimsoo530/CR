@@ -1,0 +1,8 @@
+﻿category,indicator_code,question,requested_chart_type,actual_chart_type,countries,year_start,year_end,unit,png,svg
+general-government,rev,How has broad public revenue changed relative to GDP?,trend,trend,MMR,1998,2024,percent of GDP,figures/rev.png,figures/rev.svg
+general-government,GGXCNL_NGDP,Has the broad fiscal balance moved toward or away from borrowing pressure?,trend,trend,MMR,1998,2024,percent of GDP,figures/GGXCNL_NGDP.png,figures/GGXCNL_NGDP.svg
+general-government,GGXWDG_NGDP,How has the broad public-debt burden changed?,trend,trend,MMR,1998,2024,percent of GDP,figures/GGXWDG_NGDP.png,figures/GGXWDG_NGDP.svg
+central-government,GC.REV.XGRT.GD.ZS,How broad was central-government revenue excluding grants in the historical series?,trend,trend,MMR,1973,2019,percent of GDP,figures/GC.REV.XGRT.GD.ZS.png,figures/GC.REV.XGRT.GD.ZS.svg
+central-government,GC.TAX.TOTL.GD.ZS,How large was tax revenue relative to GDP in the historical series?,trend,trend,MMR,1973,2019,percent of GDP,figures/GC.TAX.TOTL.GD.ZS.png,figures/GC.TAX.TOTL.GD.ZS.svg
+central-government,GC.XPN.TOTL.GD.ZS,How did central-government expenses change in the historical series?,trend,trend,MMR,2003,2019,percent of GDP,figures/GC.XPN.TOTL.GD.ZS.png,figures/GC.XPN.TOTL.GD.ZS.svg
+central-government,GC.XPN.INTP.ZS,How much central-government expense was absorbed by interest payments?,trend,trend,MMR,2012,2019,percent of expense,figures/GC.XPN.INTP.ZS.png,figures/GC.XPN.INTP.ZS.svg

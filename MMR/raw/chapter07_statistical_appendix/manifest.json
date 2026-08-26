@@ -1,0 +1,10 @@
+{
+  "country_code": "MMR",
+  "run_name": "chapter07_fiscal_existing_data",
+  "validation_status": "pass",
+  "validation_scope": "structural validation of rows derived from the existing fiscal_question_framework_diagnostics.csv; no new external collection",
+  "source_processed_input": "MMR/processed/fiscal_question_framework_diagnostics.csv",
+  "access_date": "2026-08-27",
+  "projection_rule": "IMF observations after 2024 were excluded from this appendix run because the archived file does not preserve an actual-versus-estimate/projection flag.",
+  "notes": "IMF and World Bank series remain separate because institutional coverage differs. This run does not create national-budget observations or conflict-finance estimates."
+}

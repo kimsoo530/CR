@@ -1,0 +1,24 @@
+{
+  "country_code": "MMR",
+  "country_name": "Myanmar",
+  "title": "Chapter 7 Statistical Appendix: Fiscal System and Public Sector",
+  "introduction": "This appendix uses existing archived international fiscal series to show level and trend. IMF general-government and World Bank central-government measures are kept separate. Values are descriptive evidence and do not replace national budget documents or establish conflict-related fiscal flows.",
+  "auto_include_unlisted": false,
+  "required_coverage": [
+    {"domain":"General-government fiscal capacity","indicator_codes":["rev","GGXCNL_NGDP","GGXWDG_NGDP"],"minimum_available":3,"rationale":"The reproducible IMF archive supports revenue, fiscal balance and gross debt; expenditure remains unresolved because its raw payload is unavailable."},
+    {"domain":"Central-government fiscal capacity","indicator_codes":["GC.REV.XGRT.GD.ZS","GC.TAX.TOTL.GD.ZS","GC.XPN.TOTL.GD.ZS","GC.XPN.INTP.ZS"],"minimum_available":4,"rationale":"Central-government revenue, tax effort, expense and interest burden provide a separate historical coverage layer."}
+  ],
+  "categories": [
+    {"id":"general-government","title":"General-Government Fiscal Envelope","introduction":"IMF general-government series show the broad fiscal envelope but retain estimate/projection and coverage limitations.","indicators":[
+      {"indicator_code":"rev","title":"General government revenue","question":"How has broad public revenue changed relative to GDP?","chart_type":"trend","subtitle_note":"IMF DataMapper; general-government coverage; 2024 is latest archived observation and estimate status is not preserved"},
+      {"indicator_code":"GGXCNL_NGDP","title":"General government fiscal balance","question":"Has the broad fiscal balance moved toward or away from borrowing pressure?","chart_type":"trend","subtitle_note":"IMF DataMapper; negative values indicate net borrowing; 2024 is latest archived observation"},
+      {"indicator_code":"GGXWDG_NGDP","title":"General government gross debt","question":"How has the broad public-debt burden changed?","chart_type":"trend","subtitle_note":"IMF DataMapper; gross debt as percent of GDP; 2024 is latest archived observation"}
+    ]},
+    {"id":"central-government","title":"Central-Government Fiscal Indicators","introduction":"World Bank central-government indicators provide a separate historical layer and end in 2019 in the archived package.","indicators":[
+      {"indicator_code":"GC.REV.XGRT.GD.ZS","title":"Central-government revenue excluding grants","question":"How broad was central-government revenue excluding grants in the historical series?","chart_type":"trend","subtitle_note":"World Bank WDI; central-government coverage; latest archived observation 2019"}
+      ,{"indicator_code":"GC.TAX.TOTL.GD.ZS","title":"Tax revenue","question":"How large was tax revenue relative to GDP in the historical series?","chart_type":"trend","subtitle_note":"World Bank WDI; central-government coverage; latest archived observation 2019"}
+      ,{"indicator_code":"GC.XPN.TOTL.GD.ZS","title":"Central-government expenses","question":"How did central-government expenses change in the historical series?","chart_type":"trend","subtitle_note":"World Bank WDI; central-government coverage; latest archived observation 2019"}
+      ,{"indicator_code":"GC.XPN.INTP.ZS","title":"Government interest payments","question":"How much central-government expense was absorbed by interest payments?","chart_type":"trend","subtitle_note":"World Bank WDI; percent of central-government expense; latest archived observation 2019"}
+    ]}
+  ]
+}

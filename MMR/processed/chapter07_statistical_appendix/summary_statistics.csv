@@ -1,0 +1,8 @@
+﻿category,indicator_code,target_latest,target_latest_year,target_first,target_first_year,change,peer_latest_median,unit
+general-government,rev,15.605900809065,2024,20.31052633566,1998,-4.7046255265950006,,percent of GDP
+general-government,GGXCNL_NGDP,-4.1,2024,-4.9,1998,0.8000000000000007,,percent of GDP
+general-government,GGXWDG_NGDP,50.6,2024,208.6,1998,-158.0,,percent of GDP
+central-government,GC.REV.XGRT.GD.ZS,14.3891961645863,2019,12.3647208149576,1973,2.0244753496287,,percent of GDP
+central-government,GC.TAX.TOTL.GD.ZS,6.01765247726484,2019,9.42479753366172,1973,-3.407145056396879,,percent of GDP
+central-government,GC.XPN.TOTL.GD.ZS,13.7755198098588,2019,3.05760962946427,2003,10.71791018039453,,percent of GDP
+central-government,GC.XPN.INTP.ZS,10.2335200734128,2019,12.6227645525108,2012,-2.389244479098,,percent of expense

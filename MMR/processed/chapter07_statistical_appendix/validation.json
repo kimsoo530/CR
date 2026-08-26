@@ -1,0 +1,45 @@
+{
+  "input_run": "C:\\GDI\\CR\\MMR\\raw\\chapter07_statistical_appendix",
+  "input_rows": 182,
+  "input_validation_status": "pass",
+  "categories": 2,
+  "charts": 7,
+  "input_indicators": 7,
+  "target_available_indicators": 7,
+  "visualized_indicators": 7,
+  "target_missing_indicators": [],
+  "omitted_input_indicators": [],
+  "coverage_status_counts": {},
+  "core_coverage_status": "pass",
+  "core_coverage_requirements": [
+    {
+      "domain": "General-government fiscal capacity",
+      "minimum_available": 3,
+      "available_count": 3,
+      "available_indicators": [
+        "rev",
+        "GGXCNL_NGDP",
+        "GGXWDG_NGDP"
+      ],
+      "missing_indicators": [],
+      "status": "pass",
+      "rationale": "The reproducible IMF archive supports revenue, fiscal balance and gross debt; expenditure remains unresolved because its raw payload is unavailable."
+    },
+    {
+      "domain": "Central-government fiscal capacity",
+      "minimum_available": 4,
+      "available_count": 4,
+      "available_indicators": [
+        "GC.REV.XGRT.GD.ZS",
+        "GC.TAX.TOTL.GD.ZS",
+        "GC.XPN.TOTL.GD.ZS",
+        "GC.XPN.INTP.ZS"
+      ],
+      "missing_indicators": [],
+      "status": "pass",
+      "rationale": "Central-government revenue, tax effort, expense and interest burden provide a separate historical coverage layer."
+    }
+  ],
+  "core_coverage_failed_domains": [],
+  "missing_images": []
+}
