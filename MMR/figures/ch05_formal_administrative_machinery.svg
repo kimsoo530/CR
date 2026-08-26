@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="720" viewBox="0 0 1400 720" role="img" aria-labelledby="title desc">
+  <title id="title">Formal administrative machinery in Myanmar</title>
+  <desc id="desc">Formal relationship schematic among Union ministries, Region and State governments, GAD and territorial offices, with civil-service personnel rules as a cross-cutting framework.</desc>
+  <style>text{font-family:Arial,sans-serif;fill:#17202a}.box{fill:#f4f7f8;stroke:#1f4e5f;stroke-width:2}.accent{fill:#e8f2f4;stroke:#1f4e5f;stroke-width:2}.rule{fill:#fff8e7;stroke:#8a641c;stroke-width:2}.line{stroke:#50636b;stroke-width:3;fill:none;marker-end:url(#arrow)}.dash{stroke:#8a641c;stroke-width:3;stroke-dasharray:9 7;fill:none;marker-end:url(#arrowGold)}.note{font-size:19px;fill:#52636b}.label{font-size:25px;font-weight:700}</style>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 z" fill="#50636b"/></marker><marker id="arrowGold" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 z" fill="#8a641c"/></marker></defs>
+  <rect width="1400" height="720" fill="#ffffff"/>
+  <text x="55" y="52" font-size="34" font-weight="700">Formal administrative machinery</text>
+  <text x="55" y="84" class="note">Formal/reference relationships; arrows do not guarantee effective command or service reach</text>
+  <rect class="accent" x="530" y="120" width="340" height="80" rx="6"/><text class="label" x="700" y="169" text-anchor="middle">Union Government / ministries</text>
+  <rect class="rule" x="55" y="260" width="330" height="100" rx="6"/><text class="label" x="220" y="302" text-anchor="middle">Civil-service framework</text><text x="220" y="333" text-anchor="middle" font-size="19">Law + UCSB Rules</text>
+  <rect class="box" x="485" y="260" width="430" height="100" rx="6"/><text class="label" x="700" y="302" text-anchor="middle">Region / State governments</text><text x="700" y="333" text-anchor="middle" font-size="19">political and executive institutions</text>
+  <rect class="box" x="1015" y="260" width="330" height="100" rx="6"/><text class="label" x="1180" y="302" text-anchor="middle">Sector departments</text><text x="1180" y="333" text-anchor="middle" font-size="19">line administration</text>
+  <rect class="accent" x="485" y="470" width="430" height="100" rx="6"/><text class="label" x="700" y="512" text-anchor="middle">General Administration Department</text><text x="700" y="543" text-anchor="middle" font-size="19">territorial coordination / administration</text>
+  <rect class="box" x="1015" y="470" width="330" height="100" rx="6"/><text class="label" x="1180" y="512" text-anchor="middle">District / township offices</text><text x="1180" y="543" text-anchor="middle" font-size="19">ward / village-tract link</text>
+  <path class="line" d="M700 200 V260"/><path class="line" d="M700 360 V470"/><path class="line" d="M915 310 H1015"/><path class="line" d="M915 520 H1015"/><path class="dash" d="M385 310 H485"/><path class="dash" d="M385 320 C420 420 450 500 485 520"/>
+  <text x="55" y="650" class="note">Solid arrows: formal organizational/administrative relationships. Gold dashed arrows: personnel-rule framework. Sources: MMR-ADMIN-CIVIL-SERVICE-LAW-2013; MMR-ADMIN-CIVIL-SERVICE-RULES-2014; MMR-ADMIN-GAD-HISTORY; MMR-ADMIN-SUBNATIONAL-2019.</text>
+</svg>

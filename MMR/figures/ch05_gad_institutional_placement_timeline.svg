@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="500" viewBox="0 0 1400 500" role="img" aria-labelledby="title desc">
+  <title id="title">GAD institutional placement timeline</title>
+  <desc id="desc">Dated institutional placement and reorganization milestones for Myanmar's General Administration Department.</desc>
+  <style>text{font-family:Arial,sans-serif;fill:#17202a}.axis{stroke:#1f4e5f;stroke-width:5}.event{fill:#f4f7f8;stroke:#1f4e5f;stroke-width:2}.claim{fill:#fff2df;stroke:#9a641d;stroke-width:2}.year{font-size:26px;font-weight:700}.body{font-size:19px}.note{font-size:18px;fill:#52636b}</style>
+  <rect width="1400" height="500" fill="#ffffff"/>
+  <text x="55" y="48" font-size="34" font-weight="700">GAD institutional placement and reorganization</text>
+  <text x="55" y="78" class="note">Historical timeline; post-2021 item is an official SAC/GAD claim</text>
+  <line class="axis" x1="100" y1="240" x2="1300" y2="240"/>
+  <circle cx="180" cy="240" r="12" fill="#1f4e5f"/><circle cx="450" cy="240" r="12" fill="#1f4e5f"/><circle cx="720" cy="240" r="12" fill="#1f4e5f"/><circle cx="990" cy="240" r="12" fill="#9a641d"/><circle cx="1240" cy="240" r="12" fill="#9a641d"/>
+  <rect class="event" x="90" y="115" width="185" height="95" rx="6"/><text class="year" x="182" y="148" text-anchor="middle">1972</text><text class="body" x="182" y="177" text-anchor="middle">GAD formed under</text><text class="body" x="182" y="199" text-anchor="middle">Home &amp; Religious Affairs</text>
+  <rect class="event" x="355" y="280" width="190" height="95" rx="6"/><text class="year" x="450" y="313" text-anchor="middle">1988</text><text class="body" x="450" y="342" text-anchor="middle">General Department</text><text class="body" x="450" y="364" text-anchor="middle">redesignated as GAD</text>
+  <rect class="event" x="620" y="115" width="200" height="95" rx="6"/><text class="year" x="720" y="148" text-anchor="middle">2011</text><text class="body" x="720" y="177" text-anchor="middle">PDCs dissolved;</text><text class="body" x="720" y="199" text-anchor="middle">administrative roles changed</text>
+  <rect class="claim" x="885" y="280" width="210" height="95" rx="6"/><text class="year" x="990" y="313" text-anchor="middle">2018</text><text class="body" x="990" y="342" text-anchor="middle">Transferred to Ministry</text><text class="body" x="990" y="364" text-anchor="middle">of Union Government Office</text>
+  <rect class="claim" x="1135" y="115" width="210" height="95" rx="6"/><text class="year" x="1240" y="148" text-anchor="middle">2021</text><text class="body" x="1240" y="177" text-anchor="middle">GAD page states return</text><text class="body" x="1240" y="199" text-anchor="middle">to Home Affairs, Order 119</text>
+  <text x="55" y="440" class="note">Sources: MMR-ADMIN-GAD-HISTORY; MMR-ADMIN-SUBNATIONAL-2019. Dates do not establish effective nationwide operation.</text>
+</svg>

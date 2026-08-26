@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GAD Myanmar Website</title>
+
+    <link rel="icon" type="image/png" href="https://gad.gov.mm/images/logo/gad_favicon.png">
+    
+    <link rel="preload" as="style" href="https://gad.gov.mm/build/assets/app-CMUwdjzl.css" /><link rel="modulepreload" as="script" href="https://gad.gov.mm/build/assets/app-CBbTb_k3.js" /><link rel="stylesheet" href="https://gad.gov.mm/build/assets/app-CMUwdjzl.css" /><script type="module" src="https://gad.gov.mm/build/assets/app-CBbTb_k3.js"></script>    
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+        
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body class="bg-gray-50 flex flex-col min-h-screen font-[Inter]">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        
+        <div class="bg-blue-900 text-white text-xs py-2 hidden sm:block shadow-inner">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center font-semibold tracking-wider">
+                
+                <div class="flex items-center gap-3">
+                    <img src="https://gad.gov.mm/images/logo/StateSeal_web.png" alt="State Seal of Myanmar" class="h-11 w-auto object-contain drop-shadow-lg">
+                    <span>
+                        The Republic of the Union of Myanmar
+                    </span>
+                </div>
+                
+                <div class="flex items-center gap-3">
+                    <span>
+                        Ministry of Home Affairs
+                    </span>
+                    <img src="https://gad.gov.mm/images/logo/moha_logo.png" alt="Ministry of Home Affairs" class="h-11 w-auto object-contain bg-white rounded-full p-0.5">
+                </div>
+
+            </div>
+        </div>
+
+        <nav x-data="{ open: false }" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-b-4 border-yellow-500 bg-white relative z-50">
+            <div class="flex justify-between items-center h-20">
+                
+                <a href="https://gad.gov.mm" class="flex items-center gap-3">
+                    <div class="w-12 h-12 bg-blue-900 rounded-full flex items-center justify-center text-yellow-400 font-bold text-xl shadow-inner">
+                        GAD
+                    </div>
+                    <span class="font-bold text-xl text-blue-900 sm:block tracking-tight">
+                        Home
+                    </span>
+                </a>
+                
+                <ul class="hidden md:flex space-x-6 items-center font-bold text-gray-700">
+                    <li class="relative group">
+                        <button class="flex items-center gap-1 hover:text-blue-700 focus:outline-none py-6 transition duration-200">
+                            About Department <i class="fa fa-caret-down text-sm text-gray-400"></i>
+                        </button>
+                        <ul class="absolute left-0 top-16 w-56 bg-white rounded-md shadow-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 overflow-hidden">
+                            <li><a href="https://gad.gov.mm/history" class="block px-4 py-3 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-900 border-b border-gray-50"> Department History</a></li>
+                            <li><a href="https://gad.gov.mm/duty" class="block px-4 py-3 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-900 border-b border-gray-50"> Duties and Responsibilities</a></li>
+                            <li><a href="https://gad.gov.mm/laws" class="block px-4 py-3 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-900"> Departmental Laws</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="relative group">
+                        <button class="flex items-center gap-1 hover:text-blue-700 focus:outline-none py-6 transition duration-200">
+                            Services <i class="fa fa-caret-down text-sm text-gray-400"></i>
+                        </button>
+                        <ul class="absolute left-0 top-16 w-64 bg-white rounded-md shadow-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 overflow-hidden">
+                            <li><a href="https://gad.gov.mm/land-division" class="block px-4 py-3 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-900 border-b border-gray-50">Land Administration</a></li>
+                            <li><a href="https://gad.gov.mm/excise-division" class="block px-4 py-3 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-900 border-b border-gray-50">Excise Administration</a></li>
+                            <li><a href="https://gad.gov.mm/associations" class="block px-4 py-3 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-900 border-b border-gray-50">Association Registration</a></li>
+                            <li><a href="https://gad.gov.mm/local-facts" class="block px-4 py-3 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-900 border-b border-gray-50">Regional Profiles</a></li>
+                            <li><a href="#" class="block px-4 py-3 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-900">AML/CFT</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="relative group">
+                        <button class="flex items-center gap-1 hover:text-blue-700 focus:outline-none py-6 transition duration-200">
+                            Media <i class="fa fa-caret-down text-sm text-gray-400"></i>
+                        </button>
+                        <ul class="absolute left-0 top-16 w-64 bg-white rounded-md shadow-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 overflow-hidden">
+                            <li><a href="https://gad.gov.mm/all-news" class="block px-4 py-3 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-900 border-b border-gray-50">GAD news</a></li>
+                            <li><a href="https://gad.gov.mm/all-announcements" class="block px-4 py-3 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-900 border-b border-gray-50">Public Announcements</a></li>
+                            <li><a href="https://moha.gov.mm/index.php/2024-04-12-02-53-05/2024-04-29-03-51-54" target="_blank" class="block px-4 py-3 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-900 border-b border-gray-50">MOHA News <i class="fa fa-external-link text-xs ml-1"></i></a></li>
+                            <li><a href="https://myanmar.gov.mm/government-organizations" target="_blank" class="block px-4 py-3 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-900">Governmental Websites<i class="fa fa-external-link text-xs ml-1"></i></a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="https://gad.gov.mm/contact" class="hover:text-blue-700 transition duration-200">Contact Us</a></li>
+                    
+                    
+
+                    <li class="relative group pl-4 border-l border-gray-300">
+                        <button class="flex items-center gap-2 hover:text-blue-700 focus:outline-none py-6">
+                            <i class="fa fa-globe text-lg text-blue-900"></i> EN / မြန်မာ <i class="fa fa-caret-down text-sm"></i>
+                        </button>
+                        <ul class="absolute right-0 top-16 w-32 bg-white rounded-md shadow-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 overflow-hidden">
+                            <li><a href="https://gad.gov.mm/lang/my" class="block px-4 py-3 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-900 hover:font-bold border-b border-gray-50">မြန်မာ</a></li>
+                            <li><a href="https://gad.gov.mm/lang/en" class="block px-4 py-3 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-900 hover:font-bold">English</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="md:hidden flex items-center">
+                    <button @click="open = !open" class="text-blue-900 hover:text-blue-700 focus:outline-none p-2 transition">
+                        <i class="fa fa-bars text-3xl" x-show="!open"></i>
+                        <i class="fa fa-times text-3xl" x-show="open" style="display: none;"></i>
+                    </button>
+                </div>
+                
+            </div>
+
+            <div x-cloak x-show="open" @click.away="open = false" x-transition class="md:hidden bg-gray-50 border-t border-gray-200 shadow-xl absolute w-full left-0 z-50">
+                <ul class="flex flex-col px-4 py-4 space-y-2 font-bold text-gray-700">
+                    
+                    <li x-data="{ subOpen: false }">
+                        <button @click="subOpen = !subOpen" class="w-full flex justify-between items-center px-3 py-3 rounded-md hover:text-blue-900 hover:bg-gray-200 transition">
+                            About Department 
+                            <i class="fa fa-caret-down transition-transform duration-200" :class="subOpen ? 'rotate-180 text-blue-600' : ''"></i>
+                        </button>
+                        <ul x-show="subOpen" x-transition class="pl-6 mt-1 space-y-1 bg-white rounded-md py-2 border border-gray-100">
+                            <li><a href="https://gad.gov.mm/history" class="block px-3 py-2 text-sm text-gray-600 hover:text-blue-800">Department History</a></li>
+                            <li><a href="https://gad.gov.mm/duty" class="block px-3 py-2 text-sm text-gray-600 hover:text-blue-800">Duties and Responsibilities</a></li>
+                            <li><a href="https://gad.gov.mm/laws" class="block px-3 py-2 text-sm text-gray-600 hover:text-blue-800">Departmental Laws</a></li>
+                        </ul>
+                    </li>
+
+                    <li x-data="{ subOpen: false }">
+                        <button @click="subOpen = !subOpen" class="w-full flex justify-between items-center px-3 py-3 rounded-md hover:text-blue-900 hover:bg-gray-200 transition">
+                            Services 
+                            <i class="fa fa-caret-down transition-transform duration-200" :class="subOpen ? 'rotate-180 text-blue-600' : ''"></i>
+                        </button>
+                        <ul x-show="subOpen" x-transition class="pl-6 mt-1 space-y-1 bg-white rounded-md py-2 border border-gray-100">
+                            <li><a href="https://gad.gov.mm/land-division" class="block px-3 py-2 text-sm text-gray-600 hover:text-blue-800">Land Administration</a></li>
+                            <li><a href="https://gad.gov.mm/excise-division" class="block px-3 py-2 text-sm text-gray-600 hover:text-blue-800">Excise Administration</a></li>
+                            <li><a href="https://gad.gov.mm/associations" class="block px-3 py-2 text-sm text-gray-600 hover:text-blue-800">Association Registration</a></li>
+                            <li><a href="https://gad.gov.mm/local-facts" class="block px-3 py-2 text-sm text-gray-600 hover:text-blue-800">Regional Profiles</a></li>
+                        </ul>
+                    </li>
+
+                    <li x-data="{ subOpen: false }">
+                        <button @click="subOpen = !subOpen" class="w-full flex justify-between items-center px-3 py-3 rounded-md hover:text-blue-900 hover:bg-gray-200 transition">
+                            Media 
+                            <i class="fa fa-caret-down transition-transform duration-200" :class="subOpen ? 'rotate-180 text-blue-600' : ''"></i>
+                        </button>
+                        <ul x-show="subOpen" x-transition class="pl-6 mt-1 space-y-1 bg-white rounded-md py-2 border border-gray-100">
+                            <li><a href="https://gad.gov.mm/all-news" class="block px-3 py-2 text-sm text-gray-600 hover:text-blue-800">GAD news</a></li>
+                            <li><a href="https://gad.gov.mm/all-announcements" class="block px-3 py-2 text-sm text-gray-600 hover:text-blue-800">Public Announcements</a></li>
+                            <li><a href="https://moha.gov.mm/index.php/2024-04-12-02-53-05/2024-04-29-03-51-54" target="_blank" class="block px-3 py-2 text-sm text-gray-600 hover:text-blue-800">MOHA News</a></li>
+                            <li><a href="https://myanmar.gov.mm/government-organizations" target="_blank" class="block px-3 py-2 text-sm text-gray-600 hover:text-blue-800">Governmental Websites</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="https://gad.gov.mm/contact" class="block px-3 py-3 rounded-md hover:text-blue-900 hover:bg-gray-200">Contact Us</a></li>
+                    
+                    <div class="border-t border-gray-300 my-2"></div>
+
+                    <li><a href="https://gad.gov.mm/lang/my" class="block px-3 py-3 rounded-md text-blue-800 bg-blue-100 hover:bg-blue-200 transition">မြန်မာ (Burmese)</a></li>
+                    <li><a href="https://gad.gov.mm/lang/en" class="block px-3 py-3 rounded-md text-blue-800 bg-blue-100 hover:bg-blue-200 transition">English</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-grow">
+        
+<div class="bg-blue-900 text-white pt-16 pb-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight text-yellow-500 mb-4">
+                            History of the General Administration Department 
+                    </h1>
+    </div>
+</div>
+
+<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 -mt-12 relative z-10 mb-20">
+    <div class="bg-white rounded-xl shadow-lg p-8 md:p-12 border border-gray-100">
+        
+        <div class="space-y-6 text-gray-800 text-lg leading-loose text-justify">
+            
+                            
+                
+                
+
+                <h3 class="text-2xl font-bold text-blue-900 mt-8 mb-4 border-l-4 border-yellow-500 pl-4">Introduction </h3>
+                <p>1. Reviewing the historical administrative mechanism of the Republic of the Union of Myanmar, since the time it was systematically established with its own sovereignty, the state administrative mechanism was governed by a monarchical system centered around ministers, generals, town chiefs, regional chiefs, and village chiefs. Due to the invasion of British colonialists, state power was completely lost and the colonial administrative system was introduced. Even then, the administrative mechanism was operated centering on the staff of the Home Affairs Department, carrying out duties assigned by successive governments such as the rule of law, peace and tranquility, tax collection, municipal affairs, and regional development.</p>
+                
+                <h3 class="text-2xl font-bold text-blue-900 mt-10 mb-4 border-l-4 border-yellow-500 pl-4">Administration of Myanmar in the Colonial Era </h3>
+                <p>2. The British waged three wars of aggression against Myanmar; during the first Anglo-Burmese war in 1824, they occupied the Rakhine and Tanintharyi regions and initiated the British colonial administrative system there. The administration of the Rakhine region was placed under the Bengal government, while Tanintharyi was placed under the direct administration of the Governor-General of India. During the second war of aggression in 1852, the Bago region was further occupied, and Rakhine, Tanintharyi, and Bago regions were formed as "British Burma" and governed by a Commissioner. In 1885, the third Anglo-Burmese war broke out, and the British also occupied Upper Myanmar, resulting in the total loss of Myanmar's sovereignty. Subsequently, Upper and Lower Myanmar were reunited and governed by a "Chief Commissioner" appointed by the Governor-General of India.</p>
+                <p>In 1897, Myanmar was upgraded to a province governed by a Lieutenant-Governor, and in 1908, the "Secretariat Code" was enacted for the Myanmar Secretariat; under this code, the Chief Secretary was accountable to the government and responsible for general administrative operations. When the British government upgraded Myanmar's administration under the Government of India Act 1919, due to the efforts of Myanmar patriots, on January 2, 1923, Myanmar achieved a Dyarchy administration similar to other Indian provinces. In 1935, under the Government of Burma Act 1935, it was governed by a 91-department administration.</p>
+                <p>After Myanmar separated from being a province under the central government of India in 1937, administrative ministries were formed for the Government of Myanmar, comprising 10 departments including the Ministry of Home Affairs; the head of the Ministry of Home Affairs was the Chief Secretary, and acting on behalf of the central government, the Commissioner's Office, Deputy Commissioner's Office, Sub-divisional Officer's Office, and Township Officer's Office were established.</p>
+                <p>3. In 1942, Myanmar fell under Japanese occupation, and after the Japanese retreated following World War II, the British re-entered and administered the country via the Civil Affairs Service Burma (CAS)(B) until the end of 1945.</p>
+                
+                <h3 class="text-2xl font-bold text-blue-900 mt-10 mb-4 border-l-4 border-yellow-500 pl-4">Parliamentary Democratic System Administration </h3>
+                <p>4. Due to the unity and efforts of the Myanmar people, Myanmar became an independent sovereign nation on January 4, 1948, and the Union of Burma was established. The period from 1948 to 1962 can be considered the AFPFL era parliamentary administration period. When functional ministries were formed to carry out all administrative affairs of the Union Government, the Ministry of Home Affairs was included, and a Secretariat was also formed to implement the operations of each respective ministry.</p>
+                <p>5. When the Ministry of Home Affairs managed administrative matters in Burma proper on behalf of the state government, it administered them based on the General Administration Department and the People's Police Force. The Minister laid down administrative policies, and the Secretary supervised and implemented them for success. Therefore, staff of the General Administration Department, who were members of the Burma Civil Service, were appointed and assigned to carry out duties in various ministries and secretariat offices as Secretaries, Deputy Secretaries, and Under-Secretaries, and in the regions as Commissioners, Deputy Commissioners, Sub-divisional Officers, Township Officers, and Assistant Township Officers. During this period, the Ministry of Home Affairs was structured with the following branches: </p>
+                <ul class="space-y-2 pl-4">
+                    <li class="flex items-start gap-3"><i class="fa fa-check-circle text-green-500 mt-1"></i> <span>(a) General Administration Branch </span></li>
+                    <li class="flex items-start gap-3"><i class="fa fa-check-circle text-green-500 mt-1"></i> <span>(b) Democratic Local Administration Branch (Municipal and District Councils) </span></li>
+                    <li class="flex items-start gap-3"><i class="fa fa-check-circle text-green-500 mt-1"></i> <span>(c) People's Police Force </span></li>
+                    <li class="flex items-start gap-3"><i class="fa fa-check-circle text-green-500 mt-1"></i> <span>(d) Bureau of Special Investigation </span></li>
+                    <li class="flex items-start gap-3"><i class="fa fa-check-circle text-green-500 mt-1"></i> <span>(e) Immigration Branch </span></li>
+                    <li class="flex items-start gap-3"><i class="fa fa-check-circle text-green-500 mt-1"></i> <span>(f) National Registration Branch </span></li>
+                    <li class="flex items-start gap-3"><i class="fa fa-check-circle text-green-500 mt-1"></i> <span>(g) Census Branch </span></li>
+                    <li class="flex items-start gap-3"><i class="fa fa-check-circle text-green-500 mt-1"></i> <span>(h) Fire Services Branch </span></li>
+                    <li class="flex items-start gap-3"><i class="fa fa-check-circle text-green-500 mt-1"></i> <span>(i) Public Administration Branch </span></li>
+                    <li class="flex items-start gap-3"><i class="fa fa-check-circle text-green-500 mt-1"></i> <span>(j) Public Service Commission </span></li>
+                    <li class="flex items-start gap-3"><i class="fa fa-check-circle text-green-500 mt-1"></i> <span>(k) Central Institute of Civil Service </span></li>
+                    <li class="flex items-start gap-3"><i class="fa fa-check-circle text-green-500 mt-1"></i> <span>(l) Religious Affairs Branch </span></li>
+                    <li class="flex items-start gap-3"><i class="fa fa-check-circle text-green-500 mt-1"></i> <span>(m) Pali University and Dhammacariya Branch </span></li>
+                </ul>
+
+                <p>6. From 1948 to 1972, General Administration staff took responsibility across many ministries and performed the following administrative duties: </p>
+                <ul class="space-y-2 pl-4">
+                    <li class="flex items-start gap-3"><i class="fa fa-check-circle text-green-500 mt-1"></i> <span>(a) Accountable to the Ministry of Home Affairs, handled village and urban administration (community peace, rule of law, and rural development) and general administration duties. </span></li>
+                    <li class="flex items-start gap-3"><i class="fa fa-check-circle text-green-500 mt-1"></i> <span>(b) Accountable to the Ministry of Justice, handled criminal cases, crime prevention, and judicial affairs. </span></li>
+                    <li class="flex items-start gap-3"><i class="fa fa-check-circle text-green-500 mt-1"></i> <span>(c) Accountable to the Ministry of Finance and Revenue, handled land administration, excise administration, and treasury administration. </span></li>
+                    <li class="flex items-start gap-3"><i class="fa fa-check-circle text-green-500 mt-1"></i> <span>(d) Accountable to the Ministry of Nationalization of Agricultural Land, handled the registration of immovable property deeds. </span></li>
+                    <li class="flex items-start gap-3"><i class="fa fa-check-circle text-green-500 mt-1"></i> <span>(e) Accountable to the Ministry of Democratic Administration and Local Government, handled matters related to municipalities, town committees, district councils, and local bodies governed by districts. </span></li>
+                    <li class="flex items-start gap-3"><i class="fa fa-check-circle text-green-500 mt-1"></i> <span>(f) Accountable to the Ministry of Relief and Resettlement, handled natural disaster relief and social welfare operations. </span></li>
+                    <li class="flex items-start gap-3"><i class="fa fa-check-circle text-green-500 mt-1"></i> <span>(g) Other duties assigned by the state government. </span></li>
+                </ul>
+
+                <p>7. In 1957, when redefining the duties of the Chief Secretary, the Chief Secretary's parent department was transferred from the Ministry of Home Affairs to the Prime Minister's Office. Starting from June 13, 1958, after the Chief Secretary was transferred under the Prime Minister's Office, the Secretary of the Ministry of Home Affairs took charge as the head of general administration operations.</p>
+                <p>8. During the era of the Revolutionary Council in 1962, on May 9, 1962, the military took the lead and formed multi-level Security and Administration Committees comprising General Administration staff to represent and exercise the administrative powers of the Revolutionary Council. Under the Revolutionary Council's Declaration No. (97) dated March 15, 1972, a new administrative system was formulated, and the following tasks were carried out: </p>
+                <ul class="space-y-2 pl-4">
+                    <li class="flex items-start gap-3"><i class="fa fa-check-circle text-green-500 mt-1"></i> <span>(a) Abolishing the Secretariat, which was the foundation of the bureaucratic administrative mechanism, and reforming the ministries. </span></li>
+                    <li class="flex items-start gap-3"><i class="fa fa-check-circle text-green-500 mt-1"></i> <span>(b) Reforming the government organizations within each respective ministry. </span></li>
+                    <li class="flex items-start gap-3"><i class="fa fa-check-circle text-green-500 mt-1"></i> <span>(c) Revoking the Secretariat Manual and restructuring government working methods. </span></li>
+                    <li class="flex items-start gap-3"><i class="fa fa-check-circle text-green-500 mt-1"></i> <span>(d) Reforming the multi-level Security and Administration Committees. </span></li>
+                </ul>
+
+                <p>9. During the Revolutionary Council Government, the military led the formation of multi-level Security and Administration Committees involving General Administration staff; in the states, the Kachin, Kayah, Rakhine, and Chin State Councils were abolished and reformed into State Management Committees, and general administration operations were managed as follows: </p>
+                <ul class="space-y-2 pl-4">
+                    <li class="flex items-start gap-3"><i class="fa fa-check-circle text-green-500 mt-1"></i> <span>(a) In Burma proper, managed by the Ministry of Home Affairs. </span></li>
+                    <li class="flex items-start gap-3"><i class="fa fa-check-circle text-green-500 mt-1"></i> <span>(b) In the states, managed by the State Management Committees. </span></li>
+                    <li class="flex items-start gap-3"><i class="fa fa-check-circle text-green-500 mt-1"></i> <span>(c) The 3 frontier regions, 7 districts, and townships were managed by the Frontier Areas Administration Department. </span></li>
+                </ul>
+
+                <h3 class="text-2xl font-bold text-blue-900 mt-10 mb-4 border-l-4 border-yellow-500 pl-4">Establishment of the General Administration Department </h3>
+                <p>10. As the administrative system that existed in Myanmar was fundamentally just a modified version of the colonial administrative system, in order to effectively serve the interests of the ethnic nationalities and implement a socialist democratic system, a new administrative system was introduced in 1972 according to the Revolutionary Council's Declaration No. (97) dated March 15, 1972. The Ministry of Home Affairs was combined with the Ministry of Democratic Local Administration and Local Bodies, the Ministry of Immigration, National Registration and Census, and the Ministry of Religious Affairs, and reorganized as the Ministry of Home and Religious Affairs. Under this Ministry of Home and Religious Affairs, the General Administration Department was initially formed as a separate department. It took on previously handled general administration, municipal affairs, rural development, and literature scrutiny and registration operations, and the General Administration Department offices were structured systematically into a Head Office, State/Region Offices, and Township Offices.</p>
+
+                <p>11. Under the new administrative system, the criminal justice, land and revenue administration, treasury administration, and deed registration duties previously carried out by civil administrative officers such as Commissioners, Deputy Commissioners, Sub-divisional Officers, and Township Officers were transferred to various departments under the relevant ministries as follows: </p>
+                <ul class="space-y-2 pl-4">
+                    <li class="flex items-start gap-3"><i class="fa fa-check-circle text-green-500 mt-1"></i> <span>(a) Except for general administration and rural development tasks handled under the Ministry of Home Affairs, duties under the Police Manual and Arms Act were transferred to the People's Police Force. </span></li>
+                    <li class="flex items-start gap-3"><i class="fa fa-check-circle text-green-500 mt-1"></i> <span>(b) Duties under the Prison Manual were transferred to the Prisons Department. </span></li>
+                    <li class="flex items-start gap-3"><i class="fa fa-check-circle text-green-500 mt-1"></i> <span>(c) Duties under the Citizenship Regulations for Foreigners were transferred to the Immigration and Manpower Department. </span></li>
+                    <li class="flex items-start gap-3"><i class="fa fa-check-circle text-green-500 mt-1"></i> <span>(d) Duties under the Upper Myanmar Jade Regulations were transferred to the Ministry of Mines. </span></li>
+                    <li class="flex items-start gap-3"><i class="fa fa-check-circle text-green-500 mt-1"></i> <span>(e) Duties under the Boilers Act were transferred to the Factories Inspectorate Department. </span></li>
+                    <li class="flex items-start gap-3"><i class="fa fa-check-circle text-green-500 mt-1"></i> <span>(f) Duties under the Mental Health and Leprosy Acts were transferred to the Department of Health. </span></li>
+                    <li class="flex items-start gap-3"><i class="fa fa-check-circle text-green-500 mt-1"></i> <span>(g) Criminal justice and crime prevention tasks carried out under the Ministry of Justice were transferred to the Ministry of Justice. </span></li>
+                    <li class="flex items-start gap-3"><i class="fa fa-check-circle text-green-500 mt-1"></i> <span>(h) Tasks carried out under the Ministry of Finance and Revenue were transferred to the Internal Revenue Department. </span></li>
+                    <li class="flex items-start gap-3"><i class="fa fa-check-circle text-green-500 mt-1"></i> <span>(i) Treasury and sub-treasury operations were transferred to the Myanma Economic Bank. </span></li>
+                    <li class="flex items-start gap-3"><i class="fa fa-check-circle text-green-500 mt-1"></i> <span>(j) Tasks under the Land and Immovable Property Deed Registration Law carried out under the Ministry of Nationalization of Agricultural Land were transferred to the Settlement and Land Records Department. </span></li>
+                </ul>
+
+                <p>12. After such duties were transferred to the relevant ministries and departments, the operational responsibilities of the General Administration Department changed as follows: </p>
+                <ul class="space-y-2 pl-4">
+                    <li class="flex items-start gap-3"><i class="fa fa-check-circle text-green-500 mt-1"></i> <span>(a) Urban and rural administration. </span></li>
+                    <li class="flex items-start gap-3"><i class="fa fa-check-circle text-green-500 mt-1"></i> <span>(b) Rural development. </span></li>
+                    <li class="flex items-start gap-3"><i class="fa fa-check-circle text-green-500 mt-1"></i> <span>(c) Scrutiny of literature and registration of printers and publishers. </span></li>
+                    <li class="flex items-start gap-3"><i class="fa fa-check-circle text-green-500 mt-1"></i> <span>(d) Local administration duties. </span></li>
+                    <li class="flex items-start gap-3"><i class="fa fa-check-circle text-green-500 mt-1"></i> <span>(e) Personnel, financial, and administrative duties for the entire department. </span></li>
+                    <li class="flex items-start gap-3"><i class="fa fa-check-circle text-green-500 mt-1"></i> <span>(f) Other tasks assigned by the Ministry. </span></li>
+                </ul>
+
+                <p>13. Following the enactment of the Constitution in 1974, the district, sub-district, and sub-township levels were abolished. The administrative levels were reorganized into States, Regions, and Townships, and based on the workload and population, the offices were classified as Grade (A), Grade (B), and Grade (C).</p>
+                <p>14. At the first session of the Pyithu Hluttaw (People's Assembly) held on March 2, 1974, the People's Council Law was enacted, establishing multi-level People's Councils and Executive Committees for States, Regions, Townships, and Wards/Village Tracts. On August 2, 1976, the State Council issued Notification No. (5/76), delegating duties and powers to the multi-level Executive Committees of the People's Councils; thus, the authorities of the former Commissioners, Deputy Commissioners, Sub-divisional Officers, and Township Officers, as well as all public administration matters or departmental responsibilities, were transferred to the multi-level Executive Committees of the People's Councils.</p>
+                <p>15. At the 60th meeting of the State Council held on December 11, 1976, it was decided to transfer the multi-level offices of the General Administration Department to be under the State Council as the foundational offices for the multi-level People's Councils. According to the Council of Ministers' Notification (3/77) dated March 18, 1977, effective April 1, 1977, the multi-level General Administration offices were taken over as the foundational offices of the multi-level People's Councils, and to handle the operations of the remaining General Branch, Municipal Branch, and Literature Scrutiny and Registration Branch within the Ministry of Home and Religious Affairs, it was renamed and reorganized as the General Department starting April 1, 1977.</p>
+                <p>16. On September 18, 1988, the military took over all state power and formed the State Law and Order Restoration Council via Order No. (1/88). A total of 26,314 positions, comprising 174 positions from the State Law and Order Restoration Council Office and 26,140 positions from the former State/Region and Township People's Council offices, along with the staff serving in those respective positions, were transferred back to the General Department of the Ministry of Home Affairs effective November 1, 1988. The Government of the Union of Myanmar, via Notification No. (4/88) dated November 7, 1988, redesignated the General Department under the Ministry of Home and Religious Affairs as the General Administration Department starting November 7, 1988. Based on this, November 7 is celebrated annually as the Anniversary of the General Administration Department.</p>
+
+                <h3 class="text-2xl font-bold text-blue-900 mt-10 mb-4 border-l-4 border-yellow-500 pl-4">Administrative Reforms During the State Law and Order Restoration Council Period </h3>
+                <p>17. As the State Law and Order Restoration Council assumed all state responsibilities, to ensure the rule of law, peace and tranquility of territories, smooth and secure transportation, and to improve the livelihood of the people in States/Regions and Townships, State/Region Law and Order Restoration Councils were formed and assigned duties via Declaration (5/88); the Head of the State/Region General Administration Department (Region General Department Head) served as a member. To implement the state law and order restoration tasks more smoothly and quickly, Sub-district (Myo-ne-su) Law and Order Restoration Councils were formed and assigned duties via Declaration No. (7/88) of the Law and Order Restoration Council. The Deputy Head of the State/Region General Administration Department became a member of the Sub-district Law and Order Restoration Council. Fifty sub-district offices were established by the Ministry of Home Affairs' Notification dated November 18, 1989. Furthermore, Township Law and Order Restoration Councils were formed and assigned duties via Declaration (5/88), chaired by a military officer, with members including the Head of the Township General Administration Department and the Township Police Force Commander, with a Secretary assigned by the Chairman.</p>
+                <p>18. Ward/Village Tract Law and Order Restoration Councils, consisting of 3 respected members from the Ward/Village Tract and 1 clerk from the Ward/Village Tract General Administration Department, were formed and assigned duties via Declaration (7/88) of the State Law and Order Restoration Council.</p>
+                <p>19. Subsequently, in 1992, anticipating the future administrative mechanism and to provide practice for administrative bodies, the Township Law and Order Restoration Councils were restructured via Declaration (14/92) of the State Law and Order Restoration Council, appointing Staff Officers of the General Administration Department as Chairpersons. Additionally, Sub-district offices were redefined as District offices via the Ministry of Home Affairs' Notification dated October 7, 1992.</p>
+                <p>20. To foster a disciplined democratic system in the state and to swiftly build a peaceful, modern, and developed new nation, the State Peace and Development Council was reformed via Declaration No. (1/97) dated November 15, 1997. To continuously implement tasks for state stability, community peace, and the rule of law, as well as nation-building tasks, and anticipating the administrative mechanism to be used in the future, State/Region Peace and Development Councils were reformed and assigned duties via Declaration No. (2/2006) of the State Peace and Development Council, whereby State/Region Administrators transitioned from being members to serving as Secretaries. Similarly, under Declaration No. (2/2006) of the State Peace and Development Council, District Administrators from the District General Administration Department took on the duties of Secretaries of the District Peace and Development Councils. At the Township Peace and Development Council level, the Township Administrator of the General Administration Department served as the Chairman of the Township Peace and Development Council. The Ward/Village Tract Peace and Development Council was composed of two respected members from the Ward/Village Tract and one clerk from the Ward/Village Tract General Administration Department. Under Declaration (3/2006) of the State Peace and Development Council, the District Administrator of the District General Administration Department took on the duties of Chairman of the District Peace and Development Council.</p>
+
+                <h3 class="text-2xl font-bold text-blue-900 mt-10 mb-4 border-l-4 border-yellow-500 pl-4">Government of the Republic of the Union of Myanmar Period (Present Day) </h3>
+                <p>21. At that time, the primary objective of the State Peace and Development Council was the emergence of a peaceful, modern, developed, and disciplined new democratic nation. To achieve this, in 2003, the state laid down a 7-step Roadmap and implemented it step by step. In 2008, the Constitution of the Republic of the Union of Myanmar was approved and enacted via a nationwide referendum. Multi-party democratic general elections were held on November 7, 2010, to elect representatives for the respective Hluttaws (Parliaments). The first parliamentary sessions for the Pyithu Hluttaw, Amyotha Hluttaw, Pyidaungsu Hluttaw, and Region/State Hluttaws, consisting of the elected representatives, were held simultaneously on January 31, 2011. According to Article 441, the Constitution of the Republic of the Union of Myanmar came into force on that day.</p>
+                <p>22. The formation, election, and obtaining of parliamentary approval for Union-level legislative, administrative, and judicial bodies and individuals in the Pyidaungsu Hluttaw, Amyotha Hluttaw, and Pyithu Hluttaw in accordance with relevant laws and rules were completed on March 30, 2011. Through Declaration No. (5/2011) dated March 30, 2011, of the State Peace and Development Council, it was announced that the previously exercised legislative, administrative, and judicial powers were handed over upon the taking of the oath in the Pyidaungsu Hluttaw, and the State Peace and Development Council was dissolved. From that moment on, the new Republic of the Union of Myanmar emerged. Along with the Union Government, the Region/State Governments, and Self-Administered Zone and Division Leading Bodies were formed simultaneously.</p>
+                
+                <p>23. Per Declaration No. (8/2011) dated March 30, 2011, of the State Peace and Development Council, the duties of the District, Township, and Ward/Village Tract Peace and Development Councils were transferred starting March 30, 2011, as follows: </p>
+                <div class="overflow-x-auto my-6 border border-gray-200 rounded-lg shadow-sm">
+                    <table class="min-w-full divide-y divide-gray-200">
+                        <thead class="bg-blue-900 text-white">
+                            <tr>
+                                <th class="px-6 py-3 text-left text-sm font-semibold uppercase tracking-wider">Organization </th>
+                                <th class="px-6 py-3 text-left text-sm font-semibold uppercase tracking-wider">Title </th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white divide-y divide-gray-200">
+                            <tr class="hover:bg-gray-50 transition">
+                                <td class="px-6 py-4 text-sm text-gray-800">(a) District Peace and Development Council </td>
+                                <td class="px-6 py-4 text-sm text-gray-800">Head of District General Administration Department, District Administrator </td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 transition">
+                                <td class="px-6 py-4 text-sm text-gray-800">(b) Township Peace and Development Council </td>
+                                <td class="px-6 py-4 text-sm text-gray-800">Head of Township General Administration Department, Township Administrator </td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 transition">
+                                <td class="px-6 py-4 text-sm text-gray-800">(c) Ward/Village Tract Peace and Development Council </td>
+                                <td class="px-6 py-4 text-sm text-gray-800">Head of Ward/Village Tract General Administration Department, Ward/Village Tract Administrator </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>24. According to Declaration No. (6/2011) dated March 30, 2011, of the State Peace and Development Council, the State and Region Peace and Development Councils were dissolved. Subsequently, power was delegated to the legislative, administrative, and judicial figures elected to the Region/State Hluttaws that emerged in accordance with the Constitution. Staff of the General Administration Department at the State/Region level had to serve in the Region/State Hluttaw offices and government bodies. Under the 2008 Constitution, when the Region and State Hluttaw offices were initially formed in 2010, parliamentary affairs operations were carried out by a total of 770 personnel from the Ministry of Home Affairs, General Administration Department, comprising 112 officers and 658 staff. Following the agreement at the Union Government Meeting No. (18/2016) on December 22, 2016, the Pyidaungsu Hluttaw Office issued Notification No. (9/2017) dated January 17, 2017, establishing a new separate staff structure and operations for Region/State Hluttaw offices effective April 1, 2017; out of the 770 staff from various levels of the General Administration Department serving in the Region/State Hluttaws, 23 officers and 372 staff who wished to transfer to the Hluttaw, totaling 395 personnel, were transferred to the Pyidaungsu Hluttaw Office.</p>
+                <p>25. According to Declaration No. (7/2011) dated March 30, 2011, of the State Peace and Development Council, administrative powers were granted to the Leading Bodies of the 6 Self-Administered Zones, and the District Peace and Development Councils and Township Peace and Development Councils in those areas were dissolved. General Administration Department staff in those areas serve in the offices of the Self-Administered Zone Leading Bodies.</p>
+                <p>26. Following these transfers, the multi-level offices of the General Administration Department had to perform tasks assigned by the Union Government, the Ministry of Home Affairs, and other ministries, as well as tasks assigned by the Region/State governments in the respective Regions/States.</p>
+                <p>27. According to the agreement at the Meeting No. (23/2018) of the Government of the Republic of the Union of Myanmar held on December 28, 2018, the General Administration Department was transferred and reorganized under the Ministry of the Office of the Union Government effective December 28, 2018.</p>
+                <p>28. In accordance with Article 419 of the Constitution, the State Administration Council of the Republic of the Union of Myanmar transferred the General Administration Department from the Ministry of the Office of the Union Government back to the Ministry of Home Affairs effective May 5, 2021, via State Administration Council Order No. (119/2021).</p>
+                <p>29. The offices of the General Administration Department have been reorganized throughout successive eras, and the office structure from 1988 to the present is as follows: </p>
+                
+                <div class="overflow-x-auto my-6 border border-gray-200 rounded-lg shadow-sm">
+                    <table class="min-w-full divide-y divide-gray-200">
+                        <thead class="bg-blue-900 text-white">
+                            <tr>
+                                <th class="px-6 py-3 text-left text-sm font-semibold uppercase tracking-wider">Office Level </th>
+                                <th class="px-6 py-3 text-right text-sm font-semibold uppercase tracking-wider">Number of Offices </th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white divide-y divide-gray-200">
+                            <tr class="hover:bg-gray-50 transition"><td class="px-6 py-4 text-sm text-gray-800">(a) General Administration Department (Head Office) </td><td class="px-6 py-4 text-sm text-gray-800 text-right font-medium">1 Office </td></tr>
+                            <tr class="hover:bg-gray-50 transition"><td class="px-6 py-4 text-sm text-gray-800">(b) Nay Pyi Taw General Administration Department Office </td><td class="px-6 py-4 text-sm text-gray-800 text-right font-medium">1 Office </td></tr>
+                            <tr class="hover:bg-gray-50 transition"><td class="px-6 py-4 text-sm text-gray-800">(c) Region/State General Administration Department Offices </td><td class="px-6 py-4 text-sm text-gray-800 text-right font-medium">14 Offices </td></tr>
+                            <tr class="hover:bg-gray-50 transition"><td class="px-6 py-4 text-sm text-gray-800">(d) State Deputy General Administration Department Offices </td><td class="px-6 py-4 text-sm text-gray-800 text-right font-medium">2 Offices </td></tr>
+                            <tr class="hover:bg-gray-50 transition"><td class="px-6 py-4 text-sm text-gray-800">(e) Self-Administered Division Office </td><td class="px-6 py-4 text-sm text-gray-800 text-right font-medium">1 Office </td></tr>
+                            <tr class="hover:bg-gray-50 transition"><td class="px-6 py-4 text-sm text-gray-800">(f) Self-Administered Zone Offices </td><td class="px-6 py-4 text-sm text-gray-800 text-right font-medium">5 Offices </td></tr>
+                            <tr class="hover:bg-gray-50 transition"><td class="px-6 py-4 text-sm text-gray-800">(g) District General Administration Department Offices </td><td class="px-6 py-4 text-sm text-gray-800 text-right font-medium">121 Offices </td></tr>
+                            <tr class="hover:bg-gray-50 transition"><td class="px-6 py-4 text-sm text-gray-800">(h) Township General Administration Department Offices </td><td class="px-6 py-4 text-sm text-gray-800 text-right font-medium">330 Offices </td></tr>
+                            <tr class="hover:bg-gray-50 transition"><td class="px-6 py-4 text-sm text-gray-800">(i) Town General Administration Department Offices </td><td class="px-6 py-4 text-sm text-gray-800 text-right font-medium">174 Offices </td></tr>
+                            <tr class="hover:bg-gray-50 transition"><td class="px-6 py-4 text-sm text-gray-800">(j) Ward (or) Village Tract Administrator Offices </td><td class="px-6 py-4 text-sm text-gray-800 text-right font-medium">17,069 Offices </td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3 class="text-2xl font-bold text-blue-900 mt-10 mb-4 border-l-4 border-yellow-500 pl-4">Objectives, Policies, and Duties of the General Administration Department </h3>
+                
+                <p class="font-bold text-blue-900">Objectives </p>
+                <p>30. Accountable to the Ministry of Home Affairs, the General Administration Department implements the following objectives: </p>
+                <ul class="space-y-2 pl-4 mb-6">
+                    <li class="flex items-start gap-3"><i class="fa fa-check-circle text-green-500 mt-1"></i> <span>(a) Rule of law. </span></li>
+                    <li class="flex items-start gap-3"><i class="fa fa-check-circle text-green-500 mt-1"></i> <span>(b) Community peace and tranquility. </span></li>
+                    <li class="flex items-start gap-3"><i class="fa fa-check-circle text-green-500 mt-1"></i> <span>(c) Regional development. </span></li>
+                    <li class="flex items-start gap-3"><i class="fa fa-check-circle text-green-500 mt-1"></i> <span>(d) Serving the public interest. </span></li>
+                </ul>
+
+                <p class="font-bold text-blue-900">Policies </p>
+                <p>31. All staff of the General Administration Department follow and practice the following mottos as policy: </p>
+                <ul class="space-y-2 pl-4 mb-6">
+                    <li class="flex items-start gap-3"><i class="fa fa-check-circle text-green-500 mt-1"></i> <span>(a) Adhering to state policies (Policy). </span></li>
+                    <li class="flex items-start gap-3"><i class="fa fa-check-circle text-green-500 mt-1"></i> <span>(b) Aligning with basic principles (Principle). </span></li>
+                    <li class="flex items-start gap-3"><i class="fa fa-check-circle text-green-500 mt-1"></i> <span>(c) Operating in accordance with procedures (Procedure). </span></li>
+                </ul>
+
+                <p class="font-bold text-blue-900">Core Duties </p>
+                <p>32. The core duties of the General Administration Department are as follows: </p>
+                <ul class="space-y-2 pl-4 mb-6">
+                    <li class="flex items-start gap-3"><i class="fa fa-check-circle text-green-500 mt-1"></i> <span>(a) Land administration operations. </span></li>
+                    <li class="flex items-start gap-3"><i class="fa fa-check-circle text-green-500 mt-1"></i> <span>(b) Excise administration operations. </span></li>
+                    <li class="flex items-start gap-3"><i class="fa fa-check-circle text-green-500 mt-1"></i> <span>(c) Collection of four types of taxes. </span></li>
+                    <li class="flex items-start gap-3"><i class="fa fa-check-circle text-green-500 mt-1"></i> <span>(d) Systematic formation of towns and villages. </span></li>
+                    <li class="flex items-start gap-3"><i class="fa fa-check-circle text-green-500 mt-1"></i> <span>(e) Rural development operations. </span></li>
+                    <li class="flex items-start gap-3"><i class="fa fa-check-circle text-green-500 mt-1"></i> <span>(f) Granting registration of associations in accordance with the law. </span></li>
+                    <li class="flex items-start gap-3"><i class="fa fa-check-circle text-green-500 mt-1"></i> <span>(g) Conferring honorary titles and medals. </span></li>
+                    <li class="flex items-start gap-3"><i class="fa fa-check-circle text-green-500 mt-1"></i> <span>(h) Operations related to the Restriction on the Transfer of Immovable Property Law. </span></li>
+                </ul>
+
+                <p class="font-bold text-blue-900">Revision of Administrator Titles </p>
+                <p>33. The General Administration Department is an administrative organization that has existed since the colonial era, and in accordance with changing administrative mechanisms, the administrative titles have been successively revised as follows: </p>
+                
+                <div class="overflow-x-auto my-6 border border-gray-200 rounded-lg shadow-sm">
+                    <table class="min-w-full divide-y divide-gray-200">
+                        <thead class="bg-blue-900 text-white">
+                            <tr>
+                                <th class="px-6 py-3 text-center text-sm font-semibold uppercase tracking-wider">Serial </th>
+                                <th class="px-6 py-3 text-left text-sm font-semibold uppercase tracking-wider">Period </th>
+                                <th class="px-6 py-3 text-left text-sm font-semibold uppercase tracking-wider">Title </th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white divide-y divide-gray-200">
+                            <tr class="hover:bg-gray-50 transition"><td class="px-6 py-4 text-sm text-gray-800 text-center">(a) </td><td class="px-6 py-4 text-sm text-gray-800">Colonial Administration era to 1972 </td><td class="px-6 py-4 text-sm text-gray-800">Commissioner/Deputy Commissioner, Sub-divisional Officer, Township Officer </td></tr>
+                            <tr class="hover:bg-gray-50 transition"><td class="px-6 py-4 text-sm text-gray-800 text-center">(b) </td><td class="px-6 py-4 text-sm text-gray-800">Post-1972 </td><td class="px-6 py-4 text-sm text-gray-800">State/Region Department Head, Township Department Head, State/Region Office Head, Township Office Head </td></tr>
+                            <tr class="hover:bg-gray-50 transition"><td class="px-6 py-4 text-sm text-gray-800 text-center">(c) </td><td class="px-6 py-4 text-sm text-gray-800">Post-1994 </td><td class="px-6 py-4 text-sm text-gray-800">State/Region Administrator, Sub-State/Sub-Region Administrator, District Administrator, Township Administrator </td></tr>
+                            <tr class="hover:bg-gray-50 transition"><td class="px-6 py-4 text-sm text-gray-800 text-center">(d) </td><td class="px-6 py-4 text-sm text-gray-800">Post-2011 </td><td class="px-6 py-4 text-sm text-gray-800">Region/State Administrator, District Administrator, Township Administrator, Sub-Township Administrator, Town Administrator </td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            
+        </div>
+    </div>
+</div>
+
+    </main>
+
+    
+
+    <footer class="bg-gray-900 text-gray-300 py-10 mt-12 border-t-4 border-yellow-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+            
+            <div class="text-center md:text-left">
+                <div class="font-bold text-white text-2xl tracking-wider mb-1">
+                    <span class="text-yellow-500">GAD</span> Myanmar
+                </div>
+                <p class="text-sm text-gray-400">Ministry of Home Affairs</p>
+            </div>
+
+            <div class="flex justify-center">
+                <div class="flex items-center gap-4 bg-gray-800 px-6 py-3 rounded-xl border border-gray-700 shadow-inner">
+                    <div class="bg-blue-900/80 p-3 rounded-lg border border-blue-800 shadow">
+                        <i class="fa fa-users text-2xl text-yellow-400"></i>
+                    </div>
+                    <div class="text-left">
+                        <p class="text-[10px] text-gray-400 uppercase tracking-widest font-bold mb-0.5">
+                            Total Visitors
+                        </p>
+                        <p class="text-2xl font-extrabold text-white font-mono tracking-wider">
+                            152,639
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center md:text-right text-sm">
+                <p class="mb-1">&copy; 2026 GENERAL ADMINISTRATION DEPARTMENT.</p>
+                <p class="text-gray-500">All rights reserved.</p>
+            </div>
+            
+        </div>
+    </footer>
+    
+</body>
+</html>
