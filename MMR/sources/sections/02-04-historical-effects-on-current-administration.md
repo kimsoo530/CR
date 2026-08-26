@@ -1,9 +1,5 @@
 ## 2.4 Historical Effects on Current Administration
-
-<!-- asean-comparative-lens-2026:start -->
-**ASEAN comparative lens (2026).** Myanmar should be read in ASEAN comparison as ASEAN's most fragile contemporary state-capacity and conflict-governance case. It differs from the developmental trajectories of Vietnam, Thailand, Malaysia, and Indonesia because regime conflict, armed fragmentation, sanctions, and administrative breakdown dominate the policy environment. For this section, the regional comparison should compare historical state formation with the region's colonial, revolutionary, monarchical, socialist, military, and post-conflict legacies. Local comparable indicators show: population 54.50 million (2024), rank 5 among the nine ASEAN reports in this workspace; GDP US$74.07 billion (2024), rank 7 among the nine ASEAN reports in this workspace; GDP per capita US$1,359 (2024), rank 9 among the nine ASEAN reports in this workspace; real GDP growth -0.97% (2024), rank 9 among the nine ASEAN reports in this workspace; government effectiveness -1.23 (2023), rank 9 among the nine ASEAN reports in this workspace; internet use 45.45% (2020), rank 9 among the nine ASEAN reports in this workspace. Use `sources/documents/regional/asean_comparative_lens_2026.md` together with ASEANstats, ASEAN Secretariat materials, and the country processed-indicator files before making cross-ASEAN claims.
-<!-- asean-comparative-lens-2026:end -->
-
+`n`n
 Myanmar's historical background is best read as a sequence of state-building layers rather than as a simple chronology. Precolonial authority, external rule, independence, conflict, development strategy, and institutional reform all shaped how public authority is organized and how citizens encounter administration today.
 
 The main historical issue in this section is how older institutions continue to shape the contemporary state. In Myanmar, historical legacies are visible in central-local relations, public-sector hierarchy, political recruitment, civil-service culture, territorial inequality, and the way governments justify development priorities.
@@ -21,3 +17,4 @@ Evidence for this chapter is strongest when official histories, constitutional t
 ### Connection to the Report
 
 This historical reading guides the report's later analysis of Myanmar's constitution, political system, administrative organization, fiscal capacity, social structure, and development strategy.
+

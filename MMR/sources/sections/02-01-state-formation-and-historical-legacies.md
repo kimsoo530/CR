@@ -1,9 +1,5 @@
 ## 2.1 State Formation and Historical Legacies
-
-<!-- asean-comparative-lens-2026:start -->
-**ASEAN comparative lens (2026).** Myanmar should be read in ASEAN comparison as ASEAN's most fragile contemporary state-capacity and conflict-governance case. It differs from the developmental trajectories of Vietnam, Thailand, Malaysia, and Indonesia because regime conflict, armed fragmentation, sanctions, and administrative breakdown dominate the policy environment. For this section, the regional comparison should compare historical state formation with the region's colonial, revolutionary, monarchical, socialist, military, and post-conflict legacies. Local comparable indicators show: population 54.50 million (2024), rank 5 among the nine ASEAN reports in this workspace; GDP US$74.07 billion (2024), rank 7 among the nine ASEAN reports in this workspace; GDP per capita US$1,359 (2024), rank 9 among the nine ASEAN reports in this workspace; real GDP growth -0.97% (2024), rank 9 among the nine ASEAN reports in this workspace; government effectiveness -1.23 (2023), rank 9 among the nine ASEAN reports in this workspace; internet use 45.45% (2020), rank 9 among the nine ASEAN reports in this workspace. Use `sources/documents/regional/asean_comparative_lens_2026.md` together with ASEANstats, ASEAN Secretariat materials, and the country processed-indicator files before making cross-ASEAN claims.
-<!-- asean-comparative-lens-2026:end -->
-
+`n`n
 Myanmar's historical background is best read as a sequence of state-building layers rather than as a simple chronology. Precolonial authority, external rule, independence, conflict, development strategy, and institutional reform all shaped how public authority is organized and how citizens encounter administration today.
 
 The first analytical question is how authority existed before the modern state. In Myanmar, older political communities, religious institutions, trading networks, local notables, customary authorities, and territorial identities shaped the social foundations on which later governments had to build. These inherited forms of authority affected taxation, land control, dispute settlement, military organization, and the legitimacy of central rule.
@@ -19,3 +15,4 @@ The practical implication is that Myanmar's present administrative performance c
 ### Connection to the Report
 
 This historical reading guides the report's later analysis of Myanmar's constitution, political system, administrative organization, fiscal capacity, social structure, and development strategy.
+

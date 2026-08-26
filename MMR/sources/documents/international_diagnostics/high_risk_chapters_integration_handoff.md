@@ -40,3 +40,7 @@ The report-wide audit baseline still contains pre-existing blockers and warnings
 ## Recommended next step
 
 Restore or identify the established report builder and Python runtime, rerun the full audit suite, repair any integration-specific citation or rendered-path findings, then perform one coordinated HTML rebuild and visual/rendered-link review. Do not reconstruct the builder from the existing HTML tree alone.
+
+## Original-tooling search result
+
+A read-only search was conducted across `C:\GDI`, Desktop, Downloads, Documents, OneDrive, and 65 local ZIP archives. No `tools/build_population_scope_reports.py` entry, alternate original builder, or original GDI Country Studies workspace containing the missing `tools` directory was found. The desktop MMR archive contains the same stub hashes as the current repository (`build_report.py`: SHA-256 `49A9C8E7467833AF2504B9F514AB4FE50AD8B71399135B1AC9785D062B4607DB`; `fetch_data.py`: SHA-256 `19D16D5F8B39EDA266A83F6F9466E8CEBB77685B927D735672C1C2B743C5FE33`). The original full GDI workspace/package must therefore be obtained from the source location or supplied by the supervisor before rebuilding.

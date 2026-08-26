@@ -1,12 +1,13 @@
 ## 18.3 Major Laws and Policy Documents
 
-<!-- asean-comparative-lens-2026:start -->
-**ASEAN comparative lens (2026).** Myanmar should be read in ASEAN comparison as ASEAN's most fragile contemporary state-capacity and conflict-governance case. It differs from the developmental trajectories of Vietnam, Thailand, Malaysia, and Indonesia because regime conflict, armed fragmentation, sanctions, and administrative breakdown dominate the policy environment. For this section, the regional comparison should make ASEAN comparison methodologically transparent by recording which indicators and source layers support cross-national claims. Local comparable indicators show: population 54.50 million (2024), rank 5 among the nine ASEAN reports in this workspace; GDP US$74.07 billion (2024), rank 7 among the nine ASEAN reports in this workspace; GDP per capita US$1,359 (2024), rank 9 among the nine ASEAN reports in this workspace; real GDP growth -0.97% (2024), rank 9 among the nine ASEAN reports in this workspace; government effectiveness -1.23 (2023), rank 9 among the nine ASEAN reports in this workspace; internet use 45.45% (2020), rank 9 among the nine ASEAN reports in this workspace. Use `sources/documents/regional/asean_comparative_lens_2026.md` together with ASEANstats, ASEAN Secretariat materials, and the country processed-indicator files before making cross-ASEAN claims.
-<!-- asean-comparative-lens-2026:end -->
-
-| Document class | Collection task |
-| Constitution and amendments | Store official text and English translation where available |
-| Civil service and public employment law | Add recruitment, promotion, discipline, pension, and training rules |
-| Budget and public finance laws | Add budget law, procurement law, audit law, debt reports, and fiscal strategy |
-| National development plan | Add current and historical strategy documents |
-| Statistical yearbook | Add national statistics for latest local data |
+| Document | Function in the report | Status |
+| --- | --- | --- |
+| 2008 Constitution | Formal constitutional, territorial, security, fiscal, and emergency design | Verified primary legal text |
+| Burma Citizenship Law (1982) | Statutory citizenship categories | Verified legal archive translation |
+| Civil Services Personnel Law (2013) | Civil-service personnel framework | Verified official legal source |
+| Civil Service Personnel Rules (2014) | Personnel administration rules | Verified official administrative source |
+| Myanmar Sustainable Development Plan (2018–2030) | Pre-2021 national development strategy | Verified official strategy |
+| Federal Democracy Charter (2021) | Alternative interim and federal-democratic framework | Verified actor document; status contested |
+| MERP presentation (2021) | SAC-associated recovery-framework announcement | Verified official claim; full plan unverified |
+| SAC Order No. 149/2021 | Reported Union-ministry reconstitution | Verified official claim |
+| ASEAN Five-Point Consensus statement (2021) | Regional diplomatic and humanitarian framework | Verified ASEAN primary source |

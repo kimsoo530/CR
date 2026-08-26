@@ -1,17 +1,7 @@
 ## 1.4 Core Institutional Puzzle
 
-<!-- asean-comparative-lens-2026:start -->
-**ASEAN comparative lens (2026).** Myanmar should be read in ASEAN comparison as ASEAN's most fragile contemporary state-capacity and conflict-governance case. It differs from the developmental trajectories of Vietnam, Thailand, Malaysia, and Indonesia because regime conflict, armed fragmentation, sanctions, and administrative breakdown dominate the policy environment. For this section, the regional comparison should locate the country inside ASEAN by scale, geography, income level, regime type, and core development model before moving into national details. Local comparable indicators show: population 54.50 million (2024), rank 5 among the nine ASEAN reports in this workspace; GDP US$74.07 billion (2024), rank 7 among the nine ASEAN reports in this workspace; GDP per capita US$1,359 (2024), rank 9 among the nine ASEAN reports in this workspace; real GDP growth -0.97% (2024), rank 9 among the nine ASEAN reports in this workspace; government effectiveness -1.23 (2023), rank 9 among the nine ASEAN reports in this workspace; internet use 45.45% (2020), rank 9 among the nine ASEAN reports in this workspace. Use `sources/documents/regional/asean_comparative_lens_2026.md` together with ASEANstats, ASEAN Secretariat materials, and the country processed-indicator files before making cross-ASEAN claims.
-<!-- asean-comparative-lens-2026:end -->
+Myanmar's central institutional problem is the gap between formal state design and the conditions under which public authority is exercised. The 2008 Constitution specifies Union institutions, territorial administration, military roles, courts, fiscal channels, and emergency procedures. Chapters 3 and 5 show why those provisions cannot be treated as evidence of uniform post-2021 authority or implementation.
 
-Myanmar should be read as a Southeast Asian state whose institutions must be assessed through the interaction of ASEAN position, territory, population, fiscal capacity, political authority, and implementation performance. The chapter therefore reads official state design together with governance indicators, fiscal data, demography, trade, infrastructure, labor, health, education, finance, and security conditions.
+The puzzle has four dimensions. Authority is contested among formal institutions and competing political actors. Administrative presence may persist while effective reach varies by locality. Fiscal and statistical systems provide national signals but do not fully reveal current operation. Conflict and displacement alter where public services can be delivered and through which institutions.
 
-| Core item | Country profile |
-| --- | --- |
-| ISO3 | MMR |
-| Country | Myanmar |
-| Region | Asia; Southeast Asia |
-| Population | 54,500,091 (2024) |
-| GDP | 74,068,349,524 (2024) |
-| GDP per capita | 1,359.1 (2024) |
-| Report purpose | Comparative-administration country book for annual update |
+The report therefore distinguishes formal design, official claims, comparable indicators, and observed local operation. It asks how authorization, personnel, resources, security, and service delivery connect in particular periods and places.

@@ -1,7 +1,12 @@
 ## 18.1 Timeline
 
-<!-- asean-comparative-lens-2026:start -->
-**ASEAN comparative lens (2026).** Myanmar should be read in ASEAN comparison as ASEAN's most fragile contemporary state-capacity and conflict-governance case. It differs from the developmental trajectories of Vietnam, Thailand, Malaysia, and Indonesia because regime conflict, armed fragmentation, sanctions, and administrative breakdown dominate the policy environment. For this section, the regional comparison should make ASEAN comparison methodologically transparent by recording which indicators and source layers support cross-national claims. Local comparable indicators show: population 54.50 million (2024), rank 5 among the nine ASEAN reports in this workspace; GDP US$74.07 billion (2024), rank 7 among the nine ASEAN reports in this workspace; GDP per capita US$1,359 (2024), rank 9 among the nine ASEAN reports in this workspace; real GDP growth -0.97% (2024), rank 9 among the nine ASEAN reports in this workspace; government effectiveness -1.23 (2023), rank 9 among the nine ASEAN reports in this workspace; internet use 45.45% (2020), rank 9 among the nine ASEAN reports in this workspace. Use `sources/documents/regional/asean_comparative_lens_2026.md` together with ASEANstats, ASEAN Secretariat materials, and the country processed-indicator files before making cross-ASEAN claims.
-<!-- asean-comparative-lens-2026:end -->
-
-A publication-ready chronology should identify state formation, independence or major regime change, the current constitutional order, major administrative reforms, and the current development strategy. This appendix records the required chronology fields for the country-specific revision.
+| Date or period | Institutional development | Evidence status |
+| --- | --- | --- |
+| 2008 | Constitution establishes the formal state, administrative, fiscal, security, and emergency framework. | Verified primary legal text |
+| 2013–2014 | Civil Services Personnel Law and Rules define personnel administration and exclusions. | Verified primary/official sources |
+| 2018 | Myanmar Sustainable Development Plan (2018–2030) sets the pre-2021 development framework. | Verified official strategy |
+| 2021-02-01 to 2021-02-05 | SAC-side orders and UEC announcement assert an emergency, transfer of powers, and subsequent arrangements. | Verified official claims; legality contested |
+| 2021-03-31 to 2021-04-16 | CRPH instruments promulgate the Federal Democracy Charter, declare abolition of the 2008 Constitution, and announce NUG formation. | Verified actor claims; legal status contested |
+| 2021-08-01 | SAC Order No. 149/2021 reports reconstitution of Union ministries. | Verified official claim |
+| 2021-08-26 | MERP is presented as an economic recovery framework; full plan and implementation are not verified. | Verified official announcement |
+| 2022–2025 | NDSC records assert extensions, transition, or election-related steps under the Constitution. | Verified official claims; validity contested |
