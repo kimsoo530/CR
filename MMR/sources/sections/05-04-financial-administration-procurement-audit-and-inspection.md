@@ -1,9 +1,5 @@
 ## 5.4 Financial Administration, Procurement, Audit, and Inspection
 
-<!-- asean-comparative-lens-2026:start -->
-**ASEAN comparative lens (2026).** Myanmar should be read in ASEAN comparison as ASEAN's most fragile contemporary state-capacity and conflict-governance case. It differs from the developmental trajectories of Vietnam, Thailand, Malaysia, and Indonesia because regime conflict, armed fragmentation, sanctions, and administrative breakdown dominate the policy environment. For this section, the regional comparison should compare the administrative machinery with ASEAN peers by asking whether coordination relies on central ministries, local governments, party structures, federal bargains, or compact city-state capacity. Local comparable indicators show: population 54.50 million (2024), rank 5 among the nine ASEAN reports in this workspace; GDP US$74.07 billion (2024), rank 7 among the nine ASEAN reports in this workspace; GDP per capita US$1,359 (2024), rank 9 among the nine ASEAN reports in this workspace; real GDP growth -0.97% (2024), rank 9 among the nine ASEAN reports in this workspace; government effectiveness -1.23 (2023), rank 9 among the nine ASEAN reports in this workspace; internet use 45.45% (2020), rank 9 among the nine ASEAN reports in this workspace. Use `sources/documents/regional/asean_comparative_lens_2026.md` together with ASEANstats, ASEAN Secretariat materials, and the country processed-indicator files before making cross-ASEAN claims.
-<!-- asean-comparative-lens-2026:end -->
-
 Financial administration in Myanmar links political promises to authorized spending, contracts, payments, accounting, and audit. The latest comparable IMF value for the general-government balance is -4.9 percent of GDP in 2025, indicating a sizeable general-government deficit. The approximate five-year movement is 1.6 percentage points, so the fiscal trend must be read together with revenue capacity, expenditure pressure, interest burden, and the credibility of budget execution.
 
 | Financial administration stage | Main institution or procedure | Administrative meaning |
@@ -21,7 +17,7 @@ Financial administration in Myanmar links political promises to authorized spend
 
 ### General government fiscal balance trend
 
-Source: IMF DataMapper table ID GGXCNL_NGDP, general government net lending/borrowing, percent of GDP. Processed file: MMR/processed/financial_administration_diagnostics.csv.
+Source: IMF DataMapper table ID GGXCNL_NGDP, general government net lending/borrowing, percent of GDP.
 
     document.addEventListener('DOMContentLoaded', function () {
       var el = document.getElementById('fiscal-balance-mmr');

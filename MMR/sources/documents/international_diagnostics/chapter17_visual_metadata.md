@@ -23,3 +23,7 @@
 - Sources/chapters: Chapters 3, 5, 7, 15 and 16.
 - Caveat: qualitative status only; no composite score or ranking.
 - Status: READY WITH QUALIFICATIONS.
+
+## Current production mapping
+
+The operating model is used in `MMR/sources/sections/17-01-national-operating-model.md` and rendered in `MMR/report/sections/17-01-national-operating-model.html`. The constraint chain and evidence matrix are used in `MMR/sources/sections/17-05-strategic-outlook.md` and rendered in `MMR/report/sections/17-05-strategic-outlook.html`. Production assets are under `MMR/report/assets/figures/`.

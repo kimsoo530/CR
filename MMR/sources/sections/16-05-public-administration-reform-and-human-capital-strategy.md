@@ -8,9 +8,9 @@ The central analytical conclusion is not that one plan succeeded or failed. It i
 
 ### References
 
-Committee Representing Pyidaungsu Hluttaw. (2021). *Federal Democracy Charter*. Local verified PDF: `MMR/raw/official/federal_democracy_charter/2021-03-31_federal_democracy_charter_english_crph.pdf`.
+Committee Representing Pyidaungsu Hluttaw. (2021). *Federal Democracy Charter*.
 
-Ministry of Information. (2021, August 26). *Myanmar Economic Recovery Plan-MERP final consultation and presentation led by Working Committee to address the impact of COVID-19 on national economy*. Local verified HTML: `MMR/raw/official/sac_strategy/2021-08-26_merp_final_consultation_moi.html`.
+Ministry of Information. (2021, August 26). *Myanmar Economic Recovery Plan-MERP final consultation and presentation led by Working Committee to address the impact of COVID-19 on national economy*.
 
-Ministry of Planning and Finance. (2018, August). *Myanmar Sustainable Development Plan (2018–2030)*. Local verified PDF: `MMR/raw/official/development_strategy/2018-08_myanmar_sustainable_development_plan_2018-2030_planipolis.pdf`.
+Ministry of Planning and Finance. (2018, August). *Myanmar Sustainable Development Plan (2018–2030)*.
 

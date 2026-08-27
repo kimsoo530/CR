@@ -2,6 +2,8 @@
 `n`n
 Population analysis for Myanmar asks whether demographic scale can be converted into social and economic capacity. The section separates total population and sex composition, population growth, fertility, ageing, and dependency pressure. The figures use archived World Bank World Development Indicators and retain their indicator definitions and reference years (World Bank, 2025). The figures use the archived World Bank World Development Indicators and retain their indicator definitions and reference years (World Bank, 2025).
 
+The table below answers one question: what is Myanmar's current demographic profile, and how has each indicator changed over the last decade? Values retain their original units, while the final column shows the ten-year change.
+
 | Indicator | World Bank table ID | Latest year | Latest value | Unit | Ten-year change |
 
 | Population, total | `SP.POP.TOTL` | 2024 | 54.50 million | persons | 3.82 million |

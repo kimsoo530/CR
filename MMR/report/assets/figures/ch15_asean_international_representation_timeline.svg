@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500">
+<rect width="1200" height="500" fill="#f7f8fa"/><text x="60" y="55" font-family="Arial" font-size="28" font-weight="700" fill="#1f2937">Myanmar: representation and ASEAN engagement timeline</text>
+<line x1="130" y1="245" x2="1070" y2="245" stroke="#374151" stroke-width="4"/>
+<circle cx="220" cy="245" r="12" fill="#2563eb"/><text x="165" y="190" font-family="Arial" font-size="18" font-weight="700">24 Apr 2021</text><text x="145" y="285" font-family="Arial" font-size="16">ASEAN 5PC</text><text x="145" y="310" font-family="Arial" font-size="14">Dialogue, envoy, aid, visit</text>
+<circle cx="520" cy="245" r="12" fill="#d97706"/><text x="465" y="190" font-family="Arial" font-size="18" font-weight="700">1 Dec 2021</text><text x="445" y="285" font-family="Arial" font-size="16">A/76/550</text><text x="420" y="310" font-family="Arial" font-size="14">Credentials consideration deferred</text>
+<circle cx="700" cy="245" r="12" fill="#d97706"/><text x="650" y="190" font-family="Arial" font-size="18" font-weight="700">7 Dec 2021</text><text x="630" y="285" font-family="Arial" font-size="16">A/RES/76/15</text><text x="600" y="310" font-family="Arial" font-size="14">Committee report adopted</text>
+<circle cx="980" cy="245" r="12" fill="#16a34a"/><text x="930" y="190" font-family="Arial" font-size="18" font-weight="700">12 Jul 2025</text><text x="890" y="285" font-family="Arial" font-size="16">ASEAN EAS statement</text><text x="865" y="310" font-family="Arial" font-size="14">5PC remains main reference</text>
+<rect x="190" y="380" width="820" height="55" fill="#fff" stroke="#9ca3af"/><text x="220" y="414" font-family="Arial" font-size="16">Representation procedure is not the same as recognition; ASEAN position is not proof of implementation.</text>
+</svg>

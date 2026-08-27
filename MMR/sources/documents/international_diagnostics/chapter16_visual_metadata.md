@@ -30,4 +30,8 @@
 ![Myanmar development-strategy timeline](../../figures/chapter16_strategy_timeline.svg)
 ![Strategy-to-implementation evidence chain](../../figures/chapter16_strategy_implementation_chain.svg)
 ![Comparison of verified strategic frameworks](../../figures/chapter16_framework_comparison.svg)
+
+## Current production mapping
+
+The strategy timeline is used in `MMR/sources/sections/16-01-evolution-of-national-development-strategy.md` and rendered in `MMR/report/sections/16-01-evolution-of-national-development-strategy.html`. The implementation chain and framework comparison are used in `MMR/sources/sections/16-02-current-development-plan-and-policy-architecture.md` and rendered in `MMR/report/sections/16-02-current-development-plan-and-policy-architecture.html`. Production assets are under `MMR/report/assets/figures/`.
 ```

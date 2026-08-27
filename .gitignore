@@ -1,0 +1,3 @@
+# Local Myanmar rebuild backups and staging outputs.
+MMR/_pre_*/
+MMR/_rebuild_staging*/

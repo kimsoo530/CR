@@ -1,6 +1,6 @@
 # Chapter 7 Visual Metadata
 
-Access date: 2026-08-27. These figures are review-candidate assets and are not inserted into canonical Chapter 7 or generated report HTML.
+Access date: 2026-08-27. These figures are inserted in the current canonical Chapter 7 sections and regenerated in the reader-facing report. Full source IDs and provenance remain in the source register and statistical metadata.
 
 ## Generated statistical charts
 
@@ -30,3 +30,7 @@ All charts retain source, indicator and unit information in the generator's `cha
 ## Not generated
 
 No SOE/resource-revenue schematic, conflict-taxation chart, territorial revenue map or actor-finance graphic was generated because the local evidence package does not contain sufficiently verified quantitative inputs.
+
+## Current production mapping
+
+All seven statistical figures are used in `MMR/sources/sections/07-02-expenditure-deficit-debt-and-fiscal-risk.md` and rendered in `MMR/report/sections/07-02-expenditure-deficit-debt-and-fiscal-risk.html`. The formal architecture figure is used in `MMR/sources/sections/07-01-revenue-taxation-and-public-finance.md` and rendered in `MMR/report/sections/07-01-revenue-taxation-and-public-finance.html`. Production assets are copied to `MMR/report/assets/figures/`. The IMF figures retain the estimate/projection-status caveat; `exp` is excluded.
